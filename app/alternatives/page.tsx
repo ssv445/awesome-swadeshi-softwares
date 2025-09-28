@@ -2,12 +2,13 @@ import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Flag, ExternalLink, Crown, Flower2, ArrowRight, Video, Palette, Target, Mail, Link as LinkIcon, Shield, Users, Star, MessageSquare, CheckCircle, Zap, Cloud, Globe } from "lucide-react"
+import { AshokaChakra } from "@/components/ashoka-chakra"
 import Link from "next/link"
 import { getAllAlternatives } from "@/lib/alternatives-server"
 
 // Icon mapping
 const iconMap = {
-  Crown, Flower2, Video, Palette, Target, Mail, LinkIcon, Flag, Shield, Users, Star, MessageSquare, CheckCircle, Zap, Cloud, Globe
+  Crown, Flower2, Video, Palette, Target, Mail, LinkIcon, Flag, Shield, Users, Star, MessageSquare, CheckCircle, Zap, Cloud, Globe, AshokaChakra
 }
 
 export default function AlternativesIndexPage() {
@@ -20,7 +21,7 @@ export default function AlternativesIndexPage() {
           <div className="flex items-center justify-between">
             <Link href="/" className="flex items-center space-x-3">
               <div className="relative">
-                <Flag className="h-10 w-10 text-green-600" />
+                <AshokaChakra className="h-10 w-10 text-blue-600" />
                 <Crown className="h-4 w-4 text-orange-500 absolute -top-1 -right-1" />
               </div>
               <div>
@@ -30,7 +31,7 @@ export default function AlternativesIndexPage() {
                 <p className="text-sm text-gray-600 font-medium">Indian Software Directory • Atmanirbhar Bharat</p>
               </div>
             </Link>
-            <Button asChild className="bg-green-600 hover:bg-green-700 text-white border-none">
+            <Button asChild className="bg-blue-600 hover:bg-blue-700 text-white border-none">
               <Link href="/">Back to Directory</Link>
             </Button>
           </div>
@@ -42,7 +43,7 @@ export default function AlternativesIndexPage() {
         <div className="text-center mb-16">
           <div className="flex items-center justify-center mb-8">
             <div className="relative">
-              <Flag className="h-20 w-20 text-green-600" />
+              <AshokaChakra className="h-20 w-20 text-blue-600" />
               <div className="absolute -top-2 -left-2 w-24 h-24 border border-green-300 rounded-full opacity-40"></div>
               <div className="absolute -bottom-1 -right-1">
                 <Flower2 className="h-6 w-6 text-orange-500" />
@@ -64,7 +65,7 @@ export default function AlternativesIndexPage() {
         {/* Alternatives Grid */}
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
           {alternativesData.map((alternative) => {
-            const IconComponent = iconMap[alternative.internationalTool.icon as keyof typeof iconMap] || Flag
+            const IconComponent = iconMap[alternative.internationalTool.icon as keyof typeof iconMap] || AshokaChakra
             const slug = alternative.slug.replace('-alternative', '')
 
             return (
@@ -106,7 +107,7 @@ export default function AlternativesIndexPage() {
                     <div className="text-sm text-gray-600">
                       {alternative.indianAlternatives.length} alternative{alternative.indianAlternatives.length > 1 ? 's' : ''}
                     </div>
-                    <Button asChild size="sm" className="bg-green-600 hover:bg-green-700 text-white border-none">
+                    <Button asChild size="sm" className="bg-blue-600 hover:bg-blue-700 text-white border-none">
                       <Link href={`/alternatives/${slug}`}>
                         View Comparison
                         <ArrowRight className="ml-2 h-4 w-4" />
@@ -131,7 +132,7 @@ export default function AlternativesIndexPage() {
               <p className="text-gray-600 text-sm">Often built with more advanced features and better user experience</p>
             </div>
             <div className="text-center">
-              <Flag className="h-12 w-12 text-orange-500 mx-auto mb-4" />
+              <AshokaChakra className="h-12 w-12 text-orange-500 mx-auto mb-4" />
               <h3 className="text-lg font-semibold text-gray-900 mb-2">Data Sovereignty</h3>
               <p className="text-gray-600 text-sm">Your data stays within Indian borders for better privacy and compliance</p>
             </div>
@@ -157,7 +158,7 @@ export default function AlternativesIndexPage() {
             Discover 100+ Indian software alternatives across all categories and join the Swadeshi movement.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button asChild size="lg" className="bg-green-600 hover:bg-green-700 text-white border-none">
+            <Button asChild size="lg" className="bg-blue-600 hover:bg-blue-700 text-white border-none">
               <Link href="/">
                 Browse All Software
                 <ArrowRight className="ml-2 h-5 w-5" />
@@ -175,7 +176,7 @@ export default function AlternativesIndexPage() {
         <div className="container mx-auto text-center relative z-10">
           <div className="flex items-center justify-center space-x-3 mb-6">
             <div className="relative">
-              <Flag className="h-8 w-8 text-green-400" />
+              <AshokaChakra className="h-8 w-8 text-blue-400" />
               <Flower2 className="h-4 w-4 text-orange-400 absolute -top-1 -right-1" />
             </div>
             <span className="text-2xl font-bold text-white">

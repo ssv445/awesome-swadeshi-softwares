@@ -199,7 +199,7 @@ export function generateAlternativesMapping(): AlternativeMapping[] {
         name: internationalTool,
         description: internationalToolDescriptions[internationalTool] || `${internationalTool} software solution`,
         category,
-        icon: internationalToolIcons[internationalTool] || 'Flag',
+        icon: internationalToolIcons[internationalTool] || 'AshokaChakra',
         color: 'blue'
       },
       indianAlternatives: indianAlternatives.map(software => ({

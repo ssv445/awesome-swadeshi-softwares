@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Flag, ExternalLink, Shield, TrendingUp, Users, Building, Star, Flower2, Heart, Target, Globe, Zap, Crown } from "lucide-react"
+import { AshokaChakra } from "@/components/ashoka-chakra"
 import Link from "next/link"
 
 export default function WhySwadeshiPage() {
@@ -19,7 +20,7 @@ export default function WhySwadeshiPage() {
           <div className="flex items-center justify-between">
             <Link href="/" className="flex items-center space-x-3">
               <div className="relative">
-                <Flag className="h-10 w-10 text-green-600" />
+                <AshokaChakra className="h-10 w-10 text-blue-600" />
                 <Crown className="h-4 w-4 text-orange-500 absolute -top-1 -right-1" />
               </div>
               <div>
@@ -33,7 +34,7 @@ export default function WhySwadeshiPage() {
               <Button asChild variant="outline" className="border border-gray-300 text-gray-600 hover:bg-gray-50">
                 <Link href="/about">Contribute</Link>
               </Button>
-              <Button asChild className="bg-green-600 hover:bg-green-700 text-white border-none">
+              <Button asChild className="bg-blue-600 hover:bg-blue-700 text-white border-none">
                 <Link href="/">Back to Directory</Link>
               </Button>
             </div>
@@ -54,7 +55,7 @@ export default function WhySwadeshiPage() {
         <div className="text-center mb-20">
           <div className="flex items-center justify-center mb-8">
             <div className="relative">
-              <Flag className="h-24 w-24 text-amber-600 drop-shadow-lg" />
+              <AshokaChakra className="h-24 w-24 text-amber-600 drop-shadow-lg" />
               <div className="absolute -top-3 -left-3 w-30 h-30 border-3 border-amber-300 rounded-full opacity-50"></div>
               <div className="absolute -bottom-2 -right-2">
                 <Heart className="h-10 w-10 text-red-500" />
@@ -190,7 +191,7 @@ export default function WhySwadeshiPage() {
             <Star className="h-16 w-16" />
           </div>
           <div className="text-center mb-8">
-            <Flag className="h-16 w-16 text-amber-600 mx-auto mb-4" />
+            <AshokaChakra className="h-16 w-16 text-amber-600 mx-auto mb-4" />
             <h2 className="text-4xl font-bold text-gray-900 mb-4">
               Supporting <span className="text-orange-600">Atmanirbhar Bharat</span>
             </h2>
@@ -313,7 +314,7 @@ export default function WhySwadeshiPage() {
         <div className="text-center bg-white/80 backdrop-blur-sm border-2 border-amber-300 rounded-3xl p-12 shadow-2xl">
           <div className="flex items-center justify-center mb-6">
             <Heart className="h-12 w-12 text-red-500 mr-3" />
-            <Flag className="h-16 w-16 text-amber-600" />
+            <AshokaChakra className="h-16 w-16 text-amber-600" />
             <Star className="h-10 w-10 text-amber-500 ml-3" />
           </div>
           <h2 className="text-4xl font-bold text-gray-900 mb-6">
@@ -324,7 +325,7 @@ export default function WhySwadeshiPage() {
             more innovative, and truly self-reliant digital India.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button asChild size="lg" className="bg-green-600 hover:bg-green-700 text-white border-none">
+            <Button asChild size="lg" className="bg-blue-600 hover:bg-blue-700 text-white border-none">
               <Link href="/">
                 <Flag className="mr-2 h-5 w-5" />
                 Explore Swadeshi Software
@@ -352,7 +353,7 @@ export default function WhySwadeshiPage() {
         <div className="container mx-auto text-center relative z-10">
           <div className="flex items-center justify-center space-x-3 mb-6">
             <div className="relative">
-              <Flag className="h-8 w-8 text-amber-400" />
+              <AshokaChakra className="h-8 w-8 text-amber-400" />
               <Flower2 className="h-4 w-4 text-red-400 absolute -top-1 -right-1" />
             </div>
             <span className="text-2xl font-bold text-white">

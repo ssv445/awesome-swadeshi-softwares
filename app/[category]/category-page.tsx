@@ -6,6 +6,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Input } from "@/components/ui/input"
 import { Search, Flag, ExternalLink, ArrowLeft } from "lucide-react"
+import { AshokaChakra } from "@/components/ashoka-chakra"
 import Link from "next/link"
 import { getCategoryDisplayName } from "@/lib/data"
 import type { Software } from "@/lib/data"
@@ -45,7 +46,7 @@ export default function CategoryPage({ software, categoryName, categorySlug, all
         <div className="container mx-auto px-4 py-4">
           <div className="flex items-center justify-between">
             <div className="flex items-center space-x-2">
-              <Flag className="h-8 w-8 text-orange-500" />
+              <AshokaChakra className="h-8 w-8 text-orange-500" />
               <div>
                 <h1 className="text-xl font-bold text-gray-900">Indian Software Directory</h1>
                 <p className="text-sm text-gray-600">Made in India, Made for the World</p>
@@ -69,7 +70,7 @@ export default function CategoryPage({ software, categoryName, categorySlug, all
           </Button>
 
           <div className="flex items-center justify-center mb-6">
-            <Flag className="h-12 w-12 text-orange-500" />
+            <AshokaChakra className="h-12 w-12 text-orange-500" />
           </div>
           <h1 className="text-4xl font-bold text-gray-900 mb-6">
             <span className="text-orange-500">{categoryName}</span> Software
@@ -177,7 +178,7 @@ export default function CategoryPage({ software, categoryName, categorySlug, all
       <footer className="bg-gray-100 py-8 px-4">
         <div className="container mx-auto text-center">
           <div className="flex items-center justify-center space-x-2 mb-4">
-            <Flag className="h-5 w-5 text-orange-500" />
+            <AshokaChakra className="h-5 w-5 text-orange-500" />
             <span className="font-bold">Indian Software Directory</span>
           </div>
           <p className="text-gray-600 text-sm mb-4">

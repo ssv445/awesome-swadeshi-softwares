@@ -3,9 +3,11 @@
     "allow": [
       "Bash(find:*)",
       "Bash(node:*)",
+      "WebFetch(domain:commons.wikimedia.org)"
+    ],
+    "deny": [
       "Bash(npm run build:*)"
     ],
-    "deny": [],
     "ask": []
   }
 }

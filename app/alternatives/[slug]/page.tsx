@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Flag, ExternalLink, Crown, Flower2, ArrowRight, Check, Shield, Users, Star, Target, MessageSquare, CheckCircle, Video, Palette, Zap, Mail, Link as LinkIcon, Cloud, Globe } from "lucide-react"
+import { AshokaChakra } from "@/components/ashoka-chakra"
 import Link from "next/link"
 import { notFound } from "next/navigation"
 import { getAlternativeBySlug, getAllAlternativeSlugs } from "@/lib/alternatives-server"
@@ -9,7 +10,7 @@ import { getAlternativeBySlug, getAllAlternativeSlugs } from "@/lib/alternatives
 // Icon mapping
 const iconMap = {
   Crown, Flower2, Shield, Users, Star, Target, MessageSquare, CheckCircle,
-  Video, Palette, Zap, Mail, LinkIcon, Flag, Cloud, Globe
+  Video, Palette, Zap, Mail, LinkIcon, Flag, Cloud, Globe, AshokaChakra
 }
 
 interface AlternativePageProps {
@@ -51,7 +52,7 @@ export default function AlternativePage({ params }: AlternativePageProps) {
   }
 
   const mainAlternative = alternative.indianAlternatives[0]
-  const IconComponent = iconMap[alternative.internationalTool.icon as keyof typeof iconMap] || Flag
+  const IconComponent = iconMap[alternative.internationalTool.icon as keyof typeof iconMap] || AshokaChakra
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-orange-50 via-white to-green-50">
@@ -61,7 +62,7 @@ export default function AlternativePage({ params }: AlternativePageProps) {
           <div className="flex items-center justify-between">
             <Link href="/" className="flex items-center space-x-3">
               <div className="relative">
-                <Flag className="h-10 w-10 text-green-600" />
+                <AshokaChakra className="h-10 w-10 text-blue-600" />
                 <Crown className="h-4 w-4 text-orange-500 absolute -top-1 -right-1" />
               </div>
               <div>
@@ -71,7 +72,7 @@ export default function AlternativePage({ params }: AlternativePageProps) {
                 <p className="text-sm text-gray-600 font-medium">Indian Software Directory • Atmanirbhar Bharat</p>
               </div>
             </Link>
-            <Button asChild className="bg-green-600 hover:bg-green-700 text-white border-none">
+            <Button asChild className="bg-blue-600 hover:bg-blue-700 text-white border-none">
               <Link href="/">Back to Directory</Link>
             </Button>
           </div>
@@ -168,7 +169,7 @@ export default function AlternativePage({ params }: AlternativePageProps) {
                   )}
 
                   <div className="pt-2">
-                    <Button asChild size="sm" className="bg-green-600 hover:bg-green-700 text-white border-none w-full">
+                    <Button asChild size="sm" className="bg-blue-600 hover:bg-blue-700 text-white border-none w-full">
                       <Link href={indianAlt.website} target="_blank" rel="noopener noreferrer">
                         Try {indianAlt.name}
                         <ExternalLink className="ml-2 h-3 w-3" />
@@ -233,7 +234,7 @@ export default function AlternativePage({ params }: AlternativePageProps) {
             Choose from {alternative.indianAlternatives.length} powerful Indian alternatives to {alternative.internationalTool.name} and support the Indian tech ecosystem.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button asChild size="lg" className="bg-green-600 hover:bg-green-700 text-white border-none">
+            <Button asChild size="lg" className="bg-blue-600 hover:bg-blue-700 text-white border-none">
               <Link href={mainAlternative.website} target="_blank" rel="noopener noreferrer">
                 Try {mainAlternative.name}
                 <ArrowRight className="ml-2 h-5 w-5" />
@@ -251,7 +252,7 @@ export default function AlternativePage({ params }: AlternativePageProps) {
         <div className="container mx-auto text-center relative z-10">
           <div className="flex items-center justify-center space-x-3 mb-6">
             <div className="relative">
-              <Flag className="h-8 w-8 text-green-400" />
+              <AshokaChakra className="h-8 w-8 text-blue-400" />
               <Flower2 className="h-4 w-4 text-orange-400 absolute -top-1 -right-1" />
             </div>
             <span className="text-2xl font-bold text-white">

@@ -6,6 +6,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Input } from "@/components/ui/input"
 import { Search, Flag, ExternalLink, Star, Flower2, Crown, Zap } from "lucide-react"
+import { AshokaChakra } from "@/components/ashoka-chakra"
 import Link from "next/link"
 import { getCategoryDisplayName, getAlternativeUrl } from "@/lib/data"
 import type { Software } from "@/lib/data"
@@ -74,7 +75,7 @@ export default function ClientHomePage({ allSoftware, categories }: ClientHomePa
           <div className="flex items-center justify-between">
             <div className="flex items-center space-x-3">
               <div className="relative">
-                <Flag className="h-10 w-10 text-green-600" />
+                <AshokaChakra className="h-10 w-10 text-blue-600" />
                 <Crown className="h-4 w-4 text-orange-500 absolute -top-1 -right-1" />
               </div>
               <div>
@@ -88,7 +89,7 @@ export default function ClientHomePage({ allSoftware, categories }: ClientHomePa
               <Button asChild variant="outline" className="border border-gray-300 text-gray-600 hover:bg-gray-50 bg-white">
                 <Link href="/why-swadeshi">Why Swadeshi?</Link>
               </Button>
-              <Button asChild className="bg-green-600 hover:bg-green-700 text-white border-none">
+              <Button asChild className="bg-blue-600 hover:bg-blue-700 text-white border-none">
                 <Link href="/about">Add Software</Link>
               </Button>
             </div>
@@ -112,8 +113,8 @@ export default function ClientHomePage({ allSoftware, categories }: ClientHomePa
         <div className="container mx-auto text-center max-w-4xl relative z-10">
           <div className="flex items-center justify-center mb-8">
             <div className="relative">
-              <Flag className="h-20 w-20 text-green-600" />
-              <div className="absolute -top-2 -left-2 w-24 h-24 border border-green-300 rounded-full opacity-40"></div>
+              <AshokaChakra className="h-20 w-20 text-blue-600" />
+              <div className="absolute -top-2 -left-2 w-24 h-24 border border-blue-300 rounded-full opacity-40"></div>
               <div className="absolute -bottom-1 -right-1">
                 <Flower2 className="h-6 w-6 text-orange-500" />
               </div>
@@ -123,7 +124,7 @@ export default function ClientHomePage({ allSoftware, categories }: ClientHomePa
             <span className="text-gray-900">Awesome</span> Swadeshi Software
           </h1>
           <p className="text-xl md:text-2xl text-gray-700 mb-4 font-medium">
-            Discover Amazing Indian Software Alternatives
+            Find Indian Software Solutions for Every Need
           </p>
           <p className="text-lg text-gray-600 mb-12 max-w-3xl mx-auto">
             Join the <em>Swadeshi</em> movement by choosing Indian software alternatives to international tools.
@@ -131,15 +132,15 @@ export default function ClientHomePage({ allSoftware, categories }: ClientHomePa
           </p>
 
           {/* Search and Filter */}
-          <div className="max-w-2xl mx-auto space-y-6">
+          <div className="max-w-4xl mx-auto space-y-6">
             <div className="relative">
-              <Search className="absolute left-4 top-1/2 transform -translate-y-1/2 text-gray-400 h-6 w-6" />
+              <Search className="absolute left-8 top-1/2 transform -translate-y-1/2 text-gray-500 h-10 w-10" />
               <Input
                 type="text"
                 placeholder="Search for Indian software alternatives..."
                 value={searchTerm}
                 onChange={(e) => handleSearchChange(e.target.value)}
-                className="pl-14 pr-4 py-4 text-lg border border-gray-300 rounded-xl bg-white focus:border-gray-400 focus:ring-gray-400"
+                className="pl-20 pr-8 py-8 text-3xl border-4 border-blue-400 rounded-2xl bg-white focus:border-blue-600 focus:ring-blue-600 shadow-2xl font-medium"
               />
             </div>
 
@@ -149,7 +150,7 @@ export default function ClientHomePage({ allSoftware, categories }: ClientHomePa
                 onClick={() => handleFilterChange("")}
                 size="sm"
                 className={selectedCategory === "" ?
-                  "bg-green-600 hover:bg-green-700 text-white border-none" :
+                  "bg-blue-600 hover:bg-blue-700 text-white border-none" :
                   "border border-gray-300 text-gray-600 hover:bg-gray-50 bg-white"
                 }
               >
@@ -162,7 +163,7 @@ export default function ClientHomePage({ allSoftware, categories }: ClientHomePa
                   onClick={() => handleFilterChange(category.slug)}
                   size="sm"
                   className={selectedCategory === category.slug ?
-                    "bg-green-600 hover:bg-green-700 text-white border-none" :
+                    "bg-blue-600 hover:bg-blue-700 text-white border-none" :
                     "border border-gray-300 text-gray-600 hover:bg-gray-50 bg-white"
                   }
                 >
@@ -201,7 +202,7 @@ export default function ClientHomePage({ allSoftware, categories }: ClientHomePa
                   <div className="flex items-start justify-between">
                     <div className="flex-1">
                       <div className="flex items-center space-x-2 mb-2">
-                        <Crown className="h-4 w-4 text-green-600" />
+                        <AshokaChakra className="h-4 w-4 text-blue-600" />
                         <CardTitle className="text-xl font-bold text-gray-900">
                           {software.name}
                         </CardTitle>
@@ -224,7 +225,7 @@ export default function ClientHomePage({ allSoftware, categories }: ClientHomePa
                     <div className="flex flex-wrap gap-2">
                       {software.alternatives.map((alt, altIndex) => (
                         <Link key={altIndex} href={getAlternativeUrl(alt)}>
-                          <Badge variant="outline" className="text-xs border-gray-300 text-gray-600 bg-gray-50 hover:bg-green-50 hover:border-green-400 hover:text-green-700 cursor-pointer transition-colors">
+                          <Badge variant="outline" className="text-xs border-blue-300 text-blue-600 bg-blue-50 hover:bg-blue-100 hover:border-blue-500 hover:text-blue-700 cursor-pointer transition-colors">
                             {alt}
                           </Badge>
                         </Link>
@@ -236,7 +237,7 @@ export default function ClientHomePage({ allSoftware, categories }: ClientHomePa
                     <Badge className="bg-gray-100 text-gray-600 border-gray-300">
                       {software.pricing}
                     </Badge>
-                    <Button asChild size="sm" className="bg-green-600 hover:bg-green-700 text-white border-none">
+                    <Button asChild size="sm" className="bg-blue-600 hover:bg-blue-700 text-white border-none">
                       <Link href={software.website} target="_blank" rel="noopener noreferrer">
                         Visit Website
                         <ExternalLink className="ml-2 h-4 w-4" />
@@ -268,7 +269,7 @@ export default function ClientHomePage({ allSoftware, categories }: ClientHomePa
                     onClick={() => setCurrentPage(page)}
                     size="sm"
                     className={currentPage === page
-                      ? "bg-green-600 hover:bg-green-700 text-white border-none"
+                      ? "bg-blue-600 hover:bg-blue-700 text-white border-none"
                       : "border border-gray-300 text-gray-600 hover:bg-gray-50 w-10 h-10"
                     }
                   >
@@ -291,7 +292,7 @@ export default function ClientHomePage({ allSoftware, categories }: ClientHomePa
           {filteredSoftware.length === 0 && (
             <div className="text-center py-16">
               <div className="bg-white border border-green-300 rounded-xl p-8 max-w-md mx-auto">
-                <Crown className="h-12 w-12 text-green-600 mx-auto mb-4" />
+                <AshokaChakra className="h-12 w-12 text-blue-600 mx-auto mb-4" />
                 <p className="text-gray-700 text-lg font-medium">No Software Found</p>
                 <p className="text-gray-500 text-sm">Try adjusting your search criteria or browse all categories.</p>
               </div>
@@ -312,7 +313,7 @@ export default function ClientHomePage({ allSoftware, categories }: ClientHomePa
         <div className="container mx-auto text-center relative z-10">
           <div className="flex items-center justify-center space-x-3 mb-6">
             <div className="relative">
-              <Flag className="h-8 w-8 text-green-400" />
+              <AshokaChakra className="h-8 w-8 text-blue-400" />
               <Flower2 className="h-4 w-4 text-orange-400 absolute -top-1 -right-1" />
             </div>
             <span className="text-2xl font-bold text-white">

@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Flag, ExternalLink, GitPullRequest, FileText, Users, Star, Flower2, Crown, Zap } from "lucide-react"
+import { AshokaChakra } from "@/components/ashoka-chakra"
 import Link from "next/link"
 
 export default function AboutPage() {
@@ -19,7 +20,7 @@ export default function AboutPage() {
           <div className="flex items-center justify-between">
             <Link href="/" className="flex items-center space-x-3">
               <div className="relative">
-                <Flag className="h-10 w-10 text-green-600" />
+                <AshokaChakra className="h-10 w-10 text-blue-600" />
                 <Crown className="h-4 w-4 text-orange-500 absolute -top-1 -right-1" />
               </div>
               <div>
@@ -29,7 +30,7 @@ export default function AboutPage() {
                 <p className="text-sm text-gray-600 font-medium">Indian Software Directory • Atmanirbhar Bharat</p>
               </div>
             </Link>
-            <Button asChild className="bg-green-600 hover:bg-green-700 text-white border-none">
+            <Button asChild className="bg-blue-600 hover:bg-blue-700 text-white border-none">
               <Link href="/">Back to Directory</Link>
             </Button>
           </div>
@@ -48,7 +49,7 @@ export default function AboutPage() {
         <div className="text-center mb-16">
           <div className="flex items-center justify-center mb-8">
             <div className="relative">
-              <Flag className="h-20 w-20 text-green-600" />
+              <AshokaChakra className="h-20 w-20 text-blue-600" />
               <div className="absolute -top-2 -left-2 w-24 h-24 border border-green-300 rounded-full opacity-40"></div>
               <div className="absolute -bottom-1 -right-1">
                 <Flower2 className="h-6 w-6 text-orange-500" />
@@ -78,19 +79,19 @@ export default function AboutPage() {
             <CardContent className="space-y-6">
               <div className="space-y-4">
                 <div className="flex items-start space-x-4">
-                  <div className="bg-green-600 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold">1</div>
+                  <div className="bg-blue-600 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold">1</div>
                   <p className="text-gray-700 font-medium">Fork our GitHub repository</p>
                 </div>
                 <div className="flex items-start space-x-4">
-                  <div className="bg-green-600 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold">2</div>
+                  <div className="bg-blue-600 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold">2</div>
                   <p className="text-gray-700 font-medium">Create JSON file in category folder</p>
                 </div>
                 <div className="flex items-start space-x-4">
-                  <div className="bg-green-600 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold">3</div>
+                  <div className="bg-blue-600 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold">3</div>
                   <p className="text-gray-700 font-medium">Add your software entry</p>
                 </div>
                 <div className="flex items-start space-x-4">
-                  <div className="bg-green-600 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold">4</div>
+                  <div className="bg-blue-600 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold">4</div>
                   <p className="text-gray-700 font-medium">Submit a Pull Request</p>
                 </div>
               </div>
@@ -184,7 +185,7 @@ export default function AboutPage() {
 
           <Card>
             <CardHeader>
-              <Flag className="h-8 w-8 text-gray-500 mb-2" />
+              <AshokaChakra className="h-8 w-8 text-gray-500 mb-2" />
               <CardTitle>Categories</CardTitle>
             </CardHeader>
             <CardContent>
@@ -232,7 +233,7 @@ export default function AboutPage() {
       <footer className="bg-gray-50 py-8 px-4">
         <div className="container mx-auto text-center">
           <div className="flex items-center justify-center space-x-2 mb-4">
-            <Flag className="h-5 w-5 text-gray-500" />
+            <AshokaChakra className="h-5 w-5 text-gray-500" />
             <span className="font-bold">Indian Software Directory</span>
           </div>
           <p className="text-gray-600 text-sm mb-4">
