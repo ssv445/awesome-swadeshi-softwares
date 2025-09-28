@@ -1,0 +1,10 @@
+{
+  "name": "WebEngage Engage",
+  "description": "Multi-channel customer engagement platform with personalization",
+  "website": "https://webengage.com/engage/",
+  "category": "Business",
+  "alternatives": ["Braze", "Clevertap", "Leanplum"],
+  "pricing": "Freemium",
+  "company": "WebEngage",
+  "location": "Mumbai"
+}

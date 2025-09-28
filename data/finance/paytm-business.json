@@ -1,0 +1,10 @@
+{
+  "name": "Paytm for Business",
+  "description": "Payment solutions for merchants with QR codes and POS systems",
+  "website": "https://business.paytm.com/",
+  "category": "Finance",
+  "alternatives": ["Razorpay", "CCAvenue", "Instamojo"],
+  "pricing": "Freemium",
+  "company": "One97 Communications",
+  "location": "Noida"
+}

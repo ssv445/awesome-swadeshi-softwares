@@ -1,0 +1,10 @@
+{
+  "name": "Razorpay Payroll",
+  "description": "Automated payroll processing and salary disbursement platform",
+  "website": "https://razorpay.com/payroll/",
+  "category": "Finance",
+  "alternatives": ["ADP", "Gusto", "Paychex"],
+  "pricing": "Paid",
+  "company": "Razorpay Software Pvt Ltd",
+  "location": "Bangalore"
+}

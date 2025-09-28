@@ -1,0 +1,10 @@
+{
+  "name": "Freshmarketer",
+  "description": "Marketing automation platform for lead generation and nurturing",
+  "website": "https://www.freshworks.com/marketing-automation/",
+  "category": "Business",
+  "alternatives": ["HubSpot Marketing", "Marketo", "Pardot"],
+  "pricing": "Freemium",
+  "company": "Freshworks Inc.",
+  "location": "Chennai"
+}

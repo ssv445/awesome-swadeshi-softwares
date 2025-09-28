@@ -1,0 +1,10 @@
+{
+  "name": "Paytm Mall",
+  "description": "E-commerce marketplace for electronics, fashion, and consumer goods",
+  "website": "https://paytmmall.com/",
+  "category": "E-commerce",
+  "alternatives": ["Amazon", "Flipkart", "Snapdeal"],
+  "pricing": "Free",
+  "company": "Paytm E-Commerce Pvt Ltd",
+  "location": "Bangalore"
+}

@@ -1,0 +1,10 @@
+{
+  "name": "Paytm Insurance",
+  "description": "Digital insurance marketplace for health, life, and general insurance",
+  "website": "https://www.paytm.com/insurance",
+  "category": "Finance",
+  "alternatives": ["PolicyBazaar", "Coverfox", "ACKO"],
+  "pricing": "Free",
+  "company": "Paytm Insurance Broking Pvt Ltd",
+  "location": "Gurgaon"
+}

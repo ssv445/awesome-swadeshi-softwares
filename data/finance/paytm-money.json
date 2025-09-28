@@ -1,0 +1,10 @@
+{
+  "name": "Paytm Money",
+  "description": "Investment platform for mutual funds, stocks, and digital gold",
+  "website": "https://www.paytmmoney.com/",
+  "category": "Finance",
+  "alternatives": ["Zerodha", "Groww", "ET Money"],
+  "pricing": "Freemium",
+  "company": "Paytm Money Ltd",
+  "location": "Mumbai"
+}

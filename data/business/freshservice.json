@@ -1,0 +1,10 @@
+{
+  "name": "Freshservice",
+  "description": "IT service management platform for IT support and operations",
+  "website": "https://www.freshworks.com/freshservice/",
+  "category": "Business",
+  "alternatives": ["ServiceNow", "Jira Service Management", "ManageEngine"],
+  "pricing": "Freemium",
+  "company": "Freshworks Inc.",
+  "location": "Chennai"
+}

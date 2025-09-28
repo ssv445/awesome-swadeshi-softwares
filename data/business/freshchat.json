@@ -1,0 +1,10 @@
+{
+  "name": "Freshchat",
+  "description": "Live chat and messaging software for customer engagement",
+  "website": "https://www.freshworks.com/live-chat-software/",
+  "category": "Business",
+  "alternatives": ["Intercom", "Drift", "LiveChat"],
+  "pricing": "Freemium",
+  "company": "Freshworks Inc.",
+  "location": "Chennai"
+}

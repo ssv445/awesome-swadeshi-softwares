@@ -1,0 +1,10 @@
+{
+  "name": "Freshsales",
+  "description": "CRM software for sales teams with lead management and deal tracking",
+  "website": "https://www.freshworks.com/crm/sales/",
+  "category": "Business",
+  "alternatives": ["Salesforce Sales Cloud", "HubSpot CRM", "Pipedrive"],
+  "pricing": "Freemium",
+  "company": "Freshworks Inc.",
+  "location": "Chennai"
+}

@@ -1,0 +1,10 @@
+{
+  "name": "Razorpay Payment Gateway",
+  "description": "Online payment processing with UPI, cards, wallets and bank transfers",
+  "website": "https://razorpay.com/payment-gateway/",
+  "category": "Finance",
+  "alternatives": ["Stripe", "PayPal", "Square"],
+  "pricing": "Paid",
+  "company": "Razorpay Software Pvt Ltd",
+  "location": "Bangalore"
+}

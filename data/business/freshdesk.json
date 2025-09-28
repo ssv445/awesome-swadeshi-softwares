@@ -1,0 +1,10 @@
+{
+  "name": "Freshdesk",
+  "description": "Customer support software with ticketing, knowledge base and automation",
+  "website": "https://www.freshworks.com/freshdesk/",
+  "category": "Business",
+  "alternatives": ["Zendesk", "Help Scout", "Intercom"],
+  "pricing": "Freemium",
+  "company": "Freshworks Inc.",
+  "location": "Chennai"
+}

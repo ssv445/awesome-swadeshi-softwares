@@ -1,0 +1,10 @@
+{
+  "name": "Freshcaller",
+  "description": "Cloud-based phone system for customer support and sales calls",
+  "website": "https://www.freshworks.com/freshcaller-cloud-pbx/",
+  "category": "Business",
+  "alternatives": ["RingCentral", "Aircall", "8x8"],
+  "pricing": "Freemium",
+  "company": "Freshworks Inc.",
+  "location": "Chennai"
+}
