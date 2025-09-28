@@ -1,0 +1,10 @@
+{
+  "name": "JioSphere",
+  "description": "Web browser with built-in VPN and ad-blocker designed for the Indian market",
+  "website": "https://www.jio.com/jiosphere",
+  "category": "Utilities",
+  "alternatives": ["Google Chrome", "Firefox"],
+  "pricing": "Free",
+  "company": "Jio Platforms",
+  "location": "Mumbai"
+}

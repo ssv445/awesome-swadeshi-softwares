@@ -1,0 +1,10 @@
+{
+  "name": "Gaana",
+  "description": "Long-standing music streaming service with deep Bollywood catalog",
+  "website": "https://gaana.com/",
+  "category": "Entertainment",
+  "alternatives": ["Spotify", "Apple Music"],
+  "pricing": "Freemium",
+  "company": "Entertainment Network India Ltd",
+  "location": "Noida"
+}

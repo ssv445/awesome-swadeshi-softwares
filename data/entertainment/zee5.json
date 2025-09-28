@@ -1,0 +1,10 @@
+{
+  "name": "Zee5",
+  "description": "OTT platform with strong focus on regional and vernacular content across India",
+  "website": "https://www.zee5.com/",
+  "category": "Entertainment",
+  "alternatives": ["Netflix", "Amazon Prime"],
+  "pricing": "Freemium",
+  "company": "Zee Entertainment Enterprises",
+  "location": "Mumbai"
+}

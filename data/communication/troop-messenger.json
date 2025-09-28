@@ -1,0 +1,10 @@
+{
+  "name": "Troop Messenger",
+  "description": "Enterprise-focused secure office communication platform for teams",
+  "website": "https://www.troopmessenger.com/",
+  "category": "Communication",
+  "alternatives": ["Slack", "Microsoft Teams"],
+  "pricing": "Freemium",
+  "company": "Tvisha Systems Pvt Ltd",
+  "location": "Hyderabad"
+}

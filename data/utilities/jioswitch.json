@@ -1,0 +1,10 @@
+{
+  "name": "JioSwitch",
+  "description": "Offline file transfer app and direct replacement for SHAREit",
+  "website": "https://www.jio.com/apps/jioswitch",
+  "category": "Utilities",
+  "alternatives": ["SHAREit", "Xender"],
+  "pricing": "Free",
+  "company": "Reliance Jio Digital Services",
+  "location": "Mumbai"
+}

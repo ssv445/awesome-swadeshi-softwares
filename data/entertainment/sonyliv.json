@@ -1,0 +1,10 @@
+{
+  "name": "SonyLIV",
+  "description": "OTT streaming platform with mix of originals, movies, and sports content",
+  "website": "https://www.sonyliv.com/",
+  "category": "Entertainment",
+  "alternatives": ["Netflix", "Amazon Prime"],
+  "pricing": "Freemium",
+  "company": "Culver Max Entertainment",
+  "location": "Mumbai"
+}

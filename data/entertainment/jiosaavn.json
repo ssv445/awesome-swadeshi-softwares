@@ -1,0 +1,10 @@
+{
+  "name": "JioSaavn",
+  "description": "Music streaming service with massive library of Indian and international music",
+  "website": "https://www.jiosaavn.com/",
+  "category": "Entertainment",
+  "alternatives": ["Spotify", "Apple Music"],
+  "pricing": "Freemium",
+  "company": "Jio Platforms",
+  "location": "Mumbai"
+}

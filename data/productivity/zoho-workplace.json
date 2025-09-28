@@ -1,0 +1,10 @@
+{
+  "name": "Zoho Workplace",
+  "description": "Complete office suite with Writer, Sheet, Show, and Mail for businesses and consumers",
+  "website": "https://www.zoho.com/workplace/",
+  "category": "Productivity",
+  "alternatives": ["Microsoft 365", "Google Workspace"],
+  "pricing": "Freemium",
+  "company": "Zoho Corporation",
+  "location": "Chennai"
+}

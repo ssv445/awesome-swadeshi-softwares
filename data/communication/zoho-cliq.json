@@ -1,0 +1,10 @@
+{
+  "name": "Zoho Cliq",
+  "description": "Team collaboration platform affordable and deeply integrated with Zoho suite",
+  "website": "https://www.zoho.com/cliq/",
+  "category": "Communication",
+  "alternatives": ["Slack", "Microsoft Teams"],
+  "pricing": "Freemium",
+  "company": "Zoho Corporation",
+  "location": "Chennai"
+}

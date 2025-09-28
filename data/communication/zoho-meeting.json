@@ -1,0 +1,10 @@
+{
+  "name": "Zoho Meeting",
+  "description": "Video conferencing solution integrated with Zoho Workplace, affordable for SMBs",
+  "website": "https://www.zoho.com/meeting/",
+  "category": "Communication",
+  "alternatives": ["Zoom", "Google Meet"],
+  "pricing": "Freemium",
+  "company": "Zoho Corporation",
+  "location": "Chennai"
+}

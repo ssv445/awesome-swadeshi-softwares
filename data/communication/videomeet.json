@@ -1,0 +1,10 @@
+{
+  "name": "VideoMeet",
+  "description": "Government-backed video conferencing platform focusing on Aatmanirbhar positioning",
+  "website": "https://videomeet.live/",
+  "category": "Communication",
+  "alternatives": ["Zoom", "Google Meet"],
+  "pricing": "Free",
+  "company": "Data Ingenious Global Ltd",
+  "location": "Jaipur"
+}

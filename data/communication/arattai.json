@@ -1,0 +1,10 @@
+{
+  "name": "Arattai",
+  "description": "Made in India instant messaging alternative integrated with Zoho ecosystem",
+  "website": "https://www.zoho.com/arattai/",
+  "category": "Communication",
+  "alternatives": ["WhatsApp", "Telegram"],
+  "pricing": "Free",
+  "company": "Zoho Corporation",
+  "location": "Chennai"
+}

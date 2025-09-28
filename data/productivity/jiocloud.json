@@ -1,0 +1,10 @@
+{
+  "name": "JioCloud",
+  "description": "Cloud storage service integrated into the Jio ecosystem for secure file storage",
+  "website": "https://www.jio.com/jiocloud",
+  "category": "Productivity",
+  "alternatives": ["Dropbox", "Google Drive"],
+  "pricing": "Freemium",
+  "company": "Jio Platforms",
+  "location": "Mumbai"
+}

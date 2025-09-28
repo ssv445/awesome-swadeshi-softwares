@@ -1,0 +1,10 @@
+{
+  "name": "Say Namaste",
+  "description": "Video conferencing platform that emerged during pandemic with focus on security",
+  "website": "https://saynamaste.com/",
+  "category": "Communication",
+  "alternatives": ["Zoom", "Google Meet"],
+  "pricing": "Freemium",
+  "company": "Inscripts",
+  "location": "Mumbai"
+}

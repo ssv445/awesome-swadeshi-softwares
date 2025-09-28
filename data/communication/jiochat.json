@@ -1,0 +1,10 @@
+{
+  "name": "JioChat",
+  "description": "Instant messaging app leveraging Jio's telecom user base with integrated services",
+  "website": "https://www.jio.com/apps/jiochat",
+  "category": "Communication",
+  "alternatives": ["WhatsApp", "Telegram"],
+  "pricing": "Free",
+  "company": "Jio Platforms",
+  "location": "Mumbai"
+}
