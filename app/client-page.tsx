@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Input } from "@/components/ui/input"
-import { Search, Flag, ExternalLink, Star, Flower2, Crown, Zap } from "lucide-react"
+import { Search, Flag, ExternalLink, Star, Zap } from "lucide-react"
 import { AshokaChakra } from "@/components/ashoka-chakra"
 import Link from "next/link"
 import { getCategoryDisplayName, getAlternativeUrl } from "@/lib/data"
@@ -74,9 +74,8 @@ export default function ClientHomePage({ allSoftware, categories }: ClientHomePa
         <div className="container mx-auto px-4 py-4">
           <div className="flex items-center justify-between">
             <div className="flex items-center space-x-3">
-              <div className="relative">
+              <div>
                 <AshokaChakra className="h-10 w-10 text-blue-600" />
-                <Crown className="h-4 w-4 text-orange-500 absolute -top-1 -right-1" />
               </div>
               <div>
                 <h1 className="text-2xl font-bold text-gray-900">
@@ -101,10 +100,8 @@ export default function ClientHomePage({ allSoftware, categories }: ClientHomePa
       <section className="py-20 px-4 relative">
         {/* Subtle Decorative Elements */}
         <div className="absolute top-10 left-10 text-green-200 opacity-30">
-          <Flower2 className="h-12 w-12" />
         </div>
         <div className="absolute top-20 right-20 text-orange-200 opacity-30">
-          <Crown className="h-14 w-14" />
         </div>
         <div className="absolute bottom-10 left-1/4 text-green-200 opacity-30">
           <Zap className="h-10 w-10" />
@@ -112,12 +109,8 @@ export default function ClientHomePage({ allSoftware, categories }: ClientHomePa
 
         <div className="container mx-auto text-center max-w-4xl relative z-10">
           <div className="flex items-center justify-center mb-8">
-            <div className="relative">
+            <div>
               <AshokaChakra className="h-20 w-20 text-blue-600" />
-              <div className="absolute -top-2 -left-2 w-24 h-24 border border-blue-300 rounded-full opacity-40"></div>
-              <div className="absolute -bottom-1 -right-1">
-                <Flower2 className="h-6 w-6 text-orange-500" />
-              </div>
             </div>
           </div>
           <h1 className="text-5xl md:text-6xl font-bold text-gray-900 mb-6 leading-tight">
@@ -175,11 +168,9 @@ export default function ClientHomePage({ allSoftware, categories }: ClientHomePa
 
           <div className="mt-8 text-center">
             <div className="inline-flex items-center space-x-2 bg-white px-6 py-3 rounded-full border border-gray-300">
-              <Flower2 className="h-5 w-5 text-gray-400" />
               <p className="text-lg text-gray-700 font-medium">
                 <span className="font-bold text-gray-800">{filteredSoftware.length}</span> Indian Software Alternatives
               </p>
-              <Crown className="h-5 w-5 text-gray-400" />
             </div>
           </div>
         </div>
@@ -198,28 +189,22 @@ export default function ClientHomePage({ allSoftware, categories }: ClientHomePa
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {paginatedSoftware.map((software, index) => (
               <Card key={index} className="group hover:shadow-lg transition-all duration-300 border border-green-200 hover:border-green-400 bg-white hover:scale-[1.02]">
-                <CardHeader className="pb-3">
-                  <div className="flex items-start justify-between">
-                    <div className="flex-1">
-                      <div className="flex items-center space-x-2 mb-2">
-                        <AshokaChakra className="h-4 w-4 text-blue-600" />
-                        <CardTitle className="text-xl font-bold text-gray-900">
-                          {software.name}
-                        </CardTitle>
-                      </div>
-                      <p className="text-sm text-gray-600 font-medium">{software.company}</p>
+                <CardHeader className="pb-4">
+                  <div className="flex items-center space-x-3 mb-3">
+                    <AshokaChakra className="h-5 w-5 text-blue-600 flex-shrink-0" />
+                    <div className="min-w-0 flex-1">
+                      <CardTitle className="text-xl font-bold text-gray-900 truncate">
+                        {software.name}
+                      </CardTitle>
+                      <p className="text-sm text-gray-600 font-medium mt-1">{software.company}</p>
                     </div>
-                    <Badge variant="outline" className="border border-gray-300 text-gray-600 bg-gray-50">
-                      {software.category}
-                    </Badge>
                   </div>
                 </CardHeader>
                 <CardContent className="space-y-4">
-                  <p className="text-gray-700 leading-relaxed">{software.description}</p>
+                  <p className="text-gray-700 leading-relaxed text-sm">{software.description}</p>
 
-                  <div>
-                    <div className="flex items-center space-x-2 mb-2">
-                      <Flower2 className="h-4 w-4 text-orange-500" />
+                  <div className="space-y-3">
+                    <div>
                       <p className="text-sm font-medium text-gray-600">Alternative to:</p>
                     </div>
                     <div className="flex flex-wrap gap-2">
@@ -233,10 +218,7 @@ export default function ClientHomePage({ allSoftware, categories }: ClientHomePa
                     </div>
                   </div>
 
-                  <div className="flex items-center justify-between pt-2">
-                    <Badge className="bg-gray-100 text-gray-600 border-gray-300">
-                      {software.pricing}
-                    </Badge>
+                  <div className="flex justify-end pt-3 border-t border-gray-100">
                     <Button asChild size="sm" className="bg-blue-600 hover:bg-blue-700 text-white border-none">
                       <Link href={software.website} target="_blank" rel="noopener noreferrer">
                         Visit Website
@@ -312,23 +294,19 @@ export default function ClientHomePage({ allSoftware, categories }: ClientHomePa
 
         <div className="container mx-auto text-center relative z-10">
           <div className="flex items-center justify-center space-x-3 mb-6">
-            <div className="relative">
+            <div>
               <AshokaChakra className="h-8 w-8 text-blue-400" />
-              <Flower2 className="h-4 w-4 text-orange-400 absolute -top-1 -right-1" />
             </div>
             <span className="text-2xl font-bold text-white">
               Awesome Swadeshi
             </span>
-            <Crown className="h-6 w-6 text-green-400" />
           </div>
           <p className="text-gray-200 text-lg mb-6 max-w-2xl mx-auto leading-relaxed">
             Promoting Indian software innovation and helping users discover quality alternatives.
             Supporting <em>Swadeshi</em> movement and <em>Atmanirbhar Bharat</em> through technology.
           </p>
-          <div className="flex items-center justify-center space-x-2">
-            <Flower2 className="h-5 w-5 text-orange-400" />
+          <div className="flex items-center justify-center">
             <p className="text-gray-300 text-sm">&copy; 2024 Made with ❤️ in India</p>
-            <Crown className="h-4 w-4 text-green-400" />
           </div>
         </div>
       </footer>

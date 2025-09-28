@@ -1,14 +1,14 @@
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
-import { Flag, ExternalLink, Crown, Flower2, ArrowRight, Video, Palette, Target, Mail, Link as LinkIcon, Shield, Users, Star, MessageSquare, CheckCircle, Zap, Cloud, Globe } from "lucide-react"
+import { Flag, ExternalLink, ArrowRight, Video, Palette, Target, Mail, Link as LinkIcon, Shield, Users, Star, MessageSquare, CheckCircle, Zap, Cloud, Globe } from "lucide-react"
 import { AshokaChakra } from "@/components/ashoka-chakra"
 import Link from "next/link"
 import { getAllAlternatives } from "@/lib/alternatives-server"
 
 // Icon mapping
 const iconMap = {
-  Crown, Flower2, Video, Palette, Target, Mail, LinkIcon, Flag, Shield, Users, Star, MessageSquare, CheckCircle, Zap, Cloud, Globe, AshokaChakra
+  Video, Palette, Target, Mail, LinkIcon, Flag, Shield, Users, Star, MessageSquare, CheckCircle, Zap, Cloud, Globe, AshokaChakra
 }
 
 export default function AlternativesIndexPage() {
@@ -20,9 +20,8 @@ export default function AlternativesIndexPage() {
         <div className="container mx-auto px-4 py-4">
           <div className="flex items-center justify-between">
             <Link href="/" className="flex items-center space-x-3">
-              <div className="relative">
+              <div>
                 <AshokaChakra className="h-10 w-10 text-blue-600" />
-                <Crown className="h-4 w-4 text-orange-500 absolute -top-1 -right-1" />
               </div>
               <div>
                 <h1 className="text-2xl font-bold text-gray-900">
@@ -46,7 +45,6 @@ export default function AlternativesIndexPage() {
               <AshokaChakra className="h-20 w-20 text-blue-600" />
               <div className="absolute -top-2 -left-2 w-24 h-24 border border-green-300 rounded-full opacity-40"></div>
               <div className="absolute -bottom-1 -right-1">
-                <Flower2 className="h-6 w-6 text-orange-500" />
               </div>
             </div>
           </div>
@@ -93,7 +91,6 @@ export default function AlternativesIndexPage() {
                       Featured Indian Alternative:
                     </p>
                     <div className="flex items-center space-x-2">
-                      <Crown className="h-4 w-4 text-green-600" />
                       <span className="font-semibold text-green-700">
                         {alternative.indianAlternatives[0]?.name}
                       </span>
@@ -127,7 +124,6 @@ export default function AlternativesIndexPage() {
           </h2>
           <div className="grid md:grid-cols-4 gap-6">
             <div className="text-center">
-              <Crown className="h-12 w-12 text-green-600 mx-auto mb-4" />
               <h3 className="text-lg font-semibold text-gray-900 mb-2">Better Features</h3>
               <p className="text-gray-600 text-sm">Often built with more advanced features and better user experience</p>
             </div>
@@ -137,7 +133,6 @@ export default function AlternativesIndexPage() {
               <p className="text-gray-600 text-sm">Your data stays within Indian borders for better privacy and compliance</p>
             </div>
             <div className="text-center">
-              <Flower2 className="h-12 w-12 text-green-600 mx-auto mb-4" />
               <h3 className="text-lg font-semibold text-gray-900 mb-2">Local Support</h3>
               <p className="text-gray-600 text-sm">Customer support in Indian time zones with cultural understanding</p>
             </div>
@@ -175,23 +170,19 @@ export default function AlternativesIndexPage() {
       <footer className="bg-gray-800 py-12 px-4 relative">
         <div className="container mx-auto text-center relative z-10">
           <div className="flex items-center justify-center space-x-3 mb-6">
-            <div className="relative">
+            <div>
               <AshokaChakra className="h-8 w-8 text-blue-400" />
-              <Flower2 className="h-4 w-4 text-orange-400 absolute -top-1 -right-1" />
             </div>
             <span className="text-2xl font-bold text-white">
               Awesome Swadeshi
             </span>
-            <Crown className="h-6 w-6 text-green-400" />
           </div>
           <p className="text-gray-200 text-lg mb-6 max-w-2xl mx-auto leading-relaxed">
             Promoting Indian software innovation and helping users discover quality alternatives.
             Supporting <em>Swadeshi</em> movement and <em>Atmanirbhar Bharat</em> through technology.
           </p>
           <div className="flex items-center justify-center space-x-2">
-            <Flower2 className="h-5 w-5 text-orange-400" />
             <p className="text-gray-300 text-sm">&copy; 2024 Made with ❤️ in India</p>
-            <Crown className="h-4 w-4 text-green-400" />
           </div>
         </div>
       </footer>

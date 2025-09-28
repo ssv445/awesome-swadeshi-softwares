@@ -21,7 +21,6 @@ export default function AboutPage() {
             <Link href="/" className="flex items-center space-x-3">
               <div className="relative">
                 <AshokaChakra className="h-10 w-10 text-blue-600" />
-                <Crown className="h-4 w-4 text-orange-500 absolute -top-1 -right-1" />
               </div>
               <div>
                 <h1 className="text-2xl font-bold text-gray-900">
@@ -40,7 +39,6 @@ export default function AboutPage() {
       <div className="container mx-auto px-4 py-16 max-w-4xl relative z-10">
         {/* Subtle Decorative Elements */}
         <div className="absolute top-10 right-10 text-green-200 opacity-30">
-          <Crown className="h-12 w-12" />
         </div>
         <div className="absolute bottom-20 left-10 text-orange-200 opacity-30">
           <Flower2 className="h-14 w-14" />
@@ -70,7 +68,6 @@ export default function AboutPage() {
             <CardHeader>
               <div className="flex items-center space-x-3 mb-4">
                 <GitPullRequest className="h-10 w-10 text-gray-500" />
-                <Crown className="h-6 w-6 text-orange-500" />
               </div>
               <CardTitle className="text-2xl text-gray-900">
                 How to Contribute
@@ -111,28 +108,22 @@ export default function AboutPage() {
             <CardContent>
               <ul className="space-y-3 text-gray-700">
                 <li className="flex items-center space-x-2">
-                  <Crown className="h-4 w-4 text-gray-400" />
-                  <span className="font-medium">Software name and description</span>
+<span className="font-medium">Software name and description</span>
                 </li>
                 <li className="flex items-center space-x-2">
-                  <Crown className="h-4 w-4 text-gray-400" />
-                  <span className="font-medium">Company name and location in India</span>
+<span className="font-medium">Company name and location in India</span>
                 </li>
                 <li className="flex items-center space-x-2">
-                  <Crown className="h-4 w-4 text-gray-400" />
-                  <span className="font-medium">Website URL (must be working)</span>
+<span className="font-medium">Website URL (must be working)</span>
                 </li>
                 <li className="flex items-center space-x-2">
-                  <Crown className="h-4 w-4 text-gray-400" />
-                  <span className="font-medium">Category (Business, Finance, etc.)</span>
+<span className="font-medium">Category (Business, Finance, etc.)</span>
                 </li>
                 <li className="flex items-center space-x-2">
-                  <Crown className="h-4 w-4 text-gray-400" />
-                  <span className="font-medium">International alternatives it replaces</span>
+<span className="font-medium">International alternatives it replaces</span>
                 </li>
                 <li className="flex items-center space-x-2">
-                  <Crown className="h-4 w-4 text-gray-400" />
-                  <span className="font-medium">Pricing model (Free/Freemium/Paid)</span>
+<span className="font-medium">Pricing model (Free/Freemium/Paid)</span>
                 </li>
               </ul>
             </CardContent>

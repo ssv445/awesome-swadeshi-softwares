@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
-import { Flag, ExternalLink, Crown, Flower2, ArrowRight, Check, Shield, Users, Star, Target, MessageSquare, CheckCircle, Video, Palette, Zap, Mail, Link as LinkIcon, Cloud, Globe } from "lucide-react"
+import { Flag, ExternalLink, ArrowRight, Check, Shield, Users, Star, Target, MessageSquare, CheckCircle, Video, Palette, Zap, Mail, Link as LinkIcon, Cloud, Globe, Crown } from "lucide-react"
 import { AshokaChakra } from "@/components/ashoka-chakra"
 import Link from "next/link"
 import { notFound } from "next/navigation"
@@ -9,14 +9,14 @@ import { getAlternativeBySlug, getAllAlternativeSlugs } from "@/lib/alternatives
 
 // Icon mapping
 const iconMap = {
-  Crown, Flower2, Shield, Users, Star, Target, MessageSquare, CheckCircle,
+  Crown, Shield, Users, Star, Target, MessageSquare, CheckCircle,
   Video, Palette, Zap, Mail, LinkIcon, Flag, Cloud, Globe, AshokaChakra
 }
 
 interface AlternativePageProps {
-  params: {
+  params: Promise<{
     slug: string
-  }
+  }>
 }
 
 export async function generateStaticParams() {
@@ -27,7 +27,8 @@ export async function generateStaticParams() {
 }
 
 export async function generateMetadata({ params }: AlternativePageProps) {
-  const fullSlug = `${params.slug}-alternative`
+  const { slug } = await params
+  const fullSlug = `${slug}-alternative`
   const alternative = getAlternativeBySlug(fullSlug)
 
   if (!alternative) {
@@ -43,8 +44,9 @@ export async function generateMetadata({ params }: AlternativePageProps) {
   }
 }
 
-export default function AlternativePage({ params }: AlternativePageProps) {
-  const fullSlug = `${params.slug}-alternative`
+export default async function AlternativePage({ params }: AlternativePageProps) {
+  const { slug } = await params
+  const fullSlug = `${slug}-alternative`
   const alternative = getAlternativeBySlug(fullSlug)
 
   if (!alternative) {
@@ -61,9 +63,8 @@ export default function AlternativePage({ params }: AlternativePageProps) {
         <div className="container mx-auto px-4 py-4">
           <div className="flex items-center justify-between">
             <Link href="/" className="flex items-center space-x-3">
-              <div className="relative">
+              <div>
                 <AshokaChakra className="h-10 w-10 text-blue-600" />
-                <Crown className="h-4 w-4 text-orange-500 absolute -top-1 -right-1" />
               </div>
               <div>
                 <h1 className="text-2xl font-bold text-gray-900">
@@ -86,9 +87,6 @@ export default function AlternativePage({ params }: AlternativePageProps) {
             <div className="relative">
               <IconComponent className="h-20 w-20 text-green-600" />
               <div className="absolute -top-2 -left-2 w-24 h-24 border border-green-300 rounded-full opacity-40"></div>
-              <div className="absolute -bottom-1 -right-1">
-                <Flower2 className="h-6 w-6 text-orange-500" />
-              </div>
             </div>
           </div>
           <h1 className="text-5xl font-bold text-gray-900 mb-6">
@@ -251,23 +249,19 @@ export default function AlternativePage({ params }: AlternativePageProps) {
       <footer className="bg-gray-800 py-12 px-4 relative">
         <div className="container mx-auto text-center relative z-10">
           <div className="flex items-center justify-center space-x-3 mb-6">
-            <div className="relative">
+            <div>
               <AshokaChakra className="h-8 w-8 text-blue-400" />
-              <Flower2 className="h-4 w-4 text-orange-400 absolute -top-1 -right-1" />
             </div>
             <span className="text-2xl font-bold text-white">
               Awesome Swadeshi
             </span>
-            <Crown className="h-6 w-6 text-green-400" />
           </div>
           <p className="text-gray-200 text-lg mb-6 max-w-2xl mx-auto leading-relaxed">
             Promoting Indian software innovation and helping users discover quality alternatives.
             Supporting <em>Swadeshi</em> movement and <em>Atmanirbhar Bharat</em> through technology.
           </p>
-          <div className="flex items-center justify-center space-x-2">
-            <Flower2 className="h-5 w-5 text-orange-400" />
+          <div className="flex items-center justify-center">
             <p className="text-gray-300 text-sm">&copy; 2024 Made with ❤️ in India</p>
-            <Crown className="h-4 w-4 text-green-400" />
           </div>
         </div>
       </footer>
