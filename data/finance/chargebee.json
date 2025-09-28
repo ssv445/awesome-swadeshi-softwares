@@ -1,0 +1,10 @@
+{
+  "name": "Chargebee",
+  "description": "Subscription billing and revenue management platform for SaaS businesses",
+  "website": "https://www.chargebee.com/",
+  "category": "Finance",
+  "alternatives": ["Stripe Billing", "Recurly", "Zuora"],
+  "pricing": "Paid",
+  "company": "Chargebee Inc",
+  "location": "Chennai"
+}

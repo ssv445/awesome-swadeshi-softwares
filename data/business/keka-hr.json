@@ -1,0 +1,10 @@
+{
+  "name": "Keka HR",
+  "description": "Cloud-based HR management system with payroll, attendance, and employee engagement",
+  "website": "https://www.keka.com/",
+  "category": "Business",
+  "alternatives": ["BambooHR", "Workday", "ADP"],
+  "pricing": "Paid",
+  "company": "Keka Technologies",
+  "location": "Hyderabad"
+}

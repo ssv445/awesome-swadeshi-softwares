@@ -1,0 +1,10 @@
+{
+  "name": "UrbanPiper",
+  "description": "Restaurant technology platform for online ordering and delivery management",
+  "website": "https://www.urbanpiper.com/",
+  "category": "Business",
+  "alternatives": ["Toast", "Resy", "OpenTable"],
+  "pricing": "Paid",
+  "company": "UrbanPiper",
+  "location": "Bangalore"
+}

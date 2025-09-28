@@ -1,0 +1,10 @@
+{
+  "name": "GreytHR",
+  "description": "Human resource management system with payroll, attendance, and employee self-service",
+  "website": "https://www.greythr.com/",
+  "category": "Business",
+  "alternatives": ["BambooHR", "Workday", "Zoho People"],
+  "pricing": "Paid",
+  "company": "Greytip Software",
+  "location": "Bangalore"
+}

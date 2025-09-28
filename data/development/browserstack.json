@@ -1,0 +1,10 @@
+{
+  "name": "BrowserStack",
+  "description": "Cross-browser testing platform for web and mobile applications",
+  "website": "https://www.browserstack.com/",
+  "category": "Development",
+  "alternatives": ["Sauce Labs", "CrossBrowserTesting", "LambdaTest"],
+  "pricing": "Paid",
+  "company": "BrowserStack Inc",
+  "location": "Mumbai"
+}

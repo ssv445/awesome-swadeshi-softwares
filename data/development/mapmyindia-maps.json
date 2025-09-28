@@ -1,0 +1,10 @@
+{
+  "name": "Mappls (MapmyIndia)",
+  "description": "India-focused mapping and location intelligence platform with APIs",
+  "website": "https://www.mapmyindia.com/",
+  "category": "Development",
+  "alternatives": ["Google Maps API", "Mapbox", "HERE Maps"],
+  "pricing": "Freemium",
+  "company": "MapmyIndia",
+  "location": "New Delhi"
+}

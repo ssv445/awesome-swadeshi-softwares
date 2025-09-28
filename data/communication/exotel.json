@@ -1,0 +1,10 @@
+{
+  "name": "Exotel",
+  "description": "Cloud telephony platform with voice, SMS, and video calling APIs",
+  "website": "https://exotel.com/",
+  "category": "Communication",
+  "alternatives": ["Twilio", "Plivo", "Vonage"],
+  "pricing": "Paid",
+  "company": "Exotel Techcom",
+  "location": "Bangalore"
+}

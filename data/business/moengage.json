@@ -1,0 +1,10 @@
+{
+  "name": "MoEngage",
+  "description": "Customer engagement platform with omnichannel messaging and analytics",
+  "website": "https://www.moengage.com/",
+  "category": "Business",
+  "alternatives": ["Braze", "Airship", "OneSignal"],
+  "pricing": "Paid",
+  "company": "MoEngage Inc",
+  "location": "Bangalore"
+}

@@ -1,0 +1,10 @@
+{
+  "name": "LeadSquared",
+  "description": "Sales CRM and marketing automation platform for lead management",
+  "website": "https://www.leadsquared.com/",
+  "category": "Business",
+  "alternatives": ["HubSpot", "Salesforce", "Marketo"],
+  "pricing": "Paid",
+  "company": "LeadSquared",
+  "location": "Bangalore"
+}
