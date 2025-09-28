@@ -14,7 +14,8 @@ This is a **simplified** "Indian Software Directory" - a static Next.js applicat
 - **UI Components**: shadcn/ui (New York style) + Radix UI primitives
 - **Icons**: Lucide React
 - **Fonts**: Geist Sans & Geist Mono
-- **Package Manager**: pnpm (evidenced by pnpm-lock.yaml)
+- **Package Manager**: pnpm
+- **Data Storage**: Static JSON files in `/data/` directory
 
 ## Development Commands
 
@@ -34,10 +35,14 @@ pnpm lint
 
 ## Simplified Architecture
 
-### Pages (2 main pages + dynamic routing)
+### Pages & Routing
 - `/app/page.tsx` - Homepage with all software listed, search, and category filtering
 - `/app/about/page.tsx` - Contribution guidelines and instructions
 - `/app/[category]/page.tsx` - Dynamic category pages (e.g., `/business`, `/finance`)
+- `/app/alternatives/page.tsx` - General alternatives listing page
+- `/app/alternatives/[slug]/page.tsx` - Individual alternative pages
+- `/app/why-swadeshi/page.tsx` - About the Swadeshi movement
+- `/app/client-page.tsx` - Client-side homepage component
 
 ### Data Structure (Nested JSON Files)
 ```
@@ -79,10 +84,18 @@ No forms, no database, no admin interface - just simple file creation.
 ## Component Architecture
 
 - `/components/ui/` - shadcn/ui components (Button, Card, Badge, Input, etc.)
-- `/lib/data.ts` - Server-side functions to read JSON files
-- Path alias `@/*` maps to project root
+- `/lib/data.ts` - Client-side utilities and type definitions
+- `/lib/server-data.ts` - Server-side functions to read JSON files at build time
+- Path alias `@/*` maps to project root (configured in components.json)
 - Server components for data loading, client components for interactivity
 - Dynamic category pages with static generation
+
+### Key Functions
+- `getAllSoftware()` - Scans all category folders and returns combined array
+- `getSoftwareByCategory(slug)` - Returns software for specific category
+- `getCategories()` - Returns list of available category folders
+- `getCategoryDisplayName(slug)` - Converts slug to display name
+- `getAlternativeUrl(tool)` - Generates URL for alternative pages
 
 ## Key Features
 
@@ -100,13 +113,23 @@ No forms, no database, no admin interface - just simple file creation.
 - `/business` - Business software only
 - `/finance` - Finance software only
 - `/education` - Education software only
-- etc. (automatically generated for all category folders)
+- `/alternatives` - General alternatives page
+- `/alternatives/[slug]` - Individual alternative pages (e.g., `/alternatives/salesforce`)
+- `/why-swadeshi` - About the Swadeshi movement
+- etc. (category pages automatically generated for all folders in `/data/`)
 
 ## Important Configuration
 
-### Next.js Config
+### Next.js Config (next.config.mjs)
 - ESLint and TypeScript build errors are ignored in production (`ignoreDuringBuilds: true`)
 - Images are unoptimized (`unoptimized: true`)
+
+### shadcn/ui Config (components.json)
+- Style: "new-york"
+- Base color: "neutral"
+- CSS variables enabled
+- Icon library: Lucide React
+- Path aliases configured for `@/components`, `@/lib`, `@/hooks`, etc.
 
 ### Design Principles
 - **Simplicity**: Maximum functionality with minimum complexity
@@ -138,10 +161,53 @@ Contributors should:
 6. Place in correct category folder
 7. List genuine international alternatives
 
-## Data Loading
+## Data Loading & Structure
 
-- Server-side functions in `/lib/data.ts` read all JSON files at build time
-- `getAllSoftware()` - Scans all category folders and returns combined array
-- `getSoftwareByCategory(slug)` - Returns software for specific category
-- `getCategories()` - Returns list of available category folders
-- All data is statically generated, no runtime database queries
+### Current Categories (auto-discovered from `/data/` folders)
+Based on the file structure, these categories are available:
+- `business` - CRM, HR, Analytics tools (Zoho, Freshworks, WebEngage, etc.)
+- `finance` - Payment gateways, billing (Razorpay, Paytm, Chargebee)
+- `communication` - Messaging, video conferencing (Jio Meet, Exotel, Haptik)
+- `productivity` - Office tools, cloud storage (Zoho Workplace, Digiboxx)
+- `development` - Developer tools, cloud platforms (Postman, BrowserStack, MapMyIndia)
+- `e-commerce` - E-commerce platforms and logistics (Flipkart, Dukaan, Shiprocket)
+- `education` - Learning platforms (BYJU'S, Unacademy)
+- `entertainment` - Streaming, music (Hotstar, JioSaavn, Gaana)
+- `social-networking` - Social platforms (ShareChat, Elyments)
+- `creative` - Design and creative tools (Creately, Simplified)
+- `utilities` - Browsers, utilities (Epic Browser, JioSphere)
+
+### Data Loading Functions (in `/lib/server-data.ts`)
+- All functions are server-side only (use Node.js fs module)
+- Data is read at build time for static generation
+- Graceful error handling for missing files/directories
+
+## Development Workflow
+
+### Adding New Software Entries
+1. Create a new JSON file in the appropriate `/data/[category]/` folder
+2. Follow the exact Software interface format from `/lib/data.ts`
+3. Use kebab-case for filename (e.g., `my-awesome-tool.json`)
+4. Run `pnpm dev` to test locally
+5. Build and verify with `pnpm build`
+
+### TypeScript Interface
+```typescript
+interface Software {
+  name: string
+  description: string
+  website: string
+  category: string
+  alternatives: string[]
+  pricing: string
+  company: string
+  location: string
+}
+```
+
+### Testing Changes
+- Run `pnpm dev` for development server
+- Test category pages at `/[category-name]`
+- Test search functionality on homepage
+- Verify alternative pages work at `/alternatives/[tool-name]`
+- Run `pnpm build` to ensure static generation works
