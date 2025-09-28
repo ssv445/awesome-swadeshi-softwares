@@ -23,7 +23,7 @@ export default function AboutPage() {
                 <Crown className="h-4 w-4 text-orange-500 absolute -top-1 -right-1" />
               </div>
               <div>
-                <h1 className="text-2xl font-bold bg-gradient-to-r from-green-600 via-orange-600 to-green-700 bg-clip-text text-transparent">
+                <h1 className="text-2xl font-bold text-gray-900">
                   Awesome Swadeshi
                 </h1>
                 <p className="text-sm text-gray-600 font-medium">Indian Software Directory • Atmanirbhar Bharat</p>
@@ -56,7 +56,7 @@ export default function AboutPage() {
             </div>
           </div>
           <h1 className="text-5xl font-bold text-gray-900 mb-6">
-            Add Your <span className="bg-gradient-to-r from-green-600 via-orange-600 to-green-700 bg-clip-text text-transparent">Awesome</span> Swadeshi Software
+            Add Your <span className="text-gray-900">Awesome</span> Swadeshi Software
           </h1>
           <p className="text-xl text-gray-700 max-w-2xl mx-auto leading-relaxed">
             Help grow our directory by contributing Indian software alternatives.
@@ -71,7 +71,7 @@ export default function AboutPage() {
                 <GitPullRequest className="h-10 w-10 text-gray-500" />
                 <Crown className="h-6 w-6 text-orange-500" />
               </div>
-              <CardTitle className="text-2xl bg-gradient-to-r from-green-700 to-orange-700 bg-clip-text text-transparent">
+              <CardTitle className="text-2xl text-gray-900">
                 How to Contribute
               </CardTitle>
             </CardHeader>
@@ -103,7 +103,7 @@ export default function AboutPage() {
                 <FileText className="h-10 w-10 text-gray-500" />
                 <Flower2 className="h-6 w-6 text-orange-500" />
               </div>
-              <CardTitle className="text-2xl bg-gradient-to-r from-green-700 to-orange-700 bg-clip-text text-transparent">
+              <CardTitle className="text-2xl text-gray-900">
                 Required Information
               </CardTitle>
             </CardHeader>

@@ -23,7 +23,7 @@ export default function WhySwadeshiPage() {
                 <Crown className="h-4 w-4 text-orange-500 absolute -top-1 -right-1" />
               </div>
               <div>
-                <h1 className="text-2xl font-bold bg-gradient-to-r from-green-600 via-orange-600 to-green-700 bg-clip-text text-transparent">
+                <h1 className="text-2xl font-bold text-gray-900">
                   Awesome Swadeshi
                 </h1>
                 <p className="text-sm text-gray-600 font-medium">Indian Software Directory • Atmanirbhar Bharat</p>

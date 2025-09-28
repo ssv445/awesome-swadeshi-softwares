@@ -59,7 +59,7 @@ export default function ClientHomePage({ allSoftware, categories }: ClientHomePa
                 <Crown className="h-4 w-4 text-orange-500 absolute -top-1 -right-1" />
               </div>
               <div>
-                <h1 className="text-2xl font-bold bg-gradient-to-r from-green-600 via-orange-600 to-green-700 bg-clip-text text-transparent">
+                <h1 className="text-2xl font-bold text-gray-900">
                   Awesome Swadeshi
                 </h1>
                 <p className="text-sm text-gray-600 font-medium">Indian Software Directory • Atmanirbhar Bharat</p>
@@ -101,7 +101,7 @@ export default function ClientHomePage({ allSoftware, categories }: ClientHomePa
             </div>
           </div>
           <h1 className="text-5xl md:text-6xl font-bold text-gray-900 mb-6 leading-tight">
-            <span className="bg-gradient-to-r from-green-600 via-orange-600 to-green-700 bg-clip-text text-transparent">Awesome</span> Swadeshi Software
+            <span className="text-gray-900">Awesome</span> Swadeshi Software
           </h1>
           <p className="text-xl md:text-2xl text-gray-700 mb-4 font-medium">
             Discover Amazing Indian Software Alternatives
@@ -183,7 +183,7 @@ export default function ClientHomePage({ allSoftware, categories }: ClientHomePa
                     <div className="flex-1">
                       <div className="flex items-center space-x-2 mb-2">
                         <Crown className="h-4 w-4 text-green-600" />
-                        <CardTitle className="text-xl font-bold bg-gradient-to-r from-green-700 to-orange-700 bg-clip-text text-transparent">
+                        <CardTitle className="text-xl font-bold text-gray-900">
                           {software.name}
                         </CardTitle>
                       </div>
