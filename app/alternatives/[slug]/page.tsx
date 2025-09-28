@@ -135,7 +135,6 @@ export default function AlternativePage({ params }: AlternativePageProps) {
                       <IconComponent className="h-10 w-10 text-green-600" />
                       <div>
                         <CardTitle className="text-xl text-gray-900">{indianAlt.name}</CardTitle>
-                        <p className="text-sm text-gray-600">{indianAlt.location}</p>
                       </div>
                     </div>
                     <Badge className="bg-green-100 text-green-800 border-green-300 text-xs">{indianAlt.pricing}</Badge>

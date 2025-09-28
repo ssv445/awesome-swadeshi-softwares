@@ -207,12 +207,6 @@ export default function ClientHomePage({ allSoftware, categories }: ClientHomePa
                         </CardTitle>
                       </div>
                       <p className="text-sm text-gray-600 font-medium">{software.company}</p>
-                      <div className="flex items-center space-x-1 mt-2">
-                        <Flag className="h-3 w-3 text-green-600" />
-                        <Badge className="bg-gray-100 text-gray-600 border-gray-300 text-xs">
-                          {software.location}
-                        </Badge>
-                      </div>
                     </div>
                     <Badge variant="outline" className="border border-gray-300 text-gray-600 bg-gray-50">
                       {software.category}
