@@ -1,0 +1,10 @@
+{
+  "name": "OnlyOffice (India Operations)",
+  "description": "Office suite with document editing, collaboration, and project management",
+  "website": "https://www.onlyoffice.com/",
+  "category": "Business",
+  "alternatives": ["Microsoft Office", "Google Workspace", "LibreOffice"],
+  "pricing": "Freemium",
+  "company": "Ascensio System SIA (India Office)",
+  "location": "Mumbai"
+}

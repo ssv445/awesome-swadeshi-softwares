@@ -1,0 +1,10 @@
+{
+  "name": "E2E Cloud",
+  "description": "Indian cloud infrastructure platform with compute, storage, and AI services",
+  "website": "https://www.e2enetworks.com/",
+  "category": "Development",
+  "alternatives": ["Microsoft Azure", "AWS", "Google Cloud"],
+  "pricing": "Paid",
+  "company": "E2E Networks",
+  "location": "New Delhi"
+}

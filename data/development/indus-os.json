@@ -1,0 +1,10 @@
+{
+  "name": "IndusOS",
+  "description": "Indian mobile operating system with regional language support",
+  "website": "https://www.indusos.com/",
+  "category": "Development",
+  "alternatives": ["Android", "iOS", "HarmonyOS"],
+  "pricing": "Free",
+  "company": "IndusOS",
+  "location": "Mumbai"
+}

@@ -1,0 +1,10 @@
+{
+  "name": "Setu by Pine Labs",
+  "description": "API banking platform for digital payments and financial services",
+  "website": "https://setu.co/",
+  "category": "Finance",
+  "alternatives": ["Plaid", "Stripe Connect", "Open Banking APIs"],
+  "pricing": "Paid",
+  "company": "Pine Labs",
+  "location": "Bangalore"
+}

@@ -3,7 +3,7 @@
   "description": "Popular Android video player that evolved into a major OTT streaming platform",
   "website": "https://www.mxplayer.in/",
   "category": "Entertainment",
-  "alternatives": ["VLC Media Player", "Netflix"],
+  "alternatives": ["Netflix", "Amazon Prime Video", "Disney+ Hotstar"],
   "pricing": "Freemium",
   "company": "MX Media (Times Internet)",
   "location": "Mumbai"

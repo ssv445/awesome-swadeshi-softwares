@@ -3,7 +3,7 @@
   "description": "Business intelligence and data analytics platform with reporting",
   "website": "https://www.zoho.com/analytics/",
   "category": "Business",
-  "alternatives": ["Tableau", "Power BI", "Looker"],
+  "alternatives": ["Google Analytics", "Tableau", "Power BI"],
   "pricing": "Freemium",
   "company": "Zoho Corporation",
   "location": "Chennai"

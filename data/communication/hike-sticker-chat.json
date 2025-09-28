@@ -1,0 +1,10 @@
+{
+  "name": "Hike Sticker Chat",
+  "description": "Messaging app with stickers, themes, and privacy features",
+  "website": "https://hike.in/",
+  "category": "Communication",
+  "alternatives": ["WhatsApp", "Telegram", "Signal"],
+  "pricing": "Free",
+  "company": "Hike Private Limited",
+  "location": "New Delhi"
+}

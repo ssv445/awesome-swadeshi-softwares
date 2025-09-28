@@ -1,0 +1,10 @@
+{
+  "name": "JioCloud",
+  "description": "Cloud storage service for files, photos, and documents with cross-device sync",
+  "website": "https://www.jio.com/jiocloud",
+  "category": "Business",
+  "alternatives": ["Google Drive", "Dropbox", "OneDrive"],
+  "pricing": "Freemium",
+  "company": "Jio Platforms",
+  "location": "Mumbai"
+}

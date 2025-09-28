@@ -1,0 +1,10 @@
+{
+  "name": "Disney+ Hotstar",
+  "description": "Video streaming platform with movies, TV shows, sports, and news",
+  "website": "https://www.hotstar.com/",
+  "category": "Entertainment",
+  "alternatives": ["Netflix", "Amazon Prime Video", "Hulu"],
+  "pricing": "Freemium",
+  "company": "Star India (Disney)",
+  "location": "Mumbai"
+}
