@@ -1,39 +1,39 @@
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
-import { Flag, ExternalLink, Shield, TrendingUp, Users, Building, Star, Flower2, Heart, Target, Globe, Zap } from "lucide-react"
+import { Flag, ExternalLink, Shield, TrendingUp, Users, Building, Star, Flower2, Heart, Target, Globe, Zap, Crown } from "lucide-react"
 import Link from "next/link"
 
 export default function WhySwadeshiPage() {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-orange-50 via-red-50 to-yellow-50">
-      {/* Decorative Pattern Overlay */}
-      <div className="fixed inset-0 opacity-5 pointer-events-none">
+    <div className="min-h-screen bg-white">
+      {/* Subtle Lotus Pattern */}
+      <div className="fixed inset-0 opacity-3 pointer-events-none">
         <div className="absolute inset-0" style={{
-          backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23d97706' fill-opacity='0.4'%3E%3Cpath d='M30 30c0-11.046-8.954-20-20-20s-20 8.954-20 20 8.954 20 20 20 20-8.954 20-20zm-20-15a15 15 0 100 30 15 15 0 000-30z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`,
+          backgroundImage: `url("data:image/svg+xml,%3Csvg width='80' height='80' viewBox='0 0 80 80' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23059669' fill-opacity='0.2'%3E%3Cpath d='M40 20c-2 8-8 14-16 14s-14-6-16-14c2-8 8-14 16-14s14 6 16 14zm-16 20c8 0 14-6 16-14-2-8-8-14-16-14s-14 6-16 14c2 8 8 14 16 14z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`,
         }} />
       </div>
 
       {/* Header */}
-      <header className="border-b-2 border-amber-200 bg-white/90 backdrop-blur-sm sticky top-0 z-50 shadow-lg">
+      <header className="border-b border-green-200 bg-white/95 backdrop-blur-sm sticky top-0 z-50 shadow-sm">
         <div className="container mx-auto px-4 py-4">
           <div className="flex items-center justify-between">
             <Link href="/" className="flex items-center space-x-3">
               <div className="relative">
-                <Flag className="h-10 w-10 text-amber-600" />
-                <Flower2 className="h-4 w-4 text-red-500 absolute -top-1 -right-1" />
+                <Flag className="h-10 w-10 text-green-600" />
+                <Crown className="h-4 w-4 text-orange-500 absolute -top-1 -right-1" />
               </div>
               <div>
-                <h1 className="text-2xl font-bold bg-gradient-to-r from-amber-600 via-red-600 to-amber-700 bg-clip-text text-transparent">
+                <h1 className="text-2xl font-bold bg-gradient-to-r from-green-600 via-orange-600 to-green-700 bg-clip-text text-transparent">
                   Awesome Swadeshi
                 </h1>
-                <p className="text-sm text-amber-700 font-medium">Indian Software Directory • Atmanirbhar Bharat</p>
+                <p className="text-sm text-gray-600 font-medium">Indian Software Directory • Atmanirbhar Bharat</p>
               </div>
             </Link>
             <div className="flex space-x-4">
-              <Button asChild variant="outline" className="border-2 border-amber-400 text-amber-700 hover:bg-amber-100">
+              <Button asChild variant="outline" className="border border-gray-300 text-gray-600 hover:bg-gray-50">
                 <Link href="/about">Contribute</Link>
               </Button>
-              <Button asChild className="bg-gradient-to-r from-amber-500 to-red-500 hover:from-amber-600 hover:to-red-600 text-white border-none shadow-lg">
+              <Button asChild className="bg-green-600 hover:bg-green-700 text-white border-none">
                 <Link href="/">Back to Directory</Link>
               </Button>
             </div>
@@ -42,12 +42,12 @@ export default function WhySwadeshiPage() {
       </header>
 
       <div className="container mx-auto px-4 py-16 max-w-6xl relative z-10">
-        {/* Decorative Elements */}
-        <div className="absolute top-10 right-10 text-amber-300 opacity-20">
-          <Star className="h-16 w-16" />
+        {/* Subtle Decorative Elements */}
+        <div className="absolute top-10 right-10 text-green-200 opacity-30">
+          <Crown className="h-12 w-12" />
         </div>
-        <div className="absolute bottom-20 left-10 text-red-300 opacity-20">
-          <Flower2 className="h-20 w-20" />
+        <div className="absolute bottom-20 left-10 text-orange-200 opacity-30">
+          <Flower2 className="h-14 w-14" />
         </div>
 
         {/* Hero Section */}
@@ -62,7 +62,7 @@ export default function WhySwadeshiPage() {
             </div>
           </div>
           <h1 className="text-6xl md:text-7xl font-bold text-gray-900 mb-6 leading-tight">
-            Why Choose <span className="bg-gradient-to-r from-amber-600 via-red-600 to-amber-700 bg-clip-text text-transparent">Swadeshi</span>?
+            Why Choose <span className="text-orange-600">Swadeshi</span>?
           </h1>
           <p className="text-2xl text-amber-800 mb-6 font-medium max-w-4xl mx-auto">
             The power of choosing Indian software for a stronger, self-reliant digital future
@@ -81,7 +81,7 @@ export default function WhySwadeshiPage() {
                 <TrendingUp className="h-12 w-12 text-amber-600" />
                 <Star className="h-6 w-6 text-red-500 ml-2" />
               </div>
-              <CardTitle className="text-2xl bg-gradient-to-r from-amber-700 to-red-700 bg-clip-text text-transparent">
+              <CardTitle className="text-2xl text-gray-700">
                 Economic Growth
               </CardTitle>
             </CardHeader>
@@ -99,7 +99,7 @@ export default function WhySwadeshiPage() {
                 <Shield className="h-12 w-12 text-amber-600" />
                 <Flower2 className="h-6 w-6 text-red-500 ml-2" />
               </div>
-              <CardTitle className="text-2xl bg-gradient-to-r from-amber-700 to-red-700 bg-clip-text text-transparent">
+              <CardTitle className="text-2xl text-gray-700">
                 Data Sovereignty
               </CardTitle>
             </CardHeader>
@@ -117,7 +117,7 @@ export default function WhySwadeshiPage() {
                 <Users className="h-12 w-12 text-amber-600" />
                 <Star className="h-6 w-6 text-red-500 ml-2" />
               </div>
-              <CardTitle className="text-2xl bg-gradient-to-r from-amber-700 to-red-700 bg-clip-text text-transparent">
+              <CardTitle className="text-2xl text-gray-700">
                 Local Understanding
               </CardTitle>
             </CardHeader>
@@ -135,7 +135,7 @@ export default function WhySwadeshiPage() {
                 <Zap className="h-12 w-12 text-amber-600" />
                 <Flower2 className="h-6 w-6 text-red-500 ml-2" />
               </div>
-              <CardTitle className="text-2xl bg-gradient-to-r from-amber-700 to-red-700 bg-clip-text text-transparent">
+              <CardTitle className="text-2xl text-gray-700">
                 Innovation Hub
               </CardTitle>
             </CardHeader>
@@ -153,7 +153,7 @@ export default function WhySwadeshiPage() {
                 <Target className="h-12 w-12 text-amber-600" />
                 <Star className="h-6 w-6 text-red-500 ml-2" />
               </div>
-              <CardTitle className="text-2xl bg-gradient-to-r from-amber-700 to-red-700 bg-clip-text text-transparent">
+              <CardTitle className="text-2xl text-gray-700">
                 Cost Effectiveness
               </CardTitle>
             </CardHeader>
@@ -171,7 +171,7 @@ export default function WhySwadeshiPage() {
                 <Globe className="h-12 w-12 text-amber-600" />
                 <Flower2 className="h-6 w-6 text-red-500 ml-2" />
               </div>
-              <CardTitle className="text-2xl bg-gradient-to-r from-amber-700 to-red-700 bg-clip-text text-transparent">
+              <CardTitle className="text-2xl text-gray-700">
                 Global Impact
               </CardTitle>
             </CardHeader>
@@ -185,14 +185,14 @@ export default function WhySwadeshiPage() {
         </div>
 
         {/* Atmanirbhar Bharat Section */}
-        <div className="bg-gradient-to-r from-amber-100 via-orange-100 to-red-100 rounded-3xl p-12 mb-20 border-2 border-amber-300 shadow-2xl relative">
+        <div className="bg-orange-50 rounded-3xl p-12 mb-20 border border-orange-300 relative">
           <div className="absolute top-6 right-6 text-amber-300 opacity-30">
             <Star className="h-16 w-16" />
           </div>
           <div className="text-center mb-8">
             <Flag className="h-16 w-16 text-amber-600 mx-auto mb-4" />
             <h2 className="text-4xl font-bold text-gray-900 mb-4">
-              Supporting <span className="bg-gradient-to-r from-amber-600 via-red-600 to-amber-700 bg-clip-text text-transparent">Atmanirbhar Bharat</span>
+              Supporting <span className="text-orange-600">Atmanirbhar Bharat</span>
             </h2>
             <p className="text-xl text-amber-800 max-w-3xl mx-auto">
               The vision of a self-reliant India starts with technology independence
@@ -255,7 +255,7 @@ export default function WhySwadeshiPage() {
         {/* Success Stories */}
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold text-gray-900 mb-6">
-            <span className="bg-gradient-to-r from-amber-600 via-red-600 to-amber-700 bg-clip-text text-transparent">Success</span> Stories
+            <span className="text-orange-600">Success</span> Stories
           </h2>
           <p className="text-xl text-amber-800 max-w-3xl mx-auto">
             Indian software companies that started local and conquered global markets
@@ -317,14 +317,14 @@ export default function WhySwadeshiPage() {
             <Star className="h-10 w-10 text-amber-500 ml-3" />
           </div>
           <h2 className="text-4xl font-bold text-gray-900 mb-6">
-            Join the <span className="bg-gradient-to-r from-amber-600 via-red-600 to-amber-700 bg-clip-text text-transparent">Swadeshi</span> Movement
+            Join the <span className="text-orange-600">Swadeshi</span> Movement
           </h2>
           <p className="text-xl text-amber-800 mb-8 max-w-3xl mx-auto">
             Every choice matters. Every adoption counts. Together, we can build a stronger,
             more innovative, and truly self-reliant digital India.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button asChild size="lg" className="bg-gradient-to-r from-amber-500 to-red-500 hover:from-amber-600 hover:to-red-600 text-white border-none shadow-lg">
+            <Button asChild size="lg" className="bg-green-600 hover:bg-green-700 text-white border-none">
               <Link href="/">
                 <Flag className="mr-2 h-5 w-5" />
                 Explore Swadeshi Software
@@ -342,7 +342,7 @@ export default function WhySwadeshiPage() {
       </div>
 
       {/* Footer */}
-      <footer className="bg-gradient-to-r from-amber-900 via-red-900 to-amber-900 py-12 px-4 relative">
+      <footer className="bg-gray-800 py-12 px-4 relative">
         <div className="absolute inset-0 opacity-10">
           <div className="absolute inset-0" style={{
             backgroundImage: `url("data:image/svg+xml,%3Csvg width='80' height='80' viewBox='0 0 80 80' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23fbbf24' fill-opacity='0.1'%3E%3Cpath d='M40 40c0-11-9-20-20-20s-20 9-20 20 9 20 20 20 20-9 20-20zm-20-12a12 12 0 100 24 12 12 0 000-24z'/%3E%3C/g%3E%3C/svg%3E")`,
@@ -355,7 +355,7 @@ export default function WhySwadeshiPage() {
               <Flag className="h-8 w-8 text-amber-400" />
               <Flower2 className="h-4 w-4 text-red-400 absolute -top-1 -right-1" />
             </div>
-            <span className="text-2xl font-bold bg-gradient-to-r from-amber-300 to-red-300 bg-clip-text text-transparent">
+            <span className="text-2xl font-bold text-white">
               Awesome Swadeshi
             </span>
             <Star className="h-6 w-6 text-amber-400" />
