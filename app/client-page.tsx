@@ -60,14 +60,19 @@ export default function ClientHomePage({ allSoftware, categories }: ClientHomePa
               </div>
               <div>
                 <h1 className="text-2xl font-bold bg-gradient-to-r from-amber-600 via-red-600 to-amber-700 bg-clip-text text-transparent">
-                  Indian Software Directory
+                  Awesome Swadeshi
                 </h1>
-                <p className="text-sm text-amber-700 font-medium">Made in India • Atmanirbhar Bharat</p>
+                <p className="text-sm text-amber-700 font-medium">Indian Software Directory • Atmanirbhar Bharat</p>
               </div>
             </div>
-            <Button asChild className="bg-gradient-to-r from-amber-500 to-red-500 hover:from-amber-600 hover:to-red-600 text-white border-none shadow-lg">
-              <Link href="/about">Add Software</Link>
-            </Button>
+            <div className="flex items-center space-x-4">
+              <Button asChild variant="outline" className="border-2 border-amber-400 text-amber-700 hover:bg-amber-100 bg-white/80 backdrop-blur-sm">
+                <Link href="/why-swadeshi">Why Swadeshi?</Link>
+              </Button>
+              <Button asChild className="bg-gradient-to-r from-amber-500 to-red-500 hover:from-amber-600 hover:to-red-600 text-white border-none shadow-lg">
+                <Link href="/about">Add Software</Link>
+              </Button>
+            </div>
           </div>
         </div>
       </header>
@@ -96,14 +101,14 @@ export default function ClientHomePage({ allSoftware, categories }: ClientHomePa
             </div>
           </div>
           <h1 className="text-5xl md:text-6xl font-bold text-gray-900 mb-6 leading-tight">
-            Discover <span className="bg-gradient-to-r from-amber-600 via-red-600 to-amber-700 bg-clip-text text-transparent">Swadeshi</span> Software
+            <span className="bg-gradient-to-r from-amber-600 via-red-600 to-amber-700 bg-clip-text text-transparent">Awesome</span> Swadeshi Software
           </h1>
           <p className="text-xl md:text-2xl text-amber-800 mb-4 font-medium">
-            A Curated Collection of Indian Software Alternatives
+            Discover Amazing Indian Software Alternatives
           </p>
           <p className="text-lg text-amber-700 mb-12 max-w-3xl mx-auto">
-            Support <em>Atmanirbhar Bharat</em> by choosing Indian software alternatives to international tools.
-            Discover quality, reliable solutions built by Indian innovators.
+            Join the <em>Swadeshi</em> movement by choosing Indian software alternatives to international tools.
+            Discover awesome, quality solutions built by Indian innovators for the world.
           </p>
 
           {/* Search and Filter */}
@@ -256,13 +261,13 @@ export default function ClientHomePage({ allSoftware, categories }: ClientHomePa
               <Flower2 className="h-4 w-4 text-red-400 absolute -top-1 -right-1" />
             </div>
             <span className="text-2xl font-bold bg-gradient-to-r from-amber-300 to-red-300 bg-clip-text text-transparent">
-              Indian Software Directory
+              Awesome Swadeshi
             </span>
             <Star className="h-6 w-6 text-amber-400" />
           </div>
           <p className="text-amber-200 text-lg mb-6 max-w-2xl mx-auto leading-relaxed">
-            Promoting Indian software innovation and helping users discover quality alternatives.
-            Supporting <em>Atmanirbhar Bharat</em> through technology.
+            Promoting awesome Indian software innovation and helping users discover quality alternatives.
+            Supporting <em>Swadeshi</em> movement and <em>Atmanirbhar Bharat</em> through technology.
           </p>
           <div className="flex items-center justify-center space-x-2">
             <Flower2 className="h-5 w-5 text-red-400" />

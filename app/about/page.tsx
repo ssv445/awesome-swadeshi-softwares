@@ -24,9 +24,9 @@ export default function AboutPage() {
               </div>
               <div>
                 <h1 className="text-2xl font-bold bg-gradient-to-r from-amber-600 via-red-600 to-amber-700 bg-clip-text text-transparent">
-                  Indian Software Directory
+                  Awesome Swadeshi
                 </h1>
-                <p className="text-sm text-amber-700 font-medium">Made in India • Atmanirbhar Bharat</p>
+                <p className="text-sm text-amber-700 font-medium">Indian Software Directory • Atmanirbhar Bharat</p>
               </div>
             </Link>
             <Button asChild className="bg-gradient-to-r from-amber-500 to-red-500 hover:from-amber-600 hover:to-red-600 text-white border-none shadow-lg">
@@ -56,11 +56,11 @@ export default function AboutPage() {
             </div>
           </div>
           <h1 className="text-5xl font-bold text-gray-900 mb-6">
-            Add Your <span className="bg-gradient-to-r from-amber-600 via-red-600 to-amber-700 bg-clip-text text-transparent">Swadeshi</span> Software
+            Add Your <span className="bg-gradient-to-r from-amber-600 via-red-600 to-amber-700 bg-clip-text text-transparent">Awesome</span> Swadeshi Software
           </h1>
           <p className="text-xl text-amber-800 max-w-2xl mx-auto leading-relaxed">
-            Help grow our directory by contributing Indian software alternatives.
-            Support <em>Atmanirbhar Bharat</em> through community collaboration.
+            Help grow our awesome directory by contributing Indian software alternatives.
+            Support the <em>Swadeshi</em> movement and <em>Atmanirbhar Bharat</em> through community collaboration.
           </p>
         </div>
 
