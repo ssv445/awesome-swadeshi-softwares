@@ -1,0 +1,10 @@
+{
+  "name": "Postman",
+  "description": "API development platform for building, testing, and managing APIs",
+  "website": "https://www.postman.com/",
+  "category": "Development",
+  "alternatives": ["Insomnia", "REST Client", "Paw"],
+  "pricing": "Freemium",
+  "company": "Postman Inc",
+  "location": "Bangalore"
+}

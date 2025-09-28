@@ -1,0 +1,10 @@
+{
+  "name": "CleverTap",
+  "description": "Customer engagement and retention platform with analytics and personalization",
+  "website": "https://clevertap.com/",
+  "category": "Business",
+  "alternatives": ["Mixpanel", "Amplitude", "Braze"],
+  "pricing": "Freemium",
+  "company": "CleverTap",
+  "location": "Mumbai"
+}

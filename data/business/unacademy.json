@@ -1,0 +1,10 @@
+{
+  "name": "Unacademy",
+  "description": "Online learning platform for competitive exam preparation and skill development",
+  "website": "https://unacademy.com/",
+  "category": "Education",
+  "alternatives": ["Coursera", "Udemy", "Khan Academy"],
+  "pricing": "Freemium",
+  "company": "Unacademy Group",
+  "location": "Bangalore"
+}

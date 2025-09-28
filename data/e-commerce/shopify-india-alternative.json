@@ -1,0 +1,10 @@
+{
+  "name": "Shiprocket",
+  "description": "E-commerce shipping and logistics platform for online sellers",
+  "website": "https://www.shiprocket.in/",
+  "category": "E-commerce",
+  "alternatives": ["ShipStation", "Easyship", "Shippo"],
+  "pricing": "Freemium",
+  "company": "Shiprocket",
+  "location": "Gurgaon"
+}
