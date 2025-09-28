@@ -16,3 +16,8 @@ export function getCategoryDisplayName(slug: string): string {
     .map(word => word.charAt(0).toUpperCase() + word.slice(1))
     .join(' ')
 }
+
+// Generate alternative page URL from international tool name
+export function getAlternativeUrl(internationalTool: string): string {
+  return `/alternatives/${internationalTool.toLowerCase().replace(/\s+/g, '-')}`
+}

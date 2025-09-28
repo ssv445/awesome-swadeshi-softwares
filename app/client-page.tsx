@@ -7,7 +7,7 @@ import { Badge } from "@/components/ui/badge"
 import { Input } from "@/components/ui/input"
 import { Search, Flag, ExternalLink, Star, Flower2, Crown, Zap } from "lucide-react"
 import Link from "next/link"
-import { getCategoryDisplayName } from "@/lib/data"
+import { getCategoryDisplayName, getAlternativeUrl } from "@/lib/data"
 import type { Software } from "@/lib/data"
 
 interface ClientHomePageProps {
@@ -18,6 +18,8 @@ interface ClientHomePageProps {
 export default function ClientHomePage({ allSoftware, categories }: ClientHomePageProps) {
   const [searchTerm, setSearchTerm] = useState("")
   const [selectedCategory, setSelectedCategory] = useState("")
+  const [currentPage, setCurrentPage] = useState(1)
+  const itemsPerPage = 12
 
   const categoryDisplayNames = useMemo(() => {
     return categories.map(cat => ({
@@ -39,6 +41,23 @@ export default function ClientHomePage({ allSoftware, categories }: ClientHomePa
       return matchesSearch && matchesCategory
     })
   }, [searchTerm, selectedCategory, allSoftware])
+
+  const totalPages = Math.ceil(filteredSoftware.length / itemsPerPage)
+  const paginatedSoftware = useMemo(() => {
+    const startIndex = (currentPage - 1) * itemsPerPage
+    return filteredSoftware.slice(startIndex, startIndex + itemsPerPage)
+  }, [filteredSoftware, currentPage, itemsPerPage])
+
+  // Reset pagination when filters change
+  const handleFilterChange = (newCategory: string) => {
+    setSelectedCategory(newCategory)
+    setCurrentPage(1)
+  }
+
+  const handleSearchChange = (newSearch: string) => {
+    setSearchTerm(newSearch)
+    setCurrentPage(1)
+  }
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-orange-50 via-white to-green-50">
@@ -119,7 +138,7 @@ export default function ClientHomePage({ allSoftware, categories }: ClientHomePa
                 type="text"
                 placeholder="Search for Indian software alternatives..."
                 value={searchTerm}
-                onChange={(e) => setSearchTerm(e.target.value)}
+                onChange={(e) => handleSearchChange(e.target.value)}
                 className="pl-14 pr-4 py-4 text-lg border border-gray-300 rounded-xl bg-white focus:border-gray-400 focus:ring-gray-400"
               />
             </div>
@@ -127,7 +146,7 @@ export default function ClientHomePage({ allSoftware, categories }: ClientHomePa
             <div className="flex flex-wrap gap-3 justify-center">
               <Button
                 variant={selectedCategory === "" ? "default" : "outline"}
-                onClick={() => setSelectedCategory("")}
+                onClick={() => handleFilterChange("")}
                 size="sm"
                 className={selectedCategory === "" ?
                   "bg-green-600 hover:bg-green-700 text-white border-none" :
@@ -140,7 +159,7 @@ export default function ClientHomePage({ allSoftware, categories }: ClientHomePa
                 <Button
                   key={category.slug}
                   variant={selectedCategory === category.slug ? "default" : "outline"}
-                  onClick={() => setSelectedCategory(category.slug)}
+                  onClick={() => handleFilterChange(category.slug)}
                   size="sm"
                   className={selectedCategory === category.slug ?
                     "bg-green-600 hover:bg-green-700 text-white border-none" :
@@ -176,7 +195,7 @@ export default function ClientHomePage({ allSoftware, categories }: ClientHomePa
 
         <div className="container mx-auto relative z-10">
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {filteredSoftware.map((software, index) => (
+            {paginatedSoftware.map((software, index) => (
               <Card key={index} className="group hover:shadow-lg transition-all duration-300 border border-green-200 hover:border-green-400 bg-white hover:scale-[1.02]">
                 <CardHeader className="pb-3">
                   <div className="flex items-start justify-between">
@@ -210,9 +229,11 @@ export default function ClientHomePage({ allSoftware, categories }: ClientHomePa
                     </div>
                     <div className="flex flex-wrap gap-2">
                       {software.alternatives.map((alt, altIndex) => (
-                        <Badge key={altIndex} variant="outline" className="text-xs border-gray-300 text-gray-600 bg-gray-50 hover:bg-gray-100">
-                          {alt}
-                        </Badge>
+                        <Link key={altIndex} href={getAlternativeUrl(alt)}>
+                          <Badge variant="outline" className="text-xs border-gray-300 text-gray-600 bg-gray-50 hover:bg-green-50 hover:border-green-400 hover:text-green-700 cursor-pointer transition-colors">
+                            {alt}
+                          </Badge>
+                        </Link>
                       ))}
                     </div>
                   </div>
@@ -232,6 +253,46 @@ export default function ClientHomePage({ allSoftware, categories }: ClientHomePa
               </Card>
             ))}
           </div>
+
+          {/* Pagination Controls */}
+          {totalPages > 1 && (
+            <div className="flex justify-center items-center space-x-4 mt-12">
+              <Button
+                variant="outline"
+                onClick={() => setCurrentPage(Math.max(1, currentPage - 1))}
+                disabled={currentPage === 1}
+                className="border border-gray-300 text-gray-600 hover:bg-gray-50 disabled:opacity-50"
+              >
+                Previous
+              </Button>
+
+              <div className="flex items-center space-x-2">
+                {Array.from({ length: totalPages }, (_, i) => i + 1).map((page) => (
+                  <Button
+                    key={page}
+                    variant={currentPage === page ? "default" : "outline"}
+                    onClick={() => setCurrentPage(page)}
+                    size="sm"
+                    className={currentPage === page
+                      ? "bg-green-600 hover:bg-green-700 text-white border-none"
+                      : "border border-gray-300 text-gray-600 hover:bg-gray-50 w-10 h-10"
+                    }
+                  >
+                    {page}
+                  </Button>
+                ))}
+              </div>
+
+              <Button
+                variant="outline"
+                onClick={() => setCurrentPage(Math.min(totalPages, currentPage + 1))}
+                disabled={currentPage === totalPages}
+                className="border border-gray-300 text-gray-600 hover:bg-gray-50 disabled:opacity-50"
+              >
+                Next
+              </Button>
+            </div>
+          )}
 
           {filteredSoftware.length === 0 && (
             <div className="text-center py-16">
