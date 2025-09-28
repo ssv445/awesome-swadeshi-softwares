@@ -1,0 +1,10 @@
+{
+  "name": "Flipkart",
+  "description": "E-commerce platform and marketplace for online shopping",
+  "website": "https://flipkart.com",
+  "category": "E-commerce",
+  "alternatives": ["Amazon", "eBay", "Walmart"],
+  "pricing": "Free",
+  "company": "Flipkart Private Limited",
+  "location": "Bangalore"
+}

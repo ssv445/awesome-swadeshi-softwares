@@ -1,0 +1,10 @@
+{
+  "name": "BYJU'S",
+  "description": "Personalized learning app for students with interactive video lessons",
+  "website": "https://byjus.com",
+  "category": "Education",
+  "alternatives": ["Khan Academy", "Coursera", "Udemy"],
+  "pricing": "Freemium",
+  "company": "Think & Learn Pvt Ltd",
+  "location": "Bangalore"
+}

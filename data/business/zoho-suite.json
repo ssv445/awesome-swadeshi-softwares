@@ -1,0 +1,10 @@
+{
+  "name": "Zoho Suite",
+  "description": "Complete business suite including CRM, email, office tools, and more",
+  "website": "https://zoho.com",
+  "category": "Business",
+  "alternatives": ["Google Workspace", "Microsoft 365", "Salesforce"],
+  "pricing": "Freemium",
+  "company": "Zoho Corporation",
+  "location": "Chennai"
+}

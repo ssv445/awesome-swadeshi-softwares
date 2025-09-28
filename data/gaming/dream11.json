@@ -1,0 +1,10 @@
+{
+  "name": "Dream11",
+  "description": "Fantasy sports platform for cricket, football, and other sports",
+  "website": "https://dream11.com",
+  "category": "Gaming",
+  "alternatives": ["FanDuel", "DraftKings", "Yahoo Fantasy"],
+  "pricing": "Free",
+  "company": "Dream Sports",
+  "location": "Mumbai"
+}

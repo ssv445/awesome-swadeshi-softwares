@@ -1,0 +1,10 @@
+{
+  "name": "Razorpay",
+  "description": "Complete payment solution for businesses in India with UPI and local payment support",
+  "website": "https://razorpay.com",
+  "category": "Finance",
+  "alternatives": ["Stripe", "PayPal", "Square"],
+  "pricing": "Paid",
+  "company": "Razorpay Software Pvt Ltd",
+  "location": "Bangalore"
+}

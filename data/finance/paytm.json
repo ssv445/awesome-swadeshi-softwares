@@ -1,0 +1,10 @@
+{
+  "name": "Paytm",
+  "description": "Digital payments and financial services platform",
+  "website": "https://paytm.com",
+  "category": "Finance",
+  "alternatives": ["PayPal", "Google Pay", "Apple Pay"],
+  "pricing": "Free",
+  "company": "One97 Communications",
+  "location": "Noida"
+}

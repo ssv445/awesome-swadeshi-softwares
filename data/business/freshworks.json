@@ -1,0 +1,10 @@
+{
+  "name": "Freshworks",
+  "description": "Customer experience platform with CRM, helpdesk, and marketing automation",
+  "website": "https://freshworks.com",
+  "category": "Business",
+  "alternatives": ["Salesforce", "HubSpot", "Zendesk"],
+  "pricing": "Freemium",
+  "company": "Freshworks Inc.",
+  "location": "Chennai"
+}

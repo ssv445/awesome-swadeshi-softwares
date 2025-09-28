@@ -1,0 +1,10 @@
+{
+  "name": "Swiggy",
+  "description": "Food delivery and quick commerce platform",
+  "website": "https://swiggy.com",
+  "category": "Food Delivery",
+  "alternatives": ["Uber Eats", "DoorDash", "Grubhub"],
+  "pricing": "Free",
+  "company": "Bundl Technologies Pvt Ltd",
+  "location": "Bangalore"
+}
