@@ -1,0 +1,10 @@
+{
+  "name": "NotifyVisitors",
+  "description": "Customer engagement platform with email marketing, push notifications, and automation",
+  "website": "https://www.notifyvisitors.com/",
+  "category": "Business",
+  "alternatives": ["MailChimp", "Constant Contact", "Campaign Monitor"],
+  "pricing": "Freemium",
+  "company": "NotifyVisitors",
+  "location": "Jaipur"
+}

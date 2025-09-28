@@ -1,0 +1,10 @@
+{
+  "name": "Topmate",
+  "description": "Link-in-bio tool with booking, payments, and audience engagement features",
+  "website": "https://topmate.io/",
+  "category": "Business",
+  "alternatives": ["Linktree", "Beacons", "Milkshake"],
+  "pricing": "Freemium",
+  "company": "Topmate",
+  "location": "Bangalore"
+}

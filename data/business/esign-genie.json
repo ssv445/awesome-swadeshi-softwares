@@ -1,0 +1,10 @@
+{
+  "name": "eSign Genie",
+  "description": "Digital signature platform with document workflow and authentication",
+  "website": "https://www.esigngenie.com/",
+  "category": "Business",
+  "alternatives": ["DocuSign", "Adobe Sign", "HelloSign"],
+  "pricing": "Freemium",
+  "company": "eSign Genie (Indian development)",
+  "location": "Ahmedabad"
+}

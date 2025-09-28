@@ -1,0 +1,10 @@
+{
+  "name": "Helpwise",
+  "description": "Customer service platform with shared inbox, live chat, and knowledge base",
+  "website": "https://helpwise.com/",
+  "category": "Business",
+  "alternatives": ["Zendesk", "Freshdesk", "Help Scout"],
+  "pricing": "Paid",
+  "company": "Helpwise",
+  "location": "Delhi"
+}

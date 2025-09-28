@@ -1,0 +1,10 @@
+{
+  "name": "Kommunicate",
+  "description": "Customer communication platform with live chat, chatbots, and helpdesk",
+  "website": "https://www.kommunicate.io/",
+  "category": "Communication",
+  "alternatives": ["Intercom", "Zendesk Chat", "Drift"],
+  "pricing": "Freemium",
+  "company": "Kommunicate",
+  "location": "Bangalore"
+}
