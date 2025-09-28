@@ -84,93 +84,69 @@ export default async function AlternativePage({ params }: AlternativePageProps) 
         {/* Hero Section */}
         <div className="text-center mb-16">
           <div className="flex items-center justify-center mb-8">
-            <div className="relative">
-              <IconComponent className="h-20 w-20 text-green-600" />
-              <div className="absolute -top-2 -left-2 w-24 h-24 border border-green-300 rounded-full opacity-40"></div>
+            <div>
+              <AshokaChakra className="h-20 w-20 text-blue-600" />
             </div>
           </div>
-          <h1 className="text-5xl font-bold text-gray-900 mb-6">
-            <span className="text-green-600">{alternative.internationalTool.name}</span> Alternative
+          <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+            Best Indian Alternatives to <span className="text-blue-600">{alternative.internationalTool.name}</span>
           </h1>
           <p className="text-xl text-gray-700 mb-4 font-medium">
-            Indian {alternative.internationalTool.category} Solutions
+            {alternative.indianAlternatives.length} Indian {alternative.internationalTool.category} Solutions
           </p>
-          <p className="text-lg text-gray-600 mb-12 max-w-3xl mx-auto">
-            {alternative.internationalTool.description}. Discover powerful Indian alternatives
-            that offer better features, local support, and help support the Indian tech ecosystem.
+          <p className="text-lg text-gray-600 mb-8 max-w-4xl mx-auto">
+            Discover powerful Indian software alternatives to {alternative.internationalTool.name} that offer competitive features,
+            local customer support, data sovereignty, and help build India's digital ecosystem.
+            These {alternative.internationalTool.category.toLowerCase()} tools are developed by Indian companies and designed
+            for global markets while understanding Indian business needs.
           </p>
-        </div>
-
-        {/* Why Choose Indian Alternative */}
-        <div className="bg-white rounded-xl p-8 mb-12 border border-green-200">
-          <h2 className="text-3xl font-bold text-gray-900 mb-6 text-center">
-            Why Choose an Indian <span className="text-green-600">{alternative.internationalTool.name} Alternative</span>?
-          </h2>
-          <div className="grid md:grid-cols-3 gap-6">
-            {alternative.benefits.map((benefit, index) => {
-              const BenefitIcon = iconMap[benefit.icon as keyof typeof iconMap] || Crown
-              return (
-                <div key={index} className="text-center">
-                  <BenefitIcon className="h-12 w-12 text-green-600 mx-auto mb-4" />
-                  <h3 className="text-xl font-semibold text-gray-900 mb-2">{benefit.title}</h3>
-                  <p className="text-gray-600">{benefit.description}</p>
-                </div>
-              )
-            })}
+          <div className="bg-blue-50 border border-blue-200 rounded-lg p-6 max-w-3xl mx-auto">
+            <p className="text-blue-800 font-medium">
+              Why choose Indian alternatives? Support <em>Atmanirbhar Bharat</em>, ensure data stays within India,
+              get customer support in your timezone, and often enjoy better pricing for the Indian market.
+            </p>
           </div>
         </div>
+
 
         {/* Indian Alternatives */}
         <div className="mb-12">
           <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">
-            Indian {alternative.internationalTool.name} Alternatives ({alternative.indianAlternatives.length})
+            {alternative.indianAlternatives.length} Indian Software Alternative{alternative.indianAlternatives.length > 1 ? 's' : ''} to {alternative.internationalTool.name}
           </h2>
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {alternative.indianAlternatives.map((indianAlt, index) => (
-              <Card key={index} className="border border-green-200 bg-white shadow-lg hover:shadow-xl transition-shadow">
-                <CardHeader>
-                  <div className="flex items-center justify-between">
-                    <div className="flex items-center space-x-3">
-                      <IconComponent className="h-10 w-10 text-green-600" />
-                      <div>
-                        <CardTitle className="text-xl text-gray-900">{indianAlt.name}</CardTitle>
-                      </div>
+              <Card key={index} className="group hover:shadow-lg transition-all duration-300 border border-green-200 hover:border-green-400 bg-white hover:scale-[1.02]">
+                <CardHeader className="pb-4">
+                  <div className="flex items-center space-x-3 mb-3">
+                    <AshokaChakra className="h-5 w-5 text-blue-600 flex-shrink-0" />
+                    <div className="min-w-0 flex-1">
+                      <CardTitle className="text-xl font-bold text-gray-900 truncate">
+                        {indianAlt.name}
+                      </CardTitle>
+                      <p className="text-sm text-gray-600 font-medium mt-1">by {indianAlt.company}</p>
                     </div>
-                    <Badge className="bg-green-100 text-green-800 border-green-300 text-xs">{indianAlt.pricing}</Badge>
                   </div>
                 </CardHeader>
                 <CardContent className="space-y-4">
-                  <p className="text-gray-700 leading-relaxed text-sm">
-                    {indianAlt.description}
-                  </p>
-                  <p className="text-xs text-gray-600 font-medium">
-                    by {indianAlt.company}
-                  </p>
+                  <p className="text-gray-700 leading-relaxed text-sm">{indianAlt.description}</p>
 
-                  {indianAlt.features.length > 0 && (
+                  <div className="space-y-3">
                     <div>
-                      <h4 className="font-semibold text-gray-900 mb-2 text-sm">Key Features:</h4>
-                      <ul className="space-y-1">
-                        {indianAlt.features.slice(0, 3).map((feature, featureIndex) => (
-                          <li key={featureIndex} className="flex items-center space-x-2">
-                            <Check className="h-3 w-3 text-green-600 flex-shrink-0" />
-                            <span className="text-gray-700 text-xs">{feature}</span>
-                          </li>
-                        ))}
-                        {indianAlt.features.length > 3 && (
-                          <li className="text-xs text-gray-500">
-                            +{indianAlt.features.length - 3} more features
-                          </li>
-                        )}
-                      </ul>
+                      <p className="text-sm font-medium text-gray-600">Alternative to:</p>
                     </div>
-                  )}
+                    <div className="flex flex-wrap gap-2">
+                      <Badge variant="outline" className="text-xs border-blue-300 text-blue-600 bg-blue-50">
+                        {alternative.internationalTool.name}
+                      </Badge>
+                    </div>
+                  </div>
 
-                  <div className="pt-2">
-                    <Button asChild size="sm" className="bg-blue-600 hover:bg-blue-700 text-white border-none w-full">
+                  <div className="flex justify-end pt-3 border-t border-gray-100">
+                    <Button asChild size="sm" className="bg-blue-600 hover:bg-blue-700 text-white border-none">
                       <Link href={indianAlt.website} target="_blank" rel="noopener noreferrer">
-                        Try {indianAlt.name}
-                        <ExternalLink className="ml-2 h-3 w-3" />
+                        Visit Website
+                        <ExternalLink className="ml-2 h-4 w-4" />
                       </Link>
                     </Button>
                   </div>
@@ -178,68 +154,52 @@ export default async function AlternativePage({ params }: AlternativePageProps) 
               </Card>
             ))}
           </div>
-        </div>
-
-        {/* Comparison Table */}
-        {alternative.comparison && (
-          <div className="bg-white rounded-xl p-8 mb-12 border border-green-200">
-            <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">
-              {mainAlternative.name} vs {alternative.internationalTool.name}
-            </h2>
-            <div className="overflow-x-auto">
-              <table className="w-full">
-                <thead>
-                  <tr className="border-b border-gray-200">
-                    <th className="text-left py-4 px-4 font-semibold text-gray-900">Feature</th>
-                    <th className="text-center py-4 px-4 font-semibold text-green-600">{mainAlternative.name} (Indian)</th>
-                    <th className="text-center py-4 px-4 font-semibold text-gray-600">{alternative.internationalTool.name}</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  {alternative.comparison.map((comp, index) => (
-                    <tr key={index} className="border-b border-gray-100">
-                      <td className="py-4 px-4 text-gray-700">{comp.feature}</td>
-                      <td className="py-4 px-4 text-center">
-                        {comp.indian === true ? (
-                          <Check className="h-5 w-5 text-green-600 mx-auto" />
-                        ) : (
-                          <span className="text-gray-700">{comp.indian}</span>
-                        )}
-                      </td>
-                      <td className="py-4 px-4 text-center">
-                        {comp.international === true ? (
-                          <Check className="h-5 w-5 text-green-600 mx-auto" />
-                        ) : comp.international === false ? (
-                          <span className="text-gray-400">No</span>
-                        ) : (
-                          <span className="text-gray-400">{comp.international}</span>
-                        )}
-                      </td>
-                    </tr>
-                  ))}
-                </tbody>
-              </table>
+          {/* SEO Content */}
+          <div className="mt-16 bg-gray-50 rounded-xl p-8">
+            <h3 className="text-2xl font-bold text-gray-900 mb-6">
+              About {alternative.internationalTool.name} Alternatives
+            </h3>
+            <div className="prose prose-gray max-w-none">
+              <p className="text-gray-700 leading-relaxed mb-4">
+                {alternative.internationalTool.name} is a popular {alternative.internationalTool.category.toLowerCase()} tool used by businesses worldwide.
+                However, many Indian companies are now choosing Indian alternatives that offer similar functionality while providing
+                additional benefits like data sovereignty, local customer support, and better understanding of the Indian market.
+              </p>
+              <p className="text-gray-700 leading-relaxed mb-4">
+                Our curated list features {alternative.indianAlternatives.length} verified Indian software solution{alternative.indianAlternatives.length > 1 ? 's' : ''}
+                that can effectively replace {alternative.internationalTool.name}. These alternatives are developed by Indian companies,
+                ensuring your data stays within India and supporting the Atmanirbhar Bharat initiative.
+              </p>
+              <h4 className="text-lg font-semibold text-gray-900 mb-3">Key Benefits of Choosing Indian Alternatives:</h4>
+              <ul className="list-disc list-inside text-gray-700 space-y-2">
+                <li>Data sovereignty - Your business data remains within Indian borders</li>
+                <li>Local customer support in Indian time zones</li>
+                <li>Better pricing tailored for the Indian market</li>
+                <li>Cultural understanding of Indian business practices</li>
+                <li>Support for Indian languages and local requirements</li>
+                <li>Contributing to India's digital economy and job creation</li>
+              </ul>
             </div>
           </div>
-        )}
+        </div>
 
         {/* CTA Section */}
-        <div className="text-center bg-green-50 rounded-xl p-8 border border-green-200">
-          <h2 className="text-3xl font-bold text-gray-900 mb-4">
-            Ready to Switch to an Indian Alternative?
+        <div className="text-center bg-blue-50 rounded-xl p-8 border border-blue-200 mt-12">
+          <h2 className="text-2xl font-bold text-gray-900 mb-4">
+            Explore More Indian Software Alternatives
           </h2>
-          <p className="text-xl text-gray-700 mb-8 max-w-2xl mx-auto">
-            Choose from {alternative.indianAlternatives.length} powerful Indian alternatives to {alternative.internationalTool.name} and support the Indian tech ecosystem.
+          <p className="text-lg text-gray-700 mb-6 max-w-2xl mx-auto">
+            Discover 100+ Indian software alternatives across all categories and join the Swadeshi movement.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button asChild size="lg" className="bg-blue-600 hover:bg-blue-700 text-white border-none">
-              <Link href={mainAlternative.website} target="_blank" rel="noopener noreferrer">
-                Try {mainAlternative.name}
+              <Link href="/">
+                Browse All Software
                 <ArrowRight className="ml-2 h-5 w-5" />
               </Link>
             </Button>
             <Button asChild size="lg" variant="outline" className="border border-gray-300 text-gray-600 hover:bg-gray-50">
-              <Link href="/alternatives">Explore More Alternatives</Link>
+              <Link href="/alternatives">View All Alternatives</Link>
             </Button>
           </div>
         </div>
