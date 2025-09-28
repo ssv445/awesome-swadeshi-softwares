@@ -1,0 +1,10 @@
+{
+  "name": "Zoho Sign",
+  "description": "Digital signature software for document signing and workflows",
+  "website": "https://www.zoho.com/sign/",
+  "category": "Business",
+  "alternatives": ["DocuSign", "HelloSign", "Adobe Sign"],
+  "pricing": "Freemium",
+  "company": "Zoho Corporation",
+  "location": "Chennai"
+}

@@ -1,0 +1,10 @@
+{
+  "name": "Zoho Flow",
+  "description": "Integration platform for connecting apps and automating workflows",
+  "website": "https://www.zoho.com/flow/",
+  "category": "Development",
+  "alternatives": ["Zapier", "Microsoft Power Automate", "IFTTT"],
+  "pricing": "Freemium",
+  "company": "Zoho Corporation",
+  "location": "Chennai"
+}

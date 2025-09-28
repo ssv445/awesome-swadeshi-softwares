@@ -1,0 +1,10 @@
+{
+  "name": "Zoho Mail",
+  "description": "Business email hosting with calendar and contacts integration",
+  "website": "https://www.zoho.com/mail/",
+  "category": "Productivity",
+  "alternatives": ["Gmail", "Outlook", "Yahoo Mail"],
+  "pricing": "Freemium",
+  "company": "Zoho Corporation",
+  "location": "Chennai"
+}

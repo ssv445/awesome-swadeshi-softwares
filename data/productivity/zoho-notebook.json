@@ -1,0 +1,10 @@
+{
+  "name": "Zoho Notebook",
+  "description": "Note-taking app for organizing thoughts, ideas and information",
+  "website": "https://www.zoho.com/notebook/",
+  "category": "Productivity",
+  "alternatives": ["Evernote", "OneNote", "Notion"],
+  "pricing": "Free",
+  "company": "Zoho Corporation",
+  "location": "Chennai"
+}

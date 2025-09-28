@@ -1,0 +1,10 @@
+{
+  "name": "Zoho Inventory",
+  "description": "Inventory management software for order and warehouse management",
+  "website": "https://www.zoho.com/inventory/",
+  "category": "Business",
+  "alternatives": ["TradeGecko", "inFlow", "Cin7"],
+  "pricing": "Freemium",
+  "company": "Zoho Corporation",
+  "location": "Chennai"
+}

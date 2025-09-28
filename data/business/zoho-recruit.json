@@ -1,0 +1,10 @@
+{
+  "name": "Zoho Recruit",
+  "description": "Recruitment software for hiring and applicant tracking",
+  "website": "https://www.zoho.com/recruit/",
+  "category": "Business",
+  "alternatives": ["Greenhouse", "Lever", "Workable"],
+  "pricing": "Freemium",
+  "company": "Zoho Corporation",
+  "location": "Chennai"
+}

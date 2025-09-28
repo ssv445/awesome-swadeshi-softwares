@@ -1,0 +1,10 @@
+{
+  "name": "Zoho Catalyst",
+  "description": "Serverless cloud development platform for building and deploying applications",
+  "website": "https://www.zoho.com/catalyst/",
+  "category": "Development",
+  "alternatives": ["AWS Lambda", "Google Cloud Functions", "Vercel"],
+  "pricing": "Freemium",
+  "company": "Zoho Corporation",
+  "location": "Chennai"
+}

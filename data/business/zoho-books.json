@@ -1,0 +1,10 @@
+{
+  "name": "Zoho Books",
+  "description": "Online accounting software for small businesses and freelancers",
+  "website": "https://www.zoho.com/books/",
+  "category": "Business",
+  "alternatives": ["QuickBooks", "Xero", "FreshBooks"],
+  "pricing": "Freemium",
+  "company": "Zoho Corporation",
+  "location": "Chennai"
+}

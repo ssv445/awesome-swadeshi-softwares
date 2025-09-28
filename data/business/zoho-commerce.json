@@ -1,0 +1,10 @@
+{
+  "name": "Zoho Commerce",
+  "description": "E-commerce platform for building online stores and marketplaces",
+  "website": "https://www.zoho.com/commerce/",
+  "category": "Business",
+  "alternatives": ["Shopify", "WooCommerce", "BigCommerce"],
+  "pricing": "Freemium",
+  "company": "Zoho Corporation",
+  "location": "Chennai"
+}

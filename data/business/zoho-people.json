@@ -1,0 +1,10 @@
+{
+  "name": "Zoho People",
+  "description": "Human resources management system for employee management",
+  "website": "https://www.zoho.com/people/",
+  "category": "Business",
+  "alternatives": ["BambooHR", "Workday", "ADP"],
+  "pricing": "Freemium",
+  "company": "Zoho Corporation",
+  "location": "Chennai"
+}

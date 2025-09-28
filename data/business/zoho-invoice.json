@@ -1,0 +1,10 @@
+{
+  "name": "Zoho Invoice",
+  "description": "Free invoicing software for small businesses and freelancers",
+  "website": "https://www.zoho.com/invoice/",
+  "category": "Business",
+  "alternatives": ["Invoice2go", "Wave", "FreshBooks"],
+  "pricing": "Free",
+  "company": "Zoho Corporation",
+  "location": "Chennai"
+}

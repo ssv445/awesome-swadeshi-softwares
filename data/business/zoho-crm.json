@@ -1,0 +1,10 @@
+{
+  "name": "Zoho CRM",
+  "description": "Customer relationship management software for sales teams and businesses",
+  "website": "https://www.zoho.com/crm/",
+  "category": "Business",
+  "alternatives": ["Salesforce", "HubSpot", "Pipedrive"],
+  "pricing": "Freemium",
+  "company": "Zoho Corporation",
+  "location": "Chennai"
+}

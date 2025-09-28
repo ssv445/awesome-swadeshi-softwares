@@ -1,0 +1,10 @@
+{
+  "name": "Zoho Writer",
+  "description": "Online word processor for document creation and collaboration",
+  "website": "https://www.zoho.com/writer/",
+  "category": "Productivity",
+  "alternatives": ["Microsoft Word", "Google Docs"],
+  "pricing": "Freemium",
+  "company": "Zoho Corporation",
+  "location": "Chennai"
+}

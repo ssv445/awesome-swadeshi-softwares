@@ -1,0 +1,10 @@
+{
+  "name": "Zoho WorkDrive",
+  "description": "Team collaboration and file storage platform for businesses",
+  "website": "https://www.zoho.com/workdrive/",
+  "category": "Productivity",
+  "alternatives": ["Google Drive", "Dropbox", "OneDrive"],
+  "pricing": "Freemium",
+  "company": "Zoho Corporation",
+  "location": "Chennai"
+}

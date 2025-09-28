@@ -1,0 +1,10 @@
+{
+  "name": "Zoho Social",
+  "description": "Social media management platform for scheduling and analytics",
+  "website": "https://www.zoho.com/social/",
+  "category": "Business",
+  "alternatives": ["Hootsuite", "Buffer", "Sprout Social"],
+  "pricing": "Freemium",
+  "company": "Zoho Corporation",
+  "location": "Chennai"
+}

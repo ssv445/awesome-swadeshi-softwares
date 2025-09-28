@@ -1,0 +1,10 @@
+{
+  "name": "Zoho Creator",
+  "description": "Low-code application development platform for custom business apps",
+  "website": "https://www.zoho.com/creator/",
+  "category": "Business",
+  "alternatives": ["Microsoft PowerApps", "Mendix", "OutSystems"],
+  "pricing": "Freemium",
+  "company": "Zoho Corporation",
+  "location": "Chennai"
+}

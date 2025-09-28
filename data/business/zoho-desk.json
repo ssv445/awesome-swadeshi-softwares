@@ -1,0 +1,10 @@
+{
+  "name": "Zoho Desk",
+  "description": "Help desk software for customer support and ticketing",
+  "website": "https://www.zoho.com/desk/",
+  "category": "Business",
+  "alternatives": ["Zendesk", "Freshdesk", "Help Scout"],
+  "pricing": "Freemium",
+  "company": "Zoho Corporation",
+  "location": "Chennai"
+}

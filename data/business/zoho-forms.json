@@ -1,0 +1,10 @@
+{
+  "name": "Zoho Forms",
+  "description": "Online form builder for surveys, data collection and workflows",
+  "website": "https://www.zoho.com/forms/",
+  "category": "Business",
+  "alternatives": ["Google Forms", "Typeform", "JotForm"],
+  "pricing": "Freemium",
+  "company": "Zoho Corporation",
+  "location": "Chennai"
+}

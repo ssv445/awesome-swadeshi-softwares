@@ -1,0 +1,10 @@
+{
+  "name": "Zoho Survey",
+  "description": "Online survey tool for market research and customer feedback",
+  "website": "https://www.zoho.com/survey/",
+  "category": "Business",
+  "alternatives": ["SurveyMonkey", "Qualtrics", "Typeform"],
+  "pricing": "Freemium",
+  "company": "Zoho Corporation",
+  "location": "Chennai"
+}
