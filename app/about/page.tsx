@@ -2,57 +2,19 @@ import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Flag, ExternalLink, GitPullRequest, FileText, Users, Star, Flower2, Crown, Zap } from "lucide-react"
 import { AshokaChakra } from "@/components/ashoka-chakra"
+import { AppShell } from "@/components/layout/AppShell"
 import Link from "next/link"
 
 export default function AboutPage() {
   return (
-    <div className="min-h-screen bg-white">
-      {/* Subtle Lotus Pattern */}
-      <div className="fixed inset-0 opacity-3 pointer-events-none">
-        <div className="absolute inset-0" style={{
-          backgroundImage: `url("data:image/svg+xml,%3Csvg width='80' height='80' viewBox='0 0 80 80' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23059669' fill-opacity='0.2'%3E%3Cpath d='M40 20c-2 8-8 14-16 14s-14-6-16-14c2-8 8-14 16-14s14 6 16 14zm-16 20c8 0 14-6 16-14-2-8-8-14-16-14s-14 6-16 14c2 8 8 14 16 14z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`,
-        }} />
-      </div>
-
-      {/* Header */}
-      <header className="border-b border-green-200 bg-white/95 backdrop-blur-sm sticky top-0 z-50 shadow-sm">
-        <div className="container mx-auto px-4 py-4">
-          <div className="flex items-center justify-between">
-            <Link href="/" className="flex items-center space-x-3">
-              <div className="relative">
-                <AshokaChakra className="h-10 w-10 text-blue-600" />
-              </div>
-              <div>
-                <h1 className="text-2xl font-bold text-gray-900">
-                  Awesome Swadeshi
-                </h1>
-                <p className="text-sm text-gray-600 font-medium">Indian Software Directory • Atmanirbhar Bharat</p>
-              </div>
-            </Link>
-            <Button asChild className="bg-blue-600 hover:bg-blue-700 text-white border-none">
-              <Link href="/">Back to Directory</Link>
-            </Button>
-          </div>
-        </div>
-      </header>
+    <AppShell>
+      <div className="relative min-h-screen">
 
       <div className="container mx-auto px-4 py-16 max-w-4xl relative z-10">
-        {/* Subtle Decorative Elements */}
-        <div className="absolute top-10 right-10 text-green-200 opacity-30">
-        </div>
-        <div className="absolute bottom-20 left-10 text-orange-200 opacity-30">
-          <Flower2 className="h-14 w-14" />
-        </div>
 
         <div className="text-center mb-16">
           <div className="flex items-center justify-center mb-8">
-            <div className="relative">
               <AshokaChakra className="h-20 w-20 text-blue-600" />
-              <div className="absolute -top-2 -left-2 w-24 h-24 border border-green-300 rounded-full opacity-40"></div>
-              <div className="absolute -bottom-1 -right-1">
-                <Flower2 className="h-6 w-6 text-orange-500" />
-              </div>
-            </div>
           </div>
           <h1 className="text-5xl font-bold text-gray-900 mb-6">
             Add Your <span className="text-gray-900">Awesome</span> Swadeshi Software
@@ -99,7 +61,6 @@ export default function AboutPage() {
             <CardHeader>
               <div className="flex items-center space-x-3 mb-4">
                 <FileText className="h-10 w-10 text-gray-500" />
-                <Flower2 className="h-6 w-6 text-orange-500" />
               </div>
               <CardTitle className="text-2xl text-gray-900">
                 Required Information
@@ -219,20 +180,7 @@ export default function AboutPage() {
           </p>
         </div>
       </div>
-
-      {/* Footer */}
-      <footer className="bg-gray-50 py-8 px-4">
-        <div className="container mx-auto text-center">
-          <div className="flex items-center justify-center space-x-2 mb-4">
-            <AshokaChakra className="h-5 w-5 text-gray-500" />
-            <span className="font-bold">Indian Software Directory</span>
-          </div>
-          <p className="text-gray-600 text-sm mb-4">
-            Promoting Indian software innovation and helping users discover quality alternatives.
-          </p>
-          <p className="text-gray-500 text-xs">&copy; 2024 Made with ❤️ in India</p>
-        </div>
-      </footer>
-    </div>
+      </div>
+    </AppShell>
   )
 }

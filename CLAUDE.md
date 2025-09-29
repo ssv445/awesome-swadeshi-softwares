@@ -84,12 +84,40 @@ No forms, no database, no admin interface - just simple file creation.
 
 ## Component Architecture
 
-- `/components/ui/` - shadcn/ui components (Button, Card, Badge, Input, etc.)
-- `/lib/data.ts` - Client-side utilities and type definitions
-- `/lib/server-data.ts` - Server-side functions to read JSON files at build time
-- Path alias `@/*` maps to project root (configured in components.json)
-- Server components for data loading, client components for interactivity
-- Dynamic category pages with static generation
+The application now follows a modern, maintainable architecture with centralized theme management and reusable components:
+
+### Layout Components (`/components/layout/`)
+- **`AppShell.tsx`** - Main layout wrapper used by all pages
+- **`Header.tsx`** - Unified header with navigation, logo, and CTA buttons
+- **`Footer.tsx`** - Consistent footer across all pages
+
+### Core Components (`/components/`)
+- **`product-card.tsx`** - Reusable card component for displaying software
+- **`favicon.tsx`** - Handles favicon display with fallbacks
+- **`ashoka-chakra.tsx`** - Indian national emblem SVG component
+
+### UI Components (`/components/ui/`)
+- shadcn/ui components (Button, Card, Badge, Input, etc.)
+- **`SearchBox.tsx`** - Search component with dropdown suggestions and keyboard navigation
+
+### Library Files (`/lib/`)
+- **`theme.ts`** - Centralized theme system with Indian flag colors and design tokens
+- **`constants.ts`** - Application constants, navigation links, and configuration
+- **`data.ts`** - Client-side utilities and type definitions
+- **`server-data.ts`** - Server-side functions to read JSON files at build time
+- **`search.ts`** - Client-side search utilities with intelligent scoring
+
+### Configuration Files
+- **`/data/categories.json`** - Centralized category metadata with icons and descriptions
+- **`/scripts/generate-search-index.ts`** - Build-time search index generation script
+- **`/public/search-index.json`** - Generated search index (auto-generated on build)
+
+### Architecture Patterns
+- **Unified Layout**: All pages use `AppShell` for consistent header/footer
+- **Theme System**: Centralized design tokens in `theme.ts`
+- **Search Architecture**: Build-time index generation for fast client-side search
+- **Component Composition**: Reusable components with consistent props interface
+- **Static Generation**: All pages pre-built at build time with optimized performance
 
 ### Key Functions
 - `getAllSoftware()` - Scans all category folders and returns combined array
@@ -97,16 +125,28 @@ No forms, no database, no admin interface - just simple file creation.
 - `getCategories()` - Returns list of available category folders
 - `getCategoryDisplayName(slug)` - Converts slug to display name
 - `getAlternativeUrl(tool)` - Generates URL for alternative pages
+- `searchApps(query)` - Client-side search with intelligent ranking
+- `generateSearchIndex()` - Build-time search index creation
 
 ## Key Features
 
-- **Search**: Real-time filtering by name, description, or alternatives
-- **Category Pages**: Individual URLs for each category (e.g., `/business`, `/finance`)
-- **Dynamic Routing**: Automatically generates pages for all categories
-- **Static Generation**: All pages pre-built at build time
-- **Simple Cards**: Software displayed in clean card layout
-- **Direct Links**: All software links go directly to external websites
-- **Responsive**: Mobile-friendly design
+### Search & Navigation
+- **Fast Client-Side Search**: Build-time indexed search with intelligent scoring and ranking
+- **Keyboard Navigation**: Arrow keys, Enter, and Escape support in search dropdown
+- **Search Suggestions**: Real-time dropdown with app icons and descriptions
+- **Category Filtering**: Dedicated category pages with SEO-friendly URLs
+
+### Performance & UX
+- **Static Generation**: All pages pre-built at build time for optimal performance
+- **Unified Theme**: Consistent Indian flag-inspired color scheme across all pages
+- **Responsive Design**: Mobile-first approach with Tailwind CSS
+- **Build-Time Search Index**: 239KB search index auto-generated from 128+ apps
+
+### Layout & Components
+- **AppShell Layout**: Consistent header and footer across all pages
+- **Reusable Components**: ProductCard, SearchBox, Header, Footer with consistent APIs
+- **Direct External Links**: All app links go directly to external websites
+- **Favicon Support**: Automatic + manual favicon handling with fallbacks
 
 ## URL Structure
 
@@ -134,9 +174,11 @@ No forms, no database, no admin interface - just simple file creation.
 
 ### Design Principles
 - **Simplicity**: Maximum functionality with minimum complexity
-- **Static**: No database, no server-side processing
+- **Performance First**: Build-time optimization with client-side interactivity
+- **Static**: No database, no server-side processing beyond build time
 - **Community-driven**: All additions via GitHub PRs
-- **Fast**: Static generation, client-side filtering
+- **Consistent Theme**: Indian flag colors (saffron, white, green) throughout the application
+- **Maintainable**: Centralized constants, reusable components, unified layout system
 
 ## Removed Complexity
 
@@ -232,3 +274,42 @@ The application supports both automatic and manual favicon handling:
 - Test search functionality on homepage
 - Verify alternative pages work at `/alternatives/[tool-name]`
 - Run `pnpm build` to ensure static generation works
+
+### Build Process
+The build process now includes automatic search index generation:
+
+```bash
+# Search index is automatically generated before build via package.json scripts
+pnpm build  # This runs: tsx scripts/generate-search-index.ts && next build
+```
+
+**Search Index Generation**:
+- Scans all JSON files in `/data/` directories
+- Creates tokenized entries with name, description, alternatives, and category
+- Generates `/public/search-index.json` (239KB for 128 apps)
+- Enables fast client-side search without API calls
+
+### Theme System (`/lib/theme.ts`)
+The application uses a centralized theme system with Indian flag-inspired colors:
+
+```typescript
+export const theme = {
+  colors: {
+    primary: {
+      saffron: '#FF9933',    // Indian flag saffron
+      white: '#FFFFFF',      // Indian flag white
+      green: '#138808',      // Indian flag green
+      navy: '#000080'        // Ashoka Chakra blue
+    }
+  },
+  spacing: { /* ... */ },
+  typography: { /* ... */ },
+  shadows: { /* ... */ }
+}
+```
+
+**Color Usage**:
+- **Saffron (#FF9933)**: Accent colors, gradients, highlights
+- **Green (#138808)**: Borders, success states, secondary accents
+- **Navy Blue (#000080)**: Primary buttons, links, Ashoka Chakra
+- **White (#FFFFFF)**: Backgrounds, cards, clean spaces

@@ -3,6 +3,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Flag, ExternalLink, ArrowRight, Video, Palette, Target, Mail, Link as LinkIcon, Shield, Users, Star, MessageSquare, CheckCircle, Zap, Cloud, Globe } from "lucide-react"
 import { AshokaChakra } from "@/components/ashoka-chakra"
+import { AppShell } from "@/components/layout/AppShell"
 import Link from "next/link"
 import { getAllAlternatives } from "@/lib/alternatives-server"
 
@@ -14,28 +15,8 @@ const iconMap = {
 export default function AlternativesIndexPage() {
   const alternativesData = getAllAlternatives()
   return (
-    <div className="min-h-screen bg-gradient-to-b from-orange-50 via-white to-green-50">
-      {/* Header */}
-      <header className="border-b border-green-200 bg-white/95 backdrop-blur-sm sticky top-0 z-50 shadow-sm">
-        <div className="container mx-auto px-4 py-4">
-          <div className="flex items-center justify-between">
-            <Link href="/" className="flex items-center space-x-3">
-              <div>
-                <AshokaChakra className="h-10 w-10 text-blue-600" />
-              </div>
-              <div>
-                <h1 className="text-2xl font-bold text-gray-900">
-                  Awesome Swadeshi
-                </h1>
-                <p className="text-sm text-gray-600 font-medium">Indian Software Directory • Atmanirbhar Bharat</p>
-              </div>
-            </Link>
-            <Button asChild className="bg-blue-600 hover:bg-blue-700 text-white border-none">
-              <Link href="/">Back to Directory</Link>
-            </Button>
-          </div>
-        </div>
-      </header>
+    <AppShell>
+      <div className="relative min-h-screen">
 
       <div className="container mx-auto px-4 py-16 max-w-6xl">
         {/* Hero Section */}
@@ -165,27 +146,7 @@ export default function AlternativesIndexPage() {
           </div>
         </div>
       </div>
-
-      {/* Footer */}
-      <footer className="bg-gray-800 py-12 px-4 relative">
-        <div className="container mx-auto text-center relative z-10">
-          <div className="flex items-center justify-center space-x-3 mb-6">
-            <div>
-              <AshokaChakra className="h-8 w-8 text-blue-400" />
-            </div>
-            <span className="text-2xl font-bold text-white">
-              Awesome Swadeshi
-            </span>
-          </div>
-          <p className="text-gray-200 text-lg mb-6 max-w-2xl mx-auto leading-relaxed">
-            Promoting Indian software innovation and helping users discover quality alternatives.
-            Supporting <em>Swadeshi</em> movement and <em>Atmanirbhar Bharat</em> through technology.
-          </p>
-          <div className="flex items-center justify-center space-x-2">
-            <p className="text-gray-300 text-sm">&copy; 2024 Made with ❤️ in India</p>
-          </div>
-        </div>
-      </footer>
-    </div>
+      </div>
+    </AppShell>
   )
 }

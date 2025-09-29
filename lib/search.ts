@@ -10,19 +10,9 @@ interface SearchIndexEntry {
   id: string
   name: string
   company: string
-  description: string
   category: string
-  alternatives: string[]
-  website: string
-  pricing: string
-  location: string
-  faviconUrl?: string
-  nameTokens: string[]
-  descriptionTokens: string[]
-  alternativesTokens: string[]
-  companyTokens: string[]
-  allTokens: string[]
   slug: string
+  searchTerms: string
 }
 
 interface SearchIndex {
@@ -79,7 +69,7 @@ async function loadSearchIndex(): Promise<SearchIndex> {
 }
 
 /**
- * Calculate search score for an entry
+ * Calculate search score for an entry (simplified)
  */
 function calculateScore(entry: SearchIndexEntry, query: string): {
   score: number
@@ -87,8 +77,6 @@ function calculateScore(entry: SearchIndexEntry, query: string): {
   matchedFields: string[]
 } {
   const queryLower = query.toLowerCase()
-  const queryTokens = queryLower.split(/\s+/).filter(token => token.length > 0)
-
   let score = 0
   let matchType: 'exact' | 'partial' | 'fuzzy' = 'fuzzy'
   const matchedFields: string[] = []
@@ -123,78 +111,23 @@ function calculateScore(entry: SearchIndexEntry, query: string): {
     matchedFields.push('company')
   }
 
-  // Alternative exact match
-  const exactAltMatch = entry.alternatives.some(alt =>
-    alt.toLowerCase() === queryLower
-  )
-  if (exactAltMatch) {
-    score += 150
-    matchedFields.push('alternatives')
-  }
-  // Alternative partial match
-  else {
-    const partialAltMatch = entry.alternatives.some(alt =>
-      alt.toLowerCase().includes(queryLower)
-    )
-    if (partialAltMatch) {
-      score += 75
-      matchedFields.push('alternatives')
-    }
+  // General search terms match
+  if (entry.searchTerms.includes(queryLower)) {
+    score += 50
+    matchedFields.push('searchTerms')
   }
 
-  // Description match
-  if (entry.description.toLowerCase().includes(queryLower)) {
-    score += 25
-    matchedFields.push('description')
-  }
-
-  // Token-based matching
-  queryTokens.forEach(token => {
-    if (entry.nameTokens.includes(token)) {
-      score += 50
-    }
-    if (entry.companyTokens.includes(token)) {
-      score += 25
-    }
-    if (entry.alternativesTokens.includes(token)) {
-      score += 30
-    }
-    if (entry.descriptionTokens.includes(token)) {
+  // Partial matches in search terms
+  const queryWords = queryLower.split(' ')
+  queryWords.forEach(word => {
+    if (word.length > 2 && entry.searchTerms.includes(word)) {
       score += 10
     }
   })
 
-  // Fuzzy matching using n-grams (for typos)
-  const queryNgrams = generateNgrams(queryLower, 3)
-  const entryNgrams = [
-    ...generateNgrams(entry.name.toLowerCase(), 3),
-    ...generateNgrams(entry.company.toLowerCase(), 3)
-  ]
-
-  const ngramMatches = queryNgrams.filter(ngram => entryNgrams.includes(ngram))
-  if (ngramMatches.length > 0) {
-    score += ngramMatches.length * 2
-    if (matchType === 'fuzzy' && score > 0) {
-      matchType = 'fuzzy'
-    }
-  }
-
   return { score, matchType, matchedFields }
 }
 
-/**
- * Generate n-grams for fuzzy matching
- */
-function generateNgrams(text: string, n: number = 3): string[] {
-  const ngrams: string[] = []
-  const clean = text.replace(/[^\w]/g, '')
-
-  for (let i = 0; i <= clean.length - n; i++) {
-    ngrams.push(clean.slice(i, i + n))
-  }
-
-  return ngrams
-}
 
 /**
  * Search through the index
@@ -291,15 +224,6 @@ export async function getSearchSuggestions(
       if (result.matchedFields.includes('company')) {
         suggestions.add(result.entry.company)
       }
-
-      // Add alternatives if they match
-      if (result.matchedFields.includes('alternatives')) {
-        result.entry.alternatives.forEach(alt => {
-          if (alt.toLowerCase().includes(query.toLowerCase())) {
-            suggestions.add(alt)
-          }
-        })
-      }
     })
 
     return Array.from(suggestions).slice(0, limit)
@@ -317,16 +241,17 @@ export async function getPopularSearchTerms(limit: number = 10): Promise<string[
   try {
     const index = await loadSearchIndex()
 
-    // Get most common alternatives (what people search for)
-    const alternativeCounts = new Map<string, number>()
+    // Get most common company names and app names
+    const termCounts = new Map<string, number>()
 
     index.entries.forEach(entry => {
-      entry.alternatives.forEach(alt => {
-        alternativeCounts.set(alt, (alternativeCounts.get(alt) || 0) + 1)
-      })
+      // Count app names
+      termCounts.set(entry.name, (termCounts.get(entry.name) || 0) + 1)
+      // Count company names
+      termCounts.set(entry.company, (termCounts.get(entry.company) || 0) + 1)
     })
 
-    return Array.from(alternativeCounts.entries())
+    return Array.from(termCounts.entries())
       .sort(([,a], [,b]) => b - a)
       .slice(0, limit)
       .map(([term]) => term)

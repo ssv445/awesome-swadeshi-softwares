@@ -13,23 +13,10 @@ interface SearchIndexEntry {
   id: string
   name: string
   company: string
-  description: string
   category: string
-  alternatives: string[]
-  website: string
-  pricing: string
-  location: string
-  faviconUrl?: string
-
-  // Search-optimized fields
-  nameTokens: string[]
-  descriptionTokens: string[]
-  alternativesTokens: string[]
-  companyTokens: string[]
-  allTokens: string[]
-
-  // For URL generation
   slug: string
+  // Only store essential search terms
+  searchTerms: string
 }
 
 interface SearchIndex {
@@ -43,29 +30,23 @@ interface SearchIndex {
 }
 
 /**
- * Tokenize text for search
+ * Create search terms string (simplified)
  */
-function tokenize(text: string): string[] {
-  return text
+function createSearchTerms(software: Software): string {
+  const terms = [
+    software.name,
+    software.company,
+    software.category,
+    ...software.alternatives.slice(0, 3), // Only first 3 alternatives
+    software.description.split(' ').slice(0, 10).join(' ') // Only first 10 words of description
+  ]
+
+  return terms
+    .join(' ')
     .toLowerCase()
-    .replace(/[^\w\s]/g, ' ') // Replace punctuation with spaces
-    .split(/\s+/)
-    .filter(token => token.length > 1) // Remove single characters
-    .filter(token => !['the', 'and', 'or', 'but', 'in', 'on', 'at', 'to', 'for', 'of', 'with', 'by'].includes(token)) // Remove common stop words
-}
-
-/**
- * Generate n-grams for fuzzy search
- */
-function generateNgrams(text: string, n: number = 3): string[] {
-  const ngrams: string[] = []
-  const clean = text.toLowerCase().replace(/[^\w]/g, '')
-
-  for (let i = 0; i <= clean.length - n; i++) {
-    ngrams.push(clean.slice(i, i + n))
-  }
-
-  return ngrams
+    .replace(/[^\w\s]/g, ' ')
+    .replace(/\s+/g, ' ')
+    .trim()
 }
 
 /**
@@ -121,42 +102,13 @@ function createSearchIndexEntry(
   category: string,
   slug: string
 ): SearchIndexEntry {
-  const nameTokens = tokenize(software.name)
-  const descriptionTokens = tokenize(software.description)
-  const alternativesTokens = software.alternatives.flatMap(alt => tokenize(alt))
-  const companyTokens = tokenize(software.company)
-
-  // Generate n-grams for fuzzy search
-  const nameNgrams = generateNgrams(software.name)
-  const descriptionNgrams = software.description.split(' ').flatMap(word => generateNgrams(word))
-
-  // Combine all tokens for global search
-  const allTokens = [
-    ...nameTokens,
-    ...descriptionTokens,
-    ...alternativesTokens,
-    ...companyTokens,
-    ...nameNgrams,
-    ...descriptionNgrams
-  ].filter((token, index, arr) => arr.indexOf(token) === index) // Remove duplicates
-
   return {
     id: `${category}/${slug}`,
     name: software.name,
     company: software.company,
-    description: software.description,
     category: software.category,
-    alternatives: software.alternatives,
-    website: software.website,
-    pricing: software.pricing,
-    location: software.location,
-    faviconUrl: software.faviconUrl,
-    nameTokens,
-    descriptionTokens,
-    alternativesTokens,
-    companyTokens,
-    allTokens,
-    slug
+    slug,
+    searchTerms: createSearchTerms(software)
   }
 }
 

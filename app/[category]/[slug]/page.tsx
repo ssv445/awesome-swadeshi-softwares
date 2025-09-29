@@ -3,6 +3,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { ExternalLink, ArrowLeft, Calendar, MapPin, Building2, Tag, Globe, Users } from "lucide-react"
 import { AshokaChakra } from "@/components/ashoka-chakra"
+import { AppShell } from "@/components/layout/AppShell"
 import Link from "next/link"
 import { notFound } from "next/navigation"
 import { getAppBySlug, getAllAppPaths, getRelatedApps } from "@/lib/server-data"
@@ -83,36 +84,8 @@ export default async function AppPage({ params }: AppPageProps) {
   }
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-orange-50 via-white to-green-50">
-      {/* Header */}
-      <header className="border-b border-green-200 bg-white/95 backdrop-blur-sm sticky top-0 z-50 shadow-sm">
-        <div className="container mx-auto px-4 py-4">
-          <div className="flex items-center justify-between">
-            <Link href="/" className="flex items-center space-x-3">
-              <div>
-                <AshokaChakra className="h-10 w-10 text-blue-600" />
-              </div>
-              <div>
-                <h1 className="text-2xl font-bold text-gray-900">
-                  Awesome Swadeshi Apps
-                </h1>
-                <p className="text-sm text-gray-600 font-medium">Indian Apps Directory • Atmanirbhar Bharat</p>
-              </div>
-            </Link>
-            <div className="flex items-center space-x-4">
-              <Button asChild variant="outline" size="sm">
-                <Link href={`/${category}`}>
-                  <ArrowLeft className="mr-2 h-4 w-4" />
-                  Back to {categoryDisplayName}
-                </Link>
-              </Button>
-              <Button asChild className="bg-blue-600 hover:bg-blue-700 text-white border-none">
-                <Link href="/">Browse Apps</Link>
-              </Button>
-            </div>
-          </div>
-        </div>
-      </header>
+    <AppShell>
+      <div className="relative min-h-screen">
 
       <div className="container mx-auto px-4 py-8 max-w-6xl">
         {/* Breadcrumbs */}
@@ -331,27 +304,7 @@ export default async function AppPage({ params }: AppPageProps) {
           </Card>
         )}
       </div>
-
-      {/* Footer */}
-      <footer className="bg-gray-800 py-12 px-4 relative mt-16">
-        <div className="container mx-auto text-center relative z-10">
-          <div className="flex items-center justify-center space-x-3 mb-6">
-            <div>
-              <AshokaChakra className="h-8 w-8 text-blue-400" />
-            </div>
-            <span className="text-2xl font-bold text-white">
-              Awesome Swadeshi Apps
-            </span>
-          </div>
-          <p className="text-gray-200 text-lg mb-6 max-w-2xl mx-auto leading-relaxed">
-            Promoting Indian app innovation and helping users discover quality alternatives.
-            Supporting <em>Swadeshi</em> movement and <em>Atmanirbhar Bharat</em> through technology.
-          </p>
-          <div className="flex items-center justify-center">
-            <p className="text-gray-300 text-sm">&copy; 2024 Made with ❤️ in India</p>
-          </div>
-        </div>
-      </footer>
-    </div>
+      </div>
+    </AppShell>
   )
 }
