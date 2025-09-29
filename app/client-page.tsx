@@ -5,11 +5,12 @@ import { useRouter } from "next/navigation"
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
 import { Input } from "@/components/ui/input"
-import { Search, Star, Zap } from "lucide-react"
+import { Search, Zap } from "lucide-react"
 import { AshokaChakra } from "@/components/ashoka-chakra"
 import Link from "next/link"
-import { getCategoryDisplayName } from "@/lib/data"
+import { getCategoryDisplayName, getAppUrl } from "@/lib/data"
 import { ProductCard } from "@/components/product-card"
+import { Favicon } from "@/components/favicon"
 import type { Software } from "@/lib/data"
 
 interface ClientHomePageProps {
@@ -22,6 +23,7 @@ export default function ClientHomePage({ allSoftware, featuredProducts, categori
   const [searchTerm, setSearchTerm] = useState("")
   const [searchResults, setSearchResults] = useState<Software[]>([])
   const [currentPage, setCurrentPage] = useState(1)
+  const [showDropdown, setShowDropdown] = useState(false)
   const itemsPerPage = 12
   const router = useRouter()
 
@@ -32,90 +34,37 @@ export default function ClientHomePage({ allSoftware, featuredProducts, categori
     }))
   }, [categories])
 
-  // Smart category detection based on search results
-  const detectBestCategory = useCallback((searchTerm: string) => {
-    if (!searchTerm || searchTerm.length < 2) return null
 
-    const searchLower = searchTerm.toLowerCase()
-    const categoryScores: { [key: string]: number } = {}
+  // Always show featured products (no page filtering)
+  const displaySoftware = featuredProducts
 
-    // Score categories based on how many apps match the search in each category
-    categories.forEach(category => {
-      const categoryApps = allSoftware.filter(app =>
-        app.category.toLowerCase().replace(/\s+/g, '-') === category
-      )
-
-      const matchingApps = categoryApps.filter(app =>
-        app.name.toLowerCase().includes(searchLower) ||
-        app.description.toLowerCase().includes(searchLower) ||
-        app.alternatives.some(alt => alt.toLowerCase().includes(searchLower)) ||
-        app.company.toLowerCase().includes(searchLower)
-      )
-
-      if (matchingApps.length > 0) {
-        // Weight by percentage of matching apps in category + absolute count
-        const percentage = matchingApps.length / categoryApps.length
-        categoryScores[category] = (percentage * 100) + matchingApps.length
-      }
-    })
-
-    // Return category with highest score
-    const bestCategory = Object.entries(categoryScores)
-      .sort(([,a], [,b]) => b - a)[0]
-
-    return bestCategory ? bestCategory[0] : null
-  }, [allSoftware, categories])
-
-  // Handle search with smart redirection
-  const handleSearchSubmit = useCallback((searchValue: string) => {
-    if (!searchValue || searchValue.length < 2) return
-
-    const bestCategory = detectBestCategory(searchValue)
-
-    if (bestCategory) {
-      // Redirect to category page with search parameter
-      const searchParams = new URLSearchParams({ q: searchValue })
-      router.push(`/${bestCategory}?${searchParams.toString()}`)
-    } else {
-      // Stay on homepage but filter results
-      setSearchTerm(searchValue)
-      setCurrentPage(1)
-    }
-  }, [detectBestCategory, router])
-
-  // Handle Enter key in search input
-  const handleSearchKeyDown = useCallback((e: React.KeyboardEvent<HTMLInputElement>) => {
-    if (e.key === 'Enter') {
-      handleSearchSubmit(searchTerm)
-    }
-  }, [searchTerm, handleSearchSubmit])
-
-  const displaySoftware = useMemo(() => {
-    // Show search results when user is searching, otherwise show featured products
-    if (searchTerm === "") {
-      return featuredProducts
-    } else {
-      return searchResults
-    }
-  }, [searchTerm, searchResults, featuredProducts])
-
-  // Handle search input changes
+  // Handle search input changes - only for dropdown suggestions
   const handleSearchInputChange = useCallback((value: string) => {
     setSearchTerm(value)
 
     if (value.length >= 2) {
       const results = allSoftware.filter(software =>
-        software.name.toLowerCase().includes(value.toLowerCase()) ||
-        software.description.toLowerCase().includes(value.toLowerCase()) ||
-        software.alternatives.some(alt => alt.toLowerCase().includes(value.toLowerCase())) ||
-        software.company.toLowerCase().includes(value.toLowerCase())
+        software.name.toLowerCase().includes(value.toLowerCase())
       )
       setSearchResults(results)
+      setShowDropdown(true)
     } else {
       setSearchResults([])
+      setShowDropdown(false)
     }
-    setCurrentPage(1)
   }, [allSoftware])
+
+  // Handle selecting an app from dropdown
+  const handleAppSelect = useCallback((software: Software) => {
+    router.push(getAppUrl(software.category, software.name))
+    setSearchTerm("")
+    setShowDropdown(false)
+  }, [router])
+
+  // Handle clicking outside to close dropdown
+  const handleSearchBlur = useCallback(() => {
+    setTimeout(() => setShowDropdown(false), 200) // Delay to allow clicking on dropdown items
+  }, [])
 
   const totalPages = Math.ceil(displaySoftware.length / itemsPerPage)
   const paginatedSoftware = useMemo(() => {
@@ -211,22 +160,22 @@ export default function ClientHomePage({ allSoftware, featuredProducts, categori
                 placeholder="Search for Indian apps... (Type to see suggestions)"
                 value={searchTerm}
                 onChange={(e) => handleSearchInputChange(e.target.value)}
-                onKeyDown={handleSearchKeyDown}
+                onBlur={handleSearchBlur}
                 className="pl-20 pr-8 py-8 text-3xl border-4 border-blue-400 rounded-2xl bg-white focus:border-blue-600 focus:ring-blue-600 shadow-2xl font-medium"
               />
 
               {/* Search Dropdown */}
-              {searchTerm.length >= 2 && searchResults.length > 0 && (
+              {showDropdown && searchResults.length > 0 && (
                 <div className="absolute top-full left-0 right-0 mt-2 bg-white border border-gray-200 rounded-2xl shadow-xl z-50 max-h-80 overflow-y-auto">
                   <div className="p-2">
                     <p className="text-sm text-gray-600 px-4 py-2 font-medium">
                       {searchResults.length} apps found
                     </p>
                     {searchResults.slice(0, 8).map((app, index) => (
-                      <Link
+                      <button
                         key={index}
-                        href={getAppUrl(app.category, app.name)}
-                        className="flex items-center gap-3 p-3 hover:bg-gray-50 rounded-xl transition-colors"
+                        onClick={() => handleAppSelect(app)}
+                        className="w-full flex items-center gap-3 p-3 hover:bg-gray-50 rounded-xl transition-colors text-left"
                       >
                         <Favicon
                           websiteUrl={app.website}
@@ -244,7 +193,7 @@ export default function ClientHomePage({ allSoftware, featuredProducts, categori
                         <Badge variant="outline" className="text-xs">
                           {getCategoryDisplayName(app.category)}
                         </Badge>
-                      </Link>
+                      </button>
                     ))}
                   </div>
                 </div>
