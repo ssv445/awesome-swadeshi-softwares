@@ -179,12 +179,15 @@ export function generateAlternativesMapping(): AlternativeMapping[] {
 
   // Build inverted index: international tool -> Indian alternatives
   allSoftware.forEach(software => {
-    software.alternatives.forEach(alternative => {
-      if (!alternativesMap.has(alternative)) {
-        alternativesMap.set(alternative, [])
-      }
-      alternativesMap.get(alternative)!.push(software)
-    })
+    // Ensure alternatives is an array
+    if (software.alternatives && Array.isArray(software.alternatives)) {
+      software.alternatives.forEach(alternative => {
+        if (!alternativesMap.has(alternative)) {
+          alternativesMap.set(alternative, [])
+        }
+        alternativesMap.get(alternative)!.push(software)
+      })
+    }
   })
 
   // Convert to AlternativeMapping format

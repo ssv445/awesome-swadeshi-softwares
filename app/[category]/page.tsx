@@ -1,16 +1,17 @@
 import { notFound } from "next/navigation"
+import { Suspense } from "react"
 import { getSoftwareByCategory, getCategories } from "@/lib/server-data"
 import { getCategoryDisplayName } from "@/lib/data"
 import CategoryPage from "./category-page"
 
 interface CategoryPageProps {
-  params: {
+  params: Promise<{
     category: string
-  }
+  }>
 }
 
-export default function CategoryPageWrapper({ params }: CategoryPageProps) {
-  const { category } = params
+export default async function CategoryPageWrapper({ params }: CategoryPageProps) {
+  const { category } = await params
   const software = getSoftwareByCategory(category)
   const categories = getCategories()
 
@@ -22,12 +23,14 @@ export default function CategoryPageWrapper({ params }: CategoryPageProps) {
   const categoryName = getCategoryDisplayName(category)
 
   return (
-    <CategoryPage
-      software={software}
-      categoryName={categoryName}
-      categorySlug={category}
-      allCategories={categories}
-    />
+    <Suspense fallback={<div>Loading...</div>}>
+      <CategoryPage
+        software={software}
+        categoryName={categoryName}
+        categorySlug={category}
+        allCategories={categories}
+      />
+    </Suspense>
   )
 }
 
@@ -37,4 +40,16 @@ export async function generateStaticParams() {
   return categories.map((category) => ({
     category: category,
   }))
+}
+
+export async function generateMetadata({ params }: CategoryPageProps) {
+  const { category } = await params
+  const categoryName = getCategoryDisplayName(category)
+  const software = getSoftwareByCategory(category)
+
+  return {
+    title: `${categoryName} Apps - Indian Alternatives | Awesome Swadeshi Apps`,
+    description: `Discover ${software.length}+ Indian ${categoryName.toLowerCase()} apps that can replace international tools. Support Swadeshi movement with quality Indian alternatives.`,
+    keywords: `Indian ${categoryName.toLowerCase()} apps, Swadeshi software, Indian alternatives, Atmanirbhar Bharat, ${categoryName} tools`,
+  }
 }

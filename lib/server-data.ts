@@ -82,3 +82,134 @@ export function getCategories(): string[] {
     return []
   }
 }
+
+// Get individual app by category and slug (server-side only)
+export function getAppBySlug(category: string, slug: string): Software | null {
+  const dataDir = path.join(process.cwd(), 'data')
+  const categoryPath = path.join(dataDir, category)
+
+  try {
+    if (!fs.existsSync(categoryPath)) {
+      return null
+    }
+
+    const files = fs.readdirSync(categoryPath)
+      .filter(file => file.endsWith('.json'))
+
+    // Find file that matches the slug
+    const targetFile = files.find(file => {
+      const fileSlug = file.replace('.json', '')
+      return fileSlug === slug
+    })
+
+    if (!targetFile) {
+      return null
+    }
+
+    const filePath = path.join(categoryPath, targetFile)
+    const fileContent = fs.readFileSync(filePath, 'utf8')
+    const appData = JSON.parse(fileContent)
+
+    return appData
+  } catch (error) {
+    console.error(`Error reading app ${category}/${slug}:`, error)
+    return null
+  }
+}
+
+// Get all app paths for static generation (server-side only)
+export function getAllAppPaths(): { category: string; slug: string }[] {
+  const dataDir = path.join(process.cwd(), 'data')
+  const paths: { category: string; slug: string }[] = []
+
+  try {
+    const categories = fs.readdirSync(dataDir, { withFileTypes: true })
+      .filter(dirent => dirent.isDirectory())
+      .map(dirent => dirent.name)
+
+    for (const category of categories) {
+      const categoryPath = path.join(dataDir, category)
+
+      try {
+        const files = fs.readdirSync(categoryPath)
+          .filter(file => file.endsWith('.json'))
+
+        for (const file of files) {
+          const slug = file.replace('.json', '')
+          paths.push({ category, slug })
+        }
+      } catch (error) {
+        console.warn(`Error reading category ${category}:`, error)
+      }
+    }
+  } catch (error) {
+    console.error('Error reading data directory:', error)
+  }
+
+  return paths
+}
+
+// Get related apps (same company or category) (server-side only)
+export function getRelatedApps(app: Software, limit: number = 6): { sameCompany: Software[]; sameCategory: Software[] } {
+  const allApps = getAllSoftware()
+
+  const sameCompany = allApps
+    .filter(otherApp =>
+      otherApp.company === app.company &&
+      otherApp.name !== app.name
+    )
+    .slice(0, Math.ceil(limit / 2))
+
+  const sameCategory = allApps
+    .filter(otherApp =>
+      otherApp.category === app.category &&
+      otherApp.name !== app.name &&
+      !sameCompany.some(companyApp => companyApp.name === otherApp.name)
+    )
+    .slice(0, limit - sameCompany.length)
+
+  return { sameCompany, sameCategory }
+}
+
+// Featured products interface
+interface FeaturedProduct {
+  category: string
+  slug: string
+  featured_reason: string
+}
+
+interface HomepageData {
+  featured_products: FeaturedProduct[]
+}
+
+// Get featured products from homepage.json (server-side only)
+export function getFeaturedProducts(): Software[] {
+  const homepageFilePath = path.join(process.cwd(), 'data', 'homepage.json')
+  const featuredApps: Software[] = []
+
+  try {
+    if (!fs.existsSync(homepageFilePath)) {
+      console.warn('homepage.json not found, returning all apps')
+      return getAllSoftware().slice(0, 10) // Fallback to first 10 apps
+    }
+
+    const homepageContent = fs.readFileSync(homepageFilePath, 'utf8')
+    const homepageData: HomepageData = JSON.parse(homepageContent)
+
+    for (const featuredProduct of homepageData.featured_products) {
+      const app = getAppBySlug(featuredProduct.category, featuredProduct.slug)
+      if (app) {
+        // Add featured reason as a temporary property for display
+        const featuredApp = { ...app, featured_reason: featuredProduct.featured_reason }
+        featuredApps.push(featuredApp)
+      } else {
+        console.warn(`Featured app not found: ${featuredProduct.category}/${featuredProduct.slug}`)
+      }
+    }
+
+    return featuredApps
+  } catch (error) {
+    console.error('Error loading featured products:', error)
+    return getAllSoftware().slice(0, 10) // Fallback to first 10 apps
+  }
+}

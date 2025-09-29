@@ -1,6 +1,7 @@
 "use client"
 
-import { useState, useMemo } from "react"
+import { useState, useMemo, useCallback } from "react"
+import { useRouter } from "next/navigation"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
@@ -8,20 +9,22 @@ import { Input } from "@/components/ui/input"
 import { Search, Flag, ExternalLink, Star, Zap } from "lucide-react"
 import { AshokaChakra } from "@/components/ashoka-chakra"
 import Link from "next/link"
-import { getCategoryDisplayName, getAlternativeUrl } from "@/lib/data"
+import { getCategoryDisplayName, getAlternativeUrl, getAppUrl } from "@/lib/data"
 import { Favicon } from "@/components/favicon"
 import type { Software } from "@/lib/data"
 
 interface ClientHomePageProps {
   allSoftware: Software[]
+  featuredProducts: Software[]
   categories: string[]
 }
 
-export default function ClientHomePage({ allSoftware, categories }: ClientHomePageProps) {
+export default function ClientHomePage({ allSoftware, featuredProducts, categories }: ClientHomePageProps) {
   const [searchTerm, setSearchTerm] = useState("")
   const [selectedCategory, setSelectedCategory] = useState("")
   const [currentPage, setCurrentPage] = useState(1)
   const itemsPerPage = 12
+  const router = useRouter()
 
   const categoryDisplayNames = useMemo(() => {
     return categories.map(cat => ({
@@ -30,7 +33,71 @@ export default function ClientHomePage({ allSoftware, categories }: ClientHomePa
     }))
   }, [categories])
 
+  // Smart category detection based on search results
+  const detectBestCategory = useCallback((searchTerm: string) => {
+    if (!searchTerm || searchTerm.length < 2) return null
+
+    const searchLower = searchTerm.toLowerCase()
+    const categoryScores: { [key: string]: number } = {}
+
+    // Score categories based on how many apps match the search in each category
+    categories.forEach(category => {
+      const categoryApps = allSoftware.filter(app =>
+        app.category.toLowerCase().replace(/\s+/g, '-') === category
+      )
+
+      const matchingApps = categoryApps.filter(app =>
+        app.name.toLowerCase().includes(searchLower) ||
+        app.description.toLowerCase().includes(searchLower) ||
+        app.alternatives.some(alt => alt.toLowerCase().includes(searchLower)) ||
+        app.company.toLowerCase().includes(searchLower)
+      )
+
+      if (matchingApps.length > 0) {
+        // Weight by percentage of matching apps in category + absolute count
+        const percentage = matchingApps.length / categoryApps.length
+        categoryScores[category] = (percentage * 100) + matchingApps.length
+      }
+    })
+
+    // Return category with highest score
+    const bestCategory = Object.entries(categoryScores)
+      .sort(([,a], [,b]) => b - a)[0]
+
+    return bestCategory ? bestCategory[0] : null
+  }, [allSoftware, categories])
+
+  // Handle search with smart redirection
+  const handleSearchSubmit = useCallback((searchValue: string) => {
+    if (!searchValue || searchValue.length < 2) return
+
+    const bestCategory = detectBestCategory(searchValue)
+
+    if (bestCategory) {
+      // Redirect to category page with search parameter
+      const searchParams = new URLSearchParams({ q: searchValue })
+      router.push(`/${bestCategory}?${searchParams.toString()}`)
+    } else {
+      // Stay on homepage but filter results
+      setSearchTerm(searchValue)
+      setCurrentPage(1)
+    }
+  }, [detectBestCategory, router])
+
+  // Handle Enter key in search input
+  const handleSearchKeyDown = useCallback((e: React.KeyboardEvent<HTMLInputElement>) => {
+    if (e.key === 'Enter') {
+      handleSearchSubmit(searchTerm)
+    }
+  }, [searchTerm, handleSearchSubmit])
+
   const filteredSoftware = useMemo(() => {
+    // Show featured products when no search or category filter is active
+    if (searchTerm === "" && selectedCategory === "") {
+      return featuredProducts
+    }
+
+    // Otherwise filter all software based on search and category
     return allSoftware.filter(software => {
       const matchesSearch = searchTerm === "" ||
         software.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
@@ -42,7 +109,7 @@ export default function ClientHomePage({ allSoftware, categories }: ClientHomePa
 
       return matchesSearch && matchesCategory
     })
-  }, [searchTerm, selectedCategory, allSoftware])
+  }, [searchTerm, selectedCategory, allSoftware, featuredProducts])
 
   const totalPages = Math.ceil(filteredSoftware.length / itemsPerPage)
   const paginatedSoftware = useMemo(() => {
@@ -82,7 +149,7 @@ export default function ClientHomePage({ allSoftware, categories }: ClientHomePa
                 <h1 className="text-2xl font-bold text-gray-900">
                   Awesome Swadeshi
                 </h1>
-                <p className="text-sm text-gray-600 font-medium">Indian Software Directory • Atmanirbhar Bharat</p>
+                <p className="text-sm text-gray-600 font-medium">Indian Apps Directory • Atmanirbhar Bharat</p>
               </div>
             </div>
             <div className="flex items-center space-x-4">
@@ -90,7 +157,7 @@ export default function ClientHomePage({ allSoftware, categories }: ClientHomePa
                 <Link href="/why-swadeshi">Why Swadeshi?</Link>
               </Button>
               <Button asChild className="bg-blue-600 hover:bg-blue-700 text-white border-none">
-                <Link href="/about">Add Software</Link>
+                <Link href="/about">Add App</Link>
               </Button>
             </div>
           </div>
@@ -115,14 +182,14 @@ export default function ClientHomePage({ allSoftware, categories }: ClientHomePa
             </div>
           </div>
           <h1 className="text-5xl md:text-6xl font-bold text-gray-900 mb-6 leading-tight">
-            <span className="text-gray-900">Awesome</span> Swadeshi Software
+            <span className="text-gray-900">Awesome</span> Swadeshi Apps
           </h1>
           <p className="text-xl md:text-2xl text-gray-700 mb-4 font-medium">
-            Find Indian Software Solutions for Every Need
+            Discover India's Leading Apps & Platforms
           </p>
           <p className="text-lg text-gray-600 mb-12 max-w-3xl mx-auto">
-            Join the <em>Swadeshi</em> movement by choosing Indian software alternatives to international tools.
-            Discover quality solutions built by Indian innovators for the world.
+            Join the <em>Swadeshi</em> movement by choosing Indian apps that compete globally.
+            Explore featured solutions built by Indian innovators and trusted by millions.
           </p>
 
           {/* Search and Filter */}
@@ -131,9 +198,10 @@ export default function ClientHomePage({ allSoftware, categories }: ClientHomePa
               <Search className="absolute left-8 top-1/2 transform -translate-y-1/2 text-gray-500 h-10 w-10" />
               <Input
                 type="text"
-                placeholder="Search for Indian software alternatives..."
+                placeholder="Search for Indian apps... (Press Enter to find best category)"
                 value={searchTerm}
                 onChange={(e) => handleSearchChange(e.target.value)}
+                onKeyDown={handleSearchKeyDown}
                 className="pl-20 pr-8 py-8 text-3xl border-4 border-blue-400 rounded-2xl bg-white focus:border-blue-600 focus:ring-blue-600 shadow-2xl font-medium"
               />
             </div>
@@ -170,7 +238,11 @@ export default function ClientHomePage({ allSoftware, categories }: ClientHomePa
           <div className="mt-8 text-center">
             <div className="inline-flex items-center space-x-2 bg-white px-6 py-3 rounded-full border border-gray-300">
               <p className="text-lg text-gray-700 font-medium">
-                <span className="font-bold text-gray-800">{filteredSoftware.length}</span> Indian Software Alternatives
+                <span className="font-bold text-gray-800">{filteredSoftware.length}</span>{" "}
+                {searchTerm === "" && selectedCategory === ""
+                  ? "Featured Indian Apps"
+                  : "Indian App Alternatives"
+                }
               </p>
             </div>
           </div>
@@ -214,6 +286,15 @@ export default function ClientHomePage({ allSoftware, categories }: ClientHomePa
                 <CardContent className="space-y-4">
                   <p className="text-gray-700 leading-relaxed text-sm">{software.description}</p>
 
+                  {software.featured_reason && (
+                    <div className="bg-gradient-to-r from-orange-50 to-blue-50 border border-orange-200 rounded-lg p-3">
+                      <p className="text-sm font-medium text-orange-800 flex items-center">
+                        <Star className="h-4 w-4 mr-2 text-orange-500" />
+                        {software.featured_reason}
+                      </p>
+                    </div>
+                  )}
+
                   <div className="space-y-3">
                     <div>
                       <p className="text-sm font-medium text-gray-600">Alternative to:</p>
@@ -229,7 +310,12 @@ export default function ClientHomePage({ allSoftware, categories }: ClientHomePa
                     </div>
                   </div>
 
-                  <div className="flex justify-end pt-3 border-t border-gray-100">
+                  <div className="flex justify-end gap-2 pt-3 border-t border-gray-100">
+                    <Button asChild size="sm" variant="outline">
+                      <Link href={getAppUrl(software.category, software.name)}>
+                        View Details
+                      </Link>
+                    </Button>
                     <Button asChild size="sm" className="bg-blue-600 hover:bg-blue-700 text-white border-none">
                       <Link href={software.website} target="_blank" rel="noopener noreferrer">
                         Visit Website

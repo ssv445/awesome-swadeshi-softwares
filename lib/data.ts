@@ -17,6 +17,7 @@ export interface OpenGraph {
   // Tracking metadata
   last_updated: string  // ISO 8601 UTC timestamp
   // Additional OG fields (flexible for any other og: or twitter: tags)
+  // Note: Some Twitter app fields may have complex names like "twitter_app:name:iphone"
   [key: string]: string | undefined
 }
 
@@ -31,6 +32,7 @@ export interface Software {
   location: string
   faviconUrl?: string // Optional custom favicon URL
   opengraph?: OpenGraph // Optional OpenGraph metadata
+  featured_reason?: string // Optional featured reason (for homepage display)
 }
 
 // Convert category slug to display name (client-safe utility)
@@ -56,4 +58,11 @@ export function getFaviconUrl(websiteUrl: string, size: number = 32): string {
     // If URL is invalid, return a default/fallback favicon
     return `https://www.google.com/s2/favicons?sz=${size}&domain=example.com`
   }
+}
+
+// Generate app URL from category and name
+export function getAppUrl(category: string, name: string): string {
+  const categorySlug = category.toLowerCase().replace(/\s+/g, '-')
+  const nameSlug = name.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '')
+  return `/${categorySlug}/${nameSlug}`
 }

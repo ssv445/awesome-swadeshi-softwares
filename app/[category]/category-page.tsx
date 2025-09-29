@@ -1,6 +1,7 @@
 "use client"
 
-import { useState, useMemo } from "react"
+import { useState, useMemo, useEffect } from "react"
+import { useRouter, useSearchParams } from "next/navigation"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
@@ -8,7 +9,7 @@ import { Input } from "@/components/ui/input"
 import { Search, Flag, ExternalLink, ArrowLeft } from "lucide-react"
 import { AshokaChakra } from "@/components/ashoka-chakra"
 import Link from "next/link"
-import { getCategoryDisplayName } from "@/lib/data"
+import { getCategoryDisplayName, getAppUrl } from "@/lib/data"
 import { Favicon } from "@/components/favicon"
 import type { Software } from "@/lib/data"
 
@@ -21,6 +22,34 @@ interface CategoryPageProps {
 
 export default function CategoryPage({ software, categoryName, categorySlug, allCategories }: CategoryPageProps) {
   const [searchTerm, setSearchTerm] = useState("")
+  const router = useRouter()
+  const searchParams = useSearchParams()
+
+  // Initialize search term from URL parameter
+  useEffect(() => {
+    const urlSearchTerm = searchParams.get('q')
+    if (urlSearchTerm) {
+      setSearchTerm(urlSearchTerm)
+    }
+  }, [searchParams])
+
+  // Update URL when search changes
+  const updateSearchUrl = (newSearchTerm: string) => {
+    const params = new URLSearchParams(searchParams.toString())
+    if (newSearchTerm) {
+      params.set('q', newSearchTerm)
+    } else {
+      params.delete('q')
+    }
+
+    const newUrl = `/${categorySlug}${params.toString() ? '?' + params.toString() : ''}`
+    router.replace(newUrl, { scroll: false })
+  }
+
+  const handleSearchChange = (value: string) => {
+    setSearchTerm(value)
+    updateSearchUrl(value)
+  }
 
   const categoryDisplayNames = useMemo(() => {
     return allCategories.map(cat => ({
@@ -49,12 +78,12 @@ export default function CategoryPage({ software, categoryName, categorySlug, all
             <div className="flex items-center space-x-2">
               <AshokaChakra className="h-8 w-8 text-orange-500" />
               <div>
-                <h1 className="text-xl font-bold text-gray-900">Indian Software Directory</h1>
-                <p className="text-sm text-gray-600">Made in India, Made for the World</p>
+                <h1 className="text-xl font-bold text-gray-900">Awesome Swadeshi Apps</h1>
+                <p className="text-sm text-gray-600">Indian Apps Directory • Atmanirbhar Bharat</p>
               </div>
             </div>
             <Button asChild variant="outline">
-              <Link href="/about">Add Software</Link>
+              <Link href="/about">Add App</Link>
             </Button>
           </div>
         </div>
@@ -66,7 +95,7 @@ export default function CategoryPage({ software, categoryName, categorySlug, all
           <Button asChild variant="ghost" className="mb-6">
             <Link href="/">
               <ArrowLeft className="mr-2 h-4 w-4" />
-              Back to All Software
+              Back to All Apps
             </Link>
           </Button>
 
@@ -74,10 +103,10 @@ export default function CategoryPage({ software, categoryName, categorySlug, all
             <AshokaChakra className="h-12 w-12 text-orange-500" />
           </div>
           <h1 className="text-4xl font-bold text-gray-900 mb-6">
-            <span className="text-orange-500">{categoryName}</span> Software
+            <span className="text-orange-500">{categoryName}</span> Apps
           </h1>
           <p className="text-xl text-gray-600 mb-8">
-            Indian alternatives for {categoryName.toLowerCase()} tools and platforms.
+            Indian apps that can replace international {categoryName.toLowerCase()} tools and platforms.
           </p>
 
           {/* Search */}
@@ -86,9 +115,9 @@ export default function CategoryPage({ software, categoryName, categorySlug, all
               <Search className="absolute left-4 top-1/2 transform -translate-y-1/2 text-gray-400 h-5 w-5" />
               <Input
                 type="text"
-                placeholder={`Search ${categoryName.toLowerCase()} software...`}
+                placeholder={`Search ${categoryName.toLowerCase()} apps...`}
                 value={searchTerm}
-                onChange={(e) => setSearchTerm(e.target.value)}
+                onChange={(e) => handleSearchChange(e.target.value)}
                 className="pl-12 pr-4 py-3 text-lg"
               />
             </div>
@@ -114,14 +143,33 @@ export default function CategoryPage({ software, categoryName, categorySlug, all
           </div>
 
           <div className="mt-8 text-center">
-            <p className="text-lg text-gray-600">
-              <span className="font-bold text-orange-500">{filteredSoftware.length}</span> {categoryName.toLowerCase()} alternatives
-            </p>
+            <div className="inline-flex items-center space-x-2 bg-white px-6 py-3 rounded-full border border-gray-300">
+              <p className="text-lg text-gray-600">
+                <span className="font-bold text-orange-500">{filteredSoftware.length}</span> {categoryName.toLowerCase()} apps
+                {searchTerm && (
+                  <span className="text-gray-500 ml-2">
+                    matching "<span className="font-medium text-orange-600">{searchTerm}</span>"
+                  </span>
+                )}
+              </p>
+            </div>
+            {searchTerm && (
+              <div className="mt-4">
+                <Button
+                  variant="outline"
+                  size="sm"
+                  onClick={() => handleSearchChange("")}
+                  className="text-gray-600 hover:bg-gray-50"
+                >
+                  Clear search
+                </Button>
+              </div>
+            )}
           </div>
         </div>
       </section>
 
-      {/* Software Grid */}
+      {/* Apps Grid */}
       <section className="py-16 px-4">
         <div className="container mx-auto">
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -168,14 +216,21 @@ export default function CategoryPage({ software, categoryName, categorySlug, all
                     </div>
                   </div>
 
-                  <div className="flex items-center justify-between">
+                  <div className="flex items-center justify-between gap-2">
                     <Badge variant="secondary">{software.pricing}</Badge>
-                    <Button asChild size="sm">
-                      <Link href={software.website} target="_blank" rel="noopener noreferrer">
-                        Visit Site
-                        <ExternalLink className="ml-1 h-3 w-3" />
-                      </Link>
-                    </Button>
+                    <div className="flex gap-2">
+                      <Button asChild size="sm" variant="outline">
+                        <Link href={getAppUrl(software.category, software.name)}>
+                          View Details
+                        </Link>
+                      </Button>
+                      <Button asChild size="sm">
+                        <Link href={software.website} target="_blank" rel="noopener noreferrer">
+                          Visit Site
+                          <ExternalLink className="ml-1 h-3 w-3" />
+                        </Link>
+                      </Button>
+                    </div>
                   </div>
                 </CardContent>
               </Card>
@@ -184,7 +239,7 @@ export default function CategoryPage({ software, categoryName, categorySlug, all
 
           {filteredSoftware.length === 0 && (
             <div className="text-center py-12">
-              <p className="text-gray-600">No software found matching your search.</p>
+              <p className="text-gray-600">No apps found matching your search.</p>
             </div>
           )}
         </div>
@@ -195,10 +250,10 @@ export default function CategoryPage({ software, categoryName, categorySlug, all
         <div className="container mx-auto text-center">
           <div className="flex items-center justify-center space-x-2 mb-4">
             <AshokaChakra className="h-5 w-5 text-orange-500" />
-            <span className="font-bold">Indian Software Directory</span>
+            <span className="font-bold">Awesome Swadeshi Apps</span>
           </div>
           <p className="text-gray-600 text-sm mb-4">
-            Promoting Indian software innovation and helping users discover quality alternatives.
+            Promoting Indian app innovation and helping users discover quality alternatives.
           </p>
           <p className="text-gray-500 text-xs">&copy; 2024 Made with ❤️ in India</p>
         </div>
