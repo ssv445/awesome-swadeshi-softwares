@@ -8,7 +8,7 @@ import { Input } from "@/components/ui/input"
 import { Search, Flag, ExternalLink, ArrowLeft } from "lucide-react"
 import { AshokaChakra } from "@/components/ashoka-chakra"
 import Link from "next/link"
-import { getCategoryDisplayName } from "@/lib/data"
+import { getCategoryDisplayName, getFaviconUrl } from "@/lib/data"
 import type { Software } from "@/lib/data"
 
 interface CategoryPageProps {
@@ -128,12 +128,26 @@ export default function CategoryPage({ software, categoryName, categorySlug, all
               <Card key={index} className="hover:shadow-lg transition-shadow">
                 <CardHeader>
                   <div className="flex items-start justify-between">
-                    <div>
-                      <CardTitle className="text-lg">{software.name}</CardTitle>
-                      <p className="text-sm text-gray-600">{software.company}</p>
-                      <Badge variant="secondary" className="mt-1 bg-orange-100 text-orange-800">
-                        {software.location}
-                      </Badge>
+                    <div className="flex items-start space-x-3">
+                      <div className="flex-shrink-0 mt-1">
+                        <img
+                          src={getFaviconUrl(software.website, 32)}
+                          alt={`${software.name} favicon`}
+                          className="h-6 w-6 rounded-sm"
+                          onError={(e) => {
+                            e.currentTarget.style.display = 'none';
+                            e.currentTarget.nextElementSibling?.classList.remove('hidden');
+                          }}
+                        />
+                        <AshokaChakra className="h-5 w-5 text-orange-500 hidden" />
+                      </div>
+                      <div>
+                        <CardTitle className="text-lg">{software.name}</CardTitle>
+                        <p className="text-sm text-gray-600">{software.company}</p>
+                        <Badge variant="secondary" className="mt-1 bg-orange-100 text-orange-800">
+                          {software.location}
+                        </Badge>
+                      </div>
                     </div>
                     <Badge variant="outline">{software.category}</Badge>
                   </div>

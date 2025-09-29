@@ -21,3 +21,15 @@ export function getCategoryDisplayName(slug: string): string {
 export function getAlternativeUrl(internationalTool: string): string {
   return `/alternatives/${internationalTool.toLowerCase().replace(/\s+/g, '-')}`
 }
+
+// Generate favicon URL using Google's favicon API
+export function getFaviconUrl(websiteUrl: string, size: number = 32): string {
+  try {
+    const url = new URL(websiteUrl)
+    const domain = url.hostname.replace(/^www\./, '') // Remove www. prefix
+    return `https://www.google.com/s2/favicons?sz=${size}&domain=${domain}`
+  } catch (error) {
+    // If URL is invalid, return a default/fallback favicon
+    return `https://www.google.com/s2/favicons?sz=${size}&domain=example.com`
+  }
+}

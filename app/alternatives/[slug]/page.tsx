@@ -6,6 +6,7 @@ import { AshokaChakra } from "@/components/ashoka-chakra"
 import Link from "next/link"
 import { notFound } from "next/navigation"
 import { getAlternativeBySlug, getAllAlternativeSlugs } from "@/lib/alternatives-server"
+import { getFaviconUrl } from "@/lib/data"
 
 // Icon mapping
 const iconMap = {
@@ -119,7 +120,18 @@ export default async function AlternativePage({ params }: AlternativePageProps) 
               <Card key={index} className="group hover:shadow-lg transition-all duration-300 border border-green-200 hover:border-green-400 bg-white hover:scale-[1.02]">
                 <CardHeader className="pb-4">
                   <div className="flex items-center space-x-3 mb-3">
-                    <AshokaChakra className="h-5 w-5 text-blue-600 flex-shrink-0" />
+                    <div className="flex items-center space-x-2">
+                      <img
+                        src={getFaviconUrl(indianAlt.website, 32)}
+                        alt={`${indianAlt.name} favicon`}
+                        className="h-6 w-6 rounded-sm flex-shrink-0"
+                        onError={(e) => {
+                          e.currentTarget.style.display = 'none';
+                          e.currentTarget.nextElementSibling?.classList.remove('hidden');
+                        }}
+                      />
+                      <AshokaChakra className="h-5 w-5 text-blue-600 flex-shrink-0 hidden" />
+                    </div>
                     <div className="min-w-0 flex-1">
                       <CardTitle className="text-xl font-bold text-gray-900 truncate">
                         {indianAlt.name}

@@ -8,7 +8,7 @@ import { Input } from "@/components/ui/input"
 import { Search, Flag, ExternalLink, Star, Zap } from "lucide-react"
 import { AshokaChakra } from "@/components/ashoka-chakra"
 import Link from "next/link"
-import { getCategoryDisplayName, getAlternativeUrl } from "@/lib/data"
+import { getCategoryDisplayName, getAlternativeUrl, getFaviconUrl } from "@/lib/data"
 import type { Software } from "@/lib/data"
 
 interface ClientHomePageProps {
@@ -191,7 +191,18 @@ export default function ClientHomePage({ allSoftware, categories }: ClientHomePa
               <Card key={index} className="group hover:shadow-lg transition-all duration-300 border border-green-200 hover:border-green-400 bg-white hover:scale-[1.02]">
                 <CardHeader className="pb-4">
                   <div className="flex items-center space-x-3 mb-3">
-                    <AshokaChakra className="h-5 w-5 text-blue-600 flex-shrink-0" />
+                    <div className="flex items-center space-x-2">
+                      <img
+                        src={getFaviconUrl(software.website, 32)}
+                        alt={`${software.name} favicon`}
+                        className="h-6 w-6 rounded-sm flex-shrink-0"
+                        onError={(e) => {
+                          e.currentTarget.style.display = 'none';
+                          e.currentTarget.nextElementSibling?.classList.remove('hidden');
+                        }}
+                      />
+                      <AshokaChakra className="h-5 w-5 text-blue-600 flex-shrink-0 hidden" />
+                    </div>
                     <div className="min-w-0 flex-1">
                       <CardTitle className="text-xl font-bold text-gray-900 truncate">
                         {software.name}
