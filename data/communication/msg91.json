@@ -1,0 +1,10 @@
+{
+  "name": "MSG91",
+  "description": "Cloud communication platform offering SMS, email, WhatsApp, voice, and OTP APIs for businesses with 2.5B+ monthly API calls",
+  "website": "https://msg91.com/",
+  "category": "Communication",
+  "alternatives": ["Twilio", "SendGrid", "Amazon SNS", "Vonage"],
+  "pricing": "Paid",
+  "company": "MSG91",
+  "location": "Indore, India"
+}
