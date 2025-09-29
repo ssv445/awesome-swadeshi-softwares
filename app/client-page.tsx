@@ -6,7 +6,7 @@ import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Input } from "@/components/ui/input"
-import { Search, Flag, ExternalLink, Star, Zap } from "lucide-react"
+import { Search, Star, Zap } from "lucide-react"
 import { AshokaChakra } from "@/components/ashoka-chakra"
 import Link from "next/link"
 import { getCategoryDisplayName, getAlternativeUrl, getAppUrl } from "@/lib/data"
@@ -21,7 +21,7 @@ interface ClientHomePageProps {
 
 export default function ClientHomePage({ allSoftware, featuredProducts, categories }: ClientHomePageProps) {
   const [searchTerm, setSearchTerm] = useState("")
-  const [selectedCategory, setSelectedCategory] = useState("")
+  const [searchResults, setSearchResults] = useState<Software[]>([])
   const [currentPage, setCurrentPage] = useState(1)
   const itemsPerPage = 12
   const router = useRouter()
@@ -91,42 +91,39 @@ export default function ClientHomePage({ allSoftware, featuredProducts, categori
     }
   }, [searchTerm, handleSearchSubmit])
 
-  const filteredSoftware = useMemo(() => {
-    // Show featured products when no search or category filter is active
-    if (searchTerm === "" && selectedCategory === "") {
+  const displaySoftware = useMemo(() => {
+    // Show search results when user is searching, otherwise show featured products
+    if (searchTerm === "") {
       return featuredProducts
+    } else {
+      return searchResults
     }
+  }, [searchTerm, searchResults, featuredProducts])
 
-    // Otherwise filter all software based on search and category
-    return allSoftware.filter(software => {
-      const matchesSearch = searchTerm === "" ||
-        software.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
-        software.description.toLowerCase().includes(searchTerm.toLowerCase()) ||
-        software.alternatives.some(alt => alt.toLowerCase().includes(searchTerm.toLowerCase()))
+  // Handle search input changes
+  const handleSearchInputChange = useCallback((value: string) => {
+    setSearchTerm(value)
 
-      const matchesCategory = selectedCategory === "" ||
-        software.category.toLowerCase().replace(/\s+/g, '-') === selectedCategory
+    if (value.length >= 2) {
+      const results = allSoftware.filter(software =>
+        software.name.toLowerCase().includes(value.toLowerCase()) ||
+        software.description.toLowerCase().includes(value.toLowerCase()) ||
+        software.alternatives.some(alt => alt.toLowerCase().includes(value.toLowerCase())) ||
+        software.company.toLowerCase().includes(value.toLowerCase())
+      )
+      setSearchResults(results)
+    } else {
+      setSearchResults([])
+    }
+    setCurrentPage(1)
+  }, [allSoftware])
 
-      return matchesSearch && matchesCategory
-    })
-  }, [searchTerm, selectedCategory, allSoftware, featuredProducts])
-
-  const totalPages = Math.ceil(filteredSoftware.length / itemsPerPage)
+  const totalPages = Math.ceil(displaySoftware.length / itemsPerPage)
   const paginatedSoftware = useMemo(() => {
     const startIndex = (currentPage - 1) * itemsPerPage
-    return filteredSoftware.slice(startIndex, startIndex + itemsPerPage)
-  }, [filteredSoftware, currentPage, itemsPerPage])
+    return displaySoftware.slice(startIndex, startIndex + itemsPerPage)
+  }, [displaySoftware, currentPage, itemsPerPage])
 
-  // Reset pagination when filters change
-  const handleFilterChange = (newCategory: string) => {
-    setSelectedCategory(newCategory)
-    setCurrentPage(1)
-  }
-
-  const handleSearchChange = (newSearch: string) => {
-    setSearchTerm(newSearch)
-    setCurrentPage(1)
-  }
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-orange-50 via-white to-green-50">
@@ -187,10 +184,24 @@ export default function ClientHomePage({ allSoftware, featuredProducts, categori
           <p className="text-xl md:text-2xl text-gray-700 mb-4 font-medium">
             Discover India's Leading Apps & Platforms
           </p>
-          <p className="text-lg text-gray-600 mb-12 max-w-3xl mx-auto">
+          <p className="text-lg text-gray-600 mb-8 max-w-3xl mx-auto">
             Join the <em>Swadeshi</em> movement by choosing Indian apps that compete globally.
             Explore featured solutions built by Indian innovators and trusted by millions.
           </p>
+
+          {/* Total Apps Counter */}
+          <div className="mb-12">
+            <div className="inline-flex items-center justify-center bg-gradient-to-r from-orange-500 to-green-600 text-white px-8 py-4 rounded-2xl shadow-xl">
+              <div className="text-center">
+                <div className="text-4xl md:text-5xl font-bold mb-2">
+                  {allSoftware.length}+
+                </div>
+                <div className="text-lg md:text-xl font-medium">
+                  Indian Apps Available
+                </div>
+              </div>
+            </div>
+          </div>
 
           {/* Search and Filter */}
           <div className="max-w-4xl mx-auto space-y-6">
@@ -198,54 +209,60 @@ export default function ClientHomePage({ allSoftware, featuredProducts, categori
               <Search className="absolute left-8 top-1/2 transform -translate-y-1/2 text-gray-500 h-10 w-10" />
               <Input
                 type="text"
-                placeholder="Search for Indian apps... (Press Enter to find best category)"
+                placeholder="Search for Indian apps... (Type to see suggestions)"
                 value={searchTerm}
-                onChange={(e) => handleSearchChange(e.target.value)}
+                onChange={(e) => handleSearchInputChange(e.target.value)}
                 onKeyDown={handleSearchKeyDown}
                 className="pl-20 pr-8 py-8 text-3xl border-4 border-blue-400 rounded-2xl bg-white focus:border-blue-600 focus:ring-blue-600 shadow-2xl font-medium"
               />
+
+              {/* Search Dropdown */}
+              {searchTerm.length >= 2 && searchResults.length > 0 && (
+                <div className="absolute top-full left-0 right-0 mt-2 bg-white border border-gray-200 rounded-2xl shadow-xl z-50 max-h-80 overflow-y-auto">
+                  <div className="p-2">
+                    <p className="text-sm text-gray-600 px-4 py-2 font-medium">
+                      {searchResults.length} apps found
+                    </p>
+                    {searchResults.slice(0, 8).map((app, index) => (
+                      <Link
+                        key={index}
+                        href={getAppUrl(app.category, app.name)}
+                        className="flex items-center gap-3 p-3 hover:bg-gray-50 rounded-xl transition-colors"
+                      >
+                        <Favicon
+                          websiteUrl={app.website}
+                          name={app.name}
+                          size={24}
+                          className="h-6 w-6 object-contain"
+                          fallbackClassName="h-5 w-5 text-blue-600"
+                          customFaviconUrl={app.faviconUrl}
+                          fixedHeight={true}
+                        />
+                        <div className="flex-1 min-w-0">
+                          <p className="font-medium text-gray-900 truncate">{app.name}</p>
+                          <p className="text-sm text-gray-600 truncate">{app.company}</p>
+                        </div>
+                        <Badge variant="outline" className="text-xs">
+                          {getCategoryDisplayName(app.category)}
+                        </Badge>
+                      </Link>
+                    ))}
+                  </div>
+                </div>
+              )}
             </div>
 
             <div className="flex flex-wrap gap-3 justify-center">
-              <Button
-                variant={selectedCategory === "" ? "default" : "outline"}
-                onClick={() => handleFilterChange("")}
-                size="sm"
-                className={selectedCategory === "" ?
-                  "bg-blue-600 hover:bg-blue-700 text-white border-none" :
-                  "border border-gray-300 text-gray-600 hover:bg-gray-50 bg-white"
-                }
-              >
-                All Categories
-              </Button>
               {categoryDisplayNames.map(category => (
-                <Button
-                  key={category.slug}
-                  variant={selectedCategory === category.slug ? "default" : "outline"}
-                  onClick={() => handleFilterChange(category.slug)}
-                  size="sm"
-                  className={selectedCategory === category.slug ?
-                    "bg-blue-600 hover:bg-blue-700 text-white border-none" :
-                    "border border-gray-300 text-gray-600 hover:bg-gray-50 bg-white"
-                  }
-                >
-                  {category.name}
+                <Button key={category.slug} asChild size="sm" variant="outline" className="border border-gray-300 text-gray-600 hover:bg-gray-50 bg-white">
+                  <Link href={`/${category.slug}`}>
+                    {category.name}
+                  </Link>
                 </Button>
               ))}
             </div>
           </div>
 
-          <div className="mt-8 text-center">
-            <div className="inline-flex items-center space-x-2 bg-white px-6 py-3 rounded-full border border-gray-300">
-              <p className="text-lg text-gray-700 font-medium">
-                <span className="font-bold text-gray-800">{filteredSoftware.length}</span>{" "}
-                {searchTerm === "" && selectedCategory === ""
-                  ? "Featured Indian Apps"
-                  : "Indian App Alternatives"
-                }
-              </p>
-            </div>
-          </div>
         </div>
       </section>
 
@@ -286,15 +303,6 @@ export default function ClientHomePage({ allSoftware, featuredProducts, categori
                 <CardContent className="space-y-4">
                   <p className="text-gray-700 leading-relaxed text-sm">{software.description}</p>
 
-                  {software.featured_reason && (
-                    <div className="bg-gradient-to-r from-orange-50 to-blue-50 border border-orange-200 rounded-lg p-3">
-                      <p className="text-sm font-medium text-orange-800 flex items-center">
-                        <Star className="h-4 w-4 mr-2 text-orange-500" />
-                        {software.featured_reason}
-                      </p>
-                    </div>
-                  )}
-
                   <div className="space-y-3">
                     <div>
                       <p className="text-sm font-medium text-gray-600">Alternative to:</p>
@@ -310,16 +318,10 @@ export default function ClientHomePage({ allSoftware, featuredProducts, categori
                     </div>
                   </div>
 
-                  <div className="flex justify-end gap-2 pt-3 border-t border-gray-100">
-                    <Button asChild size="sm" variant="outline">
+                  <div className="flex justify-end pt-3 border-t border-gray-100">
+                    <Button asChild size="sm" className="bg-blue-600 hover:bg-blue-700 text-white border-none">
                       <Link href={getAppUrl(software.category, software.name)}>
                         View Details
-                      </Link>
-                    </Button>
-                    <Button asChild size="sm" className="bg-blue-600 hover:bg-blue-700 text-white border-none">
-                      <Link href={software.website} target="_blank" rel="noopener noreferrer">
-                        Visit Website
-                        <ExternalLink className="ml-2 h-4 w-4" />
                       </Link>
                     </Button>
                   </div>
@@ -368,7 +370,7 @@ export default function ClientHomePage({ allSoftware, featuredProducts, categori
             </div>
           )}
 
-          {filteredSoftware.length === 0 && (
+          {displaySoftware.length === 0 && (
             <div className="text-center py-16">
               <div className="bg-white border border-green-300 rounded-xl p-8 max-w-md mx-auto">
                 <AshokaChakra className="h-12 w-12 text-blue-600 mx-auto mb-4" />

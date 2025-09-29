@@ -122,7 +122,7 @@ const internationalToolDescriptions: Record<string, string> = {
 }
 
 // Default benefits for different categories
-const getDefaultBenefits = (category: string) => {
+const getDefaultBenefits = () => {
   const commonBenefits = [
     {
       title: "Made in India",
