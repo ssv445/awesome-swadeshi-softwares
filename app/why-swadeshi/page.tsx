@@ -46,7 +46,7 @@ export default function WhySwadeshiPage() {
         <div className="absolute top-10 right-10 text-green-200 opacity-30">
         </div>
         <div className="absolute bottom-20 left-10 text-orange-200 opacity-30">
-          < className="h-14 w-14" />
+          <Crown className="h-14 w-14" />
         </div>
 
         {/* Hero Section */}
@@ -96,7 +96,7 @@ export default function WhySwadeshiPage() {
             <CardHeader className="text-center">
               <div className="flex items-center justify-center mb-4">
                 <Shield className="h-12 w-12 text-amber-600" />
-                < className="h-6 w-6 text-red-500 ml-2" />
+                <Flag className="h-6 w-6 text-red-500 ml-2" />
               </div>
               <CardTitle className="text-2xl text-gray-700">
                 Data Sovereignty
@@ -132,7 +132,7 @@ export default function WhySwadeshiPage() {
             <CardHeader className="text-center">
               <div className="flex items-center justify-center mb-4">
                 <Zap className="h-12 w-12 text-amber-600" />
-                < className="h-6 w-6 text-red-500 ml-2" />
+                <Heart className="h-6 w-6 text-red-500 ml-2" />
               </div>
               <CardTitle className="text-2xl text-gray-700">
                 Innovation Hub
@@ -168,7 +168,7 @@ export default function WhySwadeshiPage() {
             <CardHeader className="text-center">
               <div className="flex items-center justify-center mb-4">
                 <Globe className="h-12 w-12 text-amber-600" />
-                < className="h-6 w-6 text-red-500 ml-2" />
+                <Flag className="h-6 w-6 text-red-500 ml-2" />
               </div>
               <CardTitle className="text-2xl text-gray-700">
                 Global Impact
@@ -231,19 +231,19 @@ export default function WhySwadeshiPage() {
               </h3>
               <ul className="space-y-3 text-amber-800">
                 <li className="flex items-start space-x-2">
-                  < className="h-5 w-5 text-red-600 mt-0.5" />
+                  <Flag className="h-5 w-5 text-red-600 mt-0.5" />
                   <span>Reduces dependency on foreign technology platforms</span>
                 </li>
                 <li className="flex items-start space-x-2">
-                  < className="h-5 w-5 text-red-600 mt-0.5" />
+                  <Flag className="h-5 w-5 text-red-600 mt-0.5" />
                   <span>Enhances national security through technology sovereignty</span>
                 </li>
                 <li className="flex items-start space-x-2">
-                  < className="h-5 w-5 text-red-600 mt-0.5" />
+                  <Flag className="h-5 w-5 text-red-600 mt-0.5" />
                   <span>Provides better control over critical digital infrastructure</span>
                 </li>
                 <li className="flex items-start space-x-2">
-                  < className="h-5 w-5 text-red-600 mt-0.5" />
+                  <Flag className="h-5 w-5 text-red-600 mt-0.5" />
                   <span>Enables customization for Indian regulatory requirements</span>
                 </li>
               </ul>
@@ -352,7 +352,7 @@ export default function WhySwadeshiPage() {
           <div className="flex items-center justify-center space-x-3 mb-6">
             <div className="relative">
               <AshokaChakra className="h-8 w-8 text-amber-400" />
-              < className="h-4 w-4 text-red-400 " />
+              <Heart className="h-4 w-4 text-red-400" />
             </div>
             <span className="text-2xl font-bold text-white">
               Awesome Swadeshi
@@ -364,7 +364,7 @@ export default function WhySwadeshiPage() {
             Supporting <em>Swadeshi</em> movement and <em>Atmanirbhar Bharat</em> through technology.
           </p>
           <div className="flex items-center justify-center space-x-2">
-            < className="h-5 w-5 text-red-400" />
+            <Heart className="h-5 w-5 text-red-400" />
             <p className="text-amber-300 text-sm">&copy; 2024 Made with ❤️ in India</p>
             <Star className="h-4 w-4 text-amber-400" />
           </div>

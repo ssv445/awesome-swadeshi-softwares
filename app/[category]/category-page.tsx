@@ -8,7 +8,8 @@ import { Input } from "@/components/ui/input"
 import { Search, Flag, ExternalLink, ArrowLeft } from "lucide-react"
 import { AshokaChakra } from "@/components/ashoka-chakra"
 import Link from "next/link"
-import { getCategoryDisplayName, getFaviconUrl } from "@/lib/data"
+import { getCategoryDisplayName } from "@/lib/data"
+import { Favicon } from "@/components/favicon"
 import type { Software } from "@/lib/data"
 
 interface CategoryPageProps {
@@ -130,16 +131,13 @@ export default function CategoryPage({ software, categoryName, categorySlug, all
                   <div className="flex items-start justify-between">
                     <div className="flex items-start space-x-3">
                       <div className="flex-shrink-0 mt-1">
-                        <img
-                          src={getFaviconUrl(software.website, 32)}
-                          alt={`${software.name} favicon`}
+                        <Favicon
+                          websiteUrl={software.website}
+                          name={software.name}
+                          size={32}
                           className="h-6 w-6 rounded-sm"
-                          onError={(e) => {
-                            e.currentTarget.style.display = 'none';
-                            e.currentTarget.nextElementSibling?.classList.remove('hidden');
-                          }}
+                          fallbackClassName="h-5 w-5 text-orange-500"
                         />
-                        <AshokaChakra className="h-5 w-5 text-orange-500 hidden" />
                       </div>
                       <div>
                         <CardTitle className="text-lg">{software.name}</CardTitle>
