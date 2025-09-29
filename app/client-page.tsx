@@ -191,19 +191,23 @@ export default function ClientHomePage({ allSoftware, categories }: ClientHomePa
             {paginatedSoftware.map((software, index) => (
               <Card key={index} className="group hover:shadow-lg transition-all duration-300 border border-green-200 hover:border-green-400 bg-white hover:scale-[1.02]">
                 <CardHeader className="pb-4">
-                  <div className="flex items-center space-x-3 mb-3">
-                    <Favicon
-                      websiteUrl={software.website}
-                      name={software.name}
-                      size={32}
-                      className="h-6 w-6 rounded-sm flex-shrink-0"
-                      fallbackClassName="h-5 w-5 text-blue-600 flex-shrink-0"
-                    />
-                    <div className="min-w-0 flex-1">
+                  <div className="flex items-center justify-between mb-3">
+                    <div className="min-w-0 flex-1 pr-3">
                       <CardTitle className="text-xl font-bold text-gray-900 truncate">
                         {software.name}
                       </CardTitle>
                       <p className="text-sm text-gray-600 font-medium mt-1">{software.company}</p>
+                    </div>
+                    <div className="flex-shrink-0">
+                      <Favicon
+                        websiteUrl={software.website}
+                        name={software.name}
+                        size={48}
+                        className="h-12 max-w-24 object-contain"
+                        fallbackClassName="h-10 w-10 text-blue-600"
+                        customFaviconUrl={software.faviconUrl}
+                        fixedHeight={true}
+                      />
                     </div>
                   </div>
                 </CardHeader>

@@ -6,5 +6,6 @@
   "alternatives": ["Twilio", "Plivo", "Vonage"],
   "pricing": "Paid",
   "company": "Exotel Techcom",
-  "location": "Bangalore"
+  "location": "Bangalore",
+  "faviconUrl": "https://exotel.com/favicon.ico"
 }

@@ -7,6 +7,7 @@ export interface Software {
   pricing: string
   company: string
   location: string
+  faviconUrl?: string // Optional custom favicon URL
 }
 
 // Convert category slug to display name (client-safe utility)

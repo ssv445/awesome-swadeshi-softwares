@@ -68,7 +68,8 @@ pnpm lint
   "alternatives": ["International Software 1", "International Software 2"],
   "pricing": "Free|Freemium|Paid",
   "company": "Company Name",
-  "location": "City, State"
+  "location": "City, State",
+  "faviconUrl": "https://example.com/favicon.ico" // Optional: Custom favicon URL
 }
 ```
 
@@ -202,8 +203,28 @@ interface Software {
   pricing: string
   company: string
   location: string
+  faviconUrl?: string // Optional: Custom favicon URL
 }
 ```
+
+### Favicon Support
+The application supports both automatic and manual favicon handling:
+
+**Automatic Favicon (Default)**:
+- Uses Google's favicon API: `https://www.google.com/s2/favicons?sz={size}&domain={domain}`
+- Automatically extracts domain from website URL
+- Falls back to Ashoka Chakra icon on error
+
+**Manual Favicon (Optional)**:
+- Add `faviconUrl` field to JSON files
+- Provide direct URL to favicon (e.g., `"faviconUrl": "https://example.com/favicon.ico"`)
+- Takes priority over automatic favicon generation
+- Useful for better quality icons or faster loading
+
+**Implementation**:
+- Favicon component (`/components/favicon.tsx`) handles both modes
+- Client-side error handling with React state
+- Lazy loading for performance
 
 ### Testing Changes
 - Run `pnpm dev` for development server

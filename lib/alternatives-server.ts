@@ -20,6 +20,7 @@ export interface AlternativeMapping {
     pricing: string
     features: string[]
     advantages: string[]
+    faviconUrl?: string // Optional custom favicon URL
   }[]
   benefits: {
     title: string

@@ -6,5 +6,6 @@
   "alternatives": ["Salesforce", "HubSpot", "Pipedrive"],
   "pricing": "Freemium",
   "company": "Zoho Corporation",
-  "location": "Chennai"
+  "location": "Chennai",
+  "faviconUrl": "https://www.zohowebstatic.com/sites/zweb/images/productlogos/crm.svg"
 }

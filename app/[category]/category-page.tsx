@@ -129,25 +129,29 @@ export default function CategoryPage({ software, categoryName, categorySlug, all
               <Card key={index} className="hover:shadow-lg transition-shadow">
                 <CardHeader>
                   <div className="flex items-start justify-between">
-                    <div className="flex items-start space-x-3">
-                      <div className="flex-shrink-0 mt-1">
-                        <Favicon
-                          websiteUrl={software.website}
-                          name={software.name}
-                          size={32}
-                          className="h-6 w-6 rounded-sm"
-                          fallbackClassName="h-5 w-5 text-orange-500"
-                        />
-                      </div>
-                      <div>
-                        <CardTitle className="text-lg">{software.name}</CardTitle>
-                        <p className="text-sm text-gray-600">{software.company}</p>
-                        <Badge variant="secondary" className="mt-1 bg-orange-100 text-orange-800">
-                          {software.location}
-                        </Badge>
+                    <div className="min-w-0 flex-1 pr-3">
+                      <div className="flex items-start justify-between">
+                        <div className="min-w-0 flex-1">
+                          <CardTitle className="text-lg">{software.name}</CardTitle>
+                          <p className="text-sm text-gray-600">{software.company}</p>
+                          <Badge variant="secondary" className="mt-1 bg-orange-100 text-orange-800">
+                            {software.location}
+                          </Badge>
+                        </div>
+                        <Badge variant="outline" className="ml-2">{software.category}</Badge>
                       </div>
                     </div>
-                    <Badge variant="outline">{software.category}</Badge>
+                    <div className="flex-shrink-0 ml-3">
+                      <Favicon
+                        websiteUrl={software.website}
+                        name={software.name}
+                        size={48}
+                        className="h-12 max-w-24 object-contain"
+                        fallbackClassName="h-10 w-10 text-orange-500"
+                        customFaviconUrl={software.faviconUrl}
+                        fixedHeight={true}
+                      />
+                    </div>
                   </div>
                 </CardHeader>
                 <CardContent>
