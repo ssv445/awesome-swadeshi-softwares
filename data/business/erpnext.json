@@ -1,0 +1,10 @@
+{
+  "name": "ERPNext",
+  "description": "Open source cloud ERP software for modern businesses - comprehensive alternative to SAP and Oracle",
+  "website": "https://frappe.io/erpnext",
+  "category": "Business",
+  "alternatives": ["SAP", "Oracle ERP", "Microsoft Dynamics", "NetSuite"],
+  "pricing": "Free",
+  "company": "Frappe Technologies",
+  "location": "Mumbai, India"
+}

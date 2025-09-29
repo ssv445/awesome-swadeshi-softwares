@@ -1,0 +1,10 @@
+{
+  "name": "VdoCipher",
+  "description": "Video hosting platform with DRM protection and analytics for businesses and educational content",
+  "website": "https://www.vdocipher.com/",
+  "category": "Business",
+  "alternatives": ["Vimeo Business", "Wistia", "JW Player", "Brightcove"],
+  "pricing": "Paid",
+  "company": "VdoCipher",
+  "location": "Bengaluru, India"
+}

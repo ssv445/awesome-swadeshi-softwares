@@ -1,0 +1,10 @@
+{
+  "name": "Krutrim AI Studio",
+  "description": "No-code AI model development platform with model catalog and developer notebook for building AI applications",
+  "website": "https://www.olakrutrim.com/",
+  "category": "Development",
+  "alternatives": ["Hugging Face", "OpenAI GPT Builder", "Google Vertex AI", "AWS SageMaker"],
+  "pricing": "Freemium",
+  "company": "Ola Krutrim",
+  "location": "Bengaluru, India"
+}

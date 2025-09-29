@@ -1,0 +1,10 @@
+{
+  "name": "Pupilfirst",
+  "description": "Learning management system empowering digital transformation of Indian classroom education",
+  "website": "https://www.pupilfirst.org",
+  "category": "Education",
+  "alternatives": ["Coursera", "Canvas", "Blackboard", "Moodle"],
+  "pricing": "Freemium",
+  "company": "Pupilfirst Pvt. Ltd.",
+  "location": "Kochi, Kerala"
+}

@@ -1,0 +1,10 @@
+{
+  "name": "Krutrim Assistant",
+  "description": "Multi-language AI assistant for task automation including booking rides, paying bills, and daily workflows",
+  "website": "https://www.olakrutrim.com/",
+  "category": "Productivity",
+  "alternatives": ["Google Assistant", "Siri", "Alexa", "Cortana"],
+  "pricing": "Free",
+  "company": "Ola Krutrim",
+  "location": "Bengaluru, India"
+}

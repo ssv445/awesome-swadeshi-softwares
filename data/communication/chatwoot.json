@@ -1,0 +1,10 @@
+{
+  "name": "Chatwoot",
+  "description": "Open source customer engagement suite - alternative to Intercom and Zendesk",
+  "website": "https://www.chatwoot.com/",
+  "category": "Communication",
+  "alternatives": ["Intercom", "Zendesk", "Help Scout"],
+  "pricing": "Free",
+  "company": "Chatwoot Inc.",
+  "location": "San Francisco, USA (Indian Founded)"
+}

@@ -1,0 +1,10 @@
+{
+  "name": "Ola Maps",
+  "description": "Real-time navigation and mapping service with precise routing and location search for Indian roads",
+  "website": "https://www.olakrutrim.com/",
+  "category": "Utilities",
+  "alternatives": ["Google Maps", "Apple Maps", "Waze", "MapMyIndia"],
+  "pricing": "Free",
+  "company": "Ola Krutrim",
+  "location": "Bengaluru, India"
+}

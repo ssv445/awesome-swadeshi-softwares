@@ -1,0 +1,10 @@
+{
+  "name": "Sarvam Translate",
+  "description": "Advanced translation service across 22 Indian languages with speech and text capabilities",
+  "website": "https://www.sarvam.ai/",
+  "category": "Development",
+  "alternatives": ["Google Translate", "Microsoft Translator", "Amazon Translate"],
+  "pricing": "Paid",
+  "company": "Sarvam AI",
+  "location": "Bengaluru, India"
+}

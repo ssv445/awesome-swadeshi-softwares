@@ -1,0 +1,10 @@
+{
+  "name": "Gnani.ai",
+  "description": "Conversational AI platform with voice and text bots for enterprises supporting 40+ languages including 12+ Indian languages",
+  "website": "https://www.gnani.ai/",
+  "category": "Development",
+  "alternatives": ["Dialogflow", "Amazon Lex", "Microsoft Bot Framework", "Twilio Flex"],
+  "pricing": "Paid",
+  "company": "Gnani.ai",
+  "location": "Bengaluru, India"
+}
