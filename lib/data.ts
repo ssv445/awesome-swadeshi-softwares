@@ -21,6 +21,26 @@ export interface OpenGraph {
   [key: string]: string | undefined
 }
 
+export interface Category {
+  slug: string
+  name: string
+  description: string
+  icon: string
+  color: string
+  keywords: string[]
+  featured: boolean
+  order: number
+}
+
+export interface CategoriesData {
+  categories: Category[]
+  meta: {
+    totalCategories: number
+    lastUpdated: string
+    version: string
+  }
+}
+
 export interface Software {
   name: string
   description: string

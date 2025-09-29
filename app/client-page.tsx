@@ -1,16 +1,15 @@
 "use client"
 
-import { useState, useMemo, useCallback } from "react"
-import { useRouter } from "next/navigation"
+import { useState, useMemo } from "react"
 import { Button } from "@/components/ui/button"
-import { Badge } from "@/components/ui/badge"
-import { Input } from "@/components/ui/input"
-import { Search, Zap } from "lucide-react"
+import { Zap } from "lucide-react"
 import { AshokaChakra } from "@/components/ashoka-chakra"
 import Link from "next/link"
-import { getCategoryDisplayName, getAppUrl } from "@/lib/data"
+import { getCategoryDisplayName } from "@/lib/data"
 import { ProductCard } from "@/components/product-card"
-import { Favicon } from "@/components/favicon"
+import { SearchBox } from "@/components/ui/SearchBox"
+import { AppShell } from "@/components/layout/AppShell"
+import { ITEMS_PER_PAGE } from "@/lib/constants"
 import type { Software } from "@/lib/data"
 
 interface ClientHomePageProps {
@@ -20,12 +19,7 @@ interface ClientHomePageProps {
 }
 
 export default function ClientHomePage({ allSoftware, featuredProducts, categories }: ClientHomePageProps) {
-  const [searchTerm, setSearchTerm] = useState("")
-  const [searchResults, setSearchResults] = useState<Software[]>([])
   const [currentPage, setCurrentPage] = useState(1)
-  const [showDropdown, setShowDropdown] = useState(false)
-  const itemsPerPage = 12
-  const router = useRouter()
 
   const categoryDisplayNames = useMemo(() => {
     return categories.map(cat => ({
@@ -38,76 +32,15 @@ export default function ClientHomePage({ allSoftware, featuredProducts, categori
   // Always show featured products (no page filtering)
   const displaySoftware = featuredProducts
 
-  // Handle search input changes - only for dropdown suggestions
-  const handleSearchInputChange = useCallback((value: string) => {
-    setSearchTerm(value)
-
-    if (value.length >= 2) {
-      const results = allSoftware.filter(software =>
-        software.name.toLowerCase().includes(value.toLowerCase())
-      )
-      setSearchResults(results)
-      setShowDropdown(true)
-    } else {
-      setSearchResults([])
-      setShowDropdown(false)
-    }
-  }, [allSoftware])
-
-  // Handle selecting an app from dropdown
-  const handleAppSelect = useCallback((software: Software) => {
-    router.push(getAppUrl(software.category, software.name))
-    setSearchTerm("")
-    setShowDropdown(false)
-  }, [router])
-
-  // Handle clicking outside to close dropdown
-  const handleSearchBlur = useCallback(() => {
-    setTimeout(() => setShowDropdown(false), 200) // Delay to allow clicking on dropdown items
-  }, [])
-
-  const totalPages = Math.ceil(displaySoftware.length / itemsPerPage)
+  const totalPages = Math.ceil(displaySoftware.length / ITEMS_PER_PAGE)
   const paginatedSoftware = useMemo(() => {
-    const startIndex = (currentPage - 1) * itemsPerPage
-    return displaySoftware.slice(startIndex, startIndex + itemsPerPage)
-  }, [displaySoftware, currentPage, itemsPerPage])
+    const startIndex = (currentPage - 1) * ITEMS_PER_PAGE
+    return displaySoftware.slice(startIndex, startIndex + ITEMS_PER_PAGE)
+  }, [displaySoftware, currentPage])
 
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-orange-50 via-white to-green-50">
-      {/* Subtle Lotus Pattern Overlay */}
-      <div className="fixed inset-0 opacity-3 pointer-events-none">
-        <div className="absolute inset-0" style={{
-          backgroundImage: `url("data:image/svg+xml,%3Csvg width='80' height='80' viewBox='0 0 80 80' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23059669' fill-opacity='0.2'%3E%3Cpath d='M40 20c-2 8-8 14-16 14s-14-6-16-14c2-8 8-14 16-14s14 6 16 14zm-16 20c8 0 14-6 16-14-2-8-8-14-16-14s-14 6-16 14c2 8 8 14 16 14z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`,
-        }} />
-      </div>
-
-      {/* Header */}
-      <header className="border-b border-green-200 bg-white/95 backdrop-blur-sm sticky top-0 z-50 shadow-sm">
-        <div className="container mx-auto px-4 py-4">
-          <div className="flex items-center justify-between">
-            <div className="flex items-center space-x-3">
-              <div>
-                <AshokaChakra className="h-10 w-10 text-blue-600" />
-              </div>
-              <div>
-                <h1 className="text-2xl font-bold text-gray-900">
-                  Awesome Swadeshi
-                </h1>
-                <p className="text-sm text-gray-600 font-medium">Indian Apps Directory • Atmanirbhar Bharat</p>
-              </div>
-            </div>
-            <div className="flex items-center space-x-4">
-              <Button asChild variant="outline" className="border border-gray-300 text-gray-600 hover:bg-gray-50 bg-white">
-                <Link href="/why-swadeshi">Why Swadeshi?</Link>
-              </Button>
-              <Button asChild className="bg-blue-600 hover:bg-blue-700 text-white border-none">
-                <Link href="/about">Add App</Link>
-              </Button>
-            </div>
-          </div>
-        </div>
-      </header>
+    <AppShell>
 
       {/* Hero Section */}
       <section className="py-20 px-4 relative">
@@ -153,52 +86,11 @@ export default function ClientHomePage({ allSoftware, featuredProducts, categori
 
           {/* Search and Filter */}
           <div className="max-w-4xl mx-auto space-y-6">
-            <div className="relative">
-              <Search className="absolute left-8 top-1/2 transform -translate-y-1/2 text-gray-500 h-10 w-10" />
-              <Input
-                type="text"
-                placeholder="Search for Indian apps... (Type to see suggestions)"
-                value={searchTerm}
-                onChange={(e) => handleSearchInputChange(e.target.value)}
-                onBlur={handleSearchBlur}
-                className="pl-20 pr-8 py-8 text-3xl border-4 border-blue-400 rounded-2xl bg-white focus:border-blue-600 focus:ring-blue-600 shadow-2xl font-medium"
-              />
-
-              {/* Search Dropdown */}
-              {showDropdown && searchResults.length > 0 && (
-                <div className="absolute top-full left-0 right-0 mt-2 bg-white border border-gray-200 rounded-2xl shadow-xl z-50 max-h-80 overflow-y-auto">
-                  <div className="p-2">
-                    <p className="text-sm text-gray-600 px-4 py-2 font-medium">
-                      {searchResults.length} apps found
-                    </p>
-                    {searchResults.slice(0, 8).map((app, index) => (
-                      <button
-                        key={index}
-                        onClick={() => handleAppSelect(app)}
-                        className="w-full flex items-center gap-3 p-3 hover:bg-gray-50 rounded-xl transition-colors text-left"
-                      >
-                        <Favicon
-                          websiteUrl={app.website}
-                          name={app.name}
-                          size={24}
-                          className="h-6 w-6 object-contain"
-                          fallbackClassName="h-5 w-5 text-blue-600"
-                          customFaviconUrl={app.faviconUrl}
-                          fixedHeight={true}
-                        />
-                        <div className="flex-1 min-w-0">
-                          <p className="font-medium text-gray-900 truncate">{app.name}</p>
-                          <p className="text-sm text-gray-600 truncate">{app.company}</p>
-                        </div>
-                        <Badge variant="outline" className="text-xs">
-                          {getCategoryDisplayName(app.category)}
-                        </Badge>
-                      </button>
-                    ))}
-                  </div>
-                </div>
-              )}
-            </div>
+            <SearchBox
+              allSoftware={allSoftware}
+              placeholder="Search for Indian apps... (Type to see suggestions)"
+              size="lg"
+            />
 
             <div className="flex flex-wrap gap-3 justify-center">
               {categoryDisplayNames.map(category => (
@@ -285,34 +177,6 @@ export default function ClientHomePage({ allSoftware, featuredProducts, categori
           )}
         </div>
       </section>
-
-      {/* Footer */}
-      <footer className="bg-gray-800 py-12 px-4 relative">
-        {/* Subtle Pattern */}
-        <div className="absolute inset-0 opacity-5">
-          <div className="absolute inset-0" style={{
-            backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23ffffff' fill-opacity='0.1'%3E%3Cpath d='M30 30c-2 6-6 10-12 10s-10-4-12-10c2-6 6-10 12-10s10 4 12 10z'/%3E%3C/g%3E%3C/svg%3E")`,
-          }} />
-        </div>
-
-        <div className="container mx-auto text-center relative z-10">
-          <div className="flex items-center justify-center space-x-3 mb-6">
-            <div>
-              <AshokaChakra className="h-8 w-8 text-blue-400" />
-            </div>
-            <span className="text-2xl font-bold text-white">
-              Awesome Swadeshi
-            </span>
-          </div>
-          <p className="text-gray-200 text-lg mb-6 max-w-2xl mx-auto leading-relaxed">
-            Promoting Indian software innovation and helping users discover quality alternatives.
-            Supporting <em>Swadeshi</em> movement and <em>Atmanirbhar Bharat</em> through technology.
-          </p>
-          <div className="flex items-center justify-center">
-            <p className="text-gray-300 text-sm">&copy; 2024 Made with ❤️ in India</p>
-          </div>
-        </div>
-      </footer>
-    </div>
+    </AppShell>
   )
 }

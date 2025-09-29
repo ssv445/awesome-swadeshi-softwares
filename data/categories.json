@@ -1,0 +1,119 @@
+{
+  "categories": [
+    {
+      "slug": "business",
+      "name": "Business",
+      "description": "Discover Indian business software for CRM, HR, analytics, and enterprise solutions",
+      "icon": "Building2",
+      "color": "#2563EB",
+      "keywords": ["CRM", "HR", "analytics", "enterprise", "business management", "ERP"],
+      "featured": true,
+      "order": 1
+    },
+    {
+      "slug": "finance",
+      "name": "Finance",
+      "description": "Indian fintech solutions for payments, banking, and financial services",
+      "icon": "CreditCard",
+      "color": "#059669",
+      "keywords": ["fintech", "payments", "banking", "financial services", "accounting"],
+      "featured": true,
+      "order": 2
+    },
+    {
+      "slug": "development",
+      "name": "Development",
+      "description": "Developer tools, APIs, and platforms built by Indian tech companies",
+      "icon": "Code",
+      "color": "#7C3AED",
+      "keywords": ["developer tools", "APIs", "programming", "software development", "coding"],
+      "featured": true,
+      "order": 3
+    },
+    {
+      "slug": "communication",
+      "name": "Communication",
+      "description": "Indian communication apps for messaging, video calls, and team collaboration",
+      "icon": "MessageSquare",
+      "color": "#DC2626",
+      "keywords": ["messaging", "video calls", "collaboration", "team communication", "chat"],
+      "featured": true,
+      "order": 4
+    },
+    {
+      "slug": "productivity",
+      "name": "Productivity",
+      "description": "Productivity and office tools designed by Indian software companies",
+      "icon": "Target",
+      "color": "#EA580C",
+      "keywords": ["productivity", "office tools", "workflow", "organization", "efficiency"],
+      "featured": false,
+      "order": 5
+    },
+    {
+      "slug": "e-commerce",
+      "name": "E-Commerce",
+      "description": "Indian e-commerce platforms and online selling solutions",
+      "icon": "ShoppingCart",
+      "color": "#9333EA",
+      "keywords": ["e-commerce", "online selling", "marketplace", "retail", "shopping"],
+      "featured": false,
+      "order": 6
+    },
+    {
+      "slug": "education",
+      "name": "Education",
+      "description": "Educational technology and learning platforms from India",
+      "icon": "GraduationCap",
+      "color": "#0891B2",
+      "keywords": ["education", "learning", "e-learning", "edtech", "online courses"],
+      "featured": false,
+      "order": 7
+    },
+    {
+      "slug": "entertainment",
+      "name": "Entertainment",
+      "description": "Streaming, music, and entertainment apps from Indian developers",
+      "icon": "Play",
+      "color": "#DB2777",
+      "keywords": ["streaming", "music", "entertainment", "media", "video"],
+      "featured": false,
+      "order": 8
+    },
+    {
+      "slug": "creative",
+      "name": "Creative",
+      "description": "Creative tools and design software developed by Indian companies",
+      "icon": "Palette",
+      "color": "#16A34A",
+      "keywords": ["design", "creative tools", "graphics", "art", "visual design"],
+      "featured": false,
+      "order": 9
+    },
+    {
+      "slug": "social-networking",
+      "name": "Social Networking",
+      "description": "Social media and networking platforms developed in India",
+      "icon": "Users",
+      "color": "#0284C7",
+      "keywords": ["social media", "networking", "social platforms", "community"],
+      "featured": false,
+      "order": 10
+    },
+    {
+      "slug": "utilities",
+      "name": "Utilities",
+      "description": "Utility apps and system tools created by Indian developers",
+      "icon": "Settings",
+      "color": "#64748B",
+      "keywords": ["utilities", "system tools", "productivity apps", "tools"],
+      "featured": false,
+      "order": 11
+    }
+  ],
+  "meta": {
+    "totalCategories": 11,
+    "lastUpdated": "2024-09-29T09:00:00.000Z",
+    "version": "1.0.0"
+  }
+}

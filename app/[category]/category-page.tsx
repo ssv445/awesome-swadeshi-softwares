@@ -10,6 +10,7 @@ import { AshokaChakra } from "@/components/ashoka-chakra"
 import Link from "next/link"
 import { getCategoryDisplayName } from "@/lib/data"
 import { ProductCard } from "@/components/product-card"
+import { AppShell } from "@/components/layout/AppShell"
 import type { Software } from "@/lib/data"
 
 interface CategoryPageProps {
@@ -69,24 +70,7 @@ export default function CategoryPage({ software, categoryName, categorySlug, all
   }, [searchTerm, software])
 
   return (
-    <div className="min-h-screen bg-white">
-      {/* Header */}
-      <header className="border-b bg-white sticky top-0 z-50">
-        <div className="container mx-auto px-4 py-4">
-          <div className="flex items-center justify-between">
-            <div className="flex items-center space-x-2">
-              <AshokaChakra className="h-8 w-8 text-orange-500" />
-              <div>
-                <h1 className="text-xl font-bold text-gray-900">Awesome Swadeshi Apps</h1>
-                <p className="text-sm text-gray-600">Indian Apps Directory • Atmanirbhar Bharat</p>
-              </div>
-            </div>
-            <Button asChild variant="outline">
-              <Link href="/about">Add App</Link>
-            </Button>
-          </div>
-        </div>
-      </header>
+    <AppShell>
 
       {/* Hero Section */}
       <section className="py-16 px-4 bg-orange-50">
@@ -188,20 +172,6 @@ export default function CategoryPage({ software, categoryName, categorySlug, all
           )}
         </div>
       </section>
-
-      {/* Footer */}
-      <footer className="bg-gray-100 py-8 px-4">
-        <div className="container mx-auto text-center">
-          <div className="flex items-center justify-center space-x-2 mb-4">
-            <AshokaChakra className="h-5 w-5 text-orange-500" />
-            <span className="font-bold">Awesome Swadeshi Apps</span>
-          </div>
-          <p className="text-gray-600 text-sm mb-4">
-            Promoting Indian app innovation and helping users discover quality alternatives.
-          </p>
-          <p className="text-gray-500 text-xs">&copy; 2024 Made with ❤️ in India</p>
-        </div>
-      </footer>
-    </div>
+    </AppShell>
   )
 }

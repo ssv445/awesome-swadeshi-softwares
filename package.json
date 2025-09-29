@@ -3,10 +3,12 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
+    "prebuild": "tsx scripts/generate-search-index.ts",
     "build": "next build",
     "dev": "next dev",
     "lint": "next lint",
     "start": "next start",
+    "search:index": "tsx scripts/generate-search-index.ts",
     "scrape:opengraph": "tsx scripts/scrape-opengraph.ts",
     "scrape:opengraph:resume": "tsx scripts/scrape-opengraph.ts --resume",
     "scrape:opengraph:force": "tsx scripts/scrape-opengraph.ts --force",

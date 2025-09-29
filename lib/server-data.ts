@@ -1,6 +1,6 @@
 import fs from 'fs'
 import path from 'path'
-import type { Software } from './data'
+import type { Software, Category, CategoriesData } from './data'
 
 // Get all software from nested folder structure (server-side only)
 export function getAllSoftware(): Software[] {
@@ -66,19 +66,62 @@ export function getSoftwareByCategory(categorySlug: string): Software[] {
   return software
 }
 
-// Get all available categories (server-side only)
+// Get all available categories from categories.json (server-side only)
 export function getCategories(): string[] {
-  const dataDir = path.join(process.cwd(), 'data')
-
   try {
-    const categories = fs.readdirSync(dataDir, { withFileTypes: true })
-      .filter(dirent => dirent.isDirectory())
-      .map(dirent => dirent.name)
-      .filter(name => !name.startsWith('.') && name !== 'README.md')
-
-    return categories
+    const categoriesData = getCategoriesData()
+    return categoriesData.categories.map(cat => cat.slug)
   } catch (error) {
     console.error('Error reading categories:', error)
+    // Fallback to directory scan
+    const dataDir = path.join(process.cwd(), 'data')
+    try {
+      const categories = fs.readdirSync(dataDir, { withFileTypes: true })
+        .filter(dirent => dirent.isDirectory())
+        .map(dirent => dirent.name)
+        .filter(name => !name.startsWith('.'))
+
+      return categories
+    } catch (fallbackError) {
+      console.error('Fallback error reading categories:', fallbackError)
+      return []
+    }
+  }
+}
+
+// Get categories data from categories.json (server-side only)
+export function getCategoriesData(): CategoriesData {
+  const categoriesPath = path.join(process.cwd(), 'data', 'categories.json')
+
+  try {
+    const fileContent = fs.readFileSync(categoriesPath, 'utf8')
+    return JSON.parse(fileContent) as CategoriesData
+  } catch (error) {
+    console.error('Error reading categories.json:', error)
+    throw new Error('Could not load categories data')
+  }
+}
+
+// Get category by slug (server-side only)
+export function getCategoryBySlug(slug: string): Category | null {
+  try {
+    const categoriesData = getCategoriesData()
+    return categoriesData.categories.find(cat => cat.slug === slug) || null
+  } catch (error) {
+    console.error(`Error getting category ${slug}:`, error)
+    return null
+  }
+}
+
+// Get featured categories (server-side only)
+export function getFeaturedCategories(): Category[] {
+  try {
+    const categoriesData = getCategoriesData()
+    return categoriesData.categories
+      .filter(cat => cat.featured)
+      .sort((a, b) => a.order - b.order)
+  } catch (error) {
+    console.error('Error getting featured categories:', error)
     return []
   }
 }
