@@ -3,8 +3,22 @@
   "description": "Online accounting software for small businesses and freelancers",
   "website": "https://www.zoho.com/books/",
   "category": "Business",
-  "alternatives": ["QuickBooks", "Xero", "FreshBooks"],
+  "alternatives": [
+    "QuickBooks",
+    "Xero",
+    "FreshBooks"
+  ],
   "pricing": "Freemium",
   "company": "Zoho Corporation",
-  "location": "Chennai"
+  "location": "Chennai",
+  "opengraph": {
+    "last_updated": "2025-09-29T06:52:27.784Z",
+    "title": "Online Accounting Software for India | Zoho Books",
+    "type": "website",
+    "url": "http://www.zoho.com/in/books/",
+    "image": "https://ogimage.zohofinance.com/server/og_image_books_function?title=Online+Accounting+Software+for+India+%7C+Zoho+Books",
+    "description": "Manage GST, invoicing, expenses & more with Zoho Books - India’s trusted online accounting software for small businesses & accountants.",
+    "twitter_card": "summary_large_image",
+    "twitter_site": "@ZohoBooks"
+  }
 }

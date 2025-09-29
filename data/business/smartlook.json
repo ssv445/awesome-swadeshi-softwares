@@ -3,8 +3,30 @@
   "description": "User behavior analytics with session recordings and heatmaps",
   "website": "https://www.smartlook.com/",
   "category": "Business",
-  "alternatives": ["Hotjar", "FullStory", "LogRocket"],
+  "alternatives": [
+    "Hotjar",
+    "FullStory",
+    "LogRocket"
+  ],
   "pricing": "Freemium",
   "company": "Smartlook (Indian operations)",
-  "location": "Bratislava (Indian team)"
+  "location": "Bratislava (Indian team)",
+  "opengraph": {
+    "last_updated": "2025-09-29T05:42:16.160Z",
+    "locale": "en_US",
+    "type": "website",
+    "title": "Smartlook: Product analytics & visual user insights",
+    "description": "Product analytics for websites and native mobile apps. 2800+ paying organizations ✓ Easy to use ✓",
+    "url": "https://www.smartlook.com",
+    "site_name": "Smartlook",
+    "image": "https://hpassets.smartlook.com/wp-content/uploads/2023/02/14102259/homepage.png",
+    "image:width": "1200",
+    "image:height": "628",
+    "image:type": "image/png",
+    "twitter_card": "summary_large_image",
+    "twitter_title": "Smartlook: Product analytics & visual user insights",
+    "twitter_description": "Product analytics for websites and native mobile apps. 2800+ paying organizations ✓ Easy to use ✓",
+    "twitter_image": "https://hpassets.smartlook.com/wp-content/uploads/2023/02/14102259/homepage.png",
+    "twitter_site": "@getSmartlook"
+  }
 }

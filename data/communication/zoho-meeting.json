@@ -3,8 +3,25 @@
   "description": "Video conferencing solution integrated with Zoho Workplace, affordable for SMBs",
   "website": "https://www.zoho.com/meeting/",
   "category": "Communication",
-  "alternatives": ["Zoom", "Google Meet"],
+  "alternatives": [
+    "Zoom",
+    "Google Meet"
+  ],
   "pricing": "Freemium",
   "company": "Zoho Corporation",
-  "location": "Chennai"
+  "location": "Chennai",
+  "opengraph": {
+    "last_updated": "2025-09-29T06:53:36.936Z",
+    "title": "Online Meeting Software & Platform - Zoho Meeting",
+    "description": "Zoho Meeting is an online meeting software that helps you host virtual meetings, web & video conferences for seamless remote collaboration. Rated as the best meeting platform for all video conferencing needs. Try it for free!",
+    "image": "https://www.zohowebstatic.com/sites/zweb/images/ogimage/meeting-logo.png",
+    "url": "https://www.zoho.com/meeting/",
+    "site_name": "Zoho",
+    "type": "website",
+    "twitter_title": "Online Meeting Software & Platform - Zoho Meeting",
+    "twitter_description": "Zoho Meeting is an online meeting software that helps you host virtual meetings, web & video conferences for seamless remote collaboration. Rated as the best meeting platform for all video conferencing needs. Try it for free!",
+    "twitter_image": "https://www.zohowebstatic.com/sites/zweb/images/ogimage/meeting-logo.png",
+    "twitter_card": "summary",
+    "twitter_site": "@zoho"
+  }
 }

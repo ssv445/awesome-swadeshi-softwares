@@ -3,8 +3,27 @@
   "description": "SEO and digital marketing analysis platform with website optimization tools",
   "website": "https://www.woorank.com/",
   "category": "Business",
-  "alternatives": ["SEMrush", "Ahrefs", "Moz"],
+  "alternatives": [
+    "SEMrush",
+    "Ahrefs",
+    "Moz"
+  ],
   "pricing": "Freemium",
   "company": "WooRank (Indian operations)",
-  "location": "Dublin (Indian team)"
+  "location": "Dublin (Indian team)",
+  "opengraph": {
+    "last_updated": "2025-09-29T05:43:07.902Z",
+    "title": "Website Optimization and Digital Agency Sales Tools | WooRank",
+    "description": "Our easy-to-use SEO tools will help you optimize your online presence, grow your business and generate more leads.",
+    "image": "https://cdn.prod.website-files.com/5f92a84224a1222449ebbe88/6182a3c5a2f9a52d594db16c_OG_WooRank.jpg",
+    "type": "website",
+    "url": "https://www.woorank.com/",
+    "twitter_card": "summary_large_image",
+    "twitter_site": "“@woorank”",
+    "twitter_creator": "“@woorank”",
+    "twitter_url": "https://www.woorank.com/",
+    "twitter_title": "Website Optimization and Digital Agency Sales Tools | WooRank",
+    "twitter_description": "Our easy-to-use SEO tools will help you optimize your online presence, grow your business and generate more leads.",
+    "twitter_image": "https://cdn.prod.website-files.com/5f92a84224a1222449ebbe88/6182a3c5a2f9a52d594db16c_OG_WooRank.jpg"
+  }
 }

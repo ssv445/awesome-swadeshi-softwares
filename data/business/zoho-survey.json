@@ -3,8 +3,26 @@
   "description": "Online survey tool for market research and customer feedback",
   "website": "https://www.zoho.com/survey/",
   "category": "Business",
-  "alternatives": ["SurveyMonkey", "Qualtrics", "Typeform"],
+  "alternatives": [
+    "SurveyMonkey",
+    "Qualtrics",
+    "Typeform"
+  ],
   "pricing": "Freemium",
   "company": "Zoho Corporation",
-  "location": "Chennai"
+  "location": "Chennai",
+  "opengraph": {
+    "last_updated": "2025-09-29T06:52:59.555Z",
+    "title": "Online survey forms maker for all | Zoho Survey",
+    "description": "Do market research, build feedback questionnaires, understand customer satisfaction, and more with Zoho Survey’s customizable online survey forms maker. Get started for free now!",
+    "image": "https://www.zohowebstatic.com/sites/zweb/images/ogimage/survey-logo.png",
+    "url": "https://www.zoho.com/survey/",
+    "site_name": "Zoho",
+    "type": "website",
+    "twitter_title": "Online survey forms maker for all | Zoho Survey",
+    "twitter_description": "Do market research, build feedback questionnaires, understand customer satisfaction, and more with Zoho Survey’s customizable online survey forms maker. Get started for free now!",
+    "twitter_image": "https://www.zohowebstatic.com/sites/zweb/images/ogimage/survey-logo.png",
+    "twitter_card": "summary",
+    "twitter_site": "@zoho"
+  }
 }

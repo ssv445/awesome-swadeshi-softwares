@@ -3,8 +3,21 @@
   "description": "India-focused mapping and location intelligence platform with APIs",
   "website": "https://www.mapmyindia.com/",
   "category": "Development",
-  "alternatives": ["Google Maps API", "Mapbox", "HERE Maps"],
+  "alternatives": [
+    "Google Maps API",
+    "Mapbox",
+    "HERE Maps"
+  ],
   "pricing": "Freemium",
   "company": "MapmyIndia",
-  "location": "New Delhi"
+  "location": "New Delhi",
+  "opengraph": {
+    "last_updated": "2025-09-29T06:54:50.946Z",
+    "image": "https://www.mapmyindia.com/images/mapmyindia-og.png",
+    "site_name": "MapmyIndia",
+    "title": "MapmyIndia - India’s best maps | Bringing deep tech to Maps, Location Intelligence & IoT",
+    "description": "MapmyIndia provides revolutionary location-based products, solutions and services built on India’s best maps. MapmyIndia bringing deep tech to Maps, Location Intelligence & IoT",
+    "type": "website",
+    "url": "https://www.mapmyindia.com/"
+  }
 }

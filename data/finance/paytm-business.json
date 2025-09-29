@@ -3,8 +3,22 @@
   "description": "Payment solutions for merchants with QR codes and POS systems",
   "website": "https://business.paytm.com/",
   "category": "Finance",
-  "alternatives": ["Razorpay", "CCAvenue", "Instamojo"],
+  "alternatives": [
+    "Razorpay",
+    "CCAvenue",
+    "Instamojo"
+  ],
   "pricing": "Freemium",
   "company": "One97 Communications",
-  "location": "Noida"
+  "location": "Noida",
+  "opengraph": {
+    "last_updated": "2025-09-29T06:55:56.900Z",
+    "title": "Best online payment service provider in India- Grow Your Business",
+    "type": "website",
+    "url": "https://business.paytm.com",
+    "image": "https://business.paytm.com/s3assets/images/ogimages/facebook.jpg",
+    "twitter_title": "Best online payment service provider in India- Grow Your Business",
+    "twitter_description": "Accept online Payments through payment gateway, UPI payments, or payment Links. Grow your business with Paytm payouts, Soundbox, Smart POS billing software.",
+    "twitter_image": "https://business.paytm.com/s3assets/images/ogimages/twitter.jpg"
+  }
 }

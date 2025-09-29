@@ -3,8 +3,26 @@
   "description": "OTT streaming platform with mix of originals, movies, and sports content",
   "website": "https://www.sonyliv.com/",
   "category": "Entertainment",
-  "alternatives": ["Netflix", "Amazon Prime"],
+  "alternatives": [
+    "Netflix",
+    "Amazon Prime"
+  ],
   "pricing": "Freemium",
   "company": "Culver Max Entertainment",
-  "location": "Mumbai"
+  "location": "Mumbai",
+  "opengraph": {
+    "last_updated": "2025-09-29T06:55:48.434Z",
+    "type": "Website",
+    "site_name": "Sony LIV",
+    "title": "Sony LIV - Watch Indian TV Shows, Movies, Sports, Live Cricket Matches, Web Originals",
+    "description": "Sony LIV - Top premium streaming platform where you can watch popular TV Shows, Movies, Sports, Web Series. Enjoy your favourite Live TV Channels online",
+    "image": "https://images.slivcdn.com/UI_icons/fallback_sonyliv_logo.png?h=246&w=246&q=high",
+    "url": "https://www.sonyliv.com",
+    "image:alt": "Sony LIV - Watch Indian TV Shows, Movies, Sports, Live Cricket Matches, Web Originals",
+    "twitter_title": "Sony LIV - Watch Indian TV Shows, Movies, Sports, Live Cricket Matches, Web Originals",
+    "twitter_description": "Sony LIV - Top premium streaming platform where you can watch popular TV Shows, Movies, Sports, Web Series. Enjoy your favourite Live TV Channels online",
+    "twitter_card": "summary",
+    "twitter_site": "@SonyLIV",
+    "twitter_image": "https://images.slivcdn.com/UI_icons/fallback_sonyliv_logo.png?h=246&w=246&q=high"
+  }
 }

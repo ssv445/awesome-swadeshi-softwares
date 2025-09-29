@@ -3,8 +3,24 @@
   "description": "API banking platform for digital payments and financial services",
   "website": "https://setu.co/",
   "category": "Finance",
-  "alternatives": ["Plaid", "Stripe Connect", "Open Banking APIs"],
+  "alternatives": [
+    "Plaid",
+    "Stripe Connect",
+    "Open Banking APIs"
+  ],
   "pricing": "Paid",
   "company": "Pine Labs",
-  "location": "Bangalore"
+  "location": "Bangalore",
+  "opengraph": {
+    "last_updated": "2025-09-29T06:56:04.045Z",
+    "type": "website",
+    "title": "Setu — The fastest way to offer the latest in fintech",
+    "description": "Embed financial services anywhere",
+    "url": "https://setu.co/",
+    "image": "https://storage.googleapis.com/setu-website/meta-images/home-meta.jpg",
+    "site_name": "Setu",
+    "twitter_card": "summary_large_image",
+    "twitter_site": "@Setu_API",
+    "twitter_creator": "@Setu_API"
+  }
 }

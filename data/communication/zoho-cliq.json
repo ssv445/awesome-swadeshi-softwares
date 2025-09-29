@@ -3,8 +3,26 @@
   "description": "Team collaboration platform affordable and deeply integrated with Zoho suite",
   "website": "https://www.zoho.com/cliq/",
   "category": "Communication",
-  "alternatives": ["Slack", "Microsoft Teams"],
+  "alternatives": [
+    "Slack",
+    "Microsoft Teams"
+  ],
   "pricing": "Freemium",
   "company": "Zoho Corporation",
-  "location": "Chennai"
+  "location": "Chennai",
+  "opengraph": {
+    "last_updated": "2025-09-29T06:53:34.764Z",
+    "image:url": "https://zohowebstatic.com/sites/zweb/images/cliq/og/cliq-home-page-og.jpg",
+    "title": "Team chat & communication software for businesses - Zoho Cliq",
+    "description": "Zoho Cliq, a team communication software, organizes conversations, workflows, and meetings in one place to boost productivity. Try it for free today!",
+    "image": "https://zohowebstatic.com/sites/zweb/images/cliq/og/cliq-home-page-og.jpg",
+    "url": "https://www.zoho.com/cliq/",
+    "site_name": "Zoho",
+    "type": "website",
+    "twitter_title": "Team chat & communication software for businesses - Zoho Cliq",
+    "twitter_description": "Zoho Cliq, a team communication software, organizes conversations, workflows, and meetings in one place to boost productivity. Try it for free today!",
+    "twitter_image": "https://zohowebstatic.com/sites/zweb/images/cliq/og/cliq-home-page-og.jpg",
+    "twitter_card": "summary",
+    "twitter_site": "@zoho"
+  }
 }

@@ -3,8 +3,26 @@
   "description": "Integration platform for connecting apps and automating workflows",
   "website": "https://www.zoho.com/flow/",
   "category": "Development",
-  "alternatives": ["Zapier", "Microsoft Power Automate", "IFTTT"],
+  "alternatives": [
+    "Zapier",
+    "Microsoft Power Automate",
+    "IFTTT"
+  ],
   "pricing": "Freemium",
   "company": "Zoho Corporation",
-  "location": "Chennai"
+  "location": "Chennai",
+  "opengraph": {
+    "last_updated": "2025-09-29T06:55:04.727Z",
+    "title": "Zoho Flow: Integration platform for automating workflows",
+    "description": "Zoho Flow is an integration platform that lets you automate your workflows regardless of your role or business.",
+    "image": "https://www.zohowebstatic.com/sites/zweb/images/ogimage/flow-logo.png",
+    "url": "https://www.zoho.com/flow/",
+    "site_name": "Zoho",
+    "type": "website",
+    "twitter_title": "Zoho Flow: Integration platform for automating workflows",
+    "twitter_description": "Zoho Flow is an integration platform that lets you automate your workflows regardless of your role or business.",
+    "twitter_image": "https://www.zohowebstatic.com/sites/zweb/images/ogimage/flow-logo.png",
+    "twitter_card": "summary",
+    "twitter_site": "@zoho"
+  }
 }

@@ -3,8 +3,23 @@
   "description": "Personalized learning app for students with interactive video lessons",
   "website": "https://byjus.com",
   "category": "Education",
-  "alternatives": ["Khan Academy", "Coursera", "Udemy"],
+  "alternatives": [
+    "Khan Academy",
+    "Coursera",
+    "Udemy"
+  ],
   "pricing": "Freemium",
   "company": "Think & Learn Pvt Ltd",
-  "location": "Bangalore"
+  "location": "Bangalore",
+  "opengraph": {
+    "last_updated": "2025-09-29T06:55:22.850Z",
+    "type": "article",
+    "url": "https://byjus.com/",
+    "image": "https://cdn1.byjus.com/images/fb-share-button-k10-k12.png",
+    "site_name": "BYJU'S",
+    "image:type": "image/png",
+    "image:width": "1200",
+    "image:height": "600",
+    "locale": "en_IN"
+  }
 }

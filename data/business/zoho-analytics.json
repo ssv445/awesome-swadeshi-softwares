@@ -3,8 +3,26 @@
   "description": "Business intelligence and data analytics platform with reporting",
   "website": "https://www.zoho.com/analytics/",
   "category": "Business",
-  "alternatives": ["Google Analytics", "Tableau", "Power BI"],
+  "alternatives": [
+    "Google Analytics",
+    "Tableau",
+    "Power BI"
+  ],
   "pricing": "Freemium",
   "company": "Zoho Corporation",
-  "location": "Chennai"
+  "location": "Chennai",
+  "opengraph": {
+    "last_updated": "2025-09-29T06:52:25.327Z",
+    "title": "Data Analytics Software & AI-Powered BI Platform - Zoho Analytics",
+    "description": "Connect 500+ apps, build dashboards, and get actionable insights instantly with Zoho Analytics, the award-winning business intelligence and data analytics software.",
+    "image": "https://www.zohowebstatic.com/sites/zweb/images/ogimage/analytics-logo.png",
+    "url": "https://www.zoho.com/analytics/",
+    "site_name": "Zoho",
+    "type": "website",
+    "twitter_title": "Data Analytics Software & AI-Powered BI Platform - Zoho Analytics",
+    "twitter_description": "Connect 500+ apps, build dashboards, and get actionable insights instantly with Zoho Analytics, the award-winning business intelligence and data analytics software.",
+    "twitter_image": "//www.zohowebstatic.com/sites/zweb/images/analytics/homepage/twitter-card.jpg",
+    "twitter_card": "summary",
+    "twitter_site": "@zoho"
+  }
 }

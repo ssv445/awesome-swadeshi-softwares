@@ -3,8 +3,25 @@
   "description": "DIY platform to create online stores and start selling online in 30 seconds",
   "website": "https://mydukaan.io/",
   "category": "E-commerce",
-  "alternatives": ["Shopify", "WooCommerce", "BigCommerce"],
+  "alternatives": [
+    "Shopify",
+    "WooCommerce",
+    "BigCommerce"
+  ],
   "pricing": "Freemium",
   "company": "Dukaan",
-  "location": "Bangalore"
+  "location": "Bangalore",
+  "opengraph": {
+    "last_updated": "2025-09-29T06:55:08.818Z",
+    "image": "https://mydukaan.io/images/og-images/og-selling-online.jpg",
+    "image:type": "image/jpeg",
+    "twitter_card": "summary_large_image",
+    "twitter_title": "Dukaan - Enterprise Ecommerce Platform for Businesses",
+    "twitter_description": "Try Dukaan, the cutting-edge enterprise ecommerce platform. Seamlessly manage your online business and drive growth with our powerful tools.",
+    "twitter_site": "@mydukaanapp",
+    "twitter_creator": "@mydukaanapp",
+    "twitter_image:src": "https://mydukaan.io/images/og-images/og-selling-online.jpg",
+    "twitter_image": "https://mydukaan.io/images/og-images/og-selling-online.jpg",
+    "twitter_domain": "mydukaan.io"
+  }
 }

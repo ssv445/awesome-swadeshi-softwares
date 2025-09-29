@@ -3,8 +3,29 @@
   "description": "Human resource management system with payroll, attendance, and employee self-service",
   "website": "https://www.greythr.com/",
   "category": "Business",
-  "alternatives": ["BambooHR", "Workday", "Zoho People"],
+  "alternatives": [
+    "BambooHR",
+    "Workday",
+    "Zoho People"
+  ],
   "pricing": "Paid",
   "company": "Greytip Software",
-  "location": "Bangalore"
+  "location": "Bangalore",
+  "opengraph": {
+    "last_updated": "2025-09-29T05:41:49.037Z",
+    "site_name": "greythr",
+    "locale": "en_US",
+    "url": "https://www.greythr.com/",
+    "type": "website",
+    "title": "Cloud-based HRMS and Payroll Software in India - greytHR",
+    "description": "greytHR provides one of the best HR and Payroll softwares for small & midsize businesses across various industries in India. Sign up for a free trial today.",
+    "image": "https://www.datocms-assets.com/40521/1725456826-home-page-thumbnail.png?auto=format",
+    "image:alt": "greytHR provides one of the best HR and Payroll softwares for small & midsize businesses across various industries in India. Sign up for a free trial today.",
+    "twitter_creator": "@greythr2",
+    "twitter_card": "summary_large_image",
+    "twitter_title": "Cloud-based HRMS and Payroll Software in India - greytHR",
+    "twitter_description": "greytHR provides one of the best HR and Payroll softwares for small & midsize businesses across various industries in India. Sign up for a free trial today.",
+    "twitter_image": "https://www.datocms-assets.com/40521/1725456826-home-page-thumbnail.png?auto=format",
+    "twitter_image:alt": "greytHR provides one of the best HR and Payroll softwares for small & midsize businesses across various industries in India. Sign up for a free trial today."
+  }
 }

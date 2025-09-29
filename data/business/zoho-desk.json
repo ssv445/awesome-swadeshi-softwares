@@ -3,8 +3,26 @@
   "description": "Help desk software for customer support and ticketing",
   "website": "https://www.zoho.com/desk/",
   "category": "Business",
-  "alternatives": ["Zendesk", "Freshdesk", "Help Scout"],
+  "alternatives": [
+    "Zendesk",
+    "Freshdesk",
+    "Help Scout"
+  ],
   "pricing": "Freemium",
   "company": "Zoho Corporation",
-  "location": "Chennai"
+  "location": "Chennai",
+  "opengraph": {
+    "last_updated": "2025-09-29T06:52:39.353Z",
+    "title": "Zoho Desk | Top Rated Customer Service Help Desk Software",
+    "description": "Zoho Desk is an online customer service help desk software for happier customers, empowered agents, and healthier businesses. Get a 15-day free trial.",
+    "image": "https://www.zohowebstatic.com/sites/zweb/images/ogimage/desk-logo.png",
+    "url": "https://www.zoho.com/en-in/desk/",
+    "site_name": "Zoho",
+    "type": "website",
+    "twitter_title": "Zoho Desk | Top Rated Customer Service Help Desk Software",
+    "twitter_description": "Zoho Desk is an online customer service help desk software for happier customers, empowered agents, and healthier businesses. Get a 15-day free trial.",
+    "twitter_image": "https://www.zohowebstatic.com/sites/zweb/images/ogimage/desk-logo.png",
+    "twitter_card": "summary",
+    "twitter_site": "@zoho"
+  }
 }

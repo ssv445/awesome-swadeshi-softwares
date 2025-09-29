@@ -3,8 +3,20 @@
   "description": "Office suite with document editing, collaboration, and project management",
   "website": "https://www.onlyoffice.com/",
   "category": "Business",
-  "alternatives": ["Microsoft Office", "Google Workspace", "LibreOffice"],
+  "alternatives": [
+    "Microsoft Office",
+    "Google Workspace",
+    "LibreOffice"
+  ],
   "pricing": "Freemium",
   "company": "Ascensio System SIA (India Office)",
-  "location": "Mumbai"
+  "location": "Mumbai",
+  "opengraph": {
+    "last_updated": "2025-09-29T05:42:09.631Z",
+    "title": "Online Office Applications for business",
+    "url": "https://www.onlyoffice.com/default-alt.aspx",
+    "description": "ONLYOFFICE offers a secure online office suite highly compatible with MS Office formats. Connect it to your web platform for document editing and collaboration or use as a part of ONLYOFFICE Workspace.",
+    "image": "https://download.onlyoffice.com/assets/fb/fb_icon_325x325.jpg",
+    "type": "website"
+  }
 }

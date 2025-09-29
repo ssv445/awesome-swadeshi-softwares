@@ -3,8 +3,25 @@
   "description": "Online presentation software for creating slides and presentations",
   "website": "https://www.zoho.com/show/",
   "category": "Productivity",
-  "alternatives": ["Microsoft PowerPoint", "Google Slides"],
+  "alternatives": [
+    "Microsoft PowerPoint",
+    "Google Slides"
+  ],
   "pricing": "Freemium",
   "company": "Zoho Corporation",
-  "location": "Chennai"
+  "location": "Chennai",
+  "opengraph": {
+    "last_updated": "2025-09-29T06:56:18.246Z",
+    "title": "Online Presentation Software | Create & Edit Slides Online - Zoho Show",
+    "description": "Zoho Show is a free online presentation software that lets you create, collaborate, publish, and broadcast presentations from any device, quick and easy.",
+    "image": "https://www.zohowebstatic.com/sites/zweb/images/ogimage/show-logo.png",
+    "url": "https://www.zoho.com/show/",
+    "site_name": "Zoho",
+    "type": "website",
+    "twitter_title": "Online Presentation Software | Create & Edit Slides Online - Zoho Show",
+    "twitter_description": "Zoho Show is a free online presentation software that lets you create, collaborate, publish, and broadcast presentations from any device, quick and easy.",
+    "twitter_image": "https://www.zohowebstatic.com/sites/zweb/images/ogimage/show-logo.png",
+    "twitter_card": "summary",
+    "twitter_site": "@zoho"
+  }
 }

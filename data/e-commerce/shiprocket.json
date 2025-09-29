@@ -3,8 +3,26 @@
   "description": "E-commerce shipping and logistics platform for online sellers",
   "website": "https://www.shiprocket.in/",
   "category": "E-commerce",
-  "alternatives": ["ShipStation", "Easyship", "Shippo"],
+  "alternatives": [
+    "ShipStation",
+    "Easyship",
+    "Shippo"
+  ],
   "pricing": "Freemium",
   "company": "Shiprocket",
-  "location": "Gurgaon"
+  "location": "Gurgaon",
+  "opengraph": {
+    "last_updated": "2025-09-29T06:55:20.598Z",
+    "locale": "en_US",
+    "type": "website",
+    "title": "Shiprocket: Your All-in-One eCommerce Growth Partner",
+    "description": "Simplify your end-to-end eCommerce operations with our all-in-one platform. Trusted by 3 Lakh+ brands for seamless growth.",
+    "url": "https://www.shiprocket.in/",
+    "site_name": "Shiprocket",
+    "image": "https://sr-website.shiprocket.in/wp-content/uploads/2025/02/OG-Image-for-Shiprocket.png",
+    "image:width": "1200",
+    "image:height": "630",
+    "image:type": "image/png",
+    "twitter_card": "summary_large_image"
+  }
 }

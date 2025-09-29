@@ -3,8 +3,23 @@
   "description": "User-generated video content platform acquired by Glance (InMobi)",
   "website": "https://roposo.com/",
   "category": "Entertainment",
-  "alternatives": ["TikTok", "Instagram Reels"],
+  "alternatives": [
+    "TikTok",
+    "Instagram Reels"
+  ],
   "pricing": "Free",
   "company": "Glance (InMobi)",
-  "location": "Bangalore"
+  "location": "Bangalore",
+  "opengraph": {
+    "last_updated": "2025-09-29T06:55:45.799Z",
+    "title": "Roposo Live Buzz",
+    "description": "We bring together real people, who want to have real conversations, watch LIVE streams and share what they think with the world – all LIVE.",
+    "image": "https://img36.ropose.com/normal/RoposoBuzzImg1697103595492.png",
+    "url": "https://www.roposo.com/discover/trends/?env=ls-shp&utm_source=organic_traffic_redirection&utm_medium=roposo&utm_campaign=roposo&ff=1&wff=4",
+    "twitter_card": "summary",
+    "twitter_title": "Roposo Live Buzz",
+    "twitter_description": "We bring together real people, who want to have real conversations, watch LIVE streams and share what they think with the world – all LIVE.",
+    "twitter_site": "@RoposoLove",
+    "twitter_image": "https://img36.ropose.com/normal/RoposoBuzzImg1697103595492.png"
+  }
 }

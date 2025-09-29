@@ -3,8 +3,27 @@
   "description": "Indian mobile operating system with regional language support",
   "website": "https://www.indusos.com/",
   "category": "Development",
-  "alternatives": ["Android", "iOS", "HarmonyOS"],
+  "alternatives": [
+    "Android",
+    "iOS",
+    "HarmonyOS"
+  ],
   "pricing": "Free",
   "company": "IndusOS",
-  "location": "Mumbai"
+  "location": "Mumbai",
+  "opengraph": {
+    "last_updated": "2025-09-29T06:54:48.653Z",
+    "title": "Indus Appstore Home Page | Indus Appstore",
+    "description": "Discover apps and games that you’ll love on the Indus Appstore. Browse in English or 12 local languages for a seamless experience.",
+    "url": "https://www.indusappstore.com",
+    "image": "https://www.indusappstore.com/ogs/indus-og.png",
+    "image:width": "1200",
+    "image:height": "630",
+    "type": "article",
+    "twitter_title": "Indus Appstore Home Page | Indus Appstore",
+    "twitter_description": "Discover apps and games that you’ll love on the Indus Appstore. Browse in English or 12 local languages for a seamless experience.",
+    "twitter_image:src": "https://www.indusappstore.com/ogs/indus-og.png",
+    "twitter_card": "summary_large_image",
+    "twitter_image:alt": "Indus Appstore Home Page Logo"
+  }
 }

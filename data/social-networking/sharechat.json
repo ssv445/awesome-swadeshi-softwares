@@ -3,8 +3,26 @@
   "description": "Vernacular-first social platform for regional language users across India",
   "website": "https://sharechat.com/",
   "category": "Social Networking",
-  "alternatives": ["Facebook", "Instagram"],
+  "alternatives": [
+    "Facebook",
+    "Instagram"
+  ],
   "pricing": "Free",
   "company": "Mohalla Tech Pvt Ltd",
-  "location": "Bangalore"
+  "location": "Bangalore",
+  "opengraph": {
+    "last_updated": "2025-09-29T06:56:35.187Z",
+    "title": "Trending Content in English - ShareChat - Funny, Romantic, Videos, Shayari, Quotes | ShareChat App",
+    "description": "ShareChat Trending Content ShareChat Funny, Romantic, Videos, Shayari, Quotes | Messaging app",
+    "site_name": "ShareChat",
+    "type": "website",
+    "url": "sharechat.com/",
+    "image": "https://cdn4.sharechat.com/33d5318_1c8/tools/2c51924_1720173817092_sc.webp",
+    "twitter_site": "@sharechatapp",
+    "twitter_app:android": "in.mohalla.sharechat",
+    "twitter_card": "summary_large_image",
+    "twitter_title": "Trending Content in English - ShareChat - Funny, Romantic, Videos, Shayari, Quotes | ShareChat App",
+    "twitter_description": "ShareChat Trending Content ShareChat Funny, Romantic, Videos, Shayari, Quotes | Messaging app",
+    "twitter_image": "https://cdn4.sharechat.com/33d5318_1c8/tools/2c51924_1720173817092_sc.webp"
+  }
 }

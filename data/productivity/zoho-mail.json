@@ -3,8 +3,26 @@
   "description": "Business email hosting with calendar and contacts integration",
   "website": "https://www.zoho.com/mail/",
   "category": "Productivity",
-  "alternatives": ["Gmail", "Outlook", "Yahoo Mail"],
+  "alternatives": [
+    "Gmail",
+    "Outlook",
+    "Yahoo Mail"
+  ],
   "pricing": "Freemium",
   "company": "Zoho Corporation",
-  "location": "Chennai"
+  "location": "Chennai",
+  "opengraph": {
+    "last_updated": "2025-09-29T06:56:11.694Z",
+    "title": "Secure & Professional Business Email for your Organization | Zoho Mail",
+    "description": "Ad-free Business Email Hosting with a clean, easy-to-use interface. Secure & professional with integrated business Calendar, Contacts, Notes & Tasks.",
+    "image": "https://www.zohowebstatic.com/sites/zweb/images/ogimage/mail-logo.png",
+    "url": "https://www.zoho.com/mail/",
+    "site_name": "Zoho",
+    "type": "website",
+    "twitter_title": "Secure & Professional Business Email for your Organization | Zoho Mail",
+    "twitter_description": "Ad-free Business Email Hosting with a clean, easy-to-use interface. Secure & professional with integrated business Calendar, Contacts, Notes & Tasks.",
+    "twitter_image": "https://www.zohowebstatic.com/sites/zweb/images/ogimage/mail-logo.png",
+    "twitter_card": "summary",
+    "twitter_site": "@zoho"
+  }
 }

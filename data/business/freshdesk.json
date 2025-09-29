@@ -3,8 +3,27 @@
   "description": "Customer support software with ticketing, knowledge base and automation",
   "website": "https://www.freshworks.com/freshdesk/",
   "category": "Business",
-  "alternatives": ["Zendesk", "Help Scout", "Intercom"],
+  "alternatives": [
+    "Zendesk",
+    "Help Scout",
+    "Intercom"
+  ],
   "pricing": "Freemium",
   "company": "Freshworks Inc.",
-  "location": "Chennai"
+  "location": "Chennai",
+  "opengraph": {
+    "last_updated": "2025-09-29T05:41:23.046Z",
+    "site_name": "Freshworks",
+    "type": "website",
+    "url": "https://www.freshworks.com/freshdesk/",
+    "title": "Freshdesk: Agentic AI platform for modern customer service | Freshworks",
+    "description": "Freshdesk is an AI-powered customer service solution that’s easy to set up, simple to use, and built to boost agent productivity and deliver seamless customer experiences. Try it free!",
+    "image": "https://dam.freshworks.com/m/411673e8d0fddc43/original/CX-LP-OG-Image.webp",
+    "twitter_card": "summary_large_image",
+    "twitter_site": "@FreshworksInc",
+    "twitter_url": "https://www.freshworks.com/freshdesk/",
+    "twitter_image": "https://dam.freshworks.com/m/411673e8d0fddc43/original/CX-LP-OG-Image.webp",
+    "twitter_title": "Freshdesk: Agentic AI platform for modern customer service | Freshworks",
+    "twitter_description": "Freshdesk is an AI-powered customer service solution that’s easy to set up, simple to use, and built to boost agent productivity and deliver seamless customer experiences. Try it free!"
+  }
 }

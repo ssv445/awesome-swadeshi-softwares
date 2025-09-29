@@ -3,8 +3,35 @@
   "description": "OTT platform with strong focus on regional and vernacular content across India",
   "website": "https://www.zee5.com/",
   "category": "Entertainment",
-  "alternatives": ["Netflix", "Amazon Prime"],
+  "alternatives": [
+    "Netflix",
+    "Amazon Prime"
+  ],
   "pricing": "Freemium",
   "company": "Zee Entertainment Enterprises",
-  "location": "Mumbai"
+  "location": "Mumbai",
+  "opengraph": {
+    "last_updated": "2025-09-29T06:55:52.367Z",
+    "title": "ZEE5 - Watch TV Shows, Web Series, Movies & Live TV Channels",
+    "description": "Watch premieres of your favourite TV show episodes a day before telecast on ZEE5 & explore blockbuster movies, 100+ original web series, music videos, live TV channels, news in HD quality & language of your choice.",
+    "image": "https://www.zee5.com/images/ZEE5_logo.svg?v=12",
+    "type": "website",
+    "site_name": "ZEE5",
+    "url": "https://www.zee5.com/",
+    "image:width": "200",
+    "image:height": "200",
+    "twitter_card": "summary_large_image",
+    "twitter_site": "@ZEE5India",
+    "twitter_title": "ZEE5 - Watch TV Shows, Web Series, Movies & Live TV Channels",
+    "twitter_description": "Watch premieres of your favourite TV show episodes a day before telecast on ZEE5 & explore blockbuster movies, 100+ original web series, music videos, live TV channels, news in HD quality & language of your choice.",
+    "twitter_image": "https://www.zee5.com/images/ZEE5_logo.svg?v=12",
+    "twitter_url": "https://www.zee5.com/",
+    "twitter_app:country": "IN",
+    "twitter_app:name:iphone": "ZEE5",
+    "twitter_app:id:iphone": "743691886",
+    "twitter_app:url:iphone": "https://www.zee5.com/",
+    "twitter_app:name:googleplay": "ZEE5",
+    "twitter_app:id:googleplay": "com.graymatrix.did",
+    "twitter_app:url:googleplay": "https://www.zee5.com/"
+  }
 }

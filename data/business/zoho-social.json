@@ -3,8 +3,26 @@
   "description": "Social media management platform for scheduling and analytics",
   "website": "https://www.zoho.com/social/",
   "category": "Business",
-  "alternatives": ["Hootsuite", "Buffer", "Sprout Social"],
+  "alternatives": [
+    "Hootsuite",
+    "Buffer",
+    "Sprout Social"
+  ],
   "pricing": "Freemium",
   "company": "Zoho Corporation",
-  "location": "Chennai"
+  "location": "Chennai",
+  "opengraph": {
+    "last_updated": "2025-09-29T06:52:57.375Z",
+    "title": "Social media management software for all businesses - Zoho Social",
+    "description": "Zoho Social is a social media management tool that helps businesses and agencies grow their presence on social media. Signup for free. No credit card required.",
+    "image": "https://www.zohowebstatic.com/sites/zweb/images/ogimage/social-logo.png",
+    "url": "https://www.zoho.com/social/",
+    "site_name": "Zoho",
+    "type": "website",
+    "twitter_title": "Social media management software for all businesses - Zoho Social",
+    "twitter_description": "Zoho Social is a social media management tool that helps businesses and agencies grow their presence on social media. Signup for free. No credit card required.",
+    "twitter_image": "https://www.zohowebstatic.com/sites/zweb/images/ogimage/social-logo.png",
+    "twitter_card": "summary",
+    "twitter_site": "@zoho"
+  }
 }

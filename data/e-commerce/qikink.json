@@ -3,8 +3,31 @@
   "description": "Print-on-demand platform for custom products with Indian manufacturing",
   "website": "https://qikink.com/",
   "category": "E-commerce",
-  "alternatives": ["Printify", "Printful", "Gooten"],
+  "alternatives": [
+    "Printify",
+    "Printful",
+    "Gooten"
+  ],
   "pricing": "Free",
   "company": "Qikink",
-  "location": "Mumbai"
+  "location": "Mumbai",
+  "opengraph": {
+    "last_updated": "2025-09-29T06:55:18.291Z",
+    "locale": "en_US",
+    "type": "website",
+    "title": "Print on Demand Dropshipping in India for T-Shirts, Hoodies",
+    "description": "Print on Demand Dropshipping in India for T-Shirts, Hoodies and more. Start selling custom products online without inventory. No Minimums and Free Signup.",
+    "url": "https://qikink.com/",
+    "site_name": "Qikink",
+    "updated_time": "2025-09-04T12:48:13+05:30",
+    "twitter_card": "summary_large_image",
+    "twitter_title": "Print on Demand Dropshipping in India for T-Shirts, Hoodies",
+    "twitter_description": "Print on Demand Dropshipping in India for T-Shirts, Hoodies and more. Start selling custom products online without inventory. No Minimums and Free Signup.",
+    "twitter_site": "@qikinkhq",
+    "twitter_creator": "@qikinkhq",
+    "twitter_label1": "Written by",
+    "twitter_data1": "Udhay",
+    "twitter_label2": "Time to read",
+    "twitter_data2": "11 minutes"
+  }
 }

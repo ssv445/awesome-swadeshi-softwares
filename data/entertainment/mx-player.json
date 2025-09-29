@@ -3,8 +3,21 @@
   "description": "Popular Android video player that evolved into a major OTT streaming platform",
   "website": "https://www.mxplayer.in/",
   "category": "Entertainment",
-  "alternatives": ["Netflix", "Amazon Prime Video", "Disney+ Hotstar"],
+  "alternatives": [
+    "Netflix",
+    "Amazon Prime Video",
+    "Disney+ Hotstar"
+  ],
   "pricing": "Freemium",
   "company": "MX Media (Times Internet)",
-  "location": "Mumbai"
+  "location": "Mumbai",
+  "opengraph": {
+    "last_updated": "2025-09-29T06:55:43.132Z",
+    "title": "Amazon MX Player - Watch Movies, Latest Web Series, TV Shows, International Dramas free",
+    "site_name": "Amazon MX Player",
+    "type": "website",
+    "image": "https://assets-6.mxplay.com/static/mxoneweb/desktop/images/logo-dark.png",
+    "description": "Amazon MX Player is India's Most Premium OTT Service Where You Can Watch Old & New Movies, Popular Web Series, Comedy TV Shows, Stand-up Comedians Videos, latest International Dramas in English, Hindi, Telugu, Tamil, Kannada, and more Languages.",
+    "url": "https://www.mxplayer.in/"
+  }
 }

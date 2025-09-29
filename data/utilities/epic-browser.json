@@ -3,8 +3,24 @@
   "description": "Privacy-focused web browser with built-in VPN and tracker blocking",
   "website": "https://www.epicbrowser.com/",
   "category": "Utilities",
-  "alternatives": ["Google Chrome", "Firefox"],
+  "alternatives": [
+    "Google Chrome",
+    "Firefox"
+  ],
   "pricing": "Free",
   "company": "Hidden Reflex",
-  "location": "Bangalore"
+  "location": "Bangalore",
+  "opengraph": {
+    "last_updated": "2025-09-29T06:56:38.386Z",
+    "site_name": "Epic Privacy Browser",
+    "title": "Epic Privacy Browser",
+    "description": "Epic is a private, secure web browser that blocks ads, trackers, fingerprinting, cryptomining, ultrasound signaling and more.",
+    "type": "website",
+    "url": "/",
+    "twitter_card": "summary",
+    "twitter_site": "@EpicBrowser",
+    "twitter_creator": "@EpicBrowser",
+    "twitter_title": "Epic Privacy Browser",
+    "twitter_description": "Epic is a private, secure web browser that blocks ads, trackers, fingerprinting, cryptomining, ultrasound signaling and more."
+  }
 }

@@ -3,8 +3,27 @@
   "description": "IT service management platform for IT support and operations",
   "website": "https://www.freshworks.com/freshservice/",
   "category": "Business",
-  "alternatives": ["ServiceNow", "Jira Service Management", "ManageEngine"],
+  "alternatives": [
+    "ServiceNow",
+    "Jira Service Management",
+    "ManageEngine"
+  ],
   "pricing": "Freemium",
   "company": "Freshworks Inc.",
-  "location": "Chennai"
+  "location": "Chennai",
+  "opengraph": {
+    "last_updated": "2025-09-29T05:41:34.750Z",
+    "site_name": "Freshworks",
+    "type": "website",
+    "url": "https://www.freshworks.com/freshservice/",
+    "title": "AI-Powered ITSM Platform | Simple, Scalable IT Service for Every Business",
+    "description": "Deliver enterprise IT service with Freshservice, an AI-powered ITSM platform that's quick to deploy, easy to use, and drives productivity and business impact.",
+    "image": "https://dam.freshworks.com/m/2faf663d96b243d6/original/ex-lp-og-image.webp",
+    "twitter_card": "summary_large_image",
+    "twitter_site": "@FreshworksInc",
+    "twitter_url": "https://www.freshworks.com/freshservice/",
+    "twitter_image": "https://dam.freshworks.com/m/2faf663d96b243d6/original/ex-lp-og-image.webp",
+    "twitter_title": "AI-Powered ITSM Platform | Simple, Scalable IT Service for Every Business",
+    "twitter_description": "Deliver enterprise IT service with Freshservice, an AI-powered ITSM platform that's quick to deploy, easy to use, and drives productivity and business impact."
+  }
 }

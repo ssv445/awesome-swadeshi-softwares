@@ -3,8 +3,26 @@
   "description": "Email marketing automation platform for businesses",
   "website": "https://www.zoho.com/campaigns/",
   "category": "Business",
-  "alternatives": ["Mailchimp", "Constant Contact", "ConvertKit"],
+  "alternatives": [
+    "Mailchimp",
+    "Constant Contact",
+    "ConvertKit"
+  ],
   "pricing": "Freemium",
   "company": "Zoho Corporation",
-  "location": "Chennai"
+  "location": "Chennai",
+  "opengraph": {
+    "last_updated": "2025-09-29T06:52:29.967Z",
+    "title": "Email marketing software | Zoho Campaigns",
+    "description": "A simple, yet effective platform that helps you send the right email campaign to the right audience at the right time. Sign up today and see how.",
+    "image": "https://www.zohowebstatic.com/sites/zweb/images/ogimage/campaigns-logo.png",
+    "url": "https://www.zoho.com/campaigns/",
+    "site_name": "Zoho",
+    "type": "website",
+    "twitter_title": "Email marketing software | Zoho Campaigns",
+    "twitter_description": "A simple, yet effective platform that helps you send the right email campaign to the right audience at the right time. Sign up today and see how.",
+    "twitter_image": "https://www.zohowebstatic.com/sites/zweb/images/ogimage/campaigns-logo.png",
+    "twitter_card": "summary",
+    "twitter_site": "@zoho"
+  }
 }

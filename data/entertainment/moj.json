@@ -3,8 +3,18 @@
   "description": "Short-video platform launched by ShareChat to capture the post-TikTok market",
   "website": "https://moj.tv/",
   "category": "Entertainment",
-  "alternatives": ["TikTok", "Instagram Reels"],
+  "alternatives": [
+    "TikTok",
+    "Instagram Reels"
+  ],
   "pricing": "Free",
   "company": "Mohalla Tech Pvt Ltd",
-  "location": "Bangalore"
+  "location": "Bangalore",
+  "opengraph": {
+    "last_updated": "2025-09-29T06:55:40.853Z",
+    "title": "moj.tv",
+    "site_name": "moj.tv",
+    "description": "Energize your media.",
+    "type": "article"
+  }
 }

@@ -3,8 +3,25 @@
   "description": "Online spreadsheet application for data analysis and collaboration",
   "website": "https://www.zoho.com/sheet/",
   "category": "Productivity",
-  "alternatives": ["Microsoft Excel", "Google Sheets"],
+  "alternatives": [
+    "Microsoft Excel",
+    "Google Sheets"
+  ],
   "pricing": "Freemium",
   "company": "Zoho Corporation",
-  "location": "Chennai"
+  "location": "Chennai",
+  "opengraph": {
+    "last_updated": "2025-09-29T06:56:16.096Z",
+    "title": "Online Spreadsheet Software | Create Spreadsheets for Free - Zoho Sheet",
+    "description": "Create and collaborate on spreadsheets online with your team in real-time, from anywhere. Available on mobile devices too! Import your Excel spreadsheet files and get started now.",
+    "image": "https://www.zohowebstatic.com/sites/zweb/images/ogimage/sheet-logo.png",
+    "url": "https://www.zoho.com/sheet/",
+    "site_name": "Zoho",
+    "type": "website",
+    "twitter_title": "Online Spreadsheet Software | Create Spreadsheets for Free - Zoho Sheet",
+    "twitter_description": "Create and collaborate on spreadsheets online with your team in real-time, from anywhere. Available on mobile devices too! Import your Excel spreadsheet files and get started now.",
+    "twitter_image": "https://www.zohowebstatic.com/sites/zweb/images/ogimage/sheet-logo.png",
+    "twitter_card": "summary",
+    "twitter_site": "@zoho"
+  }
 }

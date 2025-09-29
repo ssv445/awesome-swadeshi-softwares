@@ -3,8 +3,25 @@
   "description": "Online word processor for document creation and collaboration",
   "website": "https://www.zoho.com/writer/",
   "category": "Productivity",
-  "alternatives": ["Microsoft Word", "Google Docs"],
+  "alternatives": [
+    "Microsoft Word",
+    "Google Docs"
+  ],
   "pricing": "Freemium",
   "company": "Zoho Corporation",
-  "location": "Chennai"
+  "location": "Chennai",
+  "opengraph": {
+    "last_updated": "2025-09-29T06:56:25.097Z",
+    "title": "Online Word Processor For Seamless Document Creation & Editing | Writer",
+    "description": "The user-friendly word processor to create, edit, share, collaborate on, review, and publish documents. Fully free; works seamlessly with DOCX and PDF as well.",
+    "image": "https://www.zohowebstatic.com/sites/zweb/images/ogimage/writer-logo.png",
+    "url": "https://www.zoho.com/writer/",
+    "site_name": "Zoho",
+    "type": "website",
+    "twitter_title": "Online Word Processor For Seamless Document Creation & Editing | Writer",
+    "twitter_description": "The user-friendly word processor to create, edit, share, collaborate on, review, and publish documents. Fully free; works seamlessly with DOCX and PDF as well.",
+    "twitter_image": "https://www.zohowebstatic.com/sites/zweb/images/ogimage/writer-logo.png",
+    "twitter_card": "summary",
+    "twitter_site": "@zoho"
+  }
 }

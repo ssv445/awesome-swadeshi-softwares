@@ -3,8 +3,24 @@
   "description": "Indian cloud services with data centers, hosting, and managed services",
   "website": "https://www.ctrls.in/",
   "category": "Development",
-  "alternatives": ["AWS", "Google Cloud", "Microsoft Azure"],
+  "alternatives": [
+    "AWS",
+    "Google Cloud",
+    "Microsoft Azure"
+  ],
   "pricing": "Paid",
   "company": "CtrlS Datacenters",
-  "location": "Hyderabad"
+  "location": "Hyderabad",
+  "opengraph": {
+    "last_updated": "2025-09-29T06:54:43.378Z",
+    "locale": "en_US",
+    "site_name": "CtrlS Datacenter - Asia's largest Rated-4 Datacenter Netwrok",
+    "type": "website",
+    "title": "Asia's Largest Rated-4 Data Center Network | CtrlS",
+    "description": "CtrlS is Asia's largest Rated-4 data center network. We offer colocation, private cloud, and managed services with a 99.995% uptime SLA. Explore now.",
+    "url": "https://www.ctrls.com/",
+    "twitter_card": "summary_large_image",
+    "twitter_title": "Asia's Largest Rated-4 Data Center Network | CtrlS",
+    "twitter_description": "CtrlS is Asia's largest Rated-4 data center network. We offer colocation, private cloud, and managed services with a 99.995% uptime SLA. Explore now."
+  }
 }

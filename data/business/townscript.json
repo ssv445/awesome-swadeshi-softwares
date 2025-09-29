@@ -3,8 +3,26 @@
   "description": "Event ticketing and management platform with registration and analytics",
   "website": "https://www.townscript.com/",
   "category": "Business",
-  "alternatives": ["Eventbrite", "Meetup", "Ticket Tailor"],
+  "alternatives": [
+    "Eventbrite",
+    "Meetup",
+    "Ticket Tailor"
+  ],
   "pricing": "Freemium",
   "company": "Townscript",
-  "location": "Bangalore"
+  "location": "Bangalore",
+  "opengraph": {
+    "last_updated": "2025-09-29T05:42:32.787Z",
+    "type": "website",
+    "image": "https://s3.ap-south-1.amazonaws.com/townscript-common-resources/ogimage.png",
+    "site_name": "https://www.townscript.com/",
+    "title": "Upcoming Events in  Tickets Today, This Weekend & Month",
+    "description": "Buy Tickets for upcoming events in  happening today, this weekend , this month- treks & camping, marathons, conferences, college events, workshops, TEDx, Entertainment and more.",
+    "twitter_card": "summary_large_image",
+    "twitter_site": "townscript",
+    "twitter_image": "https://s3.ap-south-1.amazonaws.com/townscript-common-resources/ogimage.png",
+    "twitter_creator": "townscript",
+    "twitter_title": "Upcoming Events in  Tickets Today, This Weekend & Month",
+    "twitter_description": "Buy Tickets for upcoming events in  happening today, this weekend , this month- treks & camping, marathons, conferences, college events, workshops, TEDx, Entertainment and more."
+  }
 }

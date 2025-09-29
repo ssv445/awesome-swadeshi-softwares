@@ -3,8 +3,30 @@
   "description": "User feedback and testing platform with screenshot annotations and bug tracking",
   "website": "https://www.userback.io/",
   "category": "Business",
-  "alternatives": ["UserTesting", "Maze", "Lookback"],
+  "alternatives": [
+    "UserTesting",
+    "Maze",
+    "Lookback"
+  ],
   "pricing": "Freemium",
   "company": "Userback (Indian operations)",
-  "location": "Brisbane (Indian team)"
+  "location": "Brisbane (Indian team)",
+  "opengraph": {
+    "last_updated": "2025-09-29T05:42:39.757Z",
+    "url": "https://userback.io/",
+    "site_name": "Userback",
+    "locale": "en_US",
+    "type": "website",
+    "title": "Userback: Your #1 User Feedback Software",
+    "description": "Userback empowers product teams to collect, understand, and act on user feedback with unprecedented speed and clarity. Combining feedback widgets, in-app surveys, session replays, and feature portals, Userback is the ultimate user feedback software.",
+    "image": "https://userback.io/wp-content/uploads/2024/12/userback-home-hero-04.png",
+    "image:secure_url": "https://userback.io/wp-content/uploads/2024/12/userback-home-hero-04.png",
+    "image:width": "2560",
+    "image:height": "1200",
+    "image:alt": "Userback - User feedback tool & action flow",
+    "twitter_card": "summary",
+    "twitter_title": "Userback: Your #1 User Feedback Software",
+    "twitter_description": "Userback empowers product teams to collect, understand, and act on user feedback with unprecedented speed and clarity. Combining feedback widgets, in-app surveys, session replays, and feature portals, Userback is the ultimate user feedback software.",
+    "twitter_image": "https://userback.io/wp-content/uploads/2024/12/userback-home-hero-04-1024x480.png"
+  }
 }

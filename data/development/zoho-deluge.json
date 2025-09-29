@@ -3,8 +3,26 @@
   "description": "Online scripting language for automating business processes",
   "website": "https://www.zoho.com/deluge/",
   "category": "Development",
-  "alternatives": ["JavaScript", "Python Scripts", "VBA"],
+  "alternatives": [
+    "JavaScript",
+    "Python Scripts",
+    "VBA"
+  ],
   "pricing": "Free",
   "company": "Zoho Corporation",
-  "location": "Chennai"
+  "location": "Chennai",
+  "opengraph": {
+    "last_updated": "2025-09-29T06:55:02.525Z",
+    "title": "Next-generation programming | The fastest programming language for developers - Zoho Deluge",
+    "description": "Deluge is Zoho's online scripting language which is powered by guided scripting and a powerful built-in IDE. It's a one-stop solution for performing actions and integrations across the suite.",
+    "image": "https://www.zohowebstatic.com/sites/zweb/images/ogimage/deluge-logo.png",
+    "url": "https://www.zoho.com/deluge/",
+    "site_name": "Zoho",
+    "type": "website",
+    "twitter_title": "Next-generation programming | The fastest programming language for developers - Zoho Deluge",
+    "twitter_description": "Deluge is Zoho's online scripting language which is powered by guided scripting and a powerful built-in IDE. It's a one-stop solution for performing actions and integrations across the suite.",
+    "twitter_image": "https://www.zohowebstatic.com/sites/zweb/images/ogimage/deluge-logo.png",
+    "twitter_card": "summary",
+    "twitter_site": "@zoho"
+  }
 }

@@ -3,8 +3,26 @@
   "description": "Website builder for creating professional websites without coding",
   "website": "https://www.zoho.com/sites/",
   "category": "Business",
-  "alternatives": ["Wix", "Squarespace", "Weebly"],
+  "alternatives": [
+    "Wix",
+    "Squarespace",
+    "Weebly"
+  ],
   "pricing": "Freemium",
   "company": "Zoho Corporation",
-  "location": "Chennai"
+  "location": "Chennai",
+  "opengraph": {
+    "last_updated": "2025-09-29T06:52:55.179Z",
+    "title": "Website Builder | Create Websites Effortlessly - Zoho Sites",
+    "description": "Create a website the way you want in minutes with Zoho Sites Website Builder. Design and build a responsive site with secure hosting. Try Zoho Sites for free.",
+    "image": "https://www.zohowebstatic.com/sites/zweb/images/ogimage/sites-logo.png",
+    "url": "https://www.zoho.com/sites/",
+    "site_name": "Zoho",
+    "type": "website",
+    "twitter_title": "Website Builder | Create Websites Effortlessly - Zoho Sites",
+    "twitter_description": "Create a website the way you want in minutes with Zoho Sites Website Builder. Design and build a responsive site with secure hosting. Try Zoho Sites for free.",
+    "twitter_image": "https://www.zohowebstatic.com/sites/zweb/images/ogimage/sites-logo.png",
+    "twitter_card": "summary",
+    "twitter_site": "@zoho"
+  }
 }

@@ -3,8 +3,23 @@
   "description": "AI-powered image transformation API for developers and businesses",
   "website": "https://www.pixelbin.io/",
   "category": "Creative",
-  "alternatives": ["Adobe Photoshop API", "Cloudinary"],
+  "alternatives": [
+    "Adobe Photoshop API",
+    "Cloudinary"
+  ],
   "pricing": "Paid",
   "company": "Shopsense Retail Technologies",
-  "location": "Mumbai"
+  "location": "Mumbai",
+  "opengraph": {
+    "last_updated": "2025-09-29T06:53:41.732Z",
+    "title": "Pixelbin AI Photo Editor: Free Online Image Editing",
+    "description": "Pixelbin.io is free online photo editor. Use PixelBin to edit, crop, enhance, or add background to your images. A mobile app is also available for editing.",
+    "image": "https://cdn.prod.website-files.com/673193e0642e6ad25696fcd4/67e3cc13ec0b2be8f64e3d29_Pixelbin%20Home%20Opengraph.webp",
+    "type": "website",
+    "twitter_card": "summary_large_image",
+    "twitter_site": "@PixelBin_io",
+    "twitter_title": "Pixelbin AI Photo Editor: Free Online Image Editing",
+    "twitter_description": "Pixelbin.io is free online photo editor. Use PixelBin to edit, crop, enhance, or add background to your images. A mobile app is also available for editing.",
+    "twitter_image": "https://cdn.prod.website-files.com/673193e0642e6ad25696fcd4/67e3cc13ec0b2be8f64e3d29_Pixelbin%20Home%20Opengraph.webp"
+  }
 }

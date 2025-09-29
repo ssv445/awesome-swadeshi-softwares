@@ -3,8 +3,29 @@
   "description": "Customer engagement and retention platform with analytics and personalization",
   "website": "https://clevertap.com/",
   "category": "Business",
-  "alternatives": ["Mixpanel", "Amplitude", "Braze"],
+  "alternatives": [
+    "Mixpanel",
+    "Amplitude",
+    "Braze"
+  ],
   "pricing": "Freemium",
   "company": "CleverTap",
-  "location": "Mumbai"
+  "location": "Mumbai",
+  "opengraph": {
+    "last_updated": "2025-09-29T05:41:08.756Z",
+    "locale": "en_US",
+    "site_name": "CleverTap - All-in-One Customer Engagement Platform",
+    "type": "website",
+    "title": "Supercharge Your Customer Lifetime Value with CleverTap: The Ultimate All-in-One Customer Engagement Platform",
+    "description": "Engage your customers like never before with CleverTap’s all-in-one customer engagement platform. From personalized messaging to automated campaigns, CleverTap platform offers a suite of powerful tools to help you connect with your audience at every stage of the customer journey. Get started with CleverTap today.",
+    "url": "https://clevertap.com/",
+    "image": "https://clevertap.com/wp-content/uploads/2023/10/home-featured.png?w=1024",
+    "image:secure_url": "https://clevertap.com/wp-content/uploads/2023/10/home-featured.png?w=1024",
+    "image:width": "1024",
+    "image:height": "537",
+    "twitter_card": "summary_large_image",
+    "twitter_title": "Supercharge Your Customer Lifetime Value with CleverTap: The Ultimate All-in-One Customer Engagement Platform",
+    "twitter_description": "Engage your customers like never before with CleverTap’s all-in-one customer engagement platform. From personalized messaging to automated campaigns, CleverTap platform offers a suite of powerful tools to help you connect with your audience at every stage of the customer journey. Get started with CleverTap today.",
+    "twitter_image": "https://clevertap.com/wp-content/uploads/2023/10/home-featured.png?w=1024"
+  }
 }

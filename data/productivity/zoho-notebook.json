@@ -3,8 +3,26 @@
   "description": "Note-taking app for organizing thoughts, ideas and information",
   "website": "https://www.zoho.com/notebook/",
   "category": "Productivity",
-  "alternatives": ["Evernote", "OneNote", "Notion"],
+  "alternatives": [
+    "Evernote",
+    "OneNote",
+    "Notion"
+  ],
   "pricing": "Free",
   "company": "Zoho Corporation",
-  "location": "Chennai"
+  "location": "Chennai",
+  "opengraph": {
+    "last_updated": "2025-09-29T06:56:13.874Z",
+    "title": "The Best Notes App to Stay Organized & Productive | Notebook",
+    "description": "Our all-in-one notes app lets you take notes, manage to-dos and tasks, collaborate with others, and sync across devices in a secure, ad-free space.",
+    "image": "https://www.zohowebstatic.com/sites/zweb/images/ogimage/notebook-logo.png",
+    "url": "https://www.zoho.com/notebook/",
+    "site_name": "Zoho",
+    "type": "website",
+    "twitter_title": "The Best Notes App to Stay Organized & Productive | Notebook",
+    "twitter_description": "Our all-in-one notes app lets you take notes, manage to-dos and tasks, collaborate with others, and sync across devices in a secure, ad-free space.",
+    "twitter_image": "https://www.zohowebstatic.com/sites/zweb/images/ogimage/notebook-logo.png",
+    "twitter_card": "summary",
+    "twitter_site": "@zoho"
+  }
 }

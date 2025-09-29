@@ -3,8 +3,21 @@
   "description": "AI-powered virtual assistant for customer support and automation",
   "website": "https://haptik.ai/",
   "category": "Communication",
-  "alternatives": ["Amazon Alexa", "Google Assistant", "Siri"],
+  "alternatives": [
+    "Amazon Alexa",
+    "Google Assistant",
+    "Siri"
+  ],
   "pricing": "Paid",
   "company": "Haptik (Jio)",
-  "location": "Mumbai"
+  "location": "Mumbai",
+  "opengraph": {
+    "last_updated": "2025-09-29T06:53:09.417Z",
+    "description": "Get started with building enterprise-grade, custom Conversational AI Agents powered by Jio Haptik's No/Low-Code Builder for easy deployment at scale.",
+    "title": "Build Enterprise-Grade Customer Experience AI Agents | Jio Haptik",
+    "url": "https://www.haptik.ai",
+    "twitter_description": "Get started with building enterprise-grade, custom Conversational AI Agents powered by Jio Haptik's No/Low-Code Builder for easy deployment at scale.",
+    "twitter_title": "Build Enterprise-Grade Customer Experience AI Agents | Jio Haptik",
+    "twitter_card": "summary"
+  }
 }

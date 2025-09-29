@@ -3,8 +3,23 @@
   "description": "Cross-browser testing platform for web and mobile applications",
   "website": "https://www.browserstack.com/",
   "category": "Development",
-  "alternatives": ["Sauce Labs", "CrossBrowserTesting", "LambdaTest"],
+  "alternatives": [
+    "Sauce Labs",
+    "CrossBrowserTesting",
+    "LambdaTest"
+  ],
   "pricing": "Paid",
   "company": "BrowserStack Inc",
-  "location": "Mumbai"
+  "location": "Mumbai",
+  "opengraph": {
+    "last_updated": "2025-09-29T06:54:40.822Z",
+    "locale": "en_US",
+    "type": "website",
+    "title": "Most Reliable App & Cross Browser Testing Platform",
+    "description": "Instant access to 3000+ browsers and real iOS and Android devices for cross browser testing. Ship apps and websites that work for everyone, every time. Get Free Trial.",
+    "url": "https://browserstack.wpengine.com/",
+    "site_name": "BrowserStack",
+    "twitter_card": "summary_large_image",
+    "twitter_site": "@browserstack"
+  }
 }

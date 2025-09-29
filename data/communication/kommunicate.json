@@ -3,8 +3,22 @@
   "description": "Customer communication platform with live chat, chatbots, and helpdesk",
   "website": "https://www.kommunicate.io/",
   "category": "Communication",
-  "alternatives": ["Intercom", "Zendesk Chat", "Drift"],
+  "alternatives": [
+    "Intercom",
+    "Zendesk Chat",
+    "Drift"
+  ],
   "pricing": "Freemium",
   "company": "Kommunicate",
-  "location": "Bangalore"
+  "location": "Bangalore",
+  "opengraph": {
+    "last_updated": "2025-09-29T06:53:20.044Z",
+    "title": "AI Agent for 24/7 Customer Service | Kommunicate",
+    "description": "Automate your customer service with Kommunicate’s AI agents that resolve 80% of queries autonomously. The best AI agent for customer service with human-in-the-loop support.",
+    "image": "https://cdn.prod.website-files.com/67b47e1a7c314f1eb9f8dd7a/6892db79d3b35056a10de2aa_Kommunicate%20AI.png",
+    "type": "website",
+    "twitter_card": "summary_large_image",
+    "twitter_title": "AI Agent for 24/7 Customer Service | Kommunicate",
+    "twitter_description": "Automate your customer service with Kommunicate’s AI agents that resolve 80% of queries autonomously. The best AI agent for customer service with human-in-the-loop support."
+  }
 }

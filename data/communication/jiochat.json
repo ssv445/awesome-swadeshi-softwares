@@ -3,8 +3,19 @@
   "description": "Instant messaging app leveraging Jio's telecom user base with integrated services",
   "website": "https://www.jio.com/apps/jiochat",
   "category": "Communication",
-  "alternatives": ["WhatsApp", "Telegram"],
+  "alternatives": [
+    "WhatsApp",
+    "Telegram"
+  ],
   "pricing": "Free",
   "company": "Jio Platforms",
-  "location": "Mumbai"
+  "location": "Mumbai",
+  "opengraph": {
+    "last_updated": "2025-09-29T06:53:17.558Z",
+    "url": "https://www.jio.com/jcms/apps/jiochat/",
+    "type": "website",
+    "title": "Messaging App - Video Call & Video Chat App | JioChat",
+    "image": "https://jep-asset.akamaized.net/jio/svg-og/jio_logo.png",
+    "description": "Messaging App - Download the best chat app to experience HD voice & video chatting, personalized messaging & more only with JioChat messaging app."
+  }
 }

@@ -3,8 +3,27 @@
   "description": "Conversational survey platform with advanced analytics and automation",
   "website": "https://surveysparrow.com/",
   "category": "Business",
-  "alternatives": ["SurveyMonkey", "Typeform", "Google Forms"],
+  "alternatives": [
+    "SurveyMonkey",
+    "Typeform",
+    "Google Forms"
+  ],
   "pricing": "Freemium",
   "company": "SurveySparrow",
-  "location": "Kochi"
+  "location": "Kochi",
+  "opengraph": {
+    "last_updated": "2025-09-29T05:42:18.337Z",
+    "title": "Online Surveys & Forms for Enhanced Customer Experience",
+    "description": "SurveySparrow’s online survey tools and forms refine and enhance customer experiences with actionable insights. Be the brand customers love! Try for FREE today.",
+    "url": "https://surveysparrow.com/",
+    "site_name": "SurveySparrow",
+    "locale": "en_US",
+    "image": "https://static.surveysparrow.com/site/assets/common/Surveysparrow.png",
+    "type": "website",
+    "twitter_card": "summary_large_image",
+    "twitter_site": "@SurveySparrow",
+    "twitter_title": "Online Surveys & Forms for Enhanced Customer Experience",
+    "twitter_description": "SurveySparrow’s online survey tools and forms refine and enhance customer experiences with actionable insights. Be the brand customers love! Try for FREE today.",
+    "twitter_image": "https://static.surveysparrow.com/site/assets/common/Surveysparrow.png"
+  }
 }

@@ -3,8 +3,26 @@
   "description": "Low-code application development platform for custom business apps",
   "website": "https://www.zoho.com/creator/",
   "category": "Business",
-  "alternatives": ["Microsoft PowerApps", "Mendix", "OutSystems"],
+  "alternatives": [
+    "Microsoft PowerApps",
+    "Mendix",
+    "OutSystems"
+  ],
   "pricing": "Freemium",
   "company": "Zoho Corporation",
-  "location": "Chennai"
+  "location": "Chennai",
+  "opengraph": {
+    "last_updated": "2025-09-29T06:52:34.528Z",
+    "title": "Zoho Creator: AI-powered low-code platform",
+    "description": "Turn your business app ideas into reality in seconds with Zoho Creator's AI-powered low-code app builder. Tell our AI what you need, and watch it instantly build.",
+    "image": "https://www.zohowebstatic.com/sites/zweb/images/creator/og/creator-home-og.jpg",
+    "url": "https://www.zoho.com/en-in/creator/",
+    "site_name": "Zoho",
+    "type": "website",
+    "twitter_title": "Zoho Creator: AI-powered low-code platform",
+    "twitter_description": "Turn your business app ideas into reality in seconds with Zoho Creator's AI-powered low-code app builder. Tell our AI what you need, and watch it instantly build.",
+    "twitter_image": "https://www.zohowebstatic.com/sites/zweb/images/creator/og/creator-home-og.jpg",
+    "twitter_card": "summary",
+    "twitter_site": "@zoho"
+  }
 }

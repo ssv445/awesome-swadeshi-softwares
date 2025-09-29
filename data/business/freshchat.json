@@ -3,8 +3,27 @@
   "description": "Live chat and messaging software for customer engagement",
   "website": "https://www.freshworks.com/live-chat-software/",
   "category": "Business",
-  "alternatives": ["Intercom", "Drift", "LiveChat"],
+  "alternatives": [
+    "Intercom",
+    "Drift",
+    "LiveChat"
+  ],
   "pricing": "Freemium",
   "company": "Freshworks Inc.",
-  "location": "Chennai"
+  "location": "Chennai",
+  "opengraph": {
+    "last_updated": "2025-09-29T05:41:20.966Z",
+    "site_name": "Freshworks",
+    "type": "website",
+    "url": "https://www.freshworks.com/live-chat-software/",
+    "title": "Freshchat: Customer Messaging, Live Chat & Chatbots | Freshworks",
+    "description": "Freshchat is an AI-powered omnichannel messaging platform. Experience live chat and chatbot solutions for smarter conversational support. Free trial!",
+    "image": "https://dam.freshworks.com/m/5114cf4293f2a0ae/original/Freshchat-OG.jpg",
+    "twitter_card": "summary_large_image",
+    "twitter_site": "@FreshworksInc",
+    "twitter_url": "https://www.freshworks.com/live-chat-software/",
+    "twitter_image": "https://dam.freshworks.com/m/5114cf4293f2a0ae/original/Freshchat-OG.jpg",
+    "twitter_title": "Freshchat: Customer Messaging, Live Chat & Chatbots | Freshworks",
+    "twitter_description": "Freshchat is an AI-powered omnichannel messaging platform. Experience live chat and chatbot solutions for smarter conversational support. Free trial!"
+  }
 }

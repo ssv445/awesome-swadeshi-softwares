@@ -3,9 +3,27 @@
   "description": "Customer relationship management software for sales teams and businesses",
   "website": "https://www.zoho.com/crm/",
   "category": "Business",
-  "alternatives": ["Salesforce", "HubSpot", "Pipedrive"],
+  "alternatives": [
+    "Salesforce",
+    "HubSpot",
+    "Pipedrive"
+  ],
   "pricing": "Freemium",
   "company": "Zoho Corporation",
   "location": "Chennai",
-  "faviconUrl": "https://www.zohowebstatic.com/sites/zweb/images/productlogos/crm.svg"
+  "faviconUrl": "https://www.zohowebstatic.com/sites/zweb/images/productlogos/crm.svg",
+  "opengraph": {
+    "last_updated": "2025-09-29T06:52:36.984Z",
+    "title": "Zoho CRM | Top-rated Sales CRM Software by Customers",
+    "description": "Zoho CRM is an online Sales CRM software to help manage your customer operations in one CRM platform. Trusted by over 100+ million users worldwide!",
+    "image": "https://www.zohowebstatic.com/sites/zweb/images/ogimage/crm-logo.png",
+    "url": "https://www.zoho.com/en-in/crm/",
+    "site_name": "Zoho",
+    "type": "website",
+    "twitter_title": "Zoho CRM | Top-rated Sales CRM Software by Customers",
+    "twitter_description": "Zoho CRM is an online Sales CRM software to help manage your customer operations in one CRM platform. Trusted by over 100+ million users worldwide!",
+    "twitter_image": "https://www.zohowebstatic.com/sites/zweb/images/ogimage/crm-logo.png",
+    "twitter_card": "summary",
+    "twitter_site": "@zoho"
+  }
 }

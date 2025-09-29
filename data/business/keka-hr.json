@@ -3,8 +3,29 @@
   "description": "Cloud-based HR management system with payroll, attendance, and employee engagement",
   "website": "https://www.keka.com/",
   "category": "Business",
-  "alternatives": ["BambooHR", "Workday", "ADP"],
+  "alternatives": [
+    "BambooHR",
+    "Workday",
+    "ADP"
+  ],
   "pricing": "Paid",
   "company": "Keka Technologies",
-  "location": "Hyderabad"
+  "location": "Hyderabad",
+  "opengraph": {
+    "last_updated": "2025-09-29T05:41:56.876Z",
+    "locale": "en",
+    "type": "website",
+    "title": "Keka | The HR Payroll software loved by businesses like yours",
+    "description": "Payroll Software on cloud. Keka HR, the best Hrms software in India is an employee experience platform with HR & Payroll. Sign up for 7-day free trial",
+    "url": "https://www.keka.com/",
+    "site_name": "Keka HR",
+    "image": "https://www.keka.com/static/images/logos/keka-og-image.png",
+    "image:width": "1200",
+    "image:height": "628",
+    "twitter_card": "summary_large_image",
+    "twitter_creator": "@KekaDotCom",
+    "twitter_site": "@KekaDotCom",
+    "twitter_title": "Keka | The HR Payroll software loved by businesses like yours",
+    "twitter_description": "Payroll Software on cloud. Keka HR, the best Hrms software in India is an employee experience platform with HR & Payroll. Sign up for 7-day free trial"
+  }
 }

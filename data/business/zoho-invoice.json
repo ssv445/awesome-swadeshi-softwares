@@ -3,8 +3,16 @@
   "description": "Free invoicing software for small businesses and freelancers",
   "website": "https://www.zoho.com/invoice/",
   "category": "Business",
-  "alternatives": ["Invoice2go", "Wave", "FreshBooks"],
+  "alternatives": [
+    "Invoice2go",
+    "Wave",
+    "FreshBooks"
+  ],
   "pricing": "Free",
   "company": "Zoho Corporation",
-  "location": "Chennai"
+  "location": "Chennai",
+  "opengraph": {
+    "last_updated": "2025-09-29T06:52:46.283Z",
+    "image": "https://www.zoho.com/invoice/images/zi-og-image.png"
+  }
 }

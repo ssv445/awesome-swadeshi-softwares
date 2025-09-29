@@ -3,8 +3,26 @@
   "description": "Human resources management system for employee management",
   "website": "https://www.zoho.com/people/",
   "category": "Business",
-  "alternatives": ["BambooHR", "Workday", "ADP"],
+  "alternatives": [
+    "BambooHR",
+    "Workday",
+    "ADP"
+  ],
   "pricing": "Freemium",
   "company": "Zoho Corporation",
-  "location": "Chennai"
+  "location": "Chennai",
+  "opengraph": {
+    "last_updated": "2025-09-29T06:52:48.461Z",
+    "title": "Cloud Based HR Software | HRMS Solution | Zoho People",
+    "description": "Streamline your HR operations with our cloud-based HRMS that offers advanced features to enhance your workplace productivity and deliver an exceptional employee experience. Try Zoho's HR software now!",
+    "image": "https://www.zohowebstatic.com/sites/zweb/images/ogimage/people-logo.png",
+    "url": "https://www.zoho.com/people/",
+    "site_name": "Zoho",
+    "type": "website",
+    "twitter_title": "Cloud Based HR Software | HRMS Solution | Zoho People",
+    "twitter_description": "Streamline your HR operations with our cloud-based HRMS that offers advanced features to enhance your workplace productivity and deliver an exceptional employee experience. Try Zoho's HR software now!",
+    "twitter_image": "https://www.zohowebstatic.com/sites/zweb/images/ogimage/people-logo.png",
+    "twitter_card": "summary",
+    "twitter_site": "@zoho"
+  }
 }

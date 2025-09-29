@@ -3,8 +3,23 @@
   "description": "Project management and team collaboration software with time tracking",
   "website": "https://www.proofhub.com/",
   "category": "Business",
-  "alternatives": ["Asana", "Monday.com", "Trello"],
+  "alternatives": [
+    "Asana",
+    "Monday.com",
+    "Trello"
+  ],
   "pricing": "Paid",
   "company": "ProofHub",
-  "location": "Delhi"
+  "location": "Delhi",
+  "opengraph": {
+    "last_updated": "2025-09-29T05:42:12.583Z",
+    "locale": "en_US",
+    "type": "website",
+    "title": "ProofHub: Project Management & Team Collaboration Software",
+    "description": "ProofHub is an easy-to-use project management software with everything you need to manage teams, work, and projects from a central location. No per user fee. Free trial.",
+    "url": "https://www.proofhub.com/",
+    "site_name": "ProofHub",
+    "twitter_card": "summary_large_image",
+    "twitter_site": "@proofhub"
+  }
 }

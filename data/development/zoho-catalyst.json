@@ -3,8 +3,26 @@
   "description": "Serverless cloud development platform for building and deploying applications",
   "website": "https://www.zoho.com/catalyst/",
   "category": "Development",
-  "alternatives": ["AWS Lambda", "Google Cloud Functions", "Vercel"],
+  "alternatives": [
+    "AWS Lambda",
+    "Google Cloud Functions",
+    "Vercel"
+  ],
   "pricing": "Freemium",
   "company": "Zoho Corporation",
-  "location": "Chennai"
+  "location": "Chennai",
+  "opengraph": {
+    "last_updated": "2025-09-29T06:55:00.340Z",
+    "title": "Cloud Computing Services | Catalyst by Zoho",
+    "description": "End-to-end cloud application development platform to build, test, host, deploy, and optimize applications and microservices at scale.",
+    "image": "https://www.zohowebstatic.com/sites/zweb/images/ogimage/zoho-logo.png",
+    "url": "https://catalyst.zoho.com/",
+    "site_name": "Zoho",
+    "type": "website",
+    "twitter_title": "Cloud Computing Services | Catalyst by Zoho",
+    "twitter_description": "End-to-end cloud application development platform to build, test, host, deploy, and optimize applications and microservices at scale.",
+    "twitter_image": "https://www.zohowebstatic.com/sites/zweb/images/ogimage/zoho-logo.png",
+    "twitter_card": "summary",
+    "twitter_site": "@zoho"
+  }
 }

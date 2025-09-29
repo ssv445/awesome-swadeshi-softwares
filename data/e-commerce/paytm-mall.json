@@ -3,8 +3,17 @@
   "description": "E-commerce marketplace for electronics, fashion, and consumer goods",
   "website": "https://paytmmall.com/",
   "category": "E-commerce",
-  "alternatives": ["Amazon", "Flipkart", "Snapdeal"],
+  "alternatives": [
+    "Amazon",
+    "Flipkart",
+    "Snapdeal"
+  ],
   "pricing": "Free",
   "company": "Paytm E-Commerce Pvt Ltd",
-  "location": "Bangalore"
+  "location": "Bangalore",
+  "opengraph": {
+    "last_updated": "2025-09-29T06:55:15.628Z",
+    "site_name": "Paytm Mall",
+    "title": "Paytm Mall - India's Premier Online Shopping Mall"
+  }
 }

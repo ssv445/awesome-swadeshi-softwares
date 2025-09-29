@@ -3,8 +3,23 @@
   "description": "Indian cloud infrastructure platform with compute, storage, and AI services",
   "website": "https://www.e2enetworks.com/",
   "category": "Development",
-  "alternatives": ["Microsoft Azure", "AWS", "Google Cloud"],
+  "alternatives": [
+    "Microsoft Azure",
+    "AWS",
+    "Google Cloud"
+  ],
   "pricing": "Paid",
   "company": "E2E Networks",
-  "location": "New Delhi"
+  "location": "New Delhi",
+  "opengraph": {
+    "last_updated": "2025-09-29T06:54:45.503Z",
+    "title": "Leading Cloud GPU & Cloud Services Provider | E2E Cloud",
+    "description": "E2E Cloud, India’s leading AI-first hyperscaler, delivers scalable and secure cloud services along with cost-effective Cloud GPU solutions. Ideal for developers, IT professionals, and business leaders seeking powerful cloud GPUs for computing.",
+    "image": "https://cms.e2enetworks.com/uploads/1_d464b073c0.png",
+    "type": "website",
+    "twitter_card": "summary_large_image",
+    "twitter_title": "Leading Cloud GPU & Cloud Services Provider | E2E Cloud",
+    "twitter_description": "E2E Cloud, India’s leading AI-first hyperscaler, delivers scalable and secure cloud services along with cost-effective Cloud GPU solutions. Ideal for developers, IT professionals, and business leaders seeking powerful cloud GPUs for computing.",
+    "twitter_image": "https://cms.e2enetworks.com/uploads/1_d464b073c0.png"
+  }
 }

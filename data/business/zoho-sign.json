@@ -3,8 +3,26 @@
   "description": "Digital signature software for document signing and workflows",
   "website": "https://www.zoho.com/sign/",
   "category": "Business",
-  "alternatives": ["DocuSign", "HelloSign", "Adobe Sign"],
+  "alternatives": [
+    "DocuSign",
+    "HelloSign",
+    "Adobe Sign"
+  ],
   "pricing": "Freemium",
   "company": "Zoho Corporation",
-  "location": "Chennai"
+  "location": "Chennai",
+  "opengraph": {
+    "last_updated": "2025-09-29T06:52:52.993Z",
+    "title": "eSign for India | Digital Signature | AI-Powered Agreement Management | Zoho Sign",
+    "description": "Indian businesses can use Zoho Sign to sign documents online. AI-powered digital signature workflows that support Aadhaar eSign & eStamping to execute and manage contracts and agreements.",
+    "image": "https://www.zohowebstatic.com/sites/zweb/images/ogimage/sign-logo.png",
+    "url": "https://www.zoho.com/en-in/sign/",
+    "site_name": "Zoho",
+    "type": "website",
+    "twitter_title": "eSign for India | Digital Signature | AI-Powered Agreement Management | Zoho Sign",
+    "twitter_description": "Indian businesses can use Zoho Sign to sign documents online. AI-powered digital signature workflows that support Aadhaar eSign & eStamping to execute and manage contracts and agreements.",
+    "twitter_image": "https://www.zohowebstatic.com/sites/zweb/images/ogimage/sign-logo.png",
+    "twitter_card": "summary",
+    "twitter_site": "@zoho"
+  }
 }

@@ -3,8 +3,27 @@
   "description": "Cloud-based phone system for customer support and sales calls",
   "website": "https://www.freshworks.com/freshcaller-cloud-pbx/",
   "category": "Business",
-  "alternatives": ["RingCentral", "Aircall", "8x8"],
+  "alternatives": [
+    "RingCentral",
+    "Aircall",
+    "8x8"
+  ],
   "pricing": "Freemium",
   "company": "Freshworks Inc.",
-  "location": "Chennai"
+  "location": "Chennai",
+  "opengraph": {
+    "last_updated": "2025-09-29T05:41:18.847Z",
+    "site_name": "Freshworks",
+    "type": "website",
+    "url": "https://www.freshworks.com/freshcaller-cloud-pbx/",
+    "title": "Cloud-based contact center solution | Freshcaller",
+    "description": "Freshcaller is a cloud-based solution to help businesses elevate their customer experience in an effortless and affordable manner.",
+    "image": "https://dam.freshworks.com/m/5fc29413723d430c/original/Automated-ticketing-system.webp",
+    "twitter_card": "summary_large_image",
+    "twitter_site": "@FreshworksInc",
+    "twitter_url": "https://www.freshworks.com/freshcaller-cloud-pbx/",
+    "twitter_image": "https://dam.freshworks.com/m/5fc29413723d430c/original/Automated-ticketing-system.webp",
+    "twitter_title": "Cloud-based contact center solution | Freshcaller",
+    "twitter_description": "Freshcaller is a cloud-based solution to help businesses elevate their customer experience in an effortless and affordable manner."
+  }
 }

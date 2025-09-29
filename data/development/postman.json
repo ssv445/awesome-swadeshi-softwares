@@ -3,8 +3,24 @@
   "description": "API development platform for building, testing, and managing APIs",
   "website": "https://www.postman.com/",
   "category": "Development",
-  "alternatives": ["Insomnia", "REST Client", "Paw"],
+  "alternatives": [
+    "Insomnia",
+    "REST Client",
+    "Paw"
+  ],
   "pricing": "Freemium",
   "company": "Postman Inc",
-  "location": "Bangalore"
+  "location": "Bangalore",
+  "opengraph": {
+    "last_updated": "2025-09-29T06:54:53.280Z",
+    "title": "Postman: The World's Leading API Platform | Sign Up for Free",
+    "description": "Accelerate API development with Postman's all-in-one platform. Streamline collaboration and simplify the API lifecycle for faster, better results. Learn more.",
+    "image": "https://voyager.postman.com/social-preview/postman-api-platform-social-preview-2.jpeg",
+    "twitter_card": "summary_large_image",
+    "twitter_site": "@getpostman",
+    "twitter_creator": "Postman",
+    "twitter_title": "Postman: The World's Leading API Platform | Sign Up for Free",
+    "twitter_description": "Accelerate API development with Postman's all-in-one platform. Streamline collaboration and simplify the API lifecycle for faster, better results. Learn more.",
+    "twitter_image": "https://voyager.postman.com/social-preview/learning-center/postman-learning-center-social-preview.jpg"
+  }
 }

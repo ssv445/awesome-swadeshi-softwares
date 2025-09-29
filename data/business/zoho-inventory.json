@@ -3,8 +3,25 @@
   "description": "Inventory management software for order and warehouse management",
   "website": "https://www.zoho.com/inventory/",
   "category": "Business",
-  "alternatives": ["TradeGecko", "inFlow", "Cin7"],
+  "alternatives": [
+    "TradeGecko",
+    "inFlow",
+    "Cin7"
+  ],
   "pricing": "Freemium",
   "company": "Zoho Corporation",
-  "location": "Chennai"
+  "location": "Chennai",
+  "opengraph": {
+    "last_updated": "2025-09-29T06:52:43.966Z",
+    "image": "http://www.zoho.com/inventory/images/inventory-icon-preview.png",
+    "title": "Online Inventory Management Software | Zoho Inventory",
+    "type": "website",
+    "url": "http://www.zoho.com/inventory/",
+    "description": "Zoho Inventory is online inventory management software ideal for small businesses. Simplify your inventory and order operations. Try for FREE!",
+    "twitter_card": "summary",
+    "twitter_site": "@zoho",
+    "twitter_title": "Online Inventory Management Software | Zoho Inventory",
+    "twitter_description": "Zoho Inventory is online inventory management software ideal for small businesses. Simplify your inventory and order operations. Try for FREE!",
+    "twitter_image": "http://www.zoho.com/inventory/images/inventory-icon-preview.png"
+  }
 }

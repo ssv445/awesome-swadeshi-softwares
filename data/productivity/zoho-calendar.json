@@ -3,8 +3,25 @@
   "description": "Online calendar application for scheduling and time management",
   "website": "https://www.zoho.com/calendar/",
   "category": "Productivity",
-  "alternatives": ["Google Calendar", "Outlook Calendar"],
+  "alternatives": [
+    "Google Calendar",
+    "Outlook Calendar"
+  ],
   "pricing": "Free",
   "company": "Zoho Corporation",
-  "location": "Chennai"
+  "location": "Chennai",
+  "opengraph": {
+    "last_updated": "2025-09-29T06:56:09.421Z",
+    "title": "A powerful online business calendar for teams | Zoho Calendar",
+    "description": "Organize your schedule, collaborate with teams, and manage events effortlessly with Zoho Calendar, a powerful online calendar tool.",
+    "image": "https://www.zohowebstatic.com/sites/zweb/images/ogimage/calendar-logo.png",
+    "url": "https://www.zoho.com/calendar/",
+    "site_name": "Zoho",
+    "type": "website",
+    "twitter_title": "A powerful online business calendar for teams | Zoho Calendar",
+    "twitter_description": "Organize your schedule, collaborate with teams, and manage events effortlessly with Zoho Calendar, a powerful online calendar tool.",
+    "twitter_image": "https://www.zohowebstatic.com/sites/zweb/images/ogimage/calendar-logo.png",
+    "twitter_card": "summary",
+    "twitter_site": "@zoho"
+  }
 }

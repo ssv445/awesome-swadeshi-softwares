@@ -3,8 +3,35 @@
   "description": "Visual collaboration platform with diagramming, brainstorming, and project planning",
   "website": "https://creately.com/",
   "category": "Creative",
-  "alternatives": ["Miro", "Mural", "Lucidchart"],
+  "alternatives": [
+    "Miro",
+    "Mural",
+    "Lucidchart"
+  ],
   "pricing": "Freemium",
   "company": "Cinergix (Indian operations)",
-  "location": "Colombo (Indian team)"
+  "location": "Colombo (Indian team)",
+  "opengraph": {
+    "last_updated": "2025-09-29T06:53:39.149Z",
+    "title": "Creately | Visual Collaboration & Diagramming Platform",
+    "description": "A Visual collaboration and diagramming platform trusted by 10M+ users and 1000s of teams. Infinite whiteboards, powerful diagramming, data connectivity and integrates with your favorite tools.",
+    "type": "website",
+    "url": "https://creately.com/",
+    "image": "https://creately.com/static/assets/common/logos/creately/logo-on-dark-1200x630.png",
+    "image:width": "1200",
+    "image:height": "630",
+    "image:type": "image/png",
+    "image::alt": "Creately | Visual Collaboration & Diagramming Platform",
+    "locale": "en",
+    "site_name": "Creately",
+    "video": "https://www.youtube.com/watch?v=TSG-8OnT5og",
+    "updated_time": "2019-07-10T12:25:34+05:30",
+    "twitter_card": "summary",
+    "twitter_image": "https://creately.com/static/assets/common/logos/creately/logo-on-dark-1200x630.png",
+    "twitter_title": "Creately | Visual Collaboration & Diagramming Platform",
+    "twitter_description": "A Visual collaboration and diagramming platform trusted by 10M+ users and 1000s of teams. Infinite whiteboards, powerful diagramming, data connectivity and integrates with your favorite tools.",
+    "twitter_image:alt": "Creately | Visual Collaboration & Diagramming Platform",
+    "twitter_site": "@creately",
+    "twitter_creator": "@creately"
+  }
 }

@@ -3,8 +3,34 @@
   "description": "Long-standing music streaming service with deep Bollywood catalog",
   "website": "https://gaana.com/",
   "category": "Entertainment",
-  "alternatives": ["Spotify", "Apple Music"],
+  "alternatives": [
+    "Spotify",
+    "Apple Music"
+  ],
   "pricing": "Freemium",
   "company": "Entertainment Network India Ltd",
-  "location": "Noida"
+  "location": "Noida",
+  "opengraph": {
+    "last_updated": "2025-09-29T06:55:29.601Z",
+    "site_name": "Gaana.com",
+    "type": "website",
+    "url": "https://www.gaana.com",
+    "title": "Download Latest MP3 Songs Online: Play Old & New MP3 Music Online on Gaana.com",
+    "description": "Gaana.com- Listen & Download latest MP3 songs online. Download new or old Hindi songs, Bollywood songs, English songs* & more on Gaana+ and play offline. Create, share and listen to streaming music playlists.",
+    "image": "https://a10.gaanacdn.com/images/social/gaana_social.jpg",
+    "image:width": "200",
+    "image:height": "200",
+    "twitter_card": "summary",
+    "twitter_url": "https://www.gaana.com",
+    "twitter_site": "@gaana",
+    "twitter_title": "Download Latest MP3 Songs Online: Play Old & New MP3 Music Online on Gaana.com",
+    "twitter_description": "Gaana.com- Listen & Download latest MP3 songs online. Download new or old Hindi songs, Bollywood songs, English songs* & more on Gaana+ and play offline. Create, share and listen to streaming music playlists.",
+    "twitter_image": "https://a10.gaanacdn.com/images/social/gaana_social.jpg",
+    "twitter_app:name:googleplay": "Gaana",
+    "twitter_app:id:googleplay": "com.gaana",
+    "twitter_app:url:googleplay": "gaana://launchapp",
+    "twitter_app:name:iphone": "Gaana",
+    "twitter_app:id:iphone": "585270521",
+    "twitter_app:url:iphone": "gaanaApp://launchapp"
+  }
 }

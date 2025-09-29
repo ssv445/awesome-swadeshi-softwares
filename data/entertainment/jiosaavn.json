@@ -3,8 +3,25 @@
   "description": "Music streaming service with massive library of Indian and international music",
   "website": "https://www.jiosaavn.com/",
   "category": "Entertainment",
-  "alternatives": ["Spotify", "Apple Music", "YouTube Music"],
+  "alternatives": [
+    "Spotify",
+    "Apple Music",
+    "YouTube Music"
+  ],
   "pricing": "Freemium",
   "company": "Jio Platforms",
-  "location": "Mumbai"
+  "location": "Mumbai",
+  "opengraph": {
+    "last_updated": "2025-09-29T06:55:35.895Z",
+    "title": "JioSaavn - Listen to New & Old Hindi Songs. Anywhere, Anytime.",
+    "description": "India's favourite online music service. Stream or download the latest Hindi MP3 songs now on JioSaavn. Listen to unlimited Hindi songs, top hits, albums, playlists and radio available in English & 14 Indian languages. Play now in HD audio online or download to listen offline free, only on JioSaavn.",
+    "type": "website",
+    "site_name": "JioSaavn",
+    "image": "https://www.jiosaavn.com/_i/3.0/saavn-social.jpg",
+    "twitter_card": "summary",
+    "twitter_site": "@jiosaavn",
+    "twitter_title": "JioSaavn - Listen to New & Old Hindi Songs. Anywhere, Anytime.",
+    "twitter_description": "India's favourite online music service. Stream or download the latest Hindi MP3 songs now on JioSaavn. Listen to unlimited Hindi songs, top hits, albums, playlists and radio available in English & 14 Indian languages. Play now in HD audio online or download to listen offline free, only on JioSaavn.",
+    "twitter_image": "https://www.jiosaavn.com/_i/3.0/saavn-social.jpg"
+  }
 }

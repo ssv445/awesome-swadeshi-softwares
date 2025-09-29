@@ -3,8 +3,23 @@
   "description": "Made-in-India secure cloud storage for individuals and enterprises with data sovereignty",
   "website": "https://www.digiboxx.com/",
   "category": "Productivity",
-  "alternatives": ["Dropbox", "Google Drive"],
+  "alternatives": [
+    "Dropbox",
+    "Google Drive"
+  ],
   "pricing": "Freemium",
   "company": "Digiboxx Technologies",
-  "location": "Mumbai"
+  "location": "Mumbai",
+  "opengraph": {
+    "last_updated": "2025-09-29T06:56:07.143Z",
+    "description": "Digiboxx: India's free cloud storage & file sharing app. Securely store, share, & access your files anytime, anywhere. Sign up today and get 20 GB free storage!",
+    "url": "https://digiboxx.com/",
+    "type": "website",
+    "image": "assets/img/homepage-icons/digiboxx-icon.webp",
+    "twitter_card": "https://neo.digiboxx.com/assets/img/footer-icons/digiboxx_logo.webp",
+    "twitter_url": "https://digiboxx.com/",
+    "twitter_title": "DigiBoxx - Indian File Sharing App & Online File Transfer Platform",
+    "twitter_description": "Share files online securely with DigiBoxx, the Indian file sharing app and cloud storage platform.",
+    "twitter_image": "assets/img/homepage-icons/digiboxx-icon.webp"
+  }
 }

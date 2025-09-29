@@ -3,8 +3,33 @@
   "description": "Customer engagement platform with email marketing, push notifications, and automation",
   "website": "https://www.notifyvisitors.com/",
   "category": "Business",
-  "alternatives": ["MailChimp", "Constant Contact", "Campaign Monitor"],
+  "alternatives": [
+    "MailChimp",
+    "Constant Contact",
+    "Campaign Monitor"
+  ],
   "pricing": "Freemium",
   "company": "NotifyVisitors",
-  "location": "Jaipur"
+  "location": "Jaipur",
+  "opengraph": {
+    "last_updated": "2025-09-29T05:42:04.993Z",
+    "locale": "en_US",
+    "type": "website",
+    "title": "Customer Data Platform & Conversion Rate Optimization Software - NotifyVisitors",
+    "description": "Boost your marketing efforts with NotifyVisitors' Customer Data Platform and Conversion Rate Optimization Software. Personalize user experiences, gather actionable insights and drive higher conversions.",
+    "url": "https://www.notifyvisitors.com/products/",
+    "site_name": "NotifyVisitors",
+    "updated_time": "2025-09-23T07:07:58+00:00",
+    "image": "https://productscdn.notifyvisitors.com/products/wp-content/uploads/2024/10/07122911/customer-data-platform-1.png",
+    "image:secure_url": "https://productscdn.notifyvisitors.com/products/wp-content/uploads/2024/10/07122911/customer-data-platform-1.png",
+    "image:width": "1920",
+    "image:height": "1249",
+    "image:alt": "customer data platform",
+    "image:type": "image/png",
+    "video": "https://productscdn.notifyvisitors.com/products/wp-content/uploads/2024/09/04121459/Nv-main-page-video-14.mp4",
+    "twitter_card": "summary_large_image",
+    "twitter_title": "Customer Data Platform & Conversion Rate Optimization Software - NotifyVisitors",
+    "twitter_description": "Boost your marketing efforts with NotifyVisitors' Customer Data Platform and Conversion Rate Optimization Software. Personalize user experiences, gather actionable insights and drive higher conversions.",
+    "twitter_image": "https://productscdn.notifyvisitors.com/products/wp-content/uploads/2024/10/07122911/customer-data-platform-1.png"
+  }
 }

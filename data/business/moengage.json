@@ -3,8 +3,23 @@
   "description": "Customer engagement platform with omnichannel messaging and analytics",
   "website": "https://www.moengage.com/",
   "category": "Business",
-  "alternatives": ["Braze", "Airship", "OneSignal"],
+  "alternatives": [
+    "Braze",
+    "Airship",
+    "OneSignal"
+  ],
   "pricing": "Paid",
   "company": "MoEngage Inc",
-  "location": "Bangalore"
+  "location": "Bangalore",
+  "opengraph": {
+    "last_updated": "2025-09-29T05:42:01.493Z",
+    "locale": "en_US",
+    "type": "website",
+    "title": "Home",
+    "description": "Execute your cross channel marketing strategy with MoEngage’s insights-led customer engagement platform. Leverage the power of personalization with MoEngage.",
+    "url": "https://www.moengage.com/",
+    "site_name": "MoEngage",
+    "twitter_card": "summary_large_image",
+    "twitter_site": "@moengage"
+  }
 }

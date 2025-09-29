@@ -3,8 +3,30 @@
   "description": "Digital signature platform with document workflow and authentication",
   "website": "https://www.esigngenie.com/",
   "category": "Business",
-  "alternatives": ["DocuSign", "Adobe Sign", "HelloSign"],
+  "alternatives": [
+    "DocuSign",
+    "Adobe Sign",
+    "HelloSign"
+  ],
   "pricing": "Freemium",
   "company": "eSign Genie (Indian development)",
-  "location": "Ahmedabad"
+  "location": "Ahmedabad",
+  "opengraph": {
+    "last_updated": "2025-09-29T05:41:13.976Z",
+    "title": "Sign Your PDFs for Free Online: Foxit PDF Signing Software | Foxit",
+    "description": "Foxit eSign lets you send & receive electronic signatures easier & more securely. eSign & send PDF or Word documents, wherever you are. Try it for free!",
+    "url": "https://www.foxit.com/esign-pdf/",
+    "site_name": "Foxit",
+    "locale": "en_US",
+    "image": "https://www.foxit.com/assets/images/og-images/esign-pdf/thumb.webp",
+    "image:width": "800",
+    "image:height": "600",
+    "type": "website",
+    "twitter_card": "summary_large_image",
+    "twitter_title": "Sign Your PDFs for Free Online: Foxit PDF Signing Software | Foxit",
+    "twitter_description": "Foxit eSign lets you send & receive electronic signatures easier & more securely. eSign & send PDF or Word documents, wherever you are. Try it for free!",
+    "twitter_image": "https://www.foxit.com/assets/images/og-images/esign-pdf/thumb.webp",
+    "twitter_image:width": "800",
+    "twitter_image:height": "600"
+  }
 }
