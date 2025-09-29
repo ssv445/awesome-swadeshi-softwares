@@ -6,7 +6,13 @@
     "build": "next build",
     "dev": "next dev",
     "lint": "next lint",
-    "start": "next start"
+    "start": "next start",
+    "scrape:opengraph": "tsx scripts/scrape-opengraph.ts",
+    "scrape:opengraph:resume": "tsx scripts/scrape-opengraph.ts --resume",
+    "scrape:opengraph:force": "tsx scripts/scrape-opengraph.ts --force",
+    "scrape:opengraph:reset": "rm -f scripts/crawl-tracker.json && tsx scripts/scrape-opengraph.ts",
+    "scrape:single": "tsx scripts/scrape-opengraph.ts --url=",
+    "scrape:dry-run": "tsx scripts/scrape-opengraph.ts --dry-run"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.10.0",
@@ -65,8 +71,10 @@
     "@types/node": "^22",
     "@types/react": "^19",
     "@types/react-dom": "^19",
+    "cheerio": "^1.1.2",
     "postcss": "^8.5",
     "tailwindcss": "^4.1.9",
+    "tsx": "^4.20.6",
     "tw-animate-css": "1.3.3",
     "typescript": "^5"
   }

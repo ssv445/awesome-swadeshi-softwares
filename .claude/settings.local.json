@@ -5,7 +5,8 @@
       "Bash(node:*)",
       "WebFetch(domain:commons.wikimedia.org)",
       "Bash(pnpm dev:*)",
-      "Bash(pnpm build:*)"
+      "Bash(pnpm build:*)",
+      "Bash(pnpm add:*)"
     ],
     "deny": [
       "Bash(npm run build:*)"

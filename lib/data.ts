@@ -1,3 +1,25 @@
+export interface OpenGraph {
+  // Core OpenGraph fields
+  title?: string
+  description?: string
+  image?: string
+  url?: string
+  type?: string
+  site_name?: string
+  locale?: string
+  // Twitter Card fields
+  twitter_card?: string
+  twitter_site?: string
+  twitter_creator?: string
+  twitter_image?: string
+  twitter_title?: string
+  twitter_description?: string
+  // Tracking metadata
+  last_updated: string  // ISO 8601 UTC timestamp
+  // Additional OG fields (flexible for any other og: or twitter: tags)
+  [key: string]: string | undefined
+}
+
 export interface Software {
   name: string
   description: string
@@ -8,6 +30,7 @@ export interface Software {
   company: string
   location: string
   faviconUrl?: string // Optional custom favicon URL
+  opengraph?: OpenGraph // Optional OpenGraph metadata
 }
 
 // Convert category slug to display name (client-safe utility)
