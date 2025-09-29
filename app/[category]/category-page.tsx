@@ -3,14 +3,13 @@
 import { useState, useMemo, useEffect } from "react"
 import { useRouter, useSearchParams } from "next/navigation"
 import { Button } from "@/components/ui/button"
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Input } from "@/components/ui/input"
-import { Search, Flag, ExternalLink, ArrowLeft } from "lucide-react"
+import { Search, ArrowLeft } from "lucide-react"
 import { AshokaChakra } from "@/components/ashoka-chakra"
 import Link from "next/link"
-import { getCategoryDisplayName, getAppUrl } from "@/lib/data"
-import { Favicon } from "@/components/favicon"
+import { getCategoryDisplayName } from "@/lib/data"
+import { ProductCard } from "@/components/product-card"
 import type { Software } from "@/lib/data"
 
 interface CategoryPageProps {
@@ -174,66 +173,11 @@ export default function CategoryPage({ software, categoryName, categorySlug, all
         <div className="container mx-auto">
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {filteredSoftware.map((software, index) => (
-              <Card key={index} className="hover:shadow-lg transition-shadow">
-                <CardHeader>
-                  <div className="flex items-start justify-between">
-                    <div className="min-w-0 flex-1 pr-3">
-                      <div className="flex items-start justify-between">
-                        <div className="min-w-0 flex-1">
-                          <CardTitle className="text-lg">{software.name}</CardTitle>
-                          <p className="text-sm text-gray-600">{software.company}</p>
-                          <Badge variant="secondary" className="mt-1 bg-orange-100 text-orange-800">
-                            {software.location}
-                          </Badge>
-                        </div>
-                        <Badge variant="outline" className="ml-2">{software.category}</Badge>
-                      </div>
-                    </div>
-                    <div className="flex-shrink-0 ml-3">
-                      <Favicon
-                        websiteUrl={software.website}
-                        name={software.name}
-                        size={48}
-                        className="h-12 max-w-24 object-contain"
-                        fallbackClassName="h-10 w-10 text-orange-500"
-                        customFaviconUrl={software.faviconUrl}
-                        fixedHeight={true}
-                      />
-                    </div>
-                  </div>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-gray-600 mb-4">{software.description}</p>
-
-                  <div className="mb-4">
-                    <p className="text-sm text-gray-600 mb-2">Alternative to:</p>
-                    <div className="flex flex-wrap gap-1">
-                      {software.alternatives.map((alt, altIndex) => (
-                        <Badge key={altIndex} variant="outline" className="text-xs">
-                          {alt}
-                        </Badge>
-                      ))}
-                    </div>
-                  </div>
-
-                  <div className="flex items-center justify-between gap-2">
-                    <Badge variant="secondary">{software.pricing}</Badge>
-                    <div className="flex gap-2">
-                      <Button asChild size="sm" variant="outline">
-                        <Link href={getAppUrl(software.category, software.name)}>
-                          View Details
-                        </Link>
-                      </Button>
-                      <Button asChild size="sm">
-                        <Link href={software.website} target="_blank" rel="noopener noreferrer">
-                          Visit Site
-                          <ExternalLink className="ml-1 h-3 w-3" />
-                        </Link>
-                      </Button>
-                    </div>
-                  </div>
-                </CardContent>
-              </Card>
+              <ProductCard
+                key={index}
+                software={software}
+                index={index}
+              />
             ))}
           </div>
 
