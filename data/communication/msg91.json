@@ -3,8 +3,21 @@
   "description": "Cloud communication platform offering SMS, email, WhatsApp, voice, and OTP APIs for businesses with 2.5B+ monthly API calls",
   "website": "https://msg91.com/",
   "category": "Communication",
-  "alternatives": ["Twilio", "SendGrid", "Amazon SNS", "Vonage"],
+  "alternatives": [
+    "Twilio",
+    "SendGrid",
+    "Amazon SNS",
+    "Vonage"
+  ],
   "pricing": "Paid",
   "company": "MSG91",
-  "location": "Indore, India"
+  "location": "Indore, India",
+  "opengraph": {
+    "last_updated": "2025-09-30T03:34:55.231Z",
+    "title": "Best Cloud Communication Platform in India | Communication Platform as a Service - MSG91",
+    "description": "MSG91 cloud communications platform integrates cloud-based voice, video, messaging, chat, & collaboration into any app, service, or business process. Request a demo for cloud based communication today!",
+    "image": "/assets/brand/favicon.svg",
+    "url": "https://msg91.com/",
+    "type": "website"
+  }
 }

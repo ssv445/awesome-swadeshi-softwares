@@ -9,6 +9,7 @@ import { notFound } from "next/navigation"
 import { getAppBySlug, getAllAppPaths, getRelatedApps } from "@/lib/server-data"
 import { getCategoryDisplayName, getAppUrl } from "@/lib/data"
 import { Favicon } from "@/components/favicon"
+import { Breadcrumbs, generateBreadcrumbs } from "@/components/ui/Breadcrumbs"
 
 interface AppPageProps {
   params: Promise<{
@@ -83,21 +84,21 @@ export default async function AppPage({ params }: AppPageProps) {
     return `${Math.floor(diffDays / 365)} years ago`
   }
 
+  const breadcrumbs = generateBreadcrumbs('software', {
+    category,
+    categoryName: categoryDisplayName,
+    softwareName: app.name
+  })
+
   return (
     <AppShell>
       <div className="relative min-h-screen">
 
       <div className="container mx-auto px-4 py-8 max-w-6xl">
         {/* Breadcrumbs */}
-        <nav className="mb-8">
-          <ol className="flex items-center space-x-2 text-sm text-gray-600">
-            <li><Link href="/" className="hover:text-blue-600">Home</Link></li>
-            <li className="text-gray-400">/</li>
-            <li><Link href={`/${category}`} className="hover:text-blue-600">{categoryDisplayName}</Link></li>
-            <li className="text-gray-400">/</li>
-            <li className="text-gray-900 font-medium">{app.name}</li>
-          </ol>
-        </nav>
+        <div className="mb-8">
+          <Breadcrumbs items={breadcrumbs} />
+        </div>
 
         {/* Hero Section */}
         <div className="bg-white rounded-xl shadow-sm border border-gray-200 p-8 mb-8">

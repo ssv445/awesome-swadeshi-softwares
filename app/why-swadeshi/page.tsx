@@ -3,137 +3,135 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Flag, ExternalLink, Shield, TrendingUp, Users, Building, Star, Heart, Target, Globe, Zap, Crown } from "lucide-react"
 import { AshokaChakra } from "@/components/ashoka-chakra"
 import { AppShell } from "@/components/layout/AppShell"
+import { HeroSection } from "@/components/ui/HeroSection"
+import { FeatureCard } from "@/components/ui/FeatureCard"
+import { InfoSection } from "@/components/ui/InfoSection"
+import { Breadcrumbs, generateBreadcrumbs } from "@/components/ui/Breadcrumbs"
 import Link from "next/link"
+import type { Metadata } from "next"
+
+export const metadata: Metadata = {
+  title: "Why Choose Swadeshi Software - Support Atmanirbhar Bharat",
+  description: "Discover why supporting Swadeshi software isn't just good for India—it's good for innovation, competition, and building a truly diverse global technology ecosystem. Join the movement for economic growth and data sovereignty.",
+  keywords: [
+    "Swadeshi software",
+    "Atmanirbhar Bharat",
+    "Indian software benefits",
+    "economic growth",
+    "data sovereignty",
+    "technology independence",
+    "Indian innovation",
+    "self-reliant India",
+    "homegrown technology",
+    "Indian startups success"
+  ],
+  openGraph: {
+    title: "Why Choose Swadeshi Software - Support Atmanirbhar Bharat",
+    description: "Discover why supporting Swadeshi software drives innovation, economic growth, and technology independence. Join the movement for a self-reliant India.",
+    url: "/why-swadeshi",
+    type: "website",
+    images: [
+      {
+        url: "/og-why-swadeshi.png",
+        width: 1200,
+        height: 630,
+        alt: "Why Choose Swadeshi Software - Benefits and Impact"
+      }
+    ]
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Why Choose Swadeshi Software - Support Atmanirbhar Bharat",
+    description: "Discover why supporting Swadeshi software drives innovation, economic growth, and technology independence. Join the movement for a self-reliant India.",
+    images: ["/og-why-swadeshi.png"]
+  },
+  alternates: {
+    canonical: "/why-swadeshi",
+  },
+  robots: {
+    index: true,
+    follow: true,
+  }
+}
 
 export default function WhySwadeshiPage() {
+  const breadcrumbs = generateBreadcrumbs('static', {
+    staticPageName: 'Why Swadeshi'
+  })
+
   return (
     <AppShell>
       <div className="relative min-h-screen">
-
-      <div className="container mx-auto px-4 py-16 max-w-6xl relative z-10">
-
-        {/* Hero Section */}
-        <div className="text-center mb-20">
-          <div className="flex items-center justify-center mb-8">
-              <AshokaChakra className="h-20 w-20 text-blue-600" />
+        {/* Breadcrumbs */}
+        <div className="bg-gray-50 border-b border-gray-200">
+          <div className="container mx-auto px-4 py-3">
+            <Breadcrumbs items={breadcrumbs} />
           </div>
-          <h1 className="text-6xl md:text-7xl font-bold text-gray-900 mb-6 leading-tight">
-            Why Choose <span className="text-orange-600">Swadeshi</span>?
-          </h1>
-          <p className="text-2xl text-gray-800 mb-6 font-medium max-w-4xl mx-auto">
-            The power of choosing Indian software for a stronger, self-reliant digital future
-          </p>
-          <p className="text-lg text-gray-700 max-w-3xl mx-auto leading-relaxed">
-            Discover why supporting <em>Swadeshi</em> software isn't just good for India—it's good for innovation,
-            competition, and building a truly diverse global technology ecosystem.
-          </p>
         </div>
+
+        <div className="container mx-auto px-4 py-16 max-w-6xl relative z-10">
+
+        <HeroSection
+          title="Why Choose Swadeshi?"
+          highlightWord="Swadeshi"
+          subtitle="The power of choosing Indian software for a stronger, self-reliant digital future"
+          description="Discover why supporting Swadeshi software isn't just good for India—it's good for innovation, competition, and building a truly diverse global technology ecosystem."
+          chakraSize="large"
+          className="mb-20"
+        />
 
         {/* Core Benefits */}
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-20">
-          <Card className="group border-2 border-green-200 hover:border-green-400 bg-white/90 backdrop-blur-sm shadow-lg hover:shadow-2xl transition-all duration-300 hover:scale-105">
-            <CardHeader className="text-center">
-              <TrendingUp className="h-12 w-12 text-blue-600 mx-auto mb-4" />
-              <CardTitle className="text-2xl text-gray-700">
-                Economic Growth
-              </CardTitle>
-            </CardHeader>
-            <CardContent className="text-center">
-              <p className="text-gray-800 leading-relaxed">
-                Every rupee spent on Indian software stays in India, creating jobs, fostering innovation,
-                and building a stronger digital economy that benefits all Indians.
-              </p>
-            </CardContent>
-          </Card>
+          <FeatureCard
+            icon={TrendingUp}
+            title="Economic Growth"
+            description="Every rupee spent on Indian software stays in India, creating jobs, fostering innovation, and building a stronger digital economy that benefits all Indians."
+            variant="hover-scale"
+          />
 
-          <Card className="group border-2 border-green-200 hover:border-green-400 bg-white/90 backdrop-blur-sm shadow-lg hover:shadow-2xl transition-all duration-300 hover:scale-105">
-            <CardHeader className="text-center">
-              <Shield className="h-12 w-12 text-blue-600 mx-auto mb-4" />
-              <CardTitle className="text-2xl text-gray-700">
-                Data Sovereignty
-              </CardTitle>
-            </CardHeader>
-            <CardContent className="text-center">
-              <p className="text-gray-800 leading-relaxed">
-                Indian software often means Indian data centers, better privacy protection,
-                and reduced dependency on foreign entities for critical digital infrastructure.
-              </p>
-            </CardContent>
-          </Card>
+          <FeatureCard
+            icon={Shield}
+            title="Data Sovereignty"
+            description="Indian software often means Indian data centers, better privacy protection, and reduced dependency on foreign entities for critical digital infrastructure."
+            variant="hover-scale"
+          />
 
-          <Card className="group border-2 border-green-200 hover:border-green-400 bg-white/90 backdrop-blur-sm shadow-lg hover:shadow-2xl transition-all duration-300 hover:scale-105">
-            <CardHeader className="text-center">
-              <Users className="h-12 w-12 text-blue-600 mx-auto mb-4" />
-              <CardTitle className="text-2xl text-gray-700">
-                Local Understanding
-              </CardTitle>
-            </CardHeader>
-            <CardContent className="text-center">
-              <p className="text-gray-800 leading-relaxed">
-                Indian developers understand Indian needs—from language support to local business practices,
-                cultural nuances, and regulatory requirements.
-              </p>
-            </CardContent>
-          </Card>
+          <FeatureCard
+            icon={Users}
+            title="Local Understanding"
+            description="Indian developers understand Indian needs—from language support to local business practices, cultural nuances, and regulatory requirements."
+            variant="hover-scale"
+          />
 
-          <Card className="group border-2 border-green-200 hover:border-green-400 bg-white/90 backdrop-blur-sm shadow-lg hover:shadow-2xl transition-all duration-300 hover:scale-105">
-            <CardHeader className="text-center">
-              <Zap className="h-12 w-12 text-blue-600 mx-auto mb-4" />
-              <CardTitle className="text-2xl text-gray-700">
-                Innovation Hub
-              </CardTitle>
-            </CardHeader>
-            <CardContent className="text-center">
-              <p className="text-gray-800 leading-relaxed">
-                Supporting Indian software encourages local innovation, R&D investment,
-                and the development of cutting-edge solutions tailored for global markets.
-              </p>
-            </CardContent>
-          </Card>
+          <FeatureCard
+            icon={Zap}
+            title="Innovation Hub"
+            description="Supporting Indian software encourages local innovation, R&D investment, and the development of cutting-edge solutions tailored for global markets."
+            variant="hover-scale"
+          />
 
-          <Card className="group border-2 border-green-200 hover:border-green-400 bg-white/90 backdrop-blur-sm shadow-lg hover:shadow-2xl transition-all duration-300 hover:scale-105">
-            <CardHeader className="text-center">
-              <Target className="h-12 w-12 text-blue-600 mx-auto mb-4" />
-              <CardTitle className="text-2xl text-gray-700">
-                Cost Effectiveness
-              </CardTitle>
-            </CardHeader>
-            <CardContent className="text-center">
-              <p className="text-gray-800 leading-relaxed">
-                Indian software often provides exceptional value, competitive pricing,
-                and cost structures designed for diverse market segments and budgets.
-              </p>
-            </CardContent>
-          </Card>
+          <FeatureCard
+            icon={Target}
+            title="Cost Effectiveness"
+            description="Indian software often provides exceptional value, competitive pricing, and cost structures designed for diverse market segments and budgets."
+            variant="hover-scale"
+          />
 
-          <Card className="group border-2 border-green-200 hover:border-green-400 bg-white/90 backdrop-blur-sm shadow-lg hover:shadow-2xl transition-all duration-300 hover:scale-105">
-            <CardHeader className="text-center">
-              <Globe className="h-12 w-12 text-blue-600 mx-auto mb-4" />
-              <CardTitle className="text-2xl text-gray-700">
-                Global Impact
-              </CardTitle>
-            </CardHeader>
-            <CardContent className="text-center">
-              <p className="text-gray-800 leading-relaxed">
-                Many Indian software solutions are built for global scale, offering world-class features
-                while maintaining the flexibility to serve diverse international markets.
-              </p>
-            </CardContent>
-          </Card>
+          <FeatureCard
+            icon={Globe}
+            title="Global Impact"
+            description="Many Indian software solutions are built for global scale, offering world-class features while maintaining the flexibility to serve diverse international markets."
+            variant="hover-scale"
+          />
         </div>
 
-        {/* Atmanirbhar Bharat Section */}
-        <div className="bg-orange-50 rounded-3xl p-12 mb-20 border border-orange-300 relative">
-          <div className="text-center mb-8">
-            <AshokaChakra className="h-16 w-16 text-blue-600 mx-auto mb-4" />
-            <h2 className="text-4xl font-bold text-gray-900 mb-4">
-              Supporting <span className="text-orange-600">Atmanirbhar Bharat</span>
-            </h2>
-            <p className="text-xl text-gray-800 max-w-3xl mx-auto">
-              The vision of a self-reliant India starts with technology independence
-            </p>
-          </div>
-
+        <InfoSection
+          title="Supporting Atmanirbhar Bharat"
+          highlightWord="Atmanirbhar Bharat"
+          subtitle="The vision of a self-reliant India starts with technology independence"
+          variant="highlighted"
+          className="mb-20"
+        >
           <div className="grid md:grid-cols-2 gap-8">
             <div className="space-y-4">
               <h3 className="text-2xl font-bold text-gray-900 flex items-center">
@@ -185,7 +183,7 @@ export default function WhySwadeshiPage() {
               </ul>
             </div>
           </div>
-        </div>
+        </InfoSection>
 
         {/* Success Stories */}
         <div className="text-center mb-16">

@@ -69,6 +69,7 @@ export const DEFAULT_OG = {
 // Navigation links
 export const NAV_LINKS = [
   { href: "/", label: "Home" },
+  { href: "/compare", label: "Compare" },
   { href: "/about", label: "Add App" },
   { href: "/why-swadeshi", label: "Why Swadeshi?" }
 ] as const
@@ -77,6 +78,7 @@ export const NAV_LINKS = [
 export const FOOTER_LINKS = {
   main: [
     { href: "/", label: "Home" },
+    { href: "/compare", label: "Compare" },
     { href: "/about", label: "Add App" },
     { href: "/why-swadeshi", label: "Why Swadeshi?" },
     { href: "/alternatives", label: "Alternatives" }

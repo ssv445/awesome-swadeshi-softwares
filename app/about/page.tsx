@@ -3,27 +3,78 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Flag, ExternalLink, GitPullRequest, FileText, Users, Star, Flower2, Crown, Zap } from "lucide-react"
 import { AshokaChakra } from "@/components/ashoka-chakra"
 import { AppShell } from "@/components/layout/AppShell"
+import { HeroSection } from "@/components/ui/HeroSection"
+import { NumberedStep } from "@/components/ui/NumberedStep"
+import { Breadcrumbs, generateBreadcrumbs } from "@/components/ui/Breadcrumbs"
 import Link from "next/link"
+import type { Metadata } from "next"
+
+export const metadata: Metadata = {
+  title: "Contribute to Awesome Swadeshi Softwares - Add Indian Software",
+  description: "Help grow our directory by contributing Indian software alternatives. Learn how to add your Swadeshi software to support the Atmanirbhar Bharat movement through community collaboration.",
+  keywords: [
+    "contribute Indian software",
+    "add Swadeshi apps",
+    "Indian software directory",
+    "Atmanirbhar Bharat",
+    "open source contribution",
+    "GitHub pull request",
+    "Indian tech community",
+    "software submission"
+  ],
+  openGraph: {
+    title: "Contribute to Awesome Swadeshi Softwares",
+    description: "Help grow our directory by contributing Indian software alternatives. Support the Swadeshi movement through community collaboration.",
+    url: "/about",
+    type: "website",
+    images: [
+      {
+        url: "/og-about.png",
+        width: 1200,
+        height: 630,
+        alt: "Contribute to Awesome Swadeshi Softwares"
+      }
+    ]
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Contribute to Awesome Swadeshi Softwares",
+    description: "Help grow our directory by contributing Indian software alternatives. Support the Swadeshi movement through community collaboration.",
+    images: ["/og-about.png"]
+  },
+  alternates: {
+    canonical: "/about",
+  },
+  robots: {
+    index: true,
+    follow: true,
+  }
+}
 
 export default function AboutPage() {
+  const breadcrumbs = generateBreadcrumbs('static', {
+    staticPageName: 'Contribute'
+  })
+
   return (
     <AppShell>
       <div className="relative min-h-screen">
-
-      <div className="container mx-auto px-4 py-16 max-w-4xl relative z-10">
-
-        <div className="text-center mb-16">
-          <div className="flex items-center justify-center mb-8">
-              <AshokaChakra className="h-20 w-20 text-blue-600" />
+        {/* Breadcrumbs */}
+        <div className="bg-gray-50 border-b border-gray-200">
+          <div className="container mx-auto px-4 py-3">
+            <Breadcrumbs items={breadcrumbs} />
           </div>
-          <h1 className="text-5xl font-bold text-gray-900 mb-6">
-            Add Your <span className="text-gray-900">Awesome</span> Swadeshi Software
-          </h1>
-          <p className="text-xl text-gray-700 max-w-2xl mx-auto leading-relaxed">
-            Help grow our directory by contributing Indian software alternatives.
-            Support the <em>Swadeshi</em> movement and <em>Atmanirbhar Bharat</em> through community collaboration.
-          </p>
         </div>
+
+        <div className="container mx-auto px-4 py-16 max-w-4xl relative z-10">
+
+        <HeroSection
+          title="Add Your Awesome Swadeshi Software"
+          highlightWord="Awesome"
+          highlightColor="text-blue-600"
+          description="Help grow our directory by contributing Indian software alternatives. Support the Swadeshi movement and Atmanirbhar Bharat through community collaboration."
+          chakraSize="large"
+        />
 
         <div className="grid md:grid-cols-2 gap-8 mb-16">
           <Card className="border border-green-200 hover:border-green-400 bg-white shadow-sm hover:shadow-lg transition-all duration-300">
@@ -37,22 +88,10 @@ export default function AboutPage() {
             </CardHeader>
             <CardContent className="space-y-6">
               <div className="space-y-4">
-                <div className="flex items-start space-x-4">
-                  <div className="bg-blue-600 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold">1</div>
-                  <p className="text-gray-700 font-medium">Fork our GitHub repository</p>
-                </div>
-                <div className="flex items-start space-x-4">
-                  <div className="bg-blue-600 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold">2</div>
-                  <p className="text-gray-700 font-medium">Create JSON file in category folder</p>
-                </div>
-                <div className="flex items-start space-x-4">
-                  <div className="bg-blue-600 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold">3</div>
-                  <p className="text-gray-700 font-medium">Add your software entry</p>
-                </div>
-                <div className="flex items-start space-x-4">
-                  <div className="bg-blue-600 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold">4</div>
-                  <p className="text-gray-700 font-medium">Submit a Pull Request</p>
-                </div>
+                <NumberedStep number={1} text="Fork our GitHub repository" />
+                <NumberedStep number={2} text="Create JSON file in category folder" />
+                <NumberedStep number={3} text="Add your software entry" />
+                <NumberedStep number={4} text="Submit a Pull Request" />
               </div>
             </CardContent>
           </Card>

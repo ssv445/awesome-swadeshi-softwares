@@ -3,8 +3,25 @@
   "description": "Cloud-based broadcast and streaming solutions for content creators, broadcasters and media companies",
   "website": "https://www.amagi.com/",
   "category": "Entertainment",
-  "alternatives": ["AWS Elemental", "Brightcove", "Kaltura", "Vimeo OTT"],
+  "alternatives": [
+    "AWS Elemental",
+    "Brightcove",
+    "Kaltura",
+    "Vimeo OTT"
+  ],
   "pricing": "Paid",
   "company": "Amagi Media Labs",
-  "location": "Bengaluru, India"
+  "location": "Bengaluru, India",
+  "opengraph": {
+    "last_updated": "2025-09-30T03:35:29.017Z",
+    "url": "https://www.amagi.com",
+    "type": "website",
+    "title": "Cloud Solutions for Broadcast, CTV and FAST | Amagi",
+    "description": "Channel creation, content distribution, and CTV advertising solutions for FAST, OTT, and broadcast TV on one convenient platform.",
+    "twitter_card": "summary",
+    "twitter_title": "Cloud Solutions for Broadcast, CTV and FAST | Amagi",
+    "twitter_description": "Channel creation, content distribution, and CTV advertising solutions for FAST, OTT, and broadcast TV on one convenient platform.",
+    "twitter_domain": "amagi.com",
+    "twitter_url": "https://www.amagi.com/"
+  }
 }

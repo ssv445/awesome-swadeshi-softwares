@@ -11,6 +11,7 @@ import Link from "next/link"
 import { getCategoryDisplayName } from "@/lib/data"
 import { ProductCard } from "@/components/product-card"
 import { AppShell } from "@/components/layout/AppShell"
+import { Breadcrumbs, generateBreadcrumbs } from "@/components/ui/Breadcrumbs"
 import type { Software } from "@/lib/data"
 
 interface CategoryPageProps {
@@ -69,8 +70,18 @@ export default function CategoryPage({ software, categoryName, categorySlug, all
     })
   }, [searchTerm, software])
 
+  const breadcrumbs = generateBreadcrumbs('category', {
+    categoryName
+  })
+
   return (
     <AppShell>
+      {/* Breadcrumbs */}
+      <div className="bg-gray-50 border-b border-gray-200">
+        <div className="container mx-auto px-4 py-3">
+          <Breadcrumbs items={breadcrumbs} />
+        </div>
+      </div>
 
       {/* Hero Section */}
       <section className="py-16 px-4 bg-orange-50">

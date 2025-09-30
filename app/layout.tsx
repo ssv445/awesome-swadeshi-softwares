@@ -2,32 +2,75 @@ import type React from "react"
 import type { Metadata } from "next"
 import { GeistSans } from "geist/font/sans"
 import { GeistMono } from "geist/font/mono"
+import { StructuredData, websiteStructuredData, organizationStructuredData } from "@/components/StructuredData"
 import "./globals.css"
 
 export const metadata: Metadata = {
-  title: "Indian Software Directory - Discover Made in India Alternatives",
+  metadataBase: new URL("https://awesome-swadeshi-softwares.vercel.app"),
+  title: {
+    default: "Awesome Swadeshi Softwares - Discover Made in India Alternatives",
+    template: "%s | Awesome Swadeshi Softwares"
+  },
   description:
-    "Discover the best Indian software alternatives to popular international tools. Support homegrown innovation with our curated directory of Made in India software solutions.",
-  keywords:
-    "Indian software, Made in India, software alternatives, Indian startups, homegrown software, Indian tech companies",
-  authors: [{ name: "Indian Software Directory" }],
-  creator: "Indian Software Directory",
-  publisher: "Indian Software Directory",
-  robots: "index, follow",
+    "Discover the best Indian software alternatives to popular international tools. Support homegrown innovation with our curated directory of Made in India software solutions. Join the Swadeshi movement and support Atmanirbhar Bharat.",
+  keywords: [
+    "Indian software",
+    "Made in India",
+    "software alternatives",
+    "Indian startups",
+    "homegrown software",
+    "Indian tech companies",
+    "Swadeshi software",
+    "Atmanirbhar Bharat",
+    "Indian SaaS",
+    "indigenous software",
+    "Swadeshi movement",
+    "Indian technology"
+  ],
+  authors: [{ name: "Awesome Swadeshi Softwares Community" }],
+  creator: "Awesome Swadeshi Softwares",
+  publisher: "Awesome Swadeshi Softwares",
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
   openGraph: {
-    title: "Indian Software Directory - Discover Made in India Alternatives",
-    description: "Discover the best Indian software alternatives to popular international tools.",
-    url: "https://indiansoftware.directory",
-    siteName: "Indian Software Directory",
-    locale: "en_IN",
     type: "website",
+    title: "Awesome Swadeshi Softwares - Discover Made in India Alternatives",
+    description: "Discover the best Indian software alternatives to popular international tools. Support homegrown innovation and the Swadeshi movement.",
+    url: "https://awesome-swadeshi-softwares.vercel.app",
+    siteName: "Awesome Swadeshi Softwares",
+    locale: "en_IN",
+    images: [
+      {
+        url: "/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "Awesome Swadeshi Softwares - Indian Software Directory"
+      }
+    ]
   },
   twitter: {
     card: "summary_large_image",
-    title: "Indian Software Directory - Discover Made in India Alternatives",
-    description: "Discover the best Indian software alternatives to popular international tools.",
+    title: "Awesome Swadeshi Softwares - Discover Made in India Alternatives",
+    description: "Discover the best Indian software alternatives to popular international tools. Support homegrown innovation and the Swadeshi movement.",
+    images: ["/og-image.png"],
+    creator: "@swadeshi_soft",
+    site: "@swadeshi_soft"
   },
-  generator: "v0.dev",
+  alternates: {
+    canonical: "https://awesome-swadeshi-softwares.vercel.app",
+  },
+  category: "Technology",
+  classification: "Software Directory",
+  generator: "Next.js"
 }
 
 export default function RootLayout({
@@ -45,6 +88,8 @@ html {
   --font-mono: ${GeistMono.variable};
 }
         `}</style>
+        <StructuredData type="website" data={websiteStructuredData} />
+        <StructuredData type="organization" data={organizationStructuredData} />
       </head>
       <body>{children}</body>
     </html>

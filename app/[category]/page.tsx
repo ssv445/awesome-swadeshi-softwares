@@ -48,8 +48,44 @@ export async function generateMetadata({ params }: CategoryPageProps) {
   const software = getSoftwareByCategory(category)
 
   return {
-    title: `${categoryName} Apps - Indian Alternatives | Awesome Swadeshi Apps`,
-    description: `Discover ${software.length}+ Indian ${categoryName.toLowerCase()} apps that can replace international tools. Support Swadeshi movement with quality Indian alternatives.`,
-    keywords: `Indian ${categoryName.toLowerCase()} apps, Swadeshi software, Indian alternatives, Atmanirbhar Bharat, ${categoryName} tools`,
+    title: `${categoryName} Apps - Indian Alternatives | Awesome Swadeshi Softwares`,
+    description: `Discover ${software.length}+ Indian ${categoryName.toLowerCase()} apps that can replace international tools. Support Swadeshi movement with quality Indian alternatives built for global markets.`,
+    keywords: [
+      `Indian ${categoryName.toLowerCase()} apps`,
+      "Swadeshi software",
+      "Indian alternatives",
+      "Atmanirbhar Bharat",
+      `${categoryName} tools`,
+      "Made in India",
+      `Indian ${categoryName.toLowerCase()} solutions`,
+      "indigenous software"
+    ],
+    openGraph: {
+      title: `${categoryName} Apps - Indian Alternatives`,
+      description: `Discover ${software.length}+ Indian ${categoryName.toLowerCase()} apps that can replace international tools.`,
+      url: `/${category}`,
+      type: "website",
+      images: [
+        {
+          url: `/og-${category}.png`,
+          width: 1200,
+          height: 630,
+          alt: `Indian ${categoryName} Software Alternatives`
+        }
+      ]
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: `${categoryName} Apps - Indian Alternatives`,
+      description: `Discover ${software.length}+ Indian ${categoryName.toLowerCase()} apps that can replace international tools.`,
+      images: [`/og-${category}.png`]
+    },
+    alternates: {
+      canonical: `/${category}`,
+    },
+    robots: {
+      index: true,
+      follow: true,
+    }
   }
 }

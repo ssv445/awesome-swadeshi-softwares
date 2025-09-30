@@ -5,16 +5,13 @@
       "slug": "zoho-mail",
       "featured_reason": "Leading Indian email solution trusted by millions"
     },
+    
     {
       "category": "development",
-      "slug": "postman",
-      "featured_reason": "World's most popular API development platform from India"
+      "slug": "mapmyindia-maps",
+      "featured_reason": "India's most comprehensive mapping and location platform"
     },
-    {
-      "category": "e-commerce",
-      "slug": "dukaan",
-      "featured_reason": "Fastest growing Indian e-commerce platform builder"
-    },
+    
     {
       "category": "business",
       "slug": "freshdesk",
@@ -47,8 +44,13 @@
     },
     {
       "category": "development",
-      "slug": "mapmyindia-maps",
-      "featured_reason": "India's most comprehensive mapping and location platform"
+      "slug": "postman",
+      "featured_reason": "World's most popular API development platform from India"
+    },
+    {
+      "category": "e-commerce",
+      "slug": "dukaan",
+      "featured_reason": "Fastest growing Indian e-commerce platform builder"
     }
   ]
 }

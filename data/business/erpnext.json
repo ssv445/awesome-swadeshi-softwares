@@ -3,8 +3,24 @@
   "description": "Open source cloud ERP software for modern businesses - comprehensive alternative to SAP and Oracle",
   "website": "https://frappe.io/erpnext",
   "category": "Business",
-  "alternatives": ["SAP", "Oracle ERP", "Microsoft Dynamics", "NetSuite"],
+  "alternatives": [
+    "SAP",
+    "Oracle ERP",
+    "Microsoft Dynamics",
+    "NetSuite"
+  ],
   "pricing": "Free",
   "company": "Frappe Technologies",
-  "location": "Mumbai, India"
+  "location": "Mumbai, India",
+  "opengraph": {
+    "last_updated": "2025-09-30T03:34:09.017Z",
+    "type": "article",
+    "title": "Open Source Cloud ERP Software | ERPNext",
+    "description": "ERPNext is the world's best 100% open source ERP software which supports manufacturing, distribution, retail, trading, services, education & more. Contact us!",
+    "image": "https://frappe.io/files/ERPNexte2a3b6.png",
+    "twitter_title": "Open Source Cloud ERP Software | ERPNext",
+    "twitter_description": "ERPNext is the world's best 100% open source ERP software which supports manufacturing, distribution, retail, trading, services, education & more. Contact us!",
+    "twitter_image": "https://frappe.io/files/ERPNexte2a3b6.png",
+    "twitter_card": "summary_large_image"
+  }
 }

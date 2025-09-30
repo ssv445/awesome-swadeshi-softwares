@@ -1,0 +1,69 @@
+interface StructuredDataProps {
+  type: 'website' | 'software' | 'organization' | 'breadcrumbList'
+  data: any
+}
+
+export function StructuredData({ type, data }: StructuredDataProps) {
+  const structuredData = {
+    '@context': 'https://schema.org',
+    '@type': getSchemaType(type),
+    ...data
+  }
+
+  return (
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
+    />
+  )
+}
+
+function getSchemaType(type: string): string {
+  switch (type) {
+    case 'website':
+      return 'WebSite'
+    case 'software':
+      return 'SoftwareApplication'
+    case 'organization':
+      return 'Organization'
+    case 'breadcrumbList':
+      return 'BreadcrumbList'
+    default:
+      return 'Thing'
+  }
+}
+
+// Common structured data generators
+export const websiteStructuredData = {
+  name: "Awesome Swadeshi Softwares",
+  description: "Discover the best Indian software alternatives to popular international tools. Support homegrown innovation and the Swadeshi movement.",
+  url: "https://awesome-swadeshi-softwares.vercel.app",
+  sameAs: [
+    "https://github.com/shyam-verma/awesome-swadeshi-softwares"
+  ],
+  potentialAction: {
+    "@type": "SearchAction",
+    target: {
+      "@type": "EntryPoint",
+      urlTemplate: "https://awesome-swadeshi-softwares.vercel.app/?search={search_term_string}"
+    },
+    "query-input": "required name=search_term_string"
+  }
+}
+
+export const organizationStructuredData = {
+  name: "Awesome Swadeshi Softwares",
+  description: "A community-driven directory of Indian software alternatives",
+  url: "https://awesome-swadeshi-softwares.vercel.app",
+  logo: "https://awesome-swadeshi-softwares.vercel.app/logo.png",
+  foundingDate: "2024",
+  founders: [
+    {
+      "@type": "Person",
+      name: "Shyam Verma"
+    }
+  ],
+  sameAs: [
+    "https://github.com/shyam-verma/awesome-swadeshi-softwares"
+  ]
+}

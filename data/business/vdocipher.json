@@ -3,8 +3,21 @@
   "description": "Video hosting platform with DRM protection and analytics for businesses and educational content",
   "website": "https://www.vdocipher.com/",
   "category": "Business",
-  "alternatives": ["Vimeo Business", "Wistia", "JW Player", "Brightcove"],
+  "alternatives": [
+    "Vimeo Business",
+    "Wistia",
+    "JW Player",
+    "Brightcove"
+  ],
   "pricing": "Paid",
   "company": "VdoCipher",
-  "location": "Bengaluru, India"
+  "location": "Bengaluru, India",
+  "opengraph": {
+    "last_updated": "2025-09-30T03:34:21.854Z",
+    "description": "Video playing through VdoCipher can not be downloaded or pirated. Packaged secure video hosting for business. Features include CDN, Player and Analytics",
+    "image": "https://www.vdocipher.com/blog/wp-content/uploads/2025/07/OG-Image-for-Homepage-final.jpg",
+    "title": "Secure Video Hosting for Business | VdoCipher",
+    "type": "website",
+    "twitter_site": "@vdocipher"
+  }
 }

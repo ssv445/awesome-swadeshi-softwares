@@ -3,8 +3,22 @@
   "description": "Conversational AI agents supporting 11 Indian languages across voice and text channels including WhatsApp and phone calls",
   "website": "https://www.sarvam.ai/",
   "category": "Communication",
-  "alternatives": ["Dialogflow", "Microsoft Bot Framework", "Amazon Lex"],
+  "alternatives": [
+    "Dialogflow",
+    "Microsoft Bot Framework",
+    "Amazon Lex"
+  ],
   "pricing": "Paid",
   "company": "Sarvam AI",
-  "location": "Bengaluru, India"
+  "location": "Bengaluru, India",
+  "opengraph": {
+    "last_updated": "2025-09-30T03:34:57.858Z",
+    "title": "Sarvam AI | Sovereign Indian AI Ecosystem for LLMs, Agents, and AI Assistants",
+    "description": "At Sarvam, we're on a mission to create a sovereign AI ecosystem for India that empowers governments, enterprises, and nonprofits to use GenAI solutions.",
+    "image": "https://cdn.prod.website-files.com/66a90e7788df6d0dc5ef83dd/6887337d8f1b6e4a62f7eb0d_sarvamog.png",
+    "type": "website",
+    "twitter_card": "summary_large_image",
+    "twitter_title": "Sarvam AI | Sovereign Indian AI Ecosystem for LLMs, Agents, and AI Assistants",
+    "twitter_description": "At Sarvam, we're on a mission to create a sovereign AI ecosystem for India that empowers governments, enterprises, and nonprofits to use GenAI solutions."
+  }
 }

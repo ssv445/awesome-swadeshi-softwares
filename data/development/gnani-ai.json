@@ -3,8 +3,23 @@
   "description": "Conversational AI platform with voice and text bots for enterprises supporting 40+ languages including 12+ Indian languages",
   "website": "https://www.gnani.ai/",
   "category": "Development",
-  "alternatives": ["Dialogflow", "Amazon Lex", "Microsoft Bot Framework", "Twilio Flex"],
+  "alternatives": [
+    "Dialogflow",
+    "Amazon Lex",
+    "Microsoft Bot Framework",
+    "Twilio Flex"
+  ],
   "pricing": "Paid",
   "company": "Gnani.ai",
-  "location": "Bengaluru, India"
+  "location": "Bengaluru, India",
+  "opengraph": {
+    "last_updated": "2025-09-30T03:35:05.341Z",
+    "title": "Voice AI Agents for Enterprises | Gnani.ai",
+    "description": "Build and deploy AI agents for voice, chat, SMS and WhatsApp. Automate CX workflows with analytics, guardrails and CRM and telephony integrations.",
+    "image": "https://cdn.prod.website-files.com/6848bfb15c1067d1b767ceb1/68b83662b8987d5cd5da249a_Social%20thumbnail%201.jpg",
+    "type": "website",
+    "twitter_card": "summary_large_image",
+    "twitter_title": "Voice AI Agents for Enterprises | Gnani.ai",
+    "twitter_description": "Build and deploy AI agents for voice, chat, SMS and WhatsApp. Automate CX workflows with analytics, guardrails and CRM and telephony integrations."
+  }
 }

@@ -4,8 +4,53 @@ import { Badge } from "@/components/ui/badge"
 import { Flag, ExternalLink, ArrowRight, Video, Palette, Target, Mail, Link as LinkIcon, Shield, Users, Star, MessageSquare, CheckCircle, Zap, Cloud, Globe } from "lucide-react"
 import { AshokaChakra } from "@/components/ashoka-chakra"
 import { AppShell } from "@/components/layout/AppShell"
+import { Breadcrumbs, generateBreadcrumbs } from "@/components/ui/Breadcrumbs"
 import Link from "next/link"
 import { getAllAlternatives } from "@/lib/alternatives-server"
+import type { Metadata } from "next"
+
+export const metadata: Metadata = {
+  title: "Software Alternatives - Indian Replacements for International Tools",
+  description: "Explore comprehensive alternatives to popular international software tools. Find Indian Swadeshi replacements for Adobe, Microsoft, Google, and other global software platforms.",
+  keywords: [
+    "software alternatives",
+    "Indian software replacements",
+    "Swadeshi alternatives",
+    "Adobe alternatives",
+    "Microsoft alternatives",
+    "Google alternatives",
+    "international software replacements",
+    "Indian software solutions",
+    "tool alternatives"
+  ],
+  openGraph: {
+    title: "Software Alternatives - Indian Replacements for International Tools",
+    description: "Explore comprehensive alternatives to popular international software tools. Find Indian Swadeshi replacements for global software platforms.",
+    url: "/alternatives",
+    type: "website",
+    images: [
+      {
+        url: "/og-alternatives.png",
+        width: 1200,
+        height: 630,
+        alt: "Software Alternatives - Indian Replacements"
+      }
+    ]
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Software Alternatives - Indian Replacements for International Tools",
+    description: "Explore comprehensive alternatives to popular international software tools. Find Indian Swadeshi replacements for global software platforms.",
+    images: ["/og-alternatives.png"]
+  },
+  alternates: {
+    canonical: "/alternatives",
+  },
+  robots: {
+    index: true,
+    follow: true,
+  }
+}
 
 // Icon mapping
 const iconMap = {
@@ -14,11 +59,22 @@ const iconMap = {
 
 export default function AlternativesIndexPage() {
   const alternativesData = getAllAlternatives()
+
+  const breadcrumbs = generateBreadcrumbs('static', {
+    staticPageName: 'Alternatives'
+  })
+
   return (
     <AppShell>
       <div className="relative min-h-screen">
+        {/* Breadcrumbs */}
+        <div className="bg-gray-50 border-b border-gray-200">
+          <div className="container mx-auto px-4 py-3">
+            <Breadcrumbs items={breadcrumbs} />
+          </div>
+        </div>
 
-      <div className="container mx-auto px-4 py-16 max-w-6xl">
+        <div className="container mx-auto px-4 py-16 max-w-6xl">
         {/* Hero Section */}
         <div className="text-center mb-16">
           <div className="flex items-center justify-center mb-8">

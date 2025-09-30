@@ -3,8 +3,20 @@
   "description": "Open source customer engagement suite - alternative to Intercom and Zendesk",
   "website": "https://www.chatwoot.com/",
   "category": "Communication",
-  "alternatives": ["Intercom", "Zendesk", "Help Scout"],
+  "alternatives": [
+    "Intercom",
+    "Zendesk",
+    "Help Scout"
+  ],
   "pricing": "Free",
   "company": "Chatwoot Inc.",
-  "location": "San Francisco, USA (Indian Founded)"
+  "location": "San Francisco, USA (Indian Founded)",
+  "opengraph": {
+    "last_updated": "2025-09-30T03:34:40.902Z",
+    "twitter_description": "Chatwoot is an open-source as well as cloud-based customer engagement platform. Manage all of your customer conversation channels from one place.",
+    "twitter_card": "summary_large_image",
+    "twitter_creator": "@chatwootapp",
+    "twitter_image": "https://www.chatwoot.com/images/preview.png",
+    "twitter_url": "https://www.chatwoot.com/"
+  }
 }
