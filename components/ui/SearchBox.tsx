@@ -123,21 +123,21 @@ export function SearchBox({
     }
   }, [searchTerm, searchResults])
 
-  // Size variants
+  // Size variants - responsive for mobile
   const sizeClasses = {
-    sm: "pl-12 pr-4 py-3 text-base",
-    md: "pl-16 pr-6 py-4 text-lg",
-    lg: "pl-20 pr-8 py-8 text-3xl"
+    sm: "pl-10 sm:pl-12 pr-3 sm:pr-4 py-2 sm:py-3 text-sm sm:text-base",
+    md: "pl-12 sm:pl-16 pr-4 sm:pr-6 py-3 sm:py-4 text-base sm:text-lg",
+    lg: "pl-10 sm:pl-14 md:pl-20 pr-4 sm:pr-6 md:pr-8 py-3 sm:py-5 md:py-8 text-base sm:text-xl md:text-3xl"
   }
 
   const iconSizeClasses = {
-    sm: "left-4 h-5 w-5",
-    md: "left-6 h-6 w-6",
-    lg: "left-8 h-10 w-10"
+    sm: "left-3 sm:left-4 h-4 w-4 sm:h-5 sm:w-5",
+    md: "left-4 sm:left-6 h-5 w-5 sm:h-6 sm:w-6",
+    lg: "left-3 sm:left-5 md:left-8 h-5 w-5 sm:h-7 sm:w-7 md:h-10 md:w-10"
   }
 
   return (
-    <div className={`relative ${className}`}>
+    <div className={`relative z-50 ${className}`}>
       <Search className={`absolute top-1/2 transform -translate-y-1/2 text-gray-500 ${iconSizeClasses[size]}`} />
       <Input
         ref={searchRef}
@@ -148,13 +148,13 @@ export function SearchBox({
         onKeyDown={handleKeyDown}
         onBlur={handleSearchBlur}
         onFocus={handleSearchFocus}
-        className={`${sizeClasses[size]} border-4 border-blue-400 rounded-2xl bg-white focus:border-blue-600 focus:ring-blue-600 shadow-2xl font-medium`}
+        className={`${sizeClasses[size]} border-2 sm:border-4 border-blue-400 rounded-xl sm:rounded-2xl bg-white focus:border-blue-600 focus:ring-blue-600 shadow-xl sm:shadow-2xl font-medium`}
         autoComplete="off"
       />
 
       {/* Search Dropdown */}
       {showDropdown && searchResults.length > 0 && (
-        <div className="absolute top-full left-0 right-0 mt-2 bg-white border border-gray-200 rounded-2xl shadow-xl z-[9999] max-h-80 overflow-y-auto">
+        <div className="absolute top-full left-0 right-0 mt-2 bg-white border-2 border-gray-300 rounded-xl sm:rounded-2xl shadow-2xl z-[100] max-h-80 overflow-y-auto">
           <div className="p-2">
             <p className="text-sm text-gray-600 px-4 py-2 font-medium">
               {searchResults.length} apps found

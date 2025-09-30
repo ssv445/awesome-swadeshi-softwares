@@ -43,7 +43,7 @@ export default function ClientHomePage({ allSoftware, featuredProducts, categori
     <AppShell>
 
       {/* Hero Section */}
-      <section className="py-8 sm:py-12 md:py-16 lg:py-20 px-3 sm:px-4 relative">
+      <section className="py-8 sm:py-12 md:py-16 lg:py-20 px-3 sm:px-4 relative z-40">
         {/* Subtle Decorative Elements - hidden on mobile */}
         <div className="absolute top-10 left-10 text-green-200 opacity-30 hidden md:block">
         </div>
@@ -107,7 +107,7 @@ export default function ClientHomePage({ allSoftware, featuredProducts, categori
       </section>
 
       {/* Software Grid */}
-      <section className="py-8 sm:py-12 md:py-16 lg:py-20 px-3 sm:px-4 relative">
+      <section className="py-8 sm:py-12 md:py-16 lg:py-20 px-3 sm:px-4 relative z-10">
         {/* Subtle Background Pattern */}
         <div className="absolute inset-0 opacity-5">
           <div className="absolute inset-0" style={{
