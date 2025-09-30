@@ -1,10 +1,28 @@
 {
   "name": "VideoMeet",
   "description": "Government-backed video conferencing platform focusing on Aatmanirbhar positioning",
-  "website": "https://videomeet.live/",
+  "website": "https://www.videomeet.in/",
   "category": "Communication",
-  "alternatives": ["Zoom", "Google Meet"],
+  "alternatives": [
+    "Zoom",
+    "Google Meet"
+  ],
   "pricing": "Free",
   "company": "Data Ingenious Global Ltd",
-  "location": "Jaipur"
+  "location": "Jaipur",
+  "opengraph": {
+    "last_updated": "2025-09-30T10:20:57.943Z",
+    "image": "http://videomeet.in/images/video-meet-logo.png",
+    "title": "Video& Audio Conferencing App, Screen Sharing, Webinars, - VideoMeet",
+    "url": "https://www.videomeet.in/",
+    "description": "VideoMeet is an online Video Conferencing app and collaborative services including webinars (web seminars), webcasts, Screen Sharing, web meetings, and an online training program.",
+    "type": "https://www.videomeet.in/",
+    "locale": "en_US",
+    "site_name": "videomeet",
+    "twitter_card": "summary",
+    "twitter_url": "https://www.videomeet.in/",
+    "twitter_creator": "@video_meet",
+    "twitter_title": "Video& Audio Conferencing App, Screen Sharing, Webinars, - VideoMeet",
+    "twitter_description": "VideoMeet is an online Video Conferencing app and collaborative services including webinars (web seminars), webcasts, Screen Sharing, web meetings, and an online training program."
+  }
 }

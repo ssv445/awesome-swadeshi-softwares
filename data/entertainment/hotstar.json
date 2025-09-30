@@ -1,10 +1,28 @@
 {
-  "name": "Disney+ Hotstar",
-  "description": "Video streaming platform with movies, TV shows, sports, and news",
-  "website": "https://www.hotstar.com/",
+  "name": "JioHotstar",
+  "description": "India's largest streaming platform combining Disney+ Hotstar and JioCinema content with movies, TV shows, sports, and originals",
+  "website": "https://www.jiostar.com/",
   "category": "Entertainment",
-  "alternatives": ["Netflix", "Amazon Prime Video", "Hulu"],
+  "alternatives": [
+    "Netflix",
+    "Amazon Prime Video",
+    "Hulu"
+  ],
   "pricing": "Freemium",
-  "company": "Star India (Disney)",
-  "location": "Mumbai"
+  "company": "JioStar (Reliance-Disney JV)",
+  "location": "Mumbai",
+  "opengraph": {
+    "last_updated": "2025-09-30T10:21:09.760Z",
+    "locale": "en_US",
+    "type": "website",
+    "title": "JioStar - India’s Largest Media Conglomerate | Entertainment Reimagined",
+    "description": "JioStar combines the power of Reliance’s Viacom18 and Disney Star, delivering unmatched entertainment with 120+ TV channels and two leading streaming platforms. Explore a new era of content with JioStar.",
+    "url": "https://www.jiostar.com/",
+    "site_name": "Jiostar",
+    "image": "https://cdn.jiostar.com/jiostar/wp-content/uploads/2025/08/JioStar-Logo.jpg",
+    "image:width": "1280",
+    "image:height": "523",
+    "image:type": "image/jpeg",
+    "twitter_card": "summary_large_image"
+  }
 }
