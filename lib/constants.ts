@@ -11,12 +11,11 @@ export const SEARCH_MAX_RESULTS = 8
 // SEO
 export const SITE_NAME = "Awesome Swadeshi Apps"
 export const SITE_DESCRIPTION = "Discover India's Leading Apps & Platforms. Join the Swadeshi movement by choosing Indian apps that compete globally."
-export const SITE_URL = "https://awesome-swadeshi-apps.vercel.app"
+export const SITE_URL = "https://awesome-swadeshi-softwares.vercel.app"
 export const SITE_AUTHOR = "Awesome Swadeshi Team"
 
 // Social
-export const TWITTER_HANDLE = "@swadeshi_apps"
-export const GITHUB_URL = "https://github.com/awesome-swadeshi/apps"
+export const GITHUB_URL = "https://github.com/ssv445/awesome-swadeshi-softwares"
 
 // Categories display names
 export const CATEGORY_DISPLAY_NAMES: Record<string, string> = {
@@ -88,8 +87,7 @@ export const FOOTER_LINKS = {
     { href: "/communication", label: "Communication" }
   ],
   social: [
-    { href: GITHUB_URL, label: "GitHub" },
-    { href: `https://twitter.com/${TWITTER_HANDLE.slice(1)}`, label: "Twitter" }
+    { href: GITHUB_URL, label: "GitHub" }
   ]
 } as const
 

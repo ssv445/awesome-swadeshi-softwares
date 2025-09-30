@@ -2,8 +2,6 @@
 
 A curated directory of amazing Indian software alternatives to help you discover and adopt quality solutions built by Indian innovators. Support the **Swadeshi** movement and **Atmanirbhar Bharat** through technology choices.
 
-[![Deployed on Vercel](https://img.shields.io/badge/Deployed%20on-Vercel-black?style=for-the-badge&logo=vercel)](https://vercel.com/shyam-vermas-projects/v0-new-software-directory)
-[![Built with Next.js](https://img.shields.io/badge/Built%20with-Next.js-black?style=for-the-badge&logo=next.js)](https://nextjs.org)
 
 ## 🎯 Mission
 
@@ -11,13 +9,17 @@ Promote Indian software innovation by helping users discover quality alternative
 
 ## 📂 Categories
 
-- **Business** - CRM, Project Management, Analytics
-- **Finance** - Payments, Banking, Trading
+- **Business** - CRM, Project Management, Analytics, HR
+- **Finance** - Payments, Banking, Billing, Trading
+- **Communication** - Messaging, Video Calls, Team Collaboration
+- **Development** - Developer Tools, APIs, Cloud Platforms
+- **Productivity** - Office Suites, Email, Calendar
+- **E-commerce** - Online Stores, Marketplaces, Logistics
 - **Education** - Learning Platforms, EdTech
-- **E-commerce** - Online Stores, Marketplaces
-- **Communication** - Messaging, Video Calls
-- **Development** - Tools, Platforms, APIs
-- **And many more...**
+- **Entertainment** - Streaming, Music, Gaming
+- **Creative** - Design Tools, Content Creation
+- **Social Networking** - Social Platforms, Community
+- **Utilities** - Browsers, File Transfer, System Tools
 
 ## 🤝 Contributing
 
@@ -84,15 +86,30 @@ Choosing Indian software alternatives provides multiple benefits:
 
 ## 📊 Statistics
 
-Currently featuring **70+** Indian software alternatives across **10+** categories.
+Currently featuring **128+** Indian software alternatives across **11** categories.
 
 ## 🎨 Tech Stack
 
-- **Framework**: Next.js 15 with App Router
-- **Styling**: Tailwind CSS with shadcn/ui
+- **Framework**: Next.js 15.2.4 with App Router
+- **Styling**: Tailwind CSS v4.1.9 with shadcn/ui (New York style)
 - **Language**: TypeScript
-- **Data**: Static JSON files
+- **UI Components**: Radix UI primitives + Lucide React icons
+- **Data**: Static JSON files with build-time search indexing
+- **Fonts**: Geist Sans & Geist Mono
+- **Package Manager**: pnpm
 - **Deployment**: Vercel
+
+## ✨ Features
+
+- 🔍 **Fast Client-Side Search** - Build-time indexed search with intelligent ranking
+- 📱 **Mobile-First Design** - Fully responsive across all devices
+- 🎨 **Indian Flag Theme** - Consistent saffron, white, and green color scheme
+- 🚀 **Static Generation** - Pre-built pages for optimal performance
+- ⚡ **Fast Navigation** - Instant page transitions with Next.js
+- 🔗 **SEO Optimized** - Comprehensive metadata and structured data
+- 🌐 **Category Pages** - Dedicated pages for each software category
+- 📊 **Comparison Pages** - High-value software comparisons
+- 🎯 **Alternatives Pages** - Find Indian alternatives to popular international tools
 
 ## 📜 License
 

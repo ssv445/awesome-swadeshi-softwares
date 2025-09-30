@@ -61,9 +61,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Awesome Swadeshi Softwares - Discover Made in India Alternatives",
     description: "Discover the best Indian software alternatives to popular international tools. Support homegrown innovation and the Swadeshi movement.",
-    images: ["/og-image.png"],
-    creator: "@swadeshi_soft",
-    site: "@swadeshi_soft"
+    images: ["/og-image.png"]
   },
   alternates: {
     canonical: "https://awesome-swadeshi-softwares.vercel.app",

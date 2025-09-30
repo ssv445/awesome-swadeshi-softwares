@@ -39,7 +39,7 @@ export const websiteStructuredData = {
   description: "Discover the best Indian software alternatives to popular international tools. Support homegrown innovation and the Swadeshi movement.",
   url: "https://awesome-swadeshi-softwares.vercel.app",
   sameAs: [
-    "https://github.com/shyam-verma/awesome-swadeshi-softwares"
+    "https://github.com/ssv445/awesome-swadeshi-softwares"
   ],
   potentialAction: {
     "@type": "SearchAction",
@@ -64,6 +64,6 @@ export const organizationStructuredData = {
     }
   ],
   sameAs: [
-    "https://github.com/shyam-verma/awesome-swadeshi-softwares"
+    "https://github.com/ssv445/awesome-swadeshi-softwares"
   ]
 }

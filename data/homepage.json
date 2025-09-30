@@ -51,6 +51,11 @@
       "category": "e-commerce",
       "slug": "dukaan",
       "featured_reason": "Fastest growing Indian e-commerce platform builder"
+    },
+    {
+      "category": "communication",
+      "slug": "arattai",
+      "featured_reason": "Made in India instant messaging alternative integrated with Zoho ecosystem"
     }
   ]
 }
