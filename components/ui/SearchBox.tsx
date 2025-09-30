@@ -7,6 +7,8 @@ import { Badge } from "@/components/ui/badge"
 import { Search } from "lucide-react"
 import { getCategoryDisplayName, getAppUrl } from "@/lib/data"
 import { Favicon } from "@/components/favicon"
+import { searchApps } from "@/lib/search"
+import type { SearchResult } from "@/lib/search"
 import { SEARCH_MIN_LENGTH, SEARCH_MAX_RESULTS } from "@/lib/constants"
 import type { Software } from "@/lib/data"
 
@@ -31,16 +33,38 @@ export function SearchBox({
   const searchRef = useRef<HTMLInputElement>(null)
 
   // Handle search input changes
-  const handleSearchInputChange = useCallback((value: string) => {
+  const handleSearchInputChange = useCallback(async (value: string) => {
     setSearchTerm(value)
     setSelectedIndex(-1)
 
     if (value.length >= SEARCH_MIN_LENGTH) {
-      const results = allSoftware.filter(software =>
-        software.name.toLowerCase().includes(value.toLowerCase())
-      )
-      setSearchResults(results)
-      setShowDropdown(true)
+      try {
+        // Use the advanced search function
+        const searchResults = await searchApps(value, {
+          limit: SEARCH_MAX_RESULTS
+        })
+
+        // Extract the software entries from search results
+        const results = searchResults.map(result => result.entry).map(entry => {
+          // Find the full software object from allSoftware
+          return allSoftware.find(software =>
+            software.name === entry.name &&
+            software.company === entry.company
+          )
+        }).filter(Boolean) as Software[]
+
+        setSearchResults(results)
+        setShowDropdown(true)
+      } catch (error) {
+        console.error('Search error:', error)
+        // Fallback to simple search
+        const results = allSoftware.filter(software =>
+          software.name.toLowerCase().includes(value.toLowerCase()) ||
+          software.alternatives.some(alt => alt.toLowerCase().includes(value.toLowerCase()))
+        )
+        setSearchResults(results.slice(0, SEARCH_MAX_RESULTS))
+        setShowDropdown(true)
+      }
     } else {
       setSearchResults([])
       setShowDropdown(false)
@@ -130,7 +154,7 @@ export function SearchBox({
 
       {/* Search Dropdown */}
       {showDropdown && searchResults.length > 0 && (
-        <div className="absolute top-full left-0 right-0 mt-2 bg-white border border-gray-200 rounded-2xl shadow-xl z-50 max-h-80 overflow-y-auto">
+        <div className="absolute top-full left-0 right-0 mt-2 bg-white border border-gray-200 rounded-2xl shadow-xl z-[9999] max-h-80 overflow-y-auto">
           <div className="p-2">
             <p className="text-sm text-gray-600 px-4 py-2 font-medium">
               {searchResults.length} apps found

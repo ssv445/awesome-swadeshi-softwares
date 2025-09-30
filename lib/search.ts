@@ -111,17 +111,39 @@ function calculateScore(entry: SearchIndexEntry, query: string): {
     matchedFields.push('company')
   }
 
-  // General search terms match
-  if (entry.searchTerms.includes(queryLower)) {
+  // Enhanced search terms matching
+  const searchTermsLower = entry.searchTerms.toLowerCase()
+
+  // Exact match in search terms
+  if (searchTermsLower.includes(queryLower)) {
     score += 50
     matchedFields.push('searchTerms')
   }
 
-  // Partial matches in search terms
+  // Word boundary matches in search terms (for better partial matching)
   const queryWords = queryLower.split(' ')
   queryWords.forEach(word => {
-    if (word.length > 2 && entry.searchTerms.includes(word)) {
-      score += 10
+    if (word.length >= 1) {
+      // Check if word appears as a separate word or at start/end of words
+      const wordRegex = new RegExp(`\\b${word.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}`, 'i')
+      if (wordRegex.test(searchTermsLower)) {
+        score += 20
+        if (!matchedFields.includes('searchTerms')) {
+          matchedFields.push('searchTerms')
+        }
+      }
+      // Also check for partial word matches for single characters
+      else if (word.length === 1 && searchTermsLower.includes(word)) {
+        score += 5
+      }
+    }
+  })
+
+  // Boost score for matches at word boundaries
+  const searchTermWords = searchTermsLower.split(/\s+/)
+  searchTermWords.forEach(term => {
+    if (term.startsWith(queryLower)) {
+      score += 15
     }
   })
 
