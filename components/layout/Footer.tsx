@@ -10,13 +10,13 @@ interface FooterProps {
 export function Footer({ variant = "default", className = "" }: FooterProps) {
   if (variant === "minimal") {
     return (
-      <footer className={`bg-gray-800 py-8 px-4 ${className}`}>
+      <footer className={`bg-gray-800 py-6 sm:py-8 px-3 sm:px-4 ${className}`}>
         <div className="container mx-auto text-center">
-          <div className="flex items-center justify-center space-x-3 mb-4">
-            <AshokaChakra className="h-6 w-6 text-blue-400" />
-            <span className="text-lg font-bold text-white">{SITE_NAME}</span>
+          <div className="flex items-center justify-center space-x-2 sm:space-x-3 mb-3 sm:mb-4">
+            <AshokaChakra className="h-5 w-5 sm:h-6 sm:w-6 text-blue-400" />
+            <span className="text-base sm:text-lg font-bold text-white">{SITE_NAME}</span>
           </div>
-          <p className="text-gray-300 text-sm">
+          <p className="text-gray-300 text-xs sm:text-sm">
             &copy; 2024 Made with ❤️ in India
           </p>
         </div>
@@ -25,7 +25,7 @@ export function Footer({ variant = "default", className = "" }: FooterProps) {
   }
 
   return (
-    <footer className={`bg-gray-800 py-12 px-4 relative ${className}`}>
+    <footer className={`bg-gray-800 py-8 sm:py-10 md:py-12 px-3 sm:px-4 relative ${className}`}>
       {/* Subtle Pattern */}
       <div className="absolute inset-0 opacity-5">
         <div className="absolute inset-0" style={{
@@ -34,23 +34,23 @@ export function Footer({ variant = "default", className = "" }: FooterProps) {
       </div>
 
       <div className="container mx-auto relative z-10">
-        <div className="grid md:grid-cols-4 gap-8 mb-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8 mb-6 sm:mb-8">
           {/* Brand */}
-          <div className="md:col-span-2">
-            <div className="flex items-center space-x-3 mb-4">
-              <AshokaChakra className="h-8 w-8 text-blue-400" />
-              <span className="text-2xl font-bold text-white">{SITE_NAME}</span>
+          <div className="sm:col-span-2 lg:col-span-2">
+            <div className="flex items-center space-x-2 sm:space-x-3 mb-3 sm:mb-4">
+              <AshokaChakra className="h-6 w-6 sm:h-8 sm:w-8 text-blue-400" />
+              <span className="text-lg sm:text-xl md:text-2xl font-bold text-white">{SITE_NAME}</span>
             </div>
-            <p className="text-gray-200 text-lg mb-4 max-w-md leading-relaxed">
+            <p className="text-gray-200 text-sm sm:text-base md:text-lg mb-3 sm:mb-4 max-w-md leading-relaxed">
               Promoting Indian software innovation and helping users discover quality alternatives.
               Supporting <em>Swadeshi</em> movement and <em>Atmanirbhar Bharat</em> through technology.
             </p>
-            <div className="flex space-x-4">
+            <div className="flex flex-wrap gap-3 sm:gap-4">
               {FOOTER_LINKS.social.map((link) => (
                 <Link
                   key={link.href}
                   href={link.href}
-                  className="text-gray-400 hover:text-white transition-colors"
+                  className="text-gray-400 hover:text-white transition-colors text-sm sm:text-base"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -62,13 +62,13 @@ export function Footer({ variant = "default", className = "" }: FooterProps) {
 
           {/* Main Links */}
           <div>
-            <h3 className="text-white font-semibold mb-4">Explore</h3>
+            <h3 className="text-white font-semibold mb-3 sm:mb-4 text-sm sm:text-base">Explore</h3>
             <ul className="space-y-2">
               {FOOTER_LINKS.main.map((link) => (
                 <li key={link.href}>
                   <Link
                     href={link.href}
-                    className="text-gray-400 hover:text-white transition-colors"
+                    className="text-gray-400 hover:text-white transition-colors text-xs sm:text-sm"
                   >
                     {link.label}
                   </Link>
@@ -79,13 +79,13 @@ export function Footer({ variant = "default", className = "" }: FooterProps) {
 
           {/* Categories */}
           <div>
-            <h3 className="text-white font-semibold mb-4">Categories</h3>
+            <h3 className="text-white font-semibold mb-3 sm:mb-4 text-sm sm:text-base">Categories</h3>
             <ul className="space-y-2">
               {FOOTER_LINKS.categories.map((link) => (
                 <li key={link.href}>
                   <Link
                     href={link.href}
-                    className="text-gray-400 hover:text-white transition-colors"
+                    className="text-gray-400 hover:text-white transition-colors text-xs sm:text-sm"
                   >
                     {link.label}
                   </Link>
@@ -96,16 +96,16 @@ export function Footer({ variant = "default", className = "" }: FooterProps) {
         </div>
 
         {/* Bottom */}
-        <div className="border-t border-gray-700 pt-8">
-          <div className="flex flex-col md:flex-row justify-between items-center">
-            <p className="text-gray-300 text-sm mb-4 md:mb-0">
+        <div className="border-t border-gray-700 pt-6 sm:pt-8">
+          <div className="flex flex-col sm:flex-row justify-between items-center gap-4 sm:gap-0">
+            <p className="text-gray-300 text-xs sm:text-sm">
               &copy; 2024 Made with ❤️ in India
             </p>
-            <div className="flex space-x-6">
-              <Link href="/privacy" className="text-gray-400 hover:text-white text-sm transition-colors">
+            <div className="flex flex-wrap justify-center gap-4 sm:gap-6">
+              <Link href="/privacy" className="text-gray-400 hover:text-white text-xs sm:text-sm transition-colors">
                 Privacy Policy
               </Link>
-              <Link href="/terms" className="text-gray-400 hover:text-white text-sm transition-colors">
+              <Link href="/terms" className="text-gray-400 hover:text-white text-xs sm:text-sm transition-colors">
                 Terms of Service
               </Link>
             </div>

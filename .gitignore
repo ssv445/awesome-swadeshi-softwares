@@ -26,3 +26,15 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 scripts/crawl-tracker.json
+.playwright-mcp/about-page-mobile.png
+.playwright-mcp/alternatives-page-mobile.png
+.playwright-mcp/business-page-mobile.png
+.playwright-mcp/finance-category-mobile.png
+.playwright-mcp/homepage-mobile-after.png
+.playwright-mcp/homepage-mobile-before.png
+.playwright-mcp/homepage-mobile-final.png
+.playwright-mcp/iphone12pro-viewport.png
+.playwright-mcp/product-detail-mobile.png
+.playwright-mcp/search-results-mobile.png
+.playwright-mcp/smallest-viewport-320.png
+.playwright-mcp/why-swadeshi-mobile.png
