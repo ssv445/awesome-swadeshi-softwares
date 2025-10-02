@@ -109,11 +109,21 @@
       "keywords": ["utilities", "system tools", "productivity apps", "tools"],
       "featured": false,
       "order": 11
+    },
+    {
+      "slug": "hosting",
+      "name": "Hosting & Domains",
+      "description": "Indian web hosting providers and domain registration services",
+      "icon": "Server",
+      "color": "#0369A1",
+      "keywords": ["hosting", "domains", "web hosting", "domain registration", "VPS", "cloud hosting"],
+      "featured": false,
+      "order": 12
     }
   ],
   "meta": {
-    "totalCategories": 11,
-    "lastUpdated": "2024-09-29T09:00:00.000Z",
+    "totalCategories": 12,
+    "lastUpdated": "2025-10-02T09:00:00.000Z",
     "version": "1.0.0"
   }
 }

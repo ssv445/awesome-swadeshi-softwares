@@ -1,0 +1,32 @@
+{
+  "name": "W3Infotech",
+  "description": "Indian web hosting and domain registration company providing shared hosting, reseller hosting, VPS hosting, and domain services.",
+  "website": "https://w3infotech.com",
+  "category": "Hosting & Domains",
+  "alternatives": [
+    "GoDaddy",
+    "Bluehost",
+    "HostGator"
+  ],
+  "pricing": "Paid",
+  "company": "W3Infotech",
+  "location": "India",
+  "opengraph": {
+    "last_updated": "2025-10-02T17:50:35.573Z",
+    "type": "website",
+    "title": "W3infotech | Brandable Domains, Forever | Buy Domain & Hosting",
+    "description": "Buy domain names, web hosting, email services, and more from W3infotech – trusted in India since 2007. Affordable, secure, and scalable solutions for individuals & businesses.",
+    "url": "https://w3infotech.com/",
+    "site_name": "W3infotech",
+    "image": "https://w3infotech.com/images/social-preview.jpg",
+    "locale": "en_US",
+    "locale:alternate": "en_IN",
+    "twitter_card": "summary_large_image",
+    "twitter_site": "@w3infotech_llp",
+    "twitter_creator": "@w3infotech_llp",
+    "twitter_title": "W3infotech | Brandable Domains, Forever | Buy Domain & Hosting",
+    "twitter_description": "Register domains, get web hosting, professional email, VPS, and SSL with W3infotech – India’s trusted domain registrar since 2007.",
+    "twitter_image": "https://w3infotech.com/images/social-preview.jpg",
+    "twitter_url": "https://w3infotech.com"
+  }
+}

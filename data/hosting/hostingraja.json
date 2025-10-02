@@ -1,0 +1,23 @@
+{
+  "name": "HostingRaja",
+  "description": "Indian web hosting provider offering domain registration, shared hosting, VPS, dedicated servers, and cloud hosting solutions.",
+  "website": "https://www.hostingraja.in",
+  "category": "Hosting & Domains",
+  "alternatives": [
+    "GoDaddy",
+    "Bluehost",
+    "HostGator"
+  ],
+  "pricing": "Paid",
+  "company": "HostingRaja",
+  "location": "Chennai, Tamil Nadu",
+  "opengraph": {
+    "last_updated": "2025-10-02T17:50:27.850Z",
+    "site_name": "HostingRaja",
+    "type": "website",
+    "title": "No.1 Hosting Service Provider In India",
+    "description": "Best Hosting service with Free Domain, SSL, control panel, Unlimited Space/Bandwidth. Plans from ₹85/mon.",
+    "url": "https://www.hostingraja.in/",
+    "image": "https://image.hostingraja.in/images/icons/og-hrlogo.png"
+  }
+}

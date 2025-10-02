@@ -215,6 +215,7 @@ async function fetchOpenGraphData(url: string): Promise<OpenGraphData> {
 
     const response = await fetch(url, {
       signal: controller.signal,
+      redirect: 'follow', // Explicitly follow redirects (default behavior)
       headers: {
         'User-Agent': 'Mozilla/5.0 (compatible; AwesomeSwadeshiBot/1.0; +https://github.com/awesome-swadeshi-softwares)',
         'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
@@ -225,6 +226,11 @@ async function fetchOpenGraphData(url: string): Promise<OpenGraphData> {
 
     if (!response.ok) {
       throw new Error(`HTTP ${response.status}: ${response.statusText}`)
+    }
+
+    // Log if URL was redirected
+    if (response.url !== url) {
+      log(`  ↳ Redirected to: ${response.url}`, 'info')
     }
 
     const html = await response.text()

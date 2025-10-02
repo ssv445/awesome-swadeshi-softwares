@@ -6,6 +6,7 @@ import { Badge } from "@/components/ui/badge"
 import { ArrowRight, TrendingUp, Users, Star, Target } from "lucide-react"
 import Link from "next/link"
 import { getAllComparisons } from "@/lib/comparisons-server"
+import { getAllSoftware } from "@/lib/server-data"
 import { SafeImage } from "@/components/SafeImage"
 import type { Metadata } from "next"
 
@@ -53,6 +54,7 @@ export const metadata: Metadata = {
 
 export default function ComparePage() {
   const comparisons = getAllComparisons()
+  const totalApps = getAllSoftware().length
 
   return (
     <AppShell>
@@ -92,7 +94,7 @@ export default function ComparePage() {
             <Card className="text-center border border-green-200 bg-white shadow-sm">
               <CardContent className="p-6">
                 <Target className="h-8 w-8 text-blue-600 mx-auto mb-3" />
-                <div className="text-3xl font-bold text-gray-900">128+</div>
+                <div className="text-3xl font-bold text-gray-900">{totalApps}+</div>
                 <div className="text-sm text-gray-600">Indian Alternatives</div>
               </CardContent>
             </Card>

@@ -1,0 +1,29 @@
+{
+  "name": "Domain Registration India",
+  "description": "Indian domain registrar and web hosting provider offering domain registration, SSL certificates, email hosting, and web hosting services.",
+  "website": "https://www.domainindia.com",
+  "category": "Hosting & Domains",
+  "alternatives": [
+    "GoDaddy",
+    "Namecheap",
+    "Domain.com"
+  ],
+  "pricing": "Paid",
+  "company": "Domain Registration India Pvt Ltd",
+  "location": "India",
+  "opengraph": {
+    "last_updated": "2025-10-02T17:50:24.864Z",
+    "type": "website",
+    "title": "Domain India: Secure .IN Domain Registration & High-Speed Hosting",
+    "url": "https://www.domainindia.com",
+    "image": "https://www.domainindia.com/img/og/3-Domain-India-Open-Graph.png",
+    "description": "Register your domain with Domain India—an accredited .IN Registrar offering premium hosting solutions with SSD storage, free SSL, and expert support. Get started today!",
+    "site_name": "Domain India",
+    "twitter_card": "summary_large_image",
+    "twitter_title": "Domain India - Reliable .IN Domain Registrar & Hosting Provider",
+    "twitter_site": "@domainindia",
+    "twitter_description": "Secure your domain today! Explore Domain India's expert .IN registration and high-speed hosting with free SSL, 99.99% uptime, and premium support.",
+    "twitter_image": "https://www.domainindia.com/img/og/3-Domain-India-Open-Graph.png",
+    "twitter_image:alt": "Domain India Hosting & Domain Registration"
+  }
+}
