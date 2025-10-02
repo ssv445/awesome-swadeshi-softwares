@@ -98,11 +98,11 @@
     },
     {
       "id": "business/jio-cloud",
-      "name": "JioCloud",
+      "name": "JioAICloud",
       "company": "Jio Platforms",
       "category": "Business",
       "slug": "jio-cloud",
-      "searchTerms": "jiocloud jio platforms business google drive dropbox onedrive cloud storage service for files photos and documents with cross device"
+      "searchTerms": "jioaicloud jio platforms business google drive dropbox onedrive ai powered cloud storage service for files photos and documents with"
     },
     {
       "id": "business/keka-hr",
@@ -223,30 +223,6 @@
       "category": "Business",
       "slug": "webengage-engagement",
       "searchTerms": "webengage engage webengage business braze clevertap leanplum multi channel customer engagement platform with personalization"
-    },
-    {
-      "id": "business/webengage-feedback",
-      "name": "WebEngage Feedback",
-      "company": "WebEngage",
-      "category": "Business",
-      "slug": "webengage-feedback",
-      "searchTerms": "webengage feedback webengage business qualtrics surveymonkey typeform customer feedback collection and survey platform with nps tracking"
-    },
-    {
-      "id": "business/webengage-journey",
-      "name": "WebEngage Journey",
-      "company": "WebEngage",
-      "category": "Business",
-      "slug": "webengage-journey",
-      "searchTerms": "webengage journey webengage business salesforce journey builder adobe journey optimizer iterable customer journey orchestration and automated workflow builder"
-    },
-    {
-      "id": "business/webengage-personalization",
-      "name": "WebEngage Personalization",
-      "company": "WebEngage",
-      "category": "Business",
-      "slug": "webengage-personalization",
-      "searchTerms": "webengage personalization webengage business optimizely dynamic yield monetate ai powered personalization engine for websites and mobile apps"
     },
     {
       "id": "business/whatfix",
@@ -463,14 +439,6 @@
       "category": "Communication",
       "slug": "kommunicate",
       "searchTerms": "kommunicate kommunicate communication intercom zendesk chat drift customer communication platform with live chat chatbots and helpdesk"
-    },
-    {
-      "id": "communication/koo-app",
-      "name": "Koo",
-      "company": "Aprameya Radhakrishna",
-      "category": "Communication",
-      "slug": "koo-app",
-      "searchTerms": "koo aprameya radhakrishna communication twitter facebook linkedin multilingual microblogging platform with support for indian languages"
     },
     {
       "id": "communication/krutrim-contact-center",
@@ -794,11 +762,11 @@
     },
     {
       "id": "entertainment/hotstar",
-      "name": "Disney+ Hotstar",
-      "company": "Star India (Disney)",
+      "name": "JioHotstar",
+      "company": "JioStar (Reliance-Disney JV)",
       "category": "Entertainment",
       "slug": "hotstar",
-      "searchTerms": "disney hotstar star india disney entertainment netflix amazon prime video hulu video streaming platform with movies tv shows sports and news"
+      "searchTerms": "jiohotstar jiostar reliance disney jv entertainment netflix amazon prime video hulu india s largest streaming platform combining disney hotstar and jiocinema content"
     },
     {
       "id": "entertainment/jiosaavn",
@@ -887,6 +855,38 @@
       "category": "Finance",
       "slug": "setu-pine-labs",
       "searchTerms": "setu by pine labs pine labs finance plaid stripe connect open banking apis api banking platform for digital payments and financial services"
+    },
+    {
+      "id": "hosting/domainindia",
+      "name": "Domain Registration India",
+      "company": "Domain Registration India Pvt Ltd",
+      "category": "Hosting & Domains",
+      "slug": "domainindia",
+      "searchTerms": "domain registration india domain registration india pvt ltd hosting domains godaddy namecheap domain com indian domain registrar and web hosting provider offering domain registration"
+    },
+    {
+      "id": "hosting/hostingraja",
+      "name": "HostingRaja",
+      "company": "HostingRaja",
+      "category": "Hosting & Domains",
+      "slug": "hostingraja",
+      "searchTerms": "hostingraja hostingraja hosting domains godaddy bluehost hostgator indian web hosting provider offering domain registration shared hosting vps"
+    },
+    {
+      "id": "hosting/mitsu",
+      "name": "Mitsu.in",
+      "company": "Mitsu.in",
+      "category": "Hosting & Domains",
+      "slug": "mitsu",
+      "searchTerms": "mitsu in mitsu in hosting domains godaddy namecheap domain com indian domain registration service specializing in in and other indian"
+    },
+    {
+      "id": "hosting/w3infotech",
+      "name": "W3Infotech",
+      "company": "W3Infotech",
+      "category": "Hosting & Domains",
+      "slug": "w3infotech",
+      "searchTerms": "w3infotech w3infotech hosting domains godaddy bluehost hostgator indian web hosting and domain registration company providing shared hosting"
     },
     {
       "id": "productivity/digiboxx",
@@ -1036,11 +1036,12 @@
       "education",
       "entertainment",
       "finance",
+      "hosting",
       "productivity",
       "social-networking",
       "utilities"
     ],
-    "generatedAt": "2025-09-30T03:40:21.025Z",
+    "generatedAt": "2025-10-02T18:01:23.801Z",
     "version": "1.0.0"
   }
 }
