@@ -1,7 +1,6 @@
 import { MetadataRoute } from 'next'
 import { getAllSoftware, getCategories } from '@/lib/server-data'
 import { getAllAlternatives } from '@/lib/alternatives-server'
-import { getAllComparisons } from '@/lib/comparisons-server'
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = 'https://awesome-swadeshi-softwares.vercel.app'
@@ -32,12 +31,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: 'weekly',
       priority: 0.8,
     },
-    {
-      url: `${baseUrl}/compare`,
-      lastModified: new Date(),
-      changeFrequency: 'weekly',
-      priority: 0.9,
-    },
   ]
 
   // Category pages
@@ -67,20 +60,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.6,
   }))
 
-  // Comparison pages
-  const comparisons = getAllComparisons()
-  const comparisonRoutes: MetadataRoute.Sitemap = comparisons.map((comp) => ({
-    url: `${baseUrl}/compare/${comp.slug}`,
-    lastModified: new Date(),
-    changeFrequency: 'weekly' as const,
-    priority: 0.9,
-  }))
-
   return [
     ...staticRoutes,
     ...categoryRoutes,
     ...softwareRoutes,
     ...alternativeRoutes,
-    ...comparisonRoutes,
   ]
 }

@@ -53,13 +53,12 @@ export function Breadcrumbs({ items, className }: BreadcrumbsProps) {
 
 // Helper function to generate breadcrumbs for different page types
 export function generateBreadcrumbs(
-  type: 'category' | 'software' | 'alternative' | 'comparison' | 'static',
+  type: 'category' | 'software' | 'alternative' | 'static',
   data: {
     category?: string
     categoryName?: string
     softwareName?: string
     alternativeName?: string
-    comparisonName?: string
     staticPageName?: string
   }
 ): BreadcrumbItem[] {
@@ -89,18 +88,6 @@ export function generateBreadcrumbs(
         },
         {
           label: data.alternativeName || 'Alternative',
-          current: true
-        }
-      ]
-
-    case 'comparison':
-      return [
-        {
-          label: 'Compare',
-          href: '/compare'
-        },
-        {
-          label: data.comparisonName || 'Comparison',
           current: true
         }
       ]
