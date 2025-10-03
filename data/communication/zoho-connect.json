@@ -3,8 +3,28 @@
   "description": "Team collaboration and social intranet platform with group discussions, knowledge base, file sharing, company announcements, employee directory, and activity streams for workplace communication",
   "website": "https://www.zoho.com/connect/",
   "category": "Communication",
-  "alternatives": ["Slack", "Microsoft Teams", "Workplace by Meta", "Yammer", "Twist"],
+  "alternatives": [
+    "Slack",
+    "Microsoft Teams",
+    "Workplace by Meta",
+    "Yammer",
+    "Twist"
+  ],
   "pricing": "Freemium",
   "company": "Zoho Corporation",
-  "location": "Chennai, Tamil Nadu"
+  "location": "Chennai, Tamil Nadu",
+  "opengraph": {
+    "last_updated": "2025-10-03T11:05:28.688Z",
+    "title": "Modern intranet software to build an engaged and empowered workforce.",
+    "description": "From internal communications to surveys, knowledge and task management, and more, equip your company with a unified intranet to boost culture and work towards the common vision.",
+    "image": "https://www.zohowebstatic.com/sites/zweb/images/ogimage/connect-logo.png",
+    "url": "https://www.zoho.com/connect/",
+    "site_name": "Zoho",
+    "type": "website",
+    "twitter_title": "Modern intranet software to build an engaged and empowered workforce.",
+    "twitter_description": "From internal communications to surveys, knowledge and task management, and more, equip your company with a unified intranet to boost culture and work towards the common vision.",
+    "twitter_image": "https://www.zohowebstatic.com/sites/zweb/images/ogimage/connect-logo.png",
+    "twitter_card": "summary",
+    "twitter_site": "@zoho"
+  }
 }

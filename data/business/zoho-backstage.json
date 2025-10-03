@@ -3,8 +3,28 @@
   "description": "End-to-end event management platform for conferences, trade shows, and workshops with website builder, ticketing, attendee management, sponsor management, and mobile event app",
   "website": "https://www.zoho.com/backstage/",
   "category": "Business",
-  "alternatives": ["Eventbrite", "Cvent", "Bizzabo", "Hopin", "Whova"],
+  "alternatives": [
+    "Eventbrite",
+    "Cvent",
+    "Bizzabo",
+    "Hopin",
+    "Whova"
+  ],
   "pricing": "Freemium",
   "company": "Zoho Corporation",
-  "location": "Chennai, Tamil Nadu"
+  "location": "Chennai, Tamil Nadu",
+  "opengraph": {
+    "last_updated": "2025-10-03T11:05:08.567Z",
+    "image": "https://www.zohowebstatic.com/sites/zweb/images/ogimage/backstage-logo.png",
+    "title": "Holistic Event Management Software - Zoho Backstage",
+    "description": "Zoho Backstage is a complete event management software. From multi-language website builder to a mobile app for attendee engagement. Try now for free.",
+    "url": "https://www.zoho.com/backstage/",
+    "site_name": "Zoho",
+    "type": "website",
+    "twitter_image": "https://www.zohowebstatic.com/sites/zweb/images/ogimage/backstage-logo.png",
+    "twitter_title": "Holistic Event Management Software - Zoho Backstage",
+    "twitter_description": "Zoho Backstage is a complete event management software. From multi-language website builder to a mobile app for attendee engagement. Try now for free.",
+    "twitter_card": "summary",
+    "twitter_site": "@zoho"
+  }
 }

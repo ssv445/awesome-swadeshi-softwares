@@ -3,8 +3,28 @@
   "description": "Live chat and visitor tracking software with AI-powered chatbots, lead scoring, real-time analytics, screen sharing, and mobile SDK for customer engagement and sales conversion",
   "website": "https://www.zoho.com/salesiq/",
   "category": "Business",
-  "alternatives": ["Intercom", "Drift", "LiveChat", "Zendesk Chat", "Olark"],
+  "alternatives": [
+    "Intercom",
+    "Drift",
+    "LiveChat",
+    "Zendesk Chat",
+    "Olark"
+  ],
   "pricing": "Freemium",
   "company": "Zoho Corporation",
-  "location": "Chennai, Tamil Nadu"
+  "location": "Chennai, Tamil Nadu",
+  "opengraph": {
+    "last_updated": "2025-10-03T11:05:19.729Z",
+    "title": "Zoho SalesIQ | The Customer Engagement Platform For Your Business",
+    "description": "Zoho SalesIQ is a complete customer engagement platform, that helps businesses to efficiently engage their website visitors & customers, at all times. Try now!",
+    "image": "https://www.zohowebstatic.com/sites/zweb/images/ogimage/salesiq-logo.png",
+    "url": "https://www.zoho.com/salesiq/",
+    "site_name": "Zoho",
+    "type": "website",
+    "twitter_title": "Zoho SalesIQ | The Customer Engagement Platform For Your Business",
+    "twitter_description": "Zoho SalesIQ is a complete customer engagement platform, that helps businesses to efficiently engage their website visitors & customers, at all times. Try now!",
+    "twitter_image": "https://www.zohowebstatic.com/sites/zweb/images/ogimage/salesiq-logo.png",
+    "twitter_card": "summary",
+    "twitter_site": "@zoho"
+  }
 }

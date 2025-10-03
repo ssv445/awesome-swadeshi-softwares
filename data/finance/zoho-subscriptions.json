@@ -3,8 +3,18 @@
   "description": "Recurring billing and subscription management platform with automated invoicing, payment collection, dunning management, revenue recognition, and customer portal for SaaS businesses",
   "website": "https://www.zoho.com/subscriptions/",
   "category": "Finance",
-  "alternatives": ["Stripe Billing", "Chargebee", "Recurly", "Paddle", "ChargeBee"],
+  "alternatives": [
+    "Stripe Billing",
+    "Chargebee",
+    "Recurly",
+    "Paddle",
+    "ChargeBee"
+  ],
   "pricing": "Freemium",
   "company": "Zoho Corporation",
-  "location": "Chennai, Tamil Nadu"
+  "location": "Chennai, Tamil Nadu",
+  "opengraph": {
+    "last_updated": "2025-10-03T11:05:54.888Z",
+    "image": "/billing/images/og.png"
+  }
 }

@@ -3,8 +3,28 @@
   "description": "Fast, secure, and private web browser by Zoho with multi-tier ad blocking, zero browser monitoring, and multiple browsing modes for work, personal, and kids",
   "website": "https://ulaa.zoho.in/",
   "category": "Utilities",
-  "alternatives": ["Google Chrome", "Mozilla Firefox", "Microsoft Edge", "Brave Browser", "Safari"],
+  "alternatives": [
+    "Google Chrome",
+    "Mozilla Firefox",
+    "Microsoft Edge",
+    "Brave Browser",
+    "Safari"
+  ],
   "pricing": "Free",
   "company": "Zoho Corporation",
-  "location": "Chennai, Tamil Nadu"
+  "location": "Chennai, Tamil Nadu",
+  "opengraph": {
+    "last_updated": "2025-10-03T11:06:06.882Z",
+    "title": "Ulaa - Private, Secure, and Superfast Browser",
+    "description": "Ulaa is a browser that respects your privacy, protects your personal data, and helps you work online more efficiently.",
+    "image": "https://ulaa.com/favicon.ico",
+    "url": "https://ulaa.com/",
+    "site_name": "Ulaa",
+    "type": "product",
+    "twitter_title": "Ulaa - Private, Secure, and Superfast Browser",
+    "twitter_description": "Ulaa is a browser that respects your privacy, protects your personal data, and helps you work online more efficiently.",
+    "twitter_image": "https://ulaa.com/favicon.ico",
+    "twitter_card": "summary",
+    "twitter_site": "@UlaaBrowser"
+  }
 }
