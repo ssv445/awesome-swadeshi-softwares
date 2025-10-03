@@ -12,10 +12,10 @@ import { getCategoryDisplayName } from "@/lib/data"
 import { ProductCard } from "@/components/product-card"
 import { AppShell } from "@/components/layout/AppShell"
 import { Breadcrumbs, generateBreadcrumbs } from "@/components/ui/Breadcrumbs"
-import type { Software } from "@/lib/data"
+import type { SoftwareWithMeta } from "@/lib/server-data"
 
 interface CategoryPageProps {
-  software: Software[]
+  software: SoftwareWithMeta[]
   categoryName: string
   categorySlug: string
   allCategories: string[]

@@ -51,9 +51,9 @@ export function getAllSoftware(): SoftwareWithMeta[] {
 }
 
 // Get software by category (server-side only)
-export function getSoftwareByCategory(categorySlug: string): Software[] {
+export function getSoftwareByCategory(categorySlug: string): SoftwareWithMeta[] {
   const dataDir = path.join(process.cwd(), 'data')
-  const software: Software[] = []
+  const software: SoftwareWithMeta[] = []
 
   try {
     const categoryPath = path.join(dataDir, categorySlug)
@@ -69,7 +69,13 @@ export function getSoftwareByCategory(categorySlug: string): Software[] {
       const filePath = path.join(categoryPath, file)
       const fileContent = fs.readFileSync(filePath, 'utf8')
       const softwareData = JSON.parse(fileContent)
-      software.push(softwareData)
+      const slug = file.replace('.json', '')
+
+      software.push({
+        ...softwareData,
+        categorySlug,
+        slug
+      })
     }
   } catch (error) {
     console.error(`Error reading category ${categorySlug}:`, error)

@@ -5,13 +5,19 @@ import Link from "next/link"
 import { getAlternativeUrl, getAppUrl } from "@/lib/data"
 import { Favicon } from "@/components/favicon"
 import type { Software } from "@/lib/data"
+import type { SoftwareWithMeta } from "@/lib/server-data"
 
 interface ProductCardProps {
-  software: Software
+  software: Software | SoftwareWithMeta
   index?: number
 }
 
 export function ProductCard({ software, index = 0 }: ProductCardProps) {
+  // Use slug from SoftwareWithMeta if available, otherwise generate from name
+  const appUrl = 'slug' in software && 'categorySlug' in software
+    ? `/${software.categorySlug}/${software.slug}`
+    : getAppUrl(software.category, software.name)
+
   return (
     <Card className="group hover:shadow-lg transition-all duration-300 border border-green-200 hover:border-green-400 bg-white hover:scale-[1.02]">
       <CardHeader className="pb-4">
@@ -55,7 +61,7 @@ export function ProductCard({ software, index = 0 }: ProductCardProps) {
 
         <div className="flex justify-end pt-3 border-t border-gray-100">
           <Button asChild size="sm" className="bg-blue-600 hover:bg-blue-700 text-white border-none">
-            <Link href={getAppUrl(software.category, software.name)}>
+            <Link href={appUrl}>
               View Details
             </Link>
           </Button>
