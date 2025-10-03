@@ -1,10 +1,31 @@
 {
   "name": "Ola Maps",
   "description": "Real-time navigation and mapping service with precise routing and location search for Indian roads",
-  "website": "https://www.olakrutrim.com/",
+  "website": "https://maps.olakrutrim.com/",
   "category": "Utilities",
-  "alternatives": ["Google Maps", "Apple Maps", "Waze", "MapMyIndia"],
+  "alternatives": [
+    "Google Maps",
+    "Apple Maps",
+    "Waze",
+    "MapMyIndia"
+  ],
   "pricing": "Free",
   "company": "Ola Krutrim",
-  "location": "Bengaluru, India"
+  "location": "Bengaluru, India",
+  "opengraph": {
+    "last_updated": "2025-10-03T11:12:16.932Z",
+    "title": "Ola Maps - AI-Powered Maps, Geocoding API & Directions for India",
+    "description": "Discover Ola Maps, offering real-time map directions, geocoding APIs, and street view tailored for India&rsquo;s roads. Seamlessly integrate location mapping and routing with our Maps API and SDKs for iOS, Android, and web platforms. Optimize your journeys with accurate location maps and advanced geocoding features.",
+    "image:type": "image/jpeg",
+    "image:width": "512",
+    "image:height": "512",
+    "image": "https://maps.olakrutrim.com/opengraph-image.jpg?ab4be08ec443c8ff",
+    "twitter_card": "summary_large_image",
+    "twitter_title": "Ola Maps - AI-Powered Maps, Geocoding API & Directions for India",
+    "twitter_description": "Discover Ola Maps, offering real-time map directions, geocoding APIs, and street view tailored for India&rsquo;s roads. Seamlessly integrate location mapping and routing with our Maps API and SDKs for iOS, Android, and web platforms. Optimize your journeys with accurate location maps and advanced geocoding features.",
+    "twitter_image:type": "image/jpeg",
+    "twitter_image:width": "512",
+    "twitter_image:height": "512",
+    "twitter_image": "https://maps.olakrutrim.com/twitter-image.jpg?ab4be08ec443c8ff"
+  }
 }

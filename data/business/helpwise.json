@@ -1,10 +1,28 @@
 {
   "name": "Helpwise",
   "description": "Customer service platform with shared inbox, live chat, and knowledge base",
-  "website": "https://helpwise.com/",
+  "website": "https://helpwise.io/",
   "category": "Business",
-  "alternatives": ["Zendesk", "Freshdesk", "Help Scout"],
+  "alternatives": [
+    "Zendesk",
+    "Freshdesk",
+    "Help Scout"
+  ],
   "pricing": "Paid",
   "company": "Helpwise",
-  "location": "Delhi"
+  "location": "Delhi",
+  "opengraph": {
+    "last_updated": "2025-10-03T11:11:45.139Z",
+    "type": "product",
+    "site_name": "Helpwise",
+    "title": "Helpwise: Easy-to-use & affordable customer service platform",
+    "url": "https://helpwise.io",
+    "description": "Customer service platform for SMBs to help you serve customers faster and retain them better. Helpwise empowers agents to serve customers not tickets.",
+    "twitter_card": "summary_large_image",
+    "twitter_site": "@help_wise",
+    "twitter_creator": "@help_wise",
+    "twitter_title": "Helpwise: Easy-to-use & affordable customer service platform",
+    "twitter_description": "Customer service platform for SMBs to help you serve customers faster and retain them better. Helpwise empowers agents to serve customers not tickets.",
+    "twitter_image": "https://cdn.helpwise.io/landingv3/meta/homepage.webp"
+  }
 }

@@ -1,10 +1,33 @@
 {
   "name": "Krutrim Assistant",
   "description": "Multi-language AI assistant for task automation including booking rides, paying bills, and daily workflows",
-  "website": "https://www.olakrutrim.com/",
+  "website": "https://www.kruti.ai/",
   "category": "Productivity",
-  "alternatives": ["Google Assistant", "Siri", "Alexa", "Cortana"],
+  "alternatives": [
+    "Google Assistant",
+    "Siri",
+    "Alexa",
+    "Cortana"
+  ],
   "pricing": "Free",
   "company": "Ola Krutrim",
-  "location": "Bengaluru, India"
+  "location": "Bengaluru, India",
+  "opengraph": {
+    "last_updated": "2025-10-03T11:12:12.284Z",
+    "title": "Kruti - India's first AI Assistant",
+    "description": "AI that gets things done. Does your research, books rides, pays bills and more.",
+    "url": "https://kruti.ai",
+    "image": "https://cdn.olakrutrim.com/krutrim/chatv2/images/opengraph-image-kruti.jpg",
+    "image:type": "image/jpg",
+    "image:width": "512",
+    "image:height": "512",
+    "type": "website",
+    "twitter_card": "summary_large_image",
+    "twitter_title": "Kruti - India's first AI Assistant",
+    "twitter_description": "AI that gets things done. Does your research, books rides, pays bills and more.",
+    "twitter_image": "https://cdn.olakrutrim.com/krutrim/chatv2/images/opengraph-image-kruti.jpg",
+    "twitter_image:type": "image/jpg",
+    "twitter_image:width": "512",
+    "twitter_image:height": "512"
+  }
 }
