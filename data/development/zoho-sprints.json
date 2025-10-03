@@ -1,0 +1,10 @@
+{
+  "name": "Zoho Sprints",
+  "description": "Agile project management tool for Scrum teams with sprint planning, backlog management, burndown charts, daily standups, and team collaboration features for software development",
+  "website": "https://www.zoho.com/sprints/",
+  "category": "Development",
+  "alternatives": ["Jira Software", "Azure DevOps", "ClickUp", "Linear", "Shortcut"],
+  "pricing": "Freemium",
+  "company": "Zoho Corporation",
+  "location": "Chennai, Tamil Nadu"
+}

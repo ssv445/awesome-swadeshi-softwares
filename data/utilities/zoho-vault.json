@@ -1,0 +1,10 @@
+{
+  "name": "Zoho Vault",
+  "description": "Password manager and digital vault for individuals and teams with secure password storage, sharing, auto-fill, emergency access, password generator, and multi-factor authentication",
+  "website": "https://www.zoho.com/vault/",
+  "category": "Utilities",
+  "alternatives": ["1Password", "LastPass", "Bitwarden", "Dashlane", "Keeper"],
+  "pricing": "Freemium",
+  "company": "Zoho Corporation",
+  "location": "Chennai, Tamil Nadu"
+}

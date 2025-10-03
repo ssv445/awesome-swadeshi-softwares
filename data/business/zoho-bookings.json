@@ -1,0 +1,10 @@
+{
+  "name": "Zoho Bookings",
+  "description": "Online appointment scheduling software with calendar sync, automated reminders, payment integration, team scheduling, custom booking pages, and analytics for service-based businesses",
+  "website": "https://www.zoho.com/bookings/",
+  "category": "Business",
+  "alternatives": ["Calendly", "Acuity Scheduling", "Appointy", "SimplyBook.me", "Square Appointments"],
+  "pricing": "Freemium",
+  "company": "Zoho Corporation",
+  "location": "Chennai, Tamil Nadu"
+}

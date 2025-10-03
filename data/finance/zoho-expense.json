@@ -1,0 +1,10 @@
+{
+  "name": "Zoho Expense",
+  "description": "Expense reporting and management software with automated receipt scanning, mileage tracking, multi-currency support, policy compliance, and seamless integration with accounting systems",
+  "website": "https://www.zoho.com/expense/",
+  "category": "Finance",
+  "alternatives": ["Expensify", "Concur SAP", "Rydoo", "Zoho Expense", "Certify"],
+  "pricing": "Freemium",
+  "company": "Zoho Corporation",
+  "location": "Chennai, Tamil Nadu"
+}

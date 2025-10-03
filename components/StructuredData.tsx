@@ -45,7 +45,7 @@ export const websiteStructuredData = {
     "@type": "SearchAction",
     target: {
       "@type": "EntryPoint",
-      urlTemplate: "https://swadeshiapps.com//?search={search_term_string}"
+      urlTemplate: "https://swadeshiapps.com/?search={search_term_string}"
     },
     "query-input": "required name=search_term_string"
   }
@@ -55,7 +55,7 @@ export const organizationStructuredData = {
   name: "Awesome Swadeshi Apps",
   description: "A community-driven directory of Indian software alternatives",
   url: "https://swadeshiapps.com/",
-  logo: "https://swadeshiapps.com//logo.png",
+  logo: "https://swadeshiapps.com/logo.png",
   foundingDate: "2024",
   founders: [
     {

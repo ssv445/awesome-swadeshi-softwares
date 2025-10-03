@@ -1,0 +1,10 @@
+{
+  "name": "Zoho ShowTime",
+  "description": "Remote training and webinar platform with screen sharing, interactive presentations, live polling, Q&A sessions, session recording, and attendee analytics for virtual training and events",
+  "website": "https://www.zoho.com/showtime/",
+  "category": "Communication",
+  "alternatives": ["Zoom Webinar", "GoToWebinar", "Webex Events", "Microsoft Teams Live Events", "Demio"],
+  "pricing": "Freemium",
+  "company": "Zoho Corporation",
+  "location": "Chennai, Tamil Nadu"
+}

@@ -1,0 +1,10 @@
+{
+  "name": "Zoho SalesIQ",
+  "description": "Live chat and visitor tracking software with AI-powered chatbots, lead scoring, real-time analytics, screen sharing, and mobile SDK for customer engagement and sales conversion",
+  "website": "https://www.zoho.com/salesiq/",
+  "category": "Business",
+  "alternatives": ["Intercom", "Drift", "LiveChat", "Zendesk Chat", "Olark"],
+  "pricing": "Freemium",
+  "company": "Zoho Corporation",
+  "location": "Chennai, Tamil Nadu"
+}

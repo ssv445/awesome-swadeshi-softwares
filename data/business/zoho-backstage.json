@@ -1,0 +1,10 @@
+{
+  "name": "Zoho BackStage",
+  "description": "End-to-end event management platform for conferences, trade shows, and workshops with website builder, ticketing, attendee management, sponsor management, and mobile event app",
+  "website": "https://www.zoho.com/backstage/",
+  "category": "Business",
+  "alternatives": ["Eventbrite", "Cvent", "Bizzabo", "Hopin", "Whova"],
+  "pricing": "Freemium",
+  "company": "Zoho Corporation",
+  "location": "Chennai, Tamil Nadu"
+}

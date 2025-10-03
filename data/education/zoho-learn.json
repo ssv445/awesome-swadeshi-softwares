@@ -1,0 +1,10 @@
+{
+  "name": "Zoho Learn",
+  "description": "Knowledge management and learning management system with course creation, documentation, testing, certifications, analytics, and collaborative learning tools for employee training and onboarding",
+  "website": "https://www.zoho.com/learn/",
+  "category": "Education",
+  "alternatives": ["Confluence", "Notion", "Guru", "Document360", "Trainual"],
+  "pricing": "Freemium",
+  "company": "Zoho Corporation",
+  "location": "Chennai, Tamil Nadu"
+}

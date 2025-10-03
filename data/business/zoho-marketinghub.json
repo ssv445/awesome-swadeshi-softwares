@@ -1,0 +1,10 @@
+{
+  "name": "Zoho MarketingHub",
+  "description": "All-in-one marketing automation platform with email campaigns, lead management, webinar hosting, social media management, marketing analytics, and multi-channel campaign orchestration",
+  "website": "https://www.zoho.com/marketinghub/",
+  "category": "Business",
+  "alternatives": ["HubSpot Marketing Hub", "Marketo", "Pardot", "ActiveCampaign", "Mailchimp"],
+  "pricing": "Freemium",
+  "company": "Zoho Corporation",
+  "location": "Chennai, Tamil Nadu"
+}

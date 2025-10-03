@@ -1,0 +1,10 @@
+{
+  "name": "Zoho Projects",
+  "description": "Comprehensive project management software with task tracking, Gantt charts, time tracking, collaboration tools, and resource management for teams of all sizes",
+  "website": "https://www.zoho.com/projects/",
+  "category": "Business",
+  "alternatives": ["Asana", "Monday.com", "Basecamp", "Trello", "Jira"],
+  "pricing": "Freemium",
+  "company": "Zoho Corporation",
+  "location": "Chennai, Tamil Nadu"
+}
