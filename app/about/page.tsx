@@ -199,14 +199,14 @@ export default function AboutPage() {
         <div className="text-center space-y-6">
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button asChild size="lg">
-              <Link href="https://github.com/shyam-verma/awesome-swadeshi-softwares" target="_blank" rel="noopener noreferrer">
+              <Link href="https://github.com/ssv445/awesome-swadeshi-softwares" target="_blank" rel="noopener noreferrer">
                 <GitPullRequest className="mr-2 h-5 w-5" />
                 Contribute on GitHub
                 <ExternalLink className="ml-2 h-4 w-4" />
               </Link>
             </Button>
             <Button asChild size="lg" variant="outline">
-              <Link href="https://github.com/shyam-verma/awesome-swadeshi-softwares/blob/main/data/README.md" target="_blank" rel="noopener noreferrer">
+              <Link href="https://github.com/ssv445/awesome-swadeshi-softwares/blob/main/data/README.md" target="_blank" rel="noopener noreferrer">
                 <FileText className="mr-2 h-5 w-5" />
                 Read Full Guidelines
                 <ExternalLink className="ml-2 h-4 w-4" />
