@@ -1,6 +1,6 @@
 "use client"
 
-import { useState, useMemo } from "react"
+import { useMemo } from "react"
 import { Button } from "@/components/ui/button"
 import { Zap } from "lucide-react"
 import { AshokaChakra } from "@/components/ashoka-chakra"
@@ -9,7 +9,6 @@ import { getCategoryDisplayName } from "@/lib/data"
 import { ProductCard } from "@/components/product-card"
 import { SearchBox } from "@/components/ui/SearchBox"
 import { AppShell } from "@/components/layout/AppShell"
-import { ITEMS_PER_PAGE } from "@/lib/constants"
 import type { Software } from "@/lib/data"
 
 interface ClientHomePageProps {
@@ -19,8 +18,6 @@ interface ClientHomePageProps {
 }
 
 export default function ClientHomePage({ allSoftware, featuredProducts, categories }: ClientHomePageProps) {
-  const [currentPage, setCurrentPage] = useState(1)
-
   const categoryDisplayNames = useMemo(() => {
     return categories.map(cat => ({
       slug: cat,
@@ -28,15 +25,8 @@ export default function ClientHomePage({ allSoftware, featuredProducts, categori
     }))
   }, [categories])
 
-
-  // Always show featured products (no page filtering)
+  // Always show all featured products without pagination
   const displaySoftware = featuredProducts
-
-  const totalPages = Math.ceil(displaySoftware.length / ITEMS_PER_PAGE)
-  const paginatedSoftware = useMemo(() => {
-    const startIndex = (currentPage - 1) * ITEMS_PER_PAGE
-    return displaySoftware.slice(startIndex, startIndex + ITEMS_PER_PAGE)
-  }, [displaySoftware, currentPage])
 
 
   return (
@@ -117,7 +107,7 @@ export default function ClientHomePage({ allSoftware, featuredProducts, categori
 
         <div className="container mx-auto relative z-10">
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 md:gap-8">
-            {paginatedSoftware.map((software, index) => (
+            {displaySoftware.map((software, index) => (
               <ProductCard
                 key={index}
                 software={software}
@@ -125,48 +115,6 @@ export default function ClientHomePage({ allSoftware, featuredProducts, categori
               />
             ))}
           </div>
-
-          {/* Pagination Controls */}
-          {totalPages > 1 && (
-            <div className="flex flex-col sm:flex-row justify-center items-center gap-3 sm:gap-4 mt-8 sm:mt-10 md:mt-12">
-              <Button
-                variant="outline"
-                onClick={() => setCurrentPage(Math.max(1, currentPage - 1))}
-                disabled={currentPage === 1}
-                size="sm"
-                className="border border-gray-300 text-gray-600 hover:bg-gray-50 disabled:opacity-50 w-full sm:w-auto"
-              >
-                Previous
-              </Button>
-
-              <div className="flex items-center flex-wrap justify-center gap-2">
-                {Array.from({ length: totalPages }, (_, i) => i + 1).map((page) => (
-                  <Button
-                    key={page}
-                    variant={currentPage === page ? "default" : "outline"}
-                    onClick={() => setCurrentPage(page)}
-                    size="sm"
-                    className={currentPage === page
-                      ? "bg-blue-600 hover:bg-blue-700 text-white border-none w-9 h-9 sm:w-10 sm:h-10"
-                      : "border border-gray-300 text-gray-600 hover:bg-gray-50 w-9 h-9 sm:w-10 sm:h-10"
-                    }
-                  >
-                    {page}
-                  </Button>
-                ))}
-              </div>
-
-              <Button
-                variant="outline"
-                onClick={() => setCurrentPage(Math.min(totalPages, currentPage + 1))}
-                disabled={currentPage === totalPages}
-                size="sm"
-                className="border border-gray-300 text-gray-600 hover:bg-gray-50 disabled:opacity-50 w-full sm:w-auto"
-              >
-                Next
-              </Button>
-            </div>
-          )}
 
           {displaySoftware.length === 0 && (
             <div className="text-center py-8 sm:py-12 md:py-16 px-4">
