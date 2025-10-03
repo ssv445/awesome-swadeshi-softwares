@@ -68,7 +68,7 @@ export default async function AppPage({ params }: AppPageProps) {
   }
 
   const categoryDisplayName = getCategoryDisplayName(category)
-  const { sameCompany, sameCategory } = getRelatedApps(app)
+  const { sameCompany, sameCategory } = getRelatedApps(app, 6)
   const relatedApps = [...sameCompany, ...sameCategory]
 
   // Format last updated date
@@ -90,8 +90,39 @@ export default async function AppPage({ params }: AppPageProps) {
     softwareName: app.name
   })
 
+  // JSON-LD Structured Data for SoftwareApplication
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": app.name,
+    "applicationCategory": app.category,
+    "operatingSystem": "Web",
+    "offers": {
+      "@type": "Offer",
+      "price": app.pricing === "Free" ? "0" : undefined,
+      "priceCurrency": "INR"
+    },
+    "provider": {
+      "@type": "Organization",
+      "name": app.company,
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": app.location,
+        "addressCountry": "IN"
+      }
+    },
+    "description": app.opengraph?.description || app.description,
+    "url": app.website,
+    "image": app.opengraph?.image || app.faviconUrl,
+    "sameAs": app.opengraph?.twitter_site ? `https://twitter.com/${app.opengraph.twitter_site.replace('@', '')}` : undefined
+  }
+
   return (
     <AppShell>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
+      />
       <div className="relative min-h-screen">
 
       <div className="container mx-auto px-4 py-8 max-w-6xl">

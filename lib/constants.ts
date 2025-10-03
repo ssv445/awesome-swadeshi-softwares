@@ -2,16 +2,20 @@
  * Application constants and configuration
  */
 
-// Pagination
+// Pagination & Display
 export const ITEMS_PER_PAGE = 12
 export const FEATURED_COUNT = 10
+export const FEATURED_PRODUCT_LIMIT = 10
+export const RELATED_APPS_LIMIT = 6
 export const SEARCH_MIN_LENGTH = 1
 export const SEARCH_MAX_RESULTS = 8
+export const DESCRIPTION_PREVIEW_WORDS = 10
+export const ALTERNATIVES_LIMIT = 3
 
 // SEO
-export const SITE_NAME = "Awesome Swadeshi Apps"
+export const SITE_NAME = process.env.NEXT_PUBLIC_SITE_NAME || "Awesome Swadeshi Apps"
 export const SITE_DESCRIPTION = "Discover India's Leading Apps & Platforms. Join the Swadeshi movement by choosing Indian apps that compete globally."
-export const SITE_URL = "https://swadeshiapps.com/"
+export const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://swadeshiapps.com/"
 export const SITE_AUTHOR = "Awesome Swadeshi Team"
 
 // Social

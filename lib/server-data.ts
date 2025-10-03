@@ -2,10 +2,16 @@ import fs from 'fs'
 import path from 'path'
 import type { Software, Category, CategoriesData } from './data'
 
+// Extended Software type with metadata for sitemap/routing
+export interface SoftwareWithMeta extends Software {
+  categorySlug: string
+  slug: string
+}
+
 // Get all software from nested folder structure (server-side only)
-export function getAllSoftware(): Software[] {
+export function getAllSoftware(): SoftwareWithMeta[] {
   const dataDir = path.join(process.cwd(), 'data')
-  const software: Software[] = []
+  const software: SoftwareWithMeta[] = []
 
   try {
     // Get all category folders
@@ -25,7 +31,13 @@ export function getAllSoftware(): Software[] {
           const filePath = path.join(categoryPath, file)
           const fileContent = fs.readFileSync(filePath, 'utf8')
           const softwareData = JSON.parse(fileContent)
-          software.push(softwareData)
+          const slug = file.replace('.json', '')
+
+          software.push({
+            ...softwareData,
+            categorySlug: category,
+            slug
+          })
         }
       } catch (error) {
         console.warn(`Error reading category ${category}:`, error)
@@ -193,7 +205,7 @@ export function getAllAppPaths(): { category: string; slug: string }[] {
 }
 
 // Get related apps (same company or category) (server-side only)
-export function getRelatedApps(app: Software, limit: number = 6): { sameCompany: Software[]; sameCategory: Software[] } {
+export function getRelatedApps(app: Software, limit: number): { sameCompany: Software[]; sameCategory: Software[] } {
   const allApps = getAllSoftware()
 
   const sameCompany = allApps
@@ -226,14 +238,14 @@ interface HomepageData {
 }
 
 // Get featured products from homepage.json (server-side only)
-export function getFeaturedProducts(): Software[] {
+export function getFeaturedProducts(limit: number): Software[] {
   const homepageFilePath = path.join(process.cwd(), 'data', 'homepage.json')
   const featuredApps: Software[] = []
 
   try {
     if (!fs.existsSync(homepageFilePath)) {
       console.warn('homepage.json not found, returning all apps')
-      return getAllSoftware().slice(0, 10) // Fallback to first 10 apps
+      return getAllSoftware().slice(0, limit)
     }
 
     const homepageContent = fs.readFileSync(homepageFilePath, 'utf8')
@@ -253,6 +265,6 @@ export function getFeaturedProducts(): Software[] {
     return featuredApps
   } catch (error) {
     console.error('Error loading featured products:', error)
-    return getAllSoftware().slice(0, 10) // Fallback to first 10 apps
+    return getAllSoftware().slice(0, limit)
   }
 }

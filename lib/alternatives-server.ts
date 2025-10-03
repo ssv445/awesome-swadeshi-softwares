@@ -221,7 +221,7 @@ export function generateAlternativesMapping(): AlternativeMapping[] {
           "Cultural understanding"
         ]
       })),
-      benefits: getDefaultBenefits(category)
+      benefits: getDefaultBenefits()
     }
 
     mappings.push(mapping)

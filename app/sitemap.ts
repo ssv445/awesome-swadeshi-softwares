@@ -3,7 +3,7 @@ import { getAllSoftware, getCategories } from '@/lib/server-data'
 import { getAllAlternatives } from '@/lib/alternatives-server'
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = 'https://swadeshiapps.com/'
+  const baseUrl = 'https://swadeshiapps.com'
 
   // Static pages
   const staticRoutes: MetadataRoute.Sitemap = [

@@ -7,7 +7,9 @@
       "Bash(pnpm dev:*)",
       "Bash(pnpm build:*)",
       "Bash(pnpm add:*)",
-      "WebFetch(domain:www.chatwoot.com)"
+      "WebFetch(domain:www.chatwoot.com)",
+      "Bash(pnpm validate:*)",
+      "Bash(pnpm install:*)"
     ],
     "deny": [
       "Bash(npm run build:*)"
