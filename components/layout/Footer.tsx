@@ -99,7 +99,7 @@ export function Footer({ variant = "default", className = "" }: FooterProps) {
         <div className="border-t border-gray-700 pt-6 sm:pt-8">
           <div className="flex justify-center items-center">
             <p className="text-gray-300 text-xs sm:text-sm">
-              &copy; 2024 Made with ❤️ in India
+              &copy; 2025 Made with ❤️ in India
             </p>
           </div>
         </div>
