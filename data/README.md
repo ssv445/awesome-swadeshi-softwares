@@ -1,104 +1,74 @@
-# Contributing to Indian Software Directory
+# Contributing to Awesome Swadeshi Apps
 
 ## How to Add Software
 
 1. **Fork this repository**
 2. **Create a new JSON file** in the appropriate category folder
-3. **Add your software entry** following the format below
+3. **Follow the format below** (validated automatically)
 4. **Submit a Pull Request**
 
 ## File Structure
 
-Create your JSON file in the appropriate category folder:
-
 ```
 data/
-├── business/           # Business & productivity tools
-├── finance/           # Payments, accounting, banking
-├── education/         # Learning platforms, educational tools
-├── e-commerce/        # Online shopping, marketplaces
-├── transportation/    # Ride-hailing, logistics
-├── food-delivery/     # Food ordering, restaurant platforms
-├── gaming/            # Games, fantasy sports
-├── development/       # Developer tools, IDEs
-├── design/            # Design tools, creative software
-└── communication/     # Chat, video conferencing
+├── business/           # CRM, HR, Analytics
+├── finance/            # Payments, Banking, Billing
+├── communication/      # Messaging, Video Calls
+├── development/        # Developer Tools, Cloud
+├── productivity/       # Office Tools, Storage
+├── e-commerce/         # Online Stores, Logistics
+├── education/          # Learning Platforms
+├── entertainment/      # Streaming, Music
+├── social-networking/  # Social Platforms
+├── creative/           # Design Tools
+├── utilities/          # Browsers, System Tools
+└── hosting/            # Web Hosting
 ```
 
 ## Software Entry Format
 
-Create a file named `your-software-name.json` (use lowercase, replace spaces with hyphens):
+File name: `your-software-name.json` (lowercase, hyphens)
 
 ```json
 {
-  "name": "Your Software Name",
-  "description": "Brief description of what your software does",
-  "website": "https://yourwebsite.com",
+  "name": "Software Name",
+  "description": "Brief description (20-500 characters)",
+  "website": "https://example.com",
   "category": "Business",
-  "alternatives": ["International Software 1", "International Software 2"],
-  "pricing": "Free|Freemium|Paid",
-  "company": "Your Company Name",
-  "location": "City, State"
+  "alternatives": ["International Tool 1", "International Tool 2"],
+  "pricing": "Free|Freemium|Paid|Open Source",
+  "company": "Company Name",
+  "location": "City, State",
+  "faviconUrl": "https://example.com/favicon.ico"
 }
 ```
 
-## Example
+**Note**: All fields required except `faviconUrl` (optional)
 
-File: `data/business/my-crm.json`
+## Validation Rules
 
-```json
-{
-  "name": "My CRM",
-  "description": "Customer relationship management platform for small businesses",
-  "website": "https://mycrm.in",
-  "category": "Business",
-  "alternatives": ["Salesforce", "HubSpot"],
-  "pricing": "Freemium",
-  "company": "My CRM Technologies",
-  "location": "Mumbai"
-}
-```
+✅ **Description**: 20-500 characters
+✅ **Pricing**: Must be Free, Freemium, Paid, or Open Source
+✅ **Website**: Valid URL format
+✅ **Alternatives**: Array (can be empty)
+
+Run `pnpm validate` to check before submitting.
 
 ## Guidelines
 
-- **Must be Indian**: Software must be developed by an Indian company or founded in India
-- **Working Product**: Software must be live and functional
-- **Clear Description**: Write a concise description of what the software does
-- **Valid Website**: Provide a working website URL
-- **Accurate Alternatives**: List well-known international software that your product replaces
-- **Honest Pricing**: Use Free (completely free), Freemium (free with paid features), or Paid
-- **File Naming**: Use lowercase, replace spaces with hyphens (e.g., `my-awesome-software.json`)
-- **Correct Folder**: Place in the appropriate category folder
-
-## Available Categories
-
-- **business** - CRM, productivity, project management
-- **finance** - Payments, accounting, banking
-- **education** - Learning platforms, educational tools
-- **e-commerce** - Online shopping, marketplaces
-- **transportation** - Ride-hailing, logistics
-- **food-delivery** - Food ordering, restaurant platforms
-- **gaming** - Games, fantasy sports
-- **development** - Developer tools, IDEs
-- **design** - Design tools, creative software
-- **communication** - Chat, video conferencing
-
-## URL Structure
-
-Your software will be accessible at:
-- Homepage: All software listed
-- Category page: `https://site.com/business` (for business category)
-- Search and filtering available on all pages
+- Software must be developed by an Indian company
+- Must be live and functional
+- Accurate descriptions and alternatives
+- No duplicate entries
+- Family-friendly content only
 
 ## Review Process
 
-- PRs will be reviewed for accuracy and completeness
-- Software must meet the guidelines above
-- Duplicate entries will be rejected
-- File must be in correct category folder
-- JSON must be valid
-- Maintainers may edit descriptions for clarity
+- Automated validation checks all entries
+- PRs reviewed for accuracy and completeness
+- Maintainers may edit for clarity
+- Invalid JSON or missing fields will be rejected
 
 ## Questions?
 
-Open an issue if you have questions about contributing.
+Open an issue on [GitHub](https://github.com/ssv445/awesome-swadeshi-softwares/issues)

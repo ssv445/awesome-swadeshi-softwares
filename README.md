@@ -1,120 +1,113 @@
 # 🇮🇳 Awesome Swadeshi Apps
 
-A curated directory of amazing Indian software alternatives to help you discover and adopt quality solutions built by Indian innovators. Support the **Swadeshi** movement and **Atmanirbhar Bharat** through technology choices.
+A curated directory of Indian software alternatives to help you discover and adopt quality solutions built by Indian innovators. Support **Swadeshi** movement and **Atmanirbhar Bharat** through technology choices.
 
+🔗 **Live Site**: [swadeshiapps.com](https://swadeshiapps.com)
 
 ## 🎯 Mission
 
 Promote Indian software innovation by helping users discover quality alternatives to international tools. Every software choice is a vote for the ecosystem we want to build.
 
+## 📊 Statistics
+
+- **128+** Indian software alternatives
+- **12** categories
+- **411** statically generated pages
+- **43KB** optimized search index
+
 ## 📂 Categories
 
-- **Business** - CRM, Project Management, Analytics, HR
-- **Finance** - Payments, Banking, Billing, Trading
-- **Communication** - Messaging, Video Calls, Team Collaboration
-- **Development** - Developer Tools, APIs, Cloud Platforms
-- **Productivity** - Office Suites, Email, Calendar
-- **E-commerce** - Online Stores, Marketplaces, Logistics
-- **Education** - Learning Platforms, EdTech
-- **Entertainment** - Streaming, Music, Gaming
-- **Creative** - Design Tools, Content Creation
-- **Social Networking** - Social Platforms, Community
-- **Utilities** - Browsers, File Transfer, System Tools
+- **Business** - CRM, HR, Analytics
+- **Finance** - Payments, Banking, Billing
+- **Communication** - Messaging, Video Calls
+- **Development** - Developer Tools, Cloud
+- **Productivity** - Office Tools, Storage
+- **E-commerce** - Online Stores, Logistics
+- **Education** - Learning Platforms
+- **Entertainment** - Streaming, Music
+- **Creative** - Design Tools
+- **Social Networking** - Social Platforms
+- **Utilities** - Browsers, System Tools
+- **Hosting** - Web Hosting
 
-## 🤝 Contributing
-
-We welcome contributions from the community! Help us grow this directory by adding Indian software alternatives.
-
-### How to Contribute
-
-1. **Fork** this repository
-2. **Create** a JSON file in the appropriate category folder under `/data/`
-3. **Add** your software entry with required information
-4. **Submit** a Pull Request
-
-### Required Information
-
-Each software entry must include:
-
-- `name` - Software name
-- `description` - Brief description of what it does
-- `website` - Working URL to the software
-- `category` - Primary category (Business, Finance, etc.)
-- `alternatives` - Array of international alternatives it replaces
-- `pricing` - Pricing model (Free/Freemium/Paid)
-- `company` - Company name
-- `location` - City, State in India
-
-### Example Entry
-
-```json
-{
-  "name": "Your Software Name",
-  "description": "Brief description of what your software does",
-  "website": "https://yourwebsite.com",
-  "category": "Business",
-  "alternatives": ["International Software 1", "International Software 2"],
-  "pricing": "Freemium",
-  "company": "Your Company Name",
-  "location": "City, State"
-}
-```
-
-### Guidelines
-
-- Must be developed by an Indian company
-- Software must be live and functional
-- Clear, concise descriptions
-- Accurate alternative listings
-- No duplicate entries
-- Family-friendly content only
-
-## 🚀 Why Swadeshi?
-
-Choosing Indian software alternatives provides multiple benefits:
+## 🚀 Why Choose Indian Software?
 
 - **Economic Growth** - Support Indian companies and job creation
 - **Data Sovereignty** - Keep your data within Indian borders
 - **Local Understanding** - Products built for Indian market needs
-- **Innovation** - Encourage local tech innovation
+- **Better Support** - Customer service in your timezone
 - **Self-Reliance** - Reduce dependency on foreign software
 
-## 🔗 Links
+## 🤝 Contributing
 
-- [Add Software](./app/about/page.tsx) - Contribute to the directory
-- [Why Swadeshi?](./app/why-swadeshi/page.tsx) - Learn more about the movement
+We welcome contributions! See [data/README.md](data/README.md) for detailed guidelines.
 
-## 📊 Statistics
+### Quick Start
 
-Currently featuring **128+** Indian software alternatives across **11** categories.
+1. Fork this repository
+2. Create JSON file in `/data/[category]/your-app.json`
+3. Follow the format (validated automatically)
+4. Submit a Pull Request
+
+### Required Fields
+
+```json
+{
+  "name": "Software Name",
+  "description": "Brief description (20-500 chars)",
+  "website": "https://example.com",
+  "category": "Business",
+  "alternatives": ["Tool 1", "Tool 2"],
+  "pricing": "Free|Freemium|Paid|Open Source",
+  "company": "Company Name",
+  "location": "City, State"
+}
+```
+
+Run `pnpm validate` to check your entry before submitting.
 
 ## 🎨 Tech Stack
 
-- **Framework**: Next.js 15.2.4 with App Router
-- **Styling**: Tailwind CSS v4.1.9 with shadcn/ui (New York style)
-- **Language**: TypeScript
-- **UI Components**: Radix UI primitives + Lucide React icons
-- **Data**: Static JSON files with build-time search indexing
+- **Framework**: Next.js 15.2.4 (App Router)
+- **Language**: TypeScript (strict mode)
+- **Styling**: Tailwind CSS v4.1.9
+- **UI**: shadcn/ui + Radix UI (7 components)
+- **Icons**: Lucide React
 - **Fonts**: Geist Sans & Geist Mono
+- **Data**: Static JSON with build-time validation
 - **Package Manager**: pnpm
-- **Deployment**: Vercel
 
 ## ✨ Features
 
-- 🔍 **Fast Client-Side Search** - Build-time indexed search with intelligent ranking
-- 📱 **Mobile-First Design** - Fully responsive across all devices
-- 🎨 **Indian Flag Theme** - Consistent saffron, white, and green color scheme
-- 🚀 **Static Generation** - Pre-built pages for optimal performance
-- ⚡ **Fast Navigation** - Instant page transitions with Next.js
-- 🔗 **SEO Optimized** - Comprehensive metadata and structured data
-- 🌐 **Category Pages** - Dedicated pages for each software category
-- 📊 **Comparison Pages** - High-value software comparisons
-- 🎯 **Alternatives Pages** - Find Indian alternatives to popular international tools
+- 🔍 **Fast Search** - Build-time indexed search (43KB)
+- 📱 **Mobile-First** - Fully responsive design
+- 🎨 **Indian Theme** - Saffron, white, green color scheme
+- 🚀 **Static Generation** - All 411 pages pre-built
+- ⚡ **Optimized** - Fast navigation and loading
+- 🔗 **SEO Friendly** - Comprehensive metadata + JSON-LD
+- ✅ **Validated** - Automated data validation
+- 🛡️ **Error Handling** - Comprehensive error boundaries
+
+## 🛠️ Development
+
+```bash
+# Install dependencies
+pnpm install
+
+# Validate data files (128 JSON files)
+pnpm validate
+
+# Start dev server
+pnpm dev
+
+# Build for production
+pnpm build
+```
 
 ## 📜 License
 
-This project is open source and available under the [MIT License](LICENSE).
+MIT License - see [LICENSE](LICENSE) file for details.
 
 ---
 
-**Made with ❤️ in India** | Supporting **Atmanirbhar Bharat** through technology choices
+**Made with ❤️ in India** | Supporting **Atmanirbhar Bharat**
