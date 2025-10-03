@@ -5,7 +5,7 @@
 // Pagination & Display
 export const ITEMS_PER_PAGE = 12
 export const FEATURED_COUNT = 10
-export const FEATURED_PRODUCT_LIMIT = 10
+export const FEATURED_PRODUCT_LIMIT = 15
 export const RELATED_APPS_LIMIT = 6
 export const SEARCH_MIN_LENGTH = 1
 export const SEARCH_MAX_RESULTS = 8

@@ -41,11 +41,6 @@
       "featured_reason": "India's most popular music streaming platform"
     },
     {
-      "category": "finance",
-      "slug": "setu-pine-labs",
-      "featured_reason": "Leading fintech infrastructure and POS solutions"
-    },
-    {
       "category": "utilities",
       "slug": "jioswitch",
       "featured_reason": "Smart file sharing and device connectivity solution"
@@ -64,6 +59,16 @@
       "category": "e-commerce",
       "slug": "dukaan",
       "featured_reason": "Fastest growing Indian e-commerce platform builder"
+    },
+    {
+      "category": "business",
+      "slug": "petpooja",
+      "featured_reason": "All-in-one restaurant and retail management software serving 100,000+ businesses"
+    },
+    {
+      "category": "creative",
+      "slug": "dubverse",
+      "featured_reason": "AI-powered video dubbing with emotion-preserving voices in multiple languages"
     }
   ]
 }
