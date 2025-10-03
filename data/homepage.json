@@ -1,6 +1,11 @@
 {
   "featured_products": [
     {
+      "category": "productivity",
+      "slug": "krutrim-assistant",
+      "featured_reason": "India's first AI assistant with multi-language support and task automation"
+    },
+    {
       "category": "communication",
       "slug": "arattai",
       "featured_reason": "Made in India instant messaging alternative integrated with Zoho ecosystem"
