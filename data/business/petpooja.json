@@ -1,0 +1,22 @@
+{
+  "name": "PetPooja",
+  "description": "All-in-one business management software for restaurants and retail with POS, inventory tracking, payroll, GST billing, task management, and invoice processing",
+  "website": "https://www.petpooja.com/",
+  "category": "Business",
+  "alternatives": [
+    "Square POS",
+    "Toast POS",
+    "Lightspeed",
+    "TouchBistro",
+    "Clover"
+  ],
+  "pricing": "Paid",
+  "company": "PetPooja",
+  "location": "Ahmedabad, Gujarat",
+  "opengraph": {
+    "last_updated": "2025-10-03T17:42:59.139Z",
+    "image": "https://petpoojaweb.gumlet.io/images//home/Home-hero.jpg",
+    "title": "Software for Small and Medium Businesses | Petpooja",
+    "description": "Petpooja offers powerful and easy-to-use software solutions designed for small and medium enterprises and businesses."
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "name": "ProfitBooks",
+  "description": "Free online accounting software for small businesses with invoicing, inventory management, GST compliance, expense tracking, and financial reporting without requiring accounting expertise",
+  "website": "https://profitbooks.net/",
+  "category": "Finance",
+  "alternatives": [
+    "Tally",
+    "QuickBooks",
+    "Xero",
+    "Sage",
+    "FreshBooks"
+  ],
+  "pricing": "Free",
+  "company": "ProfitBooks",
+  "location": "India",
+  "opengraph": {
+    "last_updated": "2025-10-03T17:43:51.161Z",
+    "locale": "en_US",
+    "type": "website",
+    "title": "Top FREE Accounting Software For SMEs (Rated #1)",
+    "description": "ProfitBooks is Best Free Accounting Software for small businesses across the world. Easy tools for Invoicing, Expense Tracking, Inventory Management & Taxation.",
+    "url": "https://profitbooks.net/",
+    "site_name": "ProfitBooks",
+    "updated_time": "2025-05-29T15:56:11+05:30",
+    "image": "https://profitbooks.net/wp-content/uploads/2024/09/Accounting-Software-ProfitBooks.png",
+    "image:secure_url": "https://profitbooks.net/wp-content/uploads/2024/09/Accounting-Software-ProfitBooks.png",
+    "image:width": "1200",
+    "image:height": "900",
+    "image:alt": "ProfitBooks Accounting Software For Small Businesses",
+    "image:type": "image/png",
+    "video": "https://www.youtube.com/embed/buQ3Muf0flo",
+    "twitter_card": "summary_large_image",
+    "twitter_title": "Top FREE Accounting Software For SMEs (Rated #1)",
+    "twitter_description": "ProfitBooks is Best Free Accounting Software for small businesses across the world. Easy tools for Invoicing, Expense Tracking, Inventory Management & Taxation.",
+    "twitter_site": "@profitbookslive",
+    "twitter_creator": "@harshalkatre",
+    "twitter_image": "https://profitbooks.net/wp-content/uploads/2024/09/Accounting-Software-ProfitBooks.png",
+    "twitter_label1": "Written by",
+    "twitter_data1": "iharshal",
+    "twitter_label2": "Time to read",
+    "twitter_data2": "24 minutes"
+  }
+}

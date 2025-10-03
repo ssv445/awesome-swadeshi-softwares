@@ -1,0 +1,42 @@
+{
+  "name": "Dubverse",
+  "description": "AI-powered platform for video dubbing, voiceovers, and subtitles with emotion-preserving AI voices, multi-language translation, text-to-speech, and API integration for content creators",
+  "website": "https://dubverse.ai/",
+  "category": "Creative",
+  "alternatives": [
+    "Descript",
+    "Eleven Labs",
+    "Murf AI",
+    "Synthesia",
+    "Speechify"
+  ],
+  "pricing": "Paid",
+  "company": "Dubverse",
+  "location": "Gurugram, Haryana",
+  "opengraph": {
+    "last_updated": "2025-10-03T17:43:21.490Z",
+    "locale": "en_US",
+    "type": "website",
+    "title": "Dubverse: AI Video Dubbing, AI Text to Speech, AI Subtitles",
+    "description": "Dubverse is a Generative AI platform with best in class AI Video Dubbing, AI Text to Speech, Auto Subtitles & API. Dubverse uses artificial intelligence to best in class Video Dubbing",
+    "url": "https://dubverse.ai/",
+    "site_name": "Dubverse.ai",
+    "updated_time": "2025-08-22T00:46:20+05:30",
+    "image": "https://dubverse.ai/wp-content/uploads/2024/10/Dubverse-AI-Video-Dubbing-Subtitles-TTS-API.png",
+    "image:secure_url": "https://dubverse.ai/wp-content/uploads/2024/10/Dubverse-AI-Video-Dubbing-Subtitles-TTS-API.png",
+    "image:width": "1201",
+    "image:height": "631",
+    "image:alt": "Text to speech",
+    "image:type": "image/png",
+    "twitter_card": "summary_large_image",
+    "twitter_title": "Dubverse: AI Video Dubbing, AI Text to Speech, AI Subtitles",
+    "twitter_description": "Dubverse is a Generative AI platform with best in class AI Video Dubbing, AI Text to Speech, Auto Subtitles & API. Dubverse uses artificial intelligence to best in class Video Dubbing",
+    "twitter_site": "@dubverse_ai",
+    "twitter_creator": "@dubverse_ai",
+    "twitter_image": "https://dubverse.ai/wp-content/uploads/2024/10/Dubverse-AI-Video-Dubbing-Subtitles-TTS-API.png",
+    "twitter_label1": "Written by",
+    "twitter_data1": "Harshmeet",
+    "twitter_label2": "Time to read",
+    "twitter_data2": "3 minutes"
+  }
+}

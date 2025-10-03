@@ -1,0 +1,33 @@
+{
+  "name": "Inshorts",
+  "description": "News app delivering curated news stories in 60-word summaries with AI-powered personalization, available in English and Hindi for quick consumption on mobile",
+  "website": "https://inshorts.com/",
+  "category": "Entertainment",
+  "alternatives": [
+    "Flipboard",
+    "Apple News",
+    "Google News",
+    "SmartNews",
+    "Feedly"
+  ],
+  "pricing": "Free",
+  "company": "Inshorts",
+  "location": "Noida, Uttar Pradesh",
+  "opengraph": {
+    "last_updated": "2025-10-03T17:43:45.121Z",
+    "site_name": "Inshorts - Stay Informed",
+    "type": "news-in-shorts:short",
+    "url": "https://inshorts.com",
+    "title": "Short English & Hindi News|Latest News, India News, Current Affairs|Inshorts",
+    "image": "https://inshorts.com/assets/images/favicon.png",
+    "description": "Read latest news with inshorts in less than 60 words, related to business, sports, bollywood and technology in India and around the world in both english & hindi.",
+    "updated_time": "1759465316616",
+    "rich_attachment": "true",
+    "twitter_card": "summary_large_image",
+    "twitter_site": "@inshorts",
+    "twitter_creator": "@inshorts",
+    "twitter_title": "Short English & Hindi News|Latest News, India News, Current Affairs|Inshorts",
+    "twitter_description": "Read latest news with inshorts in less than 60 words, related to business, sports, bollywood and technology in India and around the world in both english & hindi.",
+    "twitter_image": "https://inshorts.com/assets/images/favicon.png"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "name": "SiteGPT",
+  "description": "AI-powered chatbot platform that creates personalized chatbots trained on website content for 24/7 customer support, lead generation, and multi-language assistance across 95+ languages",
+  "website": "https://sitegpt.ai/",
+  "category": "Business",
+  "alternatives": [
+    "Intercom",
+    "Drift",
+    "Zendesk Chat",
+    "Crisp",
+    "Tidio"
+  ],
+  "pricing": "Freemium",
+  "company": "SiteGPT",
+  "location": "Bengaluru, Karnataka",
+  "opengraph": {
+    "last_updated": "2025-10-03T17:43:03.309Z",
+    "type": "website",
+    "locale": "en_US",
+    "title": "SiteGPT - Make AI your expert customer support agent",
+    "description": "It's like having ChatGPT specifically for your products. Instantly answer your visitors' questions with a personalized chatbot trained on your website content.",
+    "url": "https://sitegpt.ai",
+    "image": "https://sitegpt.ai/cdn-cgi/imagedelivery/hQTLE0NTlcNyb_tOYFnnyA/1a4bb19b-33a6-4aae-de00-b64c617e7e00/square",
+    "image:alt": "SiteGPT - Make AI your expert customer support agent",
+    "site_name": "SiteGPT",
+    "twitter_card": "summary_large_image",
+    "twitter_site": "@SiteGPT"
+  }
+}
