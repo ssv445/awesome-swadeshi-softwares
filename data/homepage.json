@@ -1,17 +1,25 @@
 {
   "featured_products": [
     {
+      "category": "communication",
+      "slug": "arattai",
+      "featured_reason": "Made in India instant messaging alternative integrated with Zoho ecosystem"
+    },
+    {
+      "category": "hosting",
+      "slug": "hostingraja",
+      "featured_reason": "India's No.1 web hosting provider with affordable plans"
+    },
+    {
       "category": "productivity",
       "slug": "zoho-mail",
       "featured_reason": "Leading Indian email solution trusted by millions"
     },
-    
     {
       "category": "development",
       "slug": "mapmyindia-maps",
       "featured_reason": "India's most comprehensive mapping and location platform"
     },
-    
     {
       "category": "business",
       "slug": "freshdesk",
@@ -51,11 +59,6 @@
       "category": "e-commerce",
       "slug": "dukaan",
       "featured_reason": "Fastest growing Indian e-commerce platform builder"
-    },
-    {
-      "category": "communication",
-      "slug": "arattai",
-      "featured_reason": "Made in India instant messaging alternative integrated with Zoho ecosystem"
     }
   ]
 }
