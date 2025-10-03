@@ -35,9 +35,9 @@ function getSchemaType(type: string): string {
 
 // Common structured data generators
 export const websiteStructuredData = {
-  name: "Awesome Swadeshi Softwares",
+  name: "Awesome Swadeshi Apps",
   description: "Discover the best Indian software alternatives to popular international tools. Support homegrown innovation and the Swadeshi movement.",
-  url: "https://awesome-swadeshi-softwares.vercel.app",
+  url: "https://swadeshiapps.com/",
   sameAs: [
     "https://github.com/ssv445/awesome-swadeshi-softwares"
   ],
@@ -45,17 +45,17 @@ export const websiteStructuredData = {
     "@type": "SearchAction",
     target: {
       "@type": "EntryPoint",
-      urlTemplate: "https://awesome-swadeshi-softwares.vercel.app/?search={search_term_string}"
+      urlTemplate: "https://swadeshiapps.com//?search={search_term_string}"
     },
     "query-input": "required name=search_term_string"
   }
 }
 
 export const organizationStructuredData = {
-  name: "Awesome Swadeshi Softwares",
+  name: "Awesome Swadeshi Apps",
   description: "A community-driven directory of Indian software alternatives",
-  url: "https://awesome-swadeshi-softwares.vercel.app",
-  logo: "https://awesome-swadeshi-softwares.vercel.app/logo.png",
+  url: "https://swadeshiapps.com/",
+  logo: "https://swadeshiapps.com//logo.png",
   foundingDate: "2024",
   founders: [
     {

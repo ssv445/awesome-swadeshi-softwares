@@ -6,10 +6,10 @@ import { StructuredData, websiteStructuredData, organizationStructuredData } fro
 import "./globals.css"
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://awesome-swadeshi-softwares.vercel.app"),
+  metadataBase: new URL("https://swadeshiapps.com/"),
   title: {
-    default: "Awesome Swadeshi Softwares - Discover Made in India Alternatives",
-    template: "%s | Awesome Swadeshi Softwares"
+    default: "Awesome Swadeshi Apps - Discover Made in India Alternatives",
+    template: "%s | Awesome Swadeshi Apps"
   },
   description:
     "Discover the best Indian software alternatives to popular international tools. Support homegrown innovation with our curated directory of Made in India software solutions. Join the Swadeshi movement and support Atmanirbhar Bharat.",
@@ -27,9 +27,9 @@ export const metadata: Metadata = {
     "Swadeshi movement",
     "Indian technology"
   ],
-  authors: [{ name: "Awesome Swadeshi Softwares Community" }],
-  creator: "Awesome Swadeshi Softwares",
-  publisher: "Awesome Swadeshi Softwares",
+  authors: [{ name: "Awesome Swadeshi Apps Community" }],
+  creator: "Awesome Swadeshi Apps",
+  publisher: "Awesome Swadeshi Apps",
   robots: {
     index: true,
     follow: true,
@@ -43,28 +43,28 @@ export const metadata: Metadata = {
   },
   openGraph: {
     type: "website",
-    title: "Awesome Swadeshi Softwares - Discover Made in India Alternatives",
+    title: "Awesome Swadeshi Apps - Discover Made in India Alternatives",
     description: "Discover the best Indian software alternatives to popular international tools. Support homegrown innovation and the Swadeshi movement.",
-    url: "https://awesome-swadeshi-softwares.vercel.app",
-    siteName: "Awesome Swadeshi Softwares",
+    url: "https://swadeshiapps.com/",
+    siteName: "Awesome Swadeshi Apps",
     locale: "en_IN",
     images: [
       {
         url: "/og-image.png",
         width: 1200,
         height: 630,
-        alt: "Awesome Swadeshi Softwares - Indian Software Directory"
+        alt: "Awesome Swadeshi Apps - Indian Apps Directory"
       }
     ]
   },
   twitter: {
     card: "summary_large_image",
-    title: "Awesome Swadeshi Softwares - Discover Made in India Alternatives",
+    title: "Awesome Swadeshi Apps - Discover Made in India Alternatives",
     description: "Discover the best Indian software alternatives to popular international tools. Support homegrown innovation and the Swadeshi movement.",
     images: ["/og-image.png"]
   },
   alternates: {
-    canonical: "https://awesome-swadeshi-softwares.vercel.app",
+    canonical: "https://swadeshiapps.com/",
   },
   category: "Technology",
   classification: "Software Directory",

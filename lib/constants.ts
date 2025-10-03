@@ -11,7 +11,7 @@ export const SEARCH_MAX_RESULTS = 8
 // SEO
 export const SITE_NAME = "Awesome Swadeshi Apps"
 export const SITE_DESCRIPTION = "Discover India's Leading Apps & Platforms. Join the Swadeshi movement by choosing Indian apps that compete globally."
-export const SITE_URL = "https://awesome-swadeshi-softwares.vercel.app"
+export const SITE_URL = "https://swadeshiapps.com/"
 export const SITE_AUTHOR = "Awesome Swadeshi Team"
 
 // Social

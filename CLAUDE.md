@@ -115,7 +115,6 @@ The application now follows a modern, maintainable architecture with centralized
 - **`data.ts`** - Client-side utilities and type definitions
 - **`server-data.ts`** - Server-side functions to read JSON files at build time
 - **`search.ts`** - Client-side search utilities with intelligent scoring (optimized)
-- **`comparisons-server.ts`** - Server-side data for high-value comparison pages
 - **`alternatives-server.ts`** - Server-side data for alternatives pages
 
 ### Configuration Files
@@ -167,8 +166,6 @@ The application now follows a modern, maintainable architecture with centralized
 - `/education` - Education software only
 - `/alternatives` - General alternatives page
 - `/alternatives/[slug]` - Individual alternative pages (e.g., `/alternatives/salesforce`)
-- `/compare` - Comparison pages index
-- `/compare/[slug]` - Individual comparison pages (e.g., `/compare/salesforce-vs-zoho-crm`)
 - `/why-swadeshi` - About the Swadeshi movement
 - `/about` - Contribution guidelines
 - etc. (category pages automatically generated for all folders in `/data/`)
@@ -184,16 +181,10 @@ The application now follows a modern, maintainable architecture with centralized
 ### 🚀 SEO Enhancements
 - **Comprehensive metadata** with proper metadataBase configuration
 - **Structured data (JSON-LD)** for better search engine understanding
-- **Dynamic sitemap generation** including all pages and comparisons
+- **Dynamic sitemap generation** including all pages and alternatives
 - **robots.txt** with proper crawler directives
 - **Enhanced page-specific metadata** for all static and dynamic pages
 
-### 📊 High-Value Comparison Pages
-- **Salesforce vs Zoho CRM** comparison for CRM searches
-- **Zoom vs JioMeet** comparison for video conferencing alternatives
-- **Microsoft Office vs Zoho Workplace** for productivity suite comparisons
-- **Detailed feature tables** and cost savings highlights
-- **SEO-optimized** for high-traffic comparison keywords
 
 ### 🧭 Enhanced Navigation
 - **Standardized breadcrumbs** across all pages for better UX
@@ -251,6 +242,43 @@ Contributors should:
 5. Provide working website URLs
 6. Place in correct category folder
 7. List genuine international alternatives
+
+### Making Software Featured on Homepage
+
+The homepage displays a curated list of featured software defined in `/data/homepage.json`. To feature software or change the order:
+
+**Steps:**
+1. Open `/data/homepage.json`
+2. Add new entry to the `featured_products` array with:
+   - `category`: The category folder name (e.g., `"hosting"`, `"communication"`)
+   - `slug`: The JSON filename without extension (e.g., `"hostingraja"` for `hostingraja.json`)
+   - `featured_reason`: Brief reason why it's featured (shown to users)
+3. **Order matters**: Apps appear on homepage in the order listed (first entry = first position)
+4. The list is automatically loaded by `getFeaturedProducts()` function in `/lib/server-data.ts`
+
+**Example:**
+```json
+{
+  "featured_products": [
+    {
+      "category": "communication",
+      "slug": "arattai",
+      "featured_reason": "Made in India instant messaging alternative"
+    },
+    {
+      "category": "hosting",
+      "slug": "hostingraja",
+      "featured_reason": "India's No.1 web hosting provider"
+    }
+  ]
+}
+```
+
+**Notes:**
+- No need to add `featured: true` or `position` fields to individual JSON files
+- Homepage always shows featured products only
+- Order is controlled entirely by the array order in `homepage.json`
+- All software is still searchable and visible in category pages
 
 ## Data Loading & Structure
 

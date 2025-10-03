@@ -7,6 +7,6 @@ export default function robots(): MetadataRoute.Robots {
       allow: '/',
       disallow: ['/api/', '/admin/'],
     },
-    sitemap: 'https://awesome-swadeshi-softwares.vercel.app/sitemap.xml',
+    sitemap: 'https://swadeshiapps.com//sitemap.xml',
   }
 }

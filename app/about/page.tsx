@@ -10,7 +10,7 @@ import Link from "next/link"
 import type { Metadata } from "next"
 
 export const metadata: Metadata = {
-  title: "Contribute to Awesome Swadeshi Softwares - Add Indian Software",
+  title: "Contribute to Awesome Swadeshi Apps - Add Indian Software",
   description: "Help grow our directory by contributing Indian software alternatives. Learn how to add your Swadeshi software to support the Atmanirbhar Bharat movement through community collaboration.",
   keywords: [
     "contribute Indian software",
@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     "software submission"
   ],
   openGraph: {
-    title: "Contribute to Awesome Swadeshi Softwares",
+    title: "Contribute to Awesome Swadeshi Apps",
     description: "Help grow our directory by contributing Indian software alternatives. Support the Swadeshi movement through community collaboration.",
     url: "/about",
     type: "website",
@@ -32,13 +32,13 @@ export const metadata: Metadata = {
         url: "/og-about.png",
         width: 1200,
         height: 630,
-        alt: "Contribute to Awesome Swadeshi Softwares"
+        alt: "Contribute to Awesome Swadeshi Apps"
       }
     ]
   },
   twitter: {
     card: "summary_large_image",
-    title: "Contribute to Awesome Swadeshi Softwares",
+    title: "Contribute to Awesome Swadeshi Apps",
     description: "Help grow our directory by contributing Indian software alternatives. Support the Swadeshi movement through community collaboration.",
     images: ["/og-about.png"]
   },
