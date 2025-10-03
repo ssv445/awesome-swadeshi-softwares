@@ -97,18 +97,10 @@ export function Footer({ variant = "default", className = "" }: FooterProps) {
 
         {/* Bottom */}
         <div className="border-t border-gray-700 pt-6 sm:pt-8">
-          <div className="flex flex-col sm:flex-row justify-between items-center gap-4 sm:gap-0">
+          <div className="flex justify-center items-center">
             <p className="text-gray-300 text-xs sm:text-sm">
               &copy; 2024 Made with ❤️ in India
             </p>
-            <div className="flex flex-wrap justify-center gap-4 sm:gap-6">
-              <Link href="/privacy" className="text-gray-400 hover:text-white text-xs sm:text-sm transition-colors">
-                Privacy Policy
-              </Link>
-              <Link href="/terms" className="text-gray-400 hover:text-white text-xs sm:text-sm transition-colors">
-                Terms of Service
-              </Link>
-            </div>
           </div>
         </div>
       </div>
