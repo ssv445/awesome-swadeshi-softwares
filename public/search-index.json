@@ -145,12 +145,28 @@
       "searchTerms": "onlyoffice india operations ascensio system sia india office business microsoft office google workspace libreoffice office suite with document editing collaboration and project management"
     },
     {
+      "id": "business/petpooja",
+      "name": "PetPooja",
+      "company": "PetPooja",
+      "category": "Business",
+      "slug": "petpooja",
+      "searchTerms": "petpooja petpooja business square pos toast pos lightspeed all in one business management software for restaurants and retail with pos"
+    },
+    {
       "id": "business/proofhub",
       "name": "ProofHub",
       "company": "ProofHub",
       "category": "Business",
       "slug": "proofhub",
       "searchTerms": "proofhub proofhub business asana monday com trello project management and team collaboration software with time tracking"
+    },
+    {
+      "id": "business/sitegpt",
+      "name": "SiteGPT",
+      "company": "SiteGPT",
+      "category": "Business",
+      "slug": "sitegpt",
+      "searchTerms": "sitegpt sitegpt business intercom drift zendesk chat ai powered chatbot platform that creates personalized chatbots trained on website"
     },
     {
       "id": "business/smartlook",
@@ -249,6 +265,30 @@
       "searchTerms": "zoho analytics zoho corporation business google analytics tableau power bi business intelligence and data analytics platform with reporting"
     },
     {
+      "id": "business/zoho-assist",
+      "name": "Zoho Assist",
+      "company": "Zoho Corporation",
+      "category": "Business",
+      "slug": "zoho-assist",
+      "searchTerms": "zoho assist zoho corporation business teamviewer anydesk logmein remote support and access software for it teams with screen"
+    },
+    {
+      "id": "business/zoho-backstage",
+      "name": "Zoho BackStage",
+      "company": "Zoho Corporation",
+      "category": "Business",
+      "slug": "zoho-backstage",
+      "searchTerms": "zoho backstage zoho corporation business eventbrite cvent bizzabo end to end event management platform for conferences trade shows and workshops"
+    },
+    {
+      "id": "business/zoho-bookings",
+      "name": "Zoho Bookings",
+      "company": "Zoho Corporation",
+      "category": "Business",
+      "slug": "zoho-bookings",
+      "searchTerms": "zoho bookings zoho corporation business calendly acuity scheduling appointy online appointment scheduling software with calendar sync automated reminders payment"
+    },
+    {
       "id": "business/zoho-books",
       "name": "Zoho Books",
       "company": "Zoho Corporation",
@@ -321,6 +361,22 @@
       "searchTerms": "zoho invoice zoho corporation business invoice2go wave freshbooks free invoicing software for small businesses and freelancers"
     },
     {
+      "id": "business/zoho-marketinghub",
+      "name": "Zoho MarketingHub",
+      "company": "Zoho Corporation",
+      "category": "Business",
+      "slug": "zoho-marketinghub",
+      "searchTerms": "zoho marketinghub zoho corporation business hubspot marketing hub marketo pardot all in one marketing automation platform with email campaigns lead management webinar"
+    },
+    {
+      "id": "business/zoho-pagesense",
+      "name": "Zoho PageSense",
+      "company": "Zoho Corporation",
+      "category": "Business",
+      "slug": "zoho-pagesense",
+      "searchTerms": "zoho pagesense zoho corporation business hotjar crazy egg optimizely website conversion optimization and analytics platform with heatmaps a b testing"
+    },
+    {
       "id": "business/zoho-people",
       "name": "Zoho People",
       "company": "Zoho Corporation",
@@ -329,12 +385,28 @@
       "searchTerms": "zoho people zoho corporation business bamboohr workday adp human resources management system for employee management"
     },
     {
+      "id": "business/zoho-projects",
+      "name": "Zoho Projects",
+      "company": "Zoho Corporation",
+      "category": "Business",
+      "slug": "zoho-projects",
+      "searchTerms": "zoho projects zoho corporation business asana monday com basecamp comprehensive project management software with task tracking gantt charts time"
+    },
+    {
       "id": "business/zoho-recruit",
       "name": "Zoho Recruit",
       "company": "Zoho Corporation",
       "category": "Business",
       "slug": "zoho-recruit",
       "searchTerms": "zoho recruit zoho corporation business greenhouse lever workable recruitment software for hiring and applicant tracking"
+    },
+    {
+      "id": "business/zoho-salesiq",
+      "name": "Zoho SalesIQ",
+      "company": "Zoho Corporation",
+      "category": "Business",
+      "slug": "zoho-salesiq",
+      "searchTerms": "zoho salesiq zoho corporation business intercom drift livechat live chat and visitor tracking software with ai powered chatbots lead"
     },
     {
       "id": "business/zoho-sign",
@@ -497,6 +569,14 @@
       "searchTerms": "zoho cliq zoho corporation communication slack microsoft teams team collaboration platform affordable and deeply integrated with zoho suite"
     },
     {
+      "id": "communication/zoho-connect",
+      "name": "Zoho Connect",
+      "company": "Zoho Corporation",
+      "category": "Communication",
+      "slug": "zoho-connect",
+      "searchTerms": "zoho connect zoho corporation communication slack microsoft teams workplace by meta team collaboration and social intranet platform with group discussions knowledge"
+    },
+    {
       "id": "communication/zoho-meeting",
       "name": "Zoho Meeting",
       "company": "Zoho Corporation",
@@ -505,12 +585,28 @@
       "searchTerms": "zoho meeting zoho corporation communication zoom google meet video conferencing solution integrated with zoho workplace affordable for smbs"
     },
     {
+      "id": "communication/zoho-showtime",
+      "name": "Zoho ShowTime",
+      "company": "Zoho Corporation",
+      "category": "Communication",
+      "slug": "zoho-showtime",
+      "searchTerms": "zoho showtime zoho corporation communication zoom webinar gotowebinar webex events remote training and webinar platform with screen sharing interactive presentations"
+    },
+    {
       "id": "creative/creately",
       "name": "Creately",
       "company": "Cinergix (Indian operations)",
       "category": "Creative",
       "slug": "creately",
       "searchTerms": "creately cinergix indian operations creative miro mural lucidchart visual collaboration platform with diagramming brainstorming and project planning"
+    },
+    {
+      "id": "creative/dubverse",
+      "name": "Dubverse",
+      "company": "Dubverse",
+      "category": "Creative",
+      "slug": "dubverse",
+      "searchTerms": "dubverse dubverse creative descript eleven labs murf ai ai powered platform for video dubbing voiceovers and subtitles with emotion preserving"
     },
     {
       "id": "creative/pixelbin",
@@ -649,6 +745,14 @@
       "searchTerms": "supernova ai supernova ai development figma sketch adobe xd ai powered tool for automating design and development workflows"
     },
     {
+      "id": "development/zoho-bugtracker",
+      "name": "Zoho BugTracker",
+      "company": "Zoho Corporation",
+      "category": "Development",
+      "slug": "zoho-bugtracker",
+      "searchTerms": "zoho bugtracker zoho corporation development jira bugzilla mantisbt bug tracking and issue management software with customizable workflows automated"
+    },
+    {
       "id": "development/zoho-catalyst",
       "name": "Zoho Catalyst",
       "company": "Zoho Corporation",
@@ -671,6 +775,22 @@
       "category": "Development",
       "slug": "zoho-flow",
       "searchTerms": "zoho flow zoho corporation development zapier microsoft power automate ifttt integration platform for connecting apps and automating workflows"
+    },
+    {
+      "id": "development/zoho-sprints",
+      "name": "Zoho Sprints",
+      "company": "Zoho Corporation",
+      "category": "Development",
+      "slug": "zoho-sprints",
+      "searchTerms": "zoho sprints zoho corporation development jira software azure devops clickup agile project management tool for scrum teams with sprint planning"
+    },
+    {
+      "id": "e-commerce/aasaan",
+      "name": "Aasaan",
+      "company": "Lightbooks Technologies",
+      "category": "E-Commerce",
+      "slug": "aasaan",
+      "searchTerms": "aasaan lightbooks technologies e commerce shopify bigcommerce woocommerce headless commerce platform using ai to build storefronts without coding"
     },
     {
       "id": "e-commerce/dukaan",
@@ -713,6 +833,30 @@
       "searchTerms": "shiprocket shiprocket e commerce shipstation easyship shippo e commerce shipping and logistics platform for online sellers"
     },
     {
+      "id": "e-commerce/storehippo",
+      "name": "StoreHippo",
+      "company": "StoreHippo",
+      "category": "E-Commerce",
+      "slug": "storehippo",
+      "searchTerms": "storehippo storehippo e commerce shopify woocommerce magento ai powered ecommerce platform with 300 features for b2b and b2c"
+    },
+    {
+      "id": "e-commerce/typof",
+      "name": "Typof",
+      "company": "Typof",
+      "category": "E-Commerce",
+      "slug": "typof",
+      "searchTerms": "typof typof e commerce shopify woocommerce wix ecommerce no code ecommerce website builder for creators and small businesses with"
+    },
+    {
+      "id": "e-commerce/zopping",
+      "name": "Zopping",
+      "company": "Zopping",
+      "category": "E-Commerce",
+      "slug": "zopping",
+      "searchTerms": "zopping zopping e commerce shopify woocommerce bigcommerce all in one no code ecommerce platform for indian retailers with customizable themes"
+    },
+    {
       "id": "education/byjus",
       "name": "BYJU'S",
       "company": "Think & Learn Pvt Ltd",
@@ -735,6 +879,14 @@
       "category": "Education",
       "slug": "unacademy",
       "searchTerms": "unacademy unacademy group education coursera udemy khan academy online learning platform for competitive exam preparation and skill development"
+    },
+    {
+      "id": "education/zoho-learn",
+      "name": "Zoho Learn",
+      "company": "Zoho Corporation",
+      "category": "Education",
+      "slug": "zoho-learn",
+      "searchTerms": "zoho learn zoho corporation education confluence notion guru knowledge management and learning management system with course creation documentation"
     },
     {
       "id": "entertainment/amagi",
@@ -767,6 +919,14 @@
       "category": "Entertainment",
       "slug": "hotstar",
       "searchTerms": "jiohotstar jiostar reliance disney jv entertainment netflix amazon prime video hulu india s largest streaming platform combining disney hotstar and jiocinema content"
+    },
+    {
+      "id": "entertainment/inshorts",
+      "name": "Inshorts",
+      "company": "Inshorts",
+      "category": "Entertainment",
+      "slug": "inshorts",
+      "searchTerms": "inshorts inshorts entertainment flipboard apple news google news news app delivering curated news stories in 60 word summaries with"
     },
     {
       "id": "entertainment/jiosaavn",
@@ -841,6 +1001,14 @@
       "searchTerms": "paytm wallet one97 communications finance google pay phonepe paypal digital wallet for payments recharges and money transfers"
     },
     {
+      "id": "finance/profitbooks",
+      "name": "ProfitBooks",
+      "company": "ProfitBooks",
+      "category": "Finance",
+      "slug": "profitbooks",
+      "searchTerms": "profitbooks profitbooks finance tally quickbooks xero free online accounting software for small businesses with invoicing inventory"
+    },
+    {
       "id": "finance/razorpay-payment-gateway",
       "name": "Razorpay Payment Gateway",
       "company": "Razorpay Software Pvt Ltd",
@@ -855,6 +1023,30 @@
       "category": "Finance",
       "slug": "setu-pine-labs",
       "searchTerms": "setu by pine labs pine labs finance plaid stripe connect open banking apis api banking platform for digital payments and financial services"
+    },
+    {
+      "id": "finance/shelfpay",
+      "name": "Shelfpay",
+      "company": "Shelfpay",
+      "category": "Finance",
+      "slug": "shelfpay",
+      "searchTerms": "shelfpay shelfpay finance splitwise venmo settle up india s first shared payments app for flatmates with pooled wallets"
+    },
+    {
+      "id": "finance/zoho-expense",
+      "name": "Zoho Expense",
+      "company": "Zoho Corporation",
+      "category": "Finance",
+      "slug": "zoho-expense",
+      "searchTerms": "zoho expense zoho corporation finance expensify concur sap rydoo expense reporting and management software with automated receipt scanning mileage"
+    },
+    {
+      "id": "finance/zoho-subscriptions",
+      "name": "Zoho Subscriptions",
+      "company": "Zoho Corporation",
+      "category": "Finance",
+      "slug": "zoho-subscriptions",
+      "searchTerms": "zoho subscriptions zoho corporation finance stripe billing chargebee recurly recurring billing and subscription management platform with automated invoicing payment"
     },
     {
       "id": "hosting/domainindia",
@@ -1023,10 +1215,26 @@
       "category": "Utilities",
       "slug": "ola-maps",
       "searchTerms": "ola maps ola krutrim utilities google maps apple maps waze real time navigation and mapping service with precise routing and location"
+    },
+    {
+      "id": "utilities/ulaa",
+      "name": "Ulaa",
+      "company": "Zoho Corporation",
+      "category": "Utilities",
+      "slug": "ulaa",
+      "searchTerms": "ulaa zoho corporation utilities google chrome mozilla firefox microsoft edge fast secure and private web browser by zoho with multi tier"
+    },
+    {
+      "id": "utilities/zoho-vault",
+      "name": "Zoho Vault",
+      "company": "Zoho Corporation",
+      "category": "Utilities",
+      "slug": "zoho-vault",
+      "searchTerms": "zoho vault zoho corporation utilities 1password lastpass bitwarden password manager and digital vault for individuals and teams with"
     }
   ],
   "meta": {
-    "totalEntries": 128,
+    "totalEntries": 154,
     "categories": [
       "business",
       "communication",
@@ -1041,7 +1249,7 @@
       "social-networking",
       "utilities"
     ],
-    "generatedAt": "2025-10-03T06:25:52.987Z",
+    "generatedAt": "2025-10-03T17:56:27.413Z",
     "version": "1.0.0"
   }
 }
