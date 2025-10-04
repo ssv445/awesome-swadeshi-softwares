@@ -51,7 +51,7 @@ export async function generateMetadata({ params }: AppPageProps) {
       siteName: 'Awesome Swadeshi Apps',
     },
     twitter: {
-      card: (app.opengraph?.twitter_card as 'summary' | 'summary_large_image' | 'app' | 'player') || 'summary',
+      card: app.opengraph?.twitter_card === 'summary_large_image' ? 'summary_large_image' : 'summary',
       title: app.opengraph?.twitter_title || ogTitle,
       description: app.opengraph?.twitter_description || ogDescription,
       images: app.opengraph?.twitter_image ? [app.opengraph.twitter_image] : (app.opengraph?.image ? [app.opengraph.image] : []),

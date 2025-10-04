@@ -74,7 +74,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     openGraph: {
       title,
       description,
-      url: `/check-if/${slug}`,
+      url: `/not-swadeshi-apps/${slug}`,
       type: "article"
     },
     twitter: {
@@ -83,7 +83,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
       description
     },
     alternates: {
-      canonical: `/check-if/${slug}`
+      canonical: `/not-swadeshi-apps/${slug}`
     },
     robots: {
       index: true,
