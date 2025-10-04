@@ -73,7 +73,8 @@ export const DEFAULT_OG = {
 export const NAV_LINKS = [
   { href: "/", label: "Home" },
   { href: "/about", label: "Add App" },
-  { href: "/why-swadeshi", label: "Why Swadeshi?" }
+  { href: "/why-swadeshi", label: "Why Swadeshi?" },
+  { href: "/not-swadeshi-apps", label: "Not Swadeshi" }
 ] as const
 
 // Footer links
@@ -82,6 +83,7 @@ export const FOOTER_LINKS = {
     { href: "/", label: "Home" },
     { href: "/about", label: "Add App" },
     { href: "/why-swadeshi", label: "Why Swadeshi?" },
+    { href: "/not-swadeshi-apps", label: "Not Swadeshi" },
     { href: "/alternatives", label: "Alternatives" }
   ],
   categories: [

@@ -793,6 +793,14 @@
       "searchTerms": "aasaan lightbooks technologies e commerce shopify bigcommerce woocommerce headless commerce platform using ai to build storefronts without coding"
     },
     {
+      "id": "e-commerce/craftsvilla",
+      "name": "Craftsvilla",
+      "company": "Craftsvilla Handicrafts",
+      "category": "E-Commerce",
+      "slug": "craftsvilla",
+      "searchTerms": "craftsvilla craftsvilla handicrafts e commerce etsy amazon handmade jaypore ethnic e commerce marketplace specializing in indian handicrafts traditional wear and"
+    },
+    {
       "id": "e-commerce/dukaan",
       "name": "Dukaan",
       "company": "Dukaan",
@@ -801,20 +809,44 @@
       "searchTerms": "dukaan dukaan e commerce shopify woocommerce bigcommerce diy platform to create online stores and start selling online"
     },
     {
-      "id": "e-commerce/flipkart",
-      "name": "Flipkart",
-      "company": "Flipkart Private Limited",
-      "category": "E-commerce",
-      "slug": "flipkart",
-      "searchTerms": "flipkart flipkart private limited e commerce amazon ebay walmart e commerce platform and marketplace for online shopping"
+      "id": "e-commerce/indiamart",
+      "name": "IndiaMART",
+      "company": "IndiaMART InterMESH Limited",
+      "category": "E-Commerce",
+      "slug": "indiamart",
+      "searchTerms": "indiamart indiamart intermesh limited e commerce alibaba tradeindia exportersindia india s largest b2b marketplace connecting buyers and suppliers across manufacturing"
     },
     {
-      "id": "e-commerce/paytm-mall",
-      "name": "Paytm Mall",
-      "company": "Paytm E-Commerce Pvt Ltd",
-      "category": "E-commerce",
-      "slug": "paytm-mall",
-      "searchTerms": "paytm mall paytm e commerce pvt ltd e commerce amazon flipkart snapdeal e commerce marketplace for electronics fashion and consumer goods"
+      "id": "e-commerce/jiomart",
+      "name": "JioMart",
+      "company": "Reliance Industries",
+      "category": "E-Commerce",
+      "slug": "jiomart",
+      "searchTerms": "jiomart reliance industries e commerce amazon bigbasket flipkart online shopping platform offering groceries electronics fashion and home essentials"
+    },
+    {
+      "id": "e-commerce/meesho",
+      "name": "Meesho",
+      "company": "Meesho",
+      "category": "E-Commerce",
+      "slug": "meesho",
+      "searchTerms": "meesho meesho e commerce amazon seller etsy facebook marketplace social commerce platform empowering small sellers and homepreneurs to start"
+    },
+    {
+      "id": "e-commerce/nykaa",
+      "name": "Nykaa",
+      "company": "FSN E-Commerce Ventures",
+      "category": "E-Commerce",
+      "slug": "nykaa",
+      "searchTerms": "nykaa fsn e commerce ventures e commerce sephora ulta purplle india s leading beauty and wellness e commerce platform offering cosmetics skincare"
+    },
+    {
+      "id": "e-commerce/pepperfry",
+      "name": "Pepperfry",
+      "company": "Pepperfry",
+      "category": "E-Commerce",
+      "slug": "pepperfry",
+      "searchTerms": "pepperfry pepperfry e commerce wayfair ikea urban ladder india s largest online furniture and home products marketplace offering furniture"
     },
     {
       "id": "e-commerce/qikink",
@@ -833,12 +865,36 @@
       "searchTerms": "shiprocket shiprocket e commerce shipstation easyship shippo e commerce shipping and logistics platform for online sellers"
     },
     {
+      "id": "e-commerce/shopclues",
+      "name": "ShopClues",
+      "company": "Clues Network",
+      "category": "E-Commerce",
+      "slug": "shopclues",
+      "searchTerms": "shopclues clues network e commerce amazon ebay snapdeal online marketplace focused on value shopping unbranded goods and connecting"
+    },
+    {
+      "id": "e-commerce/snapdeal",
+      "name": "Snapdeal",
+      "company": "Snapdeal Limited",
+      "category": "E-Commerce",
+      "slug": "snapdeal",
+      "searchTerms": "snapdeal snapdeal limited e commerce amazon flipkart shopclues value focused e commerce marketplace offering a wide range of products across"
+    },
+    {
       "id": "e-commerce/storehippo",
       "name": "StoreHippo",
       "company": "StoreHippo",
       "category": "E-Commerce",
       "slug": "storehippo",
       "searchTerms": "storehippo storehippo e commerce shopify woocommerce magento ai powered ecommerce platform with 300 features for b2b and b2c"
+    },
+    {
+      "id": "e-commerce/tata-cliq",
+      "name": "Tata CLiQ",
+      "company": "Tata Group",
+      "category": "E-Commerce",
+      "slug": "tata-cliq",
+      "searchTerms": "tata cliq tata group e commerce amazon flipkart myntra premium online shopping platform offering electronics fashion and lifestyle products"
     },
     {
       "id": "e-commerce/typof",
@@ -985,20 +1041,12 @@
       "searchTerms": "chargebee chargebee inc finance stripe billing recurly zuora subscription billing and revenue management platform for saas businesses"
     },
     {
-      "id": "finance/paytm-business",
-      "name": "Paytm for Business",
-      "company": "One97 Communications",
+      "id": "finance/instamojo",
+      "name": "Instamojo",
+      "company": "Instamojo Technologies",
       "category": "Finance",
-      "slug": "paytm-business",
-      "searchTerms": "paytm for business one97 communications finance razorpay ccavenue instamojo payment solutions for merchants with qr codes and pos systems"
-    },
-    {
-      "id": "finance/paytm-wallet",
-      "name": "Paytm Wallet",
-      "company": "One97 Communications",
-      "category": "Finance",
-      "slug": "paytm-wallet",
-      "searchTerms": "paytm wallet one97 communications finance google pay phonepe paypal digital wallet for payments recharges and money transfers"
+      "slug": "instamojo",
+      "searchTerms": "instamojo instamojo technologies finance stripe paypal square payment and commerce platform designed for indian smes and startups"
     },
     {
       "id": "finance/profitbooks",
@@ -1185,6 +1233,14 @@
       "searchTerms": "sharechat mohalla tech pvt ltd social networking facebook instagram vernacular first social platform for regional language users across india"
     },
     {
+      "id": "travel/easemytrip",
+      "name": "EaseMyTrip",
+      "company": "Easy Trip Planners Limited",
+      "category": "Travel",
+      "slug": "easemytrip",
+      "searchTerms": "easemytrip easy trip planners limited travel makemytrip booking com expedia online travel booking platform for flights hotels buses trains and"
+    },
+    {
       "id": "utilities/epic-browser",
       "name": "Epic Browser",
       "company": "Hidden Reflex",
@@ -1234,7 +1290,7 @@
     }
   ],
   "meta": {
-    "totalEntries": 154,
+    "totalEntries": 161,
     "categories": [
       "business",
       "communication",
@@ -1247,9 +1303,10 @@
       "hosting",
       "productivity",
       "social-networking",
+      "travel",
       "utilities"
     ],
-    "generatedAt": "2025-10-04T07:17:12.832Z",
+    "generatedAt": "2025-10-04T09:37:59.044Z",
     "version": "1.0.0"
   }
 }
