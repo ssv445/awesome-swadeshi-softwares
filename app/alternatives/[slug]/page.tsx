@@ -86,8 +86,53 @@ export default async function AlternativePage({ params }: AlternativePageProps) 
 
         {/* Indian Alternatives Listing */}
         <div className="mb-8 md:mb-12">
-          <div className="grid gap-4 md:gap-6">
-            {alternative.indianAlternatives.map((indianAlt, index) => (
+          {alternative.indianAlternatives.length === 0 ? (
+            <Card className="border-2 border-orange-200 bg-gradient-to-br from-orange-50 to-white">
+              <CardContent className="p-8 md:p-12 text-center">
+                <div className="mb-6">
+                  <AshokaChakra className="h-16 w-16 md:h-20 md:w-20 text-orange-600 mx-auto opacity-50" />
+                </div>
+                <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">
+                  No Swadeshi Alternatives Found Yet
+                </h2>
+                <p className="text-base md:text-lg text-gray-700 mb-6 max-w-2xl mx-auto leading-relaxed">
+                  We don't currently have any <strong>Made in India</strong> alternatives listed for {alternative.internationalTool.name}.
+                  {alternative.internationalTool.name} is a foreign-owned company, and we're actively looking for Indian alternatives.
+                </p>
+                <div className="bg-white rounded-xl p-6 border-2 border-orange-300 mb-6">
+                  <h3 className="text-lg font-semibold text-gray-900 mb-3 flex items-center justify-center gap-2">
+                    <Flag className="h-5 w-5 text-orange-600" />
+                    Know a Swadeshi Alternative?
+                  </h3>
+                  <p className="text-gray-700 mb-4">
+                    If you know of an Indian-owned alternative to {alternative.internationalTool.name},
+                    please help us build this directory by suggesting it!
+                  </p>
+                  <div className="flex flex-col sm:flex-row gap-3 justify-center">
+                    <Button asChild size="lg" className="bg-orange-600 hover:bg-orange-700 text-white">
+                      <Link href="/about">
+                        <Flag className="mr-2 h-5 w-5" />
+                        Suggest an Alternative
+                      </Link>
+                    </Button>
+                    <Button asChild size="lg" variant="outline" className="border-2 border-green-600">
+                      <Link href="/">
+                        Browse All Swadeshi Apps
+                      </Link>
+                    </Button>
+                  </div>
+                </div>
+                <p className="text-sm text-gray-600">
+                  Learn more about{' '}
+                  <Link href={`/not-swadeshi-apps/${alternative.internationalTool.name.toLowerCase().replace(/\s+/g, '-')}`} className="text-blue-600 hover:underline font-medium">
+                    why {alternative.internationalTool.name} is not Swadeshi
+                  </Link>
+                </p>
+              </CardContent>
+            </Card>
+          ) : (
+            <div className="grid gap-4 md:gap-6">
+              {alternative.indianAlternatives.map((indianAlt, index) => (
               <Card key={index} className="group hover:shadow-xl transition-all duration-300 border-2 border-green-200 hover:border-green-400 bg-white">
                 <div className="p-4 md:p-6">
                   <div className="flex flex-col md:flex-row gap-4 md:gap-6">
@@ -147,23 +192,25 @@ export default async function AlternativePage({ params }: AlternativePageProps) 
                 </div>
               </Card>
             ))}
-          </div>
+            </div>
+          )}
         </div>
 
         {/* SEO Content - Below Listing */}
-        <div className="mt-8 md:mt-12 space-y-6 md:space-y-8">
-          {/* Why Choose Indian Alternative */}
-          <div className="bg-gradient-to-br from-orange-50 via-white to-green-50 rounded-xl p-6 md:p-8 border-2 border-green-200">
-            <h2 className="text-xl md:text-2xl font-bold text-gray-900 mb-4 flex items-center gap-2">
-              <Flag className="h-5 w-5 md:h-6 md:w-6 text-orange-600" />
-              Why Choose Indian Alternative to {alternative.internationalTool.name}?
-            </h2>
-            <div className="space-y-3 md:space-y-4">
-              <p className="text-sm md:text-base text-gray-700 leading-relaxed">
-                <strong>{alternative.indianAlternatives[0]?.name}</strong> is a <strong>Made in India</strong> {alternative.internationalTool.category.toLowerCase()} app
-                that serves as a powerful <strong>Indian alternative</strong> to {alternative.internationalTool.name}.
-                As a <strong>Swadeshi app</strong>, it supports India's Atmanirbhar Bharat initiative while delivering world-class features.
-              </p>
+        {alternative.indianAlternatives.length > 0 && (
+          <div className="mt-8 md:mt-12 space-y-6 md:space-y-8">
+            {/* Why Choose Indian Alternative */}
+            <div className="bg-gradient-to-br from-orange-50 via-white to-green-50 rounded-xl p-6 md:p-8 border-2 border-green-200">
+              <h2 className="text-xl md:text-2xl font-bold text-gray-900 mb-4 flex items-center gap-2">
+                <Flag className="h-5 w-5 md:h-6 md:w-6 text-orange-600" />
+                Why Choose Indian Alternative to {alternative.internationalTool.name}?
+              </h2>
+              <div className="space-y-3 md:space-y-4">
+                <p className="text-sm md:text-base text-gray-700 leading-relaxed">
+                  <strong>{alternative.indianAlternatives[0]?.name}</strong> is a <strong>Made in India</strong> {alternative.internationalTool.category.toLowerCase()} app
+                  that serves as a powerful <strong>Indian alternative</strong> to {alternative.internationalTool.name}.
+                  As a <strong>Swadeshi app</strong>, it supports India's Atmanirbhar Bharat initiative while delivering world-class features.
+                </p>
 
               <div className="grid md:grid-cols-3 gap-3 md:gap-4 mt-4">
                 <div className="bg-white rounded-lg p-4 border border-green-200">
@@ -243,7 +290,8 @@ export default async function AlternativePage({ params }: AlternativePageProps) 
               </ul>
             </div>
           </div>
-        </div>
+          </div>
+        )}
 
         {/* CTA Section */}
         <div className="text-center bg-gradient-to-br from-blue-50 to-green-50 rounded-xl p-6 md:p-8 border-2 border-blue-200 mt-8 md:mt-12">

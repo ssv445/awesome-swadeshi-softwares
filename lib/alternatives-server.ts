@@ -1,6 +1,7 @@
 import fs from 'fs'
 import path from 'path'
 import { Software } from './data'
+import acquiredCompaniesData from '@/data/acquired-companies.json'
 
 export interface AlternativeMapping {
   slug: string
@@ -187,6 +188,14 @@ export function generateAlternativesMapping(): AlternativeMapping[] {
         }
         alternativesMap.get(alternative)!.push(software)
       })
+    }
+  })
+
+  // Add acquired companies as alternatives with empty Indian alternatives
+  acquiredCompaniesData.companies.forEach(company => {
+    const companyName = company.name
+    if (!alternativesMap.has(companyName)) {
+      alternativesMap.set(companyName, [])
     }
   })
 

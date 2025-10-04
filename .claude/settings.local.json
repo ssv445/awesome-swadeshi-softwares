@@ -10,7 +10,8 @@
       "WebFetch(domain:*)",
       "Bash(pnpm validate:*)",
       "Bash(pnpm install:*)",
-      "Bash(pnpm scrape:opengraph:*)"
+      "Bash(pnpm scrape:opengraph:*)",
+      "Bash(lsof:*)"
     ],
     "deny": [
       "Bash(npm run build:*)"
