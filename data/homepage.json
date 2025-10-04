@@ -9,22 +9,24 @@
       "category": "communication",
       "slug": "arattai",
       "featured_reason": "Made in India instant messaging alternative integrated with Zoho ecosystem"
-    },
-    {
-      "category": "hosting",
-      "slug": "hostingraja",
-      "featured_reason": "India's No.1 web hosting provider with affordable plans"
-    },
-    {
-      "category": "productivity",
-      "slug": "zoho-mail",
-      "featured_reason": "Leading Indian email solution trusted by millions"
-    },
+    }, 
     {
       "category": "development",
       "slug": "mapmyindia-maps",
       "featured_reason": "India's most comprehensive mapping and location platform"
     },
+    {
+      "category": "e-commerce",
+      "slug": "jiomart",
+      "featured_reason": "Reliance's comprehensive online shopping platform for groceries and essentials"
+    },
+    
+    {
+      "category": "productivity",
+      "slug": "zoho-mail",
+      "featured_reason": "Leading Indian email solution trusted by millions"
+    },
+    
     {
       "category": "entertainment",
       "slug": "jiosaavn",
@@ -35,11 +37,7 @@
       "slug": "jioswitch",
       "featured_reason": "Smart file sharing and device connectivity solution"
     },
-    {
-      "category": "e-commerce",
-      "slug": "jiomart",
-      "featured_reason": "Reliance's comprehensive online shopping platform for groceries and essentials"
-    },
+   
     {
       "category": "e-commerce",
       "slug": "dukaan",
@@ -54,6 +52,11 @@
       "category": "creative",
       "slug": "dubverse",
       "featured_reason": "AI-powered video dubbing with emotion-preserving voices in multiple languages"
+    },
+    {
+      "category": "hosting",
+      "slug": "hostingraja",
+      "featured_reason": "India's No.1 web hosting provider with affordable plans"
     }
   ]
 }

@@ -210,23 +210,52 @@ export function getAllAppPaths(): { category: string; slug: string }[] {
   return paths
 }
 
-// Get related apps (same company or category) (server-side only)
+// Get related apps based on shared alternatives (server-side only)
 export function getRelatedApps(app: Software, limit: number): { sameCompany: Software[]; sameCategory: Software[] } {
   const allApps = getAllSoftware()
 
-  const sameCompany = allApps
-    .filter(otherApp =>
-      otherApp.company === app.company &&
-      otherApp.name !== app.name
-    )
+  // Calculate relevance score for each app
+  const scoredApps = allApps
+    .filter(otherApp => otherApp.name !== app.name)
+    .map(otherApp => {
+      let score = 0
+
+      // Same company = highest priority
+      if (otherApp.company === app.company) {
+        score += 100
+      }
+
+      // Shared alternatives = PRIMARY ranking factor
+      // If both apps are alternatives to the same international tool, they're highly related
+      const sharedAlternatives = app.alternatives.filter(alt =>
+        otherApp.alternatives.includes(alt)
+      ).length
+      score += sharedAlternatives * 50
+
+      // Same category bonus (if they share alternatives)
+      if (otherApp.category === app.category && sharedAlternatives > 0) {
+        score += 15
+      }
+
+      // Same category alone (lower priority)
+      if (otherApp.category === app.category && sharedAlternatives === 0) {
+        score += 5
+      }
+
+      return { app: otherApp, score }
+    })
+    .sort((a, b) => b.score - a.score)
+
+  // Separate same company apps
+  const sameCompany = scoredApps
+    .filter(({ app: otherApp }) => otherApp.company === app.company)
+    .map(({ app: otherApp }) => otherApp)
     .slice(0, Math.ceil(limit / 2))
 
-  const sameCategory = allApps
-    .filter(otherApp =>
-      otherApp.category === app.category &&
-      otherApp.name !== app.name &&
-      !sameCompany.some(companyApp => companyApp.name === otherApp.name)
-    )
+  // Get remaining apps (prioritizing shared alternatives, then same category)
+  const sameCategory = scoredApps
+    .filter(({ app: otherApp }) => !sameCompany.some(companyApp => companyApp.name === otherApp.name))
+    .map(({ app: otherApp }) => otherApp)
     .slice(0, limit - sameCompany.length)
 
   return { sameCompany, sameCategory }
