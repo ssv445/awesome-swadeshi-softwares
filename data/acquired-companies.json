@@ -65,22 +65,6 @@
       "impact": "Significant foreign investment diluted Indian ownership, though still considered Indian-controlled"
     },
     {
-      "name": "BigBasket",
-      "description": "Online grocery and food delivery platform",
-      "website": "https://www.bigbasket.com/",
-      "category": "E-Commerce",
-      "founded": "2011",
-      "founders": "Hari Menon, VS Sudhakar, Vipul Parekh, VS Ramesh, Abhinay Choudhari",
-      "originalLocation": "Bengaluru, Karnataka",
-      "acquisitionYear": "2021",
-      "acquiredBy": "Tata Group (Tata Digital)",
-      "acquirerCountry": "India",
-      "acquisitionAmount": "$1.2 billion",
-      "currentOwnership": "Tata Digital (majority stake)",
-      "whyNotSwadeshi": "Actually IS Swadeshi! Acquired by Indian conglomerate Tata Group, maintaining Indian ownership",
-      "impact": "Positive example of Indian company acquiring Indian startup, keeping it Swadeshi"
-    },
-    {
       "name": "Swiggy",
       "description": "Food delivery and quick commerce platform",
       "website": "https://www.swiggy.com/",
@@ -162,8 +146,8 @@
     }
   ],
   "meta": {
-    "totalCompanies": 10,
+    "totalCompanies": 9,
     "lastUpdated": "2025-10-04T00:00:00.000Z",
-    "note": "This list includes Indian-origin companies with significant foreign ownership or control. BigBasket is included as a positive example of maintaining Swadeshi status through Tata acquisition."
+    "note": "This list includes Indian-origin companies with significant foreign ownership or control."
   }
 }
