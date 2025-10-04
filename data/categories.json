@@ -119,11 +119,21 @@
       "keywords": ["hosting", "domains", "web hosting", "domain registration", "VPS", "cloud hosting"],
       "featured": false,
       "order": 12
+    },
+    {
+      "slug": "travel",
+      "name": "Travel",
+      "description": "Travel booking platforms and services for flights, hotels, and holiday packages",
+      "icon": "Plane",
+      "color": "#0891B2",
+      "keywords": ["travel", "flights", "hotels", "booking", "holidays", "tourism"],
+      "featured": false,
+      "order": 13
     }
   ],
   "meta": {
-    "totalCategories": 12,
-    "lastUpdated": "2025-10-02T09:00:00.000Z",
+    "totalCategories": 13,
+    "lastUpdated": "2025-10-04T00:00:00.000Z",
     "version": "1.0.0"
   }
 }

@@ -3,9 +3,23 @@
   "description": "Cloud telephony platform with voice, SMS, and video calling APIs",
   "website": "https://exotel.com/",
   "category": "Communication",
-  "alternatives": ["Twilio", "Plivo", "Vonage"],
+  "alternatives": [
+    "Twilio",
+    "Plivo",
+    "Vonage"
+  ],
   "pricing": "Paid",
   "company": "Exotel Techcom",
   "location": "Bangalore",
-  "faviconUrl": "https://exotel.com/favicon.ico"
+  "faviconUrl": "https://exotel.com/favicon.ico",
+  "opengraph": {
+    "last_updated": "2025-10-04T07:41:44.039Z",
+    "locale": "en_US",
+    "type": "website",
+    "title": "Transform Customer Experience and Engagement with AI | Exotel",
+    "description": "AI transformation partner for enterprises, driving increased revenue, reduced costs, and enhanced customer experience with Exotel solutions.",
+    "url": "https://exotel.com/",
+    "site_name": "Exotel",
+    "twitter_card": "summary_large_image"
+  }
 }

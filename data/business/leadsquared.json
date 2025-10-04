@@ -3,8 +3,38 @@
   "description": "Sales CRM and marketing automation platform for lead management",
   "website": "https://www.leadsquared.com/",
   "category": "Business",
-  "alternatives": ["HubSpot", "Salesforce", "Marketo"],
+  "alternatives": [
+    "HubSpot",
+    "Salesforce",
+    "Marketo"
+  ],
   "pricing": "Paid",
   "company": "LeadSquared",
-  "location": "Bangalore"
+  "location": "Bangalore",
+  "opengraph": {
+    "last_updated": "2025-10-04T07:41:41.555Z",
+    "locale": "en_US",
+    "type": "website",
+    "title": "AI-Powered CRM For Sales, Service & Marketing | LeadSquared",
+    "description": "Accelerate revenue growth with a powerful CRM software built for sales, marketing, service & field teams. Improve customer acquisition, retention, & efficiency.",
+    "url": "https://www.leadsquared.com/",
+    "site_name": "LeadSquared",
+    "updated_time": "2025-10-03T19:25:46+05:30",
+    "image": "https://www.leadsquared.com/wp-content/uploads/2025/04/LeadSquared-logo-1200x630-1.webp",
+    "image:secure_url": "https://www.leadsquared.com/wp-content/uploads/2025/04/LeadSquared-logo-1200x630-1.webp",
+    "image:width": "1200",
+    "image:height": "630",
+    "image:alt": "LeadSquared Logo",
+    "image:type": "image/webp",
+    "twitter_card": "summary_large_image",
+    "twitter_title": "AI-Powered CRM For Sales, Service & Marketing | LeadSquared",
+    "twitter_description": "Accelerate revenue growth with a powerful CRM software built for sales, marketing, service & field teams. Improve customer acquisition, retention, & efficiency.",
+    "twitter_site": "@LeadSquared",
+    "twitter_creator": "@LeadSquared",
+    "twitter_image": "https://www.leadsquared.com/wp-content/uploads/2025/04/LeadSquared-logo-1200x630-1.webp",
+    "twitter_label1": "Written by",
+    "twitter_data1": "Rupesh Singh",
+    "twitter_label2": "Time to read",
+    "twitter_data2": "86 minutes"
+  }
 }

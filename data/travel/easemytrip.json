@@ -1,0 +1,31 @@
+{
+  "name": "EaseMyTrip",
+  "description": "Online travel booking platform for flights, hotels, buses, trains, and holiday packages with zero convenience fee",
+  "website": "https://www.easemytrip.com/",
+  "category": "Travel",
+  "alternatives": [
+    "MakeMyTrip",
+    "Booking.com",
+    "Expedia",
+    "Skyscanner"
+  ],
+  "pricing": "Free",
+  "company": "Easy Trip Planners Limited",
+  "location": "New Delhi",
+  "opengraph": {
+    "last_updated": "2025-10-04T07:42:12.419Z",
+    "title": "EaseMyTrip.com - Book Flights, Hotels, Holidays, Bus & Train Tickets",
+    "url": "https://www.easemytrip.com",
+    "site_name": "EaseMyTrip",
+    "image": "https://images.emtcontent.com/offer-img/no-convience-12apr24-lp.webp",
+    "description": "Discover the best deals on flights, hotels, holiday packages, bus & train tickets.",
+    "type": "website",
+    "twitter_card": "summary",
+    "twitter_title": "EaseMyTrip.com - Book Flights, Hotels, Holidays, Bus & Train Tickets",
+    "twitter_url": "https://www.easemytrip.com",
+    "twitter_description": "Discover the best deals on flights, hotels, holiday packages, bus & train tickets. Exclusive offers to make travel dreams a reality at Easemytrip!",
+    "twitter_image": "https://images.emtcontent.com/bus-img/easemytrip-logo-144.png",
+    "twitter_creator": "@EaseMyTrip",
+    "twitter_site": "@EaseMyTrip"
+  }
+}
