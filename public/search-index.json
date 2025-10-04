@@ -25,54 +25,6 @@
       "searchTerms": "esign genie esign genie indian development business docusign adobe sign hellosign digital signature platform with document workflow and authentication"
     },
     {
-      "id": "business/freshcaller",
-      "name": "Freshcaller",
-      "company": "Freshworks Inc.",
-      "category": "Business",
-      "slug": "freshcaller",
-      "searchTerms": "freshcaller freshworks inc business ringcentral aircall 8x8 cloud based phone system for customer support and sales calls"
-    },
-    {
-      "id": "business/freshchat",
-      "name": "Freshchat",
-      "company": "Freshworks Inc.",
-      "category": "Business",
-      "slug": "freshchat",
-      "searchTerms": "freshchat freshworks inc business intercom drift livechat live chat and messaging software for customer engagement"
-    },
-    {
-      "id": "business/freshdesk",
-      "name": "Freshdesk",
-      "company": "Freshworks Inc.",
-      "category": "Business",
-      "slug": "freshdesk",
-      "searchTerms": "freshdesk freshworks inc business zendesk help scout intercom customer support software with ticketing knowledge base and automation"
-    },
-    {
-      "id": "business/freshmarketer",
-      "name": "Freshmarketer",
-      "company": "Freshworks Inc.",
-      "category": "Business",
-      "slug": "freshmarketer",
-      "searchTerms": "freshmarketer freshworks inc business hubspot marketing marketo pardot marketing automation platform for lead generation and nurturing"
-    },
-    {
-      "id": "business/freshsales",
-      "name": "Freshsales",
-      "company": "Freshworks Inc.",
-      "category": "Business",
-      "slug": "freshsales",
-      "searchTerms": "freshsales freshworks inc business salesforce sales cloud hubspot crm pipedrive crm software for sales teams with lead management and deal"
-    },
-    {
-      "id": "business/freshservice",
-      "name": "Freshservice",
-      "company": "Freshworks Inc.",
-      "category": "Business",
-      "slug": "freshservice",
-      "searchTerms": "freshservice freshworks inc business servicenow jira service management manageengine it service management platform for it support and operations"
-    },
-    {
       "id": "business/ginger-software",
       "name": "Ginger Software",
       "company": "Ginger Software (Indian operations)",
@@ -705,14 +657,6 @@
       "searchTerms": "mappls mapmyindia mapmyindia development google maps api mapbox here maps india focused mapping and location intelligence platform with apis"
     },
     {
-      "id": "development/postman",
-      "name": "Postman",
-      "company": "Postman Inc",
-      "category": "Development",
-      "slug": "postman",
-      "searchTerms": "postman postman inc development insomnia rest client paw api development platform for building testing and managing apis"
-    },
-    {
       "id": "development/sarvam-speech-api",
       "name": "Sarvam Speech API",
       "company": "Sarvam AI",
@@ -791,6 +735,14 @@
       "category": "E-Commerce",
       "slug": "aasaan",
       "searchTerms": "aasaan lightbooks technologies e commerce shopify bigcommerce woocommerce headless commerce platform using ai to build storefronts without coding"
+    },
+    {
+      "id": "e-commerce/bigbasket",
+      "name": "BigBasket",
+      "company": "Tata Digital",
+      "category": "E-Commerce",
+      "slug": "bigbasket",
+      "searchTerms": "bigbasket tata digital e commerce instacart amazon fresh walmart grocery india s largest online grocery and food delivery platform offering fresh"
     },
     {
       "id": "e-commerce/craftsvilla",
@@ -929,14 +881,6 @@
       "searchTerms": "pupilfirst pupilfirst pvt ltd education coursera canvas blackboard learning management system empowering digital transformation of indian classroom education"
     },
     {
-      "id": "education/unacademy",
-      "name": "Unacademy",
-      "company": "Unacademy Group",
-      "category": "Education",
-      "slug": "unacademy",
-      "searchTerms": "unacademy unacademy group education coursera udemy khan academy online learning platform for competitive exam preparation and skill development"
-    },
-    {
       "id": "education/zoho-learn",
       "name": "Zoho Learn",
       "company": "Zoho Corporation",
@@ -1033,14 +977,6 @@
       "searchTerms": "zee5 zee entertainment enterprises entertainment netflix amazon prime ott platform with strong focus on regional and vernacular content"
     },
     {
-      "id": "finance/chargebee",
-      "name": "Chargebee",
-      "company": "Chargebee Inc",
-      "category": "Finance",
-      "slug": "chargebee",
-      "searchTerms": "chargebee chargebee inc finance stripe billing recurly zuora subscription billing and revenue management platform for saas businesses"
-    },
-    {
       "id": "finance/instamojo",
       "name": "Instamojo",
       "company": "Instamojo Technologies",
@@ -1055,14 +991,6 @@
       "category": "Finance",
       "slug": "profitbooks",
       "searchTerms": "profitbooks profitbooks finance tally quickbooks xero free online accounting software for small businesses with invoicing inventory"
-    },
-    {
-      "id": "finance/razorpay-payment-gateway",
-      "name": "Razorpay Payment Gateway",
-      "company": "Razorpay Software Pvt Ltd",
-      "category": "Finance",
-      "slug": "razorpay-payment-gateway",
-      "searchTerms": "razorpay payment gateway razorpay software pvt ltd finance stripe paypal square online payment processing with upi cards wallets and bank transfers"
     },
     {
       "id": "finance/setu-pine-labs",
@@ -1290,7 +1218,7 @@
     }
   ],
   "meta": {
-    "totalEntries": 161,
+    "totalEntries": 152,
     "categories": [
       "business",
       "communication",
@@ -1306,7 +1234,7 @@
       "travel",
       "utilities"
     ],
-    "generatedAt": "2025-10-04T09:37:59.044Z",
+    "generatedAt": "2025-10-04T10:45:53.001Z",
     "version": "1.0.0"
   }
 }

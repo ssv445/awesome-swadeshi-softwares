@@ -133,12 +133,17 @@ export default function NotSwadeshiAppsPage() {
               } shadow-lg hover:shadow-xl transition-shadow`}
             >
               <CardHeader className="pb-3">
-                <CardTitle className="text-lg text-gray-900 flex items-center gap-2">
-                  {company.name}
-                  {company.name === "BigBasket" && (
-                    <Badge className="bg-green-600 text-white text-xs">Still Swadeshi!</Badge>
-                  )}
-                </CardTitle>
+                <Link
+                  href={`/check-if/${company.name.toLowerCase().replace(/\s+/g, '-')}`}
+                  className="hover:text-orange-600 transition-colors"
+                >
+                  <CardTitle className="text-lg text-gray-900 flex items-center gap-2">
+                    {company.name}
+                    {company.name === "BigBasket" && (
+                      <Badge className="bg-green-600 text-white text-xs">Still Swadeshi!</Badge>
+                    )}
+                  </CardTitle>
+                </Link>
               </CardHeader>
               <CardContent className="space-y-3">
                 <div>
@@ -161,14 +166,23 @@ export default function NotSwadeshiAppsPage() {
                   </p>
                 </div>
 
-                {/* Swadeshi Alternatives Link */}
-                <Button asChild variant="outline" size="sm" className="w-full border-green-500 text-green-700 hover:bg-green-50 text-xs h-8">
-                  <Link href={getAlternativeUrl(company.name)}>
-                    <Flag className="mr-1 h-3 w-3" />
-                    View Alternatives
-                    <ArrowRight className="ml-1 h-3 w-3" />
-                  </Link>
-                </Button>
+                {/* Action Buttons */}
+                <div className="space-y-2">
+                  <Button asChild variant="outline" size="sm" className="w-full border-blue-500 text-blue-700 hover:bg-blue-50 text-xs h-8">
+                    <Link href={`/check-if/${company.name.toLowerCase().replace(/\s+/g, '-')}`}>
+                      <Info className="mr-1 h-3 w-3" />
+                      Learn More
+                      <ArrowRight className="ml-1 h-3 w-3" />
+                    </Link>
+                  </Button>
+                  <Button asChild variant="outline" size="sm" className="w-full border-green-500 text-green-700 hover:bg-green-50 text-xs h-8">
+                    <Link href={getAlternativeUrl(company.name)}>
+                      <Flag className="mr-1 h-3 w-3" />
+                      View Alternatives
+                      <ArrowRight className="ml-1 h-3 w-3" />
+                    </Link>
+                  </Button>
+                </div>
               </CardContent>
             </Card>
           ))}

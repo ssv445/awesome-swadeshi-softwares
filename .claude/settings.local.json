@@ -7,7 +7,7 @@
       "Bash(pnpm dev:*)",
       "Bash(pnpm build:*)",
       "Bash(pnpm add:*)",
-      "WebFetch(domain:www.chatwoot.com)",
+      "WebFetch(domain:*)",
       "Bash(pnpm validate:*)",
       "Bash(pnpm install:*)",
       "Bash(pnpm scrape:opengraph:*)"
