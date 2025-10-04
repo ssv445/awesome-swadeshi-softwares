@@ -32,7 +32,7 @@ export function ProductCard({ software, index = 0 }: ProductCardProps) {
             <Favicon
               websiteUrl={software.website}
               name={software.name}
-              size={48}
+              size={256}
               className="h-12 max-w-24 object-contain"
               fallbackClassName="h-10 w-10 text-blue-600"
               customFaviconUrl={software.faviconUrl}

@@ -138,7 +138,7 @@ export default async function AppPage({ params }: AppPageProps) {
               <Favicon
                 websiteUrl={app.website}
                 name={app.name}
-                size={96}
+                size={256}
                 className="h-24 w-24 object-contain"
                 fallbackClassName="h-20 w-20 text-blue-600"
                 customFaviconUrl={app.faviconUrl}
