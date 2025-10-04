@@ -193,7 +193,7 @@ DESCRIPTION_PREVIEW_WORDS = 10
 ALTERNATIVES_LIMIT = 3
 
 // SEO (with env var support)
-SITE_NAME = process.env.NEXT_PUBLIC_SITE_NAME || "Awesome Swadeshi Apps"
+SITE_NAME = process.env.NEXT_PUBLIC_SITE_NAME || "Swadeshi Apps"
 SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://swadeshiapps.com/"
 ```
 
@@ -287,7 +287,7 @@ const nextConfig = {
 ### Environment Variables (.env.example)
 ```bash
 NEXT_PUBLIC_SITE_URL=https://swadeshiapps.com
-NEXT_PUBLIC_SITE_NAME=Awesome Swadeshi Apps
+NEXT_PUBLIC_SITE_NAME=Swadeshi Apps
 ```
 
 ### shadcn/ui Config (components.json)

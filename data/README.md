@@ -1,4 +1,4 @@
-# Contributing to Awesome Swadeshi Apps
+# Contributing to Swadeshi Apps
 
 ## How to Add Software
 

@@ -13,7 +13,7 @@ export const DESCRIPTION_PREVIEW_WORDS = 10
 export const ALTERNATIVES_LIMIT = 3
 
 // SEO
-export const SITE_NAME = process.env.NEXT_PUBLIC_SITE_NAME || "Awesome Swadeshi Apps"
+export const SITE_NAME = process.env.NEXT_PUBLIC_SITE_NAME || "Swadeshi Apps"
 export const SITE_DESCRIPTION = "Discover India's Leading Apps & Platforms. Join the Swadeshi movement by choosing Indian apps that compete globally."
 export const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://swadeshiapps.com/"
 export const SITE_AUTHOR = "Awesome Swadeshi Team"

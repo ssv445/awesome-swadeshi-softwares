@@ -40,7 +40,7 @@ export async function generateMetadata({ params }: AppPageProps) {
   const ogDescription = app.opengraph?.description || app.description
 
   return {
-    title: `${app.name} by ${app.company} - Indian ${app.category} App | Awesome Swadeshi Apps`,
+    title: `${app.name} by ${app.company} - Indian ${app.category} App | Swadeshi Apps`,
     description: ogDescription,
     keywords: `${app.name}, ${app.company}, Indian apps, ${app.alternatives.join(', ')} alternative, ${app.category}`,
     openGraph: {
@@ -48,7 +48,7 @@ export async function generateMetadata({ params }: AppPageProps) {
       description: ogDescription,
       images: app.opengraph?.image ? [app.opengraph.image] : [],
       type: 'website',
-      siteName: 'Awesome Swadeshi Apps',
+      siteName: 'Swadeshi Apps',
     },
     twitter: {
       card: app.opengraph?.twitter_card === 'summary_large_image' ? 'summary_large_image' : 'summary',

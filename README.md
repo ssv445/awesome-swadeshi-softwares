@@ -1,4 +1,4 @@
-# 🇮🇳 Awesome Swadeshi Apps
+# 🇮🇳 Swadeshi Apps
 
 A curated directory of Indian software alternatives to help you discover and adopt quality solutions built by Indian innovators. Support **Swadeshi** movement and **Atmanirbhar Bharat** through technology choices.
 

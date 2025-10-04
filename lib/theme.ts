@@ -1,5 +1,5 @@
 /**
- * Centralized theme configuration for Awesome Swadeshi Apps
+ * Centralized theme configuration for Swadeshi Apps
  * Defines consistent colors, spacing, typography, and other design tokens
  */
 
