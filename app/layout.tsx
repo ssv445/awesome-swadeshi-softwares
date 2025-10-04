@@ -7,6 +7,10 @@ import "./globals.css"
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://swadeshiapps.com/"),
+  icons: {
+    icon: "/logo.png",
+    apple: "/logo.png"
+  },
   title: {
     default: "Swadeshi Apps - Discover Made in India Alternatives",
     template: "%s | Swadeshi Apps"
