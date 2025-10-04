@@ -78,7 +78,6 @@ export default function ClientHomePage({ allSoftware, featuredProducts, categori
           <div className="max-w-4xl mx-auto space-y-4 sm:space-y-5 md:space-y-6">
             <SearchBox
               allSoftware={allSoftware}
-              placeholder="Search for Indian apps... (Type to see suggestions)"
               size="lg"
             />
 

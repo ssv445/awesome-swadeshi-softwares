@@ -1,11 +1,12 @@
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
-import { AlertTriangle, ExternalLink, Building, Users, DollarSign, Flag, ArrowLeft, Info } from "lucide-react"
+import { AlertTriangle, ExternalLink, Building, Users, DollarSign, Flag, ArrowLeft, Info, ArrowRight } from "lucide-react"
 import { AppShell } from "@/components/layout/AppShell"
 import { HeroSection } from "@/components/ui/HeroSection"
 import { InfoSection } from "@/components/ui/InfoSection"
 import { Breadcrumbs, generateBreadcrumbs } from "@/components/ui/Breadcrumbs"
+import { getAlternativeUrl } from "@/lib/data"
 import Link from "next/link"
 import type { Metadata } from "next"
 import acquiredCompaniesData from "@/data/acquired-companies.json"
@@ -215,6 +216,17 @@ export default function NotSwadeshiAppsPage() {
                       </p>
                     </div>
                   </div>
+                </div>
+
+                {/* Swadeshi Alternatives Link */}
+                <div className="mt-4 pt-4 border-t border-gray-200">
+                  <Button asChild variant="outline" size="sm" className="w-full border-green-500 text-green-700 hover:bg-green-50">
+                    <Link href={getAlternativeUrl(company.name)}>
+                      <Flag className="mr-2 h-4 w-4" />
+                      View Swadeshi Alternatives to {company.name}
+                      <ArrowRight className="ml-2 h-4 w-4" />
+                    </Link>
+                  </Button>
                 </div>
               </CardContent>
             </Card>

@@ -17,13 +17,15 @@ interface SearchBoxProps {
   placeholder?: string
   size?: "sm" | "md" | "lg"
   className?: string
+  showHelpText?: boolean
 }
 
 export function SearchBox({
   allSoftware,
-  placeholder = "Search for Indian apps...",
+  placeholder = "Type International/Indian app name or Purpose of app...",
   size = "lg",
-  className = ""
+  className = "",
+  showHelpText = true
 }: SearchBoxProps) {
   const [searchTerm, setSearchTerm] = useState("")
   const [searchResults, setSearchResults] = useState<Software[]>([])
@@ -154,10 +156,10 @@ export function SearchBox({
 
       {/* Search Dropdown */}
       {showDropdown && searchResults.length > 0 && (
-        <div className="absolute top-full left-0 right-0 mt-2 bg-white border-2 border-gray-300 rounded-xl sm:rounded-2xl shadow-2xl z-[100] max-h-80 overflow-y-auto">
+        <div className="absolute top-full left-0 right-0 mt-2 bg-white border-2 border-gray-300 rounded-xl sm:rounded-2xl shadow-2xl z-[100] max-h-96 overflow-y-auto">
           <div className="p-2">
             <p className="text-sm text-gray-600 px-4 py-2 font-medium">
-              {searchResults.length} apps found
+              {searchResults.length} Indian {searchResults.length === 1 ? 'app' : 'apps'} found
             </p>
             {searchResults.slice(0, SEARCH_MAX_RESULTS).map((app, index) => (
               <button
@@ -186,6 +188,33 @@ export function SearchBox({
               </button>
             ))}
           </div>
+        </div>
+      )}
+
+      {/* Help Text with Quick Search Suggestions */}
+      {showHelpText && !searchTerm && (
+        <div className="mt-3 sm:mt-4 text-center">
+          <p className="text-xs sm:text-sm text-gray-600 mb-2">
+            💡 Try searching: {[
+              { label: "Google Maps", type: "alternative" },
+              { label: "WhatsApp", type: "alternative" },
+              { label: "Stripe", type: "alternative" },
+              { label: "CRM", type: "use-case" },
+              { label: "messaging", type: "use-case" },
+              { label: "Mappls", type: "app" },
+              { label: "Arattai", type: "app" }
+            ].map((suggestion, index, arr) => (
+              <span key={suggestion.label}>
+                <button
+                  onClick={() => handleSearchInputChange(suggestion.label)}
+                  className="text-blue-600 hover:text-blue-800 hover:underline font-medium cursor-pointer"
+                >
+                  {suggestion.label}
+                </button>
+                {index < arr.length - 1 && <span className="text-gray-400">, </span>}
+              </span>
+            ))}
+          </p>
         </div>
       )}
     </div>
