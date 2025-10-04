@@ -1,0 +1,32 @@
+{
+  "name": "Instamojo",
+  "description": "Payment and commerce platform designed for Indian SMEs and startups to accept payments and build online stores",
+  "website": "https://www.instamojo.com/",
+  "category": "Finance",
+  "alternatives": [
+    "Stripe",
+    "PayPal",
+    "Square"
+  ],
+  "pricing": "Freemium",
+  "company": "Instamojo Technologies",
+  "location": "Bengaluru, Karnataka",
+  "opengraph": {
+    "last_updated": "2025-10-04T09:31:01.274Z",
+    "locale": "en_US",
+    "type": "website",
+    "title": "Instamojo - eCommerce Website Builder for D2C Businesses - Create a Free Website on Instamojo.",
+    "description": "Sell online easily and directly to consumers. Run your online business with integrated payment gateway, shipping, analytics & more. Powering 20,00,000+ Indian businesses with powerful eCommerce features.",
+    "url": "https://www.instamojo.com/",
+    "site_name": "Instamojo",
+    "image": "https://www.instamojo.com/wp-content/uploads/2021/04/home-page.jpg",
+    "image:width": "1000",
+    "image:height": "500",
+    "image:type": "image/jpeg",
+    "twitter_card": "summary_large_image",
+    "twitter_image": "https://www.instamojo.com/wp-content/uploads/2021/04/home-page.jpg",
+    "twitter_site": "@instamojo",
+    "twitter_label1": "Est. reading time",
+    "twitter_data1": "23 minutes"
+  }
+}

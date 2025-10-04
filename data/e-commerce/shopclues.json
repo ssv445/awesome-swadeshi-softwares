@@ -1,0 +1,29 @@
+{
+  "name": "ShopClues",
+  "description": "Online marketplace focused on value shopping, unbranded goods, and connecting small sellers with buyers across India",
+  "website": "https://www.shopclues.com/",
+  "category": "E-Commerce",
+  "alternatives": [
+    "Amazon",
+    "eBay",
+    "Snapdeal"
+  ],
+  "pricing": "Free",
+  "company": "Clues Network",
+  "location": "Gurugram, Haryana",
+  "opengraph": {
+    "last_updated": "2025-10-04T09:30:49.214Z",
+    "url": "https://www.shopclues.com",
+    "site_name": "shopclues.com",
+    "description": "Online shopping site in India - Buy mobiles, electronics, laptops, home appliances, fashion, shoes, home & kitchen products at the lowest prices from Shopclues.com. Easy Return & Replacement Policy!",
+    "title": "Online Shopping Site India - Shop Online for Mobiles, Electronics, Clothing & More at ShopClues",
+    "twitter_card": "app",
+    "twitter_app:country": "IN",
+    "twitter_app:name:iphone": "Shopclues",
+    "twitter_app:id:iphone": "994486085",
+    "twitter_app:name:googleplay": "Shopclues",
+    "twitter_app:id:googleplay": "com.shopclues.main",
+    "twitter_app:url:iphone": "shopclues://m.shopclues.com",
+    "twitter_app:url:googleplay": "shopclues://m.shopclues.com"
+  }
+}

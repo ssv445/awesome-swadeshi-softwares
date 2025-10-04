@@ -1,0 +1,29 @@
+{
+  "name": "Tata CLiQ",
+  "description": "Premium online shopping platform offering electronics, fashion, and lifestyle products backed by the Tata Group",
+  "website": "https://www.tatacliq.com/",
+  "category": "E-Commerce",
+  "alternatives": [
+    "Amazon",
+    "Flipkart",
+    "Myntra"
+  ],
+  "pricing": "Free",
+  "company": "Tata Group",
+  "location": "Mumbai, Maharashtra",
+  "opengraph": {
+    "last_updated": "2025-10-04T09:30:55.799Z",
+    "site_name": "Tata CLiQ",
+    "type": "website",
+    "url": "https://www.tatacliq.com/",
+    "image": "/images/icons/icon-512x512.png",
+    "image:alt": "Tata CLiQ",
+    "title": "Online Fashion & Lifestyle Shopping for Women, Men & Kids in India - Tata CLiQ",
+    "description": "Shop from a wide range of fashion & lifestyle products from top brands at the best prices only on Tata CLiQ. Buy Footwear, Apparel, Accessories, Jewellery, Smart Wearables, Headphones & more now. Shop now!",
+    "twitter_card": "Website",
+    "twitter_site": "@tatacliq",
+    "twitter_title": "Online Fashion & Lifestyle Shopping for Women, Men & Kids in India - Tata CLiQ",
+    "twitter_description": "Shop from a wide range of fashion & lifestyle products from top brands at the best prices only on Tata CLiQ. Buy Footwear, Apparel, Accessories, Jewellery, Smart Wearables, Headphones & more now. Shop now!",
+    "twitter_image:src": "/images/icons/icon-512x512.png"
+  }
+}

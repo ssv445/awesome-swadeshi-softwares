@@ -1,0 +1,23 @@
+{
+  "name": "Pepperfry",
+  "description": "India's largest online furniture and home products marketplace offering furniture, decor, and home improvement solutions",
+  "website": "https://www.pepperfry.com/",
+  "category": "E-Commerce",
+  "alternatives": [
+    "Wayfair",
+    "IKEA",
+    "Urban Ladder"
+  ],
+  "pricing": "Free",
+  "company": "Pepperfry",
+  "location": "Mumbai, Maharashtra",
+  "opengraph": {
+    "last_updated": "2025-10-04T09:30:46.918Z",
+    "twitter_card": "summary",
+    "twitter_site": "@Pepperfry",
+    "twitter_url": "https://www.pepperfry.com/",
+    "twitter_title": "Buy Furniture & Home Decor Online – Up to 60% Off at Best Prices in India | Pepperfry",
+    "twitter_description": "Buy Wooden Furniture & Home Décor from 1,00,000+ options at India’s largest online furniture store. Perfect for every home, office, and outdoor setting. ✔ Easy EMI ✔ Free Shipping ✔ Easy Returns",
+    "twitter_image": "https://ii1.pepperfry.com/assets/w22-pf-logo.svg"
+  }
+}

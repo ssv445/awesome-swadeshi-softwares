@@ -1,0 +1,24 @@
+{
+  "name": "Nykaa",
+  "description": "India's leading beauty and wellness e-commerce platform offering cosmetics, skincare, haircare, and personal care products",
+  "website": "https://www.nykaa.com/",
+  "category": "E-Commerce",
+  "alternatives": [
+    "Sephora",
+    "Ulta",
+    "Purplle"
+  ],
+  "pricing": "Free",
+  "company": "FSN E-Commerce Ventures",
+  "location": "Mumbai, Maharashtra",
+  "opengraph": {
+    "last_updated": "2025-10-04T09:30:44.675Z",
+    "title": "Buy Cosmetics Products & Beauty Products Online in India at Best Price | Nykaa",
+    "type": "website",
+    "site_name": "Nykaa",
+    "url": "https://www.nykaa.com/",
+    "twitter_description": "Buy cosmetics & beauty products online from Nykaa, the online shopping beauty store. Browse makeup, health products & more from top beauty brands. ✔ free shipping* ✔ Cash on Delivery",
+    "twitter_title": "Buy Cosmetics Products & Beauty Products Online in India at Best Price | Nykaa",
+    "twitter_card": "summary_large_image"
+  }
+}

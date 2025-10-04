@@ -46,14 +46,9 @@
       "featured_reason": "Smart file sharing and device connectivity solution"
     },
     {
-      "category": "development",
-      "slug": "browserstack",
-      "featured_reason": "World's largest cross-browser testing platform"
-    },
-    {
-      "category": "development",
-      "slug": "postman",
-      "featured_reason": "World's most popular API development platform from India"
+      "category": "e-commerce",
+      "slug": "jiomart",
+      "featured_reason": "Reliance's comprehensive online shopping platform for groceries and essentials"
     },
     {
       "category": "e-commerce",

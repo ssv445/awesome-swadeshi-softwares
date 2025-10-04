@@ -9,7 +9,8 @@
       "Bash(pnpm add:*)",
       "WebFetch(domain:www.chatwoot.com)",
       "Bash(pnpm validate:*)",
-      "Bash(pnpm install:*)"
+      "Bash(pnpm install:*)",
+      "Bash(pnpm scrape:opengraph:*)"
     ],
     "deny": [
       "Bash(npm run build:*)"
