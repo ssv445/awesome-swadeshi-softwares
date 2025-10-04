@@ -6,7 +6,7 @@ import { AppShell } from "@/components/layout/AppShell"
 import { HeroSection } from "@/components/ui/HeroSection"
 import { InfoSection } from "@/components/ui/InfoSection"
 import { Breadcrumbs, generateBreadcrumbs } from "@/components/ui/Breadcrumbs"
-import { getAlternativeUrl } from "@/lib/data"
+import { getAlternativeUrl, getNotSwadeshiUrl } from "@/lib/data"
 import Link from "next/link"
 import type { Metadata } from "next"
 import acquiredCompaniesData from "@/data/acquired-companies.json"
@@ -134,7 +134,7 @@ export default function NotSwadeshiAppsPage() {
             >
               <CardHeader className="pb-3">
                 <Link
-                  href={`/not-swadeshi-apps/${company.name.toLowerCase().replace(/\s+/g, '-')}`}
+                  href={getNotSwadeshiUrl(company.name)}
                   className="hover:text-orange-600 transition-colors"
                 >
                   <CardTitle className="text-lg text-gray-900 flex items-center gap-2">
@@ -169,7 +169,7 @@ export default function NotSwadeshiAppsPage() {
                 {/* Action Buttons */}
                 <div className="space-y-2">
                   <Button asChild variant="outline" size="sm" className="w-full border-blue-500 text-blue-700 hover:bg-blue-50 text-xs h-8">
-                    <Link href={`/not-swadeshi-apps/${company.name.toLowerCase().replace(/\s+/g, '-')}`}>
+                    <Link href={getNotSwadeshiUrl(company.name)}>
                       <Info className="mr-1 h-3 w-3" />
                       Learn More
                       <ArrowRight className="ml-1 h-3 w-3" />

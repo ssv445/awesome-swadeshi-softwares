@@ -8,6 +8,7 @@ import Link from "next/link"
 import { notFound } from "next/navigation"
 import { getAlternativeBySlug, getAllAlternativeSlugs } from "@/lib/alternatives-server"
 import { Favicon } from "@/components/favicon"
+import { getAlternativeUrl, getNotSwadeshiUrl } from "@/lib/data"
 
 // Icon mapping
 const iconMap = {
@@ -124,7 +125,7 @@ export default async function AlternativePage({ params }: AlternativePageProps) 
                 </div>
                 <p className="text-sm text-gray-600">
                   Learn more about{' '}
-                  <Link href={`/not-swadeshi-apps/${alternative.internationalTool.name.toLowerCase().replace(/\s+/g, '-')}`} className="text-blue-600 hover:underline font-medium">
+                  <Link href={getNotSwadeshiUrl(alternative.internationalTool.name)} className="text-blue-600 hover:underline font-medium">
                     why {alternative.internationalTool.name} is not Swadeshi
                   </Link>
                 </p>
@@ -180,9 +181,11 @@ export default async function AlternativePage({ params }: AlternativePageProps) 
                       </p>
 
                       <div className="flex flex-wrap gap-2">
-                        <Badge variant="outline" className="text-xs border-blue-300 text-blue-700 bg-blue-50">
-                          Alternative to {alternative.internationalTool.name}
-                        </Badge>
+                        <Link href={getAlternativeUrl(alternative.internationalTool.name)}>
+                          <Badge variant="outline" className="text-xs border-blue-300 text-blue-700 bg-blue-50 hover:bg-blue-100 cursor-pointer transition-colors">
+                            Alternative to {alternative.internationalTool.name}
+                          </Badge>
+                        </Link>
                         <Badge variant="outline" className="text-xs border-gray-300 text-gray-600 bg-gray-50">
                           {indianAlt.location}
                         </Badge>

@@ -7,7 +7,7 @@ import { AppShell } from "@/components/layout/AppShell"
 import Link from "next/link"
 import { notFound } from "next/navigation"
 import { getAppBySlug, getAllAppPaths, getRelatedApps } from "@/lib/server-data"
-import { getCategoryDisplayName, getAppUrl } from "@/lib/data"
+import { getCategoryDisplayName, getAppUrl, getAlternativeUrl, getCategoryUrl } from "@/lib/data"
 import { Favicon } from "@/components/favicon"
 import { Breadcrumbs, generateBreadcrumbs } from "@/components/ui/Breadcrumbs"
 
@@ -219,7 +219,7 @@ export default async function AppPage({ params }: AppPageProps) {
               <div>
                 <dt className="text-sm font-medium text-gray-600">Category</dt>
                 <dd className="text-sm text-gray-900">
-                  <Link href={`/${category}`} className="text-blue-600 hover:underline">
+                  <Link href={getCategoryUrl(category)} className="text-blue-600 hover:underline">
                     {app.category}
                   </Link>
                 </dd>
@@ -262,9 +262,11 @@ export default async function AppPage({ params }: AppPageProps) {
               </p>
               <div className="flex flex-wrap gap-2">
                 {app.alternatives.map((alt, index) => (
-                  <Badge key={index} variant="outline" className="text-sm border-blue-300 text-blue-600 bg-blue-50">
-                    {alt}
-                  </Badge>
+                  <Link key={index} href={getAlternativeUrl(alt)}>
+                    <Badge variant="outline" className="text-sm border-blue-300 text-blue-600 bg-blue-50 hover:bg-blue-100 cursor-pointer transition-colors">
+                      {alt}
+                    </Badge>
+                  </Link>
                 ))}
               </div>
             </CardContent>
@@ -327,7 +329,7 @@ export default async function AppPage({ params }: AppPageProps) {
               </div>
               <div className="mt-6 text-center">
                 <Button asChild variant="outline">
-                  <Link href={`/${category}`}>
+                  <Link href={getCategoryUrl(category)}>
                     Browse All {categoryDisplayName} Apps
                   </Link>
                 </Button>

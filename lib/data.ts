@@ -55,6 +55,10 @@ export interface Software {
   featured_reason?: string // Optional featured reason (for homepage display)
 }
 
+// ===========================
+// Display Name Utilities
+// ===========================
+
 // Convert category slug to display name (client-safe utility)
 export function getCategoryDisplayName(slug: string): string {
   return slug
@@ -63,13 +67,38 @@ export function getCategoryDisplayName(slug: string): string {
     .join(' ')
 }
 
+// ===========================
+// URL Generation Functions
+// ===========================
+
+// Generate category page URL from category slug
+export function getCategoryUrl(categorySlug: string): string {
+  return `/${categorySlug.toLowerCase().replace(/\s+/g, '-')}`
+}
+
+// Generate app detail page URL from category and app name
+export function getAppUrl(category: string, name: string): string {
+  const categorySlug = category.toLowerCase().replace(/\s+/g, '-')
+  const nameSlug = name.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '')
+  return `/${categorySlug}/${nameSlug}`
+}
+
 // Generate alternative page URL from international tool name
 export function getAlternativeUrl(internationalTool: string): string {
   return `/alternatives/${internationalTool.toLowerCase().replace(/\s+/g, '-')}`
 }
 
+// Generate "not swadeshi apps" page URL from company/app name
+export function getNotSwadeshiUrl(companyOrAppName: string): string {
+  return `/not-swadeshi-apps/${companyOrAppName.toLowerCase().replace(/\s+/g, '-')}`
+}
+
+// ===========================
+// Favicon Utilities
+// ===========================
+
 // Generate favicon URL using Google's favicon API
-export function getFaviconUrl(websiteUrl: string, size: number = 32): string {
+export function getFaviconUrl(websiteUrl: string, size: number = 256): string {
   try {
     const url = new URL(websiteUrl)
     const domain = url.hostname.replace(/^www\./, '') // Remove www. prefix
@@ -78,11 +107,4 @@ export function getFaviconUrl(websiteUrl: string, size: number = 32): string {
     // If URL is invalid, return a default/fallback favicon
     return `https://www.google.com/s2/favicons?sz=${size}&domain=example.com`
   }
-}
-
-// Generate app URL from category and name
-export function getAppUrl(category: string, name: string): string {
-  const categorySlug = category.toLowerCase().replace(/\s+/g, '-')
-  const nameSlug = name.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '')
-  return `/${categorySlug}/${nameSlug}`
 }
