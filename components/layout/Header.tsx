@@ -21,7 +21,7 @@ export function Header({ variant = "default", className = "" }: HeaderProps) {
                 {SITE_NAME}
               </h1>
               <p className="text-xs sm:text-sm text-gray-600 font-medium hidden sm:block">
-                Indian Apps Directory • Atmanirbhar Bharat
+                India's Alternatives Apps
               </p>
             </div>
           </Link>

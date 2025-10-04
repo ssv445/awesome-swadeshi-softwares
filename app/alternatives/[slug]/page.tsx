@@ -39,10 +39,12 @@ export async function generateMetadata({ params }: AlternativePageProps) {
     }
   }
 
+  const mainApp = alternative.indianAlternatives[0]?.name || 'Indian Software'
+
   return {
-    title: `${alternative.internationalTool.name} Alternative - Indian Software | Awesome Swadeshi`,
-    description: `Discover ${alternative.indianAlternatives[0]?.name} - a powerful Indian alternative to ${alternative.internationalTool.name}. ${alternative.internationalTool.description}`,
-    keywords: `${alternative.internationalTool.name} alternative, Indian software, ${alternative.indianAlternatives[0]?.name}, Swadeshi, Atmanirbhar Bharat`,
+    title: `${mainApp} - ${alternative.internationalTool.name} Indian Alternative | Made in India`,
+    description: `${mainApp} is a powerful Indian alternative to ${alternative.internationalTool.name}. Made in India ${alternative.internationalTool.category.toLowerCase()} app with local support, data sovereignty, and better pricing.`,
+    keywords: `${alternative.internationalTool.name} Indian alternative, Made in India app, Swadeshi app, Indian ${alternative.internationalTool.category.toLowerCase()} software, ${mainApp}, Atmanirbhar Bharat`,
   }
 }
 
@@ -62,135 +64,206 @@ export default async function AlternativePage({ params }: AlternativePageProps) 
     <AppShell>
       <div className="relative min-h-screen">
 
-      <div className="container mx-auto px-4 py-16 max-w-6xl">
-        {/* Hero Section */}
-        <div className="text-center mb-16">
-          <div className="flex items-center justify-center mb-8">
-            <div>
-              <AshokaChakra className="h-20 w-20 text-blue-600" />
-            </div>
+      <div className="container mx-auto px-4 py-8 md:py-12 max-w-6xl">
+        {/* Hero Section - Mobile Optimized */}
+        <div className="text-center mb-8 md:mb-12">
+          <div className="flex items-center justify-center mb-4 md:mb-6">
+            <AshokaChakra className="h-12 w-12 md:h-16 md:w-16 text-blue-600" />
           </div>
-          <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-            Best Indian Alternatives to <span className="text-blue-600">{alternative.internationalTool.name}</span>
+          <h1 className="text-2xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-3 md:mb-4 px-2">
+            {alternative.internationalTool.name} <span className="text-blue-600">Indian Alternative</span>
           </h1>
-          <p className="text-xl text-gray-700 mb-4 font-medium">
-            {alternative.indianAlternatives.length} Indian {alternative.internationalTool.category} Solutions
+          <p className="text-sm md:text-base text-gray-600 max-w-2xl mx-auto px-4 mb-2">
+            {alternative.internationalTool.category} • {alternative.indianAlternatives[0]?.company}
           </p>
-          <p className="text-lg text-gray-600 mb-8 max-w-4xl mx-auto">
-            Discover powerful Indian software alternatives to {alternative.internationalTool.name} that offer competitive features,
-            local customer support, data sovereignty, and help build India's digital ecosystem.
-            These {alternative.internationalTool.category.toLowerCase()} tools are developed by Indian companies and designed
-            for global markets while understanding Indian business needs.
-          </p>
-          <div className="bg-blue-50 border border-blue-200 rounded-lg p-6 max-w-3xl mx-auto">
-            <p className="text-blue-800 font-medium">
-              Why choose Indian alternatives? Support <em>Atmanirbhar Bharat</em>, ensure data stays within India,
-              get customer support in your timezone, and often enjoy better pricing for the Indian market.
-            </p>
+          <div className="flex flex-wrap items-center justify-center gap-2">
+            <Badge variant="outline" className="text-xs border-gray-300 text-gray-600">
+              {alternative.indianAlternatives.length} Alternative{alternative.indianAlternatives.length > 1 ? 's' : ''}
+            </Badge>
           </div>
         </div>
 
 
-        {/* Indian Alternatives */}
-        <div className="mb-12">
-          <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">
-            {alternative.indianAlternatives.length} Indian Software Alternative{alternative.indianAlternatives.length > 1 ? 's' : ''} to {alternative.internationalTool.name}
-          </h2>
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        {/* Indian Alternatives Listing */}
+        <div className="mb-8 md:mb-12">
+          <div className="grid gap-4 md:gap-6">
             {alternative.indianAlternatives.map((indianAlt, index) => (
-              <Card key={index} className="group hover:shadow-lg transition-all duration-300 border border-green-200 hover:border-green-400 bg-white hover:scale-[1.02]">
-                <CardHeader className="pb-4">
-                  <div className="flex items-center justify-between mb-3">
-                    <div className="min-w-0 flex-1 pr-3">
-                      <CardTitle className="text-xl font-bold text-gray-900 truncate">
-                        {indianAlt.name}
-                      </CardTitle>
-                      <p className="text-sm text-gray-600 font-medium mt-1">by {indianAlt.company}</p>
-                    </div>
-                    <div className="flex-shrink-0">
+              <Card key={index} className="group hover:shadow-xl transition-all duration-300 border-2 border-green-200 hover:border-green-400 bg-white">
+                <div className="p-4 md:p-6">
+                  <div className="flex flex-col md:flex-row gap-4 md:gap-6">
+                    {/* Logo */}
+                    <div className="flex-shrink-0 flex items-center justify-center md:justify-start">
                       <Favicon
                         websiteUrl={indianAlt.website}
                         name={indianAlt.name}
-                        size={48}
-                        className="h-12 max-w-24 object-contain"
-                        fallbackClassName="h-10 w-10 text-blue-600"
+                        size={64}
+                        className="h-16 w-16 md:h-20 md:w-20 object-contain"
+                        fallbackClassName="h-16 w-16 md:h-20 md:w-20 text-blue-600"
                         customFaviconUrl={indianAlt.faviconUrl}
                         fixedHeight={true}
                       />
                     </div>
-                  </div>
-                </CardHeader>
-                <CardContent className="space-y-4">
-                  <p className="text-gray-700 leading-relaxed text-sm">{indianAlt.description}</p>
 
-                  <div className="space-y-3">
-                    <div>
-                      <p className="text-sm font-medium text-gray-600">Alternative to:</p>
-                    </div>
-                    <div className="flex flex-wrap gap-2">
-                      <Badge variant="outline" className="text-xs border-blue-300 text-blue-600 bg-blue-50">
-                        {alternative.internationalTool.name}
-                      </Badge>
-                    </div>
-                  </div>
+                    {/* Content */}
+                    <div className="flex-1 min-w-0">
+                      <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-3 mb-3">
+                        <div className="min-w-0 flex-1">
+                          <h3 className="text-xl md:text-2xl font-bold text-gray-900 mb-1">
+                            {indianAlt.name}
+                          </h3>
+                          <div className="flex flex-wrap items-center gap-2 mb-2">
+                            <p className="text-sm md:text-base text-gray-600 font-medium">
+                              by {indianAlt.company}
+                            </p>
+                            <Badge className="bg-green-100 text-green-800 border-green-300 text-xs">
+                              <Flag className="h-3 w-3 mr-1" />
+                              Made in India
+                            </Badge>
+                            <Badge variant="outline" className="text-xs">{indianAlt.pricing}</Badge>
+                          </div>
+                        </div>
+                        <Button asChild className="bg-blue-600 hover:bg-blue-700 text-white border-none w-full md:w-auto">
+                          <Link href={indianAlt.website} target="_blank" rel="noopener noreferrer">
+                            Visit Website
+                            <ExternalLink className="ml-2 h-4 w-4" />
+                          </Link>
+                        </Button>
+                      </div>
 
-                  <div className="flex justify-end pt-3 border-t border-gray-100">
-                    <Button asChild size="sm" className="bg-blue-600 hover:bg-blue-700 text-white border-none">
-                      <Link href={indianAlt.website} target="_blank" rel="noopener noreferrer">
-                        Visit Website
-                        <ExternalLink className="ml-2 h-4 w-4" />
-                      </Link>
-                    </Button>
+                      <p className="text-sm md:text-base text-gray-700 leading-relaxed mb-3">
+                        {indianAlt.description}
+                      </p>
+
+                      <div className="flex flex-wrap gap-2">
+                        <Badge variant="outline" className="text-xs border-blue-300 text-blue-700 bg-blue-50">
+                          Alternative to {alternative.internationalTool.name}
+                        </Badge>
+                        <Badge variant="outline" className="text-xs border-gray-300 text-gray-600 bg-gray-50">
+                          {indianAlt.location}
+                        </Badge>
+                      </div>
+                    </div>
                   </div>
-                </CardContent>
+                </div>
               </Card>
             ))}
           </div>
-          {/* SEO Content */}
-          <div className="mt-16 bg-gray-50 rounded-xl p-8">
-            <h3 className="text-2xl font-bold text-gray-900 mb-6">
-              About {alternative.internationalTool.name} Alternatives
+        </div>
+
+        {/* SEO Content - Below Listing */}
+        <div className="mt-8 md:mt-12 space-y-6 md:space-y-8">
+          {/* Why Choose Indian Alternative */}
+          <div className="bg-gradient-to-br from-orange-50 via-white to-green-50 rounded-xl p-6 md:p-8 border-2 border-green-200">
+            <h2 className="text-xl md:text-2xl font-bold text-gray-900 mb-4 flex items-center gap-2">
+              <Flag className="h-5 w-5 md:h-6 md:w-6 text-orange-600" />
+              Why Choose Indian Alternative to {alternative.internationalTool.name}?
+            </h2>
+            <div className="space-y-3 md:space-y-4">
+              <p className="text-sm md:text-base text-gray-700 leading-relaxed">
+                <strong>{alternative.indianAlternatives[0]?.name}</strong> is a <strong>Made in India</strong> {alternative.internationalTool.category.toLowerCase()} app
+                that serves as a powerful <strong>Indian alternative</strong> to {alternative.internationalTool.name}.
+                As a <strong>Swadeshi app</strong>, it supports India's Atmanirbhar Bharat initiative while delivering world-class features.
+              </p>
+
+              <div className="grid md:grid-cols-3 gap-3 md:gap-4 mt-4">
+                <div className="bg-white rounded-lg p-4 border border-green-200">
+                  <div className="flex items-start gap-3">
+                    <Shield className="h-5 w-5 text-green-600 flex-shrink-0 mt-0.5" />
+                    <div>
+                      <h4 className="font-semibold text-gray-900 text-sm mb-1">Data Sovereignty</h4>
+                      <p className="text-xs text-gray-600">Your data stays within India</p>
+                    </div>
+                  </div>
+                </div>
+                <div className="bg-white rounded-lg p-4 border border-green-200">
+                  <div className="flex items-start gap-3">
+                    <Users className="h-5 w-5 text-blue-600 flex-shrink-0 mt-0.5" />
+                    <div>
+                      <h4 className="font-semibold text-gray-900 text-sm mb-1">Local Support</h4>
+                      <p className="text-xs text-gray-600">Indian timezone assistance</p>
+                    </div>
+                  </div>
+                </div>
+                <div className="bg-white rounded-lg p-4 border border-green-200">
+                  <div className="flex items-start gap-3">
+                    <Star className="h-5 w-5 text-orange-600 flex-shrink-0 mt-0.5" />
+                    <div>
+                      <h4 className="font-semibold text-gray-900 text-sm mb-1">Better Pricing</h4>
+                      <p className="text-xs text-gray-600">Optimized for Indian market</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* About Section */}
+          <div className="bg-gray-50 rounded-xl p-6 md:p-8">
+            <h3 className="text-lg md:text-xl font-bold text-gray-900 mb-4">
+              About {alternative.internationalTool.name} Indian Alternative{alternative.indianAlternatives.length > 1 ? 's' : ''}
             </h3>
-            <div className="prose prose-gray max-w-none">
-              <p className="text-gray-700 leading-relaxed mb-4">
-                {alternative.internationalTool.name} is a popular {alternative.internationalTool.category.toLowerCase()} tool used by businesses worldwide.
-                However, many Indian companies are now choosing Indian alternatives that offer similar functionality while providing
-                additional benefits like data sovereignty, local customer support, and better understanding of the Indian market.
+            <div className="prose prose-sm md:prose-base prose-gray max-w-none space-y-3 md:space-y-4">
+              <p className="text-sm md:text-base text-gray-700 leading-relaxed">
+                {alternative.internationalTool.name} is a widely-used {alternative.internationalTool.category.toLowerCase()} platform globally.
+                However, Indian businesses and individuals are increasingly choosing <strong>Made in India apps</strong> like{' '}
+                {alternative.indianAlternatives.slice(0, 2).map(alt => alt.name).join(' and ')} as their preferred{' '}
+                <strong>Indian alternative</strong> to {alternative.internationalTool.name}.
               </p>
-              <p className="text-gray-700 leading-relaxed mb-4">
-                Our curated list features {alternative.indianAlternatives.length} verified Indian software solution{alternative.indianAlternatives.length > 1 ? 's' : ''}
-                that can effectively replace {alternative.internationalTool.name}. These alternatives are developed by Indian companies,
-                ensuring your data stays within India and supporting the Atmanirbhar Bharat initiative.
+
+              <p className="text-sm md:text-base text-gray-700 leading-relaxed">
+                These <strong>Swadeshi apps</strong> are developed by Indian companies—{alternative.indianAlternatives[0]?.company}
+                {alternative.indianAlternatives.length > 1 && `, ${alternative.indianAlternatives[1]?.company}`}—offering
+                competitive features while ensuring your data sovereignty, local customer support, and contributing to India's digital economy.
               </p>
-              <h4 className="text-lg font-semibold text-gray-900 mb-3">Key Benefits of Choosing Indian Alternatives:</h4>
-              <ul className="list-disc list-inside text-gray-700 space-y-2">
-                <li>Data sovereignty - Your business data remains within Indian borders</li>
-                <li>Local customer support in Indian time zones</li>
-                <li>Better pricing tailored for the Indian market</li>
-                <li>Cultural understanding of Indian business practices</li>
-                <li>Support for Indian languages and local requirements</li>
-                <li>Contributing to India's digital economy and job creation</li>
+
+              <h4 className="text-base md:text-lg font-semibold text-gray-900 mt-4 md:mt-6 mb-3">
+                Key Benefits of Choosing Indian App Alternatives:
+              </h4>
+              <ul className="space-y-2 text-sm md:text-base text-gray-700">
+                <li className="flex items-start gap-2">
+                  <Check className="h-4 w-4 md:h-5 md:w-5 text-green-600 flex-shrink-0 mt-0.5" />
+                  <span><strong>Made in India</strong>: Support Indian innovation and job creation</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <Check className="h-4 w-4 md:h-5 md:w-5 text-green-600 flex-shrink-0 mt-0.5" />
+                  <span><strong>Data Privacy</strong>: Your business data remains within Indian jurisdiction</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <Check className="h-4 w-4 md:h-5 md:w-5 text-green-600 flex-shrink-0 mt-0.5" />
+                  <span><strong>Local Support</strong>: Customer service in Indian time zones with cultural understanding</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <Check className="h-4 w-4 md:h-5 md:w-5 text-green-600 flex-shrink-0 mt-0.5" />
+                  <span><strong>Market Pricing</strong>: Competitive pricing optimized for Indian businesses</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <Check className="h-4 w-4 md:h-5 md:w-5 text-green-600 flex-shrink-0 mt-0.5" />
+                  <span><strong>Atmanirbhar Bharat</strong>: Contribute to India's self-reliant digital ecosystem</span>
+                </li>
               </ul>
             </div>
           </div>
         </div>
 
         {/* CTA Section */}
-        <div className="text-center bg-blue-50 rounded-xl p-8 border border-blue-200 mt-12">
-          <h2 className="text-2xl font-bold text-gray-900 mb-4">
-            Explore More Indian Software Alternatives
+        <div className="text-center bg-gradient-to-br from-blue-50 to-green-50 rounded-xl p-6 md:p-8 border-2 border-blue-200 mt-8 md:mt-12">
+          <div className="mb-4">
+            <AshokaChakra className="h-10 w-10 md:h-12 md:w-12 text-blue-600 mx-auto" />
+          </div>
+          <h2 className="text-xl md:text-2xl font-bold text-gray-900 mb-3 md:mb-4">
+            Explore More Swadeshi Apps
           </h2>
-          <p className="text-lg text-gray-700 mb-6 max-w-2xl mx-auto">
-            Discover 100+ Indian software alternatives across all categories and join the Swadeshi movement.
+          <p className="text-sm md:text-base text-gray-700 mb-4 md:mb-6 max-w-2xl mx-auto px-4">
+            Discover 100+ <strong>Made in India</strong> software alternatives and support the Swadeshi movement.
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+          <div className="flex flex-col sm:flex-row gap-3 md:gap-4 justify-center">
             <Button asChild size="lg" className="bg-blue-600 hover:bg-blue-700 text-white border-none">
               <Link href="/">
-                Browse All Software
-                <ArrowRight className="ml-2 h-5 w-5" />
+                Browse All Indian Apps
+                <ArrowRight className="ml-2 h-4 w-4 md:h-5 md:w-5" />
               </Link>
             </Button>
-            <Button asChild size="lg" variant="outline" className="border border-gray-300 text-gray-600 hover:bg-gray-50">
+            <Button asChild size="lg" variant="outline" className="border-2 border-green-600 text-green-700 hover:bg-green-50">
               <Link href="/alternatives">View All Alternatives</Link>
             </Button>
           </div>
