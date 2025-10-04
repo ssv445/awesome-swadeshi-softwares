@@ -1,13 +1,13 @@
 {
-  "name": "Krutrim Assistant",
+  "name": "Kruti AI",
   "description": "Multi-language AI assistant for task automation including booking rides, paying bills, and daily workflows",
   "website": "https://www.kruti.ai/",
   "category": "Productivity",
   "alternatives": [
-    "Google Assistant",
-    "Siri",
-    "Alexa",
-    "Cortana"
+    "ChatGPT",
+    "Google Gemini",
+    "Claude",
+    "Perplexity"
   ],
   "pricing": "Free",
   "company": "Ola Krutrim",

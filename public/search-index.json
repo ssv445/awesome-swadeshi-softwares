@@ -1090,11 +1090,11 @@
     },
     {
       "id": "productivity/krutrim-assistant",
-      "name": "Krutrim Assistant",
+      "name": "Kruti AI",
       "company": "Ola Krutrim",
       "category": "Productivity",
       "slug": "krutrim-assistant",
-      "searchTerms": "krutrim assistant ola krutrim productivity google assistant siri alexa multi language ai assistant for task automation including booking rides paying"
+      "searchTerms": "kruti ai ola krutrim productivity chatgpt google gemini claude multi language ai assistant for task automation including booking rides paying"
     },
     {
       "id": "productivity/zoho-calendar",
@@ -1249,7 +1249,7 @@
       "social-networking",
       "utilities"
     ],
-    "generatedAt": "2025-10-03T18:05:00.258Z",
+    "generatedAt": "2025-10-04T07:10:37.251Z",
     "version": "1.0.0"
   }
 }
