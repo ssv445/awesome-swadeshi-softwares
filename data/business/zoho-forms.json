@@ -11,6 +11,7 @@
   "pricing": "Freemium",
   "company": "Zoho Corporation",
   "location": "Chennai",
+  "faviconUrl": "https://www.zohowebstatic.com/sites/zweb/images/ogimage/forms-logo.png",
   "opengraph": {
     "last_updated": "2025-09-29T06:52:41.548Z",
     "title": "Form Builder | Create Free Online Forms - Zoho Forms",

@@ -13,6 +13,7 @@
   "pricing": "Freemium",
   "company": "Zoho Corporation",
   "location": "Chennai, Tamil Nadu",
+  "faviconUrl": "https://www.zohowebstatic.com/sites/zweb/images/ogimage/pagesense-logo.png",
   "opengraph": {
     "last_updated": "2025-10-03T11:05:15.223Z",
     "title": "Conversion Optimization and Personalization Platform | Zoho PageSense",

@@ -13,6 +13,7 @@
   "pricing": "Freemium",
   "company": "Zoho Corporation",
   "location": "Chennai, Tamil Nadu",
+  "faviconUrl": "https://www.zohowebstatic.com/sites/zweb/images/ogimage/vault-logo.png",
   "opengraph": {
     "last_updated": "2025-10-03T11:06:09.120Z",
     "title": "Zoho Vault: Password Manager with Single Sign-On & MFA for Businesses, Teams & Families",

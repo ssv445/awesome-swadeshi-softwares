@@ -11,6 +11,7 @@
   "pricing": "Freemium",
   "company": "Zoho Corporation",
   "location": "Chennai",
+  "faviconUrl": "http://www.zoho.com/inventory/images/inventory-icon-preview.png",
   "opengraph": {
     "last_updated": "2025-09-29T06:52:43.966Z",
     "image": "http://www.zoho.com/inventory/images/inventory-icon-preview.png",

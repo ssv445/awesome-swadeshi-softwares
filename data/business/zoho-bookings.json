@@ -13,6 +13,7 @@
   "pricing": "Freemium",
   "company": "Zoho Corporation",
   "location": "Chennai, Tamil Nadu",
+  "faviconUrl": "https://zohowebstatic.com/sites/zweb/images/bookings/home/zbs-bookings-og-image.jpg",
   "opengraph": {
     "last_updated": "2025-10-03T11:05:10.773Z",
     "title": "Free online appointment scheduling software - Zoho Bookings",

@@ -13,6 +13,7 @@
   "pricing": "Freemium",
   "company": "Zoho Corporation",
   "location": "Chennai, Tamil Nadu",
+  "faviconUrl": "https://www.zohowebstatic.com/sites/zweb/images/ogimage/bugtracker-logo.png",
   "opengraph": {
     "last_updated": "2025-10-03T11:05:43.240Z",
     "title": "Bug Tracking Software | Free Issue Tracker System - Zoho BugTracker",

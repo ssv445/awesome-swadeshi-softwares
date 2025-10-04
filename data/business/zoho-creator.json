@@ -11,6 +11,7 @@
   "pricing": "Freemium",
   "company": "Zoho Corporation",
   "location": "Chennai",
+  "faviconUrl": "https://www.zohowebstatic.com/sites/zweb/images/creator/og/creator-home-og.jpg",
   "opengraph": {
     "last_updated": "2025-09-29T06:52:34.528Z",
     "title": "Zoho Creator: AI-powered low-code platform",

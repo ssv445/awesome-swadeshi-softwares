@@ -10,6 +10,7 @@
   "pricing": "Free",
   "company": "Zoho Corporation",
   "location": "Chennai",
+  "faviconUrl": "https://www.zohowebstatic.com/sites/zweb/images/ogimage/calendar-logo.png",
   "opengraph": {
     "last_updated": "2025-09-29T06:56:09.421Z",
     "title": "A powerful online business calendar for teams | Zoho Calendar",

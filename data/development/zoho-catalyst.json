@@ -11,6 +11,7 @@
   "pricing": "Freemium",
   "company": "Zoho Corporation",
   "location": "Chennai",
+  "faviconUrl": "https://www.zohowebstatic.com/sites/zweb/images/ogimage/zoho-logo.png",
   "opengraph": {
     "last_updated": "2025-09-29T06:55:00.340Z",
     "title": "Cloud Computing Services | Catalyst by Zoho",

@@ -10,6 +10,7 @@
   "pricing": "Freemium",
   "company": "Zoho Corporation",
   "location": "Chennai",
+  "faviconUrl": "https://www.zohowebstatic.com/sites/zweb/images/ogimage/writer-logo.png",
   "opengraph": {
     "last_updated": "2025-09-29T06:56:25.097Z",
     "title": "Online Word Processor For Seamless Document Creation & Editing | Writer",

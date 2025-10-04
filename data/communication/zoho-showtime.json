@@ -13,6 +13,7 @@
   "pricing": "Freemium",
   "company": "Zoho Corporation",
   "location": "Chennai, Tamil Nadu",
+  "faviconUrl": "https://www.zohowebstatic.com/sites/zweb/images/ogimage/showtime-logo.png",
   "opengraph": {
     "last_updated": "2025-10-03T11:05:30.804Z",
     "title": "An online training platform | Zoho ShowTime",
