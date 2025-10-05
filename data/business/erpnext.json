@@ -1,5 +1,6 @@
 {
   "name": "ERPNext",
+  "slug": "erpnext",
   "description": "Open source cloud ERP software for modern businesses - comprehensive alternative to SAP and Oracle",
   "website": "https://frappe.io/erpnext",
   "category": "Business",

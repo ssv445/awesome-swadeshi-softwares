@@ -1,5 +1,6 @@
 {
   "name": "Userback",
+  "slug": "userback",
   "description": "User feedback and testing platform with screenshot annotations and bug tracking",
   "website": "https://www.userback.io/",
   "category": "Business",

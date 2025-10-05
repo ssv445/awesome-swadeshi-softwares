@@ -31,7 +31,8 @@ export function getAllSoftware(): SoftwareWithMeta[] {
           const filePath = path.join(categoryPath, file)
           const fileContent = fs.readFileSync(filePath, 'utf8')
           const softwareData = JSON.parse(fileContent)
-          const slug = file.replace('.json', '')
+          // Use explicit slug from JSON (with filename as fallback for backward compatibility)
+          const slug = softwareData.slug || file.replace('.json', '')
 
           software.push({
             ...softwareData,
@@ -69,7 +70,8 @@ export function getSoftwareByCategory(categorySlug: string): SoftwareWithMeta[] 
       const filePath = path.join(categoryPath, file)
       const fileContent = fs.readFileSync(filePath, 'utf8')
       const softwareData = JSON.parse(fileContent)
-      const slug = file.replace('.json', '')
+      // Use explicit slug from JSON (with filename as fallback for backward compatibility)
+      const slug = softwareData.slug || file.replace('.json', '')
 
       software.push({
         ...softwareData,
@@ -196,7 +198,11 @@ export function getAllAppPaths(): { category: string; slug: string }[] {
           .filter(file => file.endsWith('.json'))
 
         for (const file of files) {
-          const slug = file.replace('.json', '')
+          const filePath = path.join(categoryPath, file)
+          const fileContent = fs.readFileSync(filePath, 'utf8')
+          const softwareData = JSON.parse(fileContent)
+          // Use explicit slug from JSON (with filename as fallback)
+          const slug = softwareData.slug || file.replace('.json', '')
           paths.push({ category, slug })
         }
       } catch (error) {

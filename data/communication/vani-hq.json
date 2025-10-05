@@ -1,10 +1,25 @@
 {
   "name": "Vani HQ",
+  "slug": "vani-hq",
   "description": "Visual collaboration platform for teams to think together, work smarter, and deliver better with infinite canvas, video catchups, voice notes, and real-time collaborative tools",
   "website": "https://www.vanihq.com/",
   "category": "Communication",
-  "alternatives": ["Miro", "Mural", "FigJam", "Microsoft Whiteboard", "Slack Huddles"],
+  "alternatives": [
+    "Miro",
+    "Mural",
+    "FigJam",
+    "Microsoft Whiteboard",
+    "Slack Huddles"
+  ],
   "pricing": "Freemium",
   "company": "Zoho Corporation",
-  "location": "Chennai, Tamil Nadu"
+  "location": "Chennai, Tamil Nadu",
+  "opengraph": {
+    "last_updated": "2025-10-05T09:00:33.087Z",
+    "type": "image",
+    "image": "https://cdn.vanihq.com/sites/vanihq/files/vanihq/vi-vanihq-og-thumb.png",
+    "image:url": "https://cdn.vanihq.com/sites/vanihq/files/vanihq/vi-vanihq-og-thumb.png",
+    "image:secure_url": "https://cdn.vanihq.com/sites/vanihq/files/vanihq/vi-vanihq-og-thumb.png",
+    "image:type": "image/png"
+  }
 }

@@ -1,5 +1,6 @@
 {
   "name": "Zoho SalesIQ",
+  "slug": "zoho-salesiq",
   "description": "Live chat and visitor tracking software with AI-powered chatbots, lead scoring, real-time analytics, screen sharing, and mobile SDK for customer engagement and sales conversion",
   "website": "https://www.zoho.com/salesiq/",
   "category": "Business",

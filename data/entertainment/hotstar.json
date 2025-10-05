@@ -1,5 +1,6 @@
 {
-  "name": "JioHotstar",
+  "name": "Hotstar",
+  "slug": "hotstar",
   "description": "India's largest streaming platform combining Disney+ Hotstar and JioCinema content with movies, TV shows, sports, and originals",
   "website": "https://www.jiostar.com/",
   "category": "Entertainment",

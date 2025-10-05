@@ -1,5 +1,6 @@
 {
   "name": "Hoppscotch",
+  "slug": "hoppscotch",
   "description": "Open source API development ecosystem - beautiful, fast and lightweight alternative to Postman",
   "website": "https://hoppscotch.io/",
   "category": "Development",

@@ -1,5 +1,6 @@
 {
   "name": "Sarvam Samvaad",
+  "slug": "sarvam-samvaad",
   "description": "Conversational AI agents supporting 11 Indian languages across voice and text channels including WhatsApp and phone calls",
   "website": "https://www.sarvam.ai/",
   "category": "Communication",

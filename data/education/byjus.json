@@ -1,5 +1,6 @@
 {
   "name": "BYJU'S",
+  "slug": "byjus",
   "description": "Personalized learning app for students with interactive video lessons",
   "website": "https://byjus.com",
   "category": "Education",

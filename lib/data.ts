@@ -43,6 +43,8 @@ export interface CategoriesData {
 
 export interface Software {
   name: string
+  slug: string // Explicit URL slug (required for canonical URLs)
+  aliases?: string[] // Alternative slugs for redirects (optional)
   description: string
   website: string
   category: string

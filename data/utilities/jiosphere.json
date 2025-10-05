@@ -1,5 +1,6 @@
 {
   "name": "JioSphere",
+  "slug": "jiosphere",
   "description": "Web browser with built-in VPN and ad-blocker designed for the Indian market",
   "website": "https://www.jio.com/apps/jiosphere/",
   "category": "Utilities",

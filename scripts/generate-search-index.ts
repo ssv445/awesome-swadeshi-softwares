@@ -50,10 +50,17 @@ function createSearchTerms(software: Software): string {
 }
 
 /**
- * Convert filename to slug
+ * Convert filename to slug (fallback only)
  */
 function filenameToSlug(filename: string): string {
   return filename.replace('.json', '')
+}
+
+/**
+ * Get slug from software data (prefers explicit slug field)
+ */
+function getSlug(software: Software, filename: string): string {
+  return software.slug || filenameToSlug(filename)
 }
 
 /**
@@ -79,7 +86,8 @@ function getAllSoftwareData(): { software: Software; category: string; slug: str
           const filePath = path.join(categoryPath, file)
           const fileContent = fs.readFileSync(filePath, 'utf8')
           const software = JSON.parse(fileContent) as Software
-          const slug = filenameToSlug(file)
+          // Use explicit slug from JSON (with filename as fallback)
+          const slug = getSlug(software, file)
 
           allSoftware.push({ software, category, slug })
         }

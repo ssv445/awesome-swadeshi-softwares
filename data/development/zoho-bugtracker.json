@@ -1,5 +1,6 @@
 {
   "name": "Zoho BugTracker",
+  "slug": "zoho-bugtracker",
   "description": "Bug tracking and issue management software with customizable workflows, automated notifications, time tracking, and integrations for development teams to track and resolve issues efficiently",
   "website": "https://www.zoho.com/bugtracker/",
   "category": "Development",

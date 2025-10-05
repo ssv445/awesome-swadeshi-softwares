@@ -1,5 +1,6 @@
 {
   "name": "Zoho Sprints",
+  "slug": "zoho-sprints",
   "description": "Agile project management tool for Scrum teams with sprint planning, backlog management, burndown charts, daily standups, and team collaboration features for software development",
   "website": "https://www.zoho.com/sprints/",
   "category": "Development",

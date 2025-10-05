@@ -1,5 +1,6 @@
 {
   "name": "Zoho Flow",
+  "slug": "zoho-flow",
   "description": "Integration platform for connecting apps and automating workflows",
   "website": "https://www.zoho.com/flow/",
   "category": "Development",

@@ -1,5 +1,6 @@
 {
   "name": "Zoho ShowTime",
+  "slug": "zoho-showtime",
   "description": "Remote training and webinar platform with screen sharing, interactive presentations, live polling, Q&A sessions, session recording, and attendee analytics for virtual training and events",
   "website": "https://www.zoho.com/showtime/",
   "category": "Communication",

@@ -1,5 +1,6 @@
 {
   "name": "ProfitBooks",
+  "slug": "profitbooks",
   "description": "Free online accounting software for small businesses with invoicing, inventory management, GST compliance, expense tracking, and financial reporting without requiring accounting expertise",
   "website": "https://profitbooks.net/",
   "category": "Finance",

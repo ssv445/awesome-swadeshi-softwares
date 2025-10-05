@@ -1,5 +1,6 @@
 {
-  "name": "IndusOS",
+  "name": "Indus OS",
+  "slug": "indus-os",
   "description": "Indian mobile operating system with regional language support",
   "website": "https://www.indusos.com/",
   "category": "Development",

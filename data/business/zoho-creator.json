@@ -1,5 +1,6 @@
 {
   "name": "Zoho Creator",
+  "slug": "zoho-creator",
   "description": "Low-code application development platform for custom business apps",
   "website": "https://www.zoho.com/creator/",
   "category": "Business",

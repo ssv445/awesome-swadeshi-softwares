@@ -1,5 +1,6 @@
 {
   "name": "Zoho Assist",
+  "slug": "zoho-assist",
   "description": "Remote support and access software for IT teams with screen sharing, remote control, file transfer, and unattended access capabilities for desktops and mobile devices",
   "website": "https://www.zoho.com/assist/",
   "category": "Business",

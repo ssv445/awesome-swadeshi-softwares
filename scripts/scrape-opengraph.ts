@@ -32,8 +32,10 @@ interface CrawlTracker {
 }
 
 interface OpenGraphData {
-  [key: string]: string | undefined
+  [key: string]: string | string[] | undefined
   last_updated: string
+  app_store_url?: string
+  play_store_url?: string
 }
 
 // Configuration
@@ -267,6 +269,63 @@ async function fetchOpenGraphData(url: string): Promise<OpenGraphData> {
       }
     })
 
+    // Extract App Store and Play Store links
+    const appStoreLinks: string[] = []
+    const playStoreLinks: string[] = []
+
+    // Look for App Store links
+    $('a[href*="apps.apple.com"], a[href*="itunes.apple.com"]').each((_, element) => {
+      const href = $(element).attr('href')
+      if (href && !appStoreLinks.includes(href)) {
+        appStoreLinks.push(href.trim())
+      }
+    })
+
+    // Look for Play Store links
+    $('a[href*="play.google.com/store/apps"]').each((_, element) => {
+      const href = $(element).attr('href')
+      if (href && !playStoreLinks.includes(href)) {
+        playStoreLinks.push(href.trim())
+      }
+    })
+
+    // Also check meta tags for app store links
+    $('meta[name="apple-itunes-app"]').each((_, element) => {
+      const content = $(element).attr('content')
+      if (content) {
+        const appIdMatch = content.match(/app-id=(\d+)/)
+        if (appIdMatch) {
+          const appStoreUrl = `https://apps.apple.com/app/id${appIdMatch[1]}`
+          if (!appStoreLinks.includes(appStoreUrl)) {
+            appStoreLinks.push(appStoreUrl)
+          }
+        }
+      }
+    })
+
+    // Check for Google Play app deep link meta tags
+    $('meta[property="al:android:url"], meta[name="al:android:url"]').each((_, element) => {
+      const content = $(element).attr('content')
+      if (content) {
+        const packageMatch = content.match(/id=([a-zA-Z0-9._]+)/)
+        if (packageMatch) {
+          const playStoreUrl = `https://play.google.com/store/apps/details?id=${packageMatch[1]}`
+          if (!playStoreLinks.includes(playStoreUrl)) {
+            playStoreLinks.push(playStoreUrl)
+          }
+        }
+      }
+    })
+
+    // Add to openGraphData if found
+    if (appStoreLinks.length > 0) {
+      openGraphData.app_store_url = appStoreLinks.length === 1 ? appStoreLinks[0] : appStoreLinks.join(', ')
+    }
+
+    if (playStoreLinks.length > 0) {
+      openGraphData.play_store_url = playStoreLinks.length === 1 ? playStoreLinks[0] : playStoreLinks.join(', ')
+    }
+
     return openGraphData
   } catch (error) {
     clearTimeout(timeoutId)
@@ -315,7 +374,11 @@ async function processCrawlQueue(tracker: CrawlTracker): Promise<CrawlTracker> {
       item.error = undefined
       tracker.completed++
 
-      log(`${progress} ✓ ${item.file} - Found ${Object.keys(openGraphData).length - 1} OG tags`, 'success')
+      const ogTagCount = Object.keys(openGraphData).length - 1 // Exclude last_updated
+      const appStoreInfo = openGraphData.app_store_url ? ' + App Store' : ''
+      const playStoreInfo = openGraphData.play_store_url ? ' + Play Store' : ''
+
+      log(`${progress} ✓ ${item.file} - Found ${ogTagCount} OG tags${appStoreInfo}${playStoreInfo}`, 'success')
 
       // Save progress after each successful item
       saveTracker(tracker)

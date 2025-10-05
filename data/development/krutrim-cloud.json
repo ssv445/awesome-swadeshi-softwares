@@ -1,9 +1,15 @@
 {
   "name": "Krutrim Cloud",
+  "slug": "krutrim-cloud",
   "description": "High-performance GPU cloud services and AI computing platform for Indian enterprises",
   "website": "https://www.olakrutrim.com/cloud",
   "category": "Development",
-  "alternatives": ["AWS", "Google Cloud", "Microsoft Azure", "NVIDIA DGX Cloud"],
+  "alternatives": [
+    "AWS",
+    "Google Cloud",
+    "Microsoft Azure",
+    "NVIDIA DGX Cloud"
+  ],
   "pricing": "Paid",
   "company": "Ola Krutrim",
   "location": "Bengaluru, India"

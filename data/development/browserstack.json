@@ -1,5 +1,6 @@
 {
   "name": "BrowserStack",
+  "slug": "browserstack",
   "description": "Cross-browser testing platform for web and mobile applications",
   "website": "https://www.browserstack.com/",
   "category": "Development",

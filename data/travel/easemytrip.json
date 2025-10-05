@@ -1,5 +1,6 @@
 {
   "name": "EaseMyTrip",
+  "slug": "easemytrip",
   "description": "Online travel booking platform for flights, hotels, buses, trains, and holiday packages with zero convenience fee",
   "website": "https://www.easemytrip.com/",
   "category": "Travel",

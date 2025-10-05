@@ -1,5 +1,6 @@
 {
-  "name": "Celia (Powered by Haptik)",
+  "name": "Haptik",
+  "slug": "haptik",
   "description": "AI-powered virtual assistant for customer support and automation",
   "website": "https://haptik.ai/",
   "category": "Communication",

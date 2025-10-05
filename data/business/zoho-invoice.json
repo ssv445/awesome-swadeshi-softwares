@@ -1,5 +1,6 @@
 {
   "name": "Zoho Invoice",
+  "slug": "zoho-invoice",
   "description": "Free invoicing software for small businesses and freelancers",
   "website": "https://www.zoho.com/invoice/",
   "category": "Business",

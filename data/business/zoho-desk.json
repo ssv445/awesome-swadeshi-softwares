@@ -1,5 +1,6 @@
 {
   "name": "Zoho Desk",
+  "slug": "zoho-desk",
   "description": "Help desk software for customer support and ticketing",
   "website": "https://www.zoho.com/desk/",
   "category": "Business",

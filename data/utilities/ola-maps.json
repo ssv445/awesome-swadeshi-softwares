@@ -1,5 +1,6 @@
 {
   "name": "Ola Maps",
+  "slug": "ola-maps",
   "description": "Real-time navigation and mapping service with precise routing and location search for Indian roads",
   "website": "https://maps.olakrutrim.com/",
   "category": "Utilities",

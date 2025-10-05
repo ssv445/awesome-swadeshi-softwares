@@ -10,6 +10,8 @@ import path from 'path'
 
 interface Software {
   name: string
+  slug: string
+  aliases?: string[]
   description: string
   website: string
   category: string
@@ -22,6 +24,7 @@ interface Software {
 
 const REQUIRED_FIELDS: (keyof Software)[] = [
   'name',
+  'slug',
   'description',
   'website',
   'category',
@@ -110,6 +113,34 @@ function validateSoftware(filePath: string, data: any): void {
   // Validate company name
   if (data.company && data.company.length < 2) {
     errors.push({ file: fileName, field: 'company', error: 'Company name is too short' })
+  }
+
+  // Validate slug format
+  if (data.slug && typeof data.slug === 'string') {
+    const slugRegex = /^[a-z0-9]+(?:-[a-z0-9]+)*$/
+    if (!slugRegex.test(data.slug)) {
+      errors.push({ file: fileName, field: 'slug', error: 'Slug must be lowercase, alphanumeric, with hyphens only (e.g., "my-app-name")' })
+    }
+  }
+
+  // Validate aliases format
+  if (data.aliases) {
+    if (!Array.isArray(data.aliases)) {
+      errors.push({ file: fileName, field: 'aliases', error: 'Aliases must be an array' })
+    } else {
+      const slugRegex = /^[a-z0-9]+(?:-[a-z0-9]+)*$/
+      data.aliases.forEach((alias: any, index: number) => {
+        if (typeof alias !== 'string' || !slugRegex.test(alias)) {
+          errors.push({ file: fileName, field: `aliases[${index}]`, error: 'Each alias must be lowercase, alphanumeric, with hyphens only' })
+        }
+      })
+    }
+  }
+
+  // Check if slug matches filename (REQUIRED)
+  const expectedSlug = fileName.replace('.json', '')
+  if (data.slug && data.slug !== expectedSlug) {
+    errors.push({ file: fileName, field: 'slug', error: `Slug "${data.slug}" MUST match filename "${expectedSlug}". Rename the file to "${data.slug}.json" or update slug to "${expectedSlug}".` })
   }
 }
 

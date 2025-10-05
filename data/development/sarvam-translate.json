@@ -1,5 +1,6 @@
 {
   "name": "Sarvam Translate",
+  "slug": "sarvam-translate",
   "description": "Advanced translation service across 22 Indian languages with speech and text capabilities",
   "website": "https://www.sarvam.ai/",
   "category": "Development",

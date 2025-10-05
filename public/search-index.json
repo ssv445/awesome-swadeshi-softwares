@@ -50,11 +50,11 @@
     },
     {
       "id": "business/jio-cloud",
-      "name": "JioAICloud",
+      "name": "Jio Cloud",
       "company": "Jio Platforms",
       "category": "Business",
       "slug": "jio-cloud",
-      "searchTerms": "jioaicloud jio platforms business google drive dropbox onedrive ai powered cloud storage service for files photos and documents with"
+      "searchTerms": "jio cloud jio platforms business google drive dropbox onedrive ai powered cloud storage service for files photos and documents with"
     },
     {
       "id": "business/keka-hr",
@@ -90,11 +90,11 @@
     },
     {
       "id": "business/onlyoffice-india",
-      "name": "OnlyOffice (India Operations)",
+      "name": "OnlyOffice India",
       "company": "Ascensio System SIA (India Office)",
       "category": "Business",
       "slug": "onlyoffice-india",
-      "searchTerms": "onlyoffice india operations ascensio system sia india office business microsoft office google workspace libreoffice office suite with document editing collaboration and project management"
+      "searchTerms": "onlyoffice india ascensio system sia india office business microsoft office google workspace libreoffice office suite with document editing collaboration and project management"
     },
     {
       "id": "business/petpooja",
@@ -186,11 +186,11 @@
     },
     {
       "id": "business/webengage-engagement",
-      "name": "WebEngage Engage",
+      "name": "WebEngage Engagement",
       "company": "WebEngage",
       "category": "Business",
       "slug": "webengage-engagement",
-      "searchTerms": "webengage engage webengage business braze clevertap leanplum multi channel customer engagement platform with personalization"
+      "searchTerms": "webengage engagement webengage business braze clevertap leanplum multi channel customer engagement platform with personalization"
     },
     {
       "id": "business/whatfix",
@@ -426,11 +426,11 @@
     },
     {
       "id": "communication/haptik",
-      "name": "Celia (Powered by Haptik)",
+      "name": "Haptik",
       "company": "Haptik (Jio)",
       "category": "Communication",
       "slug": "haptik",
-      "searchTerms": "celia powered by haptik haptik jio communication amazon alexa google assistant siri ai powered virtual assistant for customer support and automation"
+      "searchTerms": "haptik haptik jio communication amazon alexa google assistant siri ai powered virtual assistant for customer support and automation"
     },
     {
       "id": "communication/hike-sticker-chat",
@@ -442,11 +442,11 @@
     },
     {
       "id": "communication/jio-meet",
-      "name": "JioMeet",
+      "name": "Jio Meet",
       "company": "Jio Platforms",
       "category": "Communication",
       "slug": "jio-meet",
-      "searchTerms": "jiomeet jio platforms communication google meet zoom microsoft teams video conferencing platform with hd video calls and screen sharing"
+      "searchTerms": "jio meet jio platforms communication google meet zoom microsoft teams video conferencing platform with hd video calls and screen sharing"
     },
     {
       "id": "communication/jiochat",
@@ -466,11 +466,11 @@
     },
     {
       "id": "communication/krutrim-contact-center",
-      "name": "Krutrim Contact Center AI",
+      "name": "Krutrim Contact Center",
       "company": "Ola Krutrim",
       "category": "Communication",
       "slug": "krutrim-contact-center",
-      "searchTerms": "krutrim contact center ai ola krutrim communication zendesk freshworks genesys automated customer support with multi language capabilities for indian enterprises"
+      "searchTerms": "krutrim contact center ola krutrim communication zendesk freshworks genesys automated customer support with multi language capabilities for indian enterprises"
     },
     {
       "id": "communication/msg91",
@@ -503,6 +503,14 @@
       "category": "Communication",
       "slug": "troop-messenger",
       "searchTerms": "troop messenger tvisha systems pvt ltd communication slack microsoft teams enterprise focused secure office communication platform for teams"
+    },
+    {
+      "id": "communication/vani-hq",
+      "name": "Vani HQ",
+      "company": "Zoho Corporation",
+      "category": "Communication",
+      "slug": "vani-hq",
+      "searchTerms": "vani hq zoho corporation communication miro mural figjam visual collaboration platform for teams to think together work smarter"
     },
     {
       "id": "communication/videomeet",
@@ -610,7 +618,7 @@
     },
     {
       "id": "development/gnani-ai",
-      "name": "Gnani.ai",
+      "name": "Gnani AI",
       "company": "Gnani.ai",
       "category": "Development",
       "slug": "gnani-ai",
@@ -626,11 +634,11 @@
     },
     {
       "id": "development/indus-os",
-      "name": "IndusOS",
+      "name": "Indus OS",
       "company": "IndusOS",
       "category": "Development",
       "slug": "indus-os",
-      "searchTerms": "indusos indusos development android ios harmonyos indian mobile operating system with regional language support"
+      "searchTerms": "indus os indusos development android ios harmonyos indian mobile operating system with regional language support"
     },
     {
       "id": "development/krutrim-ai-studio",
@@ -650,11 +658,11 @@
     },
     {
       "id": "development/mapmyindia-maps",
-      "name": "Mappls (MapmyIndia)",
+      "name": "MapMyIndia Maps",
       "company": "MapmyIndia",
       "category": "Development",
       "slug": "mapmyindia-maps",
-      "searchTerms": "mappls mapmyindia mapmyindia development google maps api mapbox here maps india focused mapping and location intelligence platform with apis"
+      "searchTerms": "mapmyindia maps mapmyindia development google maps api mapbox here maps india focused mapping and location intelligence platform with apis"
     },
     {
       "id": "development/sarvam-speech-api",
@@ -914,11 +922,11 @@
     },
     {
       "id": "entertainment/hotstar",
-      "name": "JioHotstar",
+      "name": "Hotstar",
       "company": "JioStar (Reliance-Disney JV)",
       "category": "Entertainment",
       "slug": "hotstar",
-      "searchTerms": "jiohotstar jiostar reliance disney jv entertainment netflix amazon prime video hulu india s largest streaming platform combining disney hotstar and jiocinema content"
+      "searchTerms": "hotstar jiostar reliance disney jv entertainment netflix amazon prime video hulu india s largest streaming platform combining disney hotstar and jiocinema content"
     },
     {
       "id": "entertainment/inshorts",
@@ -935,6 +943,14 @@
       "category": "Entertainment",
       "slug": "jiosaavn",
       "searchTerms": "jiosaavn jio platforms entertainment spotify apple music youtube music music streaming service with massive library of indian and international"
+    },
+    {
+      "id": "entertainment/josh",
+      "name": "Josh",
+      "company": "VerSe Innovation (Dailyhunt)",
+      "category": "Entertainment",
+      "slug": "josh",
+      "searchTerms": "josh verse innovation dailyhunt entertainment tiktok instagram reels youtube shorts india s leading short video app with support for 12 indian"
     },
     {
       "id": "entertainment/moj",
@@ -994,11 +1010,11 @@
     },
     {
       "id": "finance/setu-pine-labs",
-      "name": "Setu by Pine Labs",
+      "name": "Setu Pine Labs",
       "company": "Pine Labs",
       "category": "Finance",
       "slug": "setu-pine-labs",
-      "searchTerms": "setu by pine labs pine labs finance plaid stripe connect open banking apis api banking platform for digital payments and financial services"
+      "searchTerms": "setu pine labs pine labs finance plaid stripe connect open banking apis api banking platform for digital payments and financial services"
     },
     {
       "id": "finance/shelfpay",
@@ -1026,11 +1042,11 @@
     },
     {
       "id": "hosting/domainindia",
-      "name": "Domain Registration India",
+      "name": "DomainIndia",
       "company": "Domain Registration India Pvt Ltd",
       "category": "Hosting & Domains",
       "slug": "domainindia",
-      "searchTerms": "domain registration india domain registration india pvt ltd hosting domains godaddy namecheap domain com indian domain registrar and web hosting provider offering domain registration"
+      "searchTerms": "domainindia domain registration india pvt ltd hosting domains godaddy namecheap domain com indian domain registrar and web hosting provider offering domain registration"
     },
     {
       "id": "hosting/hostingraja",
@@ -1042,11 +1058,11 @@
     },
     {
       "id": "hosting/mitsu",
-      "name": "Mitsu.in",
+      "name": "Mitsu",
       "company": "Mitsu.in",
       "category": "Hosting & Domains",
       "slug": "mitsu",
-      "searchTerms": "mitsu in mitsu in hosting domains godaddy namecheap domain com indian domain registration service specializing in in and other indian"
+      "searchTerms": "mitsu mitsu in hosting domains godaddy namecheap domain com indian domain registration service specializing in in and other indian"
     },
     {
       "id": "hosting/w3infotech",
@@ -1066,11 +1082,19 @@
     },
     {
       "id": "productivity/krutrim-assistant",
-      "name": "Kruti AI",
+      "name": "Krutrim Assistant",
       "company": "Ola Krutrim",
       "category": "Productivity",
       "slug": "krutrim-assistant",
-      "searchTerms": "kruti ai ola krutrim productivity chatgpt google gemini claude multi language ai assistant for task automation including booking rides paying"
+      "searchTerms": "krutrim assistant ola krutrim productivity chatgpt google gemini claude multi language ai assistant for task automation including booking rides paying"
+    },
+    {
+      "id": "productivity/trinka",
+      "name": "Trinka",
+      "company": "Trinka",
+      "category": "Productivity",
+      "slug": "trinka",
+      "searchTerms": "trinka trinka productivity grammarly prowritingaid hemingway editor ai powered writing and grammar checker that helps polish your writing"
     },
     {
       "id": "productivity/zoho-calendar",
@@ -1218,7 +1242,7 @@
     }
   ],
   "meta": {
-    "totalEntries": 152,
+    "totalEntries": 155,
     "categories": [
       "business",
       "communication",
@@ -1234,7 +1258,7 @@
       "travel",
       "utilities"
     ],
-    "generatedAt": "2025-10-04T11:25:57.700Z",
+    "generatedAt": "2025-10-05T09:12:50.173Z",
     "version": "1.0.0"
   }
 }

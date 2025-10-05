@@ -1,10 +1,20 @@
 {
   "name": "Ginger Software",
+  "slug": "ginger-software",
   "description": "AI-powered writing assistant with grammar checking and language enhancement",
   "website": "https://www.gingersoftware.com/",
   "category": "Business",
-  "alternatives": ["Grammarly", "ProWritingAid", "Hemingway"],
+  "alternatives": [
+    "Grammarly",
+    "ProWritingAid",
+    "Hemingway"
+  ],
   "pricing": "Freemium",
   "company": "Ginger Software (Indian operations)",
-  "location": "Bangalore"
+  "location": "Bangalore",
+  "opengraph": {
+    "last_updated": "2025-10-05T09:00:23.720Z",
+    "app_store_url": "https://itunes.apple.com/app/apple-store/id822797943?pt=32204308&utm_source%3Dgingersoftware%26utm_medium%3D%26utm_campaign%3Dhp_dl_button",
+    "play_store_url": "https://play.google.com/store/apps/details?id=com.gingersoftware.writer&referrer=utm_source%3Dgingersoftware%26utm_medium%3D%26utm_campaign%3Dhp_dl_button"
+  }
 }

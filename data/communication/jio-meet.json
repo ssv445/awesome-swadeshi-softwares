@@ -1,9 +1,14 @@
 {
-  "name": "JioMeet",
+  "name": "Jio Meet",
+  "slug": "jio-meet",
   "description": "Video conferencing platform with HD video calls and screen sharing",
   "website": "https://jiomeetpro.jio.com/main",
   "category": "Communication",
-  "alternatives": ["Google Meet", "Zoom", "Microsoft Teams"],
+  "alternatives": [
+    "Google Meet",
+    "Zoom",
+    "Microsoft Teams"
+  ],
   "pricing": "Free",
   "company": "Jio Platforms",
   "location": "Mumbai"

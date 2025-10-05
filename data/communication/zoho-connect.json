@@ -1,5 +1,6 @@
 {
   "name": "Zoho Connect",
+  "slug": "zoho-connect",
   "description": "Team collaboration and social intranet platform with group discussions, knowledge base, file sharing, company announcements, employee directory, and activity streams for workplace communication",
   "website": "https://www.zoho.com/connect/",
   "category": "Communication",

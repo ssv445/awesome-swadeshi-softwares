@@ -1,5 +1,6 @@
 {
   "name": "Sarvam Speech API",
+  "slug": "sarvam-speech-api",
   "description": "Complete speech processing API suite with speech-to-text, text-to-speech, and speech translation for Indian languages",
   "website": "https://www.sarvam.ai/",
   "category": "Development",

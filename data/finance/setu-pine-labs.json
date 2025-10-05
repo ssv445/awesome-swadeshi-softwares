@@ -1,5 +1,6 @@
 {
-  "name": "Setu by Pine Labs",
+  "name": "Setu Pine Labs",
+  "slug": "setu-pine-labs",
   "description": "API banking platform for digital payments and financial services",
   "website": "https://setu.co/",
   "category": "Finance",

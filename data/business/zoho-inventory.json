@@ -1,5 +1,6 @@
 {
   "name": "Zoho Inventory",
+  "slug": "zoho-inventory",
   "description": "Inventory management software for order and warehouse management",
   "website": "https://www.zoho.com/inventory/",
   "category": "Business",

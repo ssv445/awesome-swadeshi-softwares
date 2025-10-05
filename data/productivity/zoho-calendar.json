@@ -1,5 +1,6 @@
 {
   "name": "Zoho Calendar",
+  "slug": "zoho-calendar",
   "description": "Online calendar application for scheduling and time management",
   "website": "https://www.zoho.com/calendar/",
   "category": "Productivity",

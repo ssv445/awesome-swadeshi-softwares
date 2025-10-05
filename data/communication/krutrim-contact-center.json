@@ -1,10 +1,21 @@
 {
-  "name": "Krutrim Contact Center AI",
+  "name": "Krutrim Contact Center",
+  "slug": "krutrim-contact-center",
   "description": "Automated customer support with multi-language capabilities for Indian enterprises",
   "website": "https://www.olakrutrim.com/",
   "category": "Communication",
-  "alternatives": ["Zendesk", "Freshworks", "Genesys", "Five9"],
+  "alternatives": [
+    "Zendesk",
+    "Freshworks",
+    "Genesys",
+    "Five9"
+  ],
   "pricing": "Paid",
   "company": "Ola Krutrim",
-  "location": "Bengaluru, India"
+  "location": "Bengaluru, India",
+  "opengraph": {
+    "last_updated": "2025-10-05T09:00:28.293Z",
+    "app_store_url": "https://apps.apple.com/in/app/krutrim/id6499513928",
+    "play_store_url": "https://play.google.com/store/apps/details?id=com.app.krutrim.prod&pcampaignid=web_share"
+  }
 }

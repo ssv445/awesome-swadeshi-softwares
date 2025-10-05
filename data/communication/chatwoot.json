@@ -1,5 +1,6 @@
 {
   "name": "Chatwoot",
+  "slug": "chatwoot",
   "description": "Open source customer engagement suite - alternative to Intercom and Zendesk",
   "website": "https://www.chatwoot.com/",
   "category": "Communication",
