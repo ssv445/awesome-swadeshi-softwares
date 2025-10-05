@@ -3,8 +3,26 @@
   "description": "AI-powered writing and grammar checker that helps polish your writing with intelligent editing and proofreading for clear, concise, and impactful communication",
   "website": "https://www.trinka.ai/",
   "category": "Productivity",
-  "alternatives": ["Grammarly", "ProWritingAid", "Hemingway Editor", "QuillBot"],
+  "alternatives": [
+    "Grammarly",
+    "ProWritingAid",
+    "Hemingway Editor",
+    "QuillBot"
+  ],
   "pricing": "Freemium",
   "company": "Trinka",
-  "location": "Mumbai, Maharashtra"
+  "location": "Mumbai, Maharashtra",
+  "opengraph": {
+    "last_updated": "2025-10-05T05:34:04.054Z",
+    "title": "Trinka: AI Writing and Grammar Checker Tool",
+    "description": "Improve your writing and grammar with AI writing assistant! Trinka polishes your writing with AI editing & proofreading for clear, concise, & impactful communication. Try for FREE!",
+    "url": "https://www.trinka.ai",
+    "image": "https://www.trinka.ai/assets/images/Trinka.jpg",
+    "type": "website",
+    "twitter_card": "summary_large_image",
+    "twitter_site": "@thetrinkaai",
+    "twitter_title": "Trinka: AI Writing and Grammar Checker Tool",
+    "twitter_description": "Improve your writing and grammar with AI writing assistant! Trinka polishes your writing with AI editing & proofreading for clear, concise, & impactful communication. Try for FREE!",
+    "twitter_image": "https://www.trinka.ai/assets/images/Trinka.jpg"
+  }
 }
