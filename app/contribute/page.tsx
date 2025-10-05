@@ -1,7 +1,6 @@
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Code, FileText, GitPullRequest, ExternalLink } from "lucide-react"
-import { AppShell } from "@/components/layout/AppShell"
 import { HeroSection } from "@/components/ui/HeroSection"
 import { Breadcrumbs, generateBreadcrumbs } from "@/components/ui/Breadcrumbs"
 import Link from "next/link"
@@ -55,7 +54,7 @@ export default function ContributePage() {
   })
 
   return (
-    <AppShell>
+    <>
       <div className="relative min-h-screen">
         {/* Breadcrumbs */}
         <div className="bg-gray-50 border-b border-gray-200">
@@ -168,6 +167,6 @@ export default function ContributePage() {
           </Card>
         </div>
       </div>
-    </AppShell>
+    </>
   )
 }

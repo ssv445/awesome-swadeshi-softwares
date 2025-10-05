@@ -1,7 +1,6 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Target, Users, Globe, Heart, Zap, Shield } from "lucide-react"
 import { AshokaChakra } from "@/components/ashoka-chakra"
-import { AppShell } from "@/components/layout/AppShell"
 import { HeroSection } from "@/components/ui/HeroSection"
 import { Breadcrumbs, generateBreadcrumbs } from "@/components/ui/Breadcrumbs"
 import type { Metadata } from "next"
@@ -53,7 +52,7 @@ export default function AboutPage() {
   })
 
   return (
-    <AppShell>
+    <>
       <div className="relative min-h-screen">
         {/* Breadcrumbs */}
         <div className="bg-gray-50 border-b border-gray-200">
@@ -211,6 +210,6 @@ export default function AboutPage() {
           </Card>
         </div>
       </div>
-    </AppShell>
+    </>
   )
 }

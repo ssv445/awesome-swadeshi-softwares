@@ -3,7 +3,6 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { ExternalLink, ArrowLeft, Calendar, MapPin, Building2, Tag, Globe, Users } from "lucide-react"
 import { AshokaChakra } from "@/components/ashoka-chakra"
-import { AppShell } from "@/components/layout/AppShell"
 import Link from "next/link"
 import { notFound, redirect } from "next/navigation"
 import { getAppBySlug, getAllAppPaths, getRelatedApps } from "@/lib/server-data"
@@ -123,7 +122,7 @@ export default async function AppPage({ params }: AppPageProps) {
   }
 
   return (
-    <AppShell>
+    <>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
@@ -366,6 +365,6 @@ export default async function AppPage({ params }: AppPageProps) {
         )}
       </div>
       </div>
-    </AppShell>
+    </>
   )
 }

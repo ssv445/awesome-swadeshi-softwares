@@ -3,7 +3,6 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Flag, ExternalLink, ArrowRight, Video, Palette, Target, Mail, Link as LinkIcon, Shield, Users, Star, MessageSquare, CheckCircle, Zap, Cloud, Globe } from "lucide-react"
 import { AshokaChakra } from "@/components/ashoka-chakra"
-import { AppShell } from "@/components/layout/AppShell"
 import { Breadcrumbs, generateBreadcrumbs } from "@/components/ui/Breadcrumbs"
 import Link from "next/link"
 import { getAllAlternatives } from "@/lib/alternatives-server"
@@ -65,7 +64,7 @@ export default function AlternativesIndexPage() {
   })
 
   return (
-    <AppShell>
+    <>
       <div className="relative min-h-screen">
         {/* Breadcrumbs */}
         <div className="bg-gray-50 border-b border-gray-200">
@@ -203,6 +202,6 @@ export default function AlternativesIndexPage() {
         </div>
       </div>
       </div>
-    </AppShell>
+    </>
   )
 }

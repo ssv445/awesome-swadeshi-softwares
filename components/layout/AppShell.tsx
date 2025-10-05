@@ -7,7 +7,7 @@ interface AppShellProps {
   headerVariant?: "default" | "minimal"
   footerVariant?: "default" | "minimal"
   className?: string
-  allSoftware?: Software[]
+  allSoftware?: Software[] // Optional: can be passed from layout
 }
 
 export function AppShell({

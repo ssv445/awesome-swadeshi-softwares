@@ -2,7 +2,6 @@ import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Flag, ExternalLink, Shield, TrendingUp, Users, Building, Star, Heart, Target, Globe, Zap, Crown } from "lucide-react"
 import { AshokaChakra } from "@/components/ashoka-chakra"
-import { AppShell } from "@/components/layout/AppShell"
 import { HeroSection } from "@/components/ui/HeroSection"
 import { FeatureCard } from "@/components/ui/FeatureCard"
 import { InfoSection } from "@/components/ui/InfoSection"
@@ -60,7 +59,7 @@ export default function WhySwadeshiPage() {
   })
 
   return (
-    <AppShell>
+    <>
       <div className="relative min-h-screen">
         {/* Breadcrumbs */}
         <div className="bg-gray-50 border-b border-gray-200">
@@ -272,6 +271,6 @@ export default function WhySwadeshiPage() {
         </div>
       </div>
       </div>
-    </AppShell>
+    </>
   )
 }

@@ -3,6 +3,8 @@ import type { Metadata } from "next"
 import { GeistSans } from "geist/font/sans"
 import { GeistMono } from "geist/font/mono"
 import { StructuredData, websiteStructuredData, organizationStructuredData } from "@/components/StructuredData"
+import { AppShell } from "@/components/layout/AppShell"
+import { getAllSoftware } from "@/lib/server-data"
 import "./globals.css"
 
 export const metadata: Metadata = {
@@ -80,6 +82,9 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode
 }>) {
+  // Load all software data once at the layout level
+  const allSoftware = getAllSoftware()
+
   return (
     <html lang="en">
       <head>
@@ -93,7 +98,11 @@ html {
         <StructuredData type="website" data={websiteStructuredData} />
         <StructuredData type="organization" data={organizationStructuredData} />
       </head>
-      <body>{children}</body>
+      <body>
+        <AppShell allSoftware={allSoftware}>
+          {children}
+        </AppShell>
+      </body>
     </html>
   )
 }

@@ -10,7 +10,6 @@ import { AshokaChakra } from "@/components/ashoka-chakra"
 import Link from "next/link"
 import { getCategoryDisplayName } from "@/lib/data"
 import { ProductCard } from "@/components/product-card"
-import { AppShell } from "@/components/layout/AppShell"
 import { Breadcrumbs, generateBreadcrumbs } from "@/components/ui/Breadcrumbs"
 import type { SoftwareWithMeta } from "@/lib/server-data"
 
@@ -75,7 +74,7 @@ export default function CategoryPage({ software, categoryName, categorySlug, all
   })
 
   return (
-    <AppShell>
+    <>
       {/* Breadcrumbs */}
       <div className="bg-gray-50 border-b border-gray-200">
         <div className="container mx-auto px-4 py-3">
@@ -183,6 +182,6 @@ export default function CategoryPage({ software, categoryName, categorySlug, all
           )}
         </div>
       </section>
-    </AppShell>
+    </>
   )
 }

@@ -1,5 +1,4 @@
 import { notFound } from "next/navigation"
-import { AppShell } from "@/components/layout/AppShell"
 import { HeroSection } from "@/components/ui/HeroSection"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
@@ -155,7 +154,7 @@ export default async function CompanyCheckPage({ params }: PageProps) {
   ]
 
   return (
-    <AppShell>
+    <>
       <div className="relative min-h-screen">
         {/* Breadcrumbs */}
         <div className="bg-gray-50 border-b border-gray-200">
@@ -285,6 +284,6 @@ export default async function CompanyCheckPage({ params }: PageProps) {
           </div>
         </div>
       </div>
-    </AppShell>
+    </>
   )
 }

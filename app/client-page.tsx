@@ -5,7 +5,6 @@ import Link from "next/link"
 import { getCategoryDisplayName } from "@/lib/data"
 import { ProductCard } from "@/components/product-card"
 import { SearchBox } from "@/components/ui/SearchBox"
-import { AppShell } from "@/components/layout/AppShell"
 import type { Software } from "@/lib/data"
 
 interface ClientHomePageProps {
@@ -25,8 +24,7 @@ export default function ClientHomePage({ allSoftware, featuredProducts, categori
 
 
   return (
-    <AppShell allSoftware={allSoftware}>
-
+    <>
       {/* Hero Section */}
       <section className="py-8 sm:py-12 md:py-16 lg:py-20 px-3 sm:px-4 relative z-40">
         {/* Subtle Decorative Elements - hidden on mobile */}
@@ -123,6 +121,6 @@ export default function ClientHomePage({ allSoftware, featuredProducts, categori
           )}
         </div>
       </section>
-    </AppShell>
+    </>
   )
 }

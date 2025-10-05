@@ -3,7 +3,6 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Flag, ExternalLink, ArrowRight, Check, Shield, Users, Star, Target, MessageSquare, CheckCircle, Video, Palette, Zap, Mail, Link as LinkIcon, Cloud, Globe, Crown } from "lucide-react"
 import { AshokaChakra } from "@/components/ashoka-chakra"
-import { AppShell } from "@/components/layout/AppShell"
 import Link from "next/link"
 import { notFound } from "next/navigation"
 import { getAlternativeBySlug, getAllAlternativeSlugs } from "@/lib/alternatives-server"
@@ -62,7 +61,7 @@ export default async function AlternativePage({ params }: AlternativePageProps) 
   const IconComponent = iconMap[alternative.internationalTool.icon as keyof typeof iconMap] || AshokaChakra
 
   return (
-    <AppShell>
+    <>
       <div className="relative min-h-screen">
 
       <div className="container mx-auto px-4 py-8 md:py-12 max-w-6xl">
@@ -321,6 +320,6 @@ export default async function AlternativePage({ params }: AlternativePageProps) 
         </div>
       </div>
       </div>
-    </AppShell>
+    </>
   )
 }

@@ -2,7 +2,6 @@ import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { AlertTriangle, ExternalLink, Building, Flag, Info, ArrowRight } from "lucide-react"
-import { AppShell } from "@/components/layout/AppShell"
 import { HeroSection } from "@/components/ui/HeroSection"
 import { InfoSection } from "@/components/ui/InfoSection"
 import { Breadcrumbs, generateBreadcrumbs } from "@/components/ui/Breadcrumbs"
@@ -69,7 +68,7 @@ export default function NotSwadeshiAppsPage() {
   const companies: AcquiredCompany[] = acquiredCompaniesData.companies
 
   return (
-    <AppShell>
+    <>
       <div className="relative min-h-screen">
         {/* Breadcrumbs */}
         <div className="bg-gray-50 border-b border-gray-200">
@@ -214,6 +213,6 @@ export default function NotSwadeshiAppsPage() {
         </div>
       </div>
       </div>
-    </AppShell>
+    </>
   )
 }
