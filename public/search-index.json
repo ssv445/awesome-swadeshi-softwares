@@ -658,11 +658,11 @@
     },
     {
       "id": "development/mapmyindia-maps",
-      "name": "MapMyIndia Maps",
+      "name": "mappls",
       "company": "MapmyIndia",
       "category": "Development",
       "slug": "mapmyindia-maps",
-      "searchTerms": "mapmyindia maps mapmyindia development google maps api mapbox here maps india focused mapping and location intelligence platform with apis"
+      "searchTerms": "mappls mapmyindia development google maps api mapbox here maps india focused mapping and location intelligence platform with apis"
     },
     {
       "id": "development/sarvam-speech-api",
@@ -1266,7 +1266,7 @@
       "travel",
       "utilities"
     ],
-    "generatedAt": "2025-10-05T10:20:33.293Z",
+    "generatedAt": "2025-10-05T10:29:17.379Z",
     "version": "1.0.0"
   }
 }
