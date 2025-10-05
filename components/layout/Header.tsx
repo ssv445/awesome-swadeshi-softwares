@@ -1,18 +1,23 @@
+"use client"
+
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { AshokaChakra } from "@/components/ashoka-chakra"
 import { SITE_NAME, NAV_LINKS } from "@/lib/constants"
+import { SearchBox } from "@/components/ui/SearchBox"
+import type { Software } from "@/lib/data"
 
 interface HeaderProps {
   variant?: "default" | "minimal"
   className?: string
+  allSoftware?: Software[]
 }
 
-export function Header({ variant = "default", className = "" }: HeaderProps) {
+export function Header({ variant = "default", className = "", allSoftware }: HeaderProps) {
   return (
     <header className={`border-b border-green-200 bg-white/95 backdrop-blur-sm sticky top-0 z-50 shadow-sm ${className}`}>
       <div className="container mx-auto px-3 sm:px-4 py-3 sm:py-4">
-        <div className="flex items-center justify-between gap-2">
+        <div className="flex items-center justify-between gap-4">
           {/* Logo and site name */}
           <Link href="/" className="flex items-center space-x-2 sm:space-x-3 hover:opacity-80 transition-opacity min-w-0 flex-shrink">
             <AshokaChakra className="h-8 w-8 sm:h-10 sm:w-10 text-blue-600 flex-shrink-0" />
@@ -26,14 +31,26 @@ export function Header({ variant = "default", className = "" }: HeaderProps) {
             </div>
           </Link>
 
-          {/* Navigation */}
+          {/* Compact Search Box - visible on all screens */}
+          {allSoftware && allSoftware.length > 0 && (
+            <div className="flex-1 max-w-xs md:max-w-md">
+              <SearchBox
+                allSoftware={allSoftware}
+                size="sm"
+                placeholder="Search apps..."
+                showHelpText={false}
+              />
+            </div>
+          )}
+
+          {/* Navigation - only on large screens */}
           {variant === "default" && (
-            <nav className="hidden md:flex items-center space-x-6">
+            <nav className="hidden lg:flex items-center space-x-6">
               {NAV_LINKS.map((link) => (
                 <Link
                   key={link.href}
                   href={link.href}
-                  className="text-gray-600 hover:text-gray-900 font-medium transition-colors"
+                  className="text-gray-600 hover:text-gray-900 font-medium transition-colors whitespace-nowrap"
                 >
                   {link.label}
                 </Link>

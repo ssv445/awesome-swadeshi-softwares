@@ -1,18 +1,21 @@
 import { Header } from "./Header"
 import { Footer } from "./Footer"
+import type { Software } from "@/lib/data"
 
 interface AppShellProps {
   children: React.ReactNode
   headerVariant?: "default" | "minimal"
   footerVariant?: "default" | "minimal"
   className?: string
+  allSoftware?: Software[]
 }
 
 export function AppShell({
   children,
   headerVariant = "default",
   footerVariant = "default",
-  className = ""
+  className = "",
+  allSoftware
 }: AppShellProps) {
   return (
     <div className={`min-h-screen flex flex-col bg-gradient-to-b from-orange-50 via-white to-green-50 ${className}`}>
@@ -24,7 +27,7 @@ export function AppShell({
       </div>
 
       {/* Header */}
-      <Header variant={headerVariant} />
+      <Header variant={headerVariant} allSoftware={allSoftware} />
 
       {/* Main Content */}
       <main className="flex-1 relative z-10">

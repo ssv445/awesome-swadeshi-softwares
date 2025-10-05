@@ -4,7 +4,6 @@ import { useState, useCallback, useRef, useEffect } from "react"
 import { useRouter } from "next/navigation"
 import { Input } from "@/components/ui/input"
 import { Badge } from "@/components/ui/badge"
-import { Search } from "lucide-react"
 import { getCategoryDisplayName, getAppUrl } from "@/lib/data"
 import { Favicon } from "@/components/favicon"
 import { searchApps } from "@/lib/search"
@@ -125,22 +124,15 @@ export function SearchBox({
     }
   }, [searchTerm, searchResults])
 
-  // Size variants - responsive for mobile
+  // Size variants - responsive for mobile (removed icon, so reduced left padding)
   const sizeClasses = {
-    sm: "pl-10 sm:pl-12 pr-3 sm:pr-4 py-2 sm:py-3 text-sm sm:text-base",
-    md: "pl-12 sm:pl-16 pr-4 sm:pr-6 py-3 sm:py-4 text-base sm:text-lg",
-    lg: "pl-10 sm:pl-14 md:pl-20 pr-4 sm:pr-6 md:pr-8 py-3 sm:py-5 md:py-8 text-base sm:text-xl md:text-3xl"
-  }
-
-  const iconSizeClasses = {
-    sm: "left-3 sm:left-4 h-4 w-4 sm:h-5 sm:w-5",
-    md: "left-4 sm:left-6 h-5 w-5 sm:h-6 sm:w-6",
-    lg: "left-3 sm:left-5 md:left-8 h-5 w-5 sm:h-7 sm:w-7 md:h-10 md:w-10"
+    sm: "px-3 sm:px-4 py-2 sm:py-3 text-sm sm:text-base",
+    md: "px-4 sm:px-6 py-3 sm:py-4 text-base sm:text-lg",
+    lg: "px-4 sm:px-6 md:px-8 py-3 sm:py-5 md:py-8 text-base sm:text-xl md:text-3xl"
   }
 
   return (
     <div className={`relative z-50 ${className}`}>
-      <Search className={`absolute top-1/2 transform -translate-y-1/2 text-gray-500 ${iconSizeClasses[size]}`} />
       <Input
         ref={searchRef}
         type="text"

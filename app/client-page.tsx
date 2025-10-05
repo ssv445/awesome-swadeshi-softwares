@@ -30,7 +30,7 @@ export default function ClientHomePage({ allSoftware, featuredProducts, categori
 
 
   return (
-    <AppShell>
+    <AppShell allSoftware={allSoftware}>
 
       {/* Hero Section */}
       <section className="py-8 sm:py-12 md:py-16 lg:py-20 px-3 sm:px-4 relative z-40">
@@ -44,6 +44,15 @@ export default function ClientHomePage({ allSoftware, featuredProducts, categori
         </div>
 
         <div className="container mx-auto text-center max-w-4xl relative z-10">
+          {/* Search Box First - with generous whitespace */}
+          <div className="max-w-4xl mx-auto mb-12 sm:mb-16 md:mb-20 pt-4 sm:pt-6 md:pt-8">
+            <SearchBox
+              allSoftware={allSoftware}
+              size="lg"
+            />
+          </div>
+
+          {/* Rest of hero content */}
           <div className="flex items-center justify-center mb-4 sm:mb-6 md:mb-8">
             <div>
               <AshokaChakra className="h-12 w-12 sm:h-16 sm:w-16 md:h-20 md:w-20 text-blue-600" />
@@ -74,22 +83,15 @@ export default function ClientHomePage({ allSoftware, featuredProducts, categori
             </div>
           </div>
 
-          {/* Search and Filter */}
-          <div className="max-w-4xl mx-auto space-y-4 sm:space-y-5 md:space-y-6">
-            <SearchBox
-              allSoftware={allSoftware}
-              size="lg"
-            />
-
-            <div className="flex flex-wrap gap-2 sm:gap-3 justify-center px-2">
-              {categoryDisplayNames.map(category => (
-                <Button key={category.slug} asChild size="sm" variant="outline" className="border border-gray-300 text-gray-600 hover:bg-gray-50 bg-white text-xs sm:text-sm">
-                  <Link href={`/${category.slug}`}>
-                    {category.name}
-                  </Link>
-                </Button>
-              ))}
-            </div>
+          {/* Category Filter */}
+          <div className="flex flex-wrap gap-2 sm:gap-3 justify-center px-2">
+            {categoryDisplayNames.map(category => (
+              <Button key={category.slug} asChild size="sm" variant="outline" className="border border-gray-300 text-gray-600 hover:bg-gray-50 bg-white text-xs sm:text-sm">
+                <Link href={`/${category.slug}`}>
+                  {category.name}
+                </Link>
+              </Button>
+            ))}
           </div>
 
         </div>
