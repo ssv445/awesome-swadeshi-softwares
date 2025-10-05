@@ -1,12 +1,12 @@
 {
-  "name": "MapMyIndia Maps",
+  "name": "mappls",
   "slug": "mapmyindia-maps",
   "aliases": [
     "mappls",
     "mappls-mapmyindia"
   ],
   "description": "India-focused mapping and location intelligence platform with APIs",
-  "website": "https://www.mapmyindia.com/",
+  "website": "https://www.mappls.com/",
   "category": "Development",
   "alternatives": [
     "Google Maps API",
@@ -17,12 +17,19 @@
   "company": "MapmyIndia",
   "location": "New Delhi",
   "opengraph": {
-    "last_updated": "2025-10-05T09:46:46.284Z",
-    "image": "https://www.mapmyindia.com/images/mapmyindia-og.png",
-    "site_name": "MapmyIndia",
-    "title": "MapmyIndia - India’s best maps | Bringing deep tech to Maps, Location Intelligence & IoT",
-    "description": "MapmyIndia provides revolutionary location-based products, solutions and services built on India’s best maps. MapmyIndia bringing deep tech to Maps, Location Intelligence & IoT",
-    "type": "website",
-    "url": "https://www.mapmyindia.com/"
-  }
+    "last_updated": "2025-10-05T10:34:51.982Z",
+    "image": "https://www.mappls.com/still_image_center=24.595939499830784_77.22556114196777&zoom=4&markers=false.png",
+    "image:width": "140",
+    "image:height": "140",
+    "title": "Mappls - Super Map App for Maps, Navigation, Tracking, Safety and more",
+    "description": "Find and navigate with step by step voice-guided directions to the doorsteps destination with live traffic updates, ETA along your route easily using Mappls Ap",
+    "keywords": "Find and navigate with step by step voice-guided directions to the doorsteps destination with live traffic updates, ETA along your route easily using Mappls Ap",
+    "twitter_card": "summary",
+    "twitter_site": "mappls",
+    "twitter_image": "https://www.mappls.com/still_image_center=24.595939499830784_77.22556114196777&zoom=4&markers=false.png",
+    "twitter_title": "Mappls - Super Map App for Maps, Navigation, Tracking, Safety and more",
+    "twitter_description": "Find and navigate with step by step voice-guided directions to the doorsteps destination with live traffic updates, ETA along your route easily using Mappls Ap"
+  },
+  "appStoreUrl": "https://itunes.apple.com/in/app/map-directions-local-searches-travel-guide/id723492531?mt=8",
+  "playStoreUrl": "https://play.google.com/store/apps/details?id=com.mmi.maps&hl=en"
 }
