@@ -102,6 +102,9 @@ pnpm dev
 
 # Build for production
 pnpm build
+
+# Validate all URLs (crawl entire site)
+pnpm validate:urls --url=http://localhost:3000
 ```
 
 ## 📜 License

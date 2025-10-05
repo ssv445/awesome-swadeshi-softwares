@@ -15,7 +15,8 @@
     "scrape:opengraph:force": "tsx scripts/scrape-opengraph.ts --force",
     "scrape:opengraph:reset": "rm -f scripts/crawl-tracker.json && tsx scripts/scrape-opengraph.ts",
     "scrape:single": "tsx scripts/scrape-opengraph.ts --url=",
-    "scrape:dry-run": "tsx scripts/scrape-opengraph.ts --dry-run"
+    "scrape:dry-run": "tsx scripts/scrape-opengraph.ts --dry-run",
+    "validate:urls": "tsx scripts/validate-urls.ts"
   },
   "dependencies": {
     "@radix-ui/react-checkbox": "1.1.3",

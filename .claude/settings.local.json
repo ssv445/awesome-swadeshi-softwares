@@ -12,7 +12,10 @@
       "Bash(pnpm install:*)",
       "Bash(pnpm scrape:opengraph:*)",
       "Bash(lsof:*)",
-      "Bash(curl -s \"https://www.zoho.com/crm/\")"
+      "Bash(curl -s \"https://www.zoho.com/crm/\")",
+      "Bash(pnpm validate:urls:*)",
+      "Read(//private/tmp/**)",
+      "Bash(pkill:*)"
     ],
     "deny": [
       "Bash(npm run build:*)"
