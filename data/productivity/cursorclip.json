@@ -1,0 +1,28 @@
+{
+  "name": "CursorClip",
+  "slug": "cursorclip",
+  "description": "macOS screen recorder with automatic cursor zoom for polished product demos",
+  "website": "https://cursorclip.com/",
+  "category": "Productivity",
+  "email": "contact@cursorclip.com",
+  "alternatives": ["Screen Studio", "Screen Charm", "Loom", "Tella", "Cap.so"],
+  "pricing": "Paid",
+  "company": "CursorClip",
+  "location": "India",
+  "faviconUrl": "https://cursorclip.com/favicon/favicon-32x32.png",
+  "opengraph": {
+    "last_updated": "2025-10-05T21:09:14Z",
+    "title": "CursorClip - macOS Screen Recorder with Auto-Zoom Effects",
+    "description": "Record professional demos in minutes with CursorClip's smart auto-zoom. Native macOS app, lifetime license $47. No subscriptions, watermark-free exports.",
+    "image": "https://cursorclip.com/og.png",
+    "url": "https://cursorclip.com/",
+    "type": "website",
+    "twitter_card": "summary_large_image",
+    "twitter_site": "@cursorclip",
+    "twitter_creator": "@cursorclip",
+    "twitter_title": "CursorClip - macOS Screen Recorder with Auto-Zoom",
+    "twitter_description": "Record professional demos in minutes with CursorClip's smart auto-zoom. Native macOS app, lifetime license $47. No subscriptions, watermark-free exports.",
+    "twitter_image": "https://cursorclip.com/og.png",
+    "twitter_image_alt": "CursorClip - Native macOS Screen Recorder with Smart Zoom"
+  }
+}
