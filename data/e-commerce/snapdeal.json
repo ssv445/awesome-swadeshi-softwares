@@ -13,7 +13,7 @@
   "company": "Snapdeal Limited",
   "location": "New Delhi",
   "opengraph": {
-    "last_updated": "2025-10-04T09:30:51.404Z",
+    "last_updated": "2025-10-05T09:47:39.278Z",
     "title": "Snapdeal.com",
     "site_name": "Snapdeal.com",
     "url": "https://www.snapdeal.com",
@@ -28,5 +28,6 @@
     "twitter_app:url:iphone": "snapdeal://m.snapdeal.com",
     "twitter_app:url:ipad": "snapdeal://m.snapdeal.com",
     "twitter_app:url:googleplay": "snapdeal://m.snapdeal.com"
-  }
+  },
+  "playStoreUrl": "https://play.google.com/store/apps/details?id=com.snapdeal.main&utm_source=web_footer&utm_campaign=android, https://play.google.com/store/apps/details?id=com.snapdeal.main&hl=en_IN, https://play.google.com/store/apps/details?id=com.snapdeal.main"
 }

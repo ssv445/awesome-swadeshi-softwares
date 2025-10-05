@@ -12,11 +12,13 @@
   "company": "Jio Platforms",
   "location": "Mumbai",
   "opengraph": {
-    "last_updated": "2025-09-29T06:53:17.558Z",
+    "last_updated": "2025-10-05T09:45:31.814Z",
     "url": "https://www.jio.com/jcms/apps/jiochat/",
     "type": "website",
     "title": "Messaging App - Video Call & Video Chat App | JioChat",
     "image": "https://jep-asset.akamaized.net/jio/svg-og/jio_logo.png",
     "description": "Messaging App - Download the best chat app to experience HD voice & video chatting, personalized messaging & more only with JioChat messaging app."
-  }
+  },
+  "appStoreUrl": "https://apps.apple.com/in/app/jiochat-video-messenger/id981918884",
+  "playStoreUrl": "https://play.app.goo.gl/?link=https://play.google.com/store/apps/details?id=com.jiochat.jiochatapp&hl=en"
 }

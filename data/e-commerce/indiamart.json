@@ -13,7 +13,7 @@
   "company": "IndiaMART InterMESH Limited",
   "location": "Noida, Uttar Pradesh",
   "opengraph": {
-    "last_updated": "2025-10-04T09:30:38.005Z",
+    "last_updated": "2025-10-05T09:47:20.970Z",
     "title": "IndiaMART - Indian Manufacturers Suppliers Exporters Directory,India Exporter Manufacturer",
     "type": "website",
     "url": "https://www.indiamart.com",
@@ -22,5 +22,7 @@
     "image:url": "//hm.imimg.com/imhome_gifs/indiamart-og1.jpg",
     "image:width": "600",
     "image:height": "315"
-  }
+  },
+  "appStoreUrl": "https://itunes.apple.com/us/app/indiamart-buy-sell-products/id668561641?mt=8",
+  "playStoreUrl": "https://play.google.com/store/apps/details?id=com.indiamart.m"
 }

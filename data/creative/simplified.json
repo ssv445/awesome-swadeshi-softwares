@@ -13,7 +13,7 @@
   "company": "Simplified (Indian-founded)",
   "location": "San Francisco (Indian founders)",
   "opengraph": {
-    "last_updated": "2025-09-29T06:54:38.594Z",
+    "last_updated": "2025-10-05T09:46:22.514Z",
     "title": "All-in-One AI Marketing Platform for Growing Business Teams",
     "description": "Simplified is an all-in-one AI marketing tool for teams to write, design, collaborate, and publish—all without switching tools.",
     "image": "https://simplified.com/siteimages/simplified-home-page-og-image.png",
@@ -23,5 +23,7 @@
     "twitter_title": "All-in-One AI Marketing Platform for Growing Business Teams",
     "twitter_description": "Simplified is an all-in-one AI marketing tool for teams to write, design, collaborate, and publish—all without switching tools.",
     "twitter_image": "https://simplified.com/siteimages/simplified-home-page-og-image.png"
-  }
+  },
+  "appStoreUrl": "https://apps.apple.com/om/app/simplified-ai/id1610971740",
+  "playStoreUrl": "https://play.google.com/store/apps/details?id=co.simplified.main"
 }

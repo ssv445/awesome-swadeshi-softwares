@@ -338,6 +338,17 @@ async function updateProductFile(filePath: string, openGraphData: OpenGraphData)
   const content = readFileSync(fullPath, 'utf-8')
   const data = JSON.parse(content)
 
+  // Extract app store URLs from opengraph data
+  if (openGraphData.app_store_url) {
+    data.appStoreUrl = openGraphData.app_store_url
+    delete openGraphData.app_store_url
+  }
+
+  if (openGraphData.play_store_url) {
+    data.playStoreUrl = openGraphData.play_store_url
+    delete openGraphData.play_store_url
+  }
+
   data.opengraph = openGraphData
 
   if (!DRY_RUN) {

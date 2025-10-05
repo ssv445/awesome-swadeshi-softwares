@@ -14,7 +14,7 @@
   "location": "Chennai",
   "faviconUrl": "https://www.zohowebstatic.com/sites/zweb/images/ogimage/forms-logo.png",
   "opengraph": {
-    "last_updated": "2025-09-29T06:52:41.548Z",
+    "last_updated": "2025-10-05T09:44:44.209Z",
     "title": "Form Builder | Create Free Online Forms - Zoho Forms",
     "description": "Zoho Forms is a powerful online form builder for businesses. Build and share forms online, and easily collaborate with your team. Try our free online form builder!",
     "image": "https://www.zohowebstatic.com/sites/zweb/images/ogimage/forms-logo.png",
@@ -26,5 +26,7 @@
     "twitter_image": "https://www.zohowebstatic.com/sites/zweb/images/ogimage/forms-logo.png",
     "twitter_card": "summary",
     "twitter_site": "@zoho"
-  }
+  },
+  "appStoreUrl": "https://apps.apple.com/app/apple-store/id805565969",
+  "playStoreUrl": "https://play.google.com/store/apps/details?id=com.zoho.forms.a&referrer=utm_source%3Dforms_home_page&utm_medium=appbadge&utm_campaign=forms_home_page"
 }

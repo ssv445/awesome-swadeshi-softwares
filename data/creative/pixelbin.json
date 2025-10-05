@@ -12,7 +12,7 @@
   "company": "Shopsense Retail Technologies",
   "location": "Mumbai",
   "opengraph": {
-    "last_updated": "2025-09-29T06:53:41.732Z",
+    "last_updated": "2025-10-05T09:46:19.771Z",
     "title": "Pixelbin AI Photo Editor: Free Online Image Editing",
     "description": "Pixelbin.io is free online photo editor. Use PixelBin to edit, crop, enhance, or add background to your images. A mobile app is also available for editing.",
     "image": "https://cdn.prod.website-files.com/673193e0642e6ad25696fcd4/67e3cc13ec0b2be8f64e3d29_Pixelbin%20Home%20Opengraph.webp",
@@ -22,5 +22,6 @@
     "twitter_title": "Pixelbin AI Photo Editor: Free Online Image Editing",
     "twitter_description": "Pixelbin.io is free online photo editor. Use PixelBin to edit, crop, enhance, or add background to your images. A mobile app is also available for editing.",
     "twitter_image": "https://cdn.prod.website-files.com/673193e0642e6ad25696fcd4/67e3cc13ec0b2be8f64e3d29_Pixelbin%20Home%20Opengraph.webp"
-  }
+  },
+  "appStoreUrl": "https://apps.apple.com/in/app/pixelbin/id6475089048"
 }

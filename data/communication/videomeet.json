@@ -12,7 +12,7 @@
   "company": "Data Ingenious Global Ltd",
   "location": "Jaipur",
   "opengraph": {
-    "last_updated": "2025-09-30T10:20:57.943Z",
+    "last_updated": "2025-10-05T09:45:59.021Z",
     "image": "http://videomeet.in/images/video-meet-logo.png",
     "title": "Video& Audio Conferencing App, Screen Sharing, Webinars, - VideoMeet",
     "url": "https://www.videomeet.in/",
@@ -25,5 +25,7 @@
     "twitter_creator": "@video_meet",
     "twitter_title": "Video& Audio Conferencing App, Screen Sharing, Webinars, - VideoMeet",
     "twitter_description": "VideoMeet is an online Video Conferencing app and collaborative services including webinars (web seminars), webcasts, Screen Sharing, web meetings, and an online training program."
-  }
+  },
+  "appStoreUrl": "https://apps.apple.com/us/app/videomeet-audio-video/id1346514570",
+  "playStoreUrl": "https://play.google.com/store/apps/details?id=com.datainfosys.videomeet&hl=en_INrohit"
 }

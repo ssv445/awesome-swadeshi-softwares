@@ -13,7 +13,7 @@
   "location": "Chennai",
   "faviconUrl": "https://www.zohowebstatic.com/sites/zweb/images/ogimage/show-logo.png",
   "opengraph": {
-    "last_updated": "2025-09-29T06:56:18.246Z",
+    "last_updated": "2025-10-05T09:49:19.768Z",
     "title": "Online Presentation Software | Create & Edit Slides Online - Zoho Show",
     "description": "Zoho Show is a free online presentation software that lets you create, collaborate, publish, and broadcast presentations from any device, quick and easy.",
     "image": "https://www.zohowebstatic.com/sites/zweb/images/ogimage/show-logo.png",
@@ -25,5 +25,7 @@
     "twitter_image": "https://www.zohowebstatic.com/sites/zweb/images/ogimage/show-logo.png",
     "twitter_card": "summary",
     "twitter_site": "@zoho"
-  }
+  },
+  "appStoreUrl": "https://itunes.apple.com/us/app/show-view-import-present/id1309156447?ls=1&mt=8, https://apps.apple.com/app/id1309156447",
+  "playStoreUrl": "https://play.google.com/store/apps/details?id=com.zoho.show.app"
 }

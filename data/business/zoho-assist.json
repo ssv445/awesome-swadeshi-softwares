@@ -16,7 +16,7 @@
   "location": "Chennai, Tamil Nadu",
   "faviconUrl": "https://www.zohowebstatic.com/sites/zweb/images/ogimage/assist-logo.png",
   "opengraph": {
-    "last_updated": "2025-10-03T11:05:06.380Z",
+    "last_updated": "2025-10-05T09:44:23.949Z",
     "title": "Best Remote Access Software | Remote Support Software - Zoho Assist",
     "description": "Zoho Assist is a secure and easy-to-use remote desktop software for IT and support teams. Access, control, and troubleshoot devices from anywhere with Zoho Assist.",
     "image": "https://www.zohowebstatic.com/sites/zweb/images/ogimage/assist-logo.png",
@@ -28,5 +28,7 @@
     "twitter_image": "https://www.zohowebstatic.com/sites/zweb/images/ogimage/assist-logo.png",
     "twitter_card": "summary",
     "twitter_site": "@zoho"
-  }
+  },
+  "appStoreUrl": "https://apps.apple.com/us/app/zoho-assist-remote-desktop/id582922932",
+  "playStoreUrl": "https://play.google.com/store/apps/details?id=com.zoho.assist"
 }

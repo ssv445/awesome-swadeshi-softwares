@@ -16,7 +16,7 @@
   "location": "Chennai, Tamil Nadu",
   "faviconUrl": "https://www.zohowebstatic.com/sites/zweb/images/ogimage/bugtracker-logo.png",
   "opengraph": {
-    "last_updated": "2025-10-03T11:05:43.240Z",
+    "last_updated": "2025-10-05T09:46:59.862Z",
     "title": "Bug Tracking Software | Free Issue Tracker System - Zoho BugTracker",
     "description": "Zoho BugTracker is an online bug tracker and issue tracking software that helps you to track and fix bugs quickly. Sign up to Zoho's bug/defect tracking tool.",
     "image": "https://www.zohowebstatic.com/sites/zweb/images/ogimage/bugtracker-logo.png",
@@ -28,5 +28,7 @@
     "twitter_image": "https://www.zohowebstatic.com/sites/zweb/images/ogimage/bugtracker-logo.png",
     "twitter_card": "summary",
     "twitter_site": "@zoho"
-  }
+  },
+  "appStoreUrl": "https://itunes.apple.com/in/app/zoho-bugtracker/id1437263937?mt=8",
+  "playStoreUrl": "https://play.google.com/store/apps/details?id=com.zoho.bugtracker&hl=en_IN&gl=US"
 }

@@ -16,7 +16,7 @@
   "location": "Chennai, Tamil Nadu",
   "faviconUrl": "https://www.zohowebstatic.com/sites/zweb/images/ogimage/salesiq-logo.png",
   "opengraph": {
-    "last_updated": "2025-10-03T11:05:19.729Z",
+    "last_updated": "2025-10-05T09:45:01.870Z",
     "title": "Zoho SalesIQ | The Customer Engagement Platform For Your Business",
     "description": "Zoho SalesIQ is a complete customer engagement platform, that helps businesses to efficiently engage their website visitors & customers, at all times. Try now!",
     "image": "https://www.zohowebstatic.com/sites/zweb/images/ogimage/salesiq-logo.png",
@@ -28,5 +28,7 @@
     "twitter_image": "https://www.zohowebstatic.com/sites/zweb/images/ogimage/salesiq-logo.png",
     "twitter_card": "summary",
     "twitter_site": "@zoho"
-  }
+  },
+  "appStoreUrl": "https://itunes.apple.com/app/apple-store/id1094699978",
+  "playStoreUrl": "https://play.google.com/store/apps/details?id=com.zoho.salesiq"
 }

@@ -14,7 +14,7 @@
   "location": "Chennai",
   "faviconUrl": "https://www.zohowebstatic.com/sites/zweb/images/ogimage/workdrive-logo.png",
   "opengraph": {
-    "last_updated": "2025-09-29T06:56:20.507Z",
+    "last_updated": "2025-10-05T09:49:21.936Z",
     "title": "Zoho WorkDrive | Online file management for teams",
     "description": "Zoho WorkDrive is a content collaboration platform designed for teams to store, share, manage, and work together on files of any size",
     "image": "https://www.zohowebstatic.com/sites/zweb/images/ogimage/workdrive-logo.png",
@@ -26,5 +26,7 @@
     "twitter_image": "https://www.zohowebstatic.com/sites/zweb/images/ogimage/workdrive-logo.png",
     "twitter_card": "summary",
     "twitter_site": "@zoho"
-  }
+  },
+  "appStoreUrl": "https://itunes.apple.com/us/app/zoho-workdrive/id1408591221?ls=1&mt=8",
+  "playStoreUrl": "https://play.google.com/store/apps/details?id=com.zoho.work.drive"
 }

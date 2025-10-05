@@ -14,7 +14,7 @@
   "location": "Chennai",
   "faviconUrl": "https://www.zohowebstatic.com/sites/zweb/images/ogimage/campaigns-logo.png",
   "opengraph": {
-    "last_updated": "2025-09-29T06:52:29.967Z",
+    "last_updated": "2025-10-05T09:44:32.905Z",
     "title": "Email marketing software | Zoho Campaigns",
     "description": "A simple, yet effective platform that helps you send the right email campaign to the right audience at the right time. Sign up today and see how.",
     "image": "https://www.zohowebstatic.com/sites/zweb/images/ogimage/campaigns-logo.png",
@@ -26,5 +26,7 @@
     "twitter_image": "https://www.zohowebstatic.com/sites/zweb/images/ogimage/campaigns-logo.png",
     "twitter_card": "summary",
     "twitter_site": "@zoho"
-  }
+  },
+  "appStoreUrl": "https://apps.apple.com/app/apple-store/id804728901?pt=423641&ct=mobile_page&mt=8",
+  "playStoreUrl": "https://play.google.com/store/apps/details?id=com.zoho.campaigns&referrer=utm_source=campaigns_mobile_page&utm_medium=appbadge&utm_campaign=campaigns_mobile_page"
 }

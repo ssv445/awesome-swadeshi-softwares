@@ -14,11 +14,13 @@
   "company": "MSG91",
   "location": "Indore, India",
   "opengraph": {
-    "last_updated": "2025-09-30T03:34:55.231Z",
+    "last_updated": "2025-10-05T09:45:40.307Z",
     "title": "Best Cloud Communication Platform in India | Communication Platform as a Service - MSG91",
     "description": "MSG91 cloud communications platform integrates cloud-based voice, video, messaging, chat, & collaboration into any app, service, or business process. Request a demo for cloud based communication today!",
     "image": "/assets/brand/favicon.svg",
     "url": "https://msg91.com/",
     "type": "website"
-  }
+  },
+  "appStoreUrl": "https://apps.apple.com/in/app/hello-by-msg91/id1635375551",
+  "playStoreUrl": "https://play.google.com/store/apps/details?id=com.hellornapp"
 }

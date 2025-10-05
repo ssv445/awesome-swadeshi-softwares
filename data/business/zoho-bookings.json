@@ -16,7 +16,7 @@
   "location": "Chennai, Tamil Nadu",
   "faviconUrl": "https://zohowebstatic.com/sites/zweb/images/bookings/home/zbs-bookings-og-image.jpg",
   "opengraph": {
-    "last_updated": "2025-10-03T11:05:10.773Z",
+    "last_updated": "2025-10-05T09:44:28.298Z",
     "title": "Free online appointment scheduling software - Zoho Bookings",
     "description": "Zoho Bookings offers free online appointment scheduling software with AI-powered customization, calendar sync, self-booking, and automated reminders with ease.",
     "image": "https://zohowebstatic.com/sites/zweb/images/bookings/home/zbs-bookings-og-image.jpg",
@@ -28,5 +28,7 @@
     "twitter_image": "https://zohowebstatic.com/sites/zweb/images/bookings/home/zbs-bookings-og-image.jpg",
     "twitter_card": "summary",
     "twitter_site": "@zoho"
-  }
+  },
+  "appStoreUrl": "https://itunes.apple.com/in/app/zoho-bookings/id1444416745?pt=423641&%3Bct=bookings_home_page&%3Bmt=8",
+  "playStoreUrl": "https://play.google.com/store/apps/details?id=com.zoho.bookings.a&%3Breferrer=utm_source%3Dbookings_home_page&%3Butm_medium=appbadge&%3Butm_campaign=bookings_home_page"
 }

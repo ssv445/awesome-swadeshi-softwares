@@ -13,9 +13,9 @@
   "pricing": "Freemium",
   "company": "Ola Krutrim",
   "location": "Bengaluru, India",
+  "appStoreUrl": "https://apps.apple.com/in/app/krutrim/id6499513928",
+  "playStoreUrl": "https://play.google.com/store/apps/details?id=com.app.krutrim.prod&pcampaignid=web_share",
   "opengraph": {
-    "last_updated": "2025-10-05T09:00:37.570Z",
-    "app_store_url": "https://apps.apple.com/in/app/krutrim/id6499513928",
-    "play_store_url": "https://play.google.com/store/apps/details?id=com.app.krutrim.prod&pcampaignid=web_share"
+    "last_updated": "2025-10-05T09:46:41.637Z"
   }
 }

@@ -14,7 +14,7 @@
   "location": "Chennai",
   "faviconUrl": "https://www.zohowebstatic.com/sites/zweb/images/recruit/og/twitter-recruit-home.jpg",
   "opengraph": {
-    "last_updated": "2025-09-29T06:52:50.620Z",
+    "last_updated": "2025-10-05T09:44:59.660Z",
     "title": "One stop recruitment solution | Talent Acquisition Software - Zoho Recruit",
     "description": "Zoho Recruit is a one stop recruitment solution for both corporate HRs and staffing agencies that helps the recruiters to source, track, assess & hire right candidates better and faster. Try now!",
     "image": "https://www.zohowebstatic.com/sites/zweb/images/recruit/og/twitter-recruit-home.jpg",
@@ -26,5 +26,7 @@
     "twitter_image": "https://www.zohowebstatic.com/sites/zweb/images/recruit/og/twitter-recruit-home.jpg",
     "twitter_card": "summary",
     "twitter_site": "@zoho"
-  }
+  },
+  "appStoreUrl": "https://apps.apple.com/app/apple-store/id981522421?pt=423641, https://apps.apple.com/app/id981522421",
+  "playStoreUrl": "https://play.google.com/store/apps/details?id=com.zoho.recruit&pli=1"
 }

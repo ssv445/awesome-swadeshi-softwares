@@ -14,7 +14,7 @@
   "company": "Easy Trip Planners Limited",
   "location": "New Delhi",
   "opengraph": {
-    "last_updated": "2025-10-04T07:42:12.419Z",
+    "last_updated": "2025-10-05T09:49:38.959Z",
     "title": "EaseMyTrip.com - Book Flights, Hotels, Holidays, Bus & Train Tickets",
     "url": "https://www.easemytrip.com",
     "site_name": "EaseMyTrip",
@@ -28,5 +28,7 @@
     "twitter_image": "https://images.emtcontent.com/bus-img/easemytrip-logo-144.png",
     "twitter_creator": "@EaseMyTrip",
     "twitter_site": "@EaseMyTrip"
-  }
+  },
+  "appStoreUrl": "https://itunes.apple.com/in/app/easemytrip-flight-booking/id1053030595?mt=8",
+  "playStoreUrl": "//play.google.com/store/apps/details?id=com.easemytrip.android"
 }

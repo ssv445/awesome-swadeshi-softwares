@@ -14,7 +14,7 @@
   "location": "Chennai",
   "faviconUrl": "https://www.zohowebstatic.com/sites/zweb/images/ogimage/sign-logo.png",
   "opengraph": {
-    "last_updated": "2025-09-29T06:52:52.993Z",
+    "last_updated": "2025-10-05T09:45:04.174Z",
     "title": "eSign for India | Digital Signature | AI-Powered Agreement Management | Zoho Sign",
     "description": "Indian businesses can use Zoho Sign to sign documents online. AI-powered digital signature workflows that support Aadhaar eSign & eStamping to execute and manage contracts and agreements.",
     "image": "https://www.zohowebstatic.com/sites/zweb/images/ogimage/sign-logo.png",
@@ -26,5 +26,7 @@
     "twitter_image": "https://www.zohowebstatic.com/sites/zweb/images/ogimage/sign-logo.png",
     "twitter_card": "summary",
     "twitter_site": "@zoho"
-  }
+  },
+  "appStoreUrl": "https://apps.apple.com/us/app/e-signature-app-zoho-sign/id1476226908, https://itunes.apple.com/app/apple-store/id1236146442?pt=423641&ct=sign_home_page&mt=8",
+  "playStoreUrl": "https://play.google.com/store/apps/details?id=com.zoho.sign.zohosign&referrer=utm_source=sign_home_page&utm_medium=appbadge&utm_campaign=sign_home_page"
 }

@@ -16,7 +16,7 @@
   "location": "Chennai, Tamil Nadu",
   "faviconUrl": "https://www.zohowebstatic.com/sites/zweb/images/ogimage/showtime-logo.png",
   "opengraph": {
-    "last_updated": "2025-10-03T11:05:30.804Z",
+    "last_updated": "2025-10-05T09:46:07.904Z",
     "title": "An online training platform | Zoho ShowTime",
     "description": "Zoho ShowTime is a comprehensive solution to run your training business. Deliver virtual classroom and on-demand training, empower learners worldwide and generate revenue.",
     "image": "https://www.zohowebstatic.com/sites/zweb/images/ogimage/showtime-logo.png",
@@ -28,5 +28,7 @@
     "twitter_image": "https://www.zohowebstatic.com/sites/zweb/images/ogimage/showtime-logo.png",
     "twitter_card": "summary",
     "twitter_site": "@zoho"
-  }
+  },
+  "appStoreUrl": "https://itunes.apple.com/app/apple-store/id925233601?pt=423641&ct=mobile_web&mt=8, https://itunes.apple.com/app/apple-store/id925233601?pt=423641&ct=showtime_home_page&mt=8",
+  "playStoreUrl": "https://play.google.com/store/apps/details?id=com.zoho.showtime.presenter&referrer=utm_source%3Dmobile_web&utm_medium=appbadge&utm_campaign=mobileweb, https://play.google.com/store/apps/details?id=com.zoho.showtime.presenter&referrer=utm_source%3Dshowtime_home_page&utm_medium=appbadge&utm_campaign=showtime_home_page"
 }

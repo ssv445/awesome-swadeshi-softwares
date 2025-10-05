@@ -16,7 +16,7 @@
   "location": "Chennai, Tamil Nadu",
   "faviconUrl": "https://ulaa.com/favicon.ico",
   "opengraph": {
-    "last_updated": "2025-10-03T11:06:06.882Z",
+    "last_updated": "2025-10-05T09:49:51.477Z",
     "title": "Ulaa - Private, Secure, and Superfast Browser",
     "description": "Ulaa is a browser that respects your privacy, protects your personal data, and helps you work online more efficiently.",
     "image": "https://ulaa.com/favicon.ico",
@@ -28,5 +28,7 @@
     "twitter_image": "https://ulaa.com/favicon.ico",
     "twitter_card": "summary",
     "twitter_site": "@UlaaBrowser"
-  }
+  },
+  "appStoreUrl": "https://apps.apple.com/us/app/ulaa-browser/id1610996178",
+  "playStoreUrl": "https://play.google.com/store/apps/details?id=com.zoho.primeum.stable&pli=1&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1"
 }

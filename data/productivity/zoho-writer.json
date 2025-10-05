@@ -13,7 +13,7 @@
   "location": "Chennai",
   "faviconUrl": "https://www.zohowebstatic.com/sites/zweb/images/ogimage/writer-logo.png",
   "opengraph": {
-    "last_updated": "2025-09-29T06:56:25.097Z",
+    "last_updated": "2025-10-05T09:49:26.691Z",
     "title": "Online Word Processor For Seamless Document Creation & Editing | Writer",
     "description": "The user-friendly word processor to create, edit, share, collaborate on, review, and publish documents. Fully free; works seamlessly with DOCX and PDF as well.",
     "image": "https://www.zohowebstatic.com/sites/zweb/images/ogimage/writer-logo.png",
@@ -25,5 +25,6 @@
     "twitter_image": "https://www.zohowebstatic.com/sites/zweb/images/ogimage/writer-logo.png",
     "twitter_card": "summary",
     "twitter_site": "@zoho"
-  }
+  },
+  "appStoreUrl": "https://apps.apple.com/app/id808719064"
 }

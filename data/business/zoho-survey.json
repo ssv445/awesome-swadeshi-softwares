@@ -14,7 +14,7 @@
   "location": "Chennai",
   "faviconUrl": "https://www.zohowebstatic.com/sites/zweb/images/ogimage/survey-logo.png",
   "opengraph": {
-    "last_updated": "2025-09-29T06:52:59.555Z",
+    "last_updated": "2025-10-05T09:45:10.701Z",
     "title": "Online survey forms maker for all | Zoho Survey",
     "description": "Do market research, build feedback questionnaires, understand customer satisfaction, and more with Zoho Survey’s customizable online survey forms maker. Get started for free now!",
     "image": "https://www.zohowebstatic.com/sites/zweb/images/ogimage/survey-logo.png",
@@ -26,5 +26,6 @@
     "twitter_image": "https://www.zohowebstatic.com/sites/zweb/images/ogimage/survey-logo.png",
     "twitter_card": "summary",
     "twitter_site": "@zoho"
-  }
+  },
+  "appStoreUrl": "https://apps.apple.com/us/app/zoho-survey-survey-tool/id1348702782"
 }

@@ -13,7 +13,7 @@
   "company": "Instamojo Technologies",
   "location": "Bengaluru, Karnataka",
   "opengraph": {
-    "last_updated": "2025-10-04T09:31:01.274Z",
+    "last_updated": "2025-10-05T09:48:32.682Z",
     "locale": "en_US",
     "type": "website",
     "title": "Instamojo - eCommerce Website Builder for D2C Businesses - Create a Free Website on Instamojo.",
@@ -29,5 +29,6 @@
     "twitter_site": "@instamojo",
     "twitter_label1": "Est. reading time",
     "twitter_data1": "23 minutes"
-  }
+  },
+  "playStoreUrl": "https://play.google.com/store/apps/details?id=com.instamojo.app&referrer=utm_source%3Dweb%26utm_medium%3Dplay_icon%26utm_campaign%3Dlanding_page"
 }

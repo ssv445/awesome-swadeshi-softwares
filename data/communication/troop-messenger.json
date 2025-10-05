@@ -12,7 +12,7 @@
   "company": "Tvisha Systems Pvt Ltd",
   "location": "Hyderabad",
   "opengraph": {
-    "last_updated": "2025-09-29T06:53:30.247Z",
+    "last_updated": "2025-10-05T09:45:51.442Z",
     "description": "Streamline team collaboration with Troop Messenger, the top instant messaging app for businesses. Boost productivity and communication in one platform.",
     "locale": "en_us",
     "type": "website",
@@ -28,5 +28,7 @@
     "twitter_creator": "@TroopMessenger",
     "twitter_title": "Troop Messenger - Team Collaboration and Instant Messaging App",
     "twitter_description": "Streamline team collaboration with Troop Messenger, the top instant messaging app for businesses. Boost productivity and communication in one platform."
-  }
+  },
+  "appStoreUrl": "https://apps.apple.com/us/app/troop-messenger/id1251532330, https://itunes.apple.com/us/app/troop-messenger/id1251532330?mt=8",
+  "playStoreUrl": "https://play.google.com/store/apps/details?id=com.tvisha.troopmessenger&hl=en"
 }

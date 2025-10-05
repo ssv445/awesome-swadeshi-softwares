@@ -12,7 +12,7 @@
   "company": "Culver Max Entertainment",
   "location": "Mumbai",
   "opengraph": {
-    "last_updated": "2025-09-29T06:55:48.434Z",
+    "last_updated": "2025-10-05T09:48:25.303Z",
     "type": "Website",
     "site_name": "Sony LIV",
     "title": "Sony LIV - Watch Indian TV Shows, Movies, Sports, Live Cricket Matches, Web Originals",
@@ -25,5 +25,7 @@
     "twitter_card": "summary",
     "twitter_site": "@SonyLIV",
     "twitter_image": "https://images.slivcdn.com/UI_icons/fallback_sonyliv_logo.png?h=246&w=246&q=high"
-  }
+  },
+  "appStoreUrl": "https://apps.apple.com/in/app/sonyliv-originals-hollywood/id587794258",
+  "playStoreUrl": "https://play.google.com/store/apps/details?id=com.sonyliv"
 }

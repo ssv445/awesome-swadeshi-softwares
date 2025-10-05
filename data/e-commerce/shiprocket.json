@@ -13,7 +13,7 @@
   "company": "Shiprocket",
   "location": "Gurgaon",
   "opengraph": {
-    "last_updated": "2025-09-29T06:55:20.598Z",
+    "last_updated": "2025-10-05T09:47:34.713Z",
     "locale": "en_US",
     "type": "website",
     "title": "Shiprocket: Your All-in-One eCommerce Growth Partner",
@@ -25,5 +25,7 @@
     "image:height": "630",
     "image:type": "image/png",
     "twitter_card": "summary_large_image"
-  }
+  },
+  "appStoreUrl": "https://apps.apple.com/in/app/shiprocket/id1444055257?ls=1&mt=8",
+  "playStoreUrl": "https://play.google.com/store/apps/details?id=com.shiprocket.shiprocket"
 }

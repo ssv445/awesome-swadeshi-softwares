@@ -13,7 +13,7 @@
   "company": "Dukaan",
   "location": "Bangalore",
   "opengraph": {
-    "last_updated": "2025-09-29T06:55:08.818Z",
+    "last_updated": "2025-10-05T09:47:18.753Z",
     "image": "https://mydukaan.io/images/og-images/og-selling-online.jpg",
     "image:type": "image/jpeg",
     "twitter_card": "summary_large_image",
@@ -24,5 +24,7 @@
     "twitter_image:src": "https://mydukaan.io/images/og-images/og-selling-online.jpg",
     "twitter_image": "https://mydukaan.io/images/og-images/og-selling-online.jpg",
     "twitter_domain": "mydukaan.io"
-  }
+  },
+  "appStoreUrl": "https://apps.apple.com/in/app/dukaan-create-online-dukan/id1560859298",
+  "playStoreUrl": "https://play.google.com/store/apps/details?id=com.dukaan.app"
 }

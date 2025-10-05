@@ -20,6 +20,8 @@ interface Software {
   company: string
   location: string
   faviconUrl?: string
+  appStoreUrl?: string
+  playStoreUrl?: string
 }
 
 const REQUIRED_FIELDS: (keyof Software)[] = [
@@ -141,6 +143,24 @@ function validateSoftware(filePath: string, data: any): void {
   const expectedSlug = fileName.replace('.json', '')
   if (data.slug && data.slug !== expectedSlug) {
     errors.push({ file: fileName, field: 'slug', error: `Slug "${data.slug}" MUST match filename "${expectedSlug}". Rename the file to "${data.slug}.json" or update slug to "${expectedSlug}".` })
+  }
+
+  // Validate App Store URL format (optional field)
+  if (data.appStoreUrl) {
+    if (typeof data.appStoreUrl !== 'string') {
+      errors.push({ file: fileName, field: 'appStoreUrl', error: 'App Store URL must be a string' })
+    } else if (!data.appStoreUrl.includes('apps.apple.com') && !data.appStoreUrl.includes('itunes.apple.com')) {
+      warnings.push({ file: fileName, field: 'appStoreUrl', error: 'App Store URL should contain apps.apple.com or itunes.apple.com' })
+    }
+  }
+
+  // Validate Play Store URL format (optional field)
+  if (data.playStoreUrl) {
+    if (typeof data.playStoreUrl !== 'string') {
+      errors.push({ file: fileName, field: 'playStoreUrl', error: 'Play Store URL must be a string' })
+    } else if (!data.playStoreUrl.includes('play.google.com/store/apps')) {
+      warnings.push({ file: fileName, field: 'playStoreUrl', error: 'Play Store URL should contain play.google.com/store/apps' })
+    }
   }
 }
 

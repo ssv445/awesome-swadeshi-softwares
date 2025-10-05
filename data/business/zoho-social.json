@@ -14,7 +14,7 @@
   "location": "Chennai",
   "faviconUrl": "https://www.zohowebstatic.com/sites/zweb/images/ogimage/social-logo.png",
   "opengraph": {
-    "last_updated": "2025-09-29T06:52:57.375Z",
+    "last_updated": "2025-10-05T09:45:08.520Z",
     "title": "Social media management software for all businesses - Zoho Social",
     "description": "Zoho Social is a social media management tool that helps businesses and agencies grow their presence on social media. Signup for free. No credit card required.",
     "image": "https://www.zohowebstatic.com/sites/zweb/images/ogimage/social-logo.png",
@@ -26,5 +26,7 @@
     "twitter_image": "https://www.zohowebstatic.com/sites/zweb/images/ogimage/social-logo.png",
     "twitter_card": "summary",
     "twitter_site": "@zoho"
-  }
+  },
+  "appStoreUrl": "https://itunes.apple.com/app/apple-store/id906377559?pt=423641&mt=8",
+  "playStoreUrl": "https://play.google.com/store/apps/details?id=com.zoho.zohosocial"
 }

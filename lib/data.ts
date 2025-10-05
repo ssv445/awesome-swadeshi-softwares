@@ -53,6 +53,8 @@ export interface Software {
   company: string
   location: string
   faviconUrl?: string // Optional custom favicon URL
+  appStoreUrl?: string // Optional Apple App Store URL
+  playStoreUrl?: string // Optional Google Play Store URL
   opengraph?: OpenGraph // Optional OpenGraph metadata
   featured_reason?: string // Optional featured reason (for homepage display)
 }

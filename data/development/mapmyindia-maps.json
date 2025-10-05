@@ -1,7 +1,10 @@
 {
   "name": "MapMyIndia Maps",
   "slug": "mapmyindia-maps",
-  "aliases": ["mappls", "mappls-mapmyindia"],
+  "aliases": [
+    "mappls",
+    "mappls-mapmyindia"
+  ],
   "description": "India-focused mapping and location intelligence platform with APIs",
   "website": "https://www.mapmyindia.com/",
   "category": "Development",
@@ -14,7 +17,7 @@
   "company": "MapmyIndia",
   "location": "New Delhi",
   "opengraph": {
-    "last_updated": "2025-09-29T06:54:50.946Z",
+    "last_updated": "2025-10-05T09:46:46.284Z",
     "image": "https://www.mapmyindia.com/images/mapmyindia-og.png",
     "site_name": "MapmyIndia",
     "title": "MapmyIndia - India’s best maps | Bringing deep tech to Maps, Location Intelligence & IoT",

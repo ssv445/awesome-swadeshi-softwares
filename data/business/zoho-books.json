@@ -14,7 +14,7 @@
   "location": "Chennai",
   "faviconUrl": "https://ogimage.zohofinance.com/server/og_image_books_function?title=Online+Accounting+Software+for+India+%7C+Zoho+Books",
   "opengraph": {
-    "last_updated": "2025-09-29T06:52:27.784Z",
+    "last_updated": "2025-10-05T09:44:30.720Z",
     "title": "Online Accounting Software for India | Zoho Books",
     "type": "website",
     "url": "http://www.zoho.com/in/books/",
@@ -22,5 +22,7 @@
     "description": "Manage GST, invoicing, expenses & more with Zoho Books - India’s trusted online accounting software for small businesses & accountants.",
     "twitter_card": "summary_large_image",
     "twitter_site": "@ZohoBooks"
-  }
+  },
+  "appStoreUrl": "https://apps.apple.com/app/apple-store/id710446064?pt=423641&ct=website_top_bar_downloads&mt=8, https://apps.apple.com/app/apple-store/id710446064?pt=423641&ct=website_homePage&mt=8, https://apps.apple.com/app/apple-store/id710446064?pt=423641&ct=website_footerPage&mt=8, https://apps.apple.com/app/id710446064",
+  "playStoreUrl": "https://play.google.com/store/apps/details?id=com.zoho.books&referrer=utm_source%3Dwebsite%26utm_medium%3Dtop_bar_downloads, https://play.google.com/store/apps/details?id=com.zoho.books&referrer=utm_source%3Dwebsite%26utm_medium%3Dhomepage, https://play.google.com/store/apps/details?id=com.zoho.books&referrer=utm_source%3Dwebsite%26utm_medium%3Dfooter"
 }

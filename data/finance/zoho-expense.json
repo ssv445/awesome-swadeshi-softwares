@@ -16,8 +16,10 @@
   "location": "Chennai, Tamil Nadu",
   "faviconUrl": "https://zohowebstatic.com/sites/default/files/ogimage/expense-logo.png",
   "opengraph": {
-    "last_updated": "2025-10-03T11:05:52.565Z",
+    "last_updated": "2025-10-05T09:48:43.543Z",
     "image": "https://zohowebstatic.com/sites/default/files/ogimage/expense-logo.png",
     "type": "website"
-  }
+  },
+  "appStoreUrl": "https://itunes.apple.com/app/id966094166?mt=8, https://apps.apple.com/app/id966094166",
+  "playStoreUrl": "https://play.google.com/store/apps/details?id=com.zoho.expense"
 }

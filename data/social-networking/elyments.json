@@ -12,12 +12,14 @@
   "company": "Sumeru Software Solutions",
   "location": "Bangalore",
   "opengraph": {
-    "last_updated": "2025-09-29T06:56:28.678Z",
+    "last_updated": "2025-10-05T09:49:30.129Z",
     "title": "Elyments",
     "site_name": "Elyments.com",
     "type": "website",
     "image": "https://www.elyments.com/Images/fav.png",
     "url": "https://www.elyments.com/",
     "description": "Elyments is India’s own app for private chat and calls, that enables  one on one and group chats and audio/video calls with crystal clear quality. Chat and call from one secure unified app that never reads or shares your data."
-  }
+  },
+  "appStoreUrl": "https://apps.apple.com/us/app/elyments/id1438089972",
+  "playStoreUrl": "https://play.google.com/store/apps/details?id=in.elyments.mobile"
 }

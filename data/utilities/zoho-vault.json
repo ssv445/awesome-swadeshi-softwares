@@ -16,7 +16,7 @@
   "location": "Chennai, Tamil Nadu",
   "faviconUrl": "https://www.zohowebstatic.com/sites/zweb/images/ogimage/vault-logo.png",
   "opengraph": {
-    "last_updated": "2025-10-03T11:06:09.120Z",
+    "last_updated": "2025-10-05T09:49:53.763Z",
     "title": "Zoho Vault: Password Manager with Single Sign-On & MFA for Businesses, Teams & Families",
     "description": "Zoho Vault is an online password manager that acts as a digital vault for your identities. Safely manage all your passwords & protect them from cyberthreats. Try for free. No credit card required.",
     "image": "https://www.zohowebstatic.com/sites/zweb/images/ogimage/vault-logo.png",
@@ -28,5 +28,7 @@
     "twitter_image": "https://www.zohowebstatic.com/sites/zweb/images/ogimage/vault-logo.png",
     "twitter_card": "summary",
     "twitter_site": "@zoho"
-  }
+  },
+  "appStoreUrl": "https://apps.apple.com/us/app/zoho-vault-password-manager/id634857858, https://itunes.apple.com/app/apple-store/id634857858?pt=423641&ct=vault_home_page&mt=8, https://apps.apple.com/us/app/id1512156331, https://apps.apple.com/app/id634857858",
+  "playStoreUrl": "https://play.google.com/store/apps/details?id=com.zoho.vault&hl=en_IN, https://play.google.com/store/apps/details?id=com.zoho.vault&referrer=utm_source%3Dvault_home_page&utm_medium=appbadge&utm_campaign=vault_home_page"
 }
