@@ -13,7 +13,7 @@
   "company": "LeadSquared",
   "location": "Bangalore",
   "opengraph": {
-    "last_updated": "2025-10-04T07:41:41.555Z",
+    "last_updated": "2025-10-05T10:20:47.693Z",
     "locale": "en_US",
     "type": "website",
     "title": "AI-Powered CRM For Sales, Service & Marketing | LeadSquared",
@@ -37,5 +37,7 @@
     "twitter_data1": "Rupesh Singh",
     "twitter_label2": "Time to read",
     "twitter_data2": "86 minutes"
-  }
+  },
+  "appStoreUrl": "https://itunes.apple.com/us/app/leadsquared-crm/id1116979453?ls=1&mt=8",
+  "playStoreUrl": "https://play.google.com/store/apps/details?id=com.leadsquared.nextgen&hl=en"
 }

@@ -1193,6 +1193,14 @@
       "searchTerms": "easemytrip easy trip planners limited travel makemytrip booking com expedia online travel booking platform for flights hotels buses trains and"
     },
     {
+      "id": "utilities/docscanner",
+      "name": "Document Scanner",
+      "company": "Lufick Technology Pvt. Ltd.",
+      "category": "Utilities",
+      "slug": "docscanner",
+      "searchTerms": "document scanner lufick technology pvt ltd utilities camscanner adobe scan ai powered document scanner and pdf creator app with advanced edge"
+    },
+    {
       "id": "utilities/epic-browser",
       "name": "Epic Browser",
       "company": "Hidden Reflex",
@@ -1242,7 +1250,7 @@
     }
   ],
   "meta": {
-    "totalEntries": 155,
+    "totalEntries": 156,
     "categories": [
       "business",
       "communication",
@@ -1258,7 +1266,7 @@
       "travel",
       "utilities"
     ],
-    "generatedAt": "2025-10-05T09:12:50.173Z",
+    "generatedAt": "2025-10-05T10:20:33.293Z",
     "version": "1.0.0"
   }
 }

@@ -1,0 +1,35 @@
+{
+  "name": "Document Scanner",
+  "slug": "docscanner",
+  "description": "AI-powered document scanner and PDF creator app with advanced edge detection, multiple scan modes, OCR, and PDF tools for professional document digitization.",
+  "website": "https://docscanner.in/",
+  "category": "Utilities",
+  "alternatives": [
+    "CamScanner",
+    "Adobe Scan"
+  ],
+  "pricing": "Freemium",
+  "company": "Lufick Technology Pvt. Ltd.",
+  "location": "Gurugram, Haryana",
+  "appStoreUrl": "https://apps.apple.com/in/app/document-scanner-pdf-creator/id1560570003",
+  "playStoreUrl": "https://play.google.com/store/apps/details?id=com.cv.docscanner",
+  "opengraph": {
+    "last_updated": "2025-10-05T10:21:28.513Z",
+    "locale": "en_GB",
+    "site_name": "Document Scanner - Just another WordPress site",
+    "type": "website",
+    "title": "Home - Document Scanner",
+    "description": "Document Scanner(Doc Scanner) and PDF Creator app - an Indian scanner app that provides you with more advanced scan options compared to any other apps on the store.",
+    "url": "https://docscanner.in/",
+    "image": "https://docscanner.in/wp-content/uploads/2022/07/cropped-doc_app_icon.png",
+    "image:secure_url": "https://docscanner.in/wp-content/uploads/2022/07/cropped-doc_app_icon.png",
+    "image:width": "512",
+    "image:height": "512",
+    "twitter_card": "summary_large_image",
+    "twitter_site": "@Lufick3",
+    "twitter_title": "Home - Document Scanner",
+    "twitter_description": "Document Scanner(Doc Scanner) and PDF Creator app - an Indian scanner app that provides you with more advanced scan options compared to any other apps on the store.",
+    "twitter_creator": "@Lufick3",
+    "twitter_image": "https://docscanner.in/wp-content/uploads/2022/07/cropped-doc_app_icon.png"
+  }
+}
