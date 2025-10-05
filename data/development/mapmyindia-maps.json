@@ -1,6 +1,7 @@
 {
   "name": "MapMyIndia Maps",
   "slug": "mapmyindia-maps",
+  "aliases": ["mappls", "mappls-mapmyindia"],
   "description": "India-focused mapping and location intelligence platform with APIs",
   "website": "https://www.mapmyindia.com/",
   "category": "Development",

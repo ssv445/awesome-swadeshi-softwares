@@ -5,7 +5,7 @@ import { ExternalLink, ArrowLeft, Calendar, MapPin, Building2, Tag, Globe, Users
 import { AshokaChakra } from "@/components/ashoka-chakra"
 import { AppShell } from "@/components/layout/AppShell"
 import Link from "next/link"
-import { notFound } from "next/navigation"
+import { notFound, redirect } from "next/navigation"
 import { getAppBySlug, getAllAppPaths, getRelatedApps } from "@/lib/server-data"
 import { getCategoryDisplayName, getAppUrl, getAlternativeUrl, getCategoryUrl } from "@/lib/data"
 import { Favicon } from "@/components/favicon"
@@ -65,6 +65,11 @@ export default async function AppPage({ params }: AppPageProps) {
 
   if (!app) {
     notFound()
+  }
+
+  // Redirect if accessing via alias instead of canonical slug
+  if (app.slug && app.slug !== slug) {
+    redirect(`/${category}/${app.slug}`)
   }
 
   const categoryDisplayName = getCategoryDisplayName(category)

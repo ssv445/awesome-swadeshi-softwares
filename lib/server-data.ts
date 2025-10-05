@@ -159,11 +159,21 @@ export function getAppBySlug(category: string, slug: string): Software | null {
     const files = fs.readdirSync(categoryPath)
       .filter(file => file.endsWith('.json'))
 
-    // Find file that matches the slug
-    const targetFile = files.find(file => {
+    // Find file that matches the slug (exact match first)
+    let targetFile = files.find(file => {
       const fileSlug = file.replace('.json', '')
       return fileSlug === slug
     })
+
+    // If not found by exact slug, check aliases
+    if (!targetFile) {
+      targetFile = files.find(file => {
+        const filePath = path.join(categoryPath, file)
+        const fileContent = fs.readFileSync(filePath, 'utf8')
+        const appData = JSON.parse(fileContent)
+        return appData.aliases && Array.isArray(appData.aliases) && appData.aliases.includes(slug)
+      })
+    }
 
     if (!targetFile) {
       return null
