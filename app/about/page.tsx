@@ -1,30 +1,26 @@
-import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
-import { Flag, ExternalLink, GitPullRequest, FileText, Users, Star, Flower2, Crown, Zap } from "lucide-react"
+import { Target, Users, Globe, Heart, Zap, Shield } from "lucide-react"
 import { AshokaChakra } from "@/components/ashoka-chakra"
 import { AppShell } from "@/components/layout/AppShell"
 import { HeroSection } from "@/components/ui/HeroSection"
-import { NumberedStep } from "@/components/ui/NumberedStep"
 import { Breadcrumbs, generateBreadcrumbs } from "@/components/ui/Breadcrumbs"
-import Link from "next/link"
 import type { Metadata } from "next"
 
 export const metadata: Metadata = {
-  title: "Contribute to Swadeshi Apps - Add Indian Software",
-  description: "Help grow our directory by contributing Indian software alternatives. Learn how to add your Swadeshi software to support the Atmanirbhar Bharat movement through community collaboration.",
+  title: "About Swadeshi Apps - Supporting Indian Software Innovation",
+  description: "Learn about Swadeshi Apps, a platform dedicated to promoting Indian software alternatives and supporting the Atmanirbhar Bharat movement through technology.",
   keywords: [
-    "contribute Indian software",
-    "add Swadeshi apps",
+    "about Swadeshi Apps",
     "Indian software directory",
     "Atmanirbhar Bharat",
-    "open source contribution",
-    "GitHub pull request",
-    "Indian tech community",
-    "software submission"
+    "Made in India",
+    "Indian tech ecosystem",
+    "Swadeshi movement",
+    "Indian startups"
   ],
   openGraph: {
-    title: "Contribute to Swadeshi Apps",
-    description: "Help grow our directory by contributing Indian software alternatives. Support the Swadeshi movement through community collaboration.",
+    title: "About Swadeshi Apps",
+    description: "Learn about our mission to promote Indian software alternatives and support the Atmanirbhar Bharat movement.",
     url: "/about",
     type: "website",
     images: [
@@ -32,14 +28,14 @@ export const metadata: Metadata = {
         url: "/og-about.png",
         width: 1200,
         height: 630,
-        alt: "Contribute to Swadeshi Apps"
+        alt: "About Swadeshi Apps"
       }
     ]
   },
   twitter: {
     card: "summary_large_image",
-    title: "Contribute to Swadeshi Apps",
-    description: "Help grow our directory by contributing Indian software alternatives. Support the Swadeshi movement through community collaboration.",
+    title: "About Swadeshi Apps",
+    description: "Learn about our mission to promote Indian software alternatives and support the Atmanirbhar Bharat movement.",
     images: ["/og-about.png"]
   },
   alternates: {
@@ -53,7 +49,7 @@ export const metadata: Metadata = {
 
 export default function AboutPage() {
   const breadcrumbs = generateBreadcrumbs('static', {
-    staticPageName: 'Contribute'
+    staticPageName: 'About'
   })
 
   return (
@@ -67,158 +63,153 @@ export default function AboutPage() {
         </div>
 
         <div className="container mx-auto px-4 py-16 max-w-4xl relative z-10">
+          <HeroSection
+            title="About Swadeshi Apps"
+            highlightWord="Swadeshi"
+            highlightColor="text-orange-600"
+            description="Discover, support, and celebrate Indian software innovation. Join us in building a self-reliant digital India."
+            chakraSize="large"
+          />
 
-        <HeroSection
-          title="Add Your Awesome Swadeshi Software"
-          highlightWord="Awesome"
-          highlightColor="text-blue-600"
-          description="Help grow our directory by contributing Indian software alternatives. Support the Swadeshi movement and Atmanirbhar Bharat through community collaboration."
-          chakraSize="large"
-        />
-
-        <div className="grid md:grid-cols-2 gap-8 mb-16">
-          <Card className="border border-green-200 hover:border-green-400 bg-white shadow-sm hover:shadow-lg transition-all duration-300">
+          {/* Mission Section */}
+          <Card className="mb-12 border border-orange-200 bg-white shadow-sm">
             <CardHeader>
               <div className="flex items-center space-x-3 mb-4">
-                <GitPullRequest className="h-10 w-10 text-gray-500" />
+                <Target className="h-10 w-10 text-orange-600" />
               </div>
-              <CardTitle className="text-2xl text-gray-900">
-                How to Contribute
-              </CardTitle>
+              <CardTitle className="text-2xl text-gray-900">Our Mission</CardTitle>
             </CardHeader>
-            <CardContent className="space-y-6">
-              <div className="space-y-4">
-                <NumberedStep number={1} text="Fork our GitHub repository" />
-                <NumberedStep number={2} text="Create JSON file in category folder" />
-                <NumberedStep number={3} text="Add your software entry" />
-                <NumberedStep number={4} text="Submit a Pull Request" />
-              </div>
+            <CardContent>
+              <p className="text-gray-700 leading-relaxed mb-4">
+                Swadeshi Apps is dedicated to promoting and showcasing Indian software alternatives to international tools.
+                We believe in the power of Indian innovation and the potential of our tech ecosystem to create world-class products.
+              </p>
+              <p className="text-gray-700 leading-relaxed">
+                Our platform helps users discover quality Indian software across various categories - from business tools
+                to entertainment apps, supporting the <span className="font-semibold text-orange-600">Atmanirbhar Bharat</span> initiative
+                and the broader <span className="font-semibold text-green-600">Swadeshi movement</span>.
+              </p>
             </CardContent>
           </Card>
 
-          <Card className="border border-green-200 hover:border-green-400 bg-white shadow-sm hover:shadow-lg transition-all duration-300">
+          {/* Why It Matters */}
+          <div className="mb-12">
+            <h2 className="text-2xl font-bold text-gray-900 mb-6 text-center">Why It Matters</h2>
+            <div className="grid md:grid-cols-3 gap-6">
+              <Card className="border border-green-200 hover:border-green-400 transition-all">
+                <CardHeader>
+                  <Globe className="h-8 w-8 text-green-600 mb-2" />
+                  <CardTitle className="text-lg">Economic Growth</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-gray-600 text-sm">
+                    Supporting Indian software companies helps create jobs, boost the economy, and keeps revenue within the country.
+                  </p>
+                </CardContent>
+              </Card>
+
+              <Card className="border border-orange-200 hover:border-orange-400 transition-all">
+                <CardHeader>
+                  <Shield className="h-8 w-8 text-orange-600 mb-2" />
+                  <CardTitle className="text-lg">Data Sovereignty</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-gray-600 text-sm">
+                    Indian companies are more likely to comply with local data protection laws and keep your data secure within India.
+                  </p>
+                </CardContent>
+              </Card>
+
+              <Card className="border border-blue-200 hover:border-blue-400 transition-all">
+                <CardHeader>
+                  <Zap className="h-8 w-8 text-blue-600 mb-2" />
+                  <CardTitle className="text-lg">Innovation</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-gray-600 text-sm">
+                    Indian developers create solutions tailored to local needs, languages, and cultural contexts that global tools may miss.
+                  </p>
+                </CardContent>
+              </Card>
+            </div>
+          </div>
+
+          {/* What We Offer */}
+          <Card className="mb-12 border border-blue-200 bg-white shadow-sm">
             <CardHeader>
               <div className="flex items-center space-x-3 mb-4">
-                <FileText className="h-10 w-10 text-gray-500" />
+                <Heart className="h-10 w-10 text-blue-600" />
               </div>
-              <CardTitle className="text-2xl text-gray-900">
-                Required Information
-              </CardTitle>
+              <CardTitle className="text-2xl text-gray-900">What We Offer</CardTitle>
             </CardHeader>
             <CardContent>
               <ul className="space-y-3 text-gray-700">
-                <li className="flex items-center space-x-2">
-<span className="font-medium">Software name and description</span>
+                <li className="flex items-start space-x-3">
+                  <span className="text-green-600 font-bold mt-1">✓</span>
+                  <span><span className="font-semibold">Comprehensive Directory:</span> Browse 150+ Indian software products across 13+ categories</span>
                 </li>
-                <li className="flex items-center space-x-2">
-<span className="font-medium">Company name and location in India</span>
+                <li className="flex items-start space-x-3">
+                  <span className="text-green-600 font-bold mt-1">✓</span>
+                  <span><span className="font-semibold">Alternative Finder:</span> Discover Indian alternatives to popular international tools</span>
                 </li>
-                <li className="flex items-center space-x-2">
-<span className="font-medium">Website URL (must be working)</span>
+                <li className="flex items-start space-x-3">
+                  <span className="text-green-600 font-bold mt-1">✓</span>
+                  <span><span className="font-semibold">Community-Driven:</span> Open platform where anyone can contribute and suggest new apps</span>
                 </li>
-                <li className="flex items-center space-x-2">
-<span className="font-medium">Category (Business, Finance, etc.)</span>
+                <li className="flex items-start space-x-3">
+                  <span className="text-green-600 font-bold mt-1">✓</span>
+                  <span><span className="font-semibold">Free & Open Source:</span> Built with transparency and community collaboration in mind</span>
                 </li>
-                <li className="flex items-center space-x-2">
-<span className="font-medium">International alternatives it replaces</span>
-                </li>
-                <li className="flex items-center space-x-2">
-<span className="font-medium">Pricing model (Free/Freemium/Paid)</span>
+                <li className="flex items-start space-x-3">
+                  <span className="text-green-600 font-bold mt-1">✓</span>
+                  <span><span className="font-semibold">Curated Content:</span> Every product is verified to be genuinely Indian-developed</span>
                 </li>
               </ul>
             </CardContent>
           </Card>
-        </div>
 
-        <Card className="mb-16 border border-green-200 bg-white shadow-sm">
-          <CardHeader>
-            <div className="flex items-center space-x-3 mb-4">
-              <FileText className="h-8 w-8 text-gray-500" />
-              <Flower2 className="h-5 w-5 text-orange-500" />
-            </div>
-            <CardTitle className="text-2xl bg-gradient-to-r from-green-700 to-orange-700 bg-clip-text text-transparent">
-              Example Entry Format
-            </CardTitle>
-          </CardHeader>
-          <CardContent>
-            <pre className="bg-gray-50 p-6 rounded-xl text-sm overflow-x-auto border border-green-200">
-{`{
-  "name": "Your Software Name",
-  "description": "Brief description of what your software does",
-  "website": "https://yourwebsite.com",
-  "category": "Business",
-  "alternatives": ["International Software 1", "International Software 2"],
-  "pricing": "Freemium",
-  "company": "Your Company Name",
-  "location": "City, State"
-}`}
-            </pre>
-          </CardContent>
-        </Card>
-
-        <div className="grid md:grid-cols-2 gap-8 mb-12">
-          <Card>
+          {/* Join the Movement */}
+          <Card className="mb-12 border-2 border-orange-300 bg-gradient-to-br from-orange-50 to-green-50">
             <CardHeader>
-              <Users className="h-8 w-8 text-gray-500 mb-2" />
-              <CardTitle>Guidelines</CardTitle>
+              <div className="flex items-center justify-center space-x-3 mb-4">
+                <AshokaChakra className="h-10 w-10 text-blue-600" />
+              </div>
+              <CardTitle className="text-2xl text-center bg-gradient-to-r from-orange-600 to-green-600 bg-clip-text text-transparent">
+                Join the Movement
+              </CardTitle>
             </CardHeader>
             <CardContent>
-              <ul className="space-y-2 text-gray-600">
-                <li>• Must be developed by an Indian company</li>
-                <li>• Software must be live and functional</li>
-                <li>• Clear, concise descriptions</li>
-                <li>• Accurate alternative listings</li>
-                <li>• No duplicate entries</li>
-                <li>• Family-friendly content only</li>
-              </ul>
+              <p className="text-gray-700 leading-relaxed text-center mb-4">
+                Every choice matters. By choosing Indian software, you're not just using an app -
+                you're investing in India's future, supporting local talent, and contributing to a self-reliant digital ecosystem.
+              </p>
+              <div className="flex justify-center items-center space-x-2 text-gray-600">
+                <Users className="h-5 w-5" />
+                <span className="font-medium">Made with ❤️ in India, for India</span>
+              </div>
             </CardContent>
           </Card>
 
-          <Card>
+          {/* Feedback Form */}
+          <Card className="border border-gray-200 bg-white shadow-sm">
             <CardHeader>
-              <AshokaChakra className="h-8 w-8 text-gray-500 mb-2" />
-              <CardTitle>Categories</CardTitle>
+              <CardTitle className="text-2xl text-gray-900 text-center">Contact Us with Feedback</CardTitle>
+              <p className="text-gray-600 text-center text-sm mt-2">
+                We'd love to hear from you! Share your thoughts, suggestions, or report any issues.
+              </p>
             </CardHeader>
             <CardContent>
-              <div className="grid grid-cols-2 gap-2 text-sm text-gray-600">
-                <div>• Business</div>
-                <div>• Finance</div>
-                <div>• Education</div>
-                <div>• E-commerce</div>
-                <div>• Transportation</div>
-                <div>• Food Delivery</div>
-                <div>• Gaming</div>
-                <div>• Development</div>
-                <div>• Design</div>
-                <div>• Communication</div>
+              <div className="bg-white rounded-lg overflow-hidden">
+                <iframe
+                  aria-label="Contact with feedback"
+                  frameBorder="0"
+                  style={{ height: '750px', width: '100%', border: 'none' }}
+                  src="https://forms.zohopublic.in/zeptomail130082022600088602161/form/Contactwithfeedback/formperma/tU1S-REJhIPZwGu_vSMbEFB40MAJg11lMgjfqQZ1ZeQ"
+                />
               </div>
             </CardContent>
           </Card>
         </div>
-
-        <div className="text-center space-y-6">
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button asChild size="lg">
-              <Link href="https://github.com/ssv445/awesome-swadeshi-softwares" target="_blank" rel="noopener noreferrer">
-                <GitPullRequest className="mr-2 h-5 w-5" />
-                Contribute on GitHub
-                <ExternalLink className="ml-2 h-4 w-4" />
-              </Link>
-            </Button>
-            <Button asChild size="lg" variant="outline">
-              <Link href="https://github.com/ssv445/awesome-swadeshi-softwares/blob/main/data/README.md" target="_blank" rel="noopener noreferrer">
-                <FileText className="mr-2 h-5 w-5" />
-                Read Full Guidelines
-                <ExternalLink className="ml-2 h-4 w-4" />
-              </Link>
-            </Button>
-          </div>
-
-          <p className="text-gray-500 text-sm">
-            Questions? Open an issue on GitHub or contact us through the repository.
-          </p>
-        </div>
-      </div>
       </div>
     </AppShell>
   )

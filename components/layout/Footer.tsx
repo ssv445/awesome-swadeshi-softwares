@@ -34,6 +34,23 @@ export function Footer({ variant = "default", className = "" }: FooterProps) {
       </div>
 
       <div className="container mx-auto relative z-10">
+        {/* CTA Section */}
+        <div className="text-center mb-8 sm:mb-10 md:mb-12 max-w-2xl mx-auto">
+          <h3 className="text-white text-lg sm:text-xl md:text-2xl font-bold mb-2 sm:mb-3">
+            Know an Indian Product?
+          </h3>
+          <p className="text-gray-300 text-sm sm:text-base mb-4 sm:mb-6 leading-relaxed">
+            Help us grow this directory! If you know a great Indian software product that's not listed yet, share it with the community.
+          </p>
+          <Link
+            href="https://forms.zohopublic.in/zeptomail130082022600088602161/form/SubmitSwadeshiProduct/formperma/F-ZRELy4mEyYK4eKIreXVmVDROVqszZyZbFzu2gtQ4A"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-block border-2 border-blue-400 text-blue-400 hover:bg-blue-400 hover:text-white font-semibold px-6 sm:px-8 py-3 sm:py-4 rounded-lg transition-all text-sm sm:text-base"
+          >
+            Submit Swadeshi Product
+          </Link>
+        </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8 mb-6 sm:mb-8">
           {/* Brand */}
           <div className="sm:col-span-2 lg:col-span-2">
