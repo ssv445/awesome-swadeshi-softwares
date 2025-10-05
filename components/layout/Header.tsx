@@ -20,7 +20,7 @@ export function Header({ variant = "default", className = "", allSoftware }: Hea
         <div className="flex items-center justify-between gap-4">
           {/* Logo and site name */}
           <Link href="/" className="flex items-center space-x-2 sm:space-x-3 hover:opacity-80 transition-opacity min-w-0 flex-shrink">
-            <AshokaChakra className="h-8 w-8 sm:h-10 sm:w-10 text-blue-600 flex-shrink-0" />
+            <AshokaChakra className="h-8 w-8 sm:h-10 sm:w-10 text-fuchsia-600 flex-shrink-0" />
             <div className="min-w-0">
               <h1 className="text-base sm:text-xl md:text-2xl font-bold text-gray-900 truncate">
                 {SITE_NAME}

@@ -13,6 +13,16 @@ export const metadata: Metadata = {
     icon: "/logo.png",
     apple: "/logo.png"
   },
+  manifest: "/manifest.json",
+  appleWebApp: {
+    capable: true,
+    statusBarStyle: "default",
+    title: "Swadeshi Apps"
+  },
+  applicationName: "Swadeshi Apps",
+  formatDetection: {
+    telephone: false
+  },
   title: {
     default: "Swadeshi Apps - Discover Made in India Alternatives",
     template: "%s | Swadeshi Apps"
@@ -88,6 +98,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5" />
+        <meta name="theme-color" content="#FF9933" />
+        <link rel="apple-touch-icon" href="/logo.png" />
         <style>{`
 html {
   font-family: ${GeistSans.style.fontFamily};

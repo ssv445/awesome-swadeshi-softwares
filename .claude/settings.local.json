@@ -20,7 +20,13 @@
       "Bash(for file in app/about/page.tsx app/why-swadeshi/page.tsx app/contribute/page.tsx app/alternatives/page.tsx)",
       "Bash(do echo \"=== $file ===\")",
       "Bash(grep:*)",
-      "Bash(done)"
+      "Bash(done)",
+      "Bash(for size in 72 96 128 144 152 192 384 512)",
+      "Bash(do)",
+      "Bash(sips:*)",
+      "Bash(/dev/null)",
+      "Bash(echo:*)",
+      "Bash(cat:*)"
     ],
     "deny": [
       "Bash(npm run build:*)"

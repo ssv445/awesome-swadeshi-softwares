@@ -142,13 +142,13 @@ export function SearchBox({
         onKeyDown={handleKeyDown}
         onBlur={handleSearchBlur}
         onFocus={handleSearchFocus}
-        className={`${sizeClasses[size]} border-2 sm:border-4 border-blue-400 rounded-xl sm:rounded-2xl bg-white focus:border-blue-600 focus:ring-blue-600 shadow-xl sm:shadow-2xl font-medium`}
+        className={`${sizeClasses[size]} border border-gray-300 rounded-lg bg-white focus:border-gray-400 focus:ring-1 focus:ring-gray-300 shadow-sm font-normal placeholder:text-gray-400`}
         autoComplete="off"
       />
 
       {/* Search Dropdown */}
       {showDropdown && searchResults.length > 0 && (
-        <div className="absolute top-full left-0 right-0 mt-2 bg-white border-2 border-gray-300 rounded-xl sm:rounded-2xl shadow-2xl z-[100] max-h-96 overflow-y-auto">
+        <div className="absolute top-full left-0 right-0 mt-2 bg-white border border-gray-200 rounded-lg shadow-lg z-[100] max-h-96 overflow-y-auto">
           <div className="p-2">
             <p className="text-sm text-gray-600 px-4 py-2 font-medium">
               {searchResults.length} Indian {searchResults.length === 1 ? 'app' : 'apps'} found
@@ -157,8 +157,8 @@ export function SearchBox({
               <button
                 key={index}
                 onClick={() => handleAppSelect(app)}
-                className={`w-full flex items-center gap-3 p-3 hover:bg-gray-50 rounded-xl transition-colors text-left ${
-                  index === selectedIndex ? 'bg-blue-50 border border-blue-200' : ''
+                className={`w-full flex items-center gap-3 p-3 hover:bg-gray-50 rounded-lg transition-colors text-left ${
+                  index === selectedIndex ? 'bg-gray-100' : ''
                 }`}
               >
                 <Favicon
@@ -166,7 +166,7 @@ export function SearchBox({
                   name={app.name}
                   size={24}
                   className="h-6 w-6 object-contain"
-                  fallbackClassName="h-5 w-5 text-blue-600"
+                  fallbackClassName="h-5 w-5 text-gray-600"
                   customFaviconUrl={app.faviconUrl}
                   fixedHeight={true}
                 />
@@ -199,7 +199,7 @@ export function SearchBox({
               <span key={suggestion.label}>
                 <button
                   onClick={() => handleSearchInputChange(suggestion.label)}
-                  className="text-blue-600 hover:text-blue-800 hover:underline font-medium cursor-pointer"
+                  className="text-gray-600 hover:text-gray-900 hover:underline font-medium cursor-pointer"
                 >
                   {suggestion.label}
                 </button>

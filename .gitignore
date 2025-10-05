@@ -26,6 +26,14 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 scripts/crawl-tracker.json
+
+# PWA files
+**/public/sw.js
+**/public/workbox-*.js
+**/public/worker-*.js
+**/public/sw.js.map
+**/public/workbox-*.js.map
+**/public/worker-*.js.map
 .playwright-mcp/about-page-mobile.png
 .playwright-mcp/alternatives-page-mobile.png
 .playwright-mcp/business-page-mobile.png
