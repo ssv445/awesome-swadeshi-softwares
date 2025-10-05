@@ -1,6 +1,3 @@
-"use client"
-
-import { useMemo } from "react"
 import { Button } from "@/components/ui/button"
 import { Zap } from "lucide-react"
 import { AshokaChakra } from "@/components/ashoka-chakra"
@@ -18,12 +15,10 @@ interface ClientHomePageProps {
 }
 
 export default function ClientHomePage({ allSoftware, featuredProducts, categories }: ClientHomePageProps) {
-  const categoryDisplayNames = useMemo(() => {
-    return categories.map(cat => ({
-      slug: cat,
-      name: getCategoryDisplayName(cat)
-    }))
-  }, [categories])
+  const categoryDisplayNames = categories.map(cat => ({
+    slug: cat,
+    name: getCategoryDisplayName(cat)
+  }))
 
   // Always show all featured products without pagination
   const displaySoftware = featuredProducts
