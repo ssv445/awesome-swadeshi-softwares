@@ -12,19 +12,19 @@
   "pricing": "Freemium",
   "company": "Zoho Corporation",
   "location": "Chennai",
-  "faviconUrl": "http://www.zoho.com/inventory/images/inventory-icon-preview.png",
+  "faviconUrl": "https://www.zoho.com/inventory/images/inventory-icon-preview.png",
   "opengraph": {
     "last_updated": "2025-10-05T10:32:52.810Z",
-    "image": "http://www.zoho.com/inventory/images/inventory-icon-preview.png",
+    "image": "https://www.zoho.com/inventory/images/inventory-icon-preview.png",
     "title": "Online Inventory Management Software | Zoho Inventory",
     "type": "website",
-    "url": "http://www.zoho.com/inventory/",
+    "url": "https://www.zoho.com/inventory/",
     "description": "Zoho Inventory is online inventory management software ideal for small businesses. Simplify your inventory and order operations. Try for FREE!",
     "twitter_card": "summary",
     "twitter_site": "@zoho",
     "twitter_title": "Online Inventory Management Software | Zoho Inventory",
     "twitter_description": "Zoho Inventory is online inventory management software ideal for small businesses. Simplify your inventory and order operations. Try for FREE!",
-    "twitter_image": "http://www.zoho.com/inventory/images/inventory-icon-preview.png"
+    "twitter_image": "https://www.zoho.com/inventory/images/inventory-icon-preview.png"
   },
   "appStoreUrl": "https://itunes.apple.com/us/app/zoho-inventory/id1037960494?mt=8, https://apps.apple.com/app/zoho-inventory-management-app/id1037960494, https://apps.apple.com/app/id1037960494",
   "playStoreUrl": "https://play.google.com/store/apps/details?id=com.zoho.inventory&referrer=utm_source%3Dzom_website%26utm_medium%3Din_index_page, https://play.google.com/store/apps/details?id=com.zoho.inventory&referrer=utm_source%3Dzom_website%26utm_medium%3Dwebsite_footer"
