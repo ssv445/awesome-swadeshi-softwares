@@ -11,6 +11,7 @@ export const SEARCH_MIN_LENGTH = 1
 export const SEARCH_MAX_RESULTS = 8
 export const DESCRIPTION_PREVIEW_WORDS = 10
 export const ALTERNATIVES_LIMIT = 3
+export const CARD_ALTERNATIVES_LIMIT = 2
 
 // SEO
 export const SITE_NAME = process.env.NEXT_PUBLIC_SITE_NAME || "Swadeshi Apps"

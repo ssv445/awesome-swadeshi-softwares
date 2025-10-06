@@ -289,13 +289,20 @@ export default async function AppPage({ params }: AppPageProps) {
               <p className="text-gray-700 mb-4">
                 {app.name} is a powerful Indian alternative to these international apps:
               </p>
-              <div className="flex flex-wrap gap-2">
+              <div className="space-y-3">
                 {app.alternatives.map((alt, index) => (
-                  <Link key={index} href={getAlternativeUrl(alt)}>
-                    <Badge variant="outline" className="text-sm border-blue-300 text-blue-600 bg-blue-50 hover:bg-blue-100 cursor-pointer transition-colors">
-                      {alt}
-                    </Badge>
-                  </Link>
+                  <div key={index} className="border-l-4 border-blue-300 pl-4 py-2">
+                    <h3 className="text-lg font-semibold text-gray-900 mb-1">
+                      Is {app.name} an alternative to {alt}?
+                    </h3>
+                    <p className="text-gray-700">
+                      Yes, {app.name} by {app.company} is an Indian alternative to {alt}.
+                      It offers similar functionality while being developed and maintained in India.
+                      <Link href={getAlternativeUrl(alt)} className="text-blue-600 hover:underline ml-1">
+                        Explore other Indian alternatives to {alt} →
+                      </Link>
+                    </p>
+                  </div>
                 ))}
               </div>
             </CardContent>

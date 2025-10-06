@@ -49,13 +49,18 @@ export function ProductCard({ software, index = 0 }: ProductCardProps) {
             <p className="text-sm font-medium text-gray-600">Alternative to:</p>
           </div>
           <div className="flex flex-wrap gap-2">
-            {software.alternatives.map((alt, altIndex) => (
+            {software.alternatives.slice(0, 2).map((alt, altIndex) => (
               <Link key={altIndex} href={getAlternativeUrl(alt)}>
                 <Badge variant="outline" className="text-xs border-blue-300 text-blue-600 bg-blue-50 hover:bg-blue-100 hover:border-blue-500 hover:text-blue-700 cursor-pointer transition-colors">
                   {alt}
                 </Badge>
               </Link>
             ))}
+            {software.alternatives.length > 2 && (
+              <Badge variant="outline" className="text-xs border-gray-300 text-gray-600 bg-gray-50">
+                +{software.alternatives.length - 2} more
+              </Badge>
+            )}
           </div>
         </div>
 
