@@ -54,7 +54,10 @@ export async function generateMetadata({ params }: AppPageProps) {
       title: app.opengraph?.twitter_title || ogTitle,
       description: app.opengraph?.twitter_description || ogDescription,
       images: app.opengraph?.twitter_image ? [app.opengraph.twitter_image] : (app.opengraph?.image ? [app.opengraph.image] : []),
-    }
+    },
+    alternates: {
+      canonical: `/${category}/${slug}`,
+    },
   }
 }
 

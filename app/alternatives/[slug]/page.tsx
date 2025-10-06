@@ -45,6 +45,9 @@ export async function generateMetadata({ params }: AlternativePageProps) {
     title: `${mainApp} - ${alternative.internationalTool.name} Indian Alternative | Made in India`,
     description: `${mainApp} is a powerful Indian alternative to ${alternative.internationalTool.name}. Made in India ${alternative.internationalTool.category.toLowerCase()} app with local support, data sovereignty, and better pricing.`,
     keywords: `${alternative.internationalTool.name} Indian alternative, Made in India app, Swadeshi app, Indian ${alternative.internationalTool.category.toLowerCase()} software, ${mainApp}, Atmanirbhar Bharat`,
+    alternates: {
+      canonical: `/alternatives/${slug}`,
+    },
   }
 }
 
