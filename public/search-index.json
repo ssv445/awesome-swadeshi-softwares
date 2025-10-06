@@ -4,7 +4,7 @@
       "id": "business/clevertap",
       "name": "CleverTap",
       "company": "CleverTap",
-      "category": "Business",
+      "category": "business",
       "slug": "clevertap",
       "searchTerms": "clevertap clevertap business mixpanel amplitude braze customer engagement and retention platform with analytics and personalization"
     },
@@ -12,7 +12,7 @@
       "id": "business/erpnext",
       "name": "ERPNext",
       "company": "Frappe Technologies",
-      "category": "Business",
+      "category": "business",
       "slug": "erpnext",
       "searchTerms": "erpnext frappe technologies business sap oracle erp microsoft dynamics open source cloud erp software for modern businesses comprehensive"
     },
@@ -20,7 +20,7 @@
       "id": "business/esign-genie",
       "name": "eSign Genie",
       "company": "eSign Genie (Indian development)",
-      "category": "Business",
+      "category": "business",
       "slug": "esign-genie",
       "searchTerms": "esign genie esign genie indian development business docusign adobe sign hellosign digital signature platform with document workflow and authentication"
     },
@@ -28,7 +28,7 @@
       "id": "business/ginger-software",
       "name": "Ginger Software",
       "company": "Ginger Software (Indian operations)",
-      "category": "Business",
+      "category": "business",
       "slug": "ginger-software",
       "searchTerms": "ginger software ginger software indian operations business grammarly prowritingaid hemingway ai powered writing assistant with grammar checking and language enhancement"
     },
@@ -36,7 +36,7 @@
       "id": "business/greythr",
       "name": "GreytHR",
       "company": "Greytip Software",
-      "category": "Business",
+      "category": "business",
       "slug": "greythr",
       "searchTerms": "greythr greytip software business bamboohr workday zoho people human resource management system with payroll attendance and employee self service"
     },
@@ -44,7 +44,7 @@
       "id": "business/helpwise",
       "name": "Helpwise",
       "company": "Helpwise",
-      "category": "Business",
+      "category": "business",
       "slug": "helpwise",
       "searchTerms": "helpwise helpwise business zendesk freshdesk help scout customer service platform with shared inbox live chat and knowledge"
     },
@@ -52,7 +52,7 @@
       "id": "business/jio-cloud",
       "name": "Jio Cloud",
       "company": "Jio Platforms",
-      "category": "Business",
+      "category": "business",
       "slug": "jio-cloud",
       "searchTerms": "jio cloud jio platforms business google drive dropbox onedrive ai powered cloud storage service for files photos and documents with"
     },
@@ -60,7 +60,7 @@
       "id": "business/keka-hr",
       "name": "Keka HR",
       "company": "Keka Technologies",
-      "category": "Business",
+      "category": "business",
       "slug": "keka-hr",
       "searchTerms": "keka hr keka technologies business bamboohr workday adp cloud based hr management system with payroll attendance and employee engagement"
     },
@@ -68,7 +68,7 @@
       "id": "business/leadsquared",
       "name": "LeadSquared",
       "company": "LeadSquared",
-      "category": "Business",
+      "category": "business",
       "slug": "leadsquared",
       "searchTerms": "leadsquared leadsquared business hubspot salesforce marketo sales crm and marketing automation platform for lead management"
     },
@@ -76,7 +76,7 @@
       "id": "business/moengage",
       "name": "MoEngage",
       "company": "MoEngage Inc",
-      "category": "Business",
+      "category": "business",
       "slug": "moengage",
       "searchTerms": "moengage moengage inc business braze airship onesignal customer engagement platform with omnichannel messaging and analytics"
     },
@@ -84,7 +84,7 @@
       "id": "business/notifyvisitors",
       "name": "NotifyVisitors",
       "company": "NotifyVisitors",
-      "category": "Business",
+      "category": "business",
       "slug": "notifyvisitors",
       "searchTerms": "notifyvisitors notifyvisitors business mailchimp constant contact campaign monitor customer engagement platform with email marketing push notifications and automation"
     },
@@ -92,7 +92,7 @@
       "id": "business/onlyoffice-india",
       "name": "OnlyOffice India",
       "company": "Ascensio System SIA (India Office)",
-      "category": "Business",
+      "category": "business",
       "slug": "onlyoffice-india",
       "searchTerms": "onlyoffice india ascensio system sia india office business microsoft office google workspace libreoffice office suite with document editing collaboration and project management"
     },
@@ -100,7 +100,7 @@
       "id": "business/petpooja",
       "name": "PetPooja",
       "company": "PetPooja",
-      "category": "Business",
+      "category": "business",
       "slug": "petpooja",
       "searchTerms": "petpooja petpooja business square pos toast pos lightspeed all in one business management software for restaurants and retail with pos"
     },
@@ -108,7 +108,7 @@
       "id": "business/proofhub",
       "name": "ProofHub",
       "company": "ProofHub",
-      "category": "Business",
+      "category": "business",
       "slug": "proofhub",
       "searchTerms": "proofhub proofhub business asana monday com trello project management and team collaboration software with time tracking"
     },
@@ -116,7 +116,7 @@
       "id": "business/sitegpt",
       "name": "SiteGPT",
       "company": "SiteGPT",
-      "category": "Business",
+      "category": "business",
       "slug": "sitegpt",
       "searchTerms": "sitegpt sitegpt business intercom drift zendesk chat ai powered chatbot platform that creates personalized chatbots trained on website"
     },
@@ -124,7 +124,7 @@
       "id": "business/smartlook",
       "name": "Smartlook",
       "company": "Smartlook (Indian operations)",
-      "category": "Business",
+      "category": "business",
       "slug": "smartlook",
       "searchTerms": "smartlook smartlook indian operations business hotjar fullstory logrocket user behavior analytics with session recordings and heatmaps"
     },
@@ -132,7 +132,7 @@
       "id": "business/surveysparrow",
       "name": "SurveySparrow",
       "company": "SurveySparrow",
-      "category": "Business",
+      "category": "business",
       "slug": "surveysparrow",
       "searchTerms": "surveysparrow surveysparrow business surveymonkey typeform google forms conversational survey platform with advanced analytics and automation"
     },
@@ -140,7 +140,7 @@
       "id": "business/topmate",
       "name": "Topmate",
       "company": "Topmate",
-      "category": "Business",
+      "category": "business",
       "slug": "topmate",
       "searchTerms": "topmate topmate business linktree beacons milkshake link in bio tool with booking payments and audience engagement features"
     },
@@ -148,7 +148,7 @@
       "id": "business/townscript",
       "name": "Townscript",
       "company": "Townscript",
-      "category": "Business",
+      "category": "business",
       "slug": "townscript",
       "searchTerms": "townscript townscript business eventbrite meetup ticket tailor event ticketing and management platform with registration and analytics"
     },
@@ -156,7 +156,7 @@
       "id": "business/urbanpiper",
       "name": "UrbanPiper",
       "company": "UrbanPiper",
-      "category": "Business",
+      "category": "business",
       "slug": "urbanpiper",
       "searchTerms": "urbanpiper urbanpiper business toast resy opentable restaurant technology platform for online ordering and delivery management"
     },
@@ -164,7 +164,7 @@
       "id": "business/userback",
       "name": "Userback",
       "company": "Userback (Indian operations)",
-      "category": "Business",
+      "category": "business",
       "slug": "userback",
       "searchTerms": "userback userback indian operations business usertesting maze lookback user feedback and testing platform with screenshot annotations and bug"
     },
@@ -172,7 +172,7 @@
       "id": "business/vdocipher",
       "name": "VdoCipher",
       "company": "VdoCipher",
-      "category": "Business",
+      "category": "business",
       "slug": "vdocipher",
       "searchTerms": "vdocipher vdocipher business vimeo business wistia jw player video hosting platform with drm protection and analytics for businesses"
     },
@@ -180,7 +180,7 @@
       "id": "business/webengage-analytics",
       "name": "WebEngage Analytics",
       "company": "WebEngage",
-      "category": "Business",
+      "category": "business",
       "slug": "webengage-analytics",
       "searchTerms": "webengage analytics webengage business google analytics mixpanel amplitude customer analytics platform for user behavior tracking and insights"
     },
@@ -188,7 +188,7 @@
       "id": "business/webengage-engagement",
       "name": "WebEngage Engagement",
       "company": "WebEngage",
-      "category": "Business",
+      "category": "business",
       "slug": "webengage-engagement",
       "searchTerms": "webengage engagement webengage business braze clevertap leanplum multi channel customer engagement platform with personalization"
     },
@@ -196,7 +196,7 @@
       "id": "business/whatfix",
       "name": "Whatfix",
       "company": "Whatfix Inc",
-      "category": "Business",
+      "category": "business",
       "slug": "whatfix",
       "searchTerms": "whatfix whatfix inc business walkme pendo appcues digital adoption platform for user onboarding and software training"
     },
@@ -204,7 +204,7 @@
       "id": "business/woorank",
       "name": "WooRank",
       "company": "WooRank (Indian operations)",
-      "category": "Business",
+      "category": "business",
       "slug": "woorank",
       "searchTerms": "woorank woorank indian operations business semrush ahrefs moz seo and digital marketing analysis platform with website optimization tools"
     },
@@ -212,7 +212,7 @@
       "id": "business/zoho-analytics",
       "name": "Zoho Analytics",
       "company": "Zoho Corporation",
-      "category": "Business",
+      "category": "business",
       "slug": "zoho-analytics",
       "searchTerms": "zoho analytics zoho corporation business google analytics tableau power bi business intelligence and data analytics platform with reporting"
     },
@@ -220,7 +220,7 @@
       "id": "business/zoho-assist",
       "name": "Zoho Assist",
       "company": "Zoho Corporation",
-      "category": "Business",
+      "category": "business",
       "slug": "zoho-assist",
       "searchTerms": "zoho assist zoho corporation business teamviewer anydesk logmein remote support and access software for it teams with screen"
     },
@@ -228,7 +228,7 @@
       "id": "business/zoho-backstage",
       "name": "Zoho BackStage",
       "company": "Zoho Corporation",
-      "category": "Business",
+      "category": "business",
       "slug": "zoho-backstage",
       "searchTerms": "zoho backstage zoho corporation business eventbrite cvent bizzabo end to end event management platform for conferences trade shows and workshops"
     },
@@ -236,7 +236,7 @@
       "id": "business/zoho-bookings",
       "name": "Zoho Bookings",
       "company": "Zoho Corporation",
-      "category": "Business",
+      "category": "business",
       "slug": "zoho-bookings",
       "searchTerms": "zoho bookings zoho corporation business calendly acuity scheduling appointy online appointment scheduling software with calendar sync automated reminders payment"
     },
@@ -244,7 +244,7 @@
       "id": "business/zoho-books",
       "name": "Zoho Books",
       "company": "Zoho Corporation",
-      "category": "Business",
+      "category": "business",
       "slug": "zoho-books",
       "searchTerms": "zoho books zoho corporation business quickbooks xero freshbooks online accounting software for small businesses and freelancers"
     },
@@ -252,7 +252,7 @@
       "id": "business/zoho-campaigns",
       "name": "Zoho Campaigns",
       "company": "Zoho Corporation",
-      "category": "Business",
+      "category": "business",
       "slug": "zoho-campaigns",
       "searchTerms": "zoho campaigns zoho corporation business mailchimp constant contact convertkit email marketing automation platform for businesses"
     },
@@ -260,7 +260,7 @@
       "id": "business/zoho-commerce",
       "name": "Zoho Commerce",
       "company": "Zoho Corporation",
-      "category": "Business",
+      "category": "business",
       "slug": "zoho-commerce",
       "searchTerms": "zoho commerce zoho corporation business shopify woocommerce bigcommerce e commerce platform for building online stores and marketplaces"
     },
@@ -268,7 +268,7 @@
       "id": "business/zoho-creator",
       "name": "Zoho Creator",
       "company": "Zoho Corporation",
-      "category": "Business",
+      "category": "business",
       "slug": "zoho-creator",
       "searchTerms": "zoho creator zoho corporation business microsoft powerapps mendix outsystems low code application development platform for custom business apps"
     },
@@ -276,7 +276,7 @@
       "id": "business/zoho-crm",
       "name": "Zoho CRM",
       "company": "Zoho Corporation",
-      "category": "Business",
+      "category": "business",
       "slug": "zoho-crm",
       "searchTerms": "zoho crm zoho corporation business salesforce hubspot pipedrive customer relationship management software for sales teams and businesses"
     },
@@ -284,7 +284,7 @@
       "id": "business/zoho-desk",
       "name": "Zoho Desk",
       "company": "Zoho Corporation",
-      "category": "Business",
+      "category": "business",
       "slug": "zoho-desk",
       "searchTerms": "zoho desk zoho corporation business zendesk freshdesk help scout help desk software for customer support and ticketing"
     },
@@ -292,7 +292,7 @@
       "id": "business/zoho-forms",
       "name": "Zoho Forms",
       "company": "Zoho Corporation",
-      "category": "Business",
+      "category": "business",
       "slug": "zoho-forms",
       "searchTerms": "zoho forms zoho corporation business google forms typeform jotform online form builder for surveys data collection and workflows"
     },
@@ -300,7 +300,7 @@
       "id": "business/zoho-inventory",
       "name": "Zoho Inventory",
       "company": "Zoho Corporation",
-      "category": "Business",
+      "category": "business",
       "slug": "zoho-inventory",
       "searchTerms": "zoho inventory zoho corporation business tradegecko inflow cin7 inventory management software for order and warehouse management"
     },
@@ -308,7 +308,7 @@
       "id": "business/zoho-invoice",
       "name": "Zoho Invoice",
       "company": "Zoho Corporation",
-      "category": "Business",
+      "category": "business",
       "slug": "zoho-invoice",
       "searchTerms": "zoho invoice zoho corporation business invoice2go wave freshbooks free invoicing software for small businesses and freelancers"
     },
@@ -316,7 +316,7 @@
       "id": "business/zoho-marketinghub",
       "name": "Zoho MarketingHub",
       "company": "Zoho Corporation",
-      "category": "Business",
+      "category": "business",
       "slug": "zoho-marketinghub",
       "searchTerms": "zoho marketinghub zoho corporation business hubspot marketing hub marketo pardot all in one marketing automation platform with email campaigns lead management webinar"
     },
@@ -324,7 +324,7 @@
       "id": "business/zoho-pagesense",
       "name": "Zoho PageSense",
       "company": "Zoho Corporation",
-      "category": "Business",
+      "category": "business",
       "slug": "zoho-pagesense",
       "searchTerms": "zoho pagesense zoho corporation business hotjar crazy egg optimizely website conversion optimization and analytics platform with heatmaps a b testing"
     },
@@ -332,7 +332,7 @@
       "id": "business/zoho-people",
       "name": "Zoho People",
       "company": "Zoho Corporation",
-      "category": "Business",
+      "category": "business",
       "slug": "zoho-people",
       "searchTerms": "zoho people zoho corporation business bamboohr workday adp human resources management system for employee management"
     },
@@ -340,7 +340,7 @@
       "id": "business/zoho-projects",
       "name": "Zoho Projects",
       "company": "Zoho Corporation",
-      "category": "Business",
+      "category": "business",
       "slug": "zoho-projects",
       "searchTerms": "zoho projects zoho corporation business asana monday com basecamp comprehensive project management software with task tracking gantt charts time"
     },
@@ -348,7 +348,7 @@
       "id": "business/zoho-recruit",
       "name": "Zoho Recruit",
       "company": "Zoho Corporation",
-      "category": "Business",
+      "category": "business",
       "slug": "zoho-recruit",
       "searchTerms": "zoho recruit zoho corporation business greenhouse lever workable recruitment software for hiring and applicant tracking"
     },
@@ -356,7 +356,7 @@
       "id": "business/zoho-salesiq",
       "name": "Zoho SalesIQ",
       "company": "Zoho Corporation",
-      "category": "Business",
+      "category": "business",
       "slug": "zoho-salesiq",
       "searchTerms": "zoho salesiq zoho corporation business intercom drift livechat live chat and visitor tracking software with ai powered chatbots lead"
     },
@@ -364,7 +364,7 @@
       "id": "business/zoho-sign",
       "name": "Zoho Sign",
       "company": "Zoho Corporation",
-      "category": "Business",
+      "category": "business",
       "slug": "zoho-sign",
       "searchTerms": "zoho sign zoho corporation business docusign hellosign adobe sign digital signature software for document signing and workflows"
     },
@@ -372,7 +372,7 @@
       "id": "business/zoho-sites",
       "name": "Zoho Sites",
       "company": "Zoho Corporation",
-      "category": "Business",
+      "category": "business",
       "slug": "zoho-sites",
       "searchTerms": "zoho sites zoho corporation business wix squarespace weebly website builder for creating professional websites without coding"
     },
@@ -380,7 +380,7 @@
       "id": "business/zoho-social",
       "name": "Zoho Social",
       "company": "Zoho Corporation",
-      "category": "Business",
+      "category": "business",
       "slug": "zoho-social",
       "searchTerms": "zoho social zoho corporation business hootsuite buffer sprout social social media management platform for scheduling and analytics"
     },
@@ -388,7 +388,7 @@
       "id": "business/zoho-survey",
       "name": "Zoho Survey",
       "company": "Zoho Corporation",
-      "category": "Business",
+      "category": "business",
       "slug": "zoho-survey",
       "searchTerms": "zoho survey zoho corporation business surveymonkey qualtrics typeform online survey tool for market research and customer feedback"
     },
@@ -396,7 +396,7 @@
       "id": "business/zyro-india",
       "name": "Zyro India",
       "company": "Hostinger (Indian operations)",
-      "category": "Business",
+      "category": "business",
       "slug": "zyro-india",
       "searchTerms": "zyro india hostinger indian operations business wix squarespace weebly ai powered website builder with drag and drop interface and templates"
     },
@@ -404,7 +404,7 @@
       "id": "communication/arattai",
       "name": "Arattai",
       "company": "Zoho Corporation",
-      "category": "Communication",
+      "category": "communication",
       "slug": "arattai",
       "searchTerms": "arattai zoho corporation communication whatsapp telegram made in india instant messaging alternative integrated with zoho ecosystem"
     },
@@ -412,7 +412,7 @@
       "id": "communication/chatwoot",
       "name": "Chatwoot",
       "company": "Chatwoot Inc.",
-      "category": "Communication",
+      "category": "communication",
       "slug": "chatwoot",
       "searchTerms": "chatwoot chatwoot inc communication intercom zendesk help scout open source customer engagement suite alternative to intercom and"
     },
@@ -420,7 +420,7 @@
       "id": "communication/exotel",
       "name": "Exotel",
       "company": "Exotel Techcom",
-      "category": "Communication",
+      "category": "communication",
       "slug": "exotel",
       "searchTerms": "exotel exotel techcom communication twilio plivo vonage cloud telephony platform with voice sms and video calling apis"
     },
@@ -428,7 +428,7 @@
       "id": "communication/haptik",
       "name": "Haptik",
       "company": "Haptik (Jio)",
-      "category": "Communication",
+      "category": "communication",
       "slug": "haptik",
       "searchTerms": "haptik haptik jio communication amazon alexa google assistant siri ai powered virtual assistant for customer support and automation"
     },
@@ -436,7 +436,7 @@
       "id": "communication/hike-sticker-chat",
       "name": "Hike Sticker Chat",
       "company": "Hike Private Limited",
-      "category": "Communication",
+      "category": "communication",
       "slug": "hike-sticker-chat",
       "searchTerms": "hike sticker chat hike private limited communication whatsapp telegram signal messaging app with stickers themes and privacy features"
     },
@@ -444,7 +444,7 @@
       "id": "communication/jio-meet",
       "name": "Jio Meet",
       "company": "Jio Platforms",
-      "category": "Communication",
+      "category": "communication",
       "slug": "jio-meet",
       "searchTerms": "jio meet jio platforms communication google meet zoom microsoft teams video conferencing platform with hd video calls and screen sharing"
     },
@@ -452,7 +452,7 @@
       "id": "communication/jiochat",
       "name": "JioChat",
       "company": "Jio Platforms",
-      "category": "Communication",
+      "category": "communication",
       "slug": "jiochat",
       "searchTerms": "jiochat jio platforms communication whatsapp telegram instant messaging app leveraging jio s telecom user base with integrated"
     },
@@ -460,7 +460,7 @@
       "id": "communication/kommunicate",
       "name": "Kommunicate",
       "company": "Kommunicate",
-      "category": "Communication",
+      "category": "communication",
       "slug": "kommunicate",
       "searchTerms": "kommunicate kommunicate communication intercom zendesk chat drift customer communication platform with live chat chatbots and helpdesk"
     },
@@ -468,7 +468,7 @@
       "id": "communication/krutrim-contact-center",
       "name": "Krutrim Contact Center",
       "company": "Ola Krutrim",
-      "category": "Communication",
+      "category": "communication",
       "slug": "krutrim-contact-center",
       "searchTerms": "krutrim contact center ola krutrim communication zendesk freshworks genesys automated customer support with multi language capabilities for indian enterprises"
     },
@@ -476,7 +476,7 @@
       "id": "communication/msg91",
       "name": "MSG91",
       "company": "MSG91",
-      "category": "Communication",
+      "category": "communication",
       "slug": "msg91",
       "searchTerms": "msg91 msg91 communication twilio sendgrid amazon sns cloud communication platform offering sms email whatsapp voice and otp"
     },
@@ -484,7 +484,7 @@
       "id": "communication/sarvam-samvaad",
       "name": "Sarvam Samvaad",
       "company": "Sarvam AI",
-      "category": "Communication",
+      "category": "communication",
       "slug": "sarvam-samvaad",
       "searchTerms": "sarvam samvaad sarvam ai communication dialogflow microsoft bot framework amazon lex conversational ai agents supporting 11 indian languages across voice and"
     },
@@ -492,7 +492,7 @@
       "id": "communication/say-namaste",
       "name": "Say Namaste",
       "company": "Inscripts",
-      "category": "Communication",
+      "category": "communication",
       "slug": "say-namaste",
       "searchTerms": "say namaste inscripts communication zoom google meet video conferencing platform that emerged during pandemic with focus on"
     },
@@ -500,7 +500,7 @@
       "id": "communication/troop-messenger",
       "name": "Troop Messenger",
       "company": "Tvisha Systems Pvt Ltd",
-      "category": "Communication",
+      "category": "communication",
       "slug": "troop-messenger",
       "searchTerms": "troop messenger tvisha systems pvt ltd communication slack microsoft teams enterprise focused secure office communication platform for teams"
     },
@@ -508,7 +508,7 @@
       "id": "communication/vani-hq",
       "name": "Vani HQ",
       "company": "Zoho Corporation",
-      "category": "Communication",
+      "category": "communication",
       "slug": "vani-hq",
       "searchTerms": "vani hq zoho corporation communication miro mural figjam visual collaboration platform for teams to think together work smarter"
     },
@@ -516,7 +516,7 @@
       "id": "communication/videomeet",
       "name": "VideoMeet",
       "company": "Data Ingenious Global Ltd",
-      "category": "Communication",
+      "category": "communication",
       "slug": "videomeet",
       "searchTerms": "videomeet data ingenious global ltd communication zoom google meet government backed video conferencing platform focusing on aatmanirbhar positioning"
     },
@@ -524,7 +524,7 @@
       "id": "communication/zoho-cliq",
       "name": "Zoho Cliq",
       "company": "Zoho Corporation",
-      "category": "Communication",
+      "category": "communication",
       "slug": "zoho-cliq",
       "searchTerms": "zoho cliq zoho corporation communication slack microsoft teams team collaboration platform affordable and deeply integrated with zoho suite"
     },
@@ -532,7 +532,7 @@
       "id": "communication/zoho-connect",
       "name": "Zoho Connect",
       "company": "Zoho Corporation",
-      "category": "Communication",
+      "category": "communication",
       "slug": "zoho-connect",
       "searchTerms": "zoho connect zoho corporation communication slack microsoft teams workplace by meta team collaboration and social intranet platform with group discussions knowledge"
     },
@@ -540,7 +540,7 @@
       "id": "communication/zoho-meeting",
       "name": "Zoho Meeting",
       "company": "Zoho Corporation",
-      "category": "Communication",
+      "category": "communication",
       "slug": "zoho-meeting",
       "searchTerms": "zoho meeting zoho corporation communication zoom google meet video conferencing solution integrated with zoho workplace affordable for smbs"
     },
@@ -548,7 +548,7 @@
       "id": "communication/zoho-showtime",
       "name": "Zoho ShowTime",
       "company": "Zoho Corporation",
-      "category": "Communication",
+      "category": "communication",
       "slug": "zoho-showtime",
       "searchTerms": "zoho showtime zoho corporation communication zoom webinar gotowebinar webex events remote training and webinar platform with screen sharing interactive presentations"
     },
@@ -556,7 +556,7 @@
       "id": "creative/creately",
       "name": "Creately",
       "company": "Cinergix (Indian operations)",
-      "category": "Creative",
+      "category": "creative",
       "slug": "creately",
       "searchTerms": "creately cinergix indian operations creative miro mural lucidchart visual collaboration platform with diagramming brainstorming and project planning"
     },
@@ -564,7 +564,7 @@
       "id": "creative/dubverse",
       "name": "Dubverse",
       "company": "Dubverse",
-      "category": "Creative",
+      "category": "creative",
       "slug": "dubverse",
       "searchTerms": "dubverse dubverse creative descript eleven labs murf ai ai powered platform for video dubbing voiceovers and subtitles with emotion preserving"
     },
@@ -572,7 +572,7 @@
       "id": "creative/pixelbin",
       "name": "PixelBin",
       "company": "Shopsense Retail Technologies",
-      "category": "Creative",
+      "category": "creative",
       "slug": "pixelbin",
       "searchTerms": "pixelbin shopsense retail technologies creative adobe photoshop api cloudinary ai powered image transformation api for developers and businesses"
     },
@@ -580,7 +580,7 @@
       "id": "creative/simplified",
       "name": "Simplified",
       "company": "Simplified (Indian-founded)",
-      "category": "Creative",
+      "category": "creative",
       "slug": "simplified",
       "searchTerms": "simplified simplified indian founded creative canva adobe creative suite figma ai powered design platform with templates collaboration and social media tools"
     },
@@ -588,7 +588,7 @@
       "id": "creative/visualdub",
       "name": "VisualDub",
       "company": "VisualDub",
-      "category": "Creative",
+      "category": "creative",
       "slug": "visualdub",
       "searchTerms": "visualdub visualdub creative speechify murf descript ai powered video dubbing and localization platform for content creators and"
     },
@@ -596,7 +596,7 @@
       "id": "development/browserstack",
       "name": "BrowserStack",
       "company": "BrowserStack Inc",
-      "category": "Development",
+      "category": "development",
       "slug": "browserstack",
       "searchTerms": "browserstack browserstack inc development sauce labs crossbrowsertesting lambdatest cross browser testing platform for web and mobile applications"
     },
@@ -604,7 +604,7 @@
       "id": "development/ctrls-cloud",
       "name": "CtrlS Cloud",
       "company": "CtrlS Datacenters",
-      "category": "Development",
+      "category": "development",
       "slug": "ctrls-cloud",
       "searchTerms": "ctrls cloud ctrls datacenters development aws google cloud microsoft azure indian cloud services with data centers hosting and managed services"
     },
@@ -612,7 +612,7 @@
       "id": "development/e2e-cloud",
       "name": "E2E Cloud",
       "company": "E2E Networks",
-      "category": "Development",
+      "category": "development",
       "slug": "e2e-cloud",
       "searchTerms": "e2e cloud e2e networks development microsoft azure aws google cloud indian cloud infrastructure platform with compute storage and ai services"
     },
@@ -620,7 +620,7 @@
       "id": "development/gnani-ai",
       "name": "Gnani AI",
       "company": "Gnani.ai",
-      "category": "Development",
+      "category": "development",
       "slug": "gnani-ai",
       "searchTerms": "gnani ai gnani ai development dialogflow amazon lex microsoft bot framework conversational ai platform with voice and text bots for enterprises"
     },
@@ -628,7 +628,7 @@
       "id": "development/hoppscotch",
       "name": "Hoppscotch",
       "company": "Hoppscotch",
-      "category": "Development",
+      "category": "development",
       "slug": "hoppscotch",
       "searchTerms": "hoppscotch hoppscotch development postman insomnia thunder client open source api development ecosystem beautiful fast and lightweight"
     },
@@ -636,7 +636,7 @@
       "id": "development/indus-os",
       "name": "Indus OS",
       "company": "IndusOS",
-      "category": "Development",
+      "category": "development",
       "slug": "indus-os",
       "searchTerms": "indus os indusos development android ios harmonyos indian mobile operating system with regional language support"
     },
@@ -644,7 +644,7 @@
       "id": "development/krutrim-ai-studio",
       "name": "Krutrim AI Studio",
       "company": "Ola Krutrim",
-      "category": "Development",
+      "category": "development",
       "slug": "krutrim-ai-studio",
       "searchTerms": "krutrim ai studio ola krutrim development hugging face openai gpt builder google vertex ai no code ai model development platform with model catalog and developer"
     },
@@ -652,7 +652,7 @@
       "id": "development/krutrim-cloud",
       "name": "Krutrim Cloud",
       "company": "Ola Krutrim",
-      "category": "Development",
+      "category": "development",
       "slug": "krutrim-cloud",
       "searchTerms": "krutrim cloud ola krutrim development aws google cloud microsoft azure high performance gpu cloud services and ai computing platform for indian"
     },
@@ -660,7 +660,7 @@
       "id": "development/mapmyindia-maps",
       "name": "mappls",
       "company": "MapmyIndia",
-      "category": "Development",
+      "category": "development",
       "slug": "mapmyindia-maps",
       "searchTerms": "mappls mapmyindia development google maps api mapbox here maps india focused mapping and location intelligence platform with apis"
     },
@@ -668,7 +668,7 @@
       "id": "development/sarvam-speech-api",
       "name": "Sarvam Speech API",
       "company": "Sarvam AI",
-      "category": "Development",
+      "category": "development",
       "slug": "sarvam-speech-api",
       "searchTerms": "sarvam speech api sarvam ai development google cloud speech amazon transcribe microsoft speech services complete speech processing api suite with speech to text text to speech and speech"
     },
@@ -676,7 +676,7 @@
       "id": "development/sarvam-translate",
       "name": "Sarvam Translate",
       "company": "Sarvam AI",
-      "category": "Development",
+      "category": "development",
       "slug": "sarvam-translate",
       "searchTerms": "sarvam translate sarvam ai development google translate microsoft translator amazon translate advanced translation service across 22 indian languages with speech and"
     },
@@ -684,7 +684,7 @@
       "id": "development/site24x7",
       "name": "Site24x7",
       "company": "Zoho Corporation",
-      "category": "Development",
+      "category": "development",
       "slug": "site24x7",
       "searchTerms": "site24x7 zoho corporation development datadog new relic dynatrace application performance monitoring and infrastructure monitoring platform"
     },
@@ -692,7 +692,7 @@
       "id": "development/supernova-ai",
       "name": "Supernova AI",
       "company": "Supernova AI",
-      "category": "Development",
+      "category": "development",
       "slug": "supernova-ai",
       "searchTerms": "supernova ai supernova ai development figma sketch adobe xd ai powered tool for automating design and development workflows"
     },
@@ -700,7 +700,7 @@
       "id": "development/zoho-bugtracker",
       "name": "Zoho BugTracker",
       "company": "Zoho Corporation",
-      "category": "Development",
+      "category": "development",
       "slug": "zoho-bugtracker",
       "searchTerms": "zoho bugtracker zoho corporation development jira bugzilla mantisbt bug tracking and issue management software with customizable workflows automated"
     },
@@ -708,7 +708,7 @@
       "id": "development/zoho-catalyst",
       "name": "Zoho Catalyst",
       "company": "Zoho Corporation",
-      "category": "Development",
+      "category": "development",
       "slug": "zoho-catalyst",
       "searchTerms": "zoho catalyst zoho corporation development aws lambda google cloud functions vercel serverless cloud development platform for building and deploying applications"
     },
@@ -716,7 +716,7 @@
       "id": "development/zoho-deluge",
       "name": "Zoho Deluge",
       "company": "Zoho Corporation",
-      "category": "Development",
+      "category": "development",
       "slug": "zoho-deluge",
       "searchTerms": "zoho deluge zoho corporation development javascript python scripts vba online scripting language for automating business processes"
     },
@@ -724,7 +724,7 @@
       "id": "development/zoho-flow",
       "name": "Zoho Flow",
       "company": "Zoho Corporation",
-      "category": "Development",
+      "category": "development",
       "slug": "zoho-flow",
       "searchTerms": "zoho flow zoho corporation development zapier microsoft power automate ifttt integration platform for connecting apps and automating workflows"
     },
@@ -732,7 +732,7 @@
       "id": "development/zoho-sprints",
       "name": "Zoho Sprints",
       "company": "Zoho Corporation",
-      "category": "Development",
+      "category": "development",
       "slug": "zoho-sprints",
       "searchTerms": "zoho sprints zoho corporation development jira software azure devops clickup agile project management tool for scrum teams with sprint planning"
     },
@@ -740,7 +740,7 @@
       "id": "e-commerce/aasaan",
       "name": "Aasaan",
       "company": "Lightbooks Technologies",
-      "category": "E-Commerce",
+      "category": "e-commerce",
       "slug": "aasaan",
       "searchTerms": "aasaan lightbooks technologies e commerce shopify bigcommerce woocommerce headless commerce platform using ai to build storefronts without coding"
     },
@@ -748,7 +748,7 @@
       "id": "e-commerce/bigbasket",
       "name": "BigBasket",
       "company": "Tata Digital",
-      "category": "E-Commerce",
+      "category": "e-commerce",
       "slug": "bigbasket",
       "searchTerms": "bigbasket tata digital e commerce instacart amazon fresh walmart grocery india s largest online grocery and food delivery platform offering fresh"
     },
@@ -756,7 +756,7 @@
       "id": "e-commerce/craftsvilla",
       "name": "Craftsvilla",
       "company": "Craftsvilla Handicrafts",
-      "category": "E-Commerce",
+      "category": "e-commerce",
       "slug": "craftsvilla",
       "searchTerms": "craftsvilla craftsvilla handicrafts e commerce etsy amazon handmade jaypore ethnic e commerce marketplace specializing in indian handicrafts traditional wear and"
     },
@@ -764,7 +764,7 @@
       "id": "e-commerce/dukaan",
       "name": "Dukaan",
       "company": "Dukaan",
-      "category": "E-commerce",
+      "category": "e-commerce",
       "slug": "dukaan",
       "searchTerms": "dukaan dukaan e commerce shopify woocommerce bigcommerce diy platform to create online stores and start selling online"
     },
@@ -772,7 +772,7 @@
       "id": "e-commerce/indiamart",
       "name": "IndiaMART",
       "company": "IndiaMART InterMESH Limited",
-      "category": "E-Commerce",
+      "category": "e-commerce",
       "slug": "indiamart",
       "searchTerms": "indiamart indiamart intermesh limited e commerce alibaba tradeindia exportersindia india s largest b2b marketplace connecting buyers and suppliers across manufacturing"
     },
@@ -780,7 +780,7 @@
       "id": "e-commerce/jiomart",
       "name": "JioMart",
       "company": "Reliance Industries",
-      "category": "E-Commerce",
+      "category": "e-commerce",
       "slug": "jiomart",
       "searchTerms": "jiomart reliance industries e commerce amazon bigbasket flipkart online shopping platform offering groceries electronics fashion and home essentials"
     },
@@ -788,7 +788,7 @@
       "id": "e-commerce/meesho",
       "name": "Meesho",
       "company": "Meesho",
-      "category": "E-Commerce",
+      "category": "e-commerce",
       "slug": "meesho",
       "searchTerms": "meesho meesho e commerce amazon seller etsy facebook marketplace social commerce platform empowering small sellers and homepreneurs to start"
     },
@@ -796,7 +796,7 @@
       "id": "e-commerce/nykaa",
       "name": "Nykaa",
       "company": "FSN E-Commerce Ventures",
-      "category": "E-Commerce",
+      "category": "e-commerce",
       "slug": "nykaa",
       "searchTerms": "nykaa fsn e commerce ventures e commerce sephora ulta purplle india s leading beauty and wellness e commerce platform offering cosmetics skincare"
     },
@@ -804,7 +804,7 @@
       "id": "e-commerce/pepperfry",
       "name": "Pepperfry",
       "company": "Pepperfry",
-      "category": "E-Commerce",
+      "category": "e-commerce",
       "slug": "pepperfry",
       "searchTerms": "pepperfry pepperfry e commerce wayfair ikea urban ladder india s largest online furniture and home products marketplace offering furniture"
     },
@@ -812,7 +812,7 @@
       "id": "e-commerce/qikink",
       "name": "Qikink",
       "company": "Qikink",
-      "category": "E-commerce",
+      "category": "e-commerce",
       "slug": "qikink",
       "searchTerms": "qikink qikink e commerce printify printful gooten print on demand platform for custom products with indian manufacturing"
     },
@@ -820,7 +820,7 @@
       "id": "e-commerce/shiprocket",
       "name": "Shiprocket",
       "company": "Shiprocket",
-      "category": "E-commerce",
+      "category": "e-commerce",
       "slug": "shiprocket",
       "searchTerms": "shiprocket shiprocket e commerce shipstation easyship shippo e commerce shipping and logistics platform for online sellers"
     },
@@ -828,7 +828,7 @@
       "id": "e-commerce/shopclues",
       "name": "ShopClues",
       "company": "Clues Network",
-      "category": "E-Commerce",
+      "category": "e-commerce",
       "slug": "shopclues",
       "searchTerms": "shopclues clues network e commerce amazon ebay snapdeal online marketplace focused on value shopping unbranded goods and connecting"
     },
@@ -836,7 +836,7 @@
       "id": "e-commerce/snapdeal",
       "name": "Snapdeal",
       "company": "Snapdeal Limited",
-      "category": "E-Commerce",
+      "category": "e-commerce",
       "slug": "snapdeal",
       "searchTerms": "snapdeal snapdeal limited e commerce amazon flipkart shopclues value focused e commerce marketplace offering a wide range of products across"
     },
@@ -844,7 +844,7 @@
       "id": "e-commerce/storehippo",
       "name": "StoreHippo",
       "company": "StoreHippo",
-      "category": "E-Commerce",
+      "category": "e-commerce",
       "slug": "storehippo",
       "searchTerms": "storehippo storehippo e commerce shopify woocommerce magento ai powered ecommerce platform with 300 features for b2b and b2c"
     },
@@ -852,7 +852,7 @@
       "id": "e-commerce/tata-cliq",
       "name": "Tata CLiQ",
       "company": "Tata Group",
-      "category": "E-Commerce",
+      "category": "e-commerce",
       "slug": "tata-cliq",
       "searchTerms": "tata cliq tata group e commerce amazon flipkart myntra premium online shopping platform offering electronics fashion and lifestyle products"
     },
@@ -860,7 +860,7 @@
       "id": "e-commerce/typof",
       "name": "Typof",
       "company": "Typof",
-      "category": "E-Commerce",
+      "category": "e-commerce",
       "slug": "typof",
       "searchTerms": "typof typof e commerce shopify woocommerce wix ecommerce no code ecommerce website builder for creators and small businesses with"
     },
@@ -868,23 +868,23 @@
       "id": "e-commerce/zopping",
       "name": "Zopping",
       "company": "Zopping",
-      "category": "E-Commerce",
+      "category": "e-commerce",
       "slug": "zopping",
       "searchTerms": "zopping zopping e commerce shopify woocommerce bigcommerce all in one no code ecommerce platform for indian retailers with customizable themes"
     },
     {
       "id": "education/byjus",
-      "name": "BYJU'S",
+      "name": "BYJU",
       "company": "Think & Learn Pvt Ltd",
-      "category": "Education",
+      "category": "education",
       "slug": "byjus",
-      "searchTerms": "byju s think learn pvt ltd education khan academy coursera udemy personalized learning app for students with interactive video lessons"
+      "searchTerms": "byju think learn pvt ltd education khan academy coursera udemy personalized learning app for students with interactive video lessons"
     },
     {
       "id": "education/pupilfirst",
       "name": "Pupilfirst",
       "company": "Pupilfirst Pvt. Ltd.",
-      "category": "Education",
+      "category": "education",
       "slug": "pupilfirst",
       "searchTerms": "pupilfirst pupilfirst pvt ltd education coursera canvas blackboard learning management system empowering digital transformation of indian classroom education"
     },
@@ -892,7 +892,7 @@
       "id": "education/zoho-learn",
       "name": "Zoho Learn",
       "company": "Zoho Corporation",
-      "category": "Education",
+      "category": "education",
       "slug": "zoho-learn",
       "searchTerms": "zoho learn zoho corporation education confluence notion guru knowledge management and learning management system with course creation documentation"
     },
@@ -900,7 +900,7 @@
       "id": "entertainment/amagi",
       "name": "Amagi",
       "company": "Amagi Media Labs",
-      "category": "Entertainment",
+      "category": "entertainment",
       "slug": "amagi",
       "searchTerms": "amagi amagi media labs entertainment aws elemental brightcove kaltura cloud based broadcast and streaming solutions for content creators broadcasters and"
     },
@@ -908,7 +908,7 @@
       "id": "entertainment/bookmyshow",
       "name": "BookMyShow",
       "company": "Bigtree Entertainment",
-      "category": "Entertainment",
+      "category": "entertainment",
       "slug": "bookmyshow",
       "searchTerms": "bookmyshow bigtree entertainment entertainment fandango ticketmaster atom tickets leading entertainment ticketing platform for movies events plays sports and"
     },
@@ -916,7 +916,7 @@
       "id": "entertainment/chingari",
       "name": "Chingari",
       "company": "Tech4billion Media",
-      "category": "Entertainment",
+      "category": "entertainment",
       "slug": "chingari",
       "searchTerms": "chingari tech4billion media entertainment tiktok instagram reels short form video platform with crypto rewards and post tiktok ban market"
     },
@@ -924,7 +924,7 @@
       "id": "entertainment/gaana",
       "name": "Gaana",
       "company": "Entertainment Network India Ltd",
-      "category": "Entertainment",
+      "category": "entertainment",
       "slug": "gaana",
       "searchTerms": "gaana entertainment network india ltd entertainment spotify apple music long standing music streaming service with deep bollywood catalog"
     },
@@ -932,7 +932,7 @@
       "id": "entertainment/hotstar",
       "name": "Hotstar",
       "company": "JioStar (Reliance-Disney JV)",
-      "category": "Entertainment",
+      "category": "entertainment",
       "slug": "hotstar",
       "searchTerms": "hotstar jiostar reliance disney jv entertainment netflix amazon prime video hulu india s largest streaming platform combining disney hotstar and jiocinema content"
     },
@@ -940,7 +940,7 @@
       "id": "entertainment/inshorts",
       "name": "Inshorts",
       "company": "Inshorts",
-      "category": "Entertainment",
+      "category": "entertainment",
       "slug": "inshorts",
       "searchTerms": "inshorts inshorts entertainment flipboard apple news google news news app delivering curated news stories in 60 word summaries with"
     },
@@ -948,7 +948,7 @@
       "id": "entertainment/jiosaavn",
       "name": "JioSaavn",
       "company": "Jio Platforms",
-      "category": "Entertainment",
+      "category": "entertainment",
       "slug": "jiosaavn",
       "searchTerms": "jiosaavn jio platforms entertainment spotify apple music youtube music music streaming service with massive library of indian and international"
     },
@@ -956,7 +956,7 @@
       "id": "entertainment/josh",
       "name": "Josh",
       "company": "VerSe Innovation (Dailyhunt)",
-      "category": "Entertainment",
+      "category": "entertainment",
       "slug": "josh",
       "searchTerms": "josh verse innovation dailyhunt entertainment tiktok instagram reels youtube shorts india s leading short video app with support for 12 indian"
     },
@@ -964,7 +964,7 @@
       "id": "entertainment/moj",
       "name": "Moj",
       "company": "Mohalla Tech Pvt Ltd",
-      "category": "Entertainment",
+      "category": "entertainment",
       "slug": "moj",
       "searchTerms": "moj mohalla tech pvt ltd entertainment tiktok instagram reels short video platform launched by sharechat to capture the post tiktok market"
     },
@@ -972,7 +972,7 @@
       "id": "entertainment/mx-player",
       "name": "MX Player",
       "company": "MX Media (Times Internet)",
-      "category": "Entertainment",
+      "category": "entertainment",
       "slug": "mx-player",
       "searchTerms": "mx player mx media times internet entertainment netflix amazon prime video disney hotstar popular android video player that evolved into a major ott"
     },
@@ -980,7 +980,7 @@
       "id": "entertainment/roposo",
       "name": "Roposo",
       "company": "Glance (InMobi)",
-      "category": "Entertainment",
+      "category": "entertainment",
       "slug": "roposo",
       "searchTerms": "roposo glance inmobi entertainment tiktok instagram reels user generated video content platform acquired by glance inmobi"
     },
@@ -988,7 +988,7 @@
       "id": "entertainment/sonyliv",
       "name": "SonyLIV",
       "company": "Culver Max Entertainment",
-      "category": "Entertainment",
+      "category": "entertainment",
       "slug": "sonyliv",
       "searchTerms": "sonyliv culver max entertainment entertainment netflix amazon prime ott streaming platform with mix of originals movies and sports"
     },
@@ -996,7 +996,7 @@
       "id": "entertainment/zee5",
       "name": "Zee5",
       "company": "Zee Entertainment Enterprises",
-      "category": "Entertainment",
+      "category": "entertainment",
       "slug": "zee5",
       "searchTerms": "zee5 zee entertainment enterprises entertainment netflix amazon prime ott platform with strong focus on regional and vernacular content"
     },
@@ -1004,7 +1004,7 @@
       "id": "finance/bhim-upi",
       "name": "BHIM UPI",
       "company": "National Payments Corporation of India",
-      "category": "Finance",
+      "category": "finance",
       "slug": "bhim-upi",
       "searchTerms": "bhim upi national payments corporation of india finance phonepe googlepay paytm government backed unified payment interface for instant digital payments across banks"
     },
@@ -1012,7 +1012,7 @@
       "id": "finance/instamojo",
       "name": "Instamojo",
       "company": "Instamojo Technologies",
-      "category": "Finance",
+      "category": "finance",
       "slug": "instamojo",
       "searchTerms": "instamojo instamojo technologies finance stripe paypal square payment and commerce platform designed for indian smes and startups"
     },
@@ -1020,7 +1020,7 @@
       "id": "finance/profitbooks",
       "name": "ProfitBooks",
       "company": "ProfitBooks",
-      "category": "Finance",
+      "category": "finance",
       "slug": "profitbooks",
       "searchTerms": "profitbooks profitbooks finance tally quickbooks xero free online accounting software for small businesses with invoicing inventory"
     },
@@ -1028,7 +1028,7 @@
       "id": "finance/setu-pine-labs",
       "name": "Setu Pine Labs",
       "company": "Pine Labs",
-      "category": "Finance",
+      "category": "finance",
       "slug": "setu-pine-labs",
       "searchTerms": "setu pine labs pine labs finance plaid stripe connect open banking apis api banking platform for digital payments and financial services"
     },
@@ -1036,7 +1036,7 @@
       "id": "finance/shelfpay",
       "name": "Shelfpay",
       "company": "Shelfpay",
-      "category": "Finance",
+      "category": "finance",
       "slug": "shelfpay",
       "searchTerms": "shelfpay shelfpay finance splitwise venmo settle up india s first shared payments app for flatmates with pooled wallets"
     },
@@ -1044,7 +1044,7 @@
       "id": "finance/zoho-expense",
       "name": "Zoho Expense",
       "company": "Zoho Corporation",
-      "category": "Finance",
+      "category": "finance",
       "slug": "zoho-expense",
       "searchTerms": "zoho expense zoho corporation finance expensify concur sap rydoo expense reporting and management software with automated receipt scanning mileage"
     },
@@ -1052,7 +1052,7 @@
       "id": "finance/zoho-subscriptions",
       "name": "Zoho Subscriptions",
       "company": "Zoho Corporation",
-      "category": "Finance",
+      "category": "finance",
       "slug": "zoho-subscriptions",
       "searchTerms": "zoho subscriptions zoho corporation finance stripe billing chargebee recurly recurring billing and subscription management platform with automated invoicing payment"
     },
@@ -1060,39 +1060,39 @@
       "id": "hosting/domainindia",
       "name": "DomainIndia",
       "company": "Domain Registration India Pvt Ltd",
-      "category": "Hosting & Domains",
+      "category": "hosting",
       "slug": "domainindia",
-      "searchTerms": "domainindia domain registration india pvt ltd hosting domains godaddy namecheap domain com indian domain registrar and web hosting provider offering domain registration"
+      "searchTerms": "domainindia domain registration india pvt ltd hosting godaddy namecheap domain com indian domain registrar and web hosting provider offering domain registration"
     },
     {
       "id": "hosting/hostingraja",
       "name": "HostingRaja",
       "company": "HostingRaja",
-      "category": "Hosting & Domains",
+      "category": "hosting",
       "slug": "hostingraja",
-      "searchTerms": "hostingraja hostingraja hosting domains godaddy bluehost hostgator indian web hosting provider offering domain registration shared hosting vps"
+      "searchTerms": "hostingraja hostingraja hosting godaddy bluehost hostgator indian web hosting provider offering domain registration shared hosting vps"
     },
     {
       "id": "hosting/mitsu",
       "name": "Mitsu",
       "company": "Mitsu.in",
-      "category": "Hosting & Domains",
+      "category": "hosting",
       "slug": "mitsu",
-      "searchTerms": "mitsu mitsu in hosting domains godaddy namecheap domain com indian domain registration service specializing in in and other indian"
+      "searchTerms": "mitsu mitsu in hosting godaddy namecheap domain com indian domain registration service specializing in in and other indian"
     },
     {
       "id": "hosting/w3infotech",
       "name": "W3Infotech",
       "company": "W3Infotech",
-      "category": "Hosting & Domains",
+      "category": "hosting",
       "slug": "w3infotech",
-      "searchTerms": "w3infotech w3infotech hosting domains godaddy bluehost hostgator indian web hosting and domain registration company providing shared hosting"
+      "searchTerms": "w3infotech w3infotech hosting godaddy bluehost hostgator indian web hosting and domain registration company providing shared hosting"
     },
     {
       "id": "productivity/digiboxx",
       "name": "DigiBoxx",
       "company": "Digiboxx Technologies",
-      "category": "Productivity",
+      "category": "productivity",
       "slug": "digiboxx",
       "searchTerms": "digiboxx digiboxx technologies productivity dropbox google drive made in india secure cloud storage for individuals and enterprises with data"
     },
@@ -1100,7 +1100,7 @@
       "id": "productivity/krutrim-assistant",
       "name": "Krutrim Assistant",
       "company": "Ola Krutrim",
-      "category": "Productivity",
+      "category": "productivity",
       "slug": "krutrim-assistant",
       "searchTerms": "krutrim assistant ola krutrim productivity chatgpt google gemini claude multi language ai assistant for task automation including booking rides paying"
     },
@@ -1108,7 +1108,7 @@
       "id": "productivity/trinka",
       "name": "Trinka",
       "company": "Trinka",
-      "category": "Productivity",
+      "category": "productivity",
       "slug": "trinka",
       "searchTerms": "trinka trinka productivity grammarly prowritingaid hemingway editor ai powered writing and grammar checker that helps polish your writing"
     },
@@ -1116,7 +1116,7 @@
       "id": "productivity/zoho-calendar",
       "name": "Zoho Calendar",
       "company": "Zoho Corporation",
-      "category": "Productivity",
+      "category": "productivity",
       "slug": "zoho-calendar",
       "searchTerms": "zoho calendar zoho corporation productivity google calendar outlook calendar online calendar application for scheduling and time management"
     },
@@ -1124,7 +1124,7 @@
       "id": "productivity/zoho-mail",
       "name": "Zoho Mail",
       "company": "Zoho Corporation",
-      "category": "Productivity",
+      "category": "productivity",
       "slug": "zoho-mail",
       "searchTerms": "zoho mail zoho corporation productivity gmail outlook yahoo mail business email hosting with calendar and contacts integration"
     },
@@ -1132,7 +1132,7 @@
       "id": "productivity/zoho-notebook",
       "name": "Zoho Notebook",
       "company": "Zoho Corporation",
-      "category": "Productivity",
+      "category": "productivity",
       "slug": "zoho-notebook",
       "searchTerms": "zoho notebook zoho corporation productivity evernote onenote notion note taking app for organizing thoughts ideas and information"
     },
@@ -1140,7 +1140,7 @@
       "id": "productivity/zoho-sheet",
       "name": "Zoho Sheet",
       "company": "Zoho Corporation",
-      "category": "Productivity",
+      "category": "productivity",
       "slug": "zoho-sheet",
       "searchTerms": "zoho sheet zoho corporation productivity microsoft excel google sheets online spreadsheet application for data analysis and collaboration"
     },
@@ -1148,7 +1148,7 @@
       "id": "productivity/zoho-show",
       "name": "Zoho Show",
       "company": "Zoho Corporation",
-      "category": "Productivity",
+      "category": "productivity",
       "slug": "zoho-show",
       "searchTerms": "zoho show zoho corporation productivity microsoft powerpoint google slides online presentation software for creating slides and presentations"
     },
@@ -1156,7 +1156,7 @@
       "id": "productivity/zoho-workdrive",
       "name": "Zoho WorkDrive",
       "company": "Zoho Corporation",
-      "category": "Productivity",
+      "category": "productivity",
       "slug": "zoho-workdrive",
       "searchTerms": "zoho workdrive zoho corporation productivity google drive dropbox onedrive team collaboration and file storage platform for businesses"
     },
@@ -1164,7 +1164,7 @@
       "id": "productivity/zoho-workplace",
       "name": "Zoho Workplace",
       "company": "Zoho Corporation",
-      "category": "Productivity",
+      "category": "productivity",
       "slug": "zoho-workplace",
       "searchTerms": "zoho workplace zoho corporation productivity microsoft 365 google workspace complete office suite with writer sheet show and mail for"
     },
@@ -1172,7 +1172,7 @@
       "id": "productivity/zoho-writer",
       "name": "Zoho Writer",
       "company": "Zoho Corporation",
-      "category": "Productivity",
+      "category": "productivity",
       "slug": "zoho-writer",
       "searchTerms": "zoho writer zoho corporation productivity microsoft word google docs online word processor for document creation and collaboration"
     },
@@ -1180,7 +1180,7 @@
       "id": "social-networking/elyments",
       "name": "Elyments",
       "company": "Sumeru Software Solutions",
-      "category": "Social Networking",
+      "category": "social-networking",
       "slug": "elyments",
       "searchTerms": "elyments sumeru software solutions social networking facebook instagram super app emphasizing privacy and data storage in india with social"
     },
@@ -1188,7 +1188,7 @@
       "id": "social-networking/pepul",
       "name": "Pepul",
       "company": "Pepul",
-      "category": "Social Networking",
+      "category": "social-networking",
       "slug": "pepul",
       "searchTerms": "pepul pepul social networking instagram facebook indian instagram alternative focusing on positive creator economy and community"
     },
@@ -1196,7 +1196,7 @@
       "id": "social-networking/sharechat",
       "name": "ShareChat",
       "company": "Mohalla Tech Pvt Ltd",
-      "category": "Social Networking",
+      "category": "social-networking",
       "slug": "sharechat",
       "searchTerms": "sharechat mohalla tech pvt ltd social networking facebook instagram vernacular first social platform for regional language users across india"
     },
@@ -1204,7 +1204,7 @@
       "id": "travel/easemytrip",
       "name": "EaseMyTrip",
       "company": "Easy Trip Planners Limited",
-      "category": "Travel",
+      "category": "travel",
       "slug": "easemytrip",
       "searchTerms": "easemytrip easy trip planners limited travel makemytrip booking com expedia online travel booking platform for flights hotels buses trains and"
     },
@@ -1212,7 +1212,7 @@
       "id": "utilities/docscanner",
       "name": "Document Scanner",
       "company": "Lufick Technology Pvt. Ltd.",
-      "category": "Utilities",
+      "category": "utilities",
       "slug": "docscanner",
       "searchTerms": "document scanner lufick technology pvt ltd utilities camscanner adobe scan ai powered document scanner and pdf creator app with advanced edge"
     },
@@ -1220,7 +1220,7 @@
       "id": "utilities/epic-browser",
       "name": "Epic Browser",
       "company": "Hidden Reflex",
-      "category": "Utilities",
+      "category": "utilities",
       "slug": "epic-browser",
       "searchTerms": "epic browser hidden reflex utilities google chrome firefox privacy focused web browser with built in vpn and tracker blocking"
     },
@@ -1228,7 +1228,7 @@
       "id": "utilities/jiosphere",
       "name": "JioSphere",
       "company": "Jio Platforms",
-      "category": "Utilities",
+      "category": "utilities",
       "slug": "jiosphere",
       "searchTerms": "jiosphere jio platforms utilities google chrome firefox web browser with built in vpn and ad blocker designed for the"
     },
@@ -1236,7 +1236,7 @@
       "id": "utilities/jioswitch",
       "name": "JioSwitch",
       "company": "Reliance Jio Digital Services",
-      "category": "Utilities",
+      "category": "utilities",
       "slug": "jioswitch",
       "searchTerms": "jioswitch reliance jio digital services utilities shareit xender offline file transfer app and direct replacement for shareit"
     },
@@ -1244,7 +1244,7 @@
       "id": "utilities/ola-maps",
       "name": "Ola Maps",
       "company": "Ola Krutrim",
-      "category": "Utilities",
+      "category": "utilities",
       "slug": "ola-maps",
       "searchTerms": "ola maps ola krutrim utilities google maps apple maps waze real time navigation and mapping service with precise routing and location"
     },
@@ -1252,7 +1252,7 @@
       "id": "utilities/ulaa",
       "name": "Ulaa",
       "company": "Zoho Corporation",
-      "category": "Utilities",
+      "category": "utilities",
       "slug": "ulaa",
       "searchTerms": "ulaa zoho corporation utilities google chrome mozilla firefox microsoft edge fast secure and private web browser by zoho with multi tier"
     },
@@ -1260,7 +1260,7 @@
       "id": "utilities/zoho-vault",
       "name": "Zoho Vault",
       "company": "Zoho Corporation",
-      "category": "Utilities",
+      "category": "utilities",
       "slug": "zoho-vault",
       "searchTerms": "zoho vault zoho corporation utilities 1password lastpass bitwarden password manager and digital vault for individuals and teams with"
     }
@@ -1282,7 +1282,7 @@
       "travel",
       "utilities"
     ],
-    "generatedAt": "2025-10-06T07:31:49.292Z",
+    "generatedAt": "2025-10-06T15:06:39.616Z",
     "version": "1.0.0"
   }
 }

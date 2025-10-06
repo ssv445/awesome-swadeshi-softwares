@@ -3,7 +3,7 @@
   "slug": "zoho-expense",
   "description": "Expense reporting and management software with automated receipt scanning, mileage tracking, multi-currency support, policy compliance, and seamless integration with accounting systems",
   "website": "https://www.zoho.com/expense/",
-  "category": "Finance",
+  "category": "finance",
   "alternatives": [
     "Expensify",
     "Concur SAP",

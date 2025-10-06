@@ -3,7 +3,7 @@
   "slug": "greythr",
   "description": "Human resource management system with payroll, attendance, and employee self-service",
   "website": "https://www.greythr.com/",
-  "category": "Business",
+  "category": "business",
   "alternatives": [
     "BambooHR",
     "Workday",

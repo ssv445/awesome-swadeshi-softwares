@@ -3,7 +3,7 @@
   "slug": "amagi",
   "description": "Cloud-based broadcast and streaming solutions for content creators, broadcasters and media companies",
   "website": "https://www.amagi.com/",
-  "category": "Entertainment",
+  "category": "entertainment",
   "alternatives": [
     "AWS Elemental",
     "Brightcove",

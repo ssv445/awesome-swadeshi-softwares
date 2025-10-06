@@ -3,7 +3,7 @@
   "slug": "exotel",
   "description": "Cloud telephony platform with voice, SMS, and video calling APIs",
   "website": "https://exotel.com/",
-  "category": "Communication",
+  "category": "communication",
   "alternatives": [
     "Twilio",
     "Plivo",

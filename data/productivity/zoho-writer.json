@@ -3,7 +3,7 @@
   "slug": "zoho-writer",
   "description": "Online word processor for document creation and collaboration",
   "website": "https://www.zoho.com/writer/",
-  "category": "Productivity",
+  "category": "productivity",
   "alternatives": [
     "Microsoft Word",
     "Google Docs"

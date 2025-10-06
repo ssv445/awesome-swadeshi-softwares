@@ -3,7 +3,7 @@
   "slug": "epic-browser",
   "description": "Privacy-focused web browser with built-in VPN and tracker blocking",
   "website": "https://www.epicbrowser.com/",
-  "category": "Utilities",
+  "category": "utilities",
   "alternatives": [
     "Google Chrome",
     "Firefox"

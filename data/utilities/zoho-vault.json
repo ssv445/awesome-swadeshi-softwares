@@ -3,7 +3,7 @@
   "slug": "zoho-vault",
   "description": "Password manager and digital vault for individuals and teams with secure password storage, sharing, auto-fill, emergency access, password generator, and multi-factor authentication",
   "website": "https://www.zoho.com/vault/",
-  "category": "Utilities",
+  "category": "utilities",
   "alternatives": [
     "1Password",
     "LastPass",

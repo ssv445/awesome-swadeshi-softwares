@@ -3,7 +3,7 @@
   "slug": "jioswitch",
   "description": "Offline file transfer app and direct replacement for SHAREit",
   "website": "https://www.jio.com/apps/jioswitch",
-  "category": "Utilities",
+  "category": "utilities",
   "alternatives": [
     "SHAREit",
     "Xender"

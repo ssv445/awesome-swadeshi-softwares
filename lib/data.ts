@@ -47,7 +47,7 @@ export interface Software {
   aliases?: string[] // Alternative slugs for redirects (optional)
   description: string
   website: string
-  category: string
+  category: string // Category slug (e.g., "business", "finance", "hosting") - matches directory name and categories.json slugs
   alternatives: string[]
   pricing: string
   company: string
@@ -63,9 +63,26 @@ export interface Software {
 // Display Name Utilities
 // ===========================
 
+// Category slug to display name mapping (sourced from categories.json)
+const CATEGORY_DISPLAY_NAMES: Record<string, string> = {
+  'business': 'Business',
+  'communication': 'Communication',
+  'creative': 'Creative',
+  'development': 'Development',
+  'e-commerce': 'E-Commerce',
+  'education': 'Education',
+  'entertainment': 'Entertainment',
+  'finance': 'Finance',
+  'hosting': 'Hosting and Domains',
+  'productivity': 'Productivity',
+  'social-networking': 'Social Networking',
+  'travel': 'Travel',
+  'utilities': 'Utilities'
+}
+
 // Convert category slug to display name (client-safe utility)
 export function getCategoryDisplayName(slug: string): string {
-  return slug
+  return CATEGORY_DISPLAY_NAMES[slug] || slug
     .split('-')
     .map(word => word.charAt(0).toUpperCase() + word.slice(1))
     .join(' ')
@@ -80,11 +97,9 @@ export function getCategoryUrl(categorySlug: string): string {
   return `/${categorySlug.toLowerCase().replace(/\s+/g, '-')}`
 }
 
-// Generate app detail page URL from category and app name
-export function getAppUrl(category: string, name: string): string {
-  const categorySlug = category.toLowerCase().replace(/\s+/g, '-')
-  const nameSlug = name.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '')
-  return `/${categorySlug}/${nameSlug}`
+// Generate app detail page URL from category slug and app slug
+export function getAppUrl(categorySlug: string, appSlug: string): string {
+  return `/${categorySlug}/${appSlug}`
 }
 
 // Generate alternative page URL from international tool name

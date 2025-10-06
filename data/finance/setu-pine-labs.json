@@ -3,7 +3,7 @@
   "slug": "setu-pine-labs",
   "description": "API banking platform for digital payments and financial services",
   "website": "https://setu.co/",
-  "category": "Finance",
+  "category": "finance",
   "alternatives": [
     "Plaid",
     "Stripe Connect",

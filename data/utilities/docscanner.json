@@ -1,9 +1,12 @@
 {
   "name": "Document Scanner",
   "slug": "docscanner",
+  "aliases": [
+    "document-scanner"
+  ],
   "description": "AI-powered document scanner and PDF creator app with advanced edge detection, multiple scan modes, OCR, and PDF tools for professional document digitization.",
   "website": "https://docscanner.in/",
-  "category": "Utilities",
+  "category": "utilities",
   "alternatives": [
     "CamScanner",
     "Adobe Scan"

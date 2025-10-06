@@ -3,7 +3,7 @@
   "slug": "krutrim-ai-studio",
   "description": "No-code AI model development platform with model catalog and developer notebook for building AI applications",
   "website": "https://www.olakrutrim.com/",
-  "category": "Development",
+  "category": "development",
   "alternatives": [
     "Hugging Face",
     "OpenAI GPT Builder",

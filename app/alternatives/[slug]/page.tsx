@@ -21,6 +21,9 @@ interface AlternativePageProps {
   }>
 }
 
+// Only generate paths defined in generateStaticParams, return 404 for others
+export const dynamicParams = false
+
 export async function generateStaticParams() {
   const slugs = getAllAlternativeSlugs()
   return slugs.map((slug) => ({

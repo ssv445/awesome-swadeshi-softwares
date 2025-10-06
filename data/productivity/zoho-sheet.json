@@ -3,7 +3,7 @@
   "slug": "zoho-sheet",
   "description": "Online spreadsheet application for data analysis and collaboration",
   "website": "https://www.zoho.com/sheet/",
-  "category": "Productivity",
+  "category": "productivity",
   "alternatives": [
     "Microsoft Excel",
     "Google Sheets"

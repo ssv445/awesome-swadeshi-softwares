@@ -13,10 +13,10 @@ interface ProductCardProps {
 }
 
 export function ProductCard({ software, index = 0 }: ProductCardProps) {
-  // Use slug from SoftwareWithMeta if available, otherwise generate from name
+  // Use slug from SoftwareWithMeta if available, otherwise fallback
   const appUrl = 'slug' in software && 'categorySlug' in software
     ? `/${software.categorySlug}/${software.slug}`
-    : getAppUrl(software.category, software.name)
+    : getAppUrl(software.category, software.slug)
 
   return (
     <Card className="group hover:shadow-lg transition-all duration-300 border border-green-200 hover:border-green-400 bg-white hover:scale-[1.02]">

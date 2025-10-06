@@ -3,7 +3,7 @@
   "slug": "site24x7",
   "description": "Application performance monitoring and infrastructure monitoring platform",
   "website": "https://www.site24x7.com/",
-  "category": "Development",
+  "category": "development",
   "alternatives": [
     "Datadog",
     "New Relic",

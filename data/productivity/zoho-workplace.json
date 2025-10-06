@@ -3,7 +3,7 @@
   "slug": "zoho-workplace",
   "description": "Complete office suite with Writer, Sheet, Show, and Mail for businesses and consumers",
   "website": "https://www.zoho.com/workplace/",
-  "category": "Productivity",
+  "category": "productivity",
   "alternatives": [
     "Microsoft 365",
     "Google Workspace"

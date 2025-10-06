@@ -10,6 +10,16 @@ interface CategoryPageProps {
   }>
 }
 
+// Only generate paths defined in generateStaticParams, return 404 for others
+export const dynamicParams = false
+
+export async function generateStaticParams() {
+  const categories = getCategories()
+  return categories.map((category) => ({
+    category,
+  }))
+}
+
 export default async function CategoryPageWrapper({ params }: CategoryPageProps) {
   const { category } = await params
   const software = getSoftwareByCategory(category)
@@ -32,14 +42,6 @@ export default async function CategoryPageWrapper({ params }: CategoryPageProps)
       />
     </Suspense>
   )
-}
-
-export async function generateStaticParams() {
-  const categories = getCategories()
-
-  return categories.map((category) => ({
-    category: category,
-  }))
 }
 
 export async function generateMetadata({ params }: CategoryPageProps) {

@@ -1,9 +1,12 @@
 {
-  "name": "BYJU'S",
+  "name": "BYJU",
   "slug": "byjus",
+  "aliases": [
+    "byju-s"
+  ],
   "description": "Personalized learning app for students with interactive video lessons",
   "website": "https://byjus.com",
-  "category": "Education",
+  "category": "education",
   "alternatives": [
     "Khan Academy",
     "Coursera",

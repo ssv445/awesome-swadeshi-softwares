@@ -3,7 +3,7 @@
   "slug": "bhim-upi",
   "description": "Government-backed unified payment interface for instant digital payments across banks and payment apps in India",
   "website": "https://www.bhimupi.org.in/",
-  "category": "Finance",
+  "category": "finance",
   "alternatives": [
     "PhonePe",
     "GooglePay",

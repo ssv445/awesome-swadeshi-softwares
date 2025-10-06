@@ -3,7 +3,7 @@
   "slug": "zoho-mail",
   "description": "Business email hosting with calendar and contacts integration",
   "website": "https://www.zoho.com/mail/",
-  "category": "Productivity",
+  "category": "productivity",
   "alternatives": [
     "Gmail",
     "Outlook",

@@ -17,6 +17,9 @@ interface AppPageProps {
   }>
 }
 
+// Only generate paths defined in generateStaticParams, return 404 for others
+export const dynamicParams = false
+
 export async function generateStaticParams() {
   const paths = getAllAppPaths()
   return paths.map(({ category, slug }) => ({
@@ -354,7 +357,7 @@ export default async function AppPage({ params }: AppPageProps) {
                         {relatedApp.pricing}
                       </Badge>
                       <Link
-                        href={getAppUrl(relatedApp.category, relatedApp.name)}
+                        href={getAppUrl(relatedApp.categorySlug, relatedApp.slug)}
                         className="text-sm text-blue-600 hover:underline"
                       >
                         View Details

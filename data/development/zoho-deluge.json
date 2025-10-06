@@ -3,7 +3,7 @@
   "slug": "zoho-deluge",
   "description": "Online scripting language for automating business processes",
   "website": "https://www.zoho.com/deluge/",
-  "category": "Development",
+  "category": "development",
   "alternatives": [
     "JavaScript",
     "Python Scripts",

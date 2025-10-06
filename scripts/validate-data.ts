@@ -38,6 +38,21 @@ const REQUIRED_FIELDS: (keyof Software)[] = [
 
 const VALID_PRICING_VALUES = ['Free', 'Freemium', 'Paid', 'Open Source']
 
+// Load valid categories from categories.json
+function getValidCategories(): string[] {
+  try {
+    const categoriesPath = path.join(process.cwd(), 'data', 'categories.json')
+    const content = fs.readFileSync(categoriesPath, 'utf-8')
+    const data = JSON.parse(content)
+    return data.categories.map((cat: any) => cat.slug)
+  } catch (error) {
+    console.error('Warning: Could not load categories.json, skipping category validation')
+    return []
+  }
+}
+
+const VALID_CATEGORIES = getValidCategories()
+
 interface ValidationError {
   file: string
   field?: string
@@ -91,6 +106,17 @@ function validateSoftware(filePath: string, data: any): void {
       errors.push({ file: fileName, field: 'alternatives', error: 'Alternatives must be an array' })
     } else if (data.alternatives.length === 0) {
       warnings.push({ file: fileName, field: 'alternatives', error: 'Alternatives array is empty' })
+    }
+  }
+
+  // Validate category value (must match categories.json slugs)
+  if (data.category && VALID_CATEGORIES.length > 0) {
+    if (!VALID_CATEGORIES.includes(data.category)) {
+      errors.push({
+        file: fileName,
+        field: 'category',
+        error: `Invalid category "${data.category}". Must be one of: ${VALID_CATEGORIES.join(', ')}`
+      })
     }
   }
 

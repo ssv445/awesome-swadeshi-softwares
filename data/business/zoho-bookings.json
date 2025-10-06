@@ -3,7 +3,7 @@
   "slug": "zoho-bookings",
   "description": "Online appointment scheduling software with calendar sync, automated reminders, payment integration, team scheduling, custom booking pages, and analytics for service-based businesses",
   "website": "https://www.zoho.com/bookings/",
-  "category": "Business",
+  "category": "business",
   "alternatives": [
     "Calendly",
     "Acuity Scheduling",

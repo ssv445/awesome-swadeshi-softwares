@@ -3,7 +3,7 @@
   "slug": "browserstack",
   "description": "Cross-browser testing platform for web and mobile applications",
   "website": "https://www.browserstack.com/",
-  "category": "Development",
+  "category": "development",
   "alternatives": [
     "Sauce Labs",
     "CrossBrowserTesting",

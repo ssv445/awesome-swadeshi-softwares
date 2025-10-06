@@ -74,7 +74,7 @@ export function SearchBox({
 
   // Handle selecting an app from dropdown
   const handleAppSelect = useCallback((software: Software) => {
-    router.push(getAppUrl(software.category, software.name))
+    router.push(getAppUrl(software.category, software.slug))
     setSearchTerm("")
     setShowDropdown(false)
     setSelectedIndex(-1)

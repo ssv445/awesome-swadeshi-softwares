@@ -191,6 +191,7 @@ export function getAppBySlug(category: string, slug: string): Software | null {
 }
 
 // Get all app paths for static generation (server-side only)
+// Includes both canonical slugs and aliases for redirects
 export function getAllAppPaths(): { category: string; slug: string }[] {
   const dataDir = path.join(process.cwd(), 'data')
   const paths: { category: string; slug: string }[] = []
@@ -213,7 +214,16 @@ export function getAllAppPaths(): { category: string; slug: string }[] {
           const softwareData = JSON.parse(fileContent)
           // Use explicit slug from JSON (with filename as fallback)
           const slug = softwareData.slug || file.replace('.json', '')
+
+          // Add canonical slug
           paths.push({ category, slug })
+
+          // Add aliases for redirect support
+          if (softwareData.aliases && Array.isArray(softwareData.aliases)) {
+            softwareData.aliases.forEach((alias: string) => {
+              paths.push({ category, slug: alias })
+            })
+          }
         }
       } catch (error) {
         console.warn(`Error reading category ${category}:`, error)
@@ -227,7 +237,7 @@ export function getAllAppPaths(): { category: string; slug: string }[] {
 }
 
 // Get related apps based on shared alternatives (server-side only)
-export function getRelatedApps(app: Software, limit: number): { sameCompany: Software[]; sameCategory: Software[] } {
+export function getRelatedApps(app: Software, limit: number): { sameCompany: SoftwareWithMeta[]; sameCategory: SoftwareWithMeta[] } {
   const allApps = getAllSoftware()
 
   // Calculate relevance score for each app

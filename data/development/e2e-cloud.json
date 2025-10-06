@@ -3,7 +3,7 @@
   "slug": "e2e-cloud",
   "description": "Indian cloud infrastructure platform with compute, storage, and AI services",
   "website": "https://www.e2enetworks.com/",
-  "category": "Development",
+  "category": "development",
   "alternatives": [
     "Microsoft Azure",
     "AWS",

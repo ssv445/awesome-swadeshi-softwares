@@ -3,7 +3,7 @@
   "slug": "zoho-sign",
   "description": "Digital signature software for document signing and workflows",
   "website": "https://www.zoho.com/sign/",
-  "category": "Business",
+  "category": "business",
   "alternatives": [
     "DocuSign",
     "HelloSign",
