@@ -28,7 +28,7 @@ export const metadata: Metadata = {
     template: "%s | Swadeshi Apps"
   },
   description:
-    "Discover the best Indian software alternatives to popular international tools. Support homegrown innovation with our curated directory of Made in India software solutions. Join the Swadeshi movement and support Atmanirbhar Bharat.",
+    "Discover 158+ Indian software alternatives to international tools. Support Made in India apps and the Swadeshi movement.",
   keywords: [
     "Indian software",
     "Made in India",
@@ -60,7 +60,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     title: "Swadeshi Apps - Discover Made in India Alternatives",
-    description: "Discover the best Indian software alternatives to popular international tools. Support homegrown innovation and the Swadeshi movement.",
+    description: "Discover 158+ Indian software alternatives. Support Made in India apps and the Swadeshi movement.",
     url: "https://swadeshiapps.com/",
     siteName: "Swadeshi Apps",
     locale: "en_IN",
@@ -76,7 +76,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Swadeshi Apps - Discover Made in India Alternatives",
-    description: "Discover the best Indian software alternatives to popular international tools. Support homegrown innovation and the Swadeshi movement.",
+    description: "Discover 158+ Indian software alternatives. Support Made in India apps and the Swadeshi movement.",
     images: ["/og-image.png"]
   },
   alternates: {

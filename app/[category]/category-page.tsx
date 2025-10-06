@@ -85,18 +85,12 @@ export default function CategoryPage({ software, categoryName, categorySlug, all
       {/* Hero Section */}
       <section className="py-16 px-4 bg-orange-50">
         <div className="container mx-auto text-center max-w-4xl">
-          <Button asChild variant="ghost" className="mb-6">
-            <Link href="/">
-              <ArrowLeft className="mr-2 h-4 w-4" />
-              Back to All Apps
-            </Link>
-          </Button>
 
           <div className="flex items-center justify-center mb-6">
             <AshokaChakra className="h-12 w-12 text-orange-500" />
           </div>
           <h1 className="text-4xl font-bold text-gray-900 mb-6">
-            <span className="text-orange-500">{categoryName}</span> Apps
+           Swadeshi <span className="text-orange-500">{categoryName}</span> Apps
           </h1>
           <p className="text-xl text-gray-600 mb-8">
             Indian apps that can replace international {categoryName.toLowerCase()} tools and platforms.

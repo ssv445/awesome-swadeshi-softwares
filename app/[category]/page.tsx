@@ -51,7 +51,7 @@ export async function generateMetadata({ params }: CategoryPageProps) {
 
   return {
     title: `${categoryName} Apps - Indian Alternatives | Swadeshi Apps`,
-    description: `Discover ${software.length}+ Indian ${categoryName.toLowerCase()} apps that can replace international tools. Support Swadeshi movement with quality Indian alternatives built for global markets.`,
+    description: `Discover ${software.length}+ Indian ${categoryName.toLowerCase()} apps. Quality alternatives to international tools.`,
     keywords: [
       `Indian ${categoryName.toLowerCase()} apps`,
       "Swadeshi software",
@@ -64,7 +64,7 @@ export async function generateMetadata({ params }: CategoryPageProps) {
     ],
     openGraph: {
       title: `${categoryName} Apps - Indian Alternatives`,
-      description: `Discover ${software.length}+ Indian ${categoryName.toLowerCase()} apps that can replace international tools.`,
+      description: `${software.length}+ Indian ${categoryName.toLowerCase()} apps - Quality alternatives to international tools.`,
       url: `/${category}`,
       type: "website",
       images: [
@@ -79,7 +79,7 @@ export async function generateMetadata({ params }: CategoryPageProps) {
     twitter: {
       card: "summary_large_image",
       title: `${categoryName} Apps - Indian Alternatives`,
-      description: `Discover ${software.length}+ Indian ${categoryName.toLowerCase()} apps that can replace international tools.`,
+      description: `${software.length}+ Indian ${categoryName.toLowerCase()} apps - Quality alternatives to international tools.`,
       images: [`/og-${category}.png`]
     },
     alternates: {

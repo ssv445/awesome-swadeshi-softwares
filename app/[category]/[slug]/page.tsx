@@ -213,10 +213,10 @@ export default async function AppPage({ params }: AppPageProps) {
           {/* About This App */}
           <Card className="md:col-span-2">
             <CardHeader>
-              <CardTitle className="flex items-center">
+              <h2 className="flex items-center text-xl font-semibold leading-none">
                 <Globe className="h-5 w-5 mr-2 text-blue-600" />
                 About This App
-              </CardTitle>
+              </h2>
             </CardHeader>
             <CardContent>
               <p className="text-gray-700 leading-relaxed mb-4">
@@ -234,10 +234,10 @@ export default async function AppPage({ params }: AppPageProps) {
           {/* App Details */}
           <Card>
             <CardHeader>
-              <CardTitle className="flex items-center">
+              <h2 className="flex items-center text-xl font-semibold leading-none">
                 <Building2 className="h-5 w-5 mr-2 text-blue-600" />
                 App Details
-              </CardTitle>
+              </h2>
             </CardHeader>
             <CardContent className="space-y-4">
               <div>
@@ -279,14 +279,30 @@ export default async function AppPage({ params }: AppPageProps) {
           </Card>
         </div>
 
-        {/* Replaces Section */}
+       
+
+        {/* OpenGraph Image Section */}
+        {app.opengraph?.image && (
+          <Card className="mb-8">
+            <CardContent className="p-6">
+              <img
+                src={app.opengraph.image}
+                alt={`${app.name} preview`}
+                className="w-full max-w-2xl mx-auto rounded-lg shadow-sm"
+                loading="lazy"
+              />
+            </CardContent>
+          </Card>
+        )}
+
+ {/* Replaces Section */}
         {app.alternatives.length > 0 && (
           <Card className="mb-8">
             <CardHeader>
-              <CardTitle className="flex items-center">
+              <h2 className="flex items-center text-xl font-semibold leading-none">
                 <Users className="h-5 w-5 mr-2 text-blue-600" />
                 Indian Alternative To
-              </CardTitle>
+              </h2>
             </CardHeader>
             <CardContent>
               <p className="text-gray-700 mb-4">
@@ -311,26 +327,12 @@ export default async function AppPage({ params }: AppPageProps) {
             </CardContent>
           </Card>
         )}
-
-        {/* OpenGraph Image Section */}
-        {app.opengraph?.image && (
-          <Card className="mb-8">
-            <CardContent className="p-6">
-              <img
-                src={app.opengraph.image}
-                alt={`${app.name} preview`}
-                className="w-full max-w-2xl mx-auto rounded-lg shadow-sm"
-                loading="lazy"
-              />
-            </CardContent>
-          </Card>
-        )}
-
+        
         {/* Related Apps */}
         {relatedApps.length > 0 && (
           <Card>
             <CardHeader>
-              <CardTitle>Related Indian Apps</CardTitle>
+              <h2 className="text-xl font-semibold leading-none">Related Indian Apps</h2>
             </CardHeader>
             <CardContent>
               <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">

@@ -77,7 +77,7 @@ export default async function AlternativePage({ params }: AlternativePageProps) 
             <AshokaChakra className="h-12 w-12 md:h-16 md:w-16 text-blue-600" />
           </div>
           <h1 className="text-2xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-3 md:mb-4 px-2">
-            {alternative.internationalTool.name} <span className="text-blue-600">Indian Alternative</span>
+            <span className="text-blue-600">Indian Alternative</span> of {alternative.internationalTool.name} 
           </h1>
           <p className="text-sm md:text-base text-gray-600 max-w-2xl mx-auto px-4 mb-2">
             {alternative.internationalTool.category} • {alternative.indianAlternatives[0]?.company}
