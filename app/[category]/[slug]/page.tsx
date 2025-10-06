@@ -163,16 +163,16 @@ export default async function AppPage({ params }: AppPageProps) {
                   {app.opengraph.title}
                 </p>
               )}
-              <div className="flex items-center space-x-4 mb-6">
-                <Badge variant={app.pricing === 'Free' ? 'default' : app.pricing === 'Freemium' ? 'secondary' : 'outline'} className="text-sm">
+              <div className="flex flex-wrap items-center gap-3 md:gap-4 mb-6">
+                <Badge variant={app.pricing === 'Free' ? 'default' : app.pricing === 'Freemium' ? 'secondary' : 'outline'} className="text-sm py-1.5 px-3 min-h-[36px]">
                   {app.pricing}
                 </Badge>
-                <span className="text-sm text-gray-500 flex items-center">
-                  <Tag className="h-4 w-4 mr-1" />
+                <span className="text-sm md:text-base text-gray-500 flex items-center min-h-[36px]">
+                  <Tag className="h-4 w-4 mr-1.5" />
                   {app.category}
                 </span>
-                <span className="text-sm text-gray-500 flex items-center">
-                  <MapPin className="h-4 w-4 mr-1" />
+                <span className="text-sm md:text-base text-gray-500 flex items-center min-h-[36px]">
+                  <MapPin className="h-4 w-4 mr-1.5" />
                   {app.location}
                 </span>
               </div>
@@ -241,24 +241,24 @@ export default async function AppPage({ params }: AppPageProps) {
             </CardHeader>
             <CardContent className="space-y-4">
               <div>
-                <dt className="text-sm font-medium text-gray-600">Company</dt>
-                <dd className="text-sm text-gray-900">{app.company}</dd>
+                <dt className="text-sm md:text-base font-medium text-gray-600">Company</dt>
+                <dd className="text-sm md:text-base text-gray-900">{app.company}</dd>
               </div>
               <div>
-                <dt className="text-sm font-medium text-gray-600">Location</dt>
-                <dd className="text-sm text-gray-900">{app.location}</dd>
+                <dt className="text-sm md:text-base font-medium text-gray-600">Location</dt>
+                <dd className="text-sm md:text-base text-gray-900">{app.location}</dd>
               </div>
               <div>
-                <dt className="text-sm font-medium text-gray-600">Category</dt>
-                <dd className="text-sm text-gray-900">
-                  <Link href={getCategoryUrl(category)} className="text-blue-600 hover:underline">
+                <dt className="text-sm md:text-base font-medium text-gray-600">Category</dt>
+                <dd className="text-sm md:text-base text-gray-900">
+                  <Link href={getCategoryUrl(category)} className="text-blue-600 hover:underline min-h-[44px] inline-flex items-center">
                     {app.category}
                   </Link>
                 </dd>
               </div>
               <div>
-                <dt className="text-sm font-medium text-gray-600">Pricing</dt>
-                <dd className="text-sm text-gray-900">{app.pricing}</dd>
+                <dt className="text-sm md:text-base font-medium text-gray-600">Pricing</dt>
+                <dd className="text-sm md:text-base text-gray-900">{app.pricing}</dd>
               </div>
               {app.opengraph?.twitter_site && (
                 <div>
@@ -355,12 +355,12 @@ export default async function AppPage({ params }: AppPageProps) {
                     </div>
                     <p className="text-sm text-gray-700 mb-3 line-clamp-2">{relatedApp.description}</p>
                     <div className="flex items-center justify-between">
-                      <Badge variant="outline" className="text-xs">
+                      <Badge variant="outline" className="text-sm py-1.5 px-3">
                         {relatedApp.pricing}
                       </Badge>
                       <Link
                         href={getAppUrl(relatedApp.categorySlug, relatedApp.slug)}
-                        className="text-sm text-blue-600 hover:underline"
+                        className="text-sm md:text-base text-blue-600 hover:underline py-2 min-h-[44px] inline-flex items-center"
                       >
                         View Details
                       </Link>

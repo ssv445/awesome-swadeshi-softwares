@@ -120,4 +120,17 @@
   body {
     @apply bg-background text-foreground;
   }
+
+  /* Mobile-friendly base font size */
+  html {
+    font-size: 16px;
+  }
+
+  /* Ensure minimum tap target size on mobile */
+  @media (max-width: 768px) {
+    button, a, [role="button"] {
+      min-height: 44px;
+      min-width: 44px;
+    }
+  }
 }

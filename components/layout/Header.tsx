@@ -67,7 +67,7 @@ export function Header({ variant = "default", className = "", allSoftware }: Hea
                 <Link
                   key={link.href}
                   href={link.href}
-                  className="text-sm sm:text-base text-gray-600 hover:text-gray-900 font-medium transition-colors"
+                  className="text-base sm:text-base text-gray-600 hover:text-gray-900 font-medium transition-colors py-2 min-h-[44px] flex items-center"
                 >
                   {link.label}
                 </Link>

@@ -26,7 +26,16 @@
       "Bash(sips:*)",
       "Bash(/dev/null)",
       "Bash(echo:*)",
-      "Bash(cat:*)"
+      "Bash(cat:*)",
+      "Bash(for:*)",
+      "Bash(do sed -i '' 's/\"\"category\"\": \"\"Hosting & Domains\"\"/\"\"category\"\": \"\"Hosting and Domains\"\"/g' \"$file\")",
+      "Bash(pnpm search:index:*)",
+      "Bash(tsx scripts/update-category-to-slug.ts:*)",
+      "Bash(pnpm tsx:*)",
+      "Bash(do sed -i '' 's/\"\"category\"\": \"\"E-commerce\"\"/\"\"category\"\": \"\"e-commerce\"\"/g' \"$file\")",
+      "Bash(curl -I http://localhost:3004/hosting-and-domains/domainindia)",
+      "Bash(wait)",
+      "Read(//tmp/**)"
     ],
     "deny": [
       "Bash(npm run build:*)"
