@@ -22,9 +22,9 @@ export function Header({ variant = "default", className = "", allSoftware }: Hea
           <Link href="/" className="flex items-center space-x-2 sm:space-x-3 hover:opacity-80 transition-opacity min-w-0 flex-shrink">
             <AshokaChakra className="h-8 w-8 sm:h-10 sm:w-10 text-fuchsia-600 flex-shrink-0" />
             <div className="min-w-0">
-              <h1 className="text-base sm:text-xl md:text-2xl font-bold text-gray-900 truncate">
+              <div className="text-base sm:text-xl md:text-2xl font-bold text-gray-900 truncate">
                 {SITE_NAME}
-              </h1>
+              </div>
               <p className="text-xs sm:text-sm text-gray-600 font-medium hidden sm:block">
                 India's Alternatives Apps
               </p>
