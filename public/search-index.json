@@ -905,6 +905,14 @@
       "searchTerms": "amagi amagi media labs entertainment aws elemental brightcove kaltura cloud based broadcast and streaming solutions for content creators broadcasters and"
     },
     {
+      "id": "entertainment/bookmyshow",
+      "name": "BookMyShow",
+      "company": "Bigtree Entertainment",
+      "category": "Entertainment",
+      "slug": "bookmyshow",
+      "searchTerms": "bookmyshow bigtree entertainment entertainment fandango ticketmaster atom tickets leading entertainment ticketing platform for movies events plays sports and"
+    },
+    {
       "id": "entertainment/chingari",
       "name": "Chingari",
       "company": "Tech4billion Media",
@@ -991,6 +999,14 @@
       "category": "Entertainment",
       "slug": "zee5",
       "searchTerms": "zee5 zee entertainment enterprises entertainment netflix amazon prime ott platform with strong focus on regional and vernacular content"
+    },
+    {
+      "id": "finance/bhim-upi",
+      "name": "BHIM UPI",
+      "company": "National Payments Corporation of India",
+      "category": "Finance",
+      "slug": "bhim-upi",
+      "searchTerms": "bhim upi national payments corporation of india finance phonepe googlepay paytm government backed unified payment interface for instant digital payments across banks"
     },
     {
       "id": "finance/instamojo",
@@ -1250,7 +1266,7 @@
     }
   ],
   "meta": {
-    "totalEntries": 156,
+    "totalEntries": 158,
     "categories": [
       "business",
       "communication",
@@ -1266,7 +1282,7 @@
       "travel",
       "utilities"
     ],
-    "generatedAt": "2025-10-05T11:27:19.914Z",
+    "generatedAt": "2025-10-06T07:31:49.292Z",
     "version": "1.0.0"
   }
 }

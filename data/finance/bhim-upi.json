@@ -1,0 +1,20 @@
+{
+  "name": "BHIM UPI",
+  "slug": "bhim-upi",
+  "description": "Government-backed unified payment interface for instant digital payments across banks and payment apps in India",
+  "website": "https://www.bhimupi.org.in/",
+  "category": "Finance",
+  "alternatives": [
+    "PhonePe",
+    "GooglePay",
+    "Paytm"
+  ],
+  "pricing": "Free",
+  "company": "National Payments Corporation of India",
+  "location": "Mumbai, Maharashtra",
+  "appStoreUrl": "https://itunes.apple.com/sg/app/bhim-bharat-interface-for/id1200315258?mt=8",
+  "playStoreUrl": "https://play.google.com/store/apps/details?id=in.org.npci.upiapp&hl=en",
+  "opengraph": {
+    "last_updated": "2025-10-06T07:12:36.634Z"
+  }
+}

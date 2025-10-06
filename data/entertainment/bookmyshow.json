@@ -1,0 +1,11 @@
+{
+  "name": "BookMyShow",
+  "slug": "bookmyshow",
+  "description": "Leading entertainment ticketing platform for movies, events, plays, sports, and concerts across India",
+  "website": "https://in.bookmyshow.com/explore/home/national-capital-region-ncr",
+  "category": "Entertainment",
+  "alternatives": ["Fandango", "Ticketmaster", "Atom Tickets", "Eventbrite"],
+  "pricing": "Free",
+  "company": "Bigtree Entertainment",
+  "location": "Mumbai, Maharashtra"
+}
