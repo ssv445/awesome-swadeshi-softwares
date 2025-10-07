@@ -7,7 +7,7 @@ import Link from "next/link"
 import { notFound } from "next/navigation"
 import { getAlternativeBySlug, getAllAlternativeSlugs } from "@/lib/alternatives-server"
 import { Favicon } from "@/components/favicon"
-import { getAlternativeUrl, getNotSwadeshiUrl } from "@/lib/data"
+import { getAlternativeUrl, getNotSwadeshiUrl, getAppUrl } from "@/lib/data"
 
 // Icon mapping
 const iconMap = {
@@ -139,66 +139,64 @@ export default async function AlternativePage({ params }: AlternativePageProps) 
           ) : (
             <div className="grid gap-4 md:gap-6">
               {alternative.indianAlternatives.map((indianAlt, index) => (
-              <Card key={index} className="group hover:shadow-xl transition-all duration-300 border-2 border-green-200 hover:border-green-400 bg-white">
-                <div className="p-4 md:p-6">
-                  <div className="flex flex-col md:flex-row gap-4 md:gap-6">
-                    {/* Logo */}
-                    <div className="flex-shrink-0 flex items-center justify-center md:justify-start">
-                      <Favicon
-                        websiteUrl={indianAlt.website}
-                        name={indianAlt.name}
-                        size={64}
-                        className="h-16 w-16 md:h-20 md:w-20 object-contain"
-                        fallbackClassName="h-16 w-16 md:h-20 md:w-20 text-blue-600"
-                        customFaviconUrl={indianAlt.faviconUrl}
-                        fixedHeight={true}
-                      />
-                    </div>
-
-                    {/* Content */}
-                    <div className="flex-1 min-w-0">
-                      <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-3 mb-3">
-                        <div className="min-w-0 flex-1">
-                          <h3 className="text-xl md:text-2xl font-bold text-gray-900 mb-1">
-                            {indianAlt.name}
-                          </h3>
-                          <div className="flex flex-wrap items-center gap-2 mb-2">
-                            <p className="text-sm md:text-base text-gray-600 font-medium">
-                              by {indianAlt.company}
-                            </p>
-                            <Badge className="bg-green-100 text-green-800 border-green-300 text-xs">
-                              <Flag className="h-3 w-3 mr-1" />
-                              Made in India
-                            </Badge>
-                            <Badge variant="outline" className="text-xs">{indianAlt.pricing}</Badge>
-                          </div>
-                        </div>
-                        <Button asChild className="bg-blue-600 hover:bg-blue-700 text-white border-none w-full md:w-auto">
-                          <Link href={indianAlt.website} target="_blank" rel="noopener noreferrer">
-                            Visit Website
-                            <ExternalLink className="ml-2 h-4 w-4" />
-                          </Link>
-                        </Button>
+              <Link
+                key={index}
+                href={getAppUrl(indianAlt.categorySlug, indianAlt.slug)}
+                className="block group"
+              >
+                <Card className="group-hover:shadow-xl transition-all duration-300 border-2 border-green-200 group-hover:border-green-400 bg-white">
+                  <div className="p-4 md:p-6">
+                    <div className="flex flex-col md:flex-row gap-4 md:gap-6">
+                      {/* Logo */}
+                      <div className="flex-shrink-0 flex items-center justify-center md:justify-start">
+                        <Favicon
+                          websiteUrl={indianAlt.website}
+                          name={indianAlt.name}
+                          size={64}
+                          className="h-16 w-16 md:h-20 md:w-20 object-contain"
+                          fallbackClassName="h-16 w-16 md:h-20 md:w-20 text-blue-600"
+                          customFaviconUrl={indianAlt.faviconUrl}
+                          fixedHeight={true}
+                        />
                       </div>
 
-                      <p className="text-sm md:text-base text-gray-700 leading-relaxed mb-3">
-                        {indianAlt.description}
-                      </p>
+                      {/* Content */}
+                      <div className="flex-1 min-w-0">
+                        <div className="flex flex-col gap-3 mb-3">
+                          <div className="min-w-0 flex-1">
+                            <h3 className="text-xl md:text-2xl font-bold text-gray-900 mb-1 group-hover:text-blue-600 transition-colors">
+                              {indianAlt.name}
+                            </h3>
+                            <div className="flex flex-wrap items-center gap-2 mb-2">
+                              <p className="text-sm md:text-base text-gray-600 font-medium">
+                                by {indianAlt.company}
+                              </p>
+                              <Badge className="bg-green-100 text-green-800 border-green-300 text-xs">
+                                <Flag className="h-3 w-3 mr-1" />
+                                Made in India
+                              </Badge>
+                              <Badge variant="outline" className="text-xs">{indianAlt.pricing}</Badge>
+                            </div>
+                          </div>
+                        </div>
 
-                      <div className="flex flex-wrap gap-2">
-                        <Link href={getAlternativeUrl(alternative.internationalTool.name)}>
-                          <Badge variant="outline" className="text-xs border-blue-300 text-blue-700 bg-blue-50 hover:bg-blue-100 cursor-pointer transition-colors">
+                        <p className="text-sm md:text-base text-gray-700 leading-relaxed mb-3">
+                          {indianAlt.description}
+                        </p>
+
+                        <div className="flex flex-wrap gap-2">
+                          <Badge variant="outline" className="text-xs border-blue-300 text-blue-700 bg-blue-50 group-hover:bg-blue-100 transition-colors">
                             Alternative to {alternative.internationalTool.name}
                           </Badge>
-                        </Link>
-                        <Badge variant="outline" className="text-xs border-gray-300 text-gray-600 bg-gray-50">
-                          {indianAlt.location}
-                        </Badge>
+                          <Badge variant="outline" className="text-xs border-gray-300 text-gray-600 bg-gray-50">
+                            {indianAlt.location}
+                          </Badge>
+                        </div>
                       </div>
                     </div>
                   </div>
-                </div>
-              </Card>
+                </Card>
+              </Link>
             ))}
             </div>
           )}

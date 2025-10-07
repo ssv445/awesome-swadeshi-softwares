@@ -22,6 +22,8 @@ export interface AlternativeMapping {
     features: string[]
     advantages: string[]
     faviconUrl?: string // Optional custom favicon URL
+    categorySlug: string // Category slug for app detail page URL
+    slug: string // App slug for detail page URL
   }[]
   benefits: {
     title: string
@@ -228,7 +230,9 @@ export function generateAlternativesMapping(): AlternativeMapping[] {
           "Local customer support",
           "Better pricing for Indian market",
           "Cultural understanding"
-        ]
+        ],
+        categorySlug: software.category,
+        slug: software.slug
       })),
       benefits: getDefaultBenefits()
     }
