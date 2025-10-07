@@ -2,6 +2,7 @@
   "permissions": {
     "allow": [
       "Bash(find:*)",
+      "WebSearch:*",
       "Bash(node:*)",
       "WebFetch(domain:commons.wikimedia.org)",
       "Bash(pnpm dev:*)",
