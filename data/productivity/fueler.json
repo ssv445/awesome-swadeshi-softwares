@@ -1,0 +1,11 @@
+{
+  "name": "Fueler",
+  "slug": "fueler",
+  "description": "Career portfolio platform that helps professionals showcase their 'Proof of Work' instead of traditional resumes. Create portfolios, display projects, and get discovered by employers.",
+  "website": "https://fueler.io/",
+  "category": "productivity",
+  "alternatives": ["Behance", "Dribbble", "LinkedIn"],
+  "pricing": "Freemium",
+  "company": "Fueler",
+  "location": "India"
+}

@@ -1,0 +1,11 @@
+{
+  "name": "Truelancer",
+  "slug": "truelancer",
+  "description": "Indian freelance marketplace platform connecting freelancers with clients globally. Find freelance jobs or hire talent across diverse professional services.",
+  "website": "https://www.truelancer.com/",
+  "category": "business",
+  "alternatives": ["Upwork", "Fiverr", "Freelancer"],
+  "pricing": "Freemium",
+  "company": "Truelancer",
+  "location": "India"
+}

@@ -3,6 +3,7 @@ import type { Metadata } from "next"
 import { GeistSans } from "geist/font/sans"
 import { GeistMono } from "geist/font/mono"
 import { StructuredData, websiteStructuredData, organizationStructuredData } from "@/components/StructuredData"
+import { GoogleAnalytics } from "@/components/GoogleAnalytics"
 import { AppShell } from "@/components/layout/AppShell"
 import { getAllSoftware } from "@/lib/server-data"
 import "./globals.css"
@@ -110,6 +111,7 @@ html {
         `}</style>
         <StructuredData type="website" data={websiteStructuredData} />
         <StructuredData type="organization" data={organizationStructuredData} />
+        <GoogleAnalytics />
       </head>
       <body>
         <AppShell allSoftware={allSoftware}>
