@@ -153,6 +153,14 @@
       "searchTerms": "townscript townscript business eventbrite meetup ticket tailor event ticketing and management platform with registration and analytics"
     },
     {
+      "id": "business/truelancer",
+      "name": "Truelancer",
+      "company": "Truelancer",
+      "category": "business",
+      "slug": "truelancer",
+      "searchTerms": "truelancer truelancer business upwork fiverr freelancer indian freelance marketplace platform connecting freelancers with clients globally find"
+    },
+    {
       "id": "business/urbanpiper",
       "name": "UrbanPiper",
       "company": "UrbanPiper",
@@ -1097,6 +1105,14 @@
       "searchTerms": "digiboxx digiboxx technologies productivity dropbox google drive made in india secure cloud storage for individuals and enterprises with data"
     },
     {
+      "id": "productivity/fueler",
+      "name": "Fueler",
+      "company": "Fueler",
+      "category": "productivity",
+      "slug": "fueler",
+      "searchTerms": "fueler fueler productivity behance dribbble linkedin career portfolio platform that helps professionals showcase their proof of"
+    },
+    {
       "id": "productivity/krutrim-assistant",
       "name": "Krutrim Assistant",
       "company": "Ola Krutrim",
@@ -1266,7 +1282,7 @@
     }
   ],
   "meta": {
-    "totalEntries": 158,
+    "totalEntries": 160,
     "categories": [
       "business",
       "communication",
@@ -1282,7 +1298,7 @@
       "travel",
       "utilities"
     ],
-    "generatedAt": "2025-10-07T05:24:48.008Z",
+    "generatedAt": "2025-10-08T04:50:36.461Z",
     "version": "1.0.0"
   }
 }

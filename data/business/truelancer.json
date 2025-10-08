@@ -4,8 +4,19 @@
   "description": "Indian freelance marketplace platform connecting freelancers with clients globally. Find freelance jobs or hire talent across diverse professional services.",
   "website": "https://www.truelancer.com/",
   "category": "business",
-  "alternatives": ["Upwork", "Fiverr", "Freelancer"],
+  "alternatives": [
+    "Upwork",
+    "Fiverr",
+    "Freelancer"
+  ],
   "pricing": "Freemium",
   "company": "Truelancer",
-  "location": "India"
+  "location": "India",
+  "appStoreUrl": "https://itunes.apple.com/us/app/search-jobs-hire-freelancer/id1142111951",
+  "playStoreUrl": "https://play.google.com/store/apps/details?id=com.truelancer.app&amp;referrer=utm_source%3Dlaunch%26utm_medium%3Dsite_footer",
+  "opengraph": {
+    "last_updated": "2025-10-08T04:50:01.783Z",
+    "title": "Hire Freelancers & Find Freelance Jobs Online - Truelancer",
+    "description": "Hire Freelancers & Find Freelance Jobs Online. Hire Freelancers in India, USA, UK, Bangladesh, Philippines. Hire Skilled Professionals, Consultants, Contractors"
+  }
 }

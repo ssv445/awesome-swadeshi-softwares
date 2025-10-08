@@ -4,8 +4,28 @@
   "description": "Career portfolio platform that helps professionals showcase their 'Proof of Work' instead of traditional resumes. Create portfolios, display projects, and get discovered by employers.",
   "website": "https://fueler.io/",
   "category": "productivity",
-  "alternatives": ["Behance", "Dribbble", "LinkedIn"],
+  "alternatives": [
+    "Behance",
+    "Dribbble",
+    "LinkedIn"
+  ],
   "pricing": "Freemium",
   "company": "Fueler",
-  "location": "India"
+  "location": "India",
+  "opengraph": {
+    "last_updated": "2025-10-08T04:50:33.573Z",
+    "type": "Website",
+    "title": "Fueler - The #1 Portfolio Platform on the Internet",
+    "description": "Fueler is the #1 career portfolio platform for students, freelancers, and working professionals. Create your portfolio on Fueler for Free. Signup today.",
+    "image": "https://fueler.io/images/fueler/main/meta-fueler.jpg",
+    "url": "https://fueler.io",
+    "site_name": "Fueler",
+    "twitter_card": "summary_large_image",
+    "twitter_site": "@fuelerHQ",
+    "twitter_creator": "@fuelerHQ",
+    "twitter_title": "Fueler - The #1 Portfolio Platform on the Internet",
+    "twitter_description": "Fueler is the #1 career portfolio platform for students, freelancers, and working professionals. Create your portfolio on Fueler for Free. Signup today.",
+    "twitter_image": "https://fueler.io/images/fueler/main/meta-fueler.jpg",
+    "twitter_url": "https://fueler.io"
+  }
 }
