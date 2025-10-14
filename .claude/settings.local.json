@@ -36,7 +36,8 @@
       "Bash(do sed -i '' 's/\"\"category\"\": \"\"E-commerce\"\"/\"\"category\"\": \"\"e-commerce\"\"/g' \"$file\")",
       "Bash(curl -I http://localhost:3004/hosting-and-domains/domainindia)",
       "Bash(wait)",
-      "Read(//tmp/**)"
+      "Read(//tmp/**)",
+      "Bash(tsx scripts/remove-alternatives.ts:*)"
     ],
     "deny": [
       "Bash(npm run build:*)"

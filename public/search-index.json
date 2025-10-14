@@ -6,7 +6,7 @@
       "company": "CleverTap",
       "category": "business",
       "slug": "clevertap",
-      "searchTerms": "clevertap clevertap business mixpanel amplitude braze customer engagement and retention platform with analytics and personalization"
+      "searchTerms": "clevertap clevertap business mixpanel customer engagement and retention platform with analytics and personalization"
     },
     {
       "id": "business/erpnext",
@@ -78,7 +78,7 @@
       "company": "MoEngage Inc",
       "category": "business",
       "slug": "moengage",
-      "searchTerms": "moengage moengage inc business braze airship onesignal customer engagement platform with omnichannel messaging and analytics"
+      "searchTerms": "moengage moengage inc business airship onesignal customer engagement platform with omnichannel messaging and analytics"
     },
     {
       "id": "business/notifyvisitors",
@@ -102,7 +102,7 @@
       "company": "PetPooja",
       "category": "business",
       "slug": "petpooja",
-      "searchTerms": "petpooja petpooja business square pos toast pos lightspeed all in one business management software for restaurants and retail with pos"
+      "searchTerms": "petpooja petpooja business square pos touchbistro clover all in one business management software for restaurants and retail with pos"
     },
     {
       "id": "business/proofhub",
@@ -190,7 +190,7 @@
       "company": "WebEngage",
       "category": "business",
       "slug": "webengage-analytics",
-      "searchTerms": "webengage analytics webengage business google analytics mixpanel amplitude customer analytics platform for user behavior tracking and insights"
+      "searchTerms": "webengage analytics webengage business google analytics mixpanel customer analytics platform for user behavior tracking and insights"
     },
     {
       "id": "business/webengage-engagement",
@@ -198,7 +198,7 @@
       "company": "WebEngage",
       "category": "business",
       "slug": "webengage-engagement",
-      "searchTerms": "webengage engagement webengage business braze clevertap leanplum multi channel customer engagement platform with personalization"
+      "searchTerms": "webengage engagement webengage business clevertap leanplum multi channel customer engagement platform with personalization"
     },
     {
       "id": "business/whatfix",
@@ -441,14 +441,6 @@
       "searchTerms": "haptik haptik jio communication amazon alexa google assistant siri ai powered virtual assistant for customer support and automation"
     },
     {
-      "id": "communication/hike-sticker-chat",
-      "name": "Hike Sticker Chat",
-      "company": "Hike Private Limited",
-      "category": "communication",
-      "slug": "hike-sticker-chat",
-      "searchTerms": "hike sticker chat hike private limited communication whatsapp telegram signal messaging app with stickers themes and privacy features"
-    },
-    {
       "id": "communication/jio-meet",
       "name": "Jio Meet",
       "company": "Jio Platforms",
@@ -654,7 +646,7 @@
       "company": "IndusOS",
       "category": "development",
       "slug": "indus-os",
-      "searchTerms": "indus os indusos development android ios harmonyos indian mobile operating system with regional language support"
+      "searchTerms": "indus os indusos development android ios indian mobile operating system with regional language support"
     },
     {
       "id": "development/krutrim-ai-studio",
@@ -662,7 +654,7 @@
       "company": "Ola Krutrim",
       "category": "development",
       "slug": "krutrim-ai-studio",
-      "searchTerms": "krutrim ai studio ola krutrim development hugging face openai gpt builder google vertex ai no code ai model development platform with model catalog and developer"
+      "searchTerms": "krutrim ai studio ola krutrim development openai gpt builder google vertex ai aws sagemaker no code ai model development platform with model catalog and developer"
     },
     {
       "id": "development/krutrim-cloud",
@@ -766,7 +758,7 @@
       "company": "Tata Digital",
       "category": "e-commerce",
       "slug": "bigbasket",
-      "searchTerms": "bigbasket tata digital e commerce zepto amazon fresh blinkit india s largest online grocery and food delivery platform offering fresh"
+      "searchTerms": "bigbasket tata digital e commerce zepto blinkit swiggy instamart india s largest online grocery and food delivery platform offering fresh"
     },
     {
       "id": "e-commerce/craftsvilla",
@@ -774,7 +766,7 @@
       "company": "Craftsvilla Handicrafts",
       "category": "e-commerce",
       "slug": "craftsvilla",
-      "searchTerms": "craftsvilla craftsvilla handicrafts e commerce etsy amazon handmade jaypore ethnic e commerce marketplace specializing in indian handicrafts traditional wear and"
+      "searchTerms": "craftsvilla craftsvilla handicrafts e commerce amazon handmade jaypore ethnic e commerce marketplace specializing in indian handicrafts traditional wear and"
     },
     {
       "id": "e-commerce/dukaan",
@@ -806,7 +798,7 @@
       "company": "Meesho",
       "category": "e-commerce",
       "slug": "meesho",
-      "searchTerms": "meesho meesho e commerce amazon seller etsy facebook marketplace social commerce platform empowering small sellers and homepreneurs to start"
+      "searchTerms": "meesho meesho e commerce amazon seller facebook marketplace social commerce platform empowering small sellers and homepreneurs to start"
     },
     {
       "id": "e-commerce/nykaa",
@@ -822,7 +814,7 @@
       "company": "Pepperfry",
       "category": "e-commerce",
       "slug": "pepperfry",
-      "searchTerms": "pepperfry pepperfry e commerce wayfair ikea urban ladder india s largest online furniture and home products marketplace offering furniture"
+      "searchTerms": "pepperfry pepperfry e commerce ikea urban ladder india s largest online furniture and home products marketplace offering furniture"
     },
     {
       "id": "e-commerce/qikink",
@@ -1030,7 +1022,7 @@
       "company": "Instamojo Technologies",
       "category": "finance",
       "slug": "instamojo",
-      "searchTerms": "instamojo instamojo technologies finance stripe paypal square payment and commerce platform designed for indian smes and startups"
+      "searchTerms": "instamojo instamojo technologies finance stripe paypal payment and commerce platform designed for indian smes and startups"
     },
     {
       "id": "finance/profitbooks",
@@ -1046,7 +1038,7 @@
       "company": "Pine Labs",
       "category": "finance",
       "slug": "setu-pine-labs",
-      "searchTerms": "setu pine labs pine labs finance plaid stripe connect open banking apis api banking platform for digital payments and financial services"
+      "searchTerms": "setu pine labs pine labs finance stripe connect open banking apis api banking platform for digital payments and financial services"
     },
     {
       "id": "finance/shelfpay",
@@ -1054,7 +1046,7 @@
       "company": "Shelfpay",
       "category": "finance",
       "slug": "shelfpay",
-      "searchTerms": "shelfpay shelfpay finance splitwise venmo settle up india s first shared payments app for flatmates with pooled wallets"
+      "searchTerms": "shelfpay shelfpay finance splitwise tricount splitmyexpenses india s first shared payments app for flatmates with pooled wallets"
     },
     {
       "id": "finance/zoho-expense",
@@ -1257,6 +1249,14 @@
       "searchTerms": "epic browser hidden reflex utilities google chrome firefox privacy focused web browser with built in vpn and tracker blocking"
     },
     {
+      "id": "utilities/indus-appstore",
+      "name": "Indus Appstore",
+      "company": "Indus Appstore Private Limited",
+      "category": "utilities",
+      "slug": "indus-appstore",
+      "searchTerms": "indus appstore indus appstore private limited utilities google play store apple app store indian app marketplace offering localized app discovery in 12 indian"
+    },
+    {
       "id": "utilities/jiosphere",
       "name": "JioSphere",
       "company": "Jio Platforms",
@@ -1314,7 +1314,7 @@
       "travel",
       "utilities"
     ],
-    "generatedAt": "2025-10-14T17:46:21.521Z",
+    "generatedAt": "2025-10-14T17:54:29.969Z",
     "version": "1.0.0"
   }
 }

@@ -5,9 +5,7 @@
   "website": "https://clevertap.com/",
   "category": "business",
   "alternatives": [
-    "Mixpanel",
-    "Amplitude",
-    "Braze"
+    "Mixpanel"
   ],
   "pricing": "Freemium",
   "company": "CleverTap",

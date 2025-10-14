@@ -5,7 +5,6 @@
   "website": "https://setu.co/",
   "category": "finance",
   "alternatives": [
-    "Plaid",
     "Stripe Connect",
     "Open Banking APIs"
   ],

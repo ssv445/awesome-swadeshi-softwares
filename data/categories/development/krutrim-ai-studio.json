@@ -5,7 +5,6 @@
   "website": "https://www.olakrutrim.com/",
   "category": "development",
   "alternatives": [
-    "Hugging Face",
     "OpenAI GPT Builder",
     "Google Vertex AI",
     "AWS SageMaker"

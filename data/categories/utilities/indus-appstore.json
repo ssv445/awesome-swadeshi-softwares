@@ -1,0 +1,11 @@
+{
+  "name": "Indus Appstore",
+  "slug": "indus-appstore",
+  "description": "Indian app marketplace offering localized app discovery in 12+ Indian languages with zero commission on in-app payments. Pre-installed on Xiaomi and Lava smartphones.",
+  "website": "https://www.indusappstore.com/",
+  "category": "utilities",
+  "alternatives": ["Google Play Store", "Apple App Store"],
+  "pricing": "Free",
+  "company": "Indus Appstore Private Limited",
+  "location": "Chennai, Tamil Nadu"
+}
