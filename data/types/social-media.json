@@ -1,0 +1,62 @@
+{
+  "slug": "social-media",
+  "aliases": ["social-network", "social-platform"],
+  "title": "Best Swadeshi Social Media Platforms",
+  "description": "Discover Indian social networking apps as alternatives to Facebook, Instagram, and Twitter. Privacy-focused, Made in India social platforms.",
+  "hero": {
+    "title": "Swadeshi Social Media",
+    "subtitle": "Connect, Share, Made in India"
+  },
+  "whyChoose": [
+    {
+      "icon": "Users",
+      "title": "Indian Community",
+      "description": "Connect with users who share your cultural context and values."
+    },
+    {
+      "icon": "Shield",
+      "title": "Privacy Protection",
+      "description": "Your data stays in India with strict privacy controls."
+    },
+    {
+      "icon": "Heart",
+      "title": "Local Content",
+      "description": "Discover content in regional languages and local trends."
+    }
+  ],
+  "comparison": {
+    "title": "Why Choose Swadeshi Social Media?",
+    "international": {
+      "label": "International Platforms",
+      "points": [
+        "Data mining practices",
+        "Algorithmic content control",
+        "Generic features"
+      ]
+    },
+    "swadeshi": {
+      "label": "Swadeshi Platforms",
+      "points": [
+        "Transparent data policies",
+        "User-controlled feeds",
+        "Indian cultural context"
+      ]
+    }
+  },
+  "faqs": [
+    {
+      "question": "What is Swadeshi social media?",
+      "answer": "Swadeshi social media refers to social networking platforms developed in India, focusing on user privacy and Indian cultural context."
+    },
+    {
+      "question": "Are Indian social platforms safe?",
+      "answer": "Yes, Swadeshi social media platforms prioritize user privacy and comply with Indian data protection laws."
+    },
+    {
+      "question": "Which social media is Made in India?",
+      "answer": "Indian social platforms are listed on this page, offering alternatives to international social networks."
+    }
+  ],
+  "relatedTypes": ["messaging-app", "browser"],
+  "category": "social-networking"
+}

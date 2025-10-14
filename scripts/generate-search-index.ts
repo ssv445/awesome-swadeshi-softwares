@@ -73,6 +73,7 @@ function getAllSoftwareData(): { software: Software; category: string; slug: str
   try {
     const categories = fs.readdirSync(dataDir, { withFileTypes: true })
       .filter(dirent => dirent.isDirectory())
+      .filter(dirent => dirent.name !== 'types') // Skip types directory
       .map(dirent => dirent.name)
 
     for (const category of categories) {

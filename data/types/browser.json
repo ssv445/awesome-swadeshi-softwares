@@ -1,0 +1,62 @@
+{
+  "slug": "browser",
+  "aliases": ["web-browser", "internet-browser"],
+  "title": "Best Swadeshi Web Browsers",
+  "description": "Explore secure, fast Indian web browsers as alternatives to Chrome, Firefox, and Safari. Privacy-focused, Made in India browsing experience.",
+  "hero": {
+    "title": "Swadeshi Web Browsers",
+    "subtitle": "Fast, Secure, Made in India Browsing"
+  },
+  "whyChoose": [
+    {
+      "icon": "Zap",
+      "title": "Lightning Fast",
+      "description": "Optimized for Indian internet speeds with data-saving features."
+    },
+    {
+      "icon": "Shield",
+      "title": "Privacy First",
+      "description": "Built-in ad blockers and tracking prevention for safer browsing."
+    },
+    {
+      "icon": "Globe",
+      "title": "Indian Language Support",
+      "description": "Native support for Hindi, Tamil, Bengali, and other Indian languages."
+    }
+  ],
+  "comparison": {
+    "title": "Why Choose Swadeshi Browsers?",
+    "international": {
+      "label": "International Browsers",
+      "points": [
+        "Collects browsing data",
+        "Optimized for global networks",
+        "Generic features"
+      ]
+    },
+    "swadeshi": {
+      "label": "Swadeshi Browsers",
+      "points": [
+        "Privacy-focused by design",
+        "Optimized for Indian internet",
+        "Regional content integration"
+      ]
+    }
+  },
+  "faqs": [
+    {
+      "question": "What is a Swadeshi browser?",
+      "answer": "A Swadeshi browser is a web browser developed in India, optimized for Indian users with features like regional language support, data saving, and privacy protection."
+    },
+    {
+      "question": "Are Indian browsers safe to use?",
+      "answer": "Yes, Swadeshi browsers prioritize user privacy and security with built-in protection against tracking and malicious websites."
+    },
+    {
+      "question": "Which browsers are Made in India?",
+      "answer": "Popular Indian browsers include Epic Browser, Ulaa, and others listed on this page."
+    }
+  ],
+  "relatedTypes": ["messaging-app", "map"],
+  "category": "utilities"
+}

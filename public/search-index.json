@@ -1097,6 +1097,14 @@
       "searchTerms": "w3infotech w3infotech hosting godaddy bluehost hostgator indian web hosting and domain registration company providing shared hosting"
     },
     {
+      "id": "productivity/cursorclip",
+      "name": "CursorClip",
+      "company": "CursorClip",
+      "category": "productivity",
+      "slug": "cursorclip",
+      "searchTerms": "cursorclip cursorclip productivity screen studio screen charm loom macos screen recorder with automatic cursor zoom for polished product"
+    },
+    {
       "id": "productivity/digiboxx",
       "name": "DigiBoxx",
       "company": "Digiboxx Technologies",
@@ -1282,7 +1290,7 @@
     }
   ],
   "meta": {
-    "totalEntries": 160,
+    "totalEntries": 161,
     "categories": [
       "business",
       "communication",
@@ -1298,7 +1306,7 @@
       "travel",
       "utilities"
     ],
-    "generatedAt": "2025-10-08T04:50:36.461Z",
+    "generatedAt": "2025-10-14T14:51:52.257Z",
     "version": "1.0.0"
   }
 }

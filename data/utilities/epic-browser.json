@@ -4,6 +4,7 @@
   "description": "Privacy-focused web browser with built-in VPN and tracker blocking",
   "website": "https://www.epicbrowser.com/",
   "category": "utilities",
+  "types": ["browser"],
   "alternatives": [
     "Google Chrome",
     "Firefox"

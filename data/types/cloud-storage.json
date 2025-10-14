@@ -1,0 +1,62 @@
+{
+  "slug": "cloud-storage",
+  "aliases": ["cloud-drive", "file-storage", "online-storage"],
+  "title": "Best Swadeshi Cloud Storage Services",
+  "description": "Secure Indian cloud storage alternatives to Google Drive, Dropbox, and OneDrive. Data stored on Indian servers, compliant with local regulations.",
+  "hero": {
+    "title": "Swadeshi Cloud Storage",
+    "subtitle": "Secure, Compliant, Made in India Data Storage"
+  },
+  "whyChoose": [
+    {
+      "icon": "Cloud",
+      "title": "Indian Servers",
+      "description": "Your data stored exclusively on Indian infrastructure for complete data sovereignty."
+    },
+    {
+      "icon": "Lock",
+      "title": "Bank-Grade Security",
+      "description": "Military-grade encryption and multi-factor authentication protect your files."
+    },
+    {
+      "icon": "Zap",
+      "title": "Fast Access",
+      "description": "Low latency with servers optimized for Indian internet infrastructure."
+    }
+  ],
+  "comparison": {
+    "title": "Why Choose Swadeshi Cloud Storage?",
+    "international": {
+      "label": "International Storage",
+      "points": [
+        "Data stored abroad",
+        "Foreign jurisdiction",
+        "Generic pricing"
+      ]
+    },
+    "swadeshi": {
+      "label": "Swadeshi Storage",
+      "points": [
+        "Indian data centers",
+        "Local compliance",
+        "Affordable pricing"
+      ]
+    }
+  },
+  "faqs": [
+    {
+      "question": "What is Swadeshi cloud storage?",
+      "answer": "Swadeshi cloud storage refers to data storage services provided by Indian companies with servers located in India, ensuring data sovereignty."
+    },
+    {
+      "question": "Is Indian cloud storage secure?",
+      "answer": "Yes, Swadeshi cloud storage providers use bank-grade encryption and comply with Indian data protection regulations."
+    },
+    {
+      "question": "Which cloud storage is Made in India?",
+      "answer": "Indian cloud storage services include those listed on this page, all with Indian server infrastructure."
+    }
+  ],
+  "relatedTypes": ["messaging-app", "browser"],
+  "category": "productivity"
+}

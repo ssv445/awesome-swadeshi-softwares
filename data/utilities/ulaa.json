@@ -4,6 +4,7 @@
   "description": "Fast, secure, and private web browser by Zoho with multi-tier ad blocking, zero browser monitoring, and multiple browsing modes for work, personal, and kids",
   "website": "https://ulaa.zoho.in/",
   "category": "utilities",
+  "types": ["browser"],
   "alternatives": [
     "Google Chrome",
     "Mozilla Firefox",

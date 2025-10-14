@@ -3,7 +3,7 @@
   "slug": "cursorclip",
   "description": "macOS screen recorder with automatic cursor zoom for polished product demos",
   "website": "https://cursorclip.com/",
-  "category": "Productivity",
+  "category": "productivity",
   "email": "contact@cursorclip.com",
   "alternatives": ["Screen Studio", "Screen Charm", "Loom", "Tella", "Cap.so"],
   "pricing": "Paid",

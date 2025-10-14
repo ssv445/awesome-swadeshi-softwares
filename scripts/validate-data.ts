@@ -51,7 +51,46 @@ function getValidCategories(): string[] {
   }
 }
 
+// Load valid types from individual JSON files in /data/types/
+function getValidTypes(): string[] {
+  try {
+    const typesDir = path.join(process.cwd(), 'data', 'types')
+
+    if (!fs.existsSync(typesDir)) {
+      console.error('Warning: Types directory does not exist, skipping types validation')
+      return []
+    }
+
+    const files = fs.readdirSync(typesDir)
+    const types: string[] = []
+
+    for (const file of files) {
+      if (!file.endsWith('.json')) continue
+
+      const filePath = path.join(typesDir, file)
+      const content = fs.readFileSync(filePath, 'utf-8')
+      const data = JSON.parse(content)
+
+      // Add primary slug
+      if (data.slug) {
+        types.push(data.slug)
+      }
+
+      // Add aliases
+      if (data.aliases && Array.isArray(data.aliases)) {
+        types.push(...data.aliases)
+      }
+    }
+
+    return types
+  } catch (error) {
+    console.error('Warning: Could not load types from /data/types/, skipping types validation', error)
+    return []
+  }
+}
+
 const VALID_CATEGORIES = getValidCategories()
+const VALID_TYPES = getValidTypes()
 
 interface ValidationError {
   file: string
@@ -188,6 +227,22 @@ function validateSoftware(filePath: string, data: any): void {
       warnings.push({ file: fileName, field: 'playStoreUrl', error: 'Play Store URL should contain play.google.com/store/apps' })
     }
   }
+
+  // Validate types field (optional field)
+  if (data.types) {
+    if (!Array.isArray(data.types)) {
+      errors.push({ file: fileName, field: 'types', error: 'Types must be an array' })
+    } else if (VALID_TYPES.length > 0) {
+      const invalidTypes = data.types.filter((t: string) => !VALID_TYPES.includes(t))
+      if (invalidTypes.length > 0) {
+        errors.push({
+          file: fileName,
+          field: 'types',
+          error: `Invalid types: ${invalidTypes.join(', ')}. Must be one of: ${VALID_TYPES.join(', ')}`
+        })
+      }
+    }
+  }
 }
 
 function validateAllData(): void {
@@ -196,6 +251,7 @@ function validateAllData(): void {
   try {
     const categories = fs.readdirSync(dataDir, { withFileTypes: true })
       .filter(dirent => dirent.isDirectory())
+      .filter(dirent => dirent.name !== 'types') // Skip types directory
       .map(dirent => dirent.name)
 
     let totalFiles = 0
@@ -248,6 +304,20 @@ function validateAllData(): void {
 
     if (errors.length === 0 && warnings.length === 0) {
       console.log(`\n✅ All data files are valid!\n`)
+    }
+
+    // Check for slug conflicts between categories and types
+    if (VALID_CATEGORIES.length > 0 && VALID_TYPES.length > 0) {
+      const conflicts = VALID_TYPES.filter((slug) => VALID_CATEGORIES.includes(slug))
+      if (conflicts.length > 0) {
+        console.log(`\n❌ Slug Conflicts:`)
+        console.log(`   The following slugs are used by both categories and types:`)
+        conflicts.forEach((slug) => {
+          console.log(`   - ${slug}`)
+        })
+        console.log(`\n   Types and categories must have unique slugs to avoid routing conflicts.\n`)
+        errors.push({ file: 'types-config.json', error: `Slug conflicts detected: ${conflicts.join(', ')}` })
+      }
     }
 
     // Exit with error code if there are errors

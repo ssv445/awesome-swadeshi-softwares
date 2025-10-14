@@ -1,0 +1,6 @@
+{
+  "communication": ["messaging-app"],
+  "utilities": ["browser", "map"],
+  "productivity": ["cloud-storage"],
+  "social-networking": ["social-media"]
+}

@@ -17,6 +17,7 @@ export function getAllSoftware(): SoftwareWithMeta[] {
     // Get all category folders
     const categories = fs.readdirSync(dataDir, { withFileTypes: true })
       .filter(dirent => dirent.isDirectory())
+      .filter(dirent => dirent.name !== 'types')
       .map(dirent => dirent.name)
 
     // Read all JSON files from each category folder
@@ -199,6 +200,7 @@ export function getAllAppPaths(): { category: string; slug: string }[] {
   try {
     const categories = fs.readdirSync(dataDir, { withFileTypes: true })
       .filter(dirent => dirent.isDirectory())
+      .filter(dirent => dirent.name !== 'types')
       .map(dirent => dirent.name)
 
     for (const category of categories) {
@@ -253,8 +255,10 @@ export function getRelatedApps(app: Software, limit: number): { sameCompany: Sof
 
       // Shared alternatives = PRIMARY ranking factor
       // If both apps are alternatives to the same international tool, they're highly related
-      const sharedAlternatives = app.alternatives.filter(alt =>
-        otherApp.alternatives.includes(alt)
+      const appAlts = app.alternatives || []
+      const otherAppAlts = otherApp.alternatives || []
+      const sharedAlternatives = appAlts.filter(alt =>
+        otherAppAlts.includes(alt)
       ).length
       score += sharedAlternatives * 50
 
