@@ -246,18 +246,17 @@ function validateSoftware(filePath: string, data: any): void {
 }
 
 function validateAllData(): void {
-  const dataDir = path.join(process.cwd(), 'data')
+  const categoriesDir = path.join(process.cwd(), 'data', 'categories')
 
   try {
-    const categories = fs.readdirSync(dataDir, { withFileTypes: true })
+    const categories = fs.readdirSync(categoriesDir, { withFileTypes: true })
       .filter(dirent => dirent.isDirectory())
-      .filter(dirent => dirent.name !== 'types') // Skip types directory
       .map(dirent => dirent.name)
 
     let totalFiles = 0
 
     for (const category of categories) {
-      const categoryPath = path.join(dataDir, category)
+      const categoryPath = path.join(categoriesDir, category)
 
       try {
         const files = fs.readdirSync(categoryPath)

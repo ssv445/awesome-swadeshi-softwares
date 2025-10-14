@@ -148,7 +148,7 @@ const getDefaultBenefits = () => {
 }
 
 export function getAllSoftware(): Software[] {
-  const dataDir = path.join(process.cwd(), 'data')
+  const categoriesDir = path.join(process.cwd(), 'data', 'categories')
   const allSoftware: Software[] = []
 
   function readDirectory(dir: string) {
@@ -172,7 +172,7 @@ export function getAllSoftware(): Software[] {
     }
   }
 
-  readDirectory(dataDir)
+  readDirectory(categoriesDir)
   return allSoftware
 }
 

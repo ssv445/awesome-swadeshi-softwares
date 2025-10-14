@@ -161,24 +161,3 @@ export function isTypeSlug(slug: string): boolean {
   return slugMap.has(slug)
 }
 
-/**
- * Get category-to-types mapping
- */
-export function getCategoryTypesMapping(): Record<string, string[]> {
-  try {
-    const mappingPath = path.join(DATA_DIR, 'category-types-mapping.json')
-    const mappingData = fs.readFileSync(mappingPath, 'utf-8')
-    return JSON.parse(mappingData)
-  } catch (error) {
-    console.error('Error reading category-types-mapping.json:', error)
-    return {}
-  }
-}
-
-/**
- * Get types for a specific category
- */
-export function getTypesForCategory(categorySlug: string): string[] {
-  const mapping = getCategoryTypesMapping()
-  return mapping[categorySlug] || []
-}

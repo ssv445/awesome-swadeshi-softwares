@@ -10,19 +10,18 @@ export interface SoftwareWithMeta extends Software {
 
 // Get all software from nested folder structure (server-side only)
 export function getAllSoftware(): SoftwareWithMeta[] {
-  const dataDir = path.join(process.cwd(), 'data')
+  const categoriesDir = path.join(process.cwd(), 'data', 'categories')
   const software: SoftwareWithMeta[] = []
 
   try {
     // Get all category folders
-    const categories = fs.readdirSync(dataDir, { withFileTypes: true })
+    const categories = fs.readdirSync(categoriesDir, { withFileTypes: true })
       .filter(dirent => dirent.isDirectory())
-      .filter(dirent => dirent.name !== 'types')
       .map(dirent => dirent.name)
 
     // Read all JSON files from each category folder
     for (const category of categories) {
-      const categoryPath = path.join(dataDir, category)
+      const categoryPath = path.join(categoriesDir, category)
 
       try {
         const files = fs.readdirSync(categoryPath)
@@ -54,11 +53,11 @@ export function getAllSoftware(): SoftwareWithMeta[] {
 
 // Get software by category (server-side only)
 export function getSoftwareByCategory(categorySlug: string): SoftwareWithMeta[] {
-  const dataDir = path.join(process.cwd(), 'data')
+  const categoriesDir = path.join(process.cwd(), 'data', 'categories')
   const software: SoftwareWithMeta[] = []
 
   try {
-    const categoryPath = path.join(dataDir, categorySlug)
+    const categoryPath = path.join(categoriesDir, categorySlug)
 
     if (!fs.existsSync(categoryPath)) {
       return []
@@ -95,9 +94,9 @@ export function getCategories(): string[] {
   } catch (error) {
     console.error('Error reading categories:', error)
     // Fallback to directory scan
-    const dataDir = path.join(process.cwd(), 'data')
+    const categoriesDir = path.join(process.cwd(), 'data', 'categories')
     try {
-      const categories = fs.readdirSync(dataDir, { withFileTypes: true })
+      const categories = fs.readdirSync(categoriesDir, { withFileTypes: true })
         .filter(dirent => dirent.isDirectory())
         .map(dirent => dirent.name)
         .filter(name => !name.startsWith('.'))
@@ -149,8 +148,8 @@ export function getFeaturedCategories(): Category[] {
 
 // Get individual app by category and slug (server-side only)
 export function getAppBySlug(category: string, slug: string): Software | null {
-  const dataDir = path.join(process.cwd(), 'data')
-  const categoryPath = path.join(dataDir, category)
+  const categoriesDir = path.join(process.cwd(), 'data', 'categories')
+  const categoryPath = path.join(categoriesDir, category)
 
   try {
     if (!fs.existsSync(categoryPath)) {
@@ -194,17 +193,16 @@ export function getAppBySlug(category: string, slug: string): Software | null {
 // Get all app paths for static generation (server-side only)
 // Includes both canonical slugs and aliases for redirects
 export function getAllAppPaths(): { category: string; slug: string }[] {
-  const dataDir = path.join(process.cwd(), 'data')
+  const categoriesDir = path.join(process.cwd(), 'data', 'categories')
   const paths: { category: string; slug: string }[] = []
 
   try {
-    const categories = fs.readdirSync(dataDir, { withFileTypes: true })
+    const categories = fs.readdirSync(categoriesDir, { withFileTypes: true })
       .filter(dirent => dirent.isDirectory())
-      .filter(dirent => dirent.name !== 'types')
       .map(dirent => dirent.name)
 
     for (const category of categories) {
-      const categoryPath = path.join(dataDir, category)
+      const categoryPath = path.join(categoriesDir, category)
 
       try {
         const files = fs.readdirSync(categoryPath)

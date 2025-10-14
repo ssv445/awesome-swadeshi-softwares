@@ -465,6 +465,14 @@
       "searchTerms": "jiochat jio platforms communication whatsapp telegram instant messaging app leveraging jio s telecom user base with integrated"
     },
     {
+      "id": "communication/jiosafe",
+      "name": "JioSafe",
+      "company": "Jio Platforms Limited",
+      "category": "communication",
+      "slug": "jiosafe",
+      "searchTerms": "jiosafe jio platforms limited communication signal whatsapp telegram ultra secure voice and video calling app with end to end encryption quantum resistant"
+    },
+    {
       "id": "communication/kommunicate",
       "name": "Kommunicate",
       "company": "Kommunicate",
@@ -758,7 +766,7 @@
       "company": "Tata Digital",
       "category": "e-commerce",
       "slug": "bigbasket",
-      "searchTerms": "bigbasket tata digital e commerce instacart amazon fresh walmart grocery india s largest online grocery and food delivery platform offering fresh"
+      "searchTerms": "bigbasket tata digital e commerce zepto amazon fresh blinkit india s largest online grocery and food delivery platform offering fresh"
     },
     {
       "id": "e-commerce/craftsvilla",
@@ -790,7 +798,7 @@
       "company": "Reliance Industries",
       "category": "e-commerce",
       "slug": "jiomart",
-      "searchTerms": "jiomart reliance industries e commerce amazon bigbasket flipkart online shopping platform offering groceries electronics fashion and home essentials"
+      "searchTerms": "jiomart reliance industries e commerce amazon flipkart online shopping platform offering groceries electronics fashion and home essentials"
     },
     {
       "id": "e-commerce/meesho",
@@ -870,7 +878,7 @@
       "company": "Typof",
       "category": "e-commerce",
       "slug": "typof",
-      "searchTerms": "typof typof e commerce shopify woocommerce wix ecommerce no code ecommerce website builder for creators and small businesses with"
+      "searchTerms": "typof typof e commerce shopify woocommerce bigcommerce no code ecommerce website builder for creators and small businesses with"
     },
     {
       "id": "e-commerce/zopping",
@@ -1290,7 +1298,7 @@
     }
   ],
   "meta": {
-    "totalEntries": 161,
+    "totalEntries": 162,
     "categories": [
       "business",
       "communication",
@@ -1306,7 +1314,7 @@
       "travel",
       "utilities"
     ],
-    "generatedAt": "2025-10-14T15:52:24.239Z",
+    "generatedAt": "2025-10-14T17:24:12.896Z",
     "version": "1.0.0"
   }
 }
