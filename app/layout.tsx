@@ -25,23 +25,28 @@ export const metadata: Metadata = {
     telephone: false
   },
   title: {
-    default: "Swadeshi Apps - Discover Made in India Alternatives",
+    default: "Swadeshi Apps & Indian App Directory | 130+ Made in India Software",
     template: "%s | Swadeshi Apps"
   },
   description:
-    "Discover 158+ Indian software alternatives to international tools. Support Made in India apps and the Swadeshi movement.",
+    "Discover 130+ Swadeshi apps and Indian software alternatives. Find messaging apps, browsers, maps, cloud storage & more - all Made in India. Support Atmanirbhar Bharat.",
   keywords: [
+    "swadeshi apps",
+    "swadeshi app",
+    "indian swadeshi app",
+    "swadeshi software",
     "Indian software",
     "Made in India",
     "software alternatives",
+    "Indian messaging app",
+    "Indian browser",
+    "Indian map app",
+    "Indian cloud storage",
     "Indian startups",
-    "homegrown software",
-    "Indian tech companies",
-    "Swadeshi software",
+    "Swadeshi movement",
     "Atmanirbhar Bharat",
     "Indian SaaS",
     "indigenous software",
-    "Swadeshi movement",
     "Indian technology"
   ],
   authors: [{ name: "Swadeshi Apps Community" }],
@@ -60,8 +65,8 @@ export const metadata: Metadata = {
   },
   openGraph: {
     type: "website",
-    title: "Swadeshi Apps - Discover Made in India Alternatives",
-    description: "Discover 158+ Indian software alternatives. Support Made in India apps and the Swadeshi movement.",
+    title: "Swadeshi Apps & Indian App Directory | 130+ Made in India Software",
+    description: "Discover 130+ Swadeshi apps and Indian software alternatives. Find messaging apps, browsers, maps, cloud storage & more - all Made in India.",
     url: "https://swadeshiapps.com/",
     siteName: "Swadeshi Apps",
     locale: "en_IN",
@@ -76,8 +81,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Swadeshi Apps - Discover Made in India Alternatives",
-    description: "Discover 158+ Indian software alternatives. Support Made in India apps and the Swadeshi movement.",
+    title: "Swadeshi Apps & Indian App Directory | 130+ Made in India Software",
+    description: "Discover 130+ Swadeshi apps and Indian software alternatives. Find messaging apps, browsers, maps, cloud storage & more - all Made in India.",
     images: ["/og-image.png"]
   },
   alternates: {
@@ -85,7 +90,6 @@ export const metadata: Metadata = {
   },
   category: "Technology",
   classification: "Software Directory",
-  generator: "Next.js"
 }
 
 export default function RootLayout({
