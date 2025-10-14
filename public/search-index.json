@@ -641,14 +641,6 @@
       "searchTerms": "hoppscotch hoppscotch development postman insomnia thunder client open source api development ecosystem beautiful fast and lightweight"
     },
     {
-      "id": "development/indus-os",
-      "name": "Indus OS",
-      "company": "IndusOS",
-      "category": "development",
-      "slug": "indus-os",
-      "searchTerms": "indus os indusos development android ios indian mobile operating system with regional language support"
-    },
-    {
       "id": "development/krutrim-ai-studio",
       "name": "Krutrim AI Studio",
       "company": "Ola Krutrim",
@@ -1298,7 +1290,7 @@
     }
   ],
   "meta": {
-    "totalEntries": 162,
+    "totalEntries": 161,
     "categories": [
       "business",
       "communication",
@@ -1314,7 +1306,7 @@
       "travel",
       "utilities"
     ],
-    "generatedAt": "2025-10-14T17:54:29.969Z",
+    "generatedAt": "2025-10-14T17:57:55.827Z",
     "version": "1.0.0"
   }
 }

@@ -4,8 +4,26 @@
   "description": "Indian app marketplace offering localized app discovery in 12+ Indian languages with zero commission on in-app payments. Pre-installed on Xiaomi and Lava smartphones.",
   "website": "https://www.indusappstore.com/",
   "category": "utilities",
-  "alternatives": ["Google Play Store", "Apple App Store"],
+  "alternatives": [
+    "Google Play Store",
+    "Apple App Store"
+  ],
   "pricing": "Free",
   "company": "Indus Appstore Private Limited",
-  "location": "Chennai, Tamil Nadu"
+  "location": "Chennai, Tamil Nadu",
+  "opengraph": {
+    "last_updated": "2025-10-14T17:57:34.666Z",
+    "title": "Indus Appstore Home Page | Indus Appstore",
+    "description": "Discover apps and games that you’ll love on the Indus Appstore. Browse in English or 12 local languages for a seamless experience.",
+    "url": "https://www.indusappstore.com",
+    "image": "https://www.indusappstore.com/ogs/indus-og.png",
+    "image:width": "1200",
+    "image:height": "630",
+    "type": "article",
+    "twitter_title": "Indus Appstore Home Page | Indus Appstore",
+    "twitter_description": "Discover apps and games that you’ll love on the Indus Appstore. Browse in English or 12 local languages for a seamless experience.",
+    "twitter_image:src": "https://www.indusappstore.com/ogs/indus-og.png",
+    "twitter_card": "summary_large_image",
+    "twitter_image:alt": "Indus Appstore Home Page Logo"
+  }
 }
