@@ -48,6 +48,7 @@ export interface Software {
   description: string
   website: string
   category: string // Category slug (e.g., "business", "finance", "hosting") - matches directory name and categories.json slugs
+  purpose?: string[] // Optional purpose tags (e.g., ["messaging-app", "browser"])
   alternatives: string[]
   pricing: string
   company: string

@@ -4,7 +4,7 @@
   "description": "Instant messaging app leveraging Jio's telecom user base with integrated services",
   "website": "https://www.jio.com/apps/jiochat",
   "category": "communication",
-  "types": ["messaging-app"],
+  "purpose": ["messaging-app"],
   "alternatives": [
     "WhatsApp",
     "Telegram"

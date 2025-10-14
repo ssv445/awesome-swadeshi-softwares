@@ -12,11 +12,11 @@ interface FAQ {
 
 interface FAQSectionProps {
   faqs: FAQ[]
-  typeSlug: string
-  typeName: string
+  purposeSlug: string
+  purposeName: string
 }
 
-export function FAQSection({ faqs, typeSlug, typeName }: FAQSectionProps) {
+export function FAQSection({ faqs, purposeSlug, purposeName }: FAQSectionProps) {
   const structuredData = {
     '@context': 'https://schema.org',
     '@type': 'FAQPage',

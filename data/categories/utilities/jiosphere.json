@@ -4,7 +4,7 @@
   "description": "Web browser with built-in VPN and ad-blocker designed for the Indian market",
   "website": "https://www.jio.com/apps/jiosphere/",
   "category": "utilities",
-  "types": ["browser"],
+  "purpose": ["browser"],
   "alternatives": [
     "Google Chrome",
     "Firefox"

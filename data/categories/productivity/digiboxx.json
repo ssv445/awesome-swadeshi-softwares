@@ -4,7 +4,7 @@
   "description": "Made-in-India secure cloud storage for individuals and enterprises with data sovereignty",
   "website": "https://www.digiboxx.com/",
   "category": "productivity",
-  "types": ["cloud-storage"],
+  "purpose": ["cloud-storage"],
   "alternatives": [
     "Dropbox",
     "Google Drive"

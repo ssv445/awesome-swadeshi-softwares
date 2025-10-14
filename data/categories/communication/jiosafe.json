@@ -4,7 +4,7 @@
   "description": "Ultra-secure voice and video calling app with end-to-end encryption, quantum-resistant security algorithms, and 5-level protection system for confidential communication on Jio 5G network",
   "website": "https://www.jio.com/apps/jiosafe/",
   "category": "communication",
-  "types": ["messaging-app"],
+  "purpose": ["messaging-app"],
   "alternatives": [
     "Signal",
     "WhatsApp",

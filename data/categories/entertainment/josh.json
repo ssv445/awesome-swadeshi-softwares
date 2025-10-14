@@ -4,7 +4,7 @@
   "description": "India's leading short video app with support for 12 Indian languages, allowing users to create and share videos up to 120 seconds with editing tools and special effects",
   "website": "https://myjosh.in/",
   "category": "entertainment",
-  "types": ["social-media"],
+  "purpose": ["social-media"],
   "alternatives": [
     "TikTok",
     "Instagram Reels",

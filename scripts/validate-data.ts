@@ -15,6 +15,7 @@ interface Software {
   description: string
   website: string
   category: string
+  purpose?: string[]
   alternatives: string[]
   pricing: string
   company: string
@@ -51,46 +52,46 @@ function getValidCategories(): string[] {
   }
 }
 
-// Load valid types from individual JSON files in /data/types/
-function getValidTypes(): string[] {
+// Load valid purposes from individual JSON files in /data/purpose/
+function getValidPurposes(): string[] {
   try {
-    const typesDir = path.join(process.cwd(), 'data', 'types')
+    const purposeDir = path.join(process.cwd(), 'data', 'purpose')
 
-    if (!fs.existsSync(typesDir)) {
-      console.error('Warning: Types directory does not exist, skipping types validation')
+    if (!fs.existsSync(purposeDir)) {
+      console.error('Warning: Purpose directory does not exist, skipping purpose validation')
       return []
     }
 
-    const files = fs.readdirSync(typesDir)
-    const types: string[] = []
+    const files = fs.readdirSync(purposeDir)
+    const purposes: string[] = []
 
     for (const file of files) {
       if (!file.endsWith('.json')) continue
 
-      const filePath = path.join(typesDir, file)
+      const filePath = path.join(purposeDir, file)
       const content = fs.readFileSync(filePath, 'utf-8')
       const data = JSON.parse(content)
 
       // Add primary slug
       if (data.slug) {
-        types.push(data.slug)
+        purposes.push(data.slug)
       }
 
       // Add aliases
       if (data.aliases && Array.isArray(data.aliases)) {
-        types.push(...data.aliases)
+        purposes.push(...data.aliases)
       }
     }
 
-    return types
+    return purposes
   } catch (error) {
-    console.error('Warning: Could not load types from /data/types/, skipping types validation', error)
+    console.error('Warning: Could not load purposes from /data/purpose/, skipping purpose validation', error)
     return []
   }
 }
 
 const VALID_CATEGORIES = getValidCategories()
-const VALID_TYPES = getValidTypes()
+const VALID_PURPOSES = getValidPurposes()
 
 interface ValidationError {
   file: string
@@ -228,17 +229,17 @@ function validateSoftware(filePath: string, data: any): void {
     }
   }
 
-  // Validate types field (optional field)
-  if (data.types) {
-    if (!Array.isArray(data.types)) {
-      errors.push({ file: fileName, field: 'types', error: 'Types must be an array' })
-    } else if (VALID_TYPES.length > 0) {
-      const invalidTypes = data.types.filter((t: string) => !VALID_TYPES.includes(t))
-      if (invalidTypes.length > 0) {
+  // Validate purpose field (optional field)
+  if (data.purpose) {
+    if (!Array.isArray(data.purpose)) {
+      errors.push({ file: fileName, field: 'purpose', error: 'Purpose must be an array' })
+    } else if (VALID_PURPOSES.length > 0) {
+      const invalidPurposes = data.purpose.filter((p: string) => !VALID_PURPOSES.includes(p))
+      if (invalidPurposes.length > 0) {
         errors.push({
           file: fileName,
-          field: 'types',
-          error: `Invalid types: ${invalidTypes.join(', ')}. Must be one of: ${VALID_TYPES.join(', ')}`
+          field: 'purpose',
+          error: `Invalid purposes: ${invalidPurposes.join(', ')}. Must be one of: ${VALID_PURPOSES.join(', ')}`
         })
       }
     }
@@ -305,17 +306,17 @@ function validateAllData(): void {
       console.log(`\n✅ All data files are valid!\n`)
     }
 
-    // Check for slug conflicts between categories and types
-    if (VALID_CATEGORIES.length > 0 && VALID_TYPES.length > 0) {
-      const conflicts = VALID_TYPES.filter((slug) => VALID_CATEGORIES.includes(slug))
+    // Check for slug conflicts between categories and purposes
+    if (VALID_CATEGORIES.length > 0 && VALID_PURPOSES.length > 0) {
+      const conflicts = VALID_PURPOSES.filter((slug) => VALID_CATEGORIES.includes(slug))
       if (conflicts.length > 0) {
         console.log(`\n❌ Slug Conflicts:`)
-        console.log(`   The following slugs are used by both categories and types:`)
+        console.log(`   The following slugs are used by both categories and purposes:`)
         conflicts.forEach((slug) => {
           console.log(`   - ${slug}`)
         })
-        console.log(`\n   Types and categories must have unique slugs to avoid routing conflicts.\n`)
-        errors.push({ file: 'types-config.json', error: `Slug conflicts detected: ${conflicts.join(', ')}` })
+        console.log(`\n   Purposes and categories must have unique slugs to avoid routing conflicts.\n`)
+        errors.push({ file: 'purpose-config.json', error: `Slug conflicts detected: ${conflicts.join(', ')}` })
       }
     }
 

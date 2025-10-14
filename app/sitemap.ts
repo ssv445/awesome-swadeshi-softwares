@@ -1,7 +1,7 @@
 import { MetadataRoute } from 'next'
 import { getAllSoftware, getCategories } from '@/lib/server-data'
 import { getAllAlternatives } from '@/lib/alternatives-server'
-import { getAllTypeSlugs } from '@/lib/types-server'
+import { getAllPurposeSlugs } from '@/lib/purpose-server'
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = 'https://swadeshiapps.com'
@@ -40,9 +40,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
   ]
 
-  // Type pages (higher priority than categories for SEO)
-  const typeSlugs = getAllTypeSlugs()
-  const typeRoutes: MetadataRoute.Sitemap = typeSlugs.map((slug) => ({
+  // Purpose pages (higher priority than categories for SEO)
+  const purposeSlugs = getAllPurposeSlugs()
+  const purposeRoutes: MetadataRoute.Sitemap = purposeSlugs.map((slug) => ({
     url: `${baseUrl}/${slug}`,
     lastModified: new Date(),
     changeFrequency: 'weekly' as const,
@@ -78,7 +78,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   return [
     ...staticRoutes,
-    ...typeRoutes,      // Type pages listed before categories for higher priority
+    ...purposeRoutes,      // Purpose pages listed before categories for higher priority
     ...categoryRoutes,
     ...softwareRoutes,
     ...alternativeRoutes,

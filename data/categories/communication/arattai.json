@@ -4,7 +4,7 @@
   "description": "Made in India instant messaging alternative integrated with Zoho ecosystem",
   "website": "https://www.arattai.in",
   "category": "communication",
-  "types": ["messaging-app"],
+  "purpose": ["messaging-app"],
   "alternatives": [
     "WhatsApp",
     "Telegram"

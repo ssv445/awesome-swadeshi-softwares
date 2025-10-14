@@ -2,9 +2,9 @@ import { notFound } from "next/navigation"
 import { Suspense } from "react"
 import { getSoftwareByCategory, getCategories } from "@/lib/server-data"
 import { getCategoryDisplayName } from "@/lib/data"
-import { isTypeSlug, getTypeConfig, getAppsByType, getFeaturedAppsByType, getRelatedTypeConfigs, getAllTypeSlugs } from "@/lib/types-server"
+import { isPurposeSlug, getPurposeConfig, getAppsByPurpose, getFeaturedAppsByPurpose, getRelatedPurposeConfigs, getAllPurposeSlugs } from "@/lib/purpose-server"
 import CategoryPage from "./category-page"
-import TypePage from "@/components/TypePage"
+import PurposePage from "@/components/PurposePage"
 
 interface CategoryPageProps {
   params: Promise<{
@@ -17,12 +17,12 @@ export const dynamicParams = false
 
 export async function generateStaticParams() {
   const categories = getCategories()
-  const typeSlugs = getAllTypeSlugs()
+  const purposeSlugs = getAllPurposeSlugs()
 
   // Generate params for both categories and types
   return [
     ...categories.map((category) => ({ category })),
-    ...typeSlugs.map((slug) => ({ category: slug })), // Reuse 'category' param name
+    ...purposeSlugs.map((slug) => ({ category: slug })), // Reuse 'category' param name
   ]
 }
 
@@ -30,24 +30,24 @@ export default async function CategoryPageWrapper({ params }: CategoryPageProps)
   const { category: slug } = await params
 
   // Check if slug is a type first
-  if (isTypeSlug(slug)) {
-    const config = getTypeConfig(slug)
+  if (isPurposeSlug(slug)) {
+    const config = getPurposeConfig(slug)
     if (!config) {
       notFound()
     }
 
-    const allApps = getAppsByType(slug)
-    const featuredApps = getFeaturedAppsByType(slug, 6)
-    const relatedTypes = getRelatedTypeConfigs(slug)
+    const allApps = getAppsByPurpose(slug)
+    const featuredApps = getFeaturedAppsByPurpose(slug, 6)
+    const relatedPurposes = getRelatedPurposeConfigs(slug)
 
     return (
       <Suspense fallback={<div>Loading...</div>}>
-        <TypePage
-          typeSlug={slug}
+        <PurposePage
+          purposeSlug={slug}
           config={config}
           featuredApps={featuredApps}
           allApps={allApps}
-          relatedTypes={relatedTypes}
+          relatedPurposes={relatedPurposes}
         />
       </Suspense>
     )
@@ -80,15 +80,15 @@ export async function generateMetadata({ params }: CategoryPageProps) {
   const { category: slug } = await params
 
   // Check if slug is a type
-  if (isTypeSlug(slug)) {
-    const config = getTypeConfig(slug)
+  if (isPurposeSlug(slug)) {
+    const config = getPurposeConfig(slug)
     if (!config) {
       return {
         title: 'Not Found',
       }
     }
 
-    const apps = getAppsByType(slug)
+    const apps = getAppsByPurpose(slug)
 
     return {
       title: config.title,

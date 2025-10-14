@@ -1,5 +1,5 @@
 import { SoftwareWithMeta } from '@/lib/server-data'
-import { TypeConfig } from '@/lib/types-server'
+import { PurposeConfig } from '@/lib/purpose-server'
 import { ProductCard } from '@/components/product-card'
 import { WhyChooseSection } from '@/components/WhyChooseSection'
 import { ComparisonTable } from '@/components/ComparisonTable'
@@ -11,23 +11,23 @@ import { HeroSection } from '@/components/ui/HeroSection'
 import { Breadcrumbs } from '@/components/ui/Breadcrumbs'
 
 interface TypePageProps {
-  typeSlug: string
-  config: TypeConfig
+  purposeSlug: string
+  config: PurposeConfig
   featuredApps: SoftwareWithMeta[]
   allApps: SoftwareWithMeta[]
-  relatedTypes: Array<{ slug: string; config: TypeConfig }>
+  relatedPurposes: Array<{ slug: string; config: PurposeConfig }>
 }
 
 export default function TypePage({
-  typeSlug,
+  purposeSlug,
   config,
   featuredApps,
   allApps,
-  relatedTypes,
+  relatedPurposes,
 }: TypePageProps) {
   const breadcrumbItems = [
     { label: 'Home', href: '/' },
-    { label: config.hero.title, href: `/${typeSlug}` },
+    { label: config.hero.title, href: `/${purposeSlug}` },
   ]
 
   return (
@@ -66,17 +66,17 @@ export default function TypePage({
       <ComparisonTable comparison={config.comparison} />
 
       {/* FAQ Section */}
-      <FAQSection faqs={config.faqs} typeSlug={typeSlug} typeName={config.hero.title} />
+      <FAQSection faqs={config.faqs} purposeSlug={purposeSlug} purposeName={config.hero.title} />
 
       {/* Related Types */}
-      {relatedTypes.length > 0 && (
+      {relatedPurposes.length > 0 && (
         <section className="py-16 px-4">
           <div className="container mx-auto">
             <h2 className="text-3xl font-bold mb-8 text-center">
               Explore Related Categories
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-              {relatedTypes.map(({ slug, config: relatedConfig }) => (
+              {relatedPurposes.map(({ slug, config: relatedConfig }) => (
                 <Link
                   key={slug}
                   href={`/${slug}`}
