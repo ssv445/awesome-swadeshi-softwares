@@ -4,6 +4,7 @@
   "description": "Indian Instagram alternative focusing on positive creator economy and community",
   "website": "https://pepul.com/",
   "category": "social-networking",
+  "types": ["social-media"],
   "alternatives": [
     "Instagram",
     "Facebook"

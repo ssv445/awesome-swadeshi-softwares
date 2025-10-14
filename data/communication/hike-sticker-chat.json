@@ -4,6 +4,7 @@
   "description": "Messaging app with stickers, themes, and privacy features",
   "website": "https://hike.in/",
   "category": "communication",
+  "types": ["messaging-app"],
   "alternatives": [
     "WhatsApp",
     "Telegram",

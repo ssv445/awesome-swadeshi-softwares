@@ -4,6 +4,7 @@
   "description": "User-generated video content platform acquired by Glance (InMobi)",
   "website": "https://roposo.com/",
   "category": "entertainment",
+  "types": ["social-media"],
   "alternatives": [
     "TikTok",
     "Instagram Reels"

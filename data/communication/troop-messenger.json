@@ -4,6 +4,7 @@
   "description": "Enterprise-focused secure office communication platform for teams",
   "website": "https://www.troopmessenger.com/",
   "category": "communication",
+  "types": ["messaging-app"],
   "alternatives": [
     "Slack",
     "Microsoft Teams"

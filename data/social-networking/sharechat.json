@@ -4,6 +4,7 @@
   "description": "Vernacular-first social platform for regional language users across India",
   "website": "https://sharechat.com/",
   "category": "social-networking",
+  "types": ["social-media"],
   "alternatives": [
     "Facebook",
     "Instagram"

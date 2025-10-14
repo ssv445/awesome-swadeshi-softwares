@@ -8,6 +8,7 @@
   "description": "India-focused mapping and location intelligence platform with APIs",
   "website": "https://www.mappls.com/",
   "category": "development",
+  "types": ["map"],
   "alternatives": [
     "Google Maps API",
     "Mapbox",
