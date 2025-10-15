@@ -1225,6 +1225,22 @@
       "searchTerms": "easemytrip easy trip planners limited travel makemytrip booking com expedia online travel booking platform for flights hotels buses trains and"
     },
     {
+      "id": "travel/namma-yatri",
+      "name": "Namma Yatri",
+      "company": "Moving Tech",
+      "category": "travel",
+      "slug": "namma-yatri",
+      "searchTerms": "namma yatri moving tech travel uber ola zero commission open source ride hailing platform for auto rickshaws and cabs built on"
+    },
+    {
+      "id": "travel/rapido",
+      "name": "Rapido",
+      "company": "Roppen Transportation Services Pvt Ltd",
+      "category": "travel",
+      "slug": "rapido",
+      "searchTerms": "rapido roppen transportation services pvt ltd travel uber ola bike taxis auto rickshaws and cabs revolutionizing affordable intra city transportation across india"
+    },
+    {
       "id": "utilities/docscanner",
       "name": "Document Scanner",
       "company": "Lufick Technology Pvt. Ltd.",
@@ -1273,6 +1289,14 @@
       "searchTerms": "ola maps ola krutrim utilities google maps apple maps waze real time navigation and mapping service with precise routing and location"
     },
     {
+      "id": "utilities/qmamu",
+      "name": "Qmamu",
+      "company": "Qmamu",
+      "category": "utilities",
+      "slug": "qmamu",
+      "searchTerms": "qmamu qmamu utilities google bing duckduckgo indian search engine offering web search images videos news and"
+    },
+    {
       "id": "utilities/ulaa",
       "name": "Ulaa",
       "company": "Zoho Corporation",
@@ -1290,7 +1314,7 @@
     }
   ],
   "meta": {
-    "totalEntries": 161,
+    "totalEntries": 164,
     "categories": [
       "business",
       "communication",
@@ -1306,7 +1330,7 @@
       "travel",
       "utilities"
     ],
-    "generatedAt": "2025-10-15T05:23:18.331Z",
+    "generatedAt": "2025-10-15T07:45:30.624Z",
     "version": "1.0.0"
   }
 }

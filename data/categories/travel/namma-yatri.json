@@ -1,0 +1,23 @@
+{
+  "name": "Namma Yatri",
+  "slug": "namma-yatri",
+  "description": "Zero-commission, open-source ride-hailing platform for auto-rickshaws and cabs built on ONDC network",
+  "website": "https://nammayatri.in/",
+  "category": "travel",
+  "alternatives": [
+    "Uber",
+    "Ola"
+  ],
+  "pricing": "Free",
+  "company": "Moving Tech",
+  "location": "Bangalore",
+  "playStoreUrl": "https://play.google.com/store/apps/details?id=in.juspay.nammayatri",
+  "appStoreUrl": "https://apps.apple.com/in/app/namma-yatri-ride-booking-app/id1637429831",
+  "opengraph": {
+    "last_updated": "2025-10-15T07:43:01.616Z",
+    "title": "Home",
+    "locale": "en_US",
+    "image": "/WebsiteIcon.svg",
+    "description": "Book a ride with Zero Commission | 100% Open Source"
+  }
+}

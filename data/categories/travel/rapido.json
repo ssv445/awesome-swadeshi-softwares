@@ -1,0 +1,16 @@
+{
+  "name": "Rapido",
+  "slug": "rapido",
+  "description": "Bike-taxis, auto-rickshaws, and cabs revolutionizing affordable intra-city transportation across India",
+  "website": "https://rapido.bike/",
+  "category": "travel",
+  "alternatives": [
+    "Uber",
+    "Ola"
+  ],
+  "pricing": "Free",
+  "company": "Roppen Transportation Services Pvt Ltd",
+  "location": "Bangalore",
+  "playStoreUrl": "https://play.google.com/store/apps/details?id=com.rapido.passenger",
+  "appStoreUrl": "https://apps.apple.com/in/app/rapido-bike-taxi-auto-cab/id1067391122"
+}
