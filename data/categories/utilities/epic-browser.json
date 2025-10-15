@@ -1,0 +1,30 @@
+{
+  "name": "Epic Browser",
+  "slug": "epic-browser",
+  "description": "Privacy-focused web browser with built-in VPN and tracker blocking",
+  "website": "https://www.epicbrowser.com/",
+  "category": "utilities",
+  "purpose": ["browser"],
+  "alternatives": [
+    "Google Chrome",
+    "Firefox"
+  ],
+  "pricing": "Free",
+  "company": "Hidden Reflex",
+  "location": "Bangalore",
+  "opengraph": {
+    "last_updated": "2025-10-05T10:37:47.617Z",
+    "site_name": "Epic Privacy Browser",
+    "title": "Epic Privacy Browser",
+    "description": "Epic is a private, secure web browser that blocks ads, trackers, fingerprinting, cryptomining, ultrasound signaling and more.",
+    "type": "website",
+    "url": "/",
+    "twitter_card": "summary",
+    "twitter_site": "@EpicBrowser",
+    "twitter_creator": "@EpicBrowser",
+    "twitter_title": "Epic Privacy Browser",
+    "twitter_description": "Epic is a private, secure web browser that blocks ads, trackers, fingerprinting, cryptomining, ultrasound signaling and more."
+  },
+  "appStoreUrl": "https://apps.apple.com/us/app/epic-privacy-browser-w-vpn/id1502032811?mt=8",
+  "playStoreUrl": "https://play.google.com/store/apps/details?id=com.epic.browser&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1"
+}

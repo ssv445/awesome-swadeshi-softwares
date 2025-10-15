@@ -1,0 +1,31 @@
+{
+  "name": "Pepul",
+  "slug": "pepul",
+  "description": "Indian Instagram alternative focusing on positive creator economy and community",
+  "website": "https://pepul.com/",
+  "category": "social-networking",
+  "purpose": ["social-media"],
+  "alternatives": [
+    "Instagram",
+    "Facebook"
+  ],
+  "pricing": "Free",
+  "company": "Pepul",
+  "location": "Chennai",
+  "opengraph": {
+    "last_updated": "2025-10-05T10:37:36.391Z",
+    "image": "https://www.pepul.com/new_web/asset/logo/pepul_facebook.jpg",
+    "title": "Pepul - Exclusive Creators Platform, Safest Social Networking, Interest-based People App",
+    "type": "website",
+    "url": "www.pepul.com",
+    "site_name": "www.pepul.com",
+    "description": "Pepul is an Interest-based safest and most positive social networking community app with an exclusive platform for creators from infotainment to entertainment.",
+    "image:width": "1200",
+    "image:height": "630",
+    "twitter_card": "summary_large_image",
+    "twitter_site": "https://www.pepul.com",
+    "twitter_title": "Pepul - Exclusive Creators Platform, Safest Social Networking, Interest-based People App",
+    "twitter_description": "Pepul is an Interest-based safest and most positive social networking community app with an exclusive platform for creators from infotainment to entertainment.",
+    "twitter_image": "https://www.pepul.com/new_web/asset/logo/pepul_twitter.jpg"
+  }
+}

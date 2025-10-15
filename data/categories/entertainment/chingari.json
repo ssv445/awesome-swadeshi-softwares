@@ -1,0 +1,32 @@
+{
+  "name": "Chingari",
+  "slug": "chingari",
+  "description": "Short-form video platform with crypto rewards and post-TikTok ban market leader",
+  "website": "https://chingari.io/",
+  "category": "entertainment",
+  "purpose": ["social-media"],
+  "alternatives": [
+    "TikTok",
+    "Instagram Reels"
+  ],
+  "pricing": "Free",
+  "company": "Tech4billion Media",
+  "location": "Bangalore",
+  "opengraph": {
+    "last_updated": "2025-10-05T10:36:08.282Z",
+    "image": "https://media.chingari.io/apipublic/static/images/ico/favicon-200.png/ab6eff595bb1.png",
+    "url": "https://chingari.io/",
+    "twitter_card": "app",
+    "twitter_site": "@Chingari_IN",
+    "twitter_app:name:iphone": "Chingari",
+    "twitter_app:id:iphone": "1526811171",
+    "twitter_app:url:iphone": "chingari.io",
+    "twitter_app:name:ipad": "Chingari",
+    "twitter_app:id:ipad": "1526811171",
+    "twitter_app:url:ipad": "chingari.io",
+    "twitter_app:name:googleplay": "Chingari",
+    "twitter_app:id:googleplay": "io.chingari.app",
+    "twitter_app:url:googleplay": "https://chingari.io/",
+    "twitter_description": "Chingari – India's #1 Live Streaming & Gaming App!\n Go live, play exciting games, and earn real rewards. Join millions of creators and gamers showcasing their talent, playing with friends, and making money – all in one app. Download now and start your journey!"
+  }
+}

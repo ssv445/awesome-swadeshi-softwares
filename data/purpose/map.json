@@ -1,0 +1,62 @@
+{
+  "slug": "map",
+  "aliases": ["maps", "navigation", "gps"],
+  "title": "Best Swadeshi Map Apps",
+  "description": "Discover accurate Indian mapping apps as alternatives to Google Maps. Detailed local navigation, Made in India map services.",
+  "hero": {
+    "title": "Swadeshi Map Apps",
+    "subtitle": "Accurate, Local, Made in India Navigation"
+  },
+  "whyChoose": [
+    {
+      "icon": "MapPin",
+      "title": "Local Accuracy",
+      "description": "More accurate POI data for Indian locations than international alternatives."
+    },
+    {
+      "icon": "Navigation",
+      "title": "Traffic Intelligence",
+      "description": "Real-time traffic updates optimized for Indian road conditions."
+    },
+    {
+      "icon": "Languages",
+      "title": "Regional Languages",
+      "description": "Navigation in Hindi, Tamil, Bengali, and other Indian languages."
+    }
+  ],
+  "comparison": {
+    "title": "Why Choose Swadeshi Map Apps?",
+    "international": {
+      "label": "International Maps",
+      "points": [
+        "Generic POI data",
+        "Limited local detail",
+        "Global focus"
+      ]
+    },
+    "swadeshi": {
+      "label": "Swadeshi Maps",
+      "points": [
+        "Hyper-local data",
+        "Detailed Indian coverage",
+        "Regional navigation"
+      ]
+    }
+  },
+  "faqs": [
+    {
+      "question": "What is a Swadeshi map app?",
+      "answer": "A Swadeshi map app is a navigation application developed in India with detailed local data and features tailored for Indian users."
+    },
+    {
+      "question": "Are Indian map apps accurate?",
+      "answer": "Yes, Swadeshi map apps often have more accurate point-of-interest data for Indian locations compared to international alternatives."
+    },
+    {
+      "question": "Which map apps are Made in India?",
+      "answer": "Popular Indian map apps include Ola Maps, MapmyIndia, and others listed on this page."
+    }
+  ],
+  "relatedTypes": ["browser", "cloud-storage"],
+  "category": "utilities"
+}

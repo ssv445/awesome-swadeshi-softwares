@@ -1,0 +1,62 @@
+{
+  "slug": "messaging-app",
+  "aliases": ["chat-app", "instant-messaging"],
+  "title": "Best Swadeshi Messaging Apps",
+  "description": "Discover secure, Made in India messaging apps as alternatives to WhatsApp, Telegram, and Signal. Support data sovereignty with Swadeshi chat applications.",
+  "hero": {
+    "title": "Swadeshi Messaging Apps",
+    "subtitle": "Secure, Private, Made in India Communication"
+  },
+  "whyChoose": [
+    {
+      "icon": "Shield",
+      "title": "Data Sovereignty",
+      "description": "Your conversations stored on Indian servers, compliant with Indian data protection laws."
+    },
+    {
+      "icon": "Lock",
+      "title": "End-to-End Encryption",
+      "description": "Military-grade encryption ensures your messages stay private and secure."
+    },
+    {
+      "icon": "Smartphone",
+      "title": "Made in India",
+      "description": "Built by Indian developers who understand local needs and languages."
+    }
+  ],
+  "comparison": {
+    "title": "Why Choose Swadeshi Messaging Apps?",
+    "international": {
+      "label": "International Apps",
+      "points": [
+        "Data stored abroad",
+        "Foreign privacy policies",
+        "Limited local language support"
+      ]
+    },
+    "swadeshi": {
+      "label": "Swadeshi Apps",
+      "points": [
+        "Indian server infrastructure",
+        "Compliant with Indian laws",
+        "Native language support"
+      ]
+    }
+  },
+  "faqs": [
+    {
+      "question": "What is a Swadeshi messaging app?",
+      "answer": "A Swadeshi messaging app is a communication application developed in India, storing data on Indian servers and complying with Indian data protection regulations."
+    },
+    {
+      "question": "Are Swadeshi messaging apps secure?",
+      "answer": "Yes, Indian messaging apps use end-to-end encryption and follow strict security protocols to protect your conversations."
+    },
+    {
+      "question": "Which messaging apps are Made in India?",
+      "answer": "Popular Swadeshi messaging apps include Arattai, JioChat, and others listed on this page."
+    }
+  ],
+  "relatedTypes": ["browser", "social-media"],
+  "category": "communication"
+}

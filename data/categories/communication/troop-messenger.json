@@ -1,0 +1,35 @@
+{
+  "name": "Troop Messenger",
+  "slug": "troop-messenger",
+  "description": "Enterprise-focused secure office communication platform for teams",
+  "website": "https://www.troopmessenger.com/",
+  "category": "communication",
+  "purpose": ["messaging-app"],
+  "alternatives": [
+    "Slack",
+    "Microsoft Teams"
+  ],
+  "pricing": "Freemium",
+  "company": "Tvisha Systems Pvt Ltd",
+  "location": "Hyderabad",
+  "opengraph": {
+    "last_updated": "2025-10-05T10:33:56.739Z",
+    "description": "Streamline team collaboration with Troop Messenger, the top instant messaging app for businesses. Boost productivity and communication in one platform.",
+    "locale": "en_us",
+    "type": "website",
+    "site_name": "Troop Messenger - Team Collaboration and Instant Messaging App",
+    "image": "https://www.troopmessenger.com/img/home-images/man_phone.jpg",
+    "title": "Troop Messenger - Team Collaboration and Instant Messaging App",
+    "url": "https://www.troopmessenger.com",
+    "image:width": "510",
+    "image:height": "397",
+    "twitter_card": "summary_large_image",
+    "twitter_site": "@TroopMessenger",
+    "twitter_image": "https://www.troopmessenger.com/img/home-images/man_phone.jpg",
+    "twitter_creator": "@TroopMessenger",
+    "twitter_title": "Troop Messenger - Team Collaboration and Instant Messaging App",
+    "twitter_description": "Streamline team collaboration with Troop Messenger, the top instant messaging app for businesses. Boost productivity and communication in one platform."
+  },
+  "appStoreUrl": "https://apps.apple.com/us/app/troop-messenger/id1251532330, https://itunes.apple.com/us/app/troop-messenger/id1251532330?mt=8",
+  "playStoreUrl": "https://play.google.com/store/apps/details?id=com.tvisha.troopmessenger&hl=en"
+}

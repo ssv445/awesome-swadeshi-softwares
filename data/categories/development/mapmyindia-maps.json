@@ -1,0 +1,36 @@
+{
+  "name": "mappls",
+  "slug": "mapmyindia-maps",
+  "aliases": [
+    "mappls",
+    "mappls-mapmyindia"
+  ],
+  "description": "India-focused mapping and location intelligence platform with APIs",
+  "website": "https://www.mappls.com/",
+  "category": "development",
+  "purpose": ["map"],
+  "alternatives": [
+    "Google Maps API",
+    "Mapbox",
+    "HERE Maps"
+  ],
+  "pricing": "Freemium",
+  "company": "MapmyIndia",
+  "location": "New Delhi",
+  "opengraph": {
+    "last_updated": "2025-10-05T10:34:51.982Z",
+    "image": "https://www.mappls.com/still_image_center=24.595939499830784_77.22556114196777&zoom=4&markers=false.png",
+    "image:width": "140",
+    "image:height": "140",
+    "title": "Mappls - Super Map App for Maps, Navigation, Tracking, Safety and more",
+    "description": "Find and navigate with step by step voice-guided directions to the doorsteps destination with live traffic updates, ETA along your route easily using Mappls Ap",
+    "keywords": "Find and navigate with step by step voice-guided directions to the doorsteps destination with live traffic updates, ETA along your route easily using Mappls Ap",
+    "twitter_card": "summary",
+    "twitter_site": "mappls",
+    "twitter_image": "https://www.mappls.com/still_image_center=24.595939499830784_77.22556114196777&zoom=4&markers=false.png",
+    "twitter_title": "Mappls - Super Map App for Maps, Navigation, Tracking, Safety and more",
+    "twitter_description": "Find and navigate with step by step voice-guided directions to the doorsteps destination with live traffic updates, ETA along your route easily using Mappls Ap"
+  },
+  "appStoreUrl": "https://itunes.apple.com/in/app/map-directions-local-searches-travel-guide/id723492531?mt=8",
+  "playStoreUrl": "https://play.google.com/store/apps/details?id=com.mmi.maps&hl=en"
+}

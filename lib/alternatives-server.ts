@@ -148,7 +148,7 @@ const getDefaultBenefits = () => {
 }
 
 export function getAllSoftware(): Software[] {
-  const dataDir = path.join(process.cwd(), 'data')
+  const categoriesDir = path.join(process.cwd(), 'data', 'categories')
   const allSoftware: Software[] = []
 
   function readDirectory(dir: string) {
@@ -172,7 +172,7 @@ export function getAllSoftware(): Software[] {
     }
   }
 
-  readDirectory(dataDir)
+  readDirectory(categoriesDir)
   return allSoftware
 }
 
@@ -205,7 +205,7 @@ export function generateAlternativesMapping(): AlternativeMapping[] {
   const mappings: AlternativeMapping[] = []
 
   alternativesMap.forEach((indianAlternatives, internationalTool) => {
-    const slug = `${internationalTool.toLowerCase().replace(/\s+/g, '-')}-alternative`
+    const slug = `${internationalTool.toLowerCase().replace(/\s+/g, '-')}`
     const category = internationalToolCategories[internationalTool] || 'Software'
 
     const mapping: AlternativeMapping = {

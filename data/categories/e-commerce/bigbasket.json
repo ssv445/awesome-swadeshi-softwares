@@ -1,0 +1,15 @@
+{
+  "name": "BigBasket",
+  "slug": "bigbasket",
+  "description": "India's largest online grocery and food delivery platform offering fresh produce, groceries, and household essentials with same-day delivery",
+  "website": "https://www.bigbasket.com/",
+  "category": "e-commerce",
+  "alternatives": [
+    "Zepto",
+    "Blinkit",
+    "Swiggy Instamart"
+  ],
+  "pricing": "Free",
+  "company": "Tata Digital",
+  "location": "Bengaluru, Karnataka"
+}

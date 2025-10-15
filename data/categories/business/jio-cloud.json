@@ -1,0 +1,30 @@
+{
+  "name": "Jio Cloud",
+  "slug": "jio-cloud",
+  "description": "AI-powered cloud storage service for files, photos, and documents with cross-device sync and smart photo editing",
+  "website": "https://www.jiocloud.com/",
+  "category": "business",
+  "purpose": ["cloud-storage"],
+  "alternatives": [
+    "Google Drive",
+    "Dropbox",
+    "OneDrive"
+  ],
+  "pricing": "Freemium",
+  "company": "Jio Platforms",
+  "location": "Mumbai",
+  "opengraph": {
+    "last_updated": "2025-10-05T10:31:22.553Z",
+    "title": "JioAICloud - Free Cloud Storage | AI Photoplay & Easy Share - Live Intelligently",
+    "type": "website",
+    "url": "https://www.jioaicloud.com",
+    "description": "Live intelligently with JioAICloud – free cloud storage, AI Photoplay for smart photo edits, and seamless sharing via Easy Share. Explore Now!",
+    "image": "https://static.jiocloud.com/web2.0/common/images/jiocloud-logo-1.png",
+    "site_name": "JioAICloud",
+    "twitter_url": "https://www.jioaicloud.com",
+    "twitter_title": "JioAICloud - Free Cloud Storage | AI Photoplay & Easy Share - Live Intelligently",
+    "twitter_image": "https://static.jiocloud.com/web2.0/common/images/jiocloud-logo-1.png",
+    "twitter_description": "Live intelligently with JioAICloud – free cloud storage, AI Photoplay for smart photo edits, and seamless sharing via Easy Share. Explore Now!",
+    "twitter_creator": "google"
+  }
+}

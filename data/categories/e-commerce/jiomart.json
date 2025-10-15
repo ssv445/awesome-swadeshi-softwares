@@ -1,0 +1,25 @@
+{
+  "name": "JioMart",
+  "slug": "jiomart",
+  "description": "Online shopping platform offering groceries, electronics, fashion, and home essentials at competitive prices",
+  "website": "https://www.jiomart.com/",
+  "category": "e-commerce",
+  "alternatives": [
+    "Amazon",
+    "Flipkart"
+  ],
+  "pricing": "Free",
+  "company": "Reliance Industries",
+  "location": "Mumbai, Maharashtra",
+  "opengraph": {
+    "last_updated": "2025-10-05T10:35:29.440Z",
+    "site_name": "JioMart",
+    "type": "website",
+    "title": "JioMart: India's online shopping destination",
+    "description": "India's online shopping destination for Mobiles, Electronics, Grocery, Fashion, Home & Kitchen, Furniture, Jewellery, Beauty, and more. Great Offers. Low Prices. Easy Returns. Pay on Delivery. Top Brands.",
+    "url": "https://www.jiomart.com/",
+    "image": "https://www.jiomart.com/assets/global/logo-fb.png"
+  },
+  "appStoreUrl": "https://apps.apple.com/in/app/jiomart/id1522085683, https://apps.apple.com/app/id1522085683",
+  "playStoreUrl": "https://play.google.com/store/apps/details?id=com.jpl.jiomart"
+}

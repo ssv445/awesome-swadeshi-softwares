@@ -1,0 +1,33 @@
+{
+  "name": "WebEngage Analytics",
+  "slug": "webengage-analytics",
+  "description": "Customer analytics platform for user behavior tracking and insights",
+  "website": "https://webengage.com/analytics/",
+  "category": "business",
+  "alternatives": [
+    "Google Analytics",
+    "Mixpanel"
+  ],
+  "pricing": "Freemium",
+  "company": "WebEngage",
+  "location": "Mumbai",
+  "opengraph": {
+    "last_updated": "2025-10-05T10:32:15.187Z",
+    "locale": "en_GB",
+    "type": "article",
+    "title": "Product & Revenue Analytics | Get Insights into Product Usage | WebEngage",
+    "description": "Get insights into product usage and revenue generated with WebEngage's Product & Revenue Analytics. Make data-driven decisions to grow your business. Request a Demo Now",
+    "url": "https://webengage.com/product-and-revenue-analytics/",
+    "site_name": "WebEngage",
+    "updated_time": "2025-04-16T18:24:42+05:30",
+    "image": "https://assets.webengage.com/wp-content/uploads/2024/04/analytics_hero_image.webp",
+    "image:secure_url": "https://assets.webengage.com/wp-content/uploads/2024/04/analytics_hero_image.webp",
+    "image:alt": "Product & Revenue Analytics",
+    "twitter_card": "summary_large_image",
+    "twitter_title": "Product & Revenue Analytics | Get Insights into Product Usage | WebEngage",
+    "twitter_description": "Get insights into product usage and revenue generated with WebEngage's Product & Revenue Analytics. Make data-driven decisions to grow your business. Request a Demo Now",
+    "twitter_image": "https://assets.webengage.com/wp-content/uploads/2024/04/analytics_hero_image.webp",
+    "twitter_label1": "Time to read",
+    "twitter_data1": "5 minutes"
+  }
+}

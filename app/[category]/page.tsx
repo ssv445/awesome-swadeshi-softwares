@@ -2,7 +2,9 @@ import { notFound } from "next/navigation"
 import { Suspense } from "react"
 import { getSoftwareByCategory, getCategories } from "@/lib/server-data"
 import { getCategoryDisplayName } from "@/lib/data"
+import { isPurposeSlug, getPurposeConfig, getAppsByPurpose, getFeaturedAppsByPurpose, getRelatedPurposeConfigs, getAllPurposeSlugs } from "@/lib/purpose-server"
 import CategoryPage from "./category-page"
+import PurposePage from "@/components/PurposePage"
 
 interface CategoryPageProps {
   params: Promise<{
@@ -15,29 +17,59 @@ export const dynamicParams = false
 
 export async function generateStaticParams() {
   const categories = getCategories()
-  return categories.map((category) => ({
-    category,
-  }))
+  const purposeSlugs = getAllPurposeSlugs()
+
+  // Generate params for both categories and types
+  return [
+    ...categories.map((category) => ({ category })),
+    ...purposeSlugs.map((slug) => ({ category: slug })), // Reuse 'category' param name
+  ]
 }
 
 export default async function CategoryPageWrapper({ params }: CategoryPageProps) {
-  const { category } = await params
-  const software = getSoftwareByCategory(category)
+  const { category: slug } = await params
+
+  // Check if slug is a type first
+  if (isPurposeSlug(slug)) {
+    const config = getPurposeConfig(slug)
+    if (!config) {
+      notFound()
+    }
+
+    const allApps = getAppsByPurpose(slug)
+    const featuredApps = getFeaturedAppsByPurpose(slug, 6)
+    const relatedPurposes = getRelatedPurposeConfigs(slug)
+
+    return (
+      <Suspense fallback={<div>Loading...</div>}>
+        <PurposePage
+          purposeSlug={slug}
+          config={config}
+          featuredApps={featuredApps}
+          allApps={allApps}
+          relatedPurposes={relatedPurposes}
+        />
+      </Suspense>
+    )
+  }
+
+  // Otherwise, handle as category (existing logic)
+  const software = getSoftwareByCategory(slug)
   const categories = getCategories()
 
   // Check if category exists
-  if (!categories.includes(category)) {
+  if (!categories.includes(slug)) {
     notFound()
   }
 
-  const categoryName = getCategoryDisplayName(category)
+  const categoryName = getCategoryDisplayName(slug)
 
   return (
     <Suspense fallback={<div>Loading...</div>}>
       <CategoryPage
         software={software}
         categoryName={categoryName}
-        categorySlug={category}
+        categorySlug={slug}
         allCategories={categories}
       />
     </Suspense>
@@ -45,9 +77,61 @@ export default async function CategoryPageWrapper({ params }: CategoryPageProps)
 }
 
 export async function generateMetadata({ params }: CategoryPageProps) {
-  const { category } = await params
-  const categoryName = getCategoryDisplayName(category)
-  const software = getSoftwareByCategory(category)
+  const { category: slug } = await params
+
+  // Check if slug is a type
+  if (isPurposeSlug(slug)) {
+    const config = getPurposeConfig(slug)
+    if (!config) {
+      return {
+        title: 'Not Found',
+      }
+    }
+
+    const apps = getAppsByPurpose(slug)
+
+    return {
+      title: config.title,
+      description: config.description,
+      keywords: [
+        `swadeshi ${slug.replace(/-/g, ' ')}`,
+        `indian ${slug.replace(/-/g, ' ')}`,
+        'made in india',
+        'swadeshi apps',
+      ],
+      openGraph: {
+        title: config.title,
+        description: config.description,
+        url: `/${slug}`,
+        type: 'website',
+        images: [
+          {
+            url: `/og-${slug}.png`,
+            width: 1200,
+            height: 630,
+            alt: config.title,
+          },
+        ],
+      },
+      twitter: {
+        card: 'summary_large_image',
+        title: config.title,
+        description: config.description,
+        images: [`/og-${slug}.png`],
+      },
+      alternates: {
+        canonical: `/${slug}`,
+      },
+      robots: {
+        index: true,
+        follow: true,
+      },
+    }
+  }
+
+  // Otherwise, handle as category (existing metadata logic)
+  const categoryName = getCategoryDisplayName(slug)
+  const software = getSoftwareByCategory(slug)
 
   return {
     title: `${categoryName} Apps - Indian Alternatives | Swadeshi Apps`,
@@ -65,11 +149,11 @@ export async function generateMetadata({ params }: CategoryPageProps) {
     openGraph: {
       title: `${categoryName} Apps - Indian Alternatives`,
       description: `${software.length}+ Indian ${categoryName.toLowerCase()} apps - Quality alternatives to international tools.`,
-      url: `/${category}`,
+      url: `/${slug}`,
       type: "website",
       images: [
         {
-          url: `/og-${category}.png`,
+          url: `/og-${slug}.png`,
           width: 1200,
           height: 630,
           alt: `Indian ${categoryName} Software Alternatives`
@@ -80,10 +164,10 @@ export async function generateMetadata({ params }: CategoryPageProps) {
       card: "summary_large_image",
       title: `${categoryName} Apps - Indian Alternatives`,
       description: `${software.length}+ Indian ${categoryName.toLowerCase()} apps - Quality alternatives to international tools.`,
-      images: [`/og-${category}.png`]
+      images: [`/og-${slug}.png`]
     },
     alternates: {
-      canonical: `/${category}`,
+      canonical: `/${slug}`,
     },
     robots: {
       index: true,

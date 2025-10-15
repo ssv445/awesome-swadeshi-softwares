@@ -1,0 +1,20 @@
+{
+  "name": "Krutrim AI Studio",
+  "slug": "krutrim-ai-studio",
+  "description": "No-code AI model development platform with model catalog and developer notebook for building AI applications",
+  "website": "https://www.olakrutrim.com/",
+  "category": "development",
+  "alternatives": [
+    "OpenAI GPT Builder",
+    "Google Vertex AI",
+    "AWS SageMaker"
+  ],
+  "pricing": "Freemium",
+  "company": "Ola Krutrim",
+  "location": "Bengaluru, India",
+  "appStoreUrl": "https://apps.apple.com/in/app/krutrim/id6499513928",
+  "playStoreUrl": "https://play.google.com/store/apps/details?id=com.app.krutrim.prod&pcampaignid=web_share",
+  "opengraph": {
+    "last_updated": "2025-10-05T10:34:47.517Z"
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "name": "JioSafe",
+  "slug": "jiosafe",
+  "description": "Ultra-secure voice and video calling app with end-to-end encryption, quantum-resistant security algorithms, and 5-level protection system for confidential communication on Jio 5G network",
+  "website": "https://www.jio.com/apps/jiosafe/",
+  "category": "communication",
+  "purpose": [
+    "messaging-app"
+  ],
+  "alternatives": [
+    "Signal",
+    "WhatsApp",
+    "Telegram",
+    "Zoom"
+  ],
+  "pricing": "Free",
+  "company": "Jio Platforms Limited",
+  "location": "Mumbai, Maharashtra",
+  "faviconUrl": "https://www.jio.com/favicon.ico",
+  "appStoreUrl": "https://apps.apple.com/in/app/jiosafe/id6476099277",
+  "playStoreUrl": "https://play.google.com/store/apps/details?id=com.jiosafe&hl=en_IN",
+  "opengraph": {
+    "last_updated": "2025-10-14T17:57:03.402Z",
+    "url": "https://www.jio.com/jcms/apps/jiosafe/",
+    "type": "website",
+    "title": "Encrypted Calling App for Secure Voice and Video Calls | JioSafe",
+    "image": "https://jep-asset.akamaized.net/jio/svg-og/jio_logo.png",
+    "description": "Now make completely secure voice & video calls with JioSafe, a one-of-a-kind encrypted calling app. Learn more about the JioSafe calling app and its features here."
+  }
+}

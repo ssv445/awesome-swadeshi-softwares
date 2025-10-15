@@ -67,16 +67,16 @@ function getSlug(software: Software, filename: string): string {
  * Read all software data from JSON files
  */
 function getAllSoftwareData(): { software: Software; category: string; slug: string }[] {
-  const dataDir = path.join(process.cwd(), 'data')
+  const categoriesDir = path.join(process.cwd(), 'data', 'categories')
   const allSoftware: { software: Software; category: string; slug: string }[] = []
 
   try {
-    const categories = fs.readdirSync(dataDir, { withFileTypes: true })
+    const categories = fs.readdirSync(categoriesDir, { withFileTypes: true })
       .filter(dirent => dirent.isDirectory())
       .map(dirent => dirent.name)
 
     for (const category of categories) {
-      const categoryPath = path.join(dataDir, category)
+      const categoryPath = path.join(categoriesDir, category)
 
       try {
         const files = fs.readdirSync(categoryPath)

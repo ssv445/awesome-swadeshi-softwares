@@ -1,0 +1,14 @@
+{
+  "name": "Meesho",
+  "slug": "meesho",
+  "description": "Social commerce platform empowering small sellers and homepreneurs to start online businesses with zero investment",
+  "website": "https://www.meesho.com/",
+  "category": "e-commerce",
+  "alternatives": [
+    "Amazon Seller",
+    "Facebook Marketplace"
+  ],
+  "pricing": "Free",
+  "company": "Meesho",
+  "location": "Bengaluru, Karnataka"
+}

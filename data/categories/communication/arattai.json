@@ -1,0 +1,30 @@
+{
+  "name": "Arattai",
+  "slug": "arattai",
+  "description": "Made in India instant messaging alternative integrated with Zoho ecosystem",
+  "website": "https://www.arattai.in",
+  "category": "communication",
+  "purpose": ["messaging-app"],
+  "alternatives": [
+    "WhatsApp",
+    "Telegram"
+  ],
+  "pricing": "Free",
+  "company": "Zoho Corporation",
+  "location": "Chennai",
+  "faviconUrl": "https://www.arattai.in/sites/oweb/images/ogimage/arattai-logo.png",
+  "opengraph": {
+    "last_updated": "2025-10-05T10:33:22.267Z",
+    "title": "Arattai - Chat and Calling app",
+    "description": "Simple and secure, Indian-made messaging app. Download now.",
+    "image": "https://www.arattai.in/sites/oweb/images/ogimage/arattai-logo.png",
+    "url": "https://www.arattai.in/",
+    "site_name": "Zoho",
+    "type": "website",
+    "twitter_title": "Arattai - Chat and Calling app",
+    "twitter_description": "Simple and secure, Indian-made messaging app. Download now.",
+    "twitter_image": "https://www.arattai.in/sites/oweb/images/ogimage/arattai-logo.png",
+    "twitter_card": "summary",
+    "twitter_site": "@zoho"
+  }
+}

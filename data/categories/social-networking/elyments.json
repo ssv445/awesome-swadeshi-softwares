@@ -1,0 +1,26 @@
+{
+  "name": "Elyments",
+  "slug": "elyments",
+  "description": "Super-app emphasizing privacy and data storage in India with social networking features",
+  "website": "https://elyments.com/",
+  "category": "social-networking",
+  "purpose": ["social-media"],
+  "alternatives": [
+    "Facebook",
+    "Instagram"
+  ],
+  "pricing": "Free",
+  "company": "Sumeru Software Solutions",
+  "location": "Bangalore",
+  "opengraph": {
+    "last_updated": "2025-10-05T10:37:33.546Z",
+    "title": "Elyments",
+    "site_name": "Elyments.com",
+    "type": "website",
+    "image": "https://www.elyments.com/Images/fav.png",
+    "url": "https://www.elyments.com/",
+    "description": "Elyments is India’s own app for private chat and calls, that enables  one on one and group chats and audio/video calls with crystal clear quality. Chat and call from one secure unified app that never reads or shares your data."
+  },
+  "appStoreUrl": "https://apps.apple.com/us/app/elyments/id1438089972",
+  "playStoreUrl": "https://play.google.com/store/apps/details?id=in.elyments.mobile"
+}

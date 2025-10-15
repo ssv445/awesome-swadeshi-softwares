@@ -15,6 +15,7 @@ interface Software {
   description: string
   website: string
   category: string
+  purpose?: string[]
   alternatives: string[]
   pricing: string
   company: string
@@ -51,7 +52,46 @@ function getValidCategories(): string[] {
   }
 }
 
+// Load valid purposes from individual JSON files in /data/purpose/
+function getValidPurposes(): string[] {
+  try {
+    const purposeDir = path.join(process.cwd(), 'data', 'purpose')
+
+    if (!fs.existsSync(purposeDir)) {
+      console.error('Warning: Purpose directory does not exist, skipping purpose validation')
+      return []
+    }
+
+    const files = fs.readdirSync(purposeDir)
+    const purposes: string[] = []
+
+    for (const file of files) {
+      if (!file.endsWith('.json')) continue
+
+      const filePath = path.join(purposeDir, file)
+      const content = fs.readFileSync(filePath, 'utf-8')
+      const data = JSON.parse(content)
+
+      // Add primary slug
+      if (data.slug) {
+        purposes.push(data.slug)
+      }
+
+      // Add aliases
+      if (data.aliases && Array.isArray(data.aliases)) {
+        purposes.push(...data.aliases)
+      }
+    }
+
+    return purposes
+  } catch (error) {
+    console.error('Warning: Could not load purposes from /data/purpose/, skipping purpose validation', error)
+    return []
+  }
+}
+
 const VALID_CATEGORIES = getValidCategories()
+const VALID_PURPOSES = getValidPurposes()
 
 interface ValidationError {
   file: string
@@ -188,20 +228,36 @@ function validateSoftware(filePath: string, data: any): void {
       warnings.push({ file: fileName, field: 'playStoreUrl', error: 'Play Store URL should contain play.google.com/store/apps' })
     }
   }
+
+  // Validate purpose field (optional field)
+  if (data.purpose) {
+    if (!Array.isArray(data.purpose)) {
+      errors.push({ file: fileName, field: 'purpose', error: 'Purpose must be an array' })
+    } else if (VALID_PURPOSES.length > 0) {
+      const invalidPurposes = data.purpose.filter((p: string) => !VALID_PURPOSES.includes(p))
+      if (invalidPurposes.length > 0) {
+        errors.push({
+          file: fileName,
+          field: 'purpose',
+          error: `Invalid purposes: ${invalidPurposes.join(', ')}. Must be one of: ${VALID_PURPOSES.join(', ')}`
+        })
+      }
+    }
+  }
 }
 
 function validateAllData(): void {
-  const dataDir = path.join(process.cwd(), 'data')
+  const categoriesDir = path.join(process.cwd(), 'data', 'categories')
 
   try {
-    const categories = fs.readdirSync(dataDir, { withFileTypes: true })
+    const categories = fs.readdirSync(categoriesDir, { withFileTypes: true })
       .filter(dirent => dirent.isDirectory())
       .map(dirent => dirent.name)
 
     let totalFiles = 0
 
     for (const category of categories) {
-      const categoryPath = path.join(dataDir, category)
+      const categoryPath = path.join(categoriesDir, category)
 
       try {
         const files = fs.readdirSync(categoryPath)
@@ -248,6 +304,20 @@ function validateAllData(): void {
 
     if (errors.length === 0 && warnings.length === 0) {
       console.log(`\n✅ All data files are valid!\n`)
+    }
+
+    // Check for slug conflicts between categories and purposes
+    if (VALID_CATEGORIES.length > 0 && VALID_PURPOSES.length > 0) {
+      const conflicts = VALID_PURPOSES.filter((slug) => VALID_CATEGORIES.includes(slug))
+      if (conflicts.length > 0) {
+        console.log(`\n❌ Slug Conflicts:`)
+        console.log(`   The following slugs are used by both categories and purposes:`)
+        conflicts.forEach((slug) => {
+          console.log(`   - ${slug}`)
+        })
+        console.log(`\n   Purposes and categories must have unique slugs to avoid routing conflicts.\n`)
+        errors.push({ file: 'purpose-config.json', error: `Slug conflicts detected: ${conflicts.join(', ')}` })
+      }
     }
 
     // Exit with error code if there are errors

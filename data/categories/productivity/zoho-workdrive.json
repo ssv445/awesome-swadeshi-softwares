@@ -1,0 +1,33 @@
+{
+  "name": "Zoho WorkDrive",
+  "slug": "zoho-workdrive",
+  "description": "Team collaboration and file storage platform for businesses",
+  "website": "https://www.zoho.com/workdrive/",
+  "category": "productivity",
+  "purpose": ["cloud-storage"],
+  "alternatives": [
+    "Google Drive",
+    "Dropbox",
+    "OneDrive"
+  ],
+  "pricing": "Freemium",
+  "company": "Zoho Corporation",
+  "location": "Chennai",
+  "faviconUrl": "https://www.zohowebstatic.com/sites/zweb/images/ogimage/workdrive-logo.png",
+  "opengraph": {
+    "last_updated": "2025-10-05T10:37:25.741Z",
+    "title": "Zoho WorkDrive | Online file management for teams",
+    "description": "Zoho WorkDrive is a content collaboration platform designed for teams to store, share, manage, and work together on files of any size",
+    "image": "https://www.zohowebstatic.com/sites/zweb/images/ogimage/workdrive-logo.png",
+    "url": "https://www.zoho.com/workdrive/",
+    "site_name": "Zoho",
+    "type": "website",
+    "twitter_title": "Zoho WorkDrive | Online file management for teams",
+    "twitter_description": "Zoho WorkDrive is a content collaboration platform designed for teams to store, share, manage, and work together on files of any size",
+    "twitter_image": "https://www.zohowebstatic.com/sites/zweb/images/ogimage/workdrive-logo.png",
+    "twitter_card": "summary",
+    "twitter_site": "@zoho"
+  },
+  "appStoreUrl": "https://itunes.apple.com/us/app/zoho-workdrive/id1408591221?ls=1&mt=8",
+  "playStoreUrl": "https://play.google.com/store/apps/details?id=com.zoho.work.drive"
+}

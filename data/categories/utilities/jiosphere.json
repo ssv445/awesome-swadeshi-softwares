@@ -1,0 +1,24 @@
+{
+  "name": "JioSphere",
+  "slug": "jiosphere",
+  "description": "Web browser with built-in VPN and ad-blocker designed for the Indian market",
+  "website": "https://www.jio.com/apps/jiosphere/",
+  "category": "utilities",
+  "purpose": ["browser"],
+  "alternatives": [
+    "Google Chrome",
+    "Firefox"
+  ],
+  "pricing": "Free",
+  "company": "Jio Platforms",
+  "location": "Mumbai",
+  "opengraph": {
+    "last_updated": "2025-10-05T10:37:49.986Z",
+    "type": "website",
+    "title": "Secure Web Browser Application for All Your Needs | JioSphere",
+    "image": "https://jep-asset.akamaized.net/jio/svg-og/jio_logo.png",
+    "description": "JioSphere is the feature packed web browser app for TV and mobile. Enjoy VPN browsing, incognito mode, ad-blocking, live-video and more by with the Jio web browser."
+  },
+  "appStoreUrl": "https://apps.apple.com/in/app/jiosphere-web-browser/id1669512208",
+  "playStoreUrl": "https://play.google.com/store/apps/details?id=com.jio.web&hl=en_IN&gl=US, https://play.google.com/store/apps/details?id=com.jio.web.androidtv&hl=en&gl=US, https://play.google.com/store/apps/details?id=com.jio.web"
+}
