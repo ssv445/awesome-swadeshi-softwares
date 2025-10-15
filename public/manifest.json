@@ -1,7 +1,7 @@
 {
   "name": "Swadeshi Apps - Made in India Software Directory",
   "short_name": "Swadeshi Apps",
-  "description": "Discover the best Indian software alternatives to popular international tools. Support homegrown innovation and the Swadeshi movement.",
+  "description": "Discover the best Indian Alternatives Apps to popular international tools. Support homegrown innovation and the Swadeshi movement.",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#ffffff",
@@ -77,7 +77,7 @@
     {
       "name": "Search Apps",
       "short_name": "Search",
-      "description": "Search for Indian software alternatives",
+      "description": "Search for Indian Alternatives Apps",
       "url": "/?search=true",
       "icons": [{ "src": "/icon-96x96.png", "sizes": "96x96" }]
     },

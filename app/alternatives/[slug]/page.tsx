@@ -6,6 +6,7 @@ import { AshokaChakra } from "@/components/ashoka-chakra"
 import Link from "next/link"
 import { notFound } from "next/navigation"
 import { getAlternativeBySlug, getAllAlternativeSlugs } from "@/lib/alternatives-server"
+import { getTotalAppsCount } from "@/lib/server-data"
 import { Favicon } from "@/components/favicon"
 import { getAlternativeUrl, getNotSwadeshiUrl, getAppUrl } from "@/lib/data"
 
@@ -58,6 +59,7 @@ export default async function AlternativePage({ params }: AlternativePageProps) 
   const { slug } = await params
   const fullSlug = `${slug}-alternative`
   const alternative = getAlternativeBySlug(fullSlug)
+  const totalApps = getTotalAppsCount()
 
   if (!alternative) {
     notFound()
@@ -308,7 +310,7 @@ export default async function AlternativePage({ params }: AlternativePageProps) 
             Explore More Swadeshi Apps
           </h2>
           <p className="text-sm md:text-base text-gray-700 mb-4 md:mb-6 max-w-2xl mx-auto px-4">
-            Discover 100+ <strong>Made in India</strong> software alternatives and support the Swadeshi movement.
+            Discover {totalApps}+ <strong>Made in India</strong> software alternatives and support the Swadeshi movement.
           </p>
           <div className="flex flex-col sm:flex-row gap-3 md:gap-4 justify-center">
             <Button asChild size="lg" className="bg-blue-600 hover:bg-blue-700 text-white border-none">

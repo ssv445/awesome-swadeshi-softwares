@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-This is a **simplified** "Indian Software Directory" - a static Next.js application that showcases Indian software alternatives to popular international tools. The focus is on simplicity, maintainability, and ease of contribution via GitHub PRs.
+This is a **simplified** "Indian Software Directory" - a static Next.js application that showcases Indian Alternatives Apps to popular international tools. The focus is on simplicity, maintainability, and ease of contribution via GitHub PRs.
 
 ## Technology Stack
 

@@ -8,7 +8,7 @@ import type { Metadata } from "next"
 
 export const metadata: Metadata = {
   title: "About Swadeshi Apps - Supporting Indian Software Innovation",
-  description: "Learn about Swadeshi Apps, a platform dedicated to promoting Indian software alternatives and supporting the Atmanirbhar Bharat movement through technology.",
+  description: "Learn about Swadeshi Apps, a platform dedicated to promoting Indian Alternatives Apps and supporting the Atmanirbhar Bharat movement through technology.",
   keywords: [
     "about Swadeshi Apps",
     "Indian software directory",
@@ -20,7 +20,7 @@ export const metadata: Metadata = {
   ],
   openGraph: {
     title: "About Swadeshi Apps",
-    description: "Learn about our mission to promote Indian software alternatives and support the Atmanirbhar Bharat movement.",
+    description: "Learn about our mission to promote Indian Alternatives Apps and support the Atmanirbhar Bharat movement.",
     url: "/about",
     type: "website",
     images: [
@@ -35,7 +35,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "About Swadeshi Apps",
-    description: "Learn about our mission to promote Indian software alternatives and support the Atmanirbhar Bharat movement.",
+    description: "Learn about our mission to promote Indian Alternatives Apps and support the Atmanirbhar Bharat movement.",
     images: ["/og-about.png"]
   },
   alternates: {
@@ -83,7 +83,7 @@ export default function AboutPage() {
             </CardHeader>
             <CardContent>
               <p className="text-gray-700 leading-relaxed mb-4">
-                Swadeshi Apps is dedicated to promoting and showcasing Indian software alternatives to international tools.
+                Swadeshi Apps is dedicated to promoting and showcasing Indian Alternatives Apps to international tools.
                 We believe in the power of Indian innovation and the potential of our tech ecosystem to create world-class products.
               </p>
               <p className="text-gray-700 leading-relaxed">

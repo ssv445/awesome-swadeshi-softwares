@@ -8,7 +8,7 @@ import type { Metadata } from "next"
 
 export const metadata: Metadata = {
   title: "Contribute to Swadeshi Apps - Add Indian Software",
-  description: "Help grow our directory by contributing Indian software alternatives. Submit via GitHub or request a product addition through our form.",
+  description: "Help grow our directory by contributing Indian Alternatives Apps. Submit via GitHub or request a product addition through our form.",
   keywords: [
     "contribute Indian software",
     "add Swadeshi apps",
@@ -21,7 +21,7 @@ export const metadata: Metadata = {
   ],
   openGraph: {
     title: "Contribute to Swadeshi Apps",
-    description: "Help grow our directory by contributing Indian software alternatives. Submit via GitHub or request a product addition.",
+    description: "Help grow our directory by contributing Indian Alternatives Apps. Submit via GitHub or request a product addition.",
     url: "/contribute",
     type: "website",
     images: [
@@ -36,7 +36,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Contribute to Swadeshi Apps",
-    description: "Help grow our directory by contributing Indian software alternatives.",
+    description: "Help grow our directory by contributing Indian Alternatives Apps.",
     images: ["/og-contribute.png"]
   },
   alternates: {

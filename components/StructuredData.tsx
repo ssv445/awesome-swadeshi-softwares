@@ -36,7 +36,7 @@ function getSchemaType(type: string): string {
 // Common structured data generators
 export const websiteStructuredData = {
   name: "Swadeshi Apps",
-  description: "Discover the best Indian software alternatives to popular international tools. Support homegrown innovation and the Swadeshi movement.",
+  description: "Discover the best Indian Alternatives Apps to popular international tools. Support homegrown innovation and the Swadeshi movement.",
   url: "https://swadeshiapps.com/",
   sameAs: [
     "https://github.com/ssv445/awesome-swadeshi-softwares"
@@ -53,7 +53,7 @@ export const websiteStructuredData = {
 
 export const organizationStructuredData = {
   name: "Swadeshi Apps",
-  description: "A community-driven directory of Indian software alternatives",
+  description: "A community-driven directory of Indian Alternatives Apps",
   url: "https://swadeshiapps.com/",
   logo: "https://swadeshiapps.com/logo.png",
   foundingDate: "2024",

@@ -1,6 +1,6 @@
 # 🇮🇳 Swadeshi Apps
 
-A curated directory of Indian software alternatives to help you discover and adopt quality solutions built by Indian innovators. Support **Swadeshi** movement and **Atmanirbhar Bharat** through technology choices.
+A curated directory of Indian Alternatives Apps to help you discover and adopt quality solutions built by Indian innovators. Support **Swadeshi** movement and **Atmanirbhar Bharat** through technology choices.
 
 🔗 **Live Site**: [swadeshiapps.com](https://swadeshiapps.com)
 
@@ -10,7 +10,7 @@ Promote Indian software innovation by helping users discover quality alternative
 
 ## 📊 Statistics
 
-- **160+** Indian software alternatives
+- **160+** Indian Alternatives Apps
 - **12** categories
 - **430+** statically generated pages
 - **43KB** optimized search index

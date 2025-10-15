@@ -6,6 +6,7 @@ import { AshokaChakra } from "@/components/ashoka-chakra"
 import { Breadcrumbs, generateBreadcrumbs } from "@/components/ui/Breadcrumbs"
 import Link from "next/link"
 import { getAllAlternatives } from "@/lib/alternatives-server"
+import { getTotalAppsCount } from "@/lib/server-data"
 import type { Metadata } from "next"
 
 export const metadata: Metadata = {
@@ -58,6 +59,7 @@ const iconMap = {
 
 export default function AlternativesIndexPage() {
   const alternativesData = getAllAlternatives()
+  const totalApps = getTotalAppsCount()
 
   const breadcrumbs = generateBreadcrumbs('static', {
     staticPageName: 'Alternatives'
@@ -156,7 +158,7 @@ export default function AlternativesIndexPage() {
         {/* Why Choose Indian Alternatives */}
         <div className="bg-white rounded-xl p-8 mb-12 border border-green-200">
           <h2 className="text-3xl font-bold text-gray-900 mb-6 text-center">
-            Why Choose <span className="text-green-600">Indian Software Alternatives</span>?
+            Why Choose <span className="text-green-600">Indian Alternatives Apps</span>?
           </h2>
           <div className="grid md:grid-cols-4 gap-6">
             <div className="text-center">
@@ -186,7 +188,7 @@ export default function AlternativesIndexPage() {
             Explore the Complete Indian Software Directory
           </h2>
           <p className="text-xl text-gray-700 mb-8 max-w-2xl mx-auto">
-            Discover 100+ Indian software alternatives across all categories and join the Swadeshi movement.
+            Discover {totalApps}+ Indian Alternatives Apps across all categories and join the Swadeshi movement.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button asChild size="lg" className="bg-blue-600 hover:bg-blue-700 text-white border-none">
