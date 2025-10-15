@@ -9,7 +9,7 @@
  * Features:
  * - Takes start URL as input
  * - Validates start URL before crawling
- * - Crawls all pages within the same domain
+ * - Crawls all pages within the same base domain (e.g., treats www.example.com and example.com as same)
  * - Tracks visited URLs to avoid duplicates
  * - Reports broken internal links
  * - Continues until no new links are found
@@ -74,6 +74,26 @@ function getBaseUrl(url: string): string {
 }
 
 /**
+ * Extract base domain from hostname (e.g., 'www.example.com' -> 'example.com')
+ */
+function getBaseDomain(hostname: string): string {
+  const parts = hostname.split('.')
+
+  // Handle localhost and IP addresses
+  if (hostname === 'localhost' || /^\d+\.\d+\.\d+\.\d+$/.test(hostname)) {
+    return hostname
+  }
+
+  // For domains with multiple parts, take the last two (domain.tld)
+  // This handles: example.com, www.example.com, subdomain.example.com
+  if (parts.length >= 2) {
+    return parts.slice(-2).join('.')
+  }
+
+  return hostname
+}
+
+/**
  * Normalize URL (remove trailing slash, query params, anchors)
  */
 function normalizeUrl(url: string): string {
@@ -94,13 +114,18 @@ function normalizeUrl(url: string): string {
 }
 
 /**
- * Check if URL belongs to the same domain
+ * Check if URL belongs to the same base domain
+ * This treats www.example.com and example.com as the same domain
  */
 function isSameDomain(url: string, baseUrl: string): boolean {
   try {
     const urlObj = new URL(url)
     const baseObj = new URL(baseUrl)
-    return urlObj.host === baseObj.host
+
+    const urlBaseDomain = getBaseDomain(urlObj.hostname)
+    const baseBaseDomain = getBaseDomain(baseObj.hostname)
+
+    return urlBaseDomain === baseBaseDomain
   } catch {
     return false
   }
@@ -151,8 +176,12 @@ async function fetchUrl(url: string): Promise<{ html: string | null; status: num
     }
 
     const contentType = response.headers.get('content-type') || ''
-    if (!contentType.includes('text/html')) {
-      // Not HTML, skip parsing but consider valid
+
+    // Accept both HTML and XML content (for sitemaps)
+    if (!contentType.includes('text/html') &&
+        !contentType.includes('application/xml') &&
+        !contentType.includes('text/xml')) {
+      // Not HTML or XML, skip parsing but consider valid
       return { html: null, status: response.status }
     }
 
@@ -164,16 +193,28 @@ async function fetchUrl(url: string): Promise<{ html: string | null; status: num
 }
 
 /**
- * Extract all links from HTML
+ * Extract all links from HTML or XML sitemap
  */
 function extractLinks(html: string, baseUrl: string, currentPage: string): string[] {
-  const $ = load(html)
+  const $ = load(html, { xmlMode: true })
   const links: string[] = []
 
+  // Extract from <a> tags (HTML pages)
   $('a[href]').each((_, element) => {
     const href = $(element).attr('href')
     if (href) {
       const resolvedUrl = resolveUrl(href, baseUrl, currentPage)
+      if (resolvedUrl) {
+        links.push(resolvedUrl)
+      }
+    }
+  })
+
+  // Extract from <loc> tags (XML sitemaps)
+  $('loc').each((_, element) => {
+    const loc = $(element).text().trim()
+    if (loc) {
+      const resolvedUrl = resolveUrl(loc, baseUrl, currentPage)
       if (resolvedUrl) {
         links.push(resolvedUrl)
       }

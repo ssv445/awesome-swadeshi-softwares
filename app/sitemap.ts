@@ -4,7 +4,8 @@ import { getAllAlternatives } from '@/lib/alternatives-server'
 import { getAllPurposeSlugs } from '@/lib/purpose-server'
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = 'https://swadeshiapps.com'
+  
+const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://swadeshiapps.com'
 
   // Static pages
   const staticRoutes: MetadataRoute.Sitemap = [
