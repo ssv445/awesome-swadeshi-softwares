@@ -10,9 +10,9 @@ Promote Indian software innovation by helping users discover quality alternative
 
 ## 📊 Statistics
 
-- **128+** Indian software alternatives
+- **160+** Indian software alternatives
 - **12** categories
-- **411** statically generated pages
+- **430+** statically generated pages
 - **43KB** optimized search index
 
 ## 📂 Categories
@@ -82,7 +82,7 @@ Run `pnpm validate` to check your entry before submitting.
 - 🔍 **Fast Search** - Build-time indexed search (43KB)
 - 📱 **Mobile-First** - Fully responsive design
 - 🎨 **Indian Theme** - Saffron, white, green color scheme
-- 🚀 **Static Generation** - All 411 pages pre-built
+- 🚀 **Static Generation** - All 430+ pages pre-built
 - ⚡ **Optimized** - Fast navigation and loading
 - 🔗 **SEO Friendly** - Comprehensive metadata + JSON-LD
 - ✅ **Validated** - Automated data validation
@@ -94,7 +94,7 @@ Run `pnpm validate` to check your entry before submitting.
 # Install dependencies
 pnpm install
 
-# Validate data files (128 JSON files)
+# Validate data files (160+ JSON files)
 pnpm validate
 
 # Start dev server

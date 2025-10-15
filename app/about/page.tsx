@@ -3,6 +3,7 @@ import { Target, Users, Globe, Heart, Zap, Shield } from "lucide-react"
 import { AshokaChakra } from "@/components/ashoka-chakra"
 import { HeroSection } from "@/components/ui/HeroSection"
 import { Breadcrumbs, generateBreadcrumbs } from "@/components/ui/Breadcrumbs"
+import { getTotalAppsCount, getCategories } from "@/lib/server-data"
 import type { Metadata } from "next"
 
 export const metadata: Metadata = {
@@ -50,6 +51,8 @@ export default function AboutPage() {
   const breadcrumbs = generateBreadcrumbs('static', {
     staticPageName: 'About'
   })
+  const totalApps = getTotalAppsCount()
+  const totalCategories = getCategories().length
 
   return (
     <>
@@ -145,7 +148,7 @@ export default function AboutPage() {
               <ul className="space-y-3 text-gray-700">
                 <li className="flex items-start space-x-3">
                   <span className="text-green-600 font-bold mt-1">✓</span>
-                  <span><span className="font-semibold">Comprehensive Directory:</span> Browse 150+ Indian software products across 13+ categories</span>
+                  <span><span className="font-semibold">Comprehensive Directory:</span> Browse {totalApps}+ Indian software products across {totalCategories}+ categories</span>
                 </li>
                 <li className="flex items-start space-x-3">
                   <span className="text-green-600 font-bold mt-1">✓</span>

@@ -300,6 +300,11 @@ interface HomepageData {
   featured_products: FeaturedProduct[]
 }
 
+// Get total count of all software (server-side only)
+export function getTotalAppsCount(): number {
+  return getAllSoftware().length
+}
+
 // Get featured products from homepage.json (server-side only)
 export function getFeaturedProducts(limit: number): Software[] {
   const homepageFilePath = path.join(process.cwd(), 'data', 'homepage.json')

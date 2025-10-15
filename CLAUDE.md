@@ -24,7 +24,7 @@ This is a **simplified** "Indian Software Directory" - a static Next.js applicat
 # Development server
 pnpm dev
 
-# Validate data files (128 JSON files)
+# Validate data files (160+ JSON files)
 pnpm validate
 
 # Build for production (includes validation + search index generation)
@@ -49,13 +49,13 @@ pnpm search:index
 - `/app/global-error.tsx` - Global error handler
 - `/app/about/page.tsx` - Contribution guidelines
 - `/app/[category]/page.tsx` - Dynamic category pages (12 categories)
-- `/app/[category]/[slug]/page.tsx` - Individual app detail pages (128 apps)
+- `/app/[category]/[slug]/page.tsx` - Individual app detail pages (160+ apps)
 - `/app/alternatives/page.tsx` - General alternatives listing
 - `/app/alternatives/[slug]/page.tsx` - Individual alternative pages (262 pages)
 - `/app/why-swadeshi/page.tsx` - About Swadeshi movement
 - `/app/client-page.tsx` - Client-side homepage component
 
-**Total: 411 statically generated pages**
+**Total: 430+ statically generated pages**
 
 ### Data Structure (Nested JSON Files)
 ```
@@ -145,7 +145,7 @@ The application follows a modern, maintainable architecture with centralized the
 - **`alternatives-server.ts`** - Server-side data for alternatives pages
 
 ### Scripts (`/scripts/`)
-- **`validate-data.ts`** - Build-time validation script (validates all 128 JSON files)
+- **`validate-data.ts`** - Build-time validation script (validates all 160+ JSON files)
 - **`generate-search-index.ts`** - Build-time search index generation (43KB optimized)
 
 ### Configuration Files
@@ -158,7 +158,7 @@ The application follows a modern, maintainable architecture with centralized the
 - **Theme System**: Centralized design tokens in `theme.ts`
 - **Search Architecture**: Build-time index generation for fast client-side search
 - **Component Composition**: Reusable components with consistent props interface
-- **Static Generation**: All 411 pages pre-built at build time with optimized performance
+- **Static Generation**: All pages (430+) pre-built at build time with optimized performance
 - **Error Boundaries**: Global and route-level error handling
 - **Loading States**: Skeleton components for better UX
 - **Type Safety**: Enhanced TypeScript with `SoftwareWithMeta` interface
@@ -206,16 +206,16 @@ SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://swadeshiapps.com/"
 - **Category Filtering**: 12 dedicated category pages with SEO-friendly URLs
 
 ### Performance & UX
-- **Static Generation**: All 411 pages pre-built at build time for optimal performance
+- **Static Generation**: All pages (430+) pre-built at build time for optimal performance
 - **Unified Theme**: Consistent Indian flag-inspired color scheme across all pages
 - **Responsive Design**: Mobile-first approach with Tailwind CSS
 - **Error Handling**: Comprehensive error boundaries with user-friendly recovery UI
 - **Loading States**: Skeleton components for better perceived performance
-- **Build-Time Validation**: All 128 data files validated automatically
+- **Build-Time Validation**: All 160+ data files validated automatically
 
 ### SEO & Structured Data
 - **JSON-LD Schema**: SoftwareApplication structured data on all product pages
-- **Dynamic Sitemap**: 411 pages included automatically
+- **Dynamic Sitemap**: 430+ pages included automatically
 - **robots.txt**: Proper crawler directives (fixed double slash bug)
 - **Enhanced Metadata**: Page-specific titles, descriptions, OpenGraph tags
 - **Breadcrumbs**: Standardized navigation across all pages
@@ -230,7 +230,7 @@ SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://swadeshiapps.com/"
 
 - `/` - Homepage with featured software
 - `/business` - Business software (12 categories total)
-- `/[category]/[slug]` - Individual app pages (128 apps)
+- `/[category]/[slug]` - Individual app pages (160+ apps)
 - `/alternatives` - General alternatives page
 - `/alternatives/[slug]` - Individual alternative pages (262 pages)
 - `/why-swadeshi` - About the Swadeshi movement
@@ -270,7 +270,7 @@ SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://swadeshiapps.com/"
 - **Fixed** robots.txt double slash bug (`//sitemap.xml` → `/sitemap.xml`)
 - **Fixed** sitemap typing errors with `SoftwareWithMeta`
 - **Added** JSON-LD structured data for all product pages
-- **Enhanced** metadata for 411 pages
+- **Enhanced** metadata for 430+ pages
 
 ## Important Configuration
 
@@ -408,13 +408,13 @@ pnpm build
 # Runs in order:
 # 1. tsx scripts/validate-data.ts       (validates all JSON)
 # 2. tsx scripts/generate-search-index.ts (generates 43KB index)
-# 3. next build                          (builds 411 static pages)
+# 3. next build                          (builds 430+ static pages)
 ```
 
 **Build Output**:
-- ✅ 128 data files validated
+- ✅ 160+ data files validated
 - ✅ 43KB search index generated
-- ✅ 411 static pages created
+- ✅ 430+ static pages created
 - ✅ Type checks passed
 - ✅ All errors visible (no suppression)
 
@@ -451,7 +451,7 @@ export const theme = {
 
 ### Automated Checks
 - ✅ TypeScript strict mode (no build error suppression)
-- ✅ Data validation (all 128 files checked on build)
+- ✅ Data validation (all 160+ files checked on build)
 - ✅ ESLint validation
 - ✅ Build-time static generation verification
 
@@ -462,7 +462,7 @@ export const theme = {
 - ✅ Recovery actions (try again, go home)
 
 ### Performance
-- ✅ All 411 pages statically generated
+- ✅ All pages (430+) statically generated
 - ✅ 43KB optimized search index (82% reduction from 239KB)
 - ✅ Lazy loading for images and favicons
 - ✅ Efficient component composition
@@ -507,7 +507,7 @@ Common issues:
 ---
 
 **Last Updated**: October 3, 2025
-**Total Apps**: 128
-**Total Pages**: 411
+**Total Apps**: 160+
+**Total Pages**: 430+ (grows automatically with new apps)
 **Build Status**: ✅ All checks passing
 **Dependencies**: 17 packages (optimized from 70)

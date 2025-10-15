@@ -37,7 +37,8 @@
       "Bash(curl -I http://localhost:3004/hosting-and-domains/domainindia)",
       "Bash(wait)",
       "Read(//tmp/**)",
-      "Bash(tsx scripts/remove-alternatives.ts:*)"
+      "Bash(tsx scripts/remove-alternatives.ts:*)",
+      "Bash(curl:*)"
     ],
     "deny": [
       "Bash(npm run build:*)"
