@@ -1,0 +1,35 @@
+{
+  "name": "Grigora",
+  "description": "All-in-one website builder and CMS platform with AI-powered content creation, built-in SEO tools, hosting, analytics, and team collaboration features. A complete WordPress alternative made in India.",
+  "website": "https://www.grigora.co/",
+  "category": "Development",
+  "alternatives": [
+    "WordPress",
+    "Wix",
+    "Squarespace",
+    "Webflow"
+  ],
+  "pricing": "Freemium",
+  "company": "Latracal Solutions Pvt. Ltd.",
+  "location": "India",
+  "opengraph": {
+    "last_updated": "2025-10-15T05:11:27.746Z",
+    "locale": "en_US",
+    "title": "Start a Blog, Build a Website, Best WordPress Alternative | Grigora",
+    "description": "The all-in-one CMS offering seamless website and blog creation, robust security, and endless customization options.  Create, Customize, Conquer | Grigora.",
+    "url": "https://www.grigora.co",
+    "type": "website",
+    "image": "https://www.grigora.co/thumbnails/home-new.avif",
+    "image:alt": "Grigora",
+    "image:type": "image/webp",
+    "image:width": "1200",
+    "image:height": "628",
+    "site_name": "Grigora",
+    "twitter_card": "summary_large_image",
+    "twitter_site": "@thegrigora",
+    "twitter_creator": "@thegrigora",
+    "twitter_title": "Start a Blog, Build a Website, Best WordPress Alternative | Grigora",
+    "twitter_description": "The all-in-one CMS offering seamless website and blog creation, robust security, and endless customization options.  Create, Customize, Conquer | Grigora.",
+    "twitter_image": "https://www.grigora.co/thumbnails/home-new-2.webp"
+  }
+}
