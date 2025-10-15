@@ -1,0 +1,16 @@
+{
+  "name": "Qmamu",
+  "slug": "qmamu",
+  "description": "Indian search engine offering web search, images, videos, news, and maps with support for multiple Indian languages",
+  "website": "https://qmamu.com/",
+  "category": "utilities",
+  "purpose": ["browser"],
+  "alternatives": [
+    "Google",
+    "Bing",
+    "DuckDuckGo"
+  ],
+  "pricing": "Free",
+  "company": "Qmamu",
+  "location": "India"
+}
