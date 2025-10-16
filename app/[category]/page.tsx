@@ -134,7 +134,7 @@ export async function generateMetadata({ params }: CategoryPageProps) {
   const software = getSoftwareByCategory(slug)
 
   return {
-    title: `${categoryName} Apps - Indian Alternatives | Swadeshi Apps`,
+    title: `${categoryName} Apps - Indian Alternatives`,
     description: `Discover ${software.length}+ Indian ${categoryName.toLowerCase()} apps. Quality alternatives to international tools.`,
     keywords: [
       `Indian ${categoryName.toLowerCase()} apps`,

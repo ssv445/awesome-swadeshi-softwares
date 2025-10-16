@@ -42,7 +42,7 @@ export async function generateMetadata({ params }: AppPageProps) {
   const ogDescription = app.opengraph?.description || app.description
 
   return {
-    title: `${app.name} by ${app.company} - Indian ${app.category} App | Swadeshi Apps`,
+    title: `${app.name} by ${app.company} - Indian ${app.category} App`,
     description: ogDescription,
     keywords: `${app.name}, ${app.company}, Indian apps, ${app.alternatives.join(', ')} alternative, ${app.category}`,
     openGraph: {

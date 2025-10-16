@@ -11,7 +11,7 @@ import type { Metadata } from "next"
 import acquiredCompaniesData from "@/data/acquired-companies.json"
 
 export const metadata: Metadata = {
-  title: "Not Swadeshi Apps - Indian-Origin Companies with Foreign Ownership",
+  title: "Not Swadeshi - Indian-Origin Companies with Foreign Ownership",
   description: "Learn about Indian-origin tech companies that are no longer Indian-owned, including Flipkart, Paytm, MakeMyTrip, and others. Understand the impact of foreign acquisitions on India's tech ecosystem.",
   keywords: [
     "not swadeshi apps",
@@ -24,14 +24,14 @@ export const metadata: Metadata = {
     "Indian unicorns foreign ownership"
   ],
   openGraph: {
-    title: "Not Swadeshi Apps - Indian-Origin Companies with Foreign Ownership",
+    title: "Not Swadeshi - Indian-Origin Companies with Foreign Ownership",
     description: "Learn about Indian-origin tech companies that are no longer Indian-owned. Understand the impact of foreign acquisitions on India's tech ecosystem.",
     url: "/not-swadeshi-apps",
     type: "website"
   },
   twitter: {
     card: "summary_large_image",
-    title: "Not Swadeshi Apps - Indian-Origin Companies with Foreign Ownership",
+    title: "Not Swadeshi - Indian-Origin Companies with Foreign Ownership",
     description: "Learn about Indian-origin tech companies that are no longer Indian-owned. Understand the impact of foreign acquisitions on India's tech ecosystem."
   },
   alternates: {
