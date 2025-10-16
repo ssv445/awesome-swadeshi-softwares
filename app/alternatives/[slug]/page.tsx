@@ -9,6 +9,8 @@ import { getAlternativeBySlug, getAllAlternativeSlugs } from "@/lib/alternatives
 import { getTotalAppsCount } from "@/lib/server-data"
 import { Favicon } from "@/components/favicon"
 import { getAlternativeUrl, getNotSwadeshiUrl, getAppUrl } from "@/lib/data"
+import { generateBreadcrumbSchema } from "@/components/ui/Breadcrumbs"
+import { getBaseUrl } from "@/lib/links"
 
 // Icon mapping
 const iconMap = {
@@ -28,14 +30,13 @@ export const dynamicParams = false
 export async function generateStaticParams() {
   const slugs = getAllAlternativeSlugs()
   return slugs.map((slug) => ({
-    slug: slug.replace('-alternative', ''),
+    slug,
   }))
 }
 
 export async function generateMetadata({ params }: AlternativePageProps) {
   const { slug } = await params
-  const fullSlug = `${slug}-alternative`
-  const alternative = getAlternativeBySlug(fullSlug)
+  const alternative = getAlternativeBySlug(slug)
 
   if (!alternative) {
     return {
@@ -45,20 +46,21 @@ export async function generateMetadata({ params }: AlternativePageProps) {
 
   const mainApp = alternative.indianAlternatives[0]?.name || 'Indian Software'
 
+  const baseUrl = getBaseUrl()
+
   return {
     title: `${mainApp} - ${alternative.internationalTool.name} Indian Alternative | Made in India`,
     description: `${mainApp} is a powerful Indian alternative to ${alternative.internationalTool.name}. Made in India ${alternative.internationalTool.category.toLowerCase()} app with local support, data sovereignty, and better pricing.`,
     keywords: `${alternative.internationalTool.name} Indian alternative, Made in India app, Swadeshi app, Indian ${alternative.internationalTool.category.toLowerCase()} software, ${mainApp}, Atmanirbhar Bharat`,
     alternates: {
-      canonical: `/alternatives/${slug}`,
+      canonical: `${baseUrl}/alternatives/${slug}`,
     },
   }
 }
 
 export default async function AlternativePage({ params }: AlternativePageProps) {
   const { slug } = await params
-  const fullSlug = `${slug}-alternative`
-  const alternative = getAlternativeBySlug(fullSlug)
+  const alternative = getAlternativeBySlug(slug)
   const totalApps = getTotalAppsCount()
 
   if (!alternative) {
@@ -68,8 +70,20 @@ export default async function AlternativePage({ params }: AlternativePageProps) 
   const mainAlternative = alternative.indianAlternatives[0]
   const IconComponent = iconMap[alternative.internationalTool.icon as keyof typeof iconMap] || AshokaChakra
 
+  // Generate breadcrumb schema
+  const baseUrl = getBaseUrl()
+  const breadcrumbItems = [
+    { label: 'Alternatives', href: '/alternatives' },
+    { label: alternative.internationalTool.name, current: true }
+  ]
+  const breadcrumbSchema = generateBreadcrumbSchema(breadcrumbItems, baseUrl)
+
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
       <div className="relative min-h-screen">
 
       <div className="container mx-auto px-4 py-8 md:py-12 max-w-6xl">

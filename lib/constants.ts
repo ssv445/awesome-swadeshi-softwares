@@ -2,6 +2,8 @@
  * Application constants and configuration
  */
 
+import { getBaseUrl } from './links'
+
 // Pagination & Display
 export const ITEMS_PER_PAGE = 12
 export const FEATURED_COUNT = 10
@@ -16,7 +18,7 @@ export const CARD_ALTERNATIVES_LIMIT = 2
 // SEO
 export const SITE_NAME = process.env.NEXT_PUBLIC_SITE_NAME || "Swadeshi Apps"
 export const SITE_DESCRIPTION = "Discover India's Leading Apps & Platforms. Join the Swadeshi movement by choosing Indian apps that compete globally."
-export const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://swadeshiapps.com/"
+export const SITE_URL = `${getBaseUrl()}/`
 export const SITE_AUTHOR = "Awesome Swadeshi Team"
 
 // Social

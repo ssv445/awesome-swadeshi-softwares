@@ -104,3 +104,27 @@ export function generateBreadcrumbs(
       return []
   }
 }
+
+// Helper function to generate BreadcrumbList structured data
+export function generateBreadcrumbSchema(items: BreadcrumbItem[], baseUrl = 'https://swadeshiapps.com') {
+  const itemListElement = [
+    {
+      '@type': 'ListItem',
+      position: 1,
+      name: 'Home',
+      item: baseUrl
+    },
+    ...items.map((item, index) => ({
+      '@type': 'ListItem',
+      position: index + 2,
+      name: item.label,
+      ...(item.href && { item: `${baseUrl}${item.href}` })
+    }))
+  ]
+
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement
+  }
+}

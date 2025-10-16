@@ -92,26 +92,19 @@ export function getCategoryDisplayName(slug: string): string {
 // ===========================
 // URL Generation Functions
 // ===========================
-
-// Generate category page URL from category slug
-export function getCategoryUrl(categorySlug: string): string {
-  return `/${categorySlug.toLowerCase().replace(/\s+/g, '-')}`
-}
-
-// Generate app detail page URL from category slug and app slug
-export function getAppUrl(categorySlug: string, appSlug: string): string {
-  return `/${categorySlug}/${appSlug}`
-}
-
-// Generate alternative page URL from international tool name
-export function getAlternativeUrl(internationalTool: string): string {
-  return `/alternatives/${internationalTool.toLowerCase().replace(/\s+/g, '-')}`
-}
-
-// Generate "not swadeshi apps" page URL from company/app name
-export function getNotSwadeshiUrl(companyOrAppName: string): string {
-  return `/not-swadeshi-apps/${companyOrAppName.toLowerCase().replace(/\s+/g, '-')}`
-}
+// Re-export from centralized links module for backward compatibility
+export {
+  getCategoryUrl,
+  getAppUrl,
+  getAlternativeUrl,
+  getNotSwadeshiUrl,
+  getPurposeUrl,
+  getAbsoluteUrl,
+  getAbsoluteCategoryUrl,
+  getAbsoluteAppUrl,
+  getAbsoluteAlternativeUrl,
+  slugify,
+} from './links'
 
 // ===========================
 // Favicon Utilities

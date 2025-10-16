@@ -22,6 +22,8 @@ interface CrawlStats {
   totalLinks: number
   brokenLinks: BrokenLink[]
   validLinks: number
+  invalidRoutesChecked: number
+  invalidRoutesFailed: number
 }
 
 interface BrokenLink {
@@ -34,7 +36,9 @@ const stats: CrawlStats = {
   totalPages: 0,
   totalLinks: 0,
   brokenLinks: [],
-  validLinks: 0
+  validLinks: 0,
+  invalidRoutesChecked: 0,
+  invalidRoutesFailed: 0
 }
 
 // Tracks visited URLs to avoid duplicates
@@ -268,6 +272,7 @@ async function crawlUrl(url: string, baseUrl: string): Promise<void> {
     return
   }
 
+
   // Extract links from HTML
   const links = extractLinks(html, baseUrl, url)
 
@@ -282,6 +287,90 @@ async function crawlUrl(url: string, baseUrl: string): Promise<void> {
   }
 
   stats.validLinks++
+}
+
+/**
+ * Generate invalid test routes that should return 404
+ */
+function generateInvalidRoutes(baseUrl: string): string[] {
+  return [
+    // Invalid root-level pages
+    `${baseUrl}/nonexistent-page`,
+    `${baseUrl}/fake-category`,
+    `${baseUrl}/random-slug-12345`,
+
+    // Invalid category routes
+    `${baseUrl}/invalid-category`,
+    `${baseUrl}/fake-business`,
+
+    // Invalid app routes (valid category, invalid app)
+    `${baseUrl}/business/fake-app-that-does-not-exist`,
+    `${baseUrl}/finance/nonexistent-software`,
+    `${baseUrl}/development/random-tool-xyz`,
+    `${baseUrl}/communication/fake-messenger`,
+
+    // Invalid alternative routes
+    `${baseUrl}/alternatives/nonexistent-tool-12345`,
+    `${baseUrl}/alternatives/fake-international-software`,
+    `${baseUrl}/alternatives/random-product-xyz`,
+
+    // Invalid purpose routes
+    `${baseUrl}/fake-purpose-slug`,
+    `${baseUrl}/nonexistent-app-type`,
+
+    // Routes with special characters that were cleaned or old format
+    `${baseUrl}/alternatives/disney+-hotstar`, // Old format with +
+    `${baseUrl}/alternatives/mondaycom`,        // Old format without hyphen (should be monday-com)
+    `${baseUrl}/alternatives/monday.com`,        // Old format without hyphen (should be monday-com)
+    `${baseUrl}/alternatives/bookingcom`,       // Old format without hyphen (should be booking-com)
+    `${baseUrl}/business/fake@app`,
+    `${baseUrl}/finance/tool#invalid`,
+  ]
+}
+
+/**
+ * Test that invalid routes return 404
+ */
+async function testInvalidRoutes(baseUrl: string): Promise<void> {
+  console.log('\n' + '='.repeat(60))
+  console.log('🧪 Testing Invalid Routes (should return 404):')
+  console.log('='.repeat(60) + '\n')
+
+  const invalidRoutes = generateInvalidRoutes(baseUrl)
+  const failedTests: Array<{ url: string; status: number | string }> = []
+
+  for (const url of invalidRoutes) {
+    stats.invalidRoutesChecked++
+    console.log(`🧪 Testing: ${url}`)
+
+    const { status } = await fetchUrl(url)
+
+    if (typeof status === 'number' && status === 404) {
+      console.log(`   ✅ Correctly returns 404\n`)
+    } else {
+      console.log(`   ❌ Expected 404, got: ${status}\n`)
+      stats.invalidRoutesFailed++
+      failedTests.push({ url, status })
+    }
+  }
+
+  console.log('='.repeat(60))
+  console.log('🧪 Invalid Route Test Results:')
+  console.log('='.repeat(60))
+  console.log(`   Total tests:             ${stats.invalidRoutesChecked}`)
+  console.log(`   ✅ Passed (returned 404): ${stats.invalidRoutesChecked - stats.invalidRoutesFailed}`)
+  console.log(`   ❌ Failed:                ${stats.invalidRoutesFailed}`)
+  console.log('='.repeat(60))
+
+  if (failedTests.length > 0) {
+    console.log('\n❌ Failed Invalid Route Tests:\n')
+    for (const test of failedTests) {
+      console.log(`   ❌ ${test.url}`)
+      console.log(`      Expected: 404`)
+      console.log(`      Got: ${test.status}`)
+      console.log('')
+    }
+  }
 }
 
 /**
@@ -343,11 +432,28 @@ async function crawl(startUrl: string): Promise<void> {
       console.log(`      Status: ${broken.status}`)
       console.log('')
     }
+  }
 
-    console.log('⚠️  Crawl completed with broken links found!')
+  // Test invalid routes
+  await testInvalidRoutes(baseUrl)
+
+  // Final summary and exit
+  console.log('\n' + '='.repeat(60))
+  console.log('🏁 Final Results:')
+  console.log('='.repeat(60))
+  console.log(`   Valid pages crawled:          ${stats.validLinks}`)
+  console.log(`   Broken links found:           ${stats.brokenLinks.length}`)
+  console.log(`   Invalid route tests passed:   ${stats.invalidRoutesChecked - stats.invalidRoutesFailed}`)
+  console.log(`   Invalid route tests failed:   ${stats.invalidRoutesFailed}`)
+  console.log('='.repeat(60) + '\n')
+
+  const hasErrors = stats.brokenLinks.length > 0 || stats.invalidRoutesFailed > 0
+
+  if (hasErrors) {
+    console.log('❌ Validation failed! Please fix the issues above.\n')
     process.exit(1)
   } else {
-    console.log('\n✅ All internal links are valid!\n')
+    console.log('✅ All validation checks passed!\n')
   }
 }
 

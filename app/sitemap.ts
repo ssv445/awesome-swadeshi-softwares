@@ -2,39 +2,48 @@ import { MetadataRoute } from 'next'
 import { getAllSoftware, getCategories } from '@/lib/server-data'
 import { getAllAlternatives } from '@/lib/alternatives-server'
 import { getAllPurposeSlugs } from '@/lib/purpose-server'
+import {
+  getAbsoluteHomeUrl,
+  getAbsoluteUrl,
+  getAboutUrl,
+  getContributeUrl,
+  getWhySwadeshiUrl,
+  getAlternativesIndexUrl,
+  getAbsolutePurposeUrl,
+  getAbsoluteCategoryUrl,
+  getAbsoluteAppUrl,
+  getAbsoluteAlternativeUrl,
+} from '@/lib/links'
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  
-const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://swadeshiapps.com'
-
   // Static pages
   const staticRoutes: MetadataRoute.Sitemap = [
     {
-      url: baseUrl,
+      url: getAbsoluteHomeUrl(),
       lastModified: new Date(),
       changeFrequency: 'daily',
       priority: 1,
     },
     {
-      url: `${baseUrl}/about`,
+      url: getAbsoluteUrl(getAboutUrl()),
       lastModified: new Date(),
       changeFrequency: 'monthly',
       priority: 0.8,
     },
     {
-      url: `${baseUrl}/contribute`,
+      url: getAbsoluteUrl(getContributeUrl()),
       lastModified: new Date(),
       changeFrequency: 'monthly',
       priority: 0.8,
     },
     {
-      url: `${baseUrl}/why-swadeshi`,
+      url: getAbsoluteUrl(getWhySwadeshiUrl()),
       lastModified: new Date(),
       changeFrequency: 'monthly',
       priority: 0.8,
     },
     {
-      url: `${baseUrl}/alternatives`,
+      url: getAbsoluteUrl(getAlternativesIndexUrl()),
       lastModified: new Date(),
       changeFrequency: 'weekly',
       priority: 0.8,
@@ -44,7 +53,7 @@ const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://swadeshiapps.com'
   // Purpose pages (higher priority than categories for SEO)
   const purposeSlugs = getAllPurposeSlugs()
   const purposeRoutes: MetadataRoute.Sitemap = purposeSlugs.map((slug) => ({
-    url: `${baseUrl}/${slug}`,
+    url: getAbsolutePurposeUrl(slug),
     lastModified: new Date(),
     changeFrequency: 'weekly' as const,
     priority: 0.9,
@@ -53,7 +62,7 @@ const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://swadeshiapps.com'
   // Category pages
   const categories = getCategories()
   const categoryRoutes: MetadataRoute.Sitemap = categories.map((category) => ({
-    url: `${baseUrl}/${category}`,
+    url: getAbsoluteCategoryUrl(category),
     lastModified: new Date(),
     changeFrequency: 'weekly' as const,
     priority: 0.8,
@@ -62,7 +71,7 @@ const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://swadeshiapps.com'
   // Individual software pages
   const allSoftware = getAllSoftware()
   const softwareRoutes: MetadataRoute.Sitemap = allSoftware.map((software) => ({
-    url: `${baseUrl}/${software.categorySlug}/${software.slug}`,
+    url: getAbsoluteAppUrl(software.categorySlug, software.slug),
     lastModified: new Date(),
     changeFrequency: 'monthly' as const,
     priority: 0.6,
@@ -71,7 +80,7 @@ const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://swadeshiapps.com'
   // Alternative pages
   const alternatives = getAllAlternatives()
   const alternativeRoutes: MetadataRoute.Sitemap = alternatives.map((alt) => ({
-    url: `${baseUrl}/alternatives/${alt.slug}`,
+    url: getAbsoluteAlternativeUrl(alt.slug),
     lastModified: new Date(),
     changeFrequency: 'monthly' as const,
     priority: 0.6,

@@ -2,6 +2,7 @@ import { notFound } from "next/navigation"
 import { Suspense } from "react"
 import { getSoftwareByCategory, getCategories } from "@/lib/server-data"
 import { getCategoryDisplayName } from "@/lib/data"
+import { getBaseUrl } from "@/lib/links"
 import { isPurposeSlug, getPurposeConfig, getAppsByPurpose, getFeaturedAppsByPurpose, getRelatedPurposeConfigs, getAllPurposeSlugs } from "@/lib/purpose-server"
 import CategoryPage from "./category-page"
 import PurposePage from "@/components/PurposePage"
@@ -78,6 +79,7 @@ export default async function CategoryPageWrapper({ params }: CategoryPageProps)
 
 export async function generateMetadata({ params }: CategoryPageProps) {
   const { category: slug } = await params
+  const baseUrl = getBaseUrl()
 
   // Check if slug is a type
   if (isPurposeSlug(slug)) {
@@ -102,7 +104,7 @@ export async function generateMetadata({ params }: CategoryPageProps) {
       openGraph: {
         title: config.title,
         description: config.description,
-        url: `/${slug}`,
+        url: `${baseUrl}/${slug}`,
         type: 'website',
         images: [
           {
@@ -120,7 +122,7 @@ export async function generateMetadata({ params }: CategoryPageProps) {
         images: [`/og-${slug}.png`],
       },
       alternates: {
-        canonical: `/${slug}`,
+        canonical: `${baseUrl}/${slug}`,
       },
       robots: {
         index: true,
@@ -149,7 +151,7 @@ export async function generateMetadata({ params }: CategoryPageProps) {
     openGraph: {
       title: `${categoryName} Apps - Indian Alternatives`,
       description: `${software.length}+ Indian ${categoryName.toLowerCase()} apps - Quality alternatives to international tools.`,
-      url: `/${slug}`,
+      url: `${baseUrl}/${slug}`,
       type: "website",
       images: [
         {
@@ -167,7 +169,7 @@ export async function generateMetadata({ params }: CategoryPageProps) {
       images: [`/og-${slug}.png`]
     },
     alternates: {
-      canonical: `/${slug}`,
+      canonical: `${baseUrl}/${slug}`,
     },
     robots: {
       index: true,

@@ -2,6 +2,7 @@ import fs from 'fs'
 import path from 'path'
 import { Software } from './data'
 import acquiredCompaniesData from '@/data/acquired-companies.json'
+import { slugify } from './links'
 
 export interface AlternativeMapping {
   slug: string
@@ -205,7 +206,7 @@ export function generateAlternativesMapping(): AlternativeMapping[] {
   const mappings: AlternativeMapping[] = []
 
   alternativesMap.forEach((indianAlternatives, internationalTool) => {
-    const slug = `${internationalTool.toLowerCase().replace(/\s+/g, '-')}`
+    const slug = slugify(internationalTool)
     const category = internationalToolCategories[internationalTool] || 'Software'
 
     const mapping: AlternativeMapping = {

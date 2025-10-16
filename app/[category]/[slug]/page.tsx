@@ -7,8 +7,9 @@ import Link from "next/link"
 import { notFound, redirect } from "next/navigation"
 import { getAppBySlug, getAllAppPaths, getRelatedApps } from "@/lib/server-data"
 import { getCategoryDisplayName, getAppUrl, getAlternativeUrl, getCategoryUrl } from "@/lib/data"
+import { getBaseUrl } from "@/lib/links"
 import { Favicon } from "@/components/favicon"
-import { Breadcrumbs, generateBreadcrumbs } from "@/components/ui/Breadcrumbs"
+import { Breadcrumbs, generateBreadcrumbs, generateBreadcrumbSchema } from "@/components/ui/Breadcrumbs"
 
 interface AppPageProps {
   params: Promise<{
@@ -31,6 +32,7 @@ export async function generateStaticParams() {
 export async function generateMetadata({ params }: AppPageProps) {
   const { category, slug } = await params
   const app = getAppBySlug(category, slug)
+  const baseUrl = getBaseUrl()
 
   if (!app) {
     return {
@@ -59,7 +61,7 @@ export async function generateMetadata({ params }: AppPageProps) {
       images: app.opengraph?.twitter_image ? [app.opengraph.twitter_image] : (app.opengraph?.image ? [app.opengraph.image] : []),
     },
     alternates: {
-      canonical: `/${category}/${slug}`,
+      canonical: `${baseUrl}/${category}/${slug}`,
     },
   }
 }
@@ -100,6 +102,9 @@ export default async function AppPage({ params }: AppPageProps) {
     softwareName: app.name
   })
 
+  const baseUrl = getBaseUrl()
+  const breadcrumbSchema = generateBreadcrumbSchema(breadcrumbs, baseUrl)
+
   // JSON-LD Structured Data for SoftwareApplication
   const structuredData = {
     "@context": "https://schema.org",
@@ -132,6 +137,10 @@ export default async function AppPage({ params }: AppPageProps) {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
       />
       <div className="relative min-h-screen">
 
