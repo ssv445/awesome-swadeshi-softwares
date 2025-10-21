@@ -10,6 +10,7 @@ import { getCategoryDisplayName, getAppUrl, getAlternativeUrl, getCategoryUrl } 
 import { getBaseUrl } from "@/lib/links"
 import { Favicon } from "@/components/favicon"
 import { Breadcrumbs, generateBreadcrumbs, generateBreadcrumbSchema } from "@/components/ui/Breadcrumbs"
+import { SwadeshiMeter } from "@/components/SwadeshiMeter"
 
 interface AppPageProps {
   params: Promise<{
@@ -216,6 +217,13 @@ export default async function AppPage({ params }: AppPageProps) {
             </div>
           </div>
         </div>
+
+        {/* Swadeshi Meter */}
+        {app.swadeshiMeter && (
+          <div className="mb-8">
+            <SwadeshiMeter meter={app.swadeshiMeter} showDetails={true} />
+          </div>
+        )}
 
         {/* Information Grid */}
         <div className="grid md:grid-cols-3 gap-8 mb-8">

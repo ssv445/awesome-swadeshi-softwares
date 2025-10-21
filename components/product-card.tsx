@@ -5,6 +5,7 @@ import { Badge } from "@/components/ui/badge"
 import Link from "next/link"
 import { getAlternativeUrl, getAppUrl } from "@/lib/data"
 import { Favicon } from "@/components/favicon"
+import { SwadeshiMeter } from "@/components/SwadeshiMeter"
 import type { Software } from "@/lib/data"
 import type { SoftwareWithMeta } from "@/lib/server-data"
 
@@ -45,6 +46,12 @@ export function ProductCard({ software, index = 0 }: ProductCardProps) {
         </CardHeader>
         <CardContent className="space-y-4">
           <p className="text-gray-700 leading-relaxed text-sm">{software.description}</p>
+
+          {software.swadeshiMeter && (
+            <div className="pt-2">
+              <SwadeshiMeter meter={software.swadeshiMeter} compact={true} />
+            </div>
+          )}
 
           <div className="space-y-3">
             <div>

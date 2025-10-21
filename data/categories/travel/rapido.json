@@ -12,5 +12,13 @@
   "company": "Roppen Transportation Services Pvt Ltd",
   "location": "Bangalore",
   "playStoreUrl": "https://play.google.com/store/apps/details?id=com.rapido.passenger",
-  "appStoreUrl": "https://apps.apple.com/in/app/rapido-bike-taxi-auto-cab/id1067391122"
+  "appStoreUrl": "https://apps.apple.com/in/app/rapido-bike-taxi-auto-cab/id1067391122",
+  "swadeshiMeter": {
+    "indianOwnership": 90,
+    "indianFounders": 100,
+    "originatedInIndia": true,
+    "headquartersInIndia": true,
+    "indianEmployees": 85,
+    "registeredInIndia": true
+  }
 }

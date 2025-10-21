@@ -83,16 +83,32 @@ pnpm search:index
   "pricing": "Free|Freemium|Paid|Open Source",
   "company": "Company Name",
   "location": "City, State",
-  "faviconUrl": "https://example.com/favicon.ico" // Optional: Custom favicon URL
+  "faviconUrl": "https://example.com/favicon.ico", // Optional: Custom favicon URL
+  "swadeshiMeter": { // Optional: Swadeshi meter for measuring Indian-ness
+    "indianOwnership": 85, // 0-100 percentage of Indian shareholding
+    "indianFounders": 100, // 0-100 percentage of Indian founders
+    "originatedInIndia": true, // Company originated/founded in India
+    "headquartersInIndia": true, // Headquarters located in India
+    "indianEmployees": 75, // 0-100 percentage of employees in India
+    "registeredInIndia": true // Registered under Indian law
+  }
 }
 ```
 
 **Validation Rules**:
-- All fields required except `faviconUrl`
+- All fields required except `faviconUrl` and `swadeshiMeter`
 - Description: 20-500 characters
 - Pricing: Must be one of the standard values
 - Website: Must be valid URL format
 - Alternatives: Must be array (can be empty)
+- SwadeshiMeter (optional):
+  - `indianOwnership`: 0-100 (percentage)
+  - `indianFounders`: 0-100 (percentage)
+  - `originatedInIndia`: boolean
+  - `headquartersInIndia`: boolean
+  - `indianEmployees`: 0-100 (percentage)
+  - `registeredInIndia`: boolean
+  - All fields required if `swadeshiMeter` is present
 
 ## PR-Based Contribution Workflow
 
@@ -236,7 +252,84 @@ SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://swadeshiapps.com/"
 - `/why-swadeshi` - About the Swadeshi movement
 - `/about` - Contribution guidelines
 
+## Swadeshi Meter
+
+The **Swadeshi Meter** is a scoring system that quantifies how "Indian" a software product is based on multiple parameters related to ownership, operations, and legal structure.
+
+### Scoring System
+
+The Swadeshi score is calculated from 0-100 based on the following weighted parameters:
+
+| Parameter | Weight | Description |
+|-----------|--------|-------------|
+| **Indian Ownership** | 25% | Percentage of Indian shareholding (0-100%) |
+| **Indian Founders** | 20% | Percentage of founders who are Indian (0-100%) |
+| **Originated in India** | 15% | Whether the company was founded in India (Yes/No) |
+| **Headquarters in India** | 15% | Whether headquarters are located in India (Yes/No) |
+| **Indian Employees** | 15% | Percentage of employees based in India (0-100%) |
+| **Registered in India** | 10% | Whether registered under Indian law (Yes/No) |
+
+### Rating Categories
+
+Based on the calculated score, products are categorized as:
+
+- **90-100**: Completely Swadeshi - Fully Indian in all aspects
+- **75-89**: Highly Swadeshi - Predominantly Indian
+- **60-74**: Moderately Swadeshi - Significantly Indian
+- **40-59**: Partially Swadeshi - Some Indian ownership/operations
+- **0-39**: Minimally Swadeshi - Limited Indian presence
+
+### Visual Display
+
+The Swadeshi Meter appears in two formats:
+
+1. **Full Display**: On individual app pages, showing detailed breakdown of all parameters
+2. **Compact Display**: On product cards in listings, showing score with tooltip details
+
+### Implementation
+
+```typescript
+// In JSON data file
+{
+  "name": "Example App",
+  "swadeshiMeter": {
+    "indianOwnership": 85,
+    "indianFounders": 100,
+    "originatedInIndia": true,
+    "headquartersInIndia": true,
+    "indianEmployees": 75,
+    "registeredInIndia": true
+  }
+}
+```
+
+The `SwadeshiMeter` component (`/components/SwadeshiMeter.tsx`) automatically:
+- Calculates the score using the weighted formula
+- Determines the rating category
+- Displays a color-coded circular gauge
+- Shows detailed breakdown on hover (compact mode)
+
+### Usage in Components
+
+```typescript
+import { SwadeshiMeter } from '@/components/SwadeshiMeter'
+
+// Full display with details
+<SwadeshiMeter meter={app.swadeshiMeter} showDetails={true} />
+
+// Compact display for cards
+<SwadeshiMeter meter={app.swadeshiMeter} compact={true} />
+```
+
 ## Recent Improvements (October 2025)
+
+### ✅ Swadeshi Meter Feature
+- **Implemented** comprehensive scoring system to measure "Indian-ness" of software products
+- **Added** `SwadeshiMeter` interface with 6 parameters (ownership, founders, origin, HQ, employees, registration)
+- **Created** visual component with full and compact display modes
+- **Integrated** into product cards and detail pages
+- **Automated** score calculation with weighted parameters (0-100 scale)
+- **Added** validation for swadeshiMeter data in validation script
 
 ### ✅ Build Safety & Type Safety
 - **Removed** build error suppression (`ignoreBuildErrors`, `ignoreDuringBuilds`)

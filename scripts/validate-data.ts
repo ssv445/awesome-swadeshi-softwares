@@ -8,6 +8,15 @@
 import fs from 'fs'
 import path from 'path'
 
+interface SwadeshiMeter {
+  indianOwnership: number // 0-100 percentage of Indian shareholding
+  indianFounders: number // 0-100 percentage of Indian founders
+  originatedInIndia: boolean // Company originated/founded in India
+  headquartersInIndia: boolean // Headquarters located in India
+  indianEmployees: number // 0-100 percentage of employees in India
+  registeredInIndia: boolean // Registered under Indian law
+}
+
 interface Software {
   name: string
   slug: string
@@ -23,6 +32,7 @@ interface Software {
   faviconUrl?: string
   appStoreUrl?: string
   playStoreUrl?: string
+  swadeshiMeter?: SwadeshiMeter
 }
 
 const REQUIRED_FIELDS: (keyof Software)[] = [
@@ -241,6 +251,59 @@ function validateSoftware(filePath: string, data: any): void {
           field: 'purpose',
           error: `Invalid purposes: ${invalidPurposes.join(', ')}. Must be one of: ${VALID_PURPOSES.join(', ')}`
         })
+      }
+    }
+  }
+
+  // Validate swadeshiMeter field (optional field)
+  if (data.swadeshiMeter) {
+    const meter = data.swadeshiMeter
+
+    // Validate that swadeshiMeter is an object
+    if (typeof meter !== 'object' || meter === null || Array.isArray(meter)) {
+      errors.push({ file: fileName, field: 'swadeshiMeter', error: 'SwadeshiMeter must be an object' })
+    } else {
+      // Validate indianOwnership
+      if (typeof meter.indianOwnership !== 'number') {
+        errors.push({ file: fileName, field: 'swadeshiMeter.indianOwnership', error: 'indianOwnership must be a number (0-100)' })
+      } else if (meter.indianOwnership < 0 || meter.indianOwnership > 100) {
+        errors.push({ file: fileName, field: 'swadeshiMeter.indianOwnership', error: 'indianOwnership must be between 0 and 100' })
+      }
+
+      // Validate indianFounders
+      if (typeof meter.indianFounders !== 'number') {
+        errors.push({ file: fileName, field: 'swadeshiMeter.indianFounders', error: 'indianFounders must be a number (0-100)' })
+      } else if (meter.indianFounders < 0 || meter.indianFounders > 100) {
+        errors.push({ file: fileName, field: 'swadeshiMeter.indianFounders', error: 'indianFounders must be between 0 and 100' })
+      }
+
+      // Validate originatedInIndia
+      if (typeof meter.originatedInIndia !== 'boolean') {
+        errors.push({ file: fileName, field: 'swadeshiMeter.originatedInIndia', error: 'originatedInIndia must be a boolean (true/false)' })
+      }
+
+      // Validate headquartersInIndia
+      if (typeof meter.headquartersInIndia !== 'boolean') {
+        errors.push({ file: fileName, field: 'swadeshiMeter.headquartersInIndia', error: 'headquartersInIndia must be a boolean (true/false)' })
+      }
+
+      // Validate indianEmployees
+      if (typeof meter.indianEmployees !== 'number') {
+        errors.push({ file: fileName, field: 'swadeshiMeter.indianEmployees', error: 'indianEmployees must be a number (0-100)' })
+      } else if (meter.indianEmployees < 0 || meter.indianEmployees > 100) {
+        errors.push({ file: fileName, field: 'swadeshiMeter.indianEmployees', error: 'indianEmployees must be between 0 and 100' })
+      }
+
+      // Validate registeredInIndia
+      if (typeof meter.registeredInIndia !== 'boolean') {
+        errors.push({ file: fileName, field: 'swadeshiMeter.registeredInIndia', error: 'registeredInIndia must be a boolean (true/false)' })
+      }
+
+      // Check if all required fields are present
+      const requiredMeterFields = ['indianOwnership', 'indianFounders', 'originatedInIndia', 'headquartersInIndia', 'indianEmployees', 'registeredInIndia']
+      const missingFields = requiredMeterFields.filter(field => !(field in meter))
+      if (missingFields.length > 0) {
+        errors.push({ file: fileName, field: 'swadeshiMeter', error: `Missing required swadeshiMeter fields: ${missingFields.join(', ')}` })
       }
     }
   }
