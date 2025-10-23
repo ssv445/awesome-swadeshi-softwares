@@ -1,0 +1,15 @@
+{
+  "name": "ProctorLink",
+  "slug": "proctorlink",
+  "description": "A next-generation proctoring platform that secures every stage of your online exams with real-time monitoring and identity verification.",
+  "website": "https://proctorlink.com",
+  "category": "education",
+  "alternatives": [
+    "Talview",
+    "Mercer | Mettl"
+  ],
+  "pricing": "Paid",
+  "company": "Take2 Technologies",
+  "location": "Bhilwara, Rajasthan",
+  "faviconUrl": "https://proctorlink.com/favicon.ico"  
+}
