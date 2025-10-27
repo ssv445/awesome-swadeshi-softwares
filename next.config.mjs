@@ -5,6 +5,8 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
+  // All pages are force-static, no ISR used
+  // See individual page exports for: export const dynamic = 'force-static'
 }
 
 export default withPWA({

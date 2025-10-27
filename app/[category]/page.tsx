@@ -16,6 +16,10 @@ interface CategoryPageProps {
 // Only generate paths defined in generateStaticParams, return 404 for others
 export const dynamicParams = false
 
+// Force static generation - no ISR
+export const dynamic = 'force-static'
+export const revalidate = false
+
 export async function generateStaticParams() {
   const categories = getCategories()
   const purposeSlugs = getAllPurposeSlugs()
