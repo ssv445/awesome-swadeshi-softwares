@@ -1,0 +1,10 @@
+{
+  "name": "VdoCipher",
+  "description": "Indian video DRM and player for secure streaming",
+  "website": "https://www.vdocipher.com/",
+  "alternatives": ["Vimeo", "Brightcove"],
+  "pricing": "Freemium",
+  "company": "VdoCipher",
+  "location": "India",
+  "category": "Entertainment"
+}
