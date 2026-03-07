@@ -54,9 +54,20 @@ const nextConfig = {
         permanent: true,
       },
       // Old category rename: hosting-&-domains → hosting
+      // Include both literal & and URL-encoded %26 since browser behavior varies
+      {
+        source: '/hosting-&-domains/:slug',
+        destination: '/hosting/:slug',
+        permanent: true,
+      },
       {
         source: '/hosting-%26-domains/:slug',
         destination: '/hosting/:slug',
+        permanent: true,
+      },
+      {
+        source: '/hosting-&-domains',
+        destination: '/hosting',
         permanent: true,
       },
       {
