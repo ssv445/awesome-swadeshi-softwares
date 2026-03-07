@@ -10,8 +10,35 @@ const nextConfig = {
 
   // Redirects to fix 404s from old URL structure (420 URLs in GSC)
   async redirects() {
+    // 42 old -alternative suffix URLs whose base slug has no alternatives page.
+    // These must be listed BEFORE the catch-all regex so they match first.
+    const deadEndAlternatives = [
+      '8x8', 'aircall', 'alexa', 'amazon-fresh', 'amplitude', 'android',
+      'bigbasket', 'booking.com', 'brave-browser', 'braze', "byju's",
+      'ccavenue', 'cortana', 'domain.com', 'etsy', 'google-pay',
+      'harmonyos', 'hubspot-crm', 'hubspot-marketing', 'hugging-face',
+      'instacart', 'instamojo', 'ios', 'jira-service-management',
+      'lightspeed', 'manageengine', 'monday.com', 'paw', 'plaid',
+      'rest-client', 'ringcentral', 'salesforce-sales-cloud', 'servicenow',
+      'settle-up', 'simplybook.me', 'square', 'toast-pos', 'venmo',
+      'walmart', 'walmart-grocery', 'wayfair', 'zuora',
+    ]
+
     return [
-      // Pattern: /alternatives/X-alternative → /alternatives/X (394 old URLs)
+      // Dead-end -alternative URLs → /alternatives listing (42 URLs)
+      // Must come before the catch-all pattern below
+      ...deadEndAlternatives.map((slug) => ({
+        source: `/alternatives/${slug}-alternative`,
+        destination: '/alternatives',
+        permanent: true,
+      })),
+      // URL with space: /alternatives/disney -hotstar-alternative
+      {
+        source: '/alternatives/disney%20-hotstar-alternative',
+        destination: '/alternatives/disney-hotstar',
+        permanent: true,
+      },
+      // Pattern: /alternatives/X-alternative → /alternatives/X (352 remaining old URLs)
       {
         source: '/alternatives/:slug-alternative',
         destination: '/alternatives/:slug',
@@ -19,8 +46,13 @@ const nextConfig = {
       },
       // Old category rename: hosting-&-domains → hosting
       {
-        source: '/hosting-&-domains/:slug',
+        source: '/hosting-%26-domains/:slug',
         destination: '/hosting/:slug',
+        permanent: true,
+      },
+      {
+        source: '/hosting-%26-domains',
+        destination: '/hosting',
         permanent: true,
       },
       // Moved apps: e-commerce → not-swadeshi-apps
@@ -34,35 +66,35 @@ const nextConfig = {
         destination: '/not-swadeshi-apps/paytm',
         permanent: true,
       },
-      // Deleted Freshworks apps → business category
+      // Deleted Freshworks apps → not-swadeshi-apps/freshworks
       {
         source: '/business/freshsales',
-        destination: '/business',
+        destination: '/not-swadeshi-apps/freshworks',
         permanent: true,
       },
       {
         source: '/business/freshchat',
-        destination: '/business',
+        destination: '/not-swadeshi-apps/freshworks',
         permanent: true,
       },
       {
         source: '/business/freshcaller',
-        destination: '/business',
+        destination: '/not-swadeshi-apps/freshworks',
         permanent: true,
       },
       {
         source: '/business/freshdesk',
-        destination: '/business',
+        destination: '/not-swadeshi-apps/freshworks',
         permanent: true,
       },
       {
         source: '/business/freshservice',
-        destination: '/business',
+        destination: '/not-swadeshi-apps/freshworks',
         permanent: true,
       },
       {
         source: '/business/freshmarketer',
-        destination: '/business',
+        destination: '/not-swadeshi-apps/freshworks',
         permanent: true,
       },
       {
@@ -70,36 +102,36 @@ const nextConfig = {
         destination: '/business',
         permanent: true,
       },
-      // Deleted finance apps → finance category
+      // Deleted finance apps → not-swadeshi-apps equivalents
       {
         source: '/finance/razorpay-payment-gateway',
-        destination: '/finance',
+        destination: '/not-swadeshi-apps/razorpay',
         permanent: true,
       },
       {
         source: '/finance/chargebee',
-        destination: '/finance',
+        destination: '/not-swadeshi-apps/chargebee',
         permanent: true,
       },
       {
         source: '/finance/paytm-business',
-        destination: '/finance',
+        destination: '/not-swadeshi-apps/paytm',
         permanent: true,
       },
       {
         source: '/finance/paytm-wallet',
-        destination: '/finance',
+        destination: '/not-swadeshi-apps/paytm',
         permanent: true,
       },
-      // Deleted app pages → their categories
+      // Deleted app pages → not-swadeshi-apps equivalents
       {
         source: '/development/postman',
-        destination: '/development',
+        destination: '/not-swadeshi-apps/postman',
         permanent: true,
       },
       {
         source: '/education/unacademy',
-        destination: '/education',
+        destination: '/not-swadeshi-apps/unacademy',
         permanent: true,
       },
       {
