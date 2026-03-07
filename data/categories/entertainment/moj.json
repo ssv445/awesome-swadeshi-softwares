@@ -1,13 +1,14 @@
 {
   "name": "Moj",
   "slug": "moj",
-  "description": "Short-video platform launched by ShareChat to capture the post-TikTok market",
+  "description": "One of India's most popular short video apps by Mohalla Tech (ShareChat), offering trending reels, short dramas, and creator tools in regional languages",
   "website": "https://play.google.com/store/apps/details?id=in.mohalla.video&hl=en_IN&gl=IN",
   "category": "entertainment",
   "purpose": ["social-media"],
   "alternatives": [
     "TikTok",
-    "Instagram Reels"
+    "Instagram Reels",
+    "YouTube Shorts"
   ],
   "pricing": "Free",
   "company": "Mohalla Tech Pvt Ltd",
