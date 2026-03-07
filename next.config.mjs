@@ -10,35 +10,44 @@ const nextConfig = {
 
   // Redirects to fix 404s from old URL structure (420 URLs in GSC)
   async redirects() {
-    // 42 old -alternative suffix URLs whose base slug has no alternatives page.
-    // These must be listed BEFORE the catch-all regex so they match first.
+    // Old -alternative suffix URLs whose base slug has no alternatives page.
+    // Use 302 (temporary) since /alternatives is not semantically the right
+    // canonical for these specific queries.
     const deadEndAlternatives = [
       '8x8', 'aircall', 'alexa', 'amazon-fresh', 'amplitude', 'android',
-      'bigbasket', 'booking.com', 'brave-browser', 'braze', "byju's",
-      'ccavenue', 'cortana', 'domain.com', 'etsy', 'google-pay',
+      'bigbasket', 'brave-browser', 'braze',
+      'ccavenue', 'cortana', 'etsy', 'google-pay',
       'harmonyos', 'hubspot-crm', 'hubspot-marketing', 'hugging-face',
       'instacart', 'instamojo', 'ios', 'jira-service-management',
-      'lightspeed', 'manageengine', 'monday.com', 'paw', 'plaid',
+      'lightspeed', 'manageengine', 'paw', 'plaid',
       'rest-client', 'ringcentral', 'salesforce-sales-cloud', 'servicenow',
-      'settle-up', 'simplybook.me', 'square', 'toast-pos', 'venmo',
+      'settle-up', 'square', 'toast-pos', 'venmo',
       'walmart', 'walmart-grocery', 'wayfair', 'zuora',
     ]
 
     return [
-      // Dead-end -alternative URLs → /alternatives listing (42 URLs)
-      // Must come before the catch-all pattern below
+      // Dead-end -alternative URLs → /alternatives listing (37 URLs)
+      // Use 302 temporary — /alternatives is not the canonical for these queries
       ...deadEndAlternatives.map((slug) => ({
         source: `/alternatives/${slug}-alternative`,
         destination: '/alternatives',
-        permanent: true,
+        permanent: false,
       })),
+      // Dot-containing slugs: explicit redirects to their slugified pages
+      // These have valid destination pages but the catch-all would preserve
+      // the dots and create 301→404 chains
+      { source: '/alternatives/booking.com-alternative', destination: '/alternatives/booking-com', permanent: true },
+      { source: '/alternatives/domain.com-alternative', destination: '/alternatives/domain-com', permanent: true },
+      { source: '/alternatives/monday.com-alternative', destination: '/alternatives/monday-com', permanent: true },
+      { source: '/alternatives/simplybook.me-alternative', destination: '/alternatives/simplybook-me', permanent: true },
+      { source: "/alternatives/byju's-alternative", destination: '/alternatives/byjus', permanent: true },
       // URL with space: /alternatives/disney -hotstar-alternative
       {
         source: '/alternatives/disney%20-hotstar-alternative',
         destination: '/alternatives/disney-hotstar',
         permanent: true,
       },
-      // Pattern: /alternatives/X-alternative → /alternatives/X (352 remaining old URLs)
+      // Pattern: /alternatives/X-alternative → /alternatives/X (remaining old URLs)
       {
         source: '/alternatives/:slug-alternative',
         destination: '/alternatives/:slug',

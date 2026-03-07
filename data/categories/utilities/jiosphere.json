@@ -1,7 +1,7 @@
 {
   "name": "JioSphere",
   "slug": "jiosphere",
-  "description": "Free Indian web browser by Jio with built-in VPN, ad-blocker, incognito mode, and live video support for mobile and TV as an alternative to Google Chrome and Firefox",
+  "description": "Free Indian web browser by Jio with built-in VPN, ad-blocker, incognito mode, and live video support for mobile and TV",
   "website": "https://www.jio.com/apps/jiosphere/",
   "category": "utilities",
   "purpose": ["browser"],
