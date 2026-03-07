@@ -23,6 +23,12 @@ interface Software {
   faviconUrl?: string
   appStoreUrl?: string
   playStoreUrl?: string
+  pros?: string[]
+  cons?: string[]
+  userComplaints?: string[]
+  rating?: number
+  ratingSource?: string
+  lastVerified?: string
 }
 
 const REQUIRED_FIELDS: (keyof Software)[] = [
@@ -242,6 +248,41 @@ function validateSoftware(filePath: string, data: any): void {
           error: `Invalid purposes: ${invalidPurposes.join(', ')}. Must be one of: ${VALID_PURPOSES.join(', ')}`
         })
       }
+    }
+  }
+
+  // Validate pros/cons/userComplaints arrays (optional)
+  for (const field of ['pros', 'cons', 'userComplaints'] as const) {
+    if (data[field]) {
+      if (!Array.isArray(data[field])) {
+        errors.push({ file: fileName, field, error: `${field} must be an array of strings` })
+      } else {
+        data[field].forEach((item: any, index: number) => {
+          if (typeof item !== 'string' || item.length < 5) {
+            warnings.push({ file: fileName, field: `${field}[${index}]`, error: `${field} entries should be descriptive strings (5+ chars)` })
+          }
+        })
+      }
+    }
+  }
+
+  // Validate rating (optional)
+  if (data.rating !== undefined) {
+    if (typeof data.rating !== 'number' || data.rating < 0 || data.rating > 5) {
+      errors.push({ file: fileName, field: 'rating', error: 'Rating must be a number between 0 and 5' })
+    }
+  }
+
+  // Validate ratingSource (optional, but required if rating is present)
+  if (data.rating !== undefined && !data.ratingSource) {
+    warnings.push({ file: fileName, field: 'ratingSource', error: 'ratingSource should be provided when rating is set' })
+  }
+
+  // Validate lastVerified date format (optional)
+  if (data.lastVerified) {
+    const dateRegex = /^\d{4}-\d{2}-\d{2}$/
+    if (!dateRegex.test(data.lastVerified)) {
+      errors.push({ file: fileName, field: 'lastVerified', error: 'lastVerified must be in YYYY-MM-DD format' })
     }
   }
 }

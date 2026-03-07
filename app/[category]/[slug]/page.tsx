@@ -10,6 +10,7 @@ import { getCategoryDisplayName, getAppUrl, getAlternativeUrl, getCategoryUrl } 
 import { getBaseUrl } from "@/lib/links"
 import { Favicon } from "@/components/favicon"
 import { Breadcrumbs, generateBreadcrumbs, generateBreadcrumbSchema } from "@/components/ui/Breadcrumbs"
+import { getAffiliateUrl } from "@/lib/affiliates"
 
 interface AppPageProps {
   params: Promise<{
@@ -86,6 +87,10 @@ export default async function AppPage({ params }: AppPageProps) {
   const categoryDisplayName = getCategoryDisplayName(category)
   const { sameCompany, sameCategory } = getRelatedApps(app, 6)
   const relatedApps = [...sameCompany, ...sameCategory]
+
+  // Affiliate link: use affiliate URL if active, otherwise fall back to app website
+  const affiliateUrl = getAffiliateUrl(app.slug)
+  const visitUrl = affiliateUrl || app.website
 
   // Format last updated date
   const formatLastUpdated = (dateString: string) => {
@@ -191,11 +196,14 @@ export default async function AppPage({ params }: AppPageProps) {
               </div>
               <div className="flex flex-wrap gap-3">
                 <Button asChild size="lg" className="bg-blue-600 hover:bg-blue-700 text-white border-none">
-                  <Link href={app.website} target="_blank" rel="noopener noreferrer">
+                  <Link href={visitUrl} target="_blank" rel="noopener noreferrer">
                     Visit Website
                     <ExternalLink className="ml-2 h-5 w-5" />
                   </Link>
                 </Button>
+                {affiliateUrl && (
+                  <span className="text-xs text-gray-400 self-center">Partner link</span>
+                )}
                 {(app.playStoreUrl || app.opengraph?.play_store_url) && (
                   <Button asChild size="lg" variant="outline" className="border-2 border-green-600 text-green-600 hover:bg-green-50">
                     <Link href={app.playStoreUrl || app.opengraph?.play_store_url || ''} target="_blank" rel="noopener noreferrer">
@@ -292,7 +300,66 @@ export default async function AppPage({ params }: AppPageProps) {
           </Card>
         </div>
 
-       
+        {/* Honest Review Section */}
+        {(app.pros?.length || app.cons?.length || app.userComplaints?.length) && (
+          <Card className="mb-8">
+            <CardHeader>
+              <h2 className="flex items-center text-xl font-semibold leading-none">
+                <Users className="h-5 w-5 mr-2 text-blue-600" />
+                Honest Review
+              </h2>
+              {app.rating !== undefined && (
+                <p className="text-sm text-gray-500 mt-1">
+                  {app.rating}/5 on {app.ratingSource || 'user reviews'}
+                  {app.lastVerified && ` · Last verified ${app.lastVerified}`}
+                </p>
+              )}
+            </CardHeader>
+            <CardContent>
+              <div className="grid md:grid-cols-2 gap-6">
+                {app.pros && app.pros.length > 0 && (
+                  <div>
+                    <h3 className="font-semibold text-green-700 mb-3">What works well</h3>
+                    <ul className="space-y-2">
+                      {app.pros.map((pro, i) => (
+                        <li key={i} className="flex items-start gap-2 text-gray-700">
+                          <span className="text-green-600 mt-0.5 flex-shrink-0">+</span>
+                          {pro}
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                )}
+                {app.cons && app.cons.length > 0 && (
+                  <div>
+                    <h3 className="font-semibold text-red-700 mb-3">What needs improvement</h3>
+                    <ul className="space-y-2">
+                      {app.cons.map((con, i) => (
+                        <li key={i} className="flex items-start gap-2 text-gray-700">
+                          <span className="text-red-600 mt-0.5 flex-shrink-0">-</span>
+                          {con}
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                )}
+              </div>
+              {app.userComplaints && app.userComplaints.length > 0 && (
+                <div className="mt-6 pt-4 border-t border-gray-200">
+                  <h3 className="font-semibold text-amber-700 mb-3">Common user complaints</h3>
+                  <ul className="space-y-2">
+                    {app.userComplaints.map((complaint, i) => (
+                      <li key={i} className="flex items-start gap-2 text-gray-600 text-sm">
+                        <span className="text-amber-500 mt-0.5 flex-shrink-0">!</span>
+                        {complaint}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              )}
+            </CardContent>
+          </Card>
+        )}
 
         {/* OpenGraph Image Section */}
         {app.opengraph?.image && (

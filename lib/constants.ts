@@ -77,6 +77,7 @@ export const NAV_LINKS = [
   { href: "/", label: "Home" },
   { href: "/about", label: "About" },
   { href: "/contribute", label: "Contribute" },
+  { href: "/blog", label: "Blog" },
   { href: "/why-swadeshi", label: "Why Swadeshi?" },
   { href: "/not-swadeshi-apps", label: "Not Swadeshi" }
 ] as const
@@ -87,6 +88,7 @@ export const FOOTER_LINKS = {
     { href: "/", label: "Home" },
     { href: "/about", label: "About" },
     { href: "/contribute", label: "Contribute" },
+    { href: "/blog", label: "Blog" },
     { href: "/why-swadeshi", label: "Why Swadeshi?" },
     { href: "/not-swadeshi-apps", label: "Not Swadeshi" },
     { href: "/alternatives", label: "Alternatives" }

@@ -1,6 +1,7 @@
 import { MetadataRoute } from 'next'
 import { getAllSoftware, getCategories } from '@/lib/server-data'
 import { getAllAlternatives } from '@/lib/alternatives-server'
+import { getAllBlogPosts } from '@/lib/blog'
 import { getAllPurposeSlugs } from '@/lib/purpose-server'
 import {
   getAbsoluteHomeUrl,
@@ -86,11 +87,29 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.6,
   }))
 
+  // Blog posts
+  const blogPosts = getAllBlogPosts()
+  const blogRoutes: MetadataRoute.Sitemap = [
+    {
+      url: getAbsoluteUrl('/blog'),
+      lastModified: new Date(),
+      changeFrequency: 'weekly' as const,
+      priority: 0.7,
+    },
+    ...blogPosts.map((post) => ({
+      url: getAbsoluteUrl(`/blog/${post.slug}`),
+      lastModified: new Date(post.date),
+      changeFrequency: 'monthly' as const,
+      priority: 0.6,
+    })),
+  ]
+
   return [
     ...staticRoutes,
     ...purposeRoutes,      // Purpose pages listed before categories for higher priority
     ...categoryRoutes,
     ...softwareRoutes,
     ...alternativeRoutes,
+    ...blogRoutes,
   ]
 }

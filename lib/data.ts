@@ -58,6 +58,12 @@ export interface Software {
   playStoreUrl?: string // Optional Google Play Store URL
   opengraph?: OpenGraph // Optional OpenGraph metadata
   featured_reason?: string // Optional featured reason (for homepage display)
+  pros?: string[]              // Genuine strengths from reviews
+  cons?: string[]              // Known issues and limitations
+  userComplaints?: string[]    // Real complaints from app stores, Reddit, Twitter
+  rating?: number              // Aggregated rating from a public source
+  ratingSource?: string        // Where the rating came from
+  lastVerified?: string        // ISO date when data was last checked
 }
 
 // ===========================
