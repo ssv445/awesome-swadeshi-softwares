@@ -881,6 +881,14 @@
       "searchTerms": "byju think learn pvt ltd education khan academy coursera udemy personalized learning app for students with interactive video lessons"
     },
     {
+      "id": "education/proctorlink",
+      "name": "ProctorLink",
+      "company": "Take2 Technologies",
+      "category": "education",
+      "slug": "proctorlink",
+      "searchTerms": "proctorlink take2 technologies education talview mercer mettl a next generation proctoring platform that secures every stage of your"
+    },
+    {
       "id": "education/pupilfirst",
       "name": "Pupilfirst",
       "company": "Pupilfirst Pvt. Ltd.",
@@ -966,7 +974,7 @@
       "company": "Mohalla Tech Pvt Ltd",
       "category": "entertainment",
       "slug": "moj",
-      "searchTerms": "moj mohalla tech pvt ltd entertainment tiktok instagram reels short video platform launched by sharechat to capture the post tiktok market"
+      "searchTerms": "moj mohalla tech pvt ltd entertainment tiktok instagram reels youtube shorts indian short video app by mohalla tech sharechat with 300m"
     },
     {
       "id": "entertainment/mx-player",
@@ -1214,7 +1222,7 @@
       "company": "Mohalla Tech Pvt Ltd",
       "category": "social-networking",
       "slug": "sharechat",
-      "searchTerms": "sharechat mohalla tech pvt ltd social networking facebook instagram vernacular first social platform for regional language users across india"
+      "searchTerms": "sharechat mohalla tech pvt ltd social networking facebook instagram india s largest regional language social media platform by mohalla tech"
     },
     {
       "id": "travel/easemytrip",
@@ -1270,7 +1278,7 @@
       "company": "Jio Platforms",
       "category": "utilities",
       "slug": "jiosphere",
-      "searchTerms": "jiosphere jio platforms utilities google chrome firefox web browser with built in vpn and ad blocker designed for the"
+      "searchTerms": "jiosphere jio platforms utilities google chrome firefox free indian web browser by jio with built in vpn ad blocker"
     },
     {
       "id": "utilities/jioswitch",
@@ -1278,7 +1286,7 @@
       "company": "Reliance Jio Digital Services",
       "category": "utilities",
       "slug": "jioswitch",
-      "searchTerms": "jioswitch reliance jio digital services utilities shareit xender offline file transfer app and direct replacement for shareit"
+      "searchTerms": "jioswitch reliance jio digital services utilities shareit xender free offline file transfer app by reliance jio for sharing"
     },
     {
       "id": "utilities/ola-maps",
@@ -1314,7 +1322,7 @@
     }
   ],
   "meta": {
-    "totalEntries": 164,
+    "totalEntries": 165,
     "categories": [
       "business",
       "communication",
@@ -1330,7 +1338,7 @@
       "travel",
       "utilities"
     ],
-    "generatedAt": "2025-10-27T12:26:45.878Z",
+    "generatedAt": "2026-03-07T05:05:13.685Z",
     "version": "1.0.0"
   }
 }
