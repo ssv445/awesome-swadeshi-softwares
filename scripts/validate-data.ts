@@ -287,6 +287,140 @@ function validateSoftware(filePath: string, data: any): void {
   }
 }
 
+const VALID_FACTOR_NAMES = [
+  'shareholding', 'incorporation', 'boardControl', 'founders',
+  'hqAndTeam', 'dataSovereignty', 'revenueOrigin'
+]
+
+function validateCompanies(categoriesDir: string): void {
+  const companiesPath = path.join(process.cwd(), 'data', 'companies.json')
+
+  if (!fs.existsSync(companiesPath)) {
+    warnings.push({ file: 'companies.json', error: 'companies.json not found, skipping company validation' })
+    return
+  }
+
+  let companiesData: any
+  try {
+    const content = fs.readFileSync(companiesPath, 'utf-8')
+    companiesData = JSON.parse(content)
+  } catch (error) {
+    errors.push({ file: 'companies.json', error: `Failed to parse: ${error instanceof Error ? error.message : 'Unknown error'}` })
+    return
+  }
+
+  if (!companiesData.companies || typeof companiesData.companies !== 'object') {
+    errors.push({ file: 'companies.json', error: 'Missing or invalid "companies" object' })
+    return
+  }
+
+  const companyKeys = Object.keys(companiesData.companies)
+  const requiredCompanyFields = ['name', 'slug', 'hq', 'incorporation', 'founders', 'foundersActive', 'swadeshiMeter']
+
+  for (const key of companyKeys) {
+    const company = companiesData.companies[key]
+    const prefix = `companies.json [${key}]`
+
+    // Check required fields
+    for (const field of requiredCompanyFields) {
+      if (company[field] === undefined || company[field] === null) {
+        errors.push({ file: prefix, field, error: `Missing required field: ${field}` })
+      }
+    }
+
+    // Slug key must match slug field value
+    if (company.slug && company.slug !== key) {
+      errors.push({ file: prefix, field: 'slug', error: `Slug "${company.slug}" does not match object key "${key}"` })
+    }
+
+    // Validate swadeshiMeter
+    if (company.swadeshiMeter && typeof company.swadeshiMeter === 'object') {
+      const meter = company.swadeshiMeter
+
+      // Score must be 0-100
+      if (typeof meter.score !== 'number' || meter.score < 0 || meter.score > 100) {
+        errors.push({ file: prefix, field: 'swadeshiMeter.score', error: 'Score must be a number between 0 and 100' })
+      }
+
+      // lastVerified must be YYYY-MM-DD
+      if (meter.lastVerified) {
+        const dateRegex = /^\d{4}-\d{2}-\d{2}$/
+        if (!dateRegex.test(meter.lastVerified)) {
+          errors.push({ file: prefix, field: 'swadeshiMeter.lastVerified', error: 'lastVerified must be in YYYY-MM-DD format' })
+        }
+      } else {
+        errors.push({ file: prefix, field: 'swadeshiMeter.lastVerified', error: 'Missing required field: lastVerified' })
+      }
+
+      // Validate factors
+      if (meter.factors && typeof meter.factors === 'object') {
+        const factorNames = Object.keys(meter.factors)
+
+        for (const factorName of factorNames) {
+          // Only valid factor names allowed
+          if (!VALID_FACTOR_NAMES.includes(factorName)) {
+            errors.push({ file: prefix, field: `swadeshiMeter.factors.${factorName}`, error: `Invalid factor name. Valid: ${VALID_FACTOR_NAMES.join(', ')}` })
+            continue
+          }
+
+          const factor = meter.factors[factorName]
+
+          // Each factor score must be 0-100
+          if (typeof factor.score !== 'number' || factor.score < 0 || factor.score > 100) {
+            errors.push({ file: prefix, field: `swadeshiMeter.factors.${factorName}.score`, error: 'Factor score must be a number between 0 and 100' })
+          }
+
+          // Each factor should have a note (warning)
+          if (!factor.note || typeof factor.note !== 'string') {
+            warnings.push({ file: prefix, field: `swadeshiMeter.factors.${factorName}.note`, error: 'Factor should have a descriptive note' })
+          }
+        }
+
+        // dataCompleteness should match actual factor count (warning)
+        if (meter.dataCompleteness !== undefined && meter.dataCompleteness !== factorNames.length) {
+          warnings.push({ file: prefix, field: 'swadeshiMeter.dataCompleteness', error: `dataCompleteness is ${meter.dataCompleteness} but found ${factorNames.length} factors` })
+        }
+      }
+    }
+  }
+
+  // Cross-validate companySlug references from app JSON files
+  try {
+    const categories = fs.readdirSync(categoriesDir, { withFileTypes: true })
+      .filter(dirent => dirent.isDirectory())
+      .map(dirent => dirent.name)
+
+    for (const category of categories) {
+      const categoryPath = path.join(categoriesDir, category)
+      const files = fs.readdirSync(categoryPath).filter(file => file.endsWith('.json'))
+
+      for (const file of files) {
+        const filePath = path.join(categoryPath, file)
+        try {
+          const content = fs.readFileSync(filePath, 'utf-8')
+          const data = JSON.parse(content)
+
+          if (data.companySlug) {
+            if (!companyKeys.includes(data.companySlug)) {
+              errors.push({
+                file: `${category}/${file}`,
+                field: 'companySlug',
+                error: `companySlug "${data.companySlug}" not found in companies.json. Valid: ${companyKeys.join(', ')}`
+              })
+            }
+          }
+        } catch {
+          // Parse errors already reported by validateSoftware
+        }
+      }
+    }
+  } catch {
+    // categoriesDir read errors already handled in validateAllData
+  }
+
+  console.log(`   Companies validated: ${companyKeys.length}`)
+}
+
 function validateAllData(): void {
   const categoriesDir = path.join(process.cwd(), 'data', 'categories')
 
@@ -346,6 +480,9 @@ function validateAllData(): void {
     if (errors.length === 0 && warnings.length === 0) {
       console.log(`\n✅ All data files are valid!\n`)
     }
+
+    // Validate companies.json and cross-validate companySlug references
+    validateCompanies(categoriesDir)
 
     // Check for slug conflicts between categories and purposes
     if (VALID_CATEGORIES.length > 0 && VALID_PURPOSES.length > 0) {
