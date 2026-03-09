@@ -5,7 +5,8 @@ import { Badge } from "@/components/ui/badge"
 import Link from "next/link"
 import { getAlternativeUrl, getAppUrl } from "@/lib/data"
 import { Favicon } from "@/components/favicon"
-import type { Software } from "@/lib/data"
+import type { Software, SwadeshiMeterData } from "@/lib/data"
+import { SwadeshiMeterBadge } from '@/components/swadeshi-meter-badge'
 import type { SoftwareWithMeta } from "@/lib/server-data"
 
 interface ProductCardProps {
@@ -29,6 +30,9 @@ export function ProductCard({ software, index = 0 }: ProductCardProps) {
                 {software.name}
               </CardTitle>
               <p className="text-sm text-gray-600 font-medium mt-1">{software.company}</p>
+              {'swadeshiMeter' in software && software.swadeshiMeter && (
+                <SwadeshiMeterBadge meter={software.swadeshiMeter as SwadeshiMeterData} className="mt-1" />
+              )}
             </div>
             <div className="flex-shrink-0">
               <Favicon
