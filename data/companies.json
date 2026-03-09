@@ -1,0 +1,83 @@
+{
+  "companies": {
+    "zoho": {
+      "name": "Zoho Corporation",
+      "slug": "zoho",
+      "hq": "Chennai, India",
+      "incorporation": "India",
+      "founders": "Sridhar Vembu, Tony Thomas",
+      "foundersActive": true,
+      "swadeshiMeter": {
+        "score": 92,
+        "lastVerified": "2026-03-09",
+        "dataCompleteness": 7,
+        "factors": {
+          "shareholding": { "score": 95, "note": "Privately held, ~88% by Sridhar Vembu", "source": "Forbes India 2025" },
+          "incorporation": { "score": 100, "note": "Incorporated in India (Zoho Corp Pvt Ltd)" },
+          "boardControl": { "score": 90, "note": "Indian founders control board" },
+          "founders": { "score": 100, "note": "Indian founders, actively leading company" },
+          "hqAndTeam": { "score": 80, "note": "HQ Chennai, major offices in US, Japan, Singapore" },
+          "dataSovereignty": { "score": 85, "note": "Indian DC available, some global routing" },
+          "revenueOrigin": { "score": 70, "note": "~40% India, 60% global revenue" }
+        }
+      }
+    },
+    "jio": {
+      "name": "Jio Platforms Limited",
+      "slug": "jio",
+      "hq": "Mumbai, India",
+      "incorporation": "India",
+      "founders": "Mukesh Ambani",
+      "foundersActive": true,
+      "swadeshiMeter": {
+        "score": 82,
+        "lastVerified": "2026-03-09",
+        "dataCompleteness": 7,
+        "factors": {
+          "shareholding": { "score": 75, "note": "Reliance ~67%, Meta ~10%, Google ~7.7%, foreign investors ~15%" },
+          "incorporation": { "score": 100, "note": "Incorporated in India" },
+          "boardControl": { "score": 90, "note": "Reliance controls board majority" },
+          "founders": { "score": 100, "note": "Indian-founded, Mukesh Ambani actively leads" },
+          "hqAndTeam": { "score": 95, "note": "HQ Mumbai, primarily Indian operations" },
+          "dataSovereignty": { "score": 80, "note": "Jio data centers in India" },
+          "revenueOrigin": { "score": 95, "note": "Primarily Indian market" }
+        }
+      }
+    },
+    "flipkart": {
+      "name": "Flipkart",
+      "slug": "flipkart",
+      "hq": "Bengaluru, India",
+      "incorporation": "Singapore (Flipkart Pvt Ltd)",
+      "founders": "Sachin Bansal, Binny Bansal",
+      "foundersActive": false,
+      "swadeshiMeter": {
+        "score": 22,
+        "lastVerified": "2026-03-09",
+        "dataCompleteness": 7,
+        "factors": {
+          "shareholding": { "score": 5, "note": "Walmart owns ~77%, founders exited" },
+          "incorporation": { "score": 20, "note": "Incorporated in Singapore" },
+          "boardControl": { "score": 10, "note": "Walmart controls board" },
+          "founders": { "score": 30, "note": "Indian founders, but no longer active" },
+          "hqAndTeam": { "score": 85, "note": "Engineering and operations in Bengaluru" },
+          "dataSovereignty": { "score": 50, "note": "Indian data, Walmart cloud infrastructure" },
+          "revenueOrigin": { "score": 95, "note": "Primarily Indian market" }
+        }
+      }
+    }
+  },
+  "meta": {
+    "weights": {
+      "shareholding": 0.35,
+      "incorporation": 0.20,
+      "boardControl": 0.15,
+      "founders": 0.10,
+      "hqAndTeam": 0.10,
+      "dataSovereignty": 0.05,
+      "revenueOrigin": 0.05
+    },
+    "version": "1.0.0",
+    "lastUpdated": "2026-03-09"
+  }
+}
