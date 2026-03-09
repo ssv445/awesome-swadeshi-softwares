@@ -380,6 +380,22 @@ function validateCompanies(categoriesDir: string): void {
         if (meter.dataCompleteness !== undefined && meter.dataCompleteness !== factorNames.length) {
           warnings.push({ file: prefix, field: 'swadeshiMeter.dataCompleteness', error: `dataCompleteness is ${meter.dataCompleteness} but found ${factorNames.length} factors` })
         }
+
+        // Cross-check stored score against computed weighted sum
+        const weights: Record<string, number> = {
+          shareholding: 0.35, incorporation: 0.20, boardControl: 0.15,
+          founders: 0.10, hqAndTeam: 0.10, dataSovereignty: 0.05, revenueOrigin: 0.05
+        }
+        let computedScore = 0
+        for (const [name, factor] of Object.entries(meter.factors) as [string, any][]) {
+          if (typeof factor.score === 'number' && weights[name]) {
+            computedScore += factor.score * weights[name]
+          }
+        }
+        computedScore = Math.round(computedScore)
+        if (typeof meter.score === 'number' && Math.abs(meter.score - computedScore) > 1) {
+          warnings.push({ file: prefix, field: 'swadeshiMeter.score', error: `Stored score ${meter.score} does not match computed weighted score ${computedScore}` })
+        }
       }
     }
   }
@@ -458,6 +474,24 @@ function validateAllData(): void {
       }
     }
 
+    // Validate companies.json and cross-validate companySlug references
+    validateCompanies(categoriesDir)
+
+    // Check for slug conflicts between categories and purposes
+    if (VALID_CATEGORIES.length > 0 && VALID_PURPOSES.length > 0) {
+      const conflicts = VALID_PURPOSES.filter((slug) => VALID_CATEGORIES.includes(slug))
+      if (conflicts.length > 0) {
+        console.log(`\n❌ Slug Conflicts:`)
+        console.log(`   The following slugs are used by both categories and purposes:`)
+        conflicts.forEach((slug) => {
+          console.log(`   - ${slug}`)
+        })
+        console.log(`\n   Purposes and categories must have unique slugs to avoid routing conflicts.\n`)
+        errors.push({ file: 'purpose-config.json', error: `Slug conflicts detected: ${conflicts.join(', ')}` })
+      }
+    }
+
+    // Print summary after all validations complete
     console.log(`\n📊 Validation Summary:`)
     console.log(`   Total files validated: ${totalFiles}`)
     console.log(`   Errors: ${errors.length}`)
@@ -479,23 +513,6 @@ function validateAllData(): void {
 
     if (errors.length === 0 && warnings.length === 0) {
       console.log(`\n✅ All data files are valid!\n`)
-    }
-
-    // Validate companies.json and cross-validate companySlug references
-    validateCompanies(categoriesDir)
-
-    // Check for slug conflicts between categories and purposes
-    if (VALID_CATEGORIES.length > 0 && VALID_PURPOSES.length > 0) {
-      const conflicts = VALID_PURPOSES.filter((slug) => VALID_CATEGORIES.includes(slug))
-      if (conflicts.length > 0) {
-        console.log(`\n❌ Slug Conflicts:`)
-        console.log(`   The following slugs are used by both categories and purposes:`)
-        conflicts.forEach((slug) => {
-          console.log(`   - ${slug}`)
-        })
-        console.log(`\n   Purposes and categories must have unique slugs to avoid routing conflicts.\n`)
-        errors.push({ file: 'purpose-config.json', error: `Slug conflicts detected: ${conflicts.join(', ')}` })
-      }
     }
 
     // Exit with error code if there are errors

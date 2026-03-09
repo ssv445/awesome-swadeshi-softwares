@@ -214,7 +214,12 @@ export function getAppBySlug(category: string, slug: string): Software | null {
     const fileContent = fs.readFileSync(filePath, 'utf8')
     const appData = JSON.parse(fileContent)
 
-    return appData
+    // Attach swadeshiMeter from company data if available
+    const companiesData = getCompaniesData()
+    const companySlug = appData.companySlug
+    const company = companySlug && companiesData?.companies[companySlug]
+
+    return { ...appData, ...(company ? { swadeshiMeter: company.swadeshiMeter } : {}) }
   } catch (error) {
     console.error(`Error reading app ${category}/${slug}:`, error)
     return null
