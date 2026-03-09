@@ -11,6 +11,7 @@
   ],
   "pricing": "Free",
   "company": "Zoho Corporation",
+  "companySlug": "zoho",
   "location": "Chennai",
   "faviconUrl": "https://www.zoho.com/invoice/images/zi-og-image.png",
   "opengraph": {
