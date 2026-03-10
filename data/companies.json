@@ -395,6 +395,72 @@
           "revenueOrigin": { "score": 85, "note": "~85-90% revenue from India via advertising and subscriptions. Some international from ZEE5 Global" }
         }
       }
+    },
+    "e2e-networks": {
+      "name": "E2E Networks",
+      "slug": "e2e-networks",
+      "hq": "New Delhi, India",
+      "incorporation": "India (2009, Delhi)",
+      "founders": "Tarun Dua, Srishti Baweja, Mohamed Imran, Karthik Reddy Bezawada, Manjit Rai Dua",
+      "foundersActive": true,
+      "swadeshiMeter": {
+        "score": 91,
+        "lastVerified": "2026-03-10",
+        "dataCompleteness": 7,
+        "factors": {
+          "shareholding": { "score": 80, "note": "Promoters (Tarun Dua & Srishti Baweja) ~40.3%. FII only 2.5%, DII 4.1%. No foreign strategic investor. L&T has strategic equity", "source": "NSE filings Sep 2025" },
+          "incorporation": { "score": 100, "note": "Incorporated in Delhi, India (2009). Listed on NSE SME" },
+          "boardControl": { "score": 95, "note": "All board members Indian. Tarun Dua (MD), Srishti Baweja (COO). Independent directors all Indian" },
+          "founders": { "score": 100, "note": "All founders Indian. Tarun Dua active as MD, Srishti Baweja as COO" },
+          "hqAndTeam": { "score": 95, "note": "HQ New Delhi. Data centers in Delhi, Mumbai, Bangalore, Chennai. Team India-based" },
+          "dataSovereignty": { "score": 100, "note": "All infrastructure in India. Data never leaves Indian jurisdiction" },
+          "revenueOrigin": { "score": 90, "note": "Primarily Indian startups, enterprises, govt (IndiaAI Mission ₹265 Cr orders)" }
+        }
+      }
+    },
+    "exotel": {
+      "name": "Exotel Techcom",
+      "slug": "exotel",
+      "hq": "Bengaluru, India",
+      "incorporation": "India (Karnataka, 2011)",
+      "founders": "Shivakumar Ganesan, Ishwar Sridharan, Siddharth Ramesh, Sachin Bhatia",
+      "foundersActive": true,
+      "swadeshiMeter": {
+        "score": 71,
+        "lastVerified": "2026-03-10",
+        "dataCompleteness": 7,
+        "factors": {
+          "shareholding": { "score": 45, "note": "Funds hold 46.73% (Steadview HK, A91 India, Sistema Russia). Founders 22.23%, ESOP 14.52%", "source": "Tracxn 2026" },
+          "incorporation": { "score": 95, "note": "Incorporated in India (Karnataka, 2011). Has Singapore and international offices" },
+          "boardControl": { "score": 75, "note": "6 directors: 3 founders + co-founder + 2 investor directors. Founders hold board majority" },
+          "founders": { "score": 95, "note": "All 4 founders Indian. CEO Shivakumar Ganesan remains active" },
+          "hqAndTeam": { "score": 85, "note": "HQ Bengaluru, ~579 employees primarily India-based. Offices in Singapore, UAE, US" },
+          "dataSovereignty": { "score": 70, "note": "Cloud telephony handling voice data. Indian telecom compliance for domestic ops" },
+          "revenueOrigin": { "score": 75, "note": "6000+ customers, majority Indian. Rs 507 Cr FY25 revenue. Expanding to SE Asia/Middle East" }
+        }
+      }
+    },
+    "instamojo": {
+      "name": "Instamojo Technologies",
+      "slug": "instamojo",
+      "hq": "Bangalore, India",
+      "incorporation": "India (subsidiary of foreign-incorporated parent — flip structure)",
+      "founders": "Sampad Swain, Akash Gehani, Aditya Sengupta, Harshad Sharma",
+      "foundersActive": true,
+      "swadeshiMeter": {
+        "score": 62,
+        "lastVerified": "2026-03-10",
+        "dataCompleteness": 7,
+        "factors": {
+          "shareholding": { "score": 35, "note": "Foreign parent holds 77.54% via flip structure. Key foreign investors: AnyPay (Japan), Gunosy (Japan), Mastercard (US). Kalaari (India) largest after founders", "source": "Tracxn, ZaubaCorp" },
+          "incorporation": { "score": 40, "note": "Indian entity (Mumbai) classified as subsidiary of foreign-incorporated parent. Typical VC flip structure" },
+          "boardControl": { "score": 90, "note": "Both directors are Indian co-founders: Sampad Swain (CEO) and Akash Gehani" },
+          "founders": { "score": 95, "note": "All 4 co-founders Indian. Two remain active as directors, Sampad Swain as CEO" },
+          "hqAndTeam": { "score": 95, "note": "HQ Bangalore, registered Mumbai. Team based in India" },
+          "dataSovereignty": { "score": 80, "note": "RBI-compliant payment data localization. Data stored in India per guidelines" },
+          "revenueOrigin": { "score": 95, "note": "Nearly 100% India-focused. Serves 1M+ Indian MSMEs" }
+        }
+      }
     }
   },
   "meta": {
