@@ -725,6 +725,72 @@
           "revenueOrigin": { "score": 75, "note": "INR 32.4Cr revenue FY2025 (48% YoY growth). Strong India presence with GST/e-invoicing features. Also 5000+ global customers in 150+ countries", "source": "https://tracxn.com/d/companies/frapp-technologies/__vmqtVtNvJFLenFFBK63X858jBKxytt4raSarKIjF8H8" }
         }
       }
+    },
+    "byjus": {
+      "name": "Think & Learn Pvt Ltd",
+      "slug": "byjus",
+      "hq": "Bengaluru, India",
+      "incorporation": "India (CIN: U80903KA2011PTC061427, Nov 2011, RoC Bangalore)",
+      "founders": "Byju Raveendran, Divya Gokulnath",
+      "foundersActive": false,
+      "swadeshiMeter": {
+        "score": 48,
+        "lastVerified": "2026-03-10",
+        "dataCompleteness": 6,
+        "factors": {
+          "shareholding": { "score": 25, "note": "~70% owned by foreign funds (Tiger Global, Tencent, General Atlantic, QIA, Sofina, CPP Investments). Founder held ~19% pre-insolvency. Under CIRP with CoC dominated by Glas Trust (US, 99.41% voting share, owed Rs 11,000 Cr)", "source": "https://tracxn.com/d/companies/byjus/__l-UnVupvS_w3V4YkX2Ybg0GZinK5n5EeyxDd_1v-olI/latest-shareholding" },
+          "incorporation": { "score": 85, "note": "Incorporated in India (Karnataka, Nov 2011). Multiple overseas subsidiaries (Epic, Osmo) under separate US bankruptcy. Primary incorporation Indian", "source": "https://www.zaubacorp.com/THINK-AND-LEARN-PRIVATE-LIMITED-U80903KA2011PTC061427" },
+          "boardControl": { "score": 20, "note": "Board suspended since July 2024 under NCLT insolvency. CoC dominated by Glas Trust (US) with 99.41% voting share. RP has sued former directors for alleged asset diversion", "source": "https://www.business-standard.com/industry/news/supreme-court-paves-way-for-insolvency-against-byju-s-to-continue-125112800948_1.html" },
+          "founders": { "score": 70, "note": "Indian nationals (Kerala) but Raveendran relocated to Dubai. US court issued $1.07B default judgment. Directorship suspended under insolvency. No longer operationally active", "source": "https://restofworld.org/2025/who-is-byjus-founder-byju-raveendran-indian-app/" },
+          "hqAndTeam": { "score": 70, "note": "HQ Bengaluru. Massive layoffs reduced workforce from ~50,000 peak to ~15,000-25,000. Operations severely curtailed under insolvency", "source": "https://en.wikipedia.org/wiki/Byju's" },
+          "dataSovereignty": { "score": 40, "note": "AWS cloud (not exclusively India-based). Multiple data breaches (2020-2023). No India-only data residency commitment found", "source": "https://techcrunch.com/2023/08/25/byjus-student-data-exposed/" },
+          "revenueOrigin": { "score": 65, "note": "Majority from India (core app + Aakash ~Rs 3,000 Cr). International ops underperformed, US subsidiaries sold in bankruptcy. ~60-70% India-originated pre-crisis", "source": "https://en.wikipedia.org/wiki/Byju's" }
+        }
+      }
+    },
+    "entertainment-network-india-ltd": {
+      "name": "Entertainment Network India Ltd",
+      "slug": "entertainment-network-india-ltd",
+      "hq": "Mumbai, India",
+      "incorporation": "India (CIN: L92140MH1999PLC120516, June 1999, Maharashtra)",
+      "founders": "Times Group (Bennett Coleman & Co. Ltd)",
+      "foundersActive": true,
+      "swadeshiMeter": {
+        "score": 93,
+        "lastVerified": "2026-03-10",
+        "dataCompleteness": 6,
+        "factors": {
+          "shareholding": { "score": 92, "note": "Promoter holding 71.15% by Bennett Coleman (Times Group), which is 86.17% owned by Jain family. FPI ~6.27%, domestic institutions ~3.34%. Effective Indian ownership >90%", "source": "https://trendlyne.com/equity/share-holding/381/ENIL/latest/entertainment-network-india-ltd/" },
+          "incorporation": { "score": 100, "note": "Public Limited Company incorporated in Maharashtra, India on June 24, 1999. Parent Bennett Coleman also Indian-incorporated", "source": "https://www.thecompanycheck.com/company/entertainment-network-india-limited/L92140MH1999PLC120516" },
+          "boardControl": { "score": 95, "note": "Board chaired by Vineet Jain (Times Group). All board members Indian nationals — CEO Yatish Mehrishi, independent and non-executive directors all Indian", "source": "https://www.marketscreener.com/quote/stock/ENTERTAINMENT-NETWORK-IND-9743547/company/" },
+          "founders": { "score": 90, "note": "Gaana founded 2010 by Avinash Mudaliar and Jai Thade (Indian) under Times Internet. Founders no longer active; ENIL management runs operations now", "source": "https://medium.com/@jaimankrish/why-gaana-once-indias-largest-music-streaming-app-disappeared-b6899f45b989" },
+          "hqAndTeam": { "score": 95, "note": "HQ Matulya Centre, Lower Parel, Mumbai. Radio Mirchi in 63 Indian cities. Gaana dev team historically in Noida (Times Internet campus)", "source": "https://www.goodreturns.in/company/entertainment-network-india/profile.html" },
+          "dataSovereignty": { "score": 75, "note": "No explicit server location disclosure. As Times Group property, likely Indian DCs. DPDP Act 2023 compliant. Reduced score due to lack of confirmation", "source": "https://gaana.com/" },
+          "revenueOrigin": { "score": 95, "note": "Gaana operates exclusively in Indian market. ENIL domestic revenue Rs 109.4 Cr Q1 FY25. Radio Mirchi 63 stations all in India. Near-100% Indian revenue", "source": "https://www.corporateind.com/2024/september/first-issue/double-digit-revenue-growth-as-new-gaana-app-boosts-revenues" }
+        }
+      }
+    },
+    "tech4billion-media": {
+      "name": "Tech4billion Media",
+      "slug": "tech4billion-media",
+      "hq": "Bengaluru, India",
+      "incorporation": "India (CIN: U72900KA2020PTC135658, July 2020, Karnataka)",
+      "founders": "Sumit Ghosh, Biswatma Nayak, Deepak Salvi, Aditya Kothari",
+      "foundersActive": true,
+      "swadeshiMeter": {
+        "score": 79,
+        "lastVerified": "2026-03-10",
+        "dataCompleteness": 5,
+        "factors": {
+          "shareholding": { "score": 55, "note": "Founders hold ~46%. Significant foreign crypto/VC investors: Republic Crypto (US), Galaxy Digital (US), Alameda Research (US/defunct). Indian investors include OnMobile, JPIN Venture Catalysts. Total $61.6M raised", "source": "https://tracxn.com/d/legal-entities/india/tech4billion-media-private-limited/__baAeW18dZm1Xf0U1lwAJpsMxGL0N-2W93ChvMg_id8I" },
+          "incorporation": { "score": 100, "note": "Incorporated in Karnataka, India on July 7, 2020. Indian Companies Act registered", "source": "https://www.zaubacorp.com/company/TECH4BILLION-MEDIA-PRIVATE-LIMITED/U72900KA2020PTC135658" },
+          "boardControl": { "score": 90, "note": "Board: Sumit Ghosh, Deepak Salvi, Biswatma Nayak — all Indian co-founders. No foreign nominee directors. One co-founder (Kothari) departed May 2023", "source": "https://www.zaubacorp.com/company/TECH4BILLION-MEDIA-PRIVATE-LIMITED/U72900KA2020PTC135658" },
+          "founders": { "score": 100, "note": "All four co-founders Indian nationals. CEO Sumit Ghosh publicly pledged not to accept Chinese investment", "source": "https://www.cnbc.com/2020/07/09/chingari-sumit-ghosh-says-his-firm-will-not-accept-chinese-investments.html" },
+          "hqAndTeam": { "score": 85, "note": "HQ Bengaluru (HSR Layout/Koramangala). ~68 employees as of April 2025, majority in India. Some distributed remote across continents", "source": "https://craft.co/chingari/locations" },
+          "dataSovereignty": { "score": 60, "note": "Privacy policy under Indian law, Bangalore jurisdiction. However, GARI token on Solana blockchain means some data globally distributed. No explicit India-only storage commitment", "source": "https://chingari.io/privacy-policy" },
+          "revenueOrigin": { "score": 85, "note": "185M+ downloads predominantly Indian users. FY24 revenue INR 93 Cr from in-app purchases, gifting, streaming. India Top 10 grossing social app. Some global crypto revenue via GARI", "source": "https://www.indiahood.com/chingari-revenue-plummets-53-in-fy25-after-pivot-from-short-videos-to-paid-private-live-streaming/" }
+        }
+      }
     }
   },
   "meta": {
