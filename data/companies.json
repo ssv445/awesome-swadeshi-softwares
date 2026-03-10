@@ -263,6 +263,72 @@
           "revenueOrigin": { "score": 90, "note": "Vast majority from India — Indian digital maps, govt contracts, automotive OEMs" }
         }
       }
+    },
+    "freshworks": {
+      "name": "Freshworks Inc",
+      "slug": "freshworks",
+      "hq": "San Mateo, California, USA",
+      "incorporation": "Delaware, USA",
+      "founders": "Girish Mathrubootham",
+      "foundersActive": false,
+      "swadeshiMeter": {
+        "score": 20,
+        "lastVerified": "2026-03-10",
+        "dataCompleteness": 7,
+        "factors": {
+          "shareholding": { "score": 15, "note": "~57% foreign institutional (Accel ~11%, Tiger Global ~14%, CapitalG ~8.1%). Founder holds ~4.28%", "source": "SEC filings 2025" },
+          "incorporation": { "score": 5, "note": "Incorporated in Delaware, USA (2010). Listed on NASDAQ (FRSH)" },
+          "boardControl": { "score": 15, "note": "Founder stepped down Dec 2025. Roxanne Austin (American) is Chair. CEO Dennis Woodside is American. Board predominantly non-Indian" },
+          "founders": { "score": 30, "note": "Founded by Girish Mathrubootham (Indian) in Chennai. Stepped down Dec 2025, no longer active" },
+          "hqAndTeam": { "score": 55, "note": "HQ San Mateo, CA. ~3,800 of ~4,500 employees in India (Chennai, Bangalore, Hyderabad)" },
+          "dataSovereignty": { "score": 50, "note": "Data centers in US, EU, India (Mumbai), Australia. India option available but not default" },
+          "revenueOrigin": { "score": 10, "note": "Revenue $838.8M: North America 46%, EMEA 39%, APAC 12%. India is small fraction" }
+        }
+      }
+    },
+    "snapdeal": {
+      "name": "Snapdeal Limited",
+      "slug": "snapdeal",
+      "hq": "New Delhi, India",
+      "incorporation": "India",
+      "founders": "Kunal Bahl, Rohit Bansal",
+      "foundersActive": true,
+      "swadeshiMeter": {
+        "score": 74,
+        "lastVerified": "2026-03-10",
+        "dataCompleteness": 7,
+        "factors": {
+          "shareholding": { "score": 40, "note": "Founders ~34.63%, SoftBank ~30.68%, eBay ~4.92%, Foxconn ~4.38%, Nexus ~8.2%. Foreign investors collectively >50%", "source": "AceVector DRHP Dec 2025" },
+          "incorporation": { "score": 100, "note": "Incorporated in India (Delhi). Parent entity AceVector Limited" },
+          "boardControl": { "score": 80, "note": "Founders are joint MDs. Independent directors (Kamath, Khara, Chahal) are Indian. Board appears Indian-controlled" },
+          "founders": { "score": 95, "note": "Indian co-founders Kunal Bahl and Rohit Bansal active as joint MDs" },
+          "hqAndTeam": { "score": 95, "note": "HQ New Delhi, offices in Gurgaon, Bangalore, Mumbai. Entire team India-based" },
+          "dataSovereignty": { "score": 75, "note": "India-focused marketplace. Domestic data hosting likely given India-only operations" },
+          "revenueOrigin": { "score": 95, "note": "Almost entirely India-focused. FY24 revenue Rs 379.76 Cr, all from India" }
+        }
+      }
+    },
+    "bookmyshow": {
+      "name": "Bigtree Entertainment (BookMyShow)",
+      "slug": "bookmyshow",
+      "hq": "Mumbai, India",
+      "incorporation": "India (Mumbai, 1999)",
+      "founders": "Ashish Hemrajani, Parikshit Dar, Rajesh Balpande",
+      "foundersActive": true,
+      "swadeshiMeter": {
+        "score": 76,
+        "lastVerified": "2026-03-10",
+        "dataCompleteness": 7,
+        "factors": {
+          "shareholding": { "score": 60, "note": "Founders ~23%; Reliance/Network18 (Indian) ~39% as largest shareholder; foreign VCs (TPG, Accel, Stripes) ~38%", "source": "ICRA Dec 2024, Tracxn" },
+          "incorporation": { "score": 100, "note": "Incorporated as Big Tree Entertainment Pvt Ltd in Mumbai, 1999" },
+          "boardControl": { "score": 55, "note": "10 directors: 3 founders + Reliance nominee = ~5 Indian-aligned of 10. Foreign investor nominees significant" },
+          "founders": { "score": 95, "note": "All 3 co-founders active: Ashish Hemrajani (CEO), Parikshit Dar, Rajesh Balpande" },
+          "hqAndTeam": { "score": 95, "note": "HQ Mumbai, ~608 employees primarily India-based. Small offices in UAE, Indonesia, Sri Lanka" },
+          "dataSovereignty": { "score": 60, "note": "Hosted on AWS cloud, likely Mumbai region. US-owned cloud infrastructure" },
+          "revenueOrigin": { "score": 90, "note": "Vast majority of Rs 1,870 Cr (FY25) from India. Minor international operations" }
+        }
+      }
     }
   },
   "meta": {
