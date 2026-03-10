@@ -329,6 +329,72 @@
           "revenueOrigin": { "score": 90, "note": "Vast majority of Rs 1,870 Cr (FY25) from India. Minor international operations" }
         }
       }
+    },
+    "pine-labs": {
+      "name": "Pine Labs",
+      "slug": "pine-labs",
+      "hq": "Noida, India",
+      "incorporation": "India (reverse-flipped from Singapore 2024-25)",
+      "founders": "Lokvir Kapoor, Rajul Garg, Tarun Upaday",
+      "foundersActive": true,
+      "swadeshiMeter": {
+        "score": 63,
+        "lastVerified": "2026-03-10",
+        "dataCompleteness": 7,
+        "factors": {
+          "shareholding": { "score": 35, "note": "No promoter. ~66% held by funds: Peak XV 20.35%, Temasek 7.10%, PayPal 6%, Actis 5.78%, Mastercard 5.24%. Founder holds 1.97%", "source": "Pine Labs DRHP Jun 2025" },
+          "incorporation": { "score": 75, "note": "Originally Singapore (2013). Reverse-flipped to India 2024-25. Listed on NSE/BSE Nov 2025" },
+          "boardControl": { "score": 75, "note": "Predominantly Indian board: Amrish Rau (MD/Chairman), Lokvir Kapoor, 3 Indian independent directors" },
+          "founders": { "score": 85, "note": "Indian founders. Lokvir Kapoor active as Executive Chairman. CEO Amrish Rau (Indian) as MD" },
+          "hqAndTeam": { "score": 80, "note": "HQ Noida. ~4,000-5,000 employees, bulk in India. Offices in 17 locations globally" },
+          "dataSovereignty": { "score": 65, "note": "550M+ transactions/year, subject to RBI data localization. International ops in 20 markets" },
+          "revenueOrigin": { "score": 85, "note": "~83-85% revenue from India. International markets contribute ~15-17%" }
+        }
+      }
+    },
+    "hoppscotch": {
+      "name": "Hoppscotch",
+      "slug": "hoppscotch",
+      "hq": "Thrissur, Kerala, India",
+      "incorporation": "India (Kerala, 2021)",
+      "founders": "Liyas Thomas, Andrew Bastin",
+      "foundersActive": true,
+      "swadeshiMeter": {
+        "score": 76,
+        "lastVerified": "2026-03-10",
+        "dataCompleteness": 7,
+        "factors": {
+          "shareholding": { "score": 80, "note": "Founders retain ~85-90% after $3M seed at $30M valuation from OSS Capital and Automattic", "source": "Crunchbase, Tracxn" },
+          "incorporation": { "score": 65, "note": "Indian entity (Hoppscotch India Pvt Ltd, Kerala). Likely dual US-India structure for VC" },
+          "boardControl": { "score": 75, "note": "3-member board: 2 Indian founders + 1 US investor (Joseph Jacks, OSS Capital)" },
+          "founders": { "score": 100, "note": "Both founders Indian (Kerala). Liyas Thomas (CEO), Andrew Bastin (CTO), both active" },
+          "hqAndTeam": { "score": 90, "note": "HQ Thrissur/Kochi, Kerala. 18-person team primarily in India" },
+          "dataSovereignty": { "score": 60, "note": "Open source (MIT), self-hostable. Cloud version on global infrastructure" },
+          "revenueOrigin": { "score": 30, "note": "$2M annual revenue from global developer customer base. Predominantly international" }
+        }
+      }
+    },
+    "zee-entertainment": {
+      "name": "Zee Entertainment Enterprises",
+      "slug": "zee-entertainment",
+      "hq": "Mumbai, India",
+      "incorporation": "India (1982)",
+      "founders": "Subhash Chandra",
+      "foundersActive": true,
+      "swadeshiMeter": {
+        "score": 71,
+        "lastVerified": "2026-03-10",
+        "dataCompleteness": 7,
+        "factors": {
+          "shareholding": { "score": 45, "note": "Promoter (Essel/Subhash Chandra) ~3.99%. FII ~32%, DII ~27%, public ~37%. No foreign controlling block but very low promoter", "source": "BSE/NSE filings" },
+          "incorporation": { "score": 100, "note": "Incorporated in India 1982. Listed on BSE and NSE" },
+          "boardControl": { "score": 80, "note": "Indian-majority board. Punit Goenka as MD/CEO. Reconstituted post-Sony merger collapse" },
+          "founders": { "score": 55, "note": "Founded by Subhash Chandra. Son Punit Goenka is MD/CEO. Promoter shareholding drastically reduced to ~3.99%" },
+          "hqAndTeam": { "score": 90, "note": "HQ Mumbai. Predominantly Indian workforce across content, tech, and operations" },
+          "dataSovereignty": { "score": 85, "note": "ZEE5 platform hosted in India. User data subject to Indian regulations. Some CDN abroad" },
+          "revenueOrigin": { "score": 85, "note": "~85-90% revenue from India via advertising and subscriptions. Some international from ZEE5 Global" }
+        }
+      }
     }
   },
   "meta": {
