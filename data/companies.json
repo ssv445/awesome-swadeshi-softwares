@@ -131,6 +131,72 @@
           "revenueOrigin": { "score": 95, "note": "Almost entirely Indian user base and ad revenue" }
         }
       }
+    },
+    "meesho": {
+      "name": "Meesho",
+      "slug": "meesho",
+      "hq": "Bengaluru, India",
+      "incorporation": "India (reverse flip from Delaware completed May 2025)",
+      "founders": "Vidit Aatrey, Sanjeev Barnwal",
+      "foundersActive": true,
+      "swadeshiMeter": {
+        "score": 71,
+        "lastVerified": "2026-03-10",
+        "dataCompleteness": 7,
+        "factors": {
+          "shareholding": { "score": 40, "note": "Foreign VCs hold majority: Elevation 14.49%, Peak XV 13.64%, Prosus 13.14%, SoftBank 9.91%, Fidelity 6.38%. Founders ~16.4%", "source": "Meesho DRHP Oct 2025, Inc42" },
+          "incorporation": { "score": 85, "note": "Now incorporated in India (Karnataka). Originally Delaware, completed reverse flip May 2025 via NCLT" },
+          "boardControl": { "score": 85, "note": "8-member board, all Indian. Chairman/CEO Vidit Aatrey. 4 independent Indian directors. 2 Indian-origin investor nominees" },
+          "founders": { "score": 95, "note": "Both founders Indian (IIT Delhi). Vidit Aatrey active as CEO, Sanjeev Barnwal as CTO" },
+          "hqAndTeam": { "score": 95, "note": "HQ Bengaluru, 10,300+ employees all India-based" },
+          "dataSovereignty": { "score": 55, "note": "Runs on Google Cloud Platform; GCP has India regions (Mumbai, Delhi) likely used. No public India-only data policy" },
+          "revenueOrigin": { "score": 100, "note": "100% Indian market, INR 9,389 Cr revenue FY25, 1.83B orders" }
+        }
+      }
+    },
+    "browserstack": {
+      "name": "BrowserStack Inc",
+      "slug": "browserstack",
+      "hq": "Mumbai, India",
+      "incorporation": "Ireland (redomiciling to India, initiated 2025)",
+      "founders": "Ritesh Arora, Nakul Aggarwal",
+      "foundersActive": true,
+      "swadeshiMeter": {
+        "score": 70,
+        "lastVerified": "2026-03-10",
+        "dataCompleteness": 7,
+        "factors": {
+          "shareholding": { "score": 80, "note": "Founders retain ~78.5% ownership. Foreign VCs (Accel, Insight Partners, Bond Capital) ~11%. ESOP ~10%", "source": "Tracxn, Inc42 2025" },
+          "incorporation": { "score": 35, "note": "Holding entity in Ireland. Indian subsidiary (BrowserStack Software Pvt Ltd) in Mumbai. Redomiciling to India initiated 2025" },
+          "boardControl": { "score": 95, "note": "Board comprises both Indian co-founders only. No foreign board members" },
+          "founders": { "score": 100, "note": "Both founders Indian (IIT Bombay). Ritesh Arora as CEO, Nakul Aggarwal as CTO" },
+          "hqAndTeam": { "score": 80, "note": "HQ Mumbai, majority of ~1,385 employees in India. Offices also in San Francisco and Dublin" },
+          "dataSovereignty": { "score": 30, "note": "19 data centers across 13 global locations. Data distributed globally, not India-first" },
+          "revenueOrigin": { "score": 15, "note": "Bulk of $381M+ revenue from US and Europe. India is small fraction" }
+        }
+      }
+    },
+    "tata-digital": {
+      "name": "Tata Digital (BigBasket)",
+      "slug": "tata-digital",
+      "hq": "Bengaluru, India",
+      "incorporation": "India",
+      "founders": "Hari Menon, Vipul Parekh, VS Sudhakar, Abhinay Choudhari, VS Ramesh",
+      "foundersActive": true,
+      "swadeshiMeter": {
+        "score": 89,
+        "lastVerified": "2026-03-10",
+        "dataCompleteness": 7,
+        "factors": {
+          "shareholding": { "score": 80, "note": "Tata Digital (100% Tata Sons) holds ~56% of BigBasket. Tata Sons ~66% Indian charitable trusts + ~18% Shapoorji Pallonji", "source": "Tracxn 2025, Statista 2024" },
+          "incorporation": { "score": 100, "note": "Tata Digital Ltd (Mumbai) and BigBasket (Supermarket Grocery Supplies Pvt Ltd) both incorporated in India" },
+          "boardControl": { "score": 95, "note": "Tata Group controls board. Sajith Sivanandan (Tata Digital CEO) chairs BigBasket board. All Indian directors" },
+          "founders": { "score": 85, "note": "All 5 founders Indian. Hari Menon (CEO), Vipul Parekh (CMO), Ramesh still active. 2 departed" },
+          "hqAndTeam": { "score": 95, "note": "HQ Bengaluru, all operations, warehouses, and engineering in India" },
+          "dataSovereignty": { "score": 75, "note": "Tata Group infrastructure in India plus cloud providers for scale" },
+          "revenueOrigin": { "score": 100, "note": "100% Indian market — online grocery delivery serving Indian cities only" }
+        }
+      }
     }
   },
   "meta": {
