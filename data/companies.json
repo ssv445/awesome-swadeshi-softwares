@@ -659,6 +659,72 @@
           "revenueOrigin": { "score": 90, "note": "Primarily Indian customers — individuals, MSMEs, BFSI, government. Launched by NITI Aayog" }
         }
       }
+    },
+    "webengage": {
+      "name": "WebEngage",
+      "slug": "webengage",
+      "hq": "Mumbai, Maharashtra, India",
+      "incorporation": "India (Webklipper Technologies Pvt Ltd, CIN: U72900MH2010PTC208940, Oct 2010, ROC Mumbai)",
+      "founders": "Avlesh Singh, Ankit Kumar Utreja",
+      "foundersActive": true,
+      "swadeshiMeter": {
+        "score": 76,
+        "lastVerified": "2026-03-10",
+        "dataCompleteness": 7,
+        "factors": {
+          "shareholding": { "score": 55, "note": "Founders hold ~24.91%. Institutional funds hold ~54.15% (mix of Indian VCs like India Quotient, Blume Ventures and foreign investors like SWC Global). Total $32.7M raised from 44 investors", "source": "https://tracxn.com/d/legal-entities/india/webklipper-technologies-private-limited/__VI0wm_AbBwLn_602ffbzk8jlu_zHYd0un7Jf8T5Lj3Y" },
+          "incorporation": { "score": 95, "note": "Incorporated in India as Webklipper Technologies Pvt Ltd on Oct 13, 2010. ROC Mumbai. Authorized capital Rs. 23.37 Cr", "source": "https://www.zaubacorp.com/company/Webklipper-Technologies-Private-Limited/U72900MH2010PTC208940" },
+          "boardControl": { "score": 90, "note": "4 board members all Indian: founders Avlesh Singh & Ankit Utreja, Rajan Anandan (ex-Google India), Harish Mehta", "source": "https://tracxn.com/d/companies/webengage/__6scJsHC6DjVpqofJUKBzKeWp8Flj2c-QWMkCUdLAw4U/founders-and-board-of-directors" },
+          "founders": { "score": 95, "note": "Both Indian co-founders active: Avlesh Singh (CEO) and Ankit Kumar Utreja (CTO). Founded 2011", "source": "https://www.impactonnet.com/impact-stories/in-2026-martech-will-shift-from-advantage-to-absolute-necessity-13140.html" },
+          "hqAndTeam": { "score": 85, "note": "HQ Mumbai, offices in Gurugram and Bengaluru. ~400 employees, majority in India. International offices in Dubai, Sao Paulo, Jakarta", "source": "https://www.highperformr.ai/company/webengage" },
+          "dataSovereignty": { "score": 55, "note": "Default data storage in US. India data center available on request. ISO 27001, SOC 2, GDPR, DPDP Act compliant", "source": "https://webengage.com/customer-data-platform/data-security/" },
+          "revenueOrigin": { "score": 75, "note": "India primary market with 800+ brands. Revenue Rs. 160 Cr (FY2025). Expanding to Middle East, SEA, LATAM across 35+ countries", "source": "https://blume.vc/commentaries/heres-to-the-crazy-ones-webengages-unconventional-path-to-glory" }
+        }
+      }
+    },
+    "moengage": {
+      "name": "MoEngage",
+      "slug": "moengage",
+      "hq": "San Francisco, USA / Bengaluru, India",
+      "incorporation": "Delaware, USA (reverse-merging into India entity, NCLT approved Jan 2026)",
+      "founders": "Raviteja Dodda, Yashwanth Kumar",
+      "foundersActive": true,
+      "swadeshiMeter": {
+        "score": 61,
+        "lastVerified": "2026-03-10",
+        "dataCompleteness": 7,
+        "factors": {
+          "shareholding": { "score": 40, "note": "Founders diluted after $299M raised. Major foreign VCs: Goldman Sachs, B Capital, ChrysCapital, Schroders. Indian investor A91 Partners. Post-money ~$900M valuation", "source": "https://techcrunch.com/2025/12/16/weeks-after-raising-100m-investors-pump-another-180m-into-hot-indian-startup-moengage/" },
+          "incorporation": { "score": 75, "note": "Originally Delaware. NCLT Bengaluru approved reverse merger into MoEngage India Pvt Ltd (CIN U72200KA2014FTC077020) on 12 Jan 2026", "source": "https://inc42.com/buzz/ipo-bound-moengage-gets-nclt-nod-for-reverse-merger/" },
+          "boardControl": { "score": 55, "note": "7-member board with co-founders as directors. Remaining seats include investor nominees from Goldman Sachs, B Capital after $299M funding", "source": "https://tracxn.com/d/companies/moengage/__f0AUVzjIGDyQTpYj-3PnPbSwj7j-b7D7KHSU8LBXyTc/founders-and-board-of-directors" },
+          "founders": { "score": 100, "note": "Both Indian founders (IIT Kharagpur). Raviteja Dodda (CEO) and Yashwanth Kumar (CTO/CISO) actively leading since 2014", "source": "https://www.iitkgpalumnifoundation.in/newsroom/news/Story-of-MoEngage-founded-by-KGPians-Raviteja-DoddaBTechCSE2006-10-and-Yashwanth-KumarBTech-CSE2006-10.dz" },
+          "hqAndTeam": { "score": 75, "note": "Legal HQ San Francisco; primary engineering in Bengaluru Koramangala. ~800-900 employees, majority in India. Re-domiciling to India for IPO", "source": "https://leadiq.com/c/moengage/5a1d98f923000052008791a9" },
+          "dataSovereignty": { "score": 80, "note": "Dedicated India data center (DC-03) with data residency option. Also US, EU, Indonesia DCs. ISO 27001, SOC 2 Type 2, GDPR, HIPAA compliant", "source": "https://help.moengage.com/hc/en-us/articles/360057030512-Data-Centers-in-MoEngage" },
+          "revenueOrigin": { "score": 40, "note": "Total revenue ~$107M (2024). Serves 75 countries. Significant portion from global markets (US, EU, SEA)", "source": "https://getlatka.com/companies/moengage" }
+        }
+      }
+    },
+    "frappe": {
+      "name": "Frappe Technologies",
+      "slug": "frappe",
+      "hq": "Mumbai, Maharashtra, India",
+      "incorporation": "India (CIN: U72300MH2008PTC184937, incorporated 2008-07-22, ROC Mumbai)",
+      "founders": "Rushabh Mehta, Umair Sayed",
+      "foundersActive": true,
+      "swadeshiMeter": {
+        "score": 96,
+        "lastVerified": "2026-03-10",
+        "dataCompleteness": 7,
+        "factors": {
+          "shareholding": { "score": 95, "note": "Founders hold ~48.39% each. Only external investor is Zerodha/Rainmatter (Indian) with $1.35M seed. No foreign shareholders", "source": "https://tracxn.com/d/legal-entities/india/frappe-technologies-private-limited/__Nr5DSNvW3_KqBZhJdYl-hPq5PFrbz0nC0L4OEllYtII" },
+          "incorporation": { "score": 100, "note": "Frappe Technologies Pvt Ltd, incorporated 22 Jul 2008 in Maharashtra. Indian Non-Government Company", "source": "https://www.zaubacorp.com/company/FRAPPE-TECHNOLOGIES-PRIVATE-LIMITED/U72300MH2008PTC184937" },
+          "boardControl": { "score": 100, "note": "Two Indian directors: Rushabh Amit Mehta (Founder/CEO) and Amit Jayantilal Mehta. No foreign board seats", "source": "https://www.tofler.in/frappe-technologies-private-limited/company/U72300MH2008PTC184937" },
+          "founders": { "score": 100, "note": "Co-founded by Rushabh Mehta (Mumbai) and Umair Sayed, both Indian. Rushabh active as CEO", "source": "https://frappe.io/about/rushabh-mehta" },
+          "hqAndTeam": { "score": 95, "note": "HQ Neelkanth Business Park, Vidyavihar West, Mumbai. 50-80 employees primarily in India", "source": "https://frappe.io/about" },
+          "dataSovereignty": { "score": 85, "note": "Open source (AGPL-3.0), fully self-hostable. Frappe Cloud offers Mumbai region via AWS. Data sovereignty via self-hosting", "source": "https://frappecloud.com/" },
+          "revenueOrigin": { "score": 75, "note": "INR 32.4Cr revenue FY2025 (48% YoY growth). Strong India presence with GST/e-invoicing features. Also 5000+ global customers in 150+ countries", "source": "https://tracxn.com/d/companies/frapp-technologies/__vmqtVtNvJFLenFFBK63X858jBKxytt4raSarKIjF8H8" }
+        }
+      }
     }
   },
   "meta": {
