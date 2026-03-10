@@ -13,6 +13,7 @@
   ],
   "pricing": "Free",
   "company": "ProfitBooks",
+  "companySlug": "profitbooks",
   "location": "India",
   "opengraph": {
     "last_updated": "2025-10-05T10:36:40.962Z",

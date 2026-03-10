@@ -923,6 +923,72 @@
           "revenueOrigin": { "score": 98, "note": "Not-for-profit. UPI processed 228.3B transactions worth Rs 300 lakh crore in 2025. Operations overwhelmingly India-domestic. International UPI linkages are negligible fraction", "source": "https://www.npci.org.in/product/upi/product-statistics" }
         }
       }
+    },
+    "amagi-media-labs": {
+      "name": "Amagi Media Labs",
+      "slug": "amagi-media-labs",
+      "hq": "Bengaluru, Karnataka, India",
+      "incorporation": "India (CIN: U73100KA2008PLC045144, Feb 2008, Karnataka. Listed BSE/NSE Jan 2026)",
+      "founders": "Baskar Subramanian, Srividhya Srinivasan, KA Srinivasan",
+      "foundersActive": true,
+      "swadeshiMeter": {
+        "score": 64,
+        "lastVerified": "2026-03-10",
+        "dataCompleteness": 7,
+        "factors": {
+          "shareholding": { "score": 40, "note": "Promoters (3 Indian co-founders) hold ~14.14% post-IPO. Largest shareholders are Mauritius-domiciled funds: Premji Invest (26.6%), Accel India Mauritius (15.6%), Norwest Mauritius (14.2%). Post-IPO anchors include SBI MF, ICICI Pru MF. Indian ownership ~40-50%", "source": "https://inc42.com/buzz/amagi-shareholding-a-look-at-the-shareholding-pattern-top-leaders/" },
+          "incorporation": { "score": 95, "note": "Incorporated Feb 2008 in Bengaluru as Amagi Technologies Pvt Ltd. Converted to public May 2025, listed BSE/NSE Jan 2026. Overseas subsidiaries in Singapore and UK", "source": "https://www.zaubacorp.com/AMAGI-MEDIA-LABS-PRIVATE-LIMITED-U73100KA2008PTC045144" },
+          "boardControl": { "score": 70, "note": "Indian nationals hold majority: CEO Baskar Subramanian, KA Srinivasan (promoters), Chairman Giridhar Sanjeevi. Two nominee directors represent Mauritius-domiciled investor funds", "source": "https://www.amagi.com/investors/board-of-directors" },
+          "founders": { "score": 100, "note": "All 3 co-founders Indian from Govt College of Technology, Coimbatore. Previously co-founded Impulsesoft. All active as promoters", "source": "https://yourstory.com/2020/09/iit-dropout-mediatech-startup-entrepreneur-baskar-subramanian-amagi" },
+          "hqAndTeam": { "score": 80, "note": "HQ Bannerghatta Road, Bengaluru. 850+ employees. R&D and operations in Bangalore. Sales offices in NYC, LA, London, Hong Kong", "source": "https://www.amagi.com/contact" },
+          "dataSovereignty": { "score": 30, "note": "Infrastructure on AWS (committed Rs 2,304 Cr over 6 yrs). Serves US/EU media companies, data likely processed in those regions. No India-first data residency", "source": "https://thedailybrief.zerodha.com/p/inside-amagi-media-labs-ipo" },
+          "revenueOrigin": { "score": 10, "note": "FY25 revenue Rs 1,163 Cr: Americas 72.86%, Europe 17.34%, India only Rs 16 Cr (~1.4%). Export-oriented SaaS for global media", "source": "https://entrackr.com/fintrackr/amagi-scales-past-rs-1100-cr-revenue-in-fy25-narrows-losses-by-over-70-9540253" }
+        }
+      }
+    },
+    "profitbooks": {
+      "name": "ProfitBooks",
+      "slug": "profitbooks",
+      "hq": "Pune, Maharashtra, India",
+      "incorporation": "India (CIN: U72300PN2013PTC149408, Nov 2013, ROC Pune)",
+      "founders": "Harshal Katre, Mohnish Katre",
+      "foundersActive": true,
+      "swadeshiMeter": {
+        "score": 85,
+        "lastVerified": "2026-03-10",
+        "dataCompleteness": 6,
+        "factors": {
+          "shareholding": { "score": 80, "note": "Indian private company, founders Harshal & Mohnish Katre likely retain majority. One foreign investor: Village Capital (US accelerator). Exact split undisclosed. Bootstrapped to $2.9M revenue", "source": "https://www.zaubacorp.com/company/ProfitBooks-Solutions-Private-Limited/U72300PN2013PTC149408" },
+          "incorporation": { "score": 95, "note": "Incorporated Nov 12, 2013 in Pune, Maharashtra. Non-government private limited company. Active status", "source": "https://www.tofler.in/profitbooks-solutions-private-limited/company/U72300PN2013PTC149408" },
+          "boardControl": { "score": 85, "note": "3 directors all Indian: Harshal Katre, Mohnish Katre (co-founders, 2/3 seats), Samatha Naveen Thota. No foreign directors", "source": "https://www.zaubacorp.com/company/ProfitBooks-Solutions-Private-Limited/U72300PN2013PTC149408" },
+          "founders": { "score": 95, "note": "Co-founded by Harshal Katre (CEO) and Mohnish Katre, both Indian nationals based in Pune. Both remain active", "source": "https://profitbooks.net/harshal-katre-interview-by-goodfirms/" },
+          "hqAndTeam": { "score": 95, "note": "HQ Koregaon Park, Pune. 11-22 employees, all India-based. Registered on Startup India. No overseas offices", "source": "https://www.startupindia.gov.in/content/sih/en/reources/resource-partners/business-services/profitbooks.html" },
+          "dataSovereignty": { "score": 60, "note": "AWS cloud with AES-256 encryption. Specific AWS region (India vs elsewhere) not disclosed. AWS has Mumbai DCs but no explicit Indian data residency confirmation", "source": "https://profitbooks.net/cloud-data-security/" },
+          "revenueOrigin": { "score": 70, "note": "Primarily targets Indian SMBs with GST features. 75,000+ businesses across 60+ countries. Estimated 60-75% India revenue. Total $2.9M (2024)", "source": "https://getlatka.com/companies/profitbooks" }
+        }
+      }
+    },
+    "chatwoot": {
+      "name": "Chatwoot Inc.",
+      "slug": "chatwoot",
+      "hq": "Kerala, India (operations) / San Francisco, USA (legal)",
+      "incorporation": "USA (Delaware, Chatwoot Inc.) with Indian subsidiary (CIN: U72900KL2021PTC067019, Kerala)",
+      "founders": "Pranav Raj S, Sojan Jose, Nithin David Thomas, Subin T P",
+      "foundersActive": true,
+      "swadeshiMeter": {
+        "score": 61,
+        "lastVerified": "2026-03-10",
+        "dataCompleteness": 6,
+        "factors": {
+          "shareholding": { "score": 55, "note": "Indian founders likely hold majority. $1.6M seed from US VCs (Goat Capital, Y Combinator W21, Hack VC, Uncorrelated Ventures). Estimated ~55-65% Indian founder ownership post-seed", "source": "https://tracxn.com/d/companies/chatwoot/__aRgDQ9vdvJArJxEw66gaFsL2oc8vTbzfUwPrEf6mpIo/funding-and-investors" },
+          "incorporation": { "score": 25, "note": "Parent entity Chatwoot Inc. incorporated in Delaware, USA. Indian subsidiary Chatwoot Pvt Ltd (Kerala, Jan 2021) has minimal capital (Rs 10,000 paid-up). Typical YC flip structure", "source": "https://www.companydetails.in/company/chatwoot-private-limited" },
+          "boardControl": { "score": 85, "note": "Indian subsidiary directors all Indian founders: Pranav Raj S, Sojan Jose, Nithin David Thomas. With only $1.6M raised, founders likely retain board majority", "source": "https://www.companydetails.in/company/chatwoot-private-limited" },
+          "founders": { "score": 100, "note": "All 4 co-founders Indian from Kerala. Pranav Raj S (CEO, CET Trivandrum), Sojan Jose (CTO, ex-YC founder), Nithin David Thomas, Subin T P. Active in Indian FOSS community", "source": "https://fossunited.org/blog/interview/in-conversation-with-pranav-raj-s-author-of-chatwoot" },
+          "hqAndTeam": { "score": 70, "note": "YC lists SF as HQ but ~10 person team operates primarily from Kerala, India. US address likely virtual office. Effective operations India-based", "source": "https://www.ycombinator.com/companies/chatwoot" },
+          "dataSovereignty": { "score": 95, "note": "Fully open-source (MIT license), self-hostable. Users can deploy on own infrastructure in any region including India. Complete data sovereignty via self-hosting", "source": "https://www.chatwoot.com/deploy/" },
+          "revenueOrigin": { "score": 40, "note": "Total ~$870K (2024). Indian subsidiary reported INR 2.47 Cr (~$295K, ~34%). Majority of paying customers likely global/US-based (competing with Intercom/Zendesk)", "source": "https://tracxn.com/d/legal-entities/india/chatwoot-private-limited/__De5z3aNDVDByPu4w1HKuDMk0Bu044n8IBxM5u1bZR3Q" }
+        }
+      }
     }
   },
   "meta": {
