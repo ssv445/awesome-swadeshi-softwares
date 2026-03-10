@@ -27,5 +27,6 @@
     "twitter_site": "@zoho"
   },
   "appStoreUrl": "https://itunes.apple.com/app/apple-store/id1277602149?pt=423641&ct=meeting_home_page&mt=8",
-  "playStoreUrl": "https://play.google.com/store/apps/details?id=com.zoho.meeting&referrer=utm_source%3Dmeeting_home_page&utm_medium=appbadge&utm_campaign=meeting_home_page"
+  "playStoreUrl": "https://play.google.com/store/apps/details?id=com.zoho.meeting&referrer=utm_source%3Dmeeting_home_page&utm_medium=appbadge&utm_campaign=meeting_home_page",
+  "companySlug": "zoho"
 }

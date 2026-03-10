@@ -28,5 +28,6 @@
     "twitter_site": "@zoho"
   },
   "appStoreUrl": "https://apps.apple.com/us/app/e-signature-app-zoho-sign/id1476226908, https://itunes.apple.com/app/apple-store/id1236146442?pt=423641&ct=sign_home_page&mt=8",
-  "playStoreUrl": "https://play.google.com/store/apps/details?id=com.zoho.sign.zohosign&referrer=utm_source=sign_home_page&utm_medium=appbadge&utm_campaign=sign_home_page"
+  "playStoreUrl": "https://play.google.com/store/apps/details?id=com.zoho.sign.zohosign&referrer=utm_source=sign_home_page&utm_medium=appbadge&utm_campaign=sign_home_page",
+  "companySlug": "zoho"
 }

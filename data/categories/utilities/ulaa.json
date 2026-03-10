@@ -4,7 +4,9 @@
   "description": "Fast, secure, and private web browser by Zoho with multi-tier ad blocking, zero browser monitoring, and multiple browsing modes for work, personal, and kids",
   "website": "https://ulaa.zoho.in/",
   "category": "utilities",
-  "purpose": ["browser"],
+  "purpose": [
+    "browser"
+  ],
   "alternatives": [
     "Google Chrome",
     "Mozilla Firefox",
@@ -30,5 +32,6 @@
     "twitter_site": "@UlaaBrowser"
   },
   "appStoreUrl": "https://apps.apple.com/us/app/ulaa-browser/id1610996178",
-  "playStoreUrl": "https://play.google.com/store/apps/details?id=com.zoho.primeum.stable&pli=1&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1"
+  "playStoreUrl": "https://play.google.com/store/apps/details?id=com.zoho.primeum.stable&pli=1&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1",
+  "companySlug": "zoho"
 }

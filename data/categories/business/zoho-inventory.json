@@ -27,5 +27,6 @@
     "twitter_image": "https://www.zoho.com/inventory/images/inventory-icon-preview.png"
   },
   "appStoreUrl": "https://itunes.apple.com/us/app/zoho-inventory/id1037960494?mt=8, https://apps.apple.com/app/zoho-inventory-management-app/id1037960494, https://apps.apple.com/app/id1037960494",
-  "playStoreUrl": "https://play.google.com/store/apps/details?id=com.zoho.inventory&referrer=utm_source%3Dzom_website%26utm_medium%3Din_index_page, https://play.google.com/store/apps/details?id=com.zoho.inventory&referrer=utm_source%3Dzom_website%26utm_medium%3Dwebsite_footer"
+  "playStoreUrl": "https://play.google.com/store/apps/details?id=com.zoho.inventory&referrer=utm_source%3Dzom_website%26utm_medium%3Din_index_page, https://play.google.com/store/apps/details?id=com.zoho.inventory&referrer=utm_source%3Dzom_website%26utm_medium%3Dwebsite_footer",
+  "companySlug": "zoho"
 }

@@ -21,5 +21,6 @@
     "image": "https://www.jiomart.com/assets/global/logo-fb.png"
   },
   "appStoreUrl": "https://apps.apple.com/in/app/jiomart/id1522085683, https://apps.apple.com/app/id1522085683",
-  "playStoreUrl": "https://play.google.com/store/apps/details?id=com.jpl.jiomart"
+  "playStoreUrl": "https://play.google.com/store/apps/details?id=com.jpl.jiomart",
+  "companySlug": "jio"
 }

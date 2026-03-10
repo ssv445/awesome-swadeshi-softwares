@@ -26,5 +26,6 @@
     "twitter_image": "https://zohowebstatic.com/sites/zweb/images/cliq/og/cliq-home-page-og.jpg",
     "twitter_card": "summary",
     "twitter_site": "@zoho"
-  }
+  },
+  "companySlug": "zoho"
 }

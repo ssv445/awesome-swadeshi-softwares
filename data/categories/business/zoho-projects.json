@@ -30,5 +30,6 @@
     "twitter_site": "@zoho"
   },
   "appStoreUrl": "https://itunes.apple.com/in/app/zoho-projects/id511887920?mt=8, https://apps.apple.com/app/id511887920",
-  "playStoreUrl": "https://play.google.com/store/apps/details?id=com.zoho.projects&hl=en_IN"
+  "playStoreUrl": "https://play.google.com/store/apps/details?id=com.zoho.projects&hl=en_IN",
+  "companySlug": "zoho"
 }

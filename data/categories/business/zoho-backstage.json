@@ -28,5 +28,6 @@
     "twitter_description": "Zoho Backstage is a complete event management software. From multi-language website builder to a mobile app for attendee engagement. Try now for free.",
     "twitter_card": "summary",
     "twitter_site": "@zoho"
-  }
+  },
+  "companySlug": "zoho"
 }

@@ -28,5 +28,6 @@
     "twitter_site": "@zoho"
   },
   "appStoreUrl": "https://itunes.apple.com/app/apple-store/id906377559?pt=423641&mt=8",
-  "playStoreUrl": "https://play.google.com/store/apps/details?id=com.zoho.zohosocial"
+  "playStoreUrl": "https://play.google.com/store/apps/details?id=com.zoho.zohosocial",
+  "companySlug": "zoho"
 }

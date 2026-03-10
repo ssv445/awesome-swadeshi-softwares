@@ -4,7 +4,9 @@
   "description": "Instant messaging app leveraging Jio's telecom user base with integrated services",
   "website": "https://www.jio.com/apps/jiochat",
   "category": "communication",
-  "purpose": ["messaging-app"],
+  "purpose": [
+    "messaging-app"
+  ],
   "alternatives": [
     "WhatsApp",
     "Telegram"
@@ -21,5 +23,6 @@
     "description": "Messaging App - Download the best chat app to experience HD voice & video chatting, personalized messaging & more only with JioChat messaging app."
   },
   "appStoreUrl": "https://apps.apple.com/in/app/jiochat-video-messenger/id981918884",
-  "playStoreUrl": "https://play.app.goo.gl/?link=https://play.google.com/store/apps/details?id=com.jiochat.jiochatapp&hl=en"
+  "playStoreUrl": "https://play.app.goo.gl/?link=https://play.google.com/store/apps/details?id=com.jiochat.jiochatapp&hl=en",
+  "companySlug": "jio"
 }

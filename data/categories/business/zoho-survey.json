@@ -27,5 +27,6 @@
     "twitter_card": "summary",
     "twitter_site": "@zoho"
   },
-  "appStoreUrl": "https://apps.apple.com/us/app/zoho-survey-survey-tool/id1348702782"
+  "appStoreUrl": "https://apps.apple.com/us/app/zoho-survey-survey-tool/id1348702782",
+  "companySlug": "zoho"
 }

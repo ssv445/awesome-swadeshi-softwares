@@ -30,5 +30,6 @@
     "twitter_site": "@zoho"
   },
   "appStoreUrl": "https://itunes.apple.com/in/app/zoho-bookings/id1444416745?pt=423641&%3Bct=bookings_home_page&%3Bmt=8",
-  "playStoreUrl": "https://play.google.com/store/apps/details?id=com.zoho.bookings.a&%3Breferrer=utm_source%3Dbookings_home_page&%3Butm_medium=appbadge&%3Butm_campaign=bookings_home_page"
+  "playStoreUrl": "https://play.google.com/store/apps/details?id=com.zoho.bookings.a&%3Breferrer=utm_source%3Dbookings_home_page&%3Butm_medium=appbadge&%3Butm_campaign=bookings_home_page",
+  "companySlug": "zoho"
 }

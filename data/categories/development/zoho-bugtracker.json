@@ -30,5 +30,6 @@
     "twitter_site": "@zoho"
   },
   "appStoreUrl": "https://itunes.apple.com/in/app/zoho-bugtracker/id1437263937?mt=8",
-  "playStoreUrl": "https://play.google.com/store/apps/details?id=com.zoho.bugtracker&hl=en_IN&gl=US"
+  "playStoreUrl": "https://play.google.com/store/apps/details?id=com.zoho.bugtracker&hl=en_IN&gl=US",
+  "companySlug": "zoho"
 }
