@@ -65,6 +65,72 @@
           "revenueOrigin": { "score": 95, "note": "Primarily Indian market" }
         }
       }
+    },
+    "ola-krutrim": {
+      "name": "Ola Krutrim",
+      "slug": "ola-krutrim",
+      "hq": "Bengaluru, India",
+      "incorporation": "India",
+      "founders": "Bhavish Aggarwal",
+      "foundersActive": true,
+      "swadeshiMeter": {
+        "score": 91,
+        "lastVerified": "2026-03-10",
+        "dataCompleteness": 7,
+        "factors": {
+          "shareholding": { "score": 90, "note": "Bhavish Aggarwal owns ~90% via ANI Technologies; minimal foreign VC dilution post-Krutrim spin-off", "source": "Inc42 2025" },
+          "incorporation": { "score": 100, "note": "Krutrim SI Designs Pvt Ltd incorporated in India" },
+          "boardControl": { "score": 95, "note": "All directors are Indian nationals; Bhavish Aggarwal is sole decision-maker" },
+          "founders": { "score": 100, "note": "Indian founder, actively leading as CEO" },
+          "hqAndTeam": { "score": 90, "note": "HQ Bengaluru, AI research lab in India, ~200 employees mostly Indian" },
+          "dataSovereignty": { "score": 70, "note": "Building own Indian GPU cloud; currently some workloads on global cloud providers" },
+          "revenueOrigin": { "score": 60, "note": "Early-stage revenue, primarily Indian enterprise and government clients" }
+        }
+      }
+    },
+    "sarvam-ai": {
+      "name": "Sarvam AI",
+      "slug": "sarvam-ai",
+      "hq": "Bengaluru, India",
+      "incorporation": "India",
+      "founders": "Vivek Raghavan, Pratyush Kumar",
+      "foundersActive": true,
+      "swadeshiMeter": {
+        "score": 82,
+        "lastVerified": "2026-03-10",
+        "dataCompleteness": 7,
+        "factors": {
+          "shareholding": { "score": 65, "note": "Founders hold ~49.5%; ~38.5% held by foreign VCs (Lightspeed, Peak XV); ~12% Indian investors", "source": "Tracxn 2025" },
+          "incorporation": { "score": 100, "note": "Sarvam AI Pvt Ltd incorporated in India" },
+          "boardControl": { "score": 80, "note": "Founders retain board majority; VC board seats are minority" },
+          "founders": { "score": 100, "note": "Indian founders, both actively leading (CEO and CTO)" },
+          "hqAndTeam": { "score": 90, "note": "HQ Bengaluru, all R&D in India, ~80 employees" },
+          "dataSovereignty": { "score": 85, "note": "India-first data strategy; Indian language models trained on Indian data; Yotta GPU cloud in India" },
+          "revenueOrigin": { "score": 80, "note": "Primarily Indian government and enterprise clients; some global API usage" }
+        }
+      }
+    },
+    "mohalla-tech": {
+      "name": "Mohalla Tech Pvt Ltd",
+      "slug": "mohalla-tech",
+      "hq": "Bengaluru, India",
+      "incorporation": "India",
+      "founders": "Ankush Sachdeva, Bhanu Pratap Singh, Farid Ahsan",
+      "foundersActive": true,
+      "swadeshiMeter": {
+        "score": 69,
+        "lastVerified": "2026-03-10",
+        "dataCompleteness": 7,
+        "factors": {
+          "shareholding": { "score": 35, "note": "Founders hold ~10-15%; ~75% held by foreign funds (Google, Temasek, Tiger Global, Snap Inc)", "source": "Tracxn 2025" },
+          "incorporation": { "score": 100, "note": "Mohalla Tech Pvt Ltd incorporated in India" },
+          "boardControl": { "score": 60, "note": "Founders retain operational control; multiple foreign investor board seats" },
+          "founders": { "score": 100, "note": "Indian founders, all three actively leading company" },
+          "hqAndTeam": { "score": 90, "note": "HQ Bengaluru, ~1600 employees primarily in India" },
+          "dataSovereignty": { "score": 70, "note": "User data stored in India; some cloud infrastructure on global providers" },
+          "revenueOrigin": { "score": 95, "note": "Almost entirely Indian user base and ad revenue" }
+        }
+      }
     }
   },
   "meta": {
