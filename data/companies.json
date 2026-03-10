@@ -857,6 +857,72 @@
           "revenueOrigin": { "score": 90, "note": "Nearly all revenue (~Rs 6,261 Cr FY25) from Indian market — TV advertising, SonyLIV subscriptions, broadcasting rights", "source": "https://www.business-standard.com/companies/quarterly-results/culver-max-fy25-profit-dips-45-to-481-crore-revenue-declines-4-3-125101601215_1.html" }
         }
       }
+    },
+    "mx-media-times-internet": {
+      "name": "MX Media (Amazon MX Player)",
+      "slug": "mx-media-times-internet",
+      "hq": "Mumbai, India",
+      "incorporation": "USA (Amazon.com Inc, Delaware) — Indian subsidiary",
+      "founders": "J2 Interactive (South Korea, 2011), acquired by Times Internet 2018, then Amazon Oct 2024",
+      "foundersActive": false,
+      "swadeshiMeter": {
+        "score": 32,
+        "lastVerified": "2026-03-10",
+        "dataCompleteness": 6,
+        "factors": {
+          "shareholding": { "score": 15, "note": "Amazon India acquired MX Player assets Oct 2024 for ~$100M. Amazon.com Inc (NASDAQ: AMZN) is US corp with 0% Indian ownership. Previously Times Internet (Jain family, Indian)", "source": "https://techcrunch.com/2024/06/06/amazon-buys-indian-video-streaming-service-mx-player/" },
+          "incorporation": { "score": 40, "note": "Operates through Amazon India subsidiaries but ultimate parent Amazon.com Inc is incorporated in Delaware, USA", "source": "https://en.wikipedia.org/wiki/MX_Player" },
+          "boardControl": { "score": 20, "note": "Karan Bedi (Indian) leads operations but ultimate governance control lies with Amazon.com Inc (US). Boards appointed by US parent", "source": "https://www.exchange4media.com/industry-briefing-news/amazon-mx-players-karan-bedi-is-leader-of-the-year-ott-at-iaa-leadership-awards-2025-146242.html" },
+          "founders": { "score": 20, "note": "Founded by J2 Interactive (South Korea, 2011). Acquired by Times Internet (Indian) 2018, then Amazon (US) Oct 2024. Neither original nor current parent is Indian", "source": "https://en.wikipedia.org/wiki/MX_Player" },
+          "hqAndTeam": { "score": 75, "note": "HQ Mumbai with primarily Indian team. Serves 250M+ monthly users. Key leadership India-based", "source": "https://www.aboutamazon.in/news/entertainment/amazon-minitv-mx-player-merger" },
+          "dataSovereignty": { "score": 35, "note": "Privacy policy allows data transfer outside India. As Amazon subsidiary, data likely uses AWS global infrastructure", "source": "https://mx.j2inter.com/about/privacy-policy" },
+          "revenueOrigin": { "score": 90, "note": "250M+ monthly users primarily in India. 22% OTT market share. Revenue overwhelmingly India-origin", "source": "https://www.sci-tech-today.com/stats/mx-player-statistics-updated/" }
+        }
+      }
+    },
+    "glance-inmobi": {
+      "name": "Glance (InMobi Group)",
+      "slug": "glance-inmobi",
+      "hq": "Bengaluru, India",
+      "incorporation": "Singapore (InMobi Pte. Ltd.) — reverse flip to India planned for FY2027 IPO",
+      "founders": "Naveen Tewari, Abhay Singhal, Mohit Saxena, Piyush Shah",
+      "foundersActive": true,
+      "swadeshiMeter": {
+        "score": 71,
+        "lastVerified": "2026-03-10",
+        "dataCompleteness": 6,
+        "factors": {
+          "shareholding": { "score": 75, "note": "Cofounders bought back SoftBank stake (~$250M) late 2025, now holding 60%+. Founders+employees control 80%+. SoftBank reduced to 5-8%. Google invested $145M in Glance (2020). Majority Indian-owned", "source": "https://inc42.com/buzz/inmobi-cofounders-buy-back-major-stake-from-softbank/" },
+          "incorporation": { "score": 50, "note": "Parent InMobi Pte. Ltd. incorporated in Singapore. Announced reverse flip to India for FY2027 IPO. Indian operating entity exists (InMobi Technologies Pvt Ltd, Karnataka)", "source": "https://techcrunch.com/2024/07/17/inmobi-eyes-10-billion-valuation-in-2025-india-ipo/" },
+          "boardControl": { "score": 80, "note": "Board predominantly Indian. All 4 cofounders are Indian nationals in active leadership. SoftBank board influence reduced after buyback. Founders hold majority control", "source": "https://www.inmobi.com/company/leadership" },
+          "founders": { "score": 95, "note": "InMobi founded 2007 by 4 Indians (Naveen Tewari IIT Kanpur, Abhay Singhal, Mohit Saxena, Amit Gupta). Roposo also founded by Indians. All founders across entities are Indian", "source": "https://en.wikipedia.org/wiki/InMobi" },
+          "hqAndTeam": { "score": 85, "note": "Operational HQ Bengaluru (Embassy Tech Square). ~584 employees, majority India-based. Roposo serves 200M+ Indian users. Global offices in US/UK for ad-tech", "source": "https://en.wikipedia.org/wiki/Glance_(company)" },
+          "dataSovereignty": { "score": 55, "note": "No explicit India-only data storage commitment. Privacy policies reference global compliance (GDPR, TRUSTe). Indian user data likely processed in India but global infrastructure used", "source": "https://glance.com/us/privacy-policy-en" },
+          "revenueOrigin": { "score": 35, "note": "InMobi Group earns 70-80% from North America (ad-tech). India ~20-30% of group revenue. Roposo/Glance specifically India-focused but overall group revenue is US-weighted", "source": "https://techcrunch.com/2024/07/17/inmobi-eyes-10-billion-valuation-in-2025-india-ipo/" }
+        }
+      }
+    },
+    "national-payments-corporation-of-india": {
+      "name": "National Payments Corporation of India",
+      "slug": "national-payments-corporation-of-india",
+      "hq": "Mumbai, Maharashtra, India",
+      "incorporation": "India (CIN: U74990MH2008NPL189067, Section 8 not-for-profit, Dec 2008)",
+      "founders": "Reserve Bank of India (RBI) and Indian Banks' Association (IBA)",
+      "foundersActive": true,
+      "swadeshiMeter": {
+        "score": 98,
+        "lastVerified": "2026-03-10",
+        "dataCompleteness": 7,
+        "factors": {
+          "shareholding": { "score": 95, "note": "65 shareholders, predominantly Indian banks. Over 51% held by PSBs (SBI, PNB, etc.), making it a 'government company'. 2 original foreign promoter banks (Citibank, HSBC) hold small stakes", "source": "https://en.wikipedia.org/wiki/National_Payments_Corporation_of_India" },
+          "incorporation": { "score": 100, "note": "Section 8 not-for-profit company incorporated Dec 19, 2008 in Mumbai. Registered at Bandra-Kurla Complex, Mumbai", "source": "https://www.indiafilings.com/search/national-payments-corporation-of-india-cin-U74990MH2008NPL189067" },
+          "boardControl": { "score": 98, "note": "Entirely Indian-controlled. Chairman Ajay Kumar Choudhary, MD & CEO Dilip Asbe. Board includes RBI nominees and Indian bank nominees. RBI has direct regulatory oversight", "source": "https://www.npci.org.in/who-we-are/board-of-directors" },
+          "founders": { "score": 100, "note": "Founded jointly by RBI and IBA in 2008 under Payment and Settlement Systems Act, 2007. Purely Indian institutional initiative", "source": "https://razorpay.com/learn/national-payments-corporation-of-india-services/" },
+          "hqAndTeam": { "score": 100, "note": "HQ Mumbai with offices in Chennai and New Delhi. ~2,253 employees, all India-based", "source": "https://in.linkedin.com/company/npci" },
+          "dataSovereignty": { "score": 98, "note": "RBI April 2018 circular mandates all payment data stored only in India. Strict data localization compliance. Minor exception for foreign leg of cross-border UPI", "source": "https://finbankingtech.com/fintech/npci-and-rbi-role-in-upi-system-development/" },
+          "revenueOrigin": { "score": 98, "note": "Not-for-profit. UPI processed 228.3B transactions worth Rs 300 lakh crore in 2025. Operations overwhelmingly India-domestic. International UPI linkages are negligible fraction", "source": "https://www.npci.org.in/product/upi/product-statistics" }
+        }
+      }
     }
   },
   "meta": {
