@@ -572,6 +572,28 @@
         }
       }
     },
+    "dukaan": {
+      "name": "Dukaan",
+      "slug": "dukaan",
+      "hq": "Bengaluru, India",
+      "incorporation": "India (Maharashtra, 2019)",
+      "founders": "Suumit Shah, Subhash Choudhary, Kaustub Pandey",
+      "foundersActive": true,
+      "swadeshiMeter": {
+        "score": 69,
+        "lastVerified": "2026-03-10",
+        "dataCompleteness": 7,
+        "factors": {
+          "shareholding": { "score": 40, "note": "Founders hold ~35.34%. Foreign funds ~38.88% (Lightspeed US ~12%, Matrix/Z47 ~12%, 640 Oxford/GSV). ESOP 15.13%, Angels 7.80%", "source": "Tracxn 2023, thebusinessrule.com" },
+          "incorporation": { "score": 100, "note": "Growthpond Technology Pvt Ltd, CIN U72900MH2019PTC326468, incorporated Jun 2019 in Maharashtra, India" },
+          "boardControl": { "score": 65, "note": "Indian founders lead operations (Suumit Shah CEO, Subhash Choudhary CTO). Foreign VCs (Lightspeed, Matrix) likely hold board seats given ~39% fund ownership" },
+          "founders": { "score": 80, "note": "3 Indian co-founders. Suumit Shah (CEO) and Subhash Choudhary (CTO) active. Kaustub Pandey departed" },
+          "hqAndTeam": { "score": 85, "note": "HQ Bengaluru, registered office Mumbai. Team India-based though headcount declined to ~4 employees as of mid-2025", "source": "Tracxn 2025" },
+          "dataSovereignty": { "score": 80, "note": "Privacy policy states data processed in Karnataka, India. No transfer without adequate controls", "source": "mydukaan.io/privacy" },
+          "revenueOrigin": { "score": 90, "note": "Primarily Indian SME/kirana market. INR 10 Cr revenue FY2023. Platform built for Indian merchants" }
+        }
+      }
+    },
     "clevertap": {
       "name": "CleverTap",
       "slug": "clevertap",
@@ -591,6 +613,50 @@
           "hqAndTeam": { "score": 60, "note": "Official HQ Mountain View. ~490 of ~663 employees (74%) in India (Mumbai)" },
           "dataSovereignty": { "score": 55, "note": "AWS multi-region (India, US, EU, Singapore). India DC available but not default" },
           "revenueOrigin": { "score": 55, "note": "~60% customers India-based, US 23%. Revenue ₹523 Cr FY25. International enterprise clients pay more" }
+        }
+      }
+    },
+    "greythr": {
+      "name": "Greytip Software (greytHR)",
+      "slug": "greythr",
+      "hq": "Bengaluru, India",
+      "incorporation": "India (Karnataka, 1994)",
+      "founders": "Girish Rowjee, Sayeed Anjum",
+      "foundersActive": true,
+      "swadeshiMeter": {
+        "score": 62,
+        "lastVerified": "2026-03-10",
+        "dataCompleteness": 7,
+        "factors": {
+          "shareholding": { "score": 30, "note": "Apax Digital Fund II (UK PE) acquired 52.1% majority in Aug 2024. Founders hold ~23.14%", "source": "YourStory Aug 2024, Tracxn" },
+          "incorporation": { "score": 100, "note": "Greytip Software Pvt Ltd, incorporated Nov 1994 in Karnataka, India" },
+          "boardControl": { "score": 40, "note": "Apax nominees on board alongside founders. Apax's 52.1% gives effective control" },
+          "founders": { "score": 90, "note": "Both Indian founders active: Girish Rowjee (CEO), Sayeed Anjum (CTO). Founded 1994" },
+          "hqAndTeam": { "score": 85, "note": "HQ Koramangala, Bengaluru. Primarily Indian workforce. Expanding to Middle East" },
+          "dataSovereignty": { "score": 70, "note": "AWS hosted. Processes 2M+ employee payroll records monthly. Indian payroll compliance" },
+          "revenueOrigin": { "score": 85, "note": "20,000+ customers predominantly in India across 250+ cities" }
+        }
+      }
+    },
+    "digiboxx": {
+      "name": "DigiBoxx",
+      "slug": "digiboxx",
+      "hq": "Mumbai, India",
+      "incorporation": "India (Maharashtra, 2020)",
+      "founders": "Arnab Mitra, Vivek Suchanti",
+      "foundersActive": true,
+      "swadeshiMeter": {
+        "score": 97,
+        "lastVerified": "2026-03-10",
+        "dataCompleteness": 7,
+        "factors": {
+          "shareholding": { "score": 95, "note": "Founders hold 80.53%. Remaining 19.47% held by Indian enterprises including Capgro Fund (Chandigarh)", "source": "Tracxn, MCA filings" },
+          "incorporation": { "score": 100, "note": "Incorporated in India (Maharashtra, Dec 2020)" },
+          "boardControl": { "score": 95, "note": "All 6 directors Indian: Arnab Mitra (CEO), Vivek Suchanti (Chairman), IndiaMART COO Dinesh Gulati, others" },
+          "founders": { "score": 100, "note": "Both founders Indian. Arnab Mitra (CEO) and Vivek Suchanti (Chairman) both active" },
+          "hqAndTeam": { "score": 95, "note": "HQ Mumbai. All operations in India. Team of 22-50+ employees" },
+          "dataSovereignty": { "score": 100, "note": "Data stored exclusively in MeitY-certified Indian data centers. Data never leaves India. 256-bit encryption" },
+          "revenueOrigin": { "score": 90, "note": "Primarily Indian customers — individuals, MSMEs, BFSI, government. Launched by NITI Aayog" }
         }
       }
     }
