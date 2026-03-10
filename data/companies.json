@@ -197,6 +197,72 @@
           "revenueOrigin": { "score": 100, "note": "100% Indian market — online grocery delivery serving Indian cities only" }
         }
       }
+    },
+    "indiamart": {
+      "name": "IndiaMART InterMESH Limited",
+      "slug": "indiamart",
+      "hq": "Noida, Uttar Pradesh, India",
+      "incorporation": "India",
+      "founders": "Dinesh Agarwal, Brijesh Agrawal",
+      "foundersActive": true,
+      "swadeshiMeter": {
+        "score": 92,
+        "lastVerified": "2026-03-10",
+        "dataCompleteness": 7,
+        "factors": {
+          "shareholding": { "score": 82, "note": "Promoters ~49.17%, DII ~15.5%, Retail ~16.39%, FII ~18.95%. Over 80% Indian-held shares", "source": "BSE/NSE Q3 FY2025-26" },
+          "incorporation": { "score": 100, "note": "Incorporated in India. Registered office Delhi, corporate office Noida" },
+          "boardControl": { "score": 100, "note": "All board members Indian nationals including MD & CEO Dinesh Agarwal, WTD Brijesh Agrawal" },
+          "founders": { "score": 100, "note": "Both founders Indian and actively lead the company as MD & CEO and Whole-time Director" },
+          "hqAndTeam": { "score": 95, "note": "HQ Noida with offices across India. ~6,000+ employees predominantly in India" },
+          "dataSovereignty": { "score": 80, "note": "Multi-cloud (GCP, AWS) with India regions. ISO 27001 certified. India-focused platform" },
+          "revenueOrigin": { "score": 95, "note": "Vast majority from Indian SMEs using B2B marketplace. Minimal international revenue" }
+        }
+      }
+    },
+    "nykaa": {
+      "name": "FSN E-Commerce Ventures (Nykaa)",
+      "slug": "nykaa",
+      "hq": "Mumbai, India",
+      "incorporation": "India",
+      "founders": "Falguni Nayar",
+      "foundersActive": true,
+      "swadeshiMeter": {
+        "score": 91,
+        "lastVerified": "2026-03-10",
+        "dataCompleteness": 7,
+        "factors": {
+          "shareholding": { "score": 82, "note": "Promoters (Falguni Nayar family) ~52.1%; DII ~25%; FII ~12.5%; Retail ~10.4%", "source": "BSE/NSE Dec 2025" },
+          "incorporation": { "score": 100, "note": "Incorporated in India (2012 Mumbai). Listed on NSE/BSE since Nov 2021" },
+          "boardControl": { "score": 95, "note": "10-member board, all Indian. Falguni Nayar as Executive Chairperson, MD & CEO" },
+          "founders": { "score": 100, "note": "Falguni Nayar, Indian citizen, IIM-A alumna, actively leads as Chairperson, MD & CEO" },
+          "hqAndTeam": { "score": 95, "note": "HQ Mumbai. ~5,600+ employees predominantly in India" },
+          "dataSovereignty": { "score": 80, "note": "India-focused e-commerce; customer data subject to Indian data protection laws" },
+          "revenueOrigin": { "score": 98, "note": "Nearly 100% revenue from India (FY25 ~Rs 7,950 Cr). International <0.1%" }
+        }
+      }
+    },
+    "mapmyindia": {
+      "name": "MapmyIndia (C.E. Info Systems)",
+      "slug": "mapmyindia",
+      "hq": "New Delhi, India",
+      "incorporation": "India (1995, New Delhi)",
+      "founders": "Rakesh Kumar Verma, Rashmi Verma",
+      "foundersActive": true,
+      "swadeshiMeter": {
+        "score": 97,
+        "lastVerified": "2026-03-10",
+        "dataCompleteness": 7,
+        "factors": {
+          "shareholding": { "score": 95, "note": "Promoters (Verma family) hold 51.36% (Rakesh Verma 41.64%). FII only 3.90%, DII 13.95%", "source": "BSE/NSE Dec 2025" },
+          "incorporation": { "score": 100, "note": "Incorporated in India (New Delhi) in 1995. Listed on BSE & NSE" },
+          "boardControl": { "score": 100, "note": "All board members Indian. Rakesh Verma (CMD), Rohan Verma (CEO), 3 independent Indian directors" },
+          "founders": { "score": 100, "note": "Rakesh & Rashmi Verma, both Indian. Rakesh as CMD, Rashmi as CTO, son Rohan as CEO. All active" },
+          "hqAndTeam": { "score": 95, "note": "HQ New Delhi, offices in Mumbai and Bengaluru. ~900 employees mostly in India" },
+          "dataSovereignty": { "score": 100, "note": "Map data hosted in India. ISRO partnership. Maps reflect Indian sovereignty. DIGIPIN project with India Post" },
+          "revenueOrigin": { "score": 90, "note": "Vast majority from India — Indian digital maps, govt contracts, automotive OEMs" }
+        }
+      }
     }
   },
   "meta": {
