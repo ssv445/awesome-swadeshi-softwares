@@ -791,6 +791,72 @@
           "revenueOrigin": { "score": 85, "note": "185M+ downloads predominantly Indian users. FY24 revenue INR 93 Cr from in-app purchases, gifting, streaming. India Top 10 grossing social app. Some global crypto revenue via GARI", "source": "https://www.indiahood.com/chingari-revenue-plummets-53-in-fy25-after-pivot-from-short-videos-to-paid-private-live-streaming/" }
         }
       }
+    },
+    "inshorts": {
+      "name": "Inshorts",
+      "slug": "inshorts",
+      "hq": "Noida, Uttar Pradesh, India",
+      "incorporation": "India (CIN: U74110DL2015FTC283202, ROC Delhi, July 2015)",
+      "founders": "Azhar Iqubal, Deepit Purkayastha, Anunay Pandey",
+      "foundersActive": true,
+      "swadeshiMeter": {
+        "score": 66,
+        "lastVerified": "2026-03-10",
+        "dataCompleteness": 6,
+        "factors": {
+          "shareholding": { "score": 25, "note": "Foreign investors hold ~74%: Addition (Lee Fixel, US) 29.12%, SIG Global (US) 18.40%, Tiger Global (US) 17.40%, Vy Capital (Dubai) 9.02%. Indian: A91 Partners 11.65%, co-founders ~5.84%", "source": "https://entrackr.com/2021/08/in-short-all-about-inshorts-latest-round-shareholding-secondary-and-financials/" },
+          "incorporation": { "score": 95, "note": "Inshorts India Advertising And Services Pvt Ltd, incorporated July 2015, ROC Delhi. Active under MCA", "source": "https://tracxn.com/d/legal-entities/india/inshorts-india-advertising-and-services-private-limited/__C9ne3_aqYjil3o2PH05SvsTXYFyxU746hwzI316xcgM" },
+          "boardControl": { "score": 80, "note": "8 members. 3 Indian founders (Azhar Iqubal Chairman, Deepit Purkayastha CEO, Anunay Pandey). ~7/8 Indian, 1 Singaporean nominee", "source": "https://tracxn.com/d/companies/inshorts/__z-ixzC-gZu31OP-23szJoOTGUQY9ONoc_zMt_EQbAnI/founders-and-board-of-directors" },
+          "founders": { "score": 100, "note": "All 3 founders Indian (IIT Delhi/Kharagpur). Azhar Iqubal (Bihar), Deepit Purkayastha, Anunay Pandey. All active", "source": "https://en.wikipedia.org/wiki/Inshorts" },
+          "hqAndTeam": { "score": 90, "note": "HQ Filmcity, Sector 16A, Noida. ~735 employees, primarily India-based. Some international presence", "source": "https://craft.co/inshorts-medialabs/locations" },
+          "dataSovereignty": { "score": 60, "note": "No explicit disclosure on data storage location. Subject to India's DPDP Act. Likely Indian infrastructure but unverified", "source": "https://public.app/privacy_policy" },
+          "revenueOrigin": { "score": 90, "note": "Revenue Rs 181 Cr FY24. Primarily ad-based from Indian market. 100M+ users across 660+ districts in India", "source": "https://thekredible.com/company/inshorts/financials" }
+        }
+      }
+    },
+    "verse-innovation": {
+      "name": "VerSe Innovation",
+      "slug": "verse-innovation",
+      "hq": "Bengaluru, Karnataka, India",
+      "incorporation": "India (CIN: U72200KA2007PTC042493, RoC Bangalore, April 2007)",
+      "founders": "Virendra Gupta, Umang Bedi, Shailendra Sharma",
+      "foundersActive": true,
+      "swadeshiMeter": {
+        "score": 68,
+        "lastVerified": "2026-03-10",
+        "dataCompleteness": 7,
+        "factors": {
+          "shareholding": { "score": 30, "note": "Founders hold ~5.45%. Foreign investors ~74%: CPP Investments (Canada), OTPP (Canada), QIA, Carlyle (US), Goldman Sachs (US), Google (US), Microsoft (US), Sofina (Belgium). Indian: A91, Sequoia India, Matrix India, IIFL, Catamaran ~15-20%", "source": "https://tracxn.com/d/companies/verse/__-RHXs5ACYl1riLKNMgCB1WUoRVvjNQ4VW5BWBd74jgo/latest-shareholding" },
+          "incorporation": { "score": 100, "note": "Ver Se Innovation Pvt Ltd, incorporated April 2007 in Karnataka. Active Indian company", "source": "https://www.zaubacorp.com/company/Ver-se-Innovation-Private-Limited/U72200KA2007PTC042493" },
+          "boardControl": { "score": 65, "note": "12 directors. Indian founders Virendra Gupta and Umang Bedi on board. Multiple foreign investor nominees from CPP, OTPP, Carlyle. Indian majority but significant foreign influence", "source": "https://www.zaubacorp.com/company/Ver-se-Innovation-Private-Limited/U72200KA2007PTC042493" },
+          "founders": { "score": 100, "note": "All 3 founders Indian. Virendra Gupta (CEO), Umang Bedi (President), Shailendra Sharma. Founded 2007 in Bengaluru", "source": "https://www.verse.in/about-us.php" },
+          "hqAndTeam": { "score": 95, "note": "HQ Helios Business Park, Bengaluru. ~600-750 employees primarily India-based. Presence across 5 continents", "source": "https://in.linkedin.com/company/verse-innovation" },
+          "dataSovereignty": { "score": 70, "note": "Indian-incorporated, subject to DPDP Act. Likely India-hosted for primary operations but no explicit public commitment to India-only storage", "source": "https://share.myjosh.in/privacy" },
+          "revenueOrigin": { "score": 90, "note": "Revenue Rs 2,071 Cr FY25 (88% YoY growth). Dailyhunt serves 15+ Indian languages, Josh targets Indian short-video. 350M+ users primarily in India", "source": "https://entrackr.com/news/verse-innovation-revenue-jumps-88-in-fy25-eyes-profitability-in-h2-fy26-10515649" }
+        }
+      }
+    },
+    "culver-max-entertainment": {
+      "name": "Culver Max Entertainment",
+      "slug": "culver-max-entertainment",
+      "hq": "Mumbai, Maharashtra, India",
+      "incorporation": "India (CIN: U92100MH1995PTC111487, December 1995, Maharashtra)",
+      "founders": "Sony Pictures Entertainment (US/Japan subsidiary)",
+      "foundersActive": false,
+      "swadeshiMeter": {
+        "score": 38,
+        "lastVerified": "2026-03-10",
+        "dataCompleteness": 7,
+        "factors": {
+          "shareholding": { "score": 5, "note": "Indirect wholly owned subsidiary of Sony Group Corporation (Japan). Chain: Sony Group (Japan) → Sony Pictures Entertainment (USA) → Culver Max (India). ~0% Indian ownership. Sony-Zee merger failed Jan 2024", "source": "https://en.wikipedia.org/wiki/Culver_Max_Entertainment" },
+          "incorporation": { "score": 85, "note": "Incorporated in Mumbai Dec 1995 as Private Limited Company. 30+ years of Indian registration. Created as foreign subsidiary vehicle", "source": "https://www.zaubacorp.com/CULVER-MAX-ENTERTAINMENT-PRIVATE-LIMITED-U92100MH1995PTC111487" },
+          "boardControl": { "score": 35, "note": "Indian executives (CEO Gaurav Banerjee, CFO Sibaji Biswas) but Sony-appointed foreign directors also present. Ultimate control rests with Sony Group as 100% shareholder", "source": "https://www.dess.digital/culver-max-entertainment-strengthens-leadership-with-new-ceo-md/" },
+          "founders": { "score": 0, "note": "Founded 1995 as Sony Entertainment Television India — foreign subsidiary, no Indian founders", "source": "https://www.afaqs.com/news/media/30-years-of-sony-pictures-networks-india-from-one-channel-to-media-powerhouse-10545411" },
+          "hqAndTeam": { "score": 75, "note": "HQ Interface Building, Malad, Mumbai. Thousands of Indian employees. Operations India-based but strategic decisions from Tokyo/Culver City", "source": "https://www.sonypicturesnetworks.com/overview" },
+          "dataSovereignty": { "score": 30, "note": "SonyLIV privacy policy permits data transfer outside India. Payment data localized per RBI but general user data not restricted to India", "source": "https://www.sonyliv.com/privacy-policy" },
+          "revenueOrigin": { "score": 90, "note": "Nearly all revenue (~Rs 6,261 Cr FY25) from Indian market — TV advertising, SonyLIV subscriptions, broadcasting rights", "source": "https://www.business-standard.com/companies/quarterly-results/culver-max-fy25-profit-dips-45-to-481-crore-revenue-declines-4-3-125101601215_1.html" }
+        }
+      }
     }
   },
   "meta": {
