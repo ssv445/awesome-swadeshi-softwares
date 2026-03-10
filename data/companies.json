@@ -440,6 +440,28 @@
         }
       }
     },
+    "surveysparrow": {
+      "name": "SurveySparrow Inc",
+      "slug": "surveysparrow",
+      "hq": "Kochi, Kerala, India (operations) / Palo Alto, CA, USA (registered HQ)",
+      "incorporation": "USA (SurveySparrow Inc, California). Indian subsidiary: SurveySparrow Pvt Ltd (Kerala, CIN U72900KL2017PTC048424)",
+      "founders": "Shihab Muhammed, Subin Sebastian",
+      "foundersActive": true,
+      "swadeshiMeter": {
+        "score": 65,
+        "lastVerified": "2026-03-10",
+        "dataCompleteness": 7,
+        "factors": {
+          "shareholding": { "score": 70, "note": "Founders (Shihab Muhammed, Subin Sebastian) retain majority via US parent entity. Only $1.4M seed from Prime Venture Partners (Indian VC). Limited dilution", "source": "Crunchbase, Tracxn 2025" },
+          "incorporation": { "score": 40, "note": "US parent (SurveySparrow Inc, California). Indian subsidiary (SurveySparrow Pvt Ltd, Kerala, 2017). Classic flip structure" },
+          "boardControl": { "score": 80, "note": "Indian entity directors all Indian: Shihab Muhammed, Vipin Thomas, Mahesh Babu Balaji. Founder retains control", "source": "MCA/ZaubaCorp" },
+          "founders": { "score": 95, "note": "Both co-founders Indian (ex-Zoho, ex-Freshdesk, Kerala). Shihab Muhammed active as CEO. Started in 100 sqft room in Kochi" },
+          "hqAndTeam": { "score": 65, "note": "US HQ (Palo Alto/San Francisco). Bulk of ~326 employees in India — Kochi, Chennai, Bangalore. Engineering primarily Indian" },
+          "dataSovereignty": { "score": 60, "note": "AWS hosting with India (Mumbai) DC option. Default region is US Virginia. EU, UK, UAE, Australia also available", "source": "surveysparrow.com/legal/data-hosting-policy" },
+          "revenueOrigin": { "score": 30, "note": "US is 46% of customers, India only ~21%. Global SaaS product in 149+ countries. ~$46.6M revenue", "source": "6sense, GetLatka" }
+        }
+      }
+    },
     "instamojo": {
       "name": "Instamojo Technologies",
       "slug": "instamojo",
@@ -461,6 +483,50 @@
           "revenueOrigin": { "score": 95, "note": "Nearly 100% India-focused. Serves 1M+ Indian MSMEs" }
         }
       }
+    },
+    "shiprocket": {
+      "name": "Shiprocket",
+      "slug": "shiprocket",
+      "hq": "Gurugram, India",
+      "incorporation": "India (Delhi, 2011)",
+      "founders": "Saahil Goel, Gautam Kapoor, Vishesh Khurana, Akshay Ghulati",
+      "foundersActive": true,
+      "swadeshiMeter": {
+        "score": 70,
+        "lastVerified": "2026-03-10",
+        "dataCompleteness": 7,
+        "factors": {
+          "shareholding": { "score": 35, "note": "Founders ~11.89%. Bertelsmann (Germany) 21.32%, Tribe Capital (US) 14.14%, Temasek (Singapore) 5.29%, Eternal/Zomato (India) 6.85%", "source": "Shiprocket DRHP Dec 2025" },
+          "incorporation": { "score": 95, "note": "Incorporated in India (Delhi) as Bigfoot Retail Solutions, now Shiprocket Limited" },
+          "boardControl": { "score": 80, "note": "6 members: 2 founder-executives, 3 Indian independent directors. Board majority Indian-controlled" },
+          "founders": { "score": 95, "note": "All 4 founders Indian. Saahil Goel (MD/CEO) and Gautam Kapoor (COO) active" },
+          "hqAndTeam": { "score": 90, "note": "HQ Gurugram. ~915+ employees primarily India-based. Ops across 24,000+ pin codes" },
+          "dataSovereignty": { "score": 70, "note": "India-registered, ISO 27001/SOC II compliant. Follows Indian data laws" },
+          "revenueOrigin": { "score": 90, "note": "~80% domestic India shipping revenue. FY25 ~INR 1,670 Cr" }
+        }
+      }
+    },
+    "whatfix": {
+      "name": "Whatfix Inc",
+      "slug": "whatfix",
+      "hq": "San Jose, CA & Bengaluru, India",
+      "incorporation": "Delaware, USA",
+      "founders": "Khadim Batti, Vara Kumar Namburu",
+      "foundersActive": true,
+      "swadeshiMeter": {
+        "score": 37,
+        "lastVerified": "2026-03-10",
+        "dataCompleteness": 7,
+        "factors": {
+          "shareholding": { "score": 20, "note": "Founders hold 7.33%. Funds own 75.10%: SoftBank 15.51%, Warburg Pincus 8.94%, Dragoneer, Peak XV", "source": "Tracxn 2025" },
+          "incorporation": { "score": 25, "note": "Parent entity Whatfix Inc incorporated in Delaware, USA. Indian subsidiary in Bengaluru" },
+          "boardControl": { "score": 45, "note": "Founders on board but 7.33% minority shareholders. SoftBank and other investor reps present" },
+          "founders": { "score": 95, "note": "All founders Indian. Khadim Batti (CEO) and Vara Kumar Namburu (R&D) both active" },
+          "hqAndTeam": { "score": 75, "note": "Dual HQ San Jose + Bengaluru. 90% of ~1,144 employees in India" },
+          "dataSovereignty": { "score": 15, "note": "Data centers in US and EU only. No India DC option" },
+          "revenueOrigin": { "score": 15, "note": "US 72% of revenue, Europe ~21%. India minimal. FY25 ~Rs 500 Cr" }
+        }
+      }
     }
   },
   "meta": {
@@ -474,6 +540,6 @@
       "revenueOrigin": 0.05
     },
     "version": "1.0.0",
-    "lastUpdated": "2026-03-09"
+    "lastUpdated": "2026-03-10"
   }
 }

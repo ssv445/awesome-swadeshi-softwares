@@ -11,6 +11,7 @@
   ],
   "pricing": "Paid",
   "company": "Whatfix Inc",
+  "companySlug": "whatfix",
   "location": "Bangalore",
   "opengraph": {
     "last_updated": "2025-10-05T10:32:22.055Z",
