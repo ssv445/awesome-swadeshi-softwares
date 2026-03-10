@@ -527,6 +527,72 @@
           "revenueOrigin": { "score": 15, "note": "US 72% of revenue, Europe ~21%. India minimal. FY25 ~Rs 500 Cr" }
         }
       }
+    },
+    "keka-hr": {
+      "name": "Keka Technologies",
+      "slug": "keka-hr",
+      "hq": "Hyderabad, India",
+      "incorporation": "India (Telangana, 2014)",
+      "founders": "Vijay Yalamanchili",
+      "foundersActive": true,
+      "swadeshiMeter": {
+        "score": 88,
+        "lastVerified": "2026-03-10",
+        "dataCompleteness": 7,
+        "factors": {
+          "shareholding": { "score": 85, "note": "Founder holds 66.02%. WestBridge Capital (India-focused) ~20%. ESOP 7.95%", "source": "Tracxn, MCA filings" },
+          "incorporation": { "score": 95, "note": "Incorporated in India (Telangana, Dec 2014). Active Indian private company" },
+          "boardControl": { "score": 85, "note": "3 directors: founder/CEO Yalamanchili, WestBridge nominee, one other. Founder retains control" },
+          "founders": { "score": 95, "note": "Solo founder Vijay Yalamanchili, Indian, active as CEO. Based in Hyderabad" },
+          "hqAndTeam": { "score": 90, "note": "HQ Hyderabad. ~970 employees across Hyderabad, Bangalore, Chennai, Delhi. Small US/Singapore presence" },
+          "dataSovereignty": { "score": 80, "note": "Primary data on Azure Cloud Central India. ISO 27001. Indian customer data in India" },
+          "revenueOrigin": { "score": 70, "note": "~50% customers from India, ~36% US. Revenue INR 134 Cr FY25" }
+        }
+      }
+    },
+    "leadsquared": {
+      "name": "LeadSquared",
+      "slug": "leadsquared",
+      "hq": "Bengaluru, India",
+      "incorporation": "India (Karnataka, 2011)",
+      "founders": "Nilesh Patel, Sudhakar Gorti, Prashant Kumar Singh, Anand Kumar, Sukhbir Kalsi",
+      "foundersActive": true,
+      "swadeshiMeter": {
+        "score": 78,
+        "lastVerified": "2026-03-10",
+        "dataCompleteness": 7,
+        "factors": {
+          "shareholding": { "score": 65, "note": "Founders ~29.8%; Indian funds (WestBridge, Gaja Capital) ~30%; foreign (JI Company/Switzerland) ~10%; ESOP ~12%", "source": "Tracxn Nov 2022" },
+          "incorporation": { "score": 100, "note": "MarketXpander Services Pvt Ltd, incorporated Jun 2011 in Karnataka, India" },
+          "boardControl": { "score": 80, "note": "Co-founder Prashant Singh on board. Indian founders retain operational control" },
+          "founders": { "score": 90, "note": "5 Indian co-founders. Nilesh Patel (CEO) and Prashant Singh (COO) actively leading" },
+          "hqAndTeam": { "score": 75, "note": "HQ Bengaluru. Offices in NJ, Philippines, South Africa, Australia, Indonesia. ~1800 employees" },
+          "dataSovereignty": { "score": 55, "note": "Hosted on AWS multi-region. No India-only data residency guarantee" },
+          "revenueOrigin": { "score": 85, "note": "~78% customers from India. 2000+ customers across 40 countries. FY25 revenue ₹366 Cr" }
+        }
+      }
+    },
+    "clevertap": {
+      "name": "CleverTap",
+      "slug": "clevertap",
+      "hq": "Mountain View, CA (primary ops in Mumbai, India)",
+      "incorporation": "Delaware, USA (parent WizRocket Inc). Indian subsidiary in Maharashtra",
+      "founders": "Sunil Thomas, Anand Jain, Suresh Kondamudi",
+      "foundersActive": true,
+      "swadeshiMeter": {
+        "score": 49,
+        "lastVerified": "2026-03-10",
+        "dataCompleteness": 7,
+        "factors": {
+          "shareholding": { "score": 35, "note": "Delaware parent with foreign-majority VCs: CDPQ (Canada) $75M lead, Tiger Global (US), Peak XV, Accel", "source": "Crunchbase, Tracxn" },
+          "incorporation": { "score": 35, "note": "Parent WizRocket Inc in Delaware. Indian subsidiary CleverTap Pvt Ltd (Maharashtra). Singapore entity too. US-flip structure" },
+          "boardControl": { "score": 55, "note": "3 Indian founders active in leadership. Foreign VCs likely hold board seats at parent level" },
+          "founders": { "score": 95, "note": "All 3 co-founders Indian (ex-Network18). Sunil Thomas CEO, Anand Jain CPO, Suresh Kondamudi CTO" },
+          "hqAndTeam": { "score": 60, "note": "Official HQ Mountain View. ~490 of ~663 employees (74%) in India (Mumbai)" },
+          "dataSovereignty": { "score": 55, "note": "AWS multi-region (India, US, EU, Singapore). India DC available but not default" },
+          "revenueOrigin": { "score": 55, "note": "~60% customers India-based, US 23%. Revenue ₹523 Cr FY25. International enterprise clients pay more" }
+        }
+      }
     }
   },
   "meta": {
