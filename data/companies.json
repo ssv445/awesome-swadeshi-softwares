@@ -1913,6 +1913,72 @@
           "revenueOrigin": { "score": 20, "note": "Global SaaS platform. Primary revenue from US and global markets. India not a primary market focus", "source": "https://simplified.com" }
         }
       }
+    },
+    "visualdub": {
+      "name": "NeuralGarage (VisualDub)",
+      "slug": "visualdub",
+      "hq": "Bengaluru, India (Registered: Mumbai, Maharashtra)",
+      "incorporation": "India (Maharashtra, Jul 2021)",
+      "founders": "Mandar Natekar, Anjan Banerjee, Subhashish Saha, Subhabrata Debnath",
+      "foundersActive": true,
+      "swadeshiMeter": {
+        "score": 90,
+        "lastVerified": "2026-03-11",
+        "dataCompleteness": 7,
+        "factors": {
+          "shareholding": { "score": 85, "note": "Founders hold 58.04%. Funds 14.36% (led by Exfinity Venture Partners, Indian VC), Angels 2.86%, Enterprises 3.31%. Lead investors Indian: Exfinity, Amit Patni family office (RAAY Global). Google for Startups grant in 2024", "source": "https://tracxn.com/d/legal-entities/india/neuralgarage-private-limited/__E79kmCRinikZZ0j5iyspwa1fWZF8aQHpTLl7L86l1I0" },
+          "incorporation": { "score": 100, "note": "NeuralGarage Private Limited, CIN U72900MH2021PTC364657. Incorporated Jul 27, 2021 at ROC Mumbai. No foreign parent entity", "source": "https://www.zaubacorp.com/company/NEURALGARAGE-PRIVATE-LIMITED/U72900MH2021PTC364657" },
+          "boardControl": { "score": 90, "note": "All 5 directors Indian: Mandar Natekar (CEO), Subhashish Saha (COO), Subhabrata Debnath (CTO), Anjan Banerjee, and Amit Patni (investor). Founders retain board majority", "source": "https://www.zaubacorp.com/company/NEURALGARAGE-PRIVATE-LIMITED/U72900MH2021PTC364657" },
+          "founders": { "score": 100, "note": "All 4 founders Indian. Anjan Banerjee, Subhabrata Debnath, Subhashish Saha are IIT Kanpur alumni. Mandar Natekar is Indian M&E veteran. All actively leading the company", "source": "https://yourstory.com/2023/07/neuralgarage-generative-ai-to-reduce-audio-deep-tech-startup" },
+          "hqAndTeam": { "score": 95, "note": "Corporate HQ Bengaluru, registered office Mumbai. 43 employees primarily in India. Original AI research built entirely in India", "source": "https://www.indiantelevision.com/television/production-house/post-production/%E2%80%9Cvisualdub-has-been-built-in-india-by-neuralgarage-using-its-own-original-research%E2%80%9D:-mandar-natekar-240429" },
+          "dataSovereignty": { "score": 75, "note": "Privacy-focused with on-device processing approach. AWS hosted. Indian operations primary. No confirmed India-only data center mandate", "source": "https://visualdub.ai/privacy-policy/" },
+          "revenueOrigin": { "score": 70, "note": "INR 1.58Cr revenue FY24. Major Indian clients: Dream11, Ultratech Cement, Britannia. Also global clients: Amazon, Microsoft. Film & edtech >90% of revenue. Growing global ambitions post-SXSW win", "source": "https://inc42.com/startups/how-neuralgarage-is-fixing-the-dubbing-conundrum-for-otts-like-netflix-hotstar/" }
+        }
+      }
+    },
+    "ctrls-cloud": {
+      "name": "CtrlS Datacenters Limited",
+      "slug": "ctrls-cloud",
+      "hq": "Hyderabad, Telangana, India",
+      "incorporation": "India (CIN: U72200TG2007PLC056007, 18-Oct-2007, RoC Hyderabad)",
+      "founders": "Sridhar Pinnapureddy",
+      "foundersActive": true,
+      "swadeshiMeter": {
+        "score": 94,
+        "lastVerified": "2026-03-11",
+        "dataCompleteness": 7,
+        "factors": {
+          "shareholding": { "score": 95, "note": "Promoter holding 99.45%. Sridhar Pinnapureddy and family/Pioneer Group are promoters. Public holding only 0.54%. No foreign PE/VC dilution", "source": "https://www.thecompanycheck.com/company/ctrl-s-datacenters-limited/U72200TG2007PLC056007" },
+          "incorporation": { "score": 100, "note": "Incorporated in India as Ctrl S Datacenters Limited (Public Limited), RoC Hyderabad. CIN U72200TG2007PLC056007", "source": "https://www.zaubacorp.com/CTRL-S-DATACENTERS-LIMITED-U72200TG2007PLC056007" },
+          "boardControl": { "score": 85, "note": "Board predominantly Indian. Founder Sridhar Pinnapureddy controls. One foreign director: Bill Barney (advisory role since 2020)", "source": "https://www.prnewswire.com/in/news-releases/ctrls-appoints-industry-veteran-bill-barney-to-its-board-of-directors-857530555.html" },
+          "founders": { "score": 100, "note": "Founded by Sridhar Pinnapureddy, Indian national from Telangana. Actively leads as Founder & CEO. Heads $250M Pioneer Group", "source": "https://varindia.com/news/the-green-man-of-indian-data-center-industry--sridhar-pinnapureddy-founder--ceo-ctrls-datacenters" },
+          "hqAndTeam": { "score": 95, "note": "HQ Pioneer Towers, Madhapur, Hyderabad. ~1177 employees. All data centers in India (Hyderabad, Mumbai, Noida, Chennai, Bengaluru)", "source": "https://www.ctrls.com/datacenters-in-india/" },
+          "dataSovereignty": { "score": 95, "note": "All data centers physically in India. Serves Indian government clients. Tier-4 rated. Expanding to 20+ tier-2 cities", "source": "https://www.ctrls.com/datacenters-in-india/" },
+          "revenueOrigin": { "score": 75, "note": "Revenue Rs 1570 Cr FY2025. 3500+ Indian customers. Also serves 60 Fortune 500 MNCs. Est ~70-75% India-origin revenue", "source": "https://www.icra.in/Rating/GetRationalReportFilePdf?id=138175" }
+        }
+      }
+    },
+    "supernova-ai": {
+      "name": "L8 Cones Interactive Pvt Ltd (Supernova AI)",
+      "slug": "supernova-ai",
+      "hq": "Bengaluru, Karnataka, India",
+      "incorporation": "India (CIN: U72900KA2022PTC158691, 08-Mar-2022, RoC Bangalore)",
+      "founders": "Maharishi R B, Nawin Krishna, Anirudh Coontoor",
+      "foundersActive": true,
+      "swadeshiMeter": {
+        "score": 85,
+        "lastVerified": "2026-03-11",
+        "dataCompleteness": 7,
+        "factors": {
+          "shareholding": { "score": 65, "note": "Founders hold ~46.93%. Indian funds (Kae Capital, Lumikai, AdvantEdge) hold bulk. Some foreign VCs: Goodwater Capital (US), Z47", "source": "https://tracxn.com/d/companies/supernova/__SmzKy5ZZO3cyOxl1niTcZdlL2oKVSgRa14FSjuqWD9M/funding-and-investors" },
+          "incorporation": { "score": 100, "note": "L8 Cones Interactive Pvt Ltd incorporated in India (Karnataka) on 8 Mar 2022. CIN U72900KA2022PTC158691", "source": "https://www.zaubacorp.com/L8-CONES-INTERACTIVE-PRIVATE-LIMITED-U72900KA2022PTC158691" },
+          "boardControl": { "score": 95, "note": "All 3 directors are Indian co-founders. No foreign nominees on board. Full founder control", "source": "https://www.zaubacorp.com/L8-CONES-INTERACTIVE-PRIVATE-LIMITED-U72900KA2022PTC158691" },
+          "founders": { "score": 100, "note": "All 3 founders Indian nationals (IIT Madras alumni). All actively leading the company", "source": "https://www.linkedin.com/in/maharishirb-supernova-ai-app/" },
+          "hqAndTeam": { "score": 95, "note": "HQ HSR Layout, Bengaluru. 86 employees. Targets spoken English for Bharat (vernacular-first)", "source": "https://www.getsupernova.ai/about" },
+          "dataSovereignty": { "score": 70, "note": "Data processed on servers in India, EU, and US per privacy policy. Indian DC available but not India-only", "source": "https://www.getsupernova.ai/privacy-policy" },
+          "revenueOrigin": { "score": 95, "note": "Revenue ~8.93 Cr FY2025. Hit $1M ARR from Tamil Nadu alone. Primarily Indian market", "source": "https://kae-capital.com/blogs/edtechs-second-act-supernova-and-the-95-nobody-served/" }
+        }
+      }
     }
   },
   "meta": {

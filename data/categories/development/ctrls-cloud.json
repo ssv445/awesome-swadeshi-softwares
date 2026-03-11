@@ -11,6 +11,7 @@
   ],
   "pricing": "Paid",
   "company": "CtrlS Datacenters",
+  "companySlug": "ctrls-cloud",
   "location": "Hyderabad",
   "opengraph": {
     "last_updated": "2025-10-05T10:34:35.374Z",
