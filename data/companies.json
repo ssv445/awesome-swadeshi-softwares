@@ -1583,6 +1583,72 @@
           "revenueOrigin": { "score": 95, "note": "Primarily Indian market: education, healthcare, corporate, government sectors. Pricing in INR. Self-funded, no foreign capital dependency", "source": "https://yourstory.com/2020/08/startup-jaipur-videomeet-aatmanirbhar-zoom-webinars-events" }
         }
       }
+    },
+    "shopsense-retail": {
+      "name": "Shopsense Retail Technologies (PixelBin/Fynd)",
+      "slug": "shopsense-retail",
+      "hq": "Mumbai, Maharashtra, India",
+      "incorporation": "India (CIN: U52100MH2012PLC236314, 27-Sep-2012, RoC Mumbai)",
+      "founders": "Farooq Adam, Harsh Shah, Sreeraman MG",
+      "foundersActive": true,
+      "swadeshiMeter": {
+        "score": 85,
+        "lastVerified": "2026-03-11",
+        "dataCompleteness": 7,
+        "factors": {
+          "shareholding": { "score": 80, "note": "Reliance Retail Ventures (Indian) holds ~87% stake since 2019. Remaining ~13% with founders/others. Earlier minority investors included Google, Kae Capital. Overwhelmingly Indian-owned via Reliance", "source": "https://www.thecompanycheck.com/company/shopsense-retail-technologies-limited/U52100MH2012PLC236314" },
+          "incorporation": { "score": 95, "note": "Incorporated in India on 27 Sep 2012 as private company in Mumbai. CIN U52100MH2012PLC236314, RoC Mumbai", "source": "https://www.zaubacorp.com/company/SHOPSENSE-RETAIL-TECHNOLOGIES-LIMITED/U52100MH2012PLC236314" },
+          "boardControl": { "score": 85, "note": "Board includes Indian directors: Harsh Shah and Farooq Adam (co-founders), plus Reliance nominees. All directors appear to be Indian nationals", "source": "https://tracxn.com/d/companies/fynd/__UAQp_UbESGKtKdczyk6nI8iAzRRoHelQuegvJeZGLHU/founders-and-board-of-directors" },
+          "founders": { "score": 95, "note": "All three founders (Farooq Adam, Harsh Shah, Sreeraman MG) are Indian nationals, IIT Bombay alumni, based in Mumbai", "source": "https://colitco.com/the-story-of-fynd-founded-by-harsh-shah-farooq-adam-and-sreeraman-mg/" },
+          "hqAndTeam": { "score": 90, "note": "HQ in Mumbai. ~948 employees primarily based in India. Engineering and operations centered in Mumbai", "source": "https://tracxn.com/d/legal-entities/india/shopsense-retail-technologies-limited/__3_njD3ppGgiDizbnev_dpzhtP5LREwy31aBp62X61MY" },
+          "dataSovereignty": { "score": 75, "note": "Per privacy policy, data stored in India and/or other countries at their discretion. Services offered from India. Uses CDN edge servers globally", "source": "https://www.pixelbin.io/privacy-policy" },
+          "revenueOrigin": { "score": 65, "note": "Rs 118 Cr revenue FY2024. Fynd platform serves Indian retailers primarily. PixelBin serves global SaaS customers. Revenue skews India-heavy", "source": "https://tracxn.com/d/legal-entities/india/shopsense-retail-technologies-limited/__3_njD3ppGgiDizbnev_dpzhtP5LREwy31aBp62X61MY" }
+        }
+      }
+    },
+    "storehippo": {
+      "name": "Hippo Innovations Pvt Ltd (StoreHippo)",
+      "slug": "storehippo",
+      "hq": "Gurgaon, Haryana, India",
+      "incorporation": "India (CIN: U72200HR2015PTC054459, 02-Feb-2015, RoC Gurgaon)",
+      "founders": "Rajiv Kumar Aggarwal, Kriti Aggarwal",
+      "foundersActive": true,
+      "swadeshiMeter": {
+        "score": 88,
+        "lastVerified": "2026-03-11",
+        "dataCompleteness": 7,
+        "factors": {
+          "shareholding": { "score": 85, "note": "Bootstrapped for most of its life. Raised only $575K total. Investors are India Accelerator, Finvolve, Brew Opportunities Fund — all India-based. Founders retain majority control", "source": "https://tracxn.com/d/companies/storehippo/__jlztbjjjmrh-tZe0gh6jJ6rJI52Kni99zHvIhXb4TwQ" },
+          "incorporation": { "score": 95, "note": "Incorporated in India as Hippo Innovations Pvt Ltd (CIN U72200HR2015PTC054459), registered in Gurgaon, Haryana on 02 Feb 2015", "source": "https://www.zaubacorp.com/company/HIPPO-INNOVATIONS-PRIVATE-LIMITED/U72200HR2015PTC054459" },
+          "boardControl": { "score": 90, "note": "Board comprises Indian nationals: Rajiv Kumar Aggarwal (CEO & Co-Founder), Kriti Aggarwal (Co-Founder & CMO), and 2 others. No foreign board members", "source": "https://www.zaubacorp.com/company/HIPPO-INNOVATIONS-PRIVATE-LIMITED/U72200HR2015PTC054459" },
+          "founders": { "score": 95, "note": "Both founders Rajiv Kumar Aggarwal and Kriti Aggarwal are Indian nationals. Rajiv has prior experience at HCL, Oracle India", "source": "https://www.yosuccess.com/interviews/rajiv-kumar-storehippo/" },
+          "hqAndTeam": { "score": 90, "note": "HQ at MGF Metropolis Mall, MG Road, Gurgaon, Haryana. ~52 employees primarily based in India", "source": "https://www.zaubacorp.com/company/HIPPO-INNOVATIONS-PRIVATE-LIMITED/U72200HR2015PTC054459" },
+          "dataSovereignty": { "score": 60, "note": "Uses MongoDB Atlas, Google Cloud, Azure. Operates across 3 continents. Data likely distributed globally rather than exclusively in India", "source": "https://www.mongodb.com/solutions/customer-case-studies/storehippo" },
+          "revenueOrigin": { "score": 75, "note": "~79% of customers from India. Platform operates across 12 geographies but India is the dominant market", "source": "https://6sense.com/tech/ecommerce-platform/storehippo-market-share" }
+        }
+      }
+    },
+    "pupilfirst": {
+      "name": "Pupilfirst Pvt. Ltd.",
+      "slug": "pupilfirst",
+      "hq": "Kochi, Kerala, India",
+      "incorporation": "India (CIN: U74999KL2017PTC069556, 13-Apr-2017, RoC Ernakulam)",
+      "founders": "Sanjay Vijayakumar, Hari Gopal, Gautham",
+      "foundersActive": true,
+      "swadeshiMeter": {
+        "score": 93,
+        "lastVerified": "2026-03-11",
+        "dataCompleteness": 7,
+        "factors": {
+          "shareholding": { "score": 95, "note": "Founders hold 57.96%. All investors Indian: Pratithi/Gopalakrishnan family office, 3one4 Capital, Seafund, Callapina. No foreign institutional ownership", "source": "https://governance.pupilfirst.org/shareowners" },
+          "incorporation": { "score": 95, "note": "Incorporated in India on 13 Apr 2017 as Private Limited company. CIN U74999KL2017PTC069556, registered in Ernakulam, Kerala", "source": "https://www.zaubacorp.com/company/PUPILFIRST-PRIVATE-LIMITED/U74999KL2017PTC069556" },
+          "boardControl": { "score": 95, "note": "Directors Sanjay Vijayakumar, Hari Gopal, and Suma Prashant are all Indian nationals based in Kerala. Full Indian board control", "source": "https://governance.pupilfirst.org/corporate" },
+          "founders": { "score": 95, "note": "All three founders are Indian nationals from Kerala. Sanjay co-authored India's Student Startup Policy, on governing board of Kerala Technical University", "source": "https://www.pupilfirst.org/story" },
+          "hqAndTeam": { "score": 95, "note": "HQ in Kochi, Kerala with additional office in Thiruvananthapuram. Core team is India-based in Kerala", "source": "https://www.pupilfirst.org/team" },
+          "dataSovereignty": { "score": 60, "note": "Open-source LMS, self-hosted deployments can be anywhere. No explicit confirmation of India-only hosting for managed service", "source": "https://docs.pupilfirst.com/" },
+          "revenueOrigin": { "score": 90, "note": "Primary revenue from Indian customers: AICTE LITE program (100K+ faculty, 24M students target), Indian universities across 6 states and 13 universities", "source": "https://lite.pupilfirst.org/" }
+        }
+      }
     }
   },
   "meta": {
