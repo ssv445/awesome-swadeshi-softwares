@@ -1187,6 +1187,72 @@
           "revenueOrigin": { "score": 95, "note": "150,000+ customers almost entirely in India. Revenue ~Rs 31.9 Cr. India-focused .in domain and regional language support", "source": "https://www.owler.com/company/hostingraja" }
         }
       }
+    },
+    "hidden-reflex": {
+      "name": "Hidden Reflex (Epic Browser)",
+      "slug": "hidden-reflex",
+      "hq": "Bengaluru, India & Washington DC, USA",
+      "incorporation": "India (CIN: U72300KA2011PTC060985, Oct 2011, ROC Bangalore)",
+      "founders": "Alok Bhardwaj",
+      "foundersActive": true,
+      "swadeshiMeter": {
+        "score": 67,
+        "lastVerified": "2026-03-11",
+        "dataCompleteness": 6,
+        "factors": {
+          "shareholding": { "score": 55, "note": "Founder Alok Bhardwaj holds majority, but Graham Holdings (US) and angel investors have stakes; exact split undisclosed", "source": "https://hiddenreflex.com/" },
+          "incorporation": { "score": 100, "note": "Incorporated in India as Hidden Reflex Web Software Pvt Ltd, CIN U72300KA2011PTC060985, ROC Bangalore, Oct 2011", "source": "https://www.zaubacorp.com/company/HIDDEN-REFLEX-WEB-SOFTWARE-PRIVATE-LIMITED/U72300KA2011PTC060985" },
+          "boardControl": { "score": 70, "note": "3 directors: Alok Kumar Bhardwaj, Raghbir Kumar Bhardwaj, Shilad Kumar Devaramani — all India-resident directors, but founder is US-born Indian-origin", "source": "https://www.thecompanycheck.com/company/hidden-reflex-web-software-private-limited/U72300KA2011PTC060985" },
+          "founders": { "score": 60, "note": "Alok Bhardwaj — born in Texas, Indian-origin (NRI/PIO), Princeton grad, actively leads company from both US and India", "source": "https://www.namasteindia.info/2010/12/alok-bhardwaj-hidden-reflex.html" },
+          "hqAndTeam": { "score": 70, "note": "Development team in Bangalore (Unit E103 Sunrise Chambers, Ulsoor), but also has operations in Washington DC", "source": "https://www.indiafilings.com/search/hidden-reflex-web-software-private-limited-cin-U72300KA2011PTC060985" },
+          "dataSovereignty": { "score": 50, "note": "Privacy-first browser stores nothing server-side; encrypted proxy servers in 8 countries including India, US, EU, Singapore", "source": "https://epicbrowser.com/privacy-policy" },
+          "revenueOrigin": { "score": 40, "note": "Global user base across ~180 countries; lost Google revenue over privacy stance; revenue model unclear, likely global-skewed", "source": "https://en.wikipedia.org/wiki/Epic_(web_browser)" }
+        }
+      }
+    },
+    "indus-appstore": {
+      "name": "Indus Appstore Private Limited",
+      "slug": "indus-appstore",
+      "hq": "Chennai, Tamil Nadu, India",
+      "incorporation": "India (CIN: U74120KA2015PTC174871, ROC Bangalore)",
+      "founders": "Rakesh Deshmukh, Akash Dongre, Sudhir B",
+      "foundersActive": false,
+      "swadeshiMeter": {
+        "score": 56,
+        "lastVerified": "2026-03-11",
+        "dataCompleteness": 7,
+        "factors": {
+          "shareholding": { "score": 15, "note": "Wholly-owned subsidiary of PhonePe, which is ~72% owned by Walmart (WM Digital Commerce Holdings). Ultimate control is American", "source": "https://inc42.com/buzz/phonepe-drhp-a-look-at-shareholding-pattern-key-executives/" },
+          "incorporation": { "score": 100, "note": "Incorporated in India, CIN U74120KA2015PTC174871, ROC Bangalore. Also registered in Chennai (CIN U74120TN2015PTC179835)", "source": "https://www.zaubacorp.com/INDUS-APPSTORE-PRIVATE-LIMITED-U74120KA2015PTC174871" },
+          "boardControl": { "score": 30, "note": "Directors are Indian nationals (Akash Dongre, Priya Narasimhan, Tessa Joseph Kallarackal), but appointed by PhonePe which is Walmart-controlled", "source": "https://www.tofler.in/indus-appstore-private-limited/company/U74120KA2015PTC174871" },
+          "founders": { "score": 90, "note": "Founded by 3 IIT Bombay alumni — Rakesh Deshmukh, Akash Dongre, Sudhir B. Rakesh stepped down as CEO Jan 2024; Akash Dongre remains active as CPO", "source": "https://inc42.com/buzz/phonepe-owned-indus-appstore-ceo-rakesh-deshmukh-steps-down/" },
+          "hqAndTeam": { "score": 90, "note": "HQ at Nelson Towers, Chennai. Engineering and operations team based in India (Bengaluru and Chennai)", "source": "https://www.falconebiz.com/company/INDUS-APPSTORE-PRIVATE-LIMITED-U74120TN2015PTC179835" },
+          "dataSovereignty": { "score": 70, "note": "Privacy policy governed by Indian law, servers secured with encryption. However, parent company Walmart may have access to infrastructure decisions", "source": "https://developer.indusappstore.com/web/privacy" },
+          "revenueOrigin": { "score": 95, "note": "100% India-focused app marketplace with zero platform fees. Revenue entirely from Indian market (OEM deals with Xiaomi, Lava, Nokia)", "source": "https://inc42.com/features/indus-app-store-phonepe-india-loosen-google-play-grip/" }
+        }
+      }
+    },
+    "sumeru-software": {
+      "name": "Sumeru Software Solutions (Elyments)",
+      "slug": "sumeru-software",
+      "hq": "Bengaluru, Karnataka, India",
+      "incorporation": "India (CIN: U72200KA2000PTC027194, Karnataka, incorporated 2000)",
+      "founders": "Harish Ramachandran, Deepak Patil",
+      "foundersActive": true,
+      "swadeshiMeter": {
+        "score": 95,
+        "lastVerified": "2026-03-11",
+        "dataCompleteness": 6,
+        "factors": {
+          "shareholding": { "score": 95, "note": "Privately held, unfunded company. No external VC investment. All shares held by Indian individual directors/promoters. Paid-up capital Rs 1.06 lakh only", "source": "https://www.zaubacorp.com/company/SUMERU-SOFTWARE-SOLUTIONS-PRIVATE-LIMITED/U72200KA2000PTC027194" },
+          "incorporation": { "score": 100, "note": "Incorporated in India. CIN U72200KA2000PTC027194, registered at RoC Bangalore, Karnataka since 2000", "source": "https://www.indiafilings.com/search/sumeru-software-solutions-private-limited-cin-U72200KA2000PTC027194" },
+          "boardControl": { "score": 95, "note": "All 4 directors are Indian nationals: Harish Ramachandran (CEO), Madhu Ramachandra Rao, Ayyagari Lakshmanarao, Rajesh Krishnamurthy. No foreign board representation", "source": "https://www.tofler.in/sumeru-software-solutions-private-limited/company/U72200KA2000PTC027194" },
+          "founders": { "score": 90, "note": "Indian founders Harish Ramachandran (IIT Bombay) and Deepak Patil. Built by 1000+ Indian Art of Living volunteer developers, inspired by Sri Sri Ravi Shankar", "source": "https://yourstory.com/2020/07/sri-sri-ravi-shankar-made-in-india-app-social-media-eleyments" },
+          "hqAndTeam": { "score": 95, "note": "HQ at 1st Floor Samvit, next to Art of Living Ashram, Bangalore. 1000+ IT professional volunteers, all based in India", "source": "https://www.artofliving.org/in-en/newsroom/press-releases/elyments-social-media-app" },
+          "dataSovereignty": { "score": 90, "note": "Explicitly claims all user data stored in India with hardware-based encryption. Privacy by design and default principle. Data never shared with third parties without consent", "source": "https://www.digit.in/news/apps/elyments-indian-super-app-launched-features-privacy-policy-how-to-use-and-more-55173.html" },
+          "revenueOrigin": { "score": 85, "note": "Free app targeting Indian users exclusively. Primarily Indian user base. Limited revenue data available as the app is free and unfunded", "source": "https://www.elyments.com/" }
+        }
+      }
     }
   },
   "meta": {
