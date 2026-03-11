@@ -1319,6 +1319,72 @@
           "revenueOrigin": { "score": 90, "note": "3M+ downloads primarily from India. INR 10.1L revenue FY2025. Platform marketed as 'Social Media from India'. Near-entirely India-focused user base", "source": "https://newspatrolling.com/pepul-social-media-app-crosses-2-million-downloads-10000-paid-subscriptions-in-the-shortest-period/" }
         }
       }
+    },
+    "petpooja": {
+      "name": "Prayosha Food Services Pvt Ltd (PetPooja)",
+      "slug": "petpooja",
+      "hq": "Ahmedabad, Gujarat, India",
+      "incorporation": "India (CIN: U74110GJ2011PTC065512, 19-May-2011, ROC Ahmedabad)",
+      "founders": "Apurv Patel, Parthiv Patel",
+      "foundersActive": true,
+      "swadeshiMeter": {
+        "score": 91,
+        "lastVerified": "2026-03-11",
+        "dataCompleteness": 7,
+        "factors": {
+          "shareholding": { "score": 85, "note": "Founders ~23-27%. Dharana Capital (Indian fund) ~18.6%. Indian angels (Urban Company founders, Ashish Gupta) ~35%. No significant foreign institutional investors", "source": "https://tracxn.com/d/companies/petpooja/__65aXFYiIx-gzh6hnpcg7O3SK4RqoPJORg-rO7hRl4qQ/latest-shareholding" },
+          "incorporation": { "score": 100, "note": "Prayosha Food Services Pvt Ltd incorporated in Gujarat, India on 19 May 2011. CIN: U74110GJ2011PTC065512. ROC Ahmedabad", "source": "https://www.zaubacorp.com/company/PRAYOSHA-FOOD-SERVICES-PRIVATE-LIMITED/U74110GJ2011PTC065512" },
+          "boardControl": { "score": 95, "note": "All directors Indian: Parthiv Patel (CEO), Apurv Patel (CSO), Shaival Desai, Dhaval Shah. No foreign board members", "source": "https://tracxn.com/d/companies/petpooja/__65aXFYiIx-gzh6hnpcg7O3SK4RqoPJORg-rO7hRl4qQ/founders-and-board-of-directors" },
+          "founders": { "score": 100, "note": "Indian founders Apurv Patel (CSO) and Parthiv Patel (CEO), both actively leading since 2011", "source": "https://www.petpooja.com/about-us" },
+          "hqAndTeam": { "score": 90, "note": "HQ in Ahmedabad, Gujarat. ~745 employees primarily in India. Small international presence in UAE and South Africa via local distributors", "source": "https://the-captable.com/2025/02/petpooja-saas-restaurant-software-foodtech-cloud-kitchen/" },
+          "dataSovereignty": { "score": 60, "note": "Cloud-based POS with encrypted data storage. Serves India, UAE, South Africa, Canada. No public confirmation of India-only hosting", "source": "https://www.capterra.com/p/172163/Petpooja-Restaurant-Management-Platform/" },
+          "revenueOrigin": { "score": 90, "note": "100,000+ restaurants served, vast majority in India. International presence ~250 clients in UAE, South Africa, Canada (~0.25% of customer base)", "source": "https://www.hotelierindia.com/business/petpooja-forays-into-the-uae-and-south-african-markets" }
+        }
+      }
+    },
+    "proofhub": {
+      "name": "ProofHub",
+      "slug": "proofhub",
+      "hq": "Covina, California, USA (engineering in Chandigarh, India)",
+      "incorporation": "USA (Delaware/California LLC — no Indian entity found)",
+      "founders": "Sandeep Kashyap",
+      "foundersActive": true,
+      "swadeshiMeter": {
+        "score": 69,
+        "lastVerified": "2026-03-11",
+        "dataCompleteness": 6,
+        "factors": {
+          "shareholding": { "score": 90, "note": "Bootstrapped with no external funding. Sandeep Kashyap (Indian national) owns 100% via US LLC entity", "source": "https://www.crunchbase.com/organization/proofhub" },
+          "incorporation": { "score": 20, "note": "Incorporated as ProofHub LLC in USA (440 N Barranca Ave, Covina, CA 91723). No Indian entity found on MCA", "source": "https://www.proofhub.com/about" },
+          "boardControl": { "score": 95, "note": "Sole founder Sandeep Kashyap (Indian national) has full control. No external investors or board members", "source": "https://www.vestd.com/blog/ama-sandeep-kashyap-founder-of-proofhub" },
+          "founders": { "score": 100, "note": "Founded by Sandeep Kashyap (Indian, based in Chandigarh). Actively leading as CEO with 25+ years in IT", "source": "https://www.proofhub.com/articles/author/sandeepkashyap" },
+          "hqAndTeam": { "score": 70, "note": "Legal HQ in Covina, California. 50+ employees with engineering team at Rajiv Gandhi IT Park, Chandigarh, India", "source": "https://www.proofhub.com/about" },
+          "dataSovereignty": { "score": 20, "note": "Privacy policy states data collected, used, and retained in the United States. EU-US Privacy Shield compliance. No Indian data center mentioned", "source": "https://www.proofhub.com/privacy" },
+          "revenueOrigin": { "score": 30, "note": "$6.5M revenue (2024). 39% US customers, 21% India, 9% Brazil, rest global across 141+ countries", "source": "https://6sense.com/tech/it-management/proofhub-market-share" }
+        }
+      }
+    },
+    "urbanpiper": {
+      "name": "UrbanPiper Technology Pvt Ltd",
+      "slug": "urbanpiper",
+      "hq": "Bengaluru, Karnataka, India",
+      "incorporation": "India (CIN: U72900KA2016PTC085864, 05-Feb-2016, ROC Bangalore)",
+      "founders": "Saurabh Gupta, Anirban Majumdar, Manav Gupta",
+      "foundersActive": true,
+      "swadeshiMeter": {
+        "score": 73,
+        "lastVerified": "2026-03-11",
+        "dataCompleteness": 6,
+        "factors": {
+          "shareholding": { "score": 55, "note": "Founders hold ~36%, but foreign VCs (Tiger Global, Peak XV) hold ~38%. Indian enterprises (Swiggy, Zomato) hold ~11%. UrbanPiper acquired Ordermark US business in 2023 — Indian entity is acquirer", "source": "https://tracxn.com/d/legal-entities/india/urbanpiper-technology-private-limited/__OhEfxTHiOZRgP1zI86IBPeTXllakJL89RokLGXnuim4" },
+          "incorporation": { "score": 100, "note": "Incorporated in India as UrbanPiper Technology Private Limited, CIN U72900KA2016PTC085864, ROC Bangalore, 05 Feb 2016", "source": "https://www.zaubacorp.com/company/URBANPIPER-TECHNOLOGY-PRIVATE-LIMITED/U72900KA2016PTC085864" },
+          "boardControl": { "score": 70, "note": "Directors are Indian founders Saurabh Gupta and Anirban Majumdar. Tiger Global and Peak XV likely hold investor board seats given ~38% combined stake", "source": "https://www.zaubacorp.com/company/URBANPIPER-TECHNOLOGY-PRIVATE-LIMITED/U72900KA2016PTC085864" },
+          "founders": { "score": 100, "note": "All 3 founders Indian — Saurabh Gupta (CEO), Anirban Majumdar (Co-CEO), Manav Gupta (Chief of Growth). All actively leading", "source": "https://www.urbanpiper.com/about-us" },
+          "hqAndTeam": { "score": 80, "note": "HQ in Bangalore (Whitefield). ~161 employees, majority in India. Expanding teams in US, UK, UAE, KSA, Canada post-Ordermark acquisition", "source": "https://tracxn.com/d/companies/urbanpiper/__iSzYtx6MyJeAPdZQ3mpAPTQCjTsnDqvoWeLUT-7wxc0" },
+          "dataSovereignty": { "score": 45, "note": "No public disclosure on data hosting. Serves restaurants across 12+ countries. Likely uses global cloud infrastructure", "source": "https://www.urbanpiper.com/" },
+          "revenueOrigin": { "score": 55, "note": "Processes 18% of India's online food orders. Revenue Rs 53.1Cr (FY2025). Active in 12+ countries including US, Middle East, UK. India still dominant but international growing", "source": "https://www.thecompanycheck.com/company/urbanpiper-technology-private-limited/U72900KA2016PTC085864" }
+        }
+      }
     }
   },
   "meta": {

@@ -11,6 +11,7 @@
   ],
   "pricing": "Paid",
   "company": "PetPooja",
+  "companySlug": "petpooja",
   "location": "Ahmedabad, Gujarat",
   "opengraph": {
     "last_updated": "2025-10-05T10:31:40.562Z",
