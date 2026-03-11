@@ -1451,6 +1451,72 @@
           "revenueOrigin": { "score": 45, "note": "3,000+ platforms across 120+ countries. ~60% growth from outside India. Revenue Rs 20.4 Cr FY24. Significant international customer base", "source": "https://www.prnewswire.com/in/news-releases/vdocipher-video-player-powers-3-000-platforms-across-120-countries-301782980.html" }
         }
       }
+    },
+    "truelancer": {
+      "name": "Truelancer Internet Pvt Ltd",
+      "slug": "truelancer",
+      "hq": "New Delhi, India",
+      "incorporation": "India (CIN: U72200DL2014PTC268170, Jun 2014, ROC Delhi); US entity MyRemoteTeam Inc operates globally",
+      "founders": "Dipesh Garg, Rajshekhar Rajaharia",
+      "foundersActive": true,
+      "swadeshiMeter": {
+        "score": 79,
+        "lastVerified": "2026-03-11",
+        "dataCompleteness": 7,
+        "factors": {
+          "shareholding": { "score": 85, "note": "Founders own 94.96% of Indian entity, angels 4.03%, enterprise 1.01%. Only $48.3K seed raised. US parent entity MyRemoteTeam Inc operates the platform globally", "source": "https://tracxn.com/d/companies/truelancer/__KczyC3ZKkd-C4bBzLLf4Ng7MNHRt8Cb9e1gdge1wnBs/latest-shareholding" },
+          "incorporation": { "score": 70, "note": "Indian entity Truelancer Internet Pvt Ltd incorporated Jun 23, 2014, ROC Delhi. Platform operated by MyRemoteTeam Inc (US) for all users; Indian entity only for Indian users — flip structure", "source": "https://www.zaubacorp.com/company/TrueLancer-Internet-Private-Limited/U72200DL2014PTC268170" },
+          "boardControl": { "score": 85, "note": "Indian entity directors: Dipesh Garg and Anu Kumari (both Indian). Investor Raghu Vohra on board. Founder retains control", "source": "https://www.cbinsights.com/company/truelancer/people" },
+          "founders": { "score": 95, "note": "Both founders Indian — Dipesh Garg (Rajasthan Technical University, CEO) and Rajshekhar Rajaharia (security researcher). Dipesh actively leads", "source": "https://www.crunchbase.com/person/dipesh-garg" },
+          "hqAndTeam": { "score": 90, "note": "HQ at 2nd Floor, Building #35, Ghitorni, New Delhi. 16-43 employees, primarily India-based. MyRemoteTeam Inc office in Walnut, California", "source": "https://www.truelancer.com/about" },
+          "dataSovereignty": { "score": 30, "note": "Privacy policy explicitly states personal information transferred to the United States for processing. Operated by US entity for non-Indian users", "source": "https://www.truelancer.com/legal/privacy-policy" },
+          "revenueOrigin": { "score": 50, "note": "Global freelance marketplace. Revenue Rs 19.6 Cr FY24. Serves freelancers from India, USA, UK, Bangladesh, Philippines", "source": "https://tracxn.com/d/legal-entities/india/truelancer-internet-private-limited/__tDHdzwTZtM7pGUcQe8lekwMNHq364Zp5L4qll7brzLA" }
+        }
+      }
+    },
+    "craftsvilla": {
+      "name": "Craftsvilla Handicrafts Pvt Ltd",
+      "slug": "craftsvilla",
+      "hq": "Mumbai, Maharashtra, India",
+      "incorporation": "India (CIN: U74999MH2014FTC260276, ROC Mumbai) — subsidiary of Supera Investments (Singapore)",
+      "founders": "Manoj Gupta, Monica Gupta",
+      "foundersActive": true,
+      "swadeshiMeter": {
+        "score": 50,
+        "lastVerified": "2026-03-11",
+        "dataCompleteness": 6,
+        "factors": {
+          "shareholding": { "score": 30, "note": "Subsidiary of Singapore parent Supera Investments. $54.5M+ raised from foreign VCs: Lightspeed, Peak XV, DST Global, Global Founders Capital. Founders hold minority stake", "source": "https://inc42.com/buzz/craftsvilla-gets-inr-29-4-cr-infusion-from-singapore-parent-entity/" },
+          "incorporation": { "score": 35, "note": "Indian entity CIN U74999MH2014FTC260276 classified as 'subsidiary of company incorporated outside India'. Parent: Supera Investments (Singapore)", "source": "https://www.zaubacorp.com/company/CRAFTSVILLA-HANDICRAFTS-PRIVATE-LIMITED/U74999MH2014FTC260276" },
+          "boardControl": { "score": 50, "note": "4 directors: Manoj Gupta, Monica Gupta (founders), Shailendra J Singh (Peak XV), Sandeep Singhal (Nexus). 50% VC-nominated board seats", "source": "https://tracxn.com/d/companies/craftsvilla/__caeEJWGkMQ5Yq9dyPN2QJW6Rz_2O6Ap3tJSHMTFAZpg/founders-and-board-of-directors" },
+          "founders": { "score": 90, "note": "Manoj Gupta (IIT Bombay, IIM Ahmedabad) and Monica Gupta are Indian nationals. Both still active as CEO and Co-Founder", "source": "https://www.yosuccess.com/success-stories/manoj-gupta-craftsvilla/" },
+          "hqAndTeam": { "score": 85, "note": "HQ at Commerz II, Goregaon East, Mumbai. Primarily Indian team and operations", "source": "https://www.craftsvilla.com/about-us-craftsvilla/" },
+          "dataSovereignty": { "score": 60, "note": "Indian e-commerce with secured payment gateway. No public disclosure of specific server locations", "source": "https://www.craftsvilla.com/privacy-policy-craftsvilla" },
+          "revenueOrigin": { "score": 85, "note": "Primarily India-focused ethnic marketplace for Indian handicrafts. Some international sales (US is second market)", "source": "https://ecommercedb.com/store/craftsvilla.com" }
+        }
+      }
+    },
+    "crimson-interactive": {
+      "name": "Crimson Interactive (Trinka AI / Enago)",
+      "slug": "crimson-interactive",
+      "hq": "Mumbai, Maharashtra, India",
+      "incorporation": "India (CIN: U64200MH2005PTC157563, Nov 2005, ROC Mumbai)",
+      "founders": "Sharad Mittal",
+      "foundersActive": true,
+      "swadeshiMeter": {
+        "score": 88,
+        "lastVerified": "2026-03-11",
+        "dataCompleteness": 7,
+        "factors": {
+          "shareholding": { "score": 90, "note": "Bootstrapped, no external funding raised. Sharad Mittal (Founder) and Sarita Devi Agarwal are the only directors. Private company with no foreign VC investment. $69.6M revenue achieved without dilution", "source": "https://www.crunchbase.com/organization/crimson-interactive" },
+          "incorporation": { "score": 100, "note": "Crimson Interactive Private Limited incorporated Nov 21, 2005 in Mumbai, Maharashtra. CIN U64200MH2005PTC157563. ROC Mumbai. Active status", "source": "https://www.zaubacorp.com/company/CRIMSON-INTERACTIVE-PRIVATE-LIMITED/U64200MH2005PTC157563" },
+          "boardControl": { "score": 90, "note": "Two directors: Sharad Mittal (Founder) and Sarita Devi Agarwal, both Indian nationals. No foreign board members. Abhigyan Arun appointed CEO Jul 2025 but Mittal retains board control", "source": "https://www.tofler.in/crimson-interactive-private-limited/company/U64200MH2005PTC157563" },
+          "founders": { "score": 95, "note": "Founded by Sharad Mittal, Indian national, B.Com from Narsee Monjee College Mumbai. Left CA career to start Crimson Interactive in 2005. Remains active", "source": "https://www.indiainfoline.com/article/news-sector-others/mr-sharad-mittal-founder-crimson-interactive-113111403090_1.html" },
+          "hqAndTeam": { "score": 75, "note": "HQ at Techniplex-II, Goregaon West, Mumbai. Offices in Hyderabad. Also 10 global offices: New Jersey, London, Seoul, Beijing, Shanghai, Tokyo, Istanbul, Bogota. ~223 employees", "source": "https://www.crimsoni.com/" },
+          "dataSovereignty": { "score": 75, "note": "Data stored on Crimson AI-owned servers and third-party servers. Complies with GDPR, HIPAA, ISO. On-premise deployment available for enterprises", "source": "https://www.trinka.ai/data-security" },
+          "revenueOrigin": { "score": 40, "note": "Serves clients in 125+ countries. Primarily targets ESL researchers globally (Japan, China, Korea, Turkey major markets). Estimated <30% India revenue. Total ~$47M globally", "source": "https://getlatka.com/companies/crimsoni.com" }
+        }
+      }
     }
   },
   "meta": {
