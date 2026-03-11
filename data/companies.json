@@ -2177,6 +2177,94 @@
           "revenueOrigin": { "score": 80, "note": "Primarily Indian market. Web hosting, domain registration for Indian businesses", "source": "https://w3infotech.in/" }
         }
       }
+    },
+    "cursorclip": {
+      "name": "CursorClip (Team CursorClip)",
+      "slug": "cursorclip",
+      "hq": "Indore, India",
+      "incorporation": "India (Sole Proprietorship)",
+      "founders": "Suryapratap Singh Rathore, Shadab",
+      "foundersActive": true,
+      "swadeshiMeter": {
+        "score": 80,
+        "lastVerified": "2026-03-11",
+        "dataCompleteness": 5,
+        "factors": {
+          "shareholding": { "score": 85, "note": "Sole proprietorship owned by Suryapratap Singh Rathore (Indian). No external investors or foreign funding found", "source": "https://cursorclip.com/legal/tos" },
+          "incorporation": { "score": 75, "note": "Operating as sole proprietorship in Indore, MP, India. Governed by Indian law. Not registered as Pvt Ltd or LLP on MCA", "source": "https://cursorclip.com/legal/tos" },
+          "boardControl": { "score": 80, "note": "No formal board (sole proprietorship). Full control by Indian founder Suryapratap Singh Rathore", "source": "https://cursorclip.com/legal/tos" },
+          "founders": { "score": 95, "note": "Both founders Indian and active: Suryapratap Singh Rathore (Indore) and Shadab", "source": "https://cursorclip.com/" },
+          "hqAndTeam": { "score": 90, "note": "Registered in Vaibhav Nagar, Indore, Madhya Pradesh. Small indie team based in India", "source": "https://cursorclip.com/legal/tos" },
+          "dataSovereignty": { "score": 40, "note": "Video storage on Cloudflare R2 (global). Analytics via Microsoft Clarity. Payments via Dodo Payments (India)", "source": "https://cursorclip.com/legal/privacy" },
+          "revenueOrigin": { "score": 55, "note": "macOS app sold globally in USD via Dodo Payments. Global indie maker audience, no India-specific pricing", "source": "https://cursorclip.com/pricing/" }
+        }
+      }
+    },
+    "fueler": {
+      "name": "Kiwismedia Technologies Private Limited",
+      "slug": "fueler",
+      "hq": "Agartala, Tripura, India",
+      "incorporation": "India",
+      "founders": "Riten Debnath, Aquib Jawed",
+      "foundersActive": true,
+      "swadeshiMeter": {
+        "score": 91,
+        "lastVerified": "2026-03-11",
+        "dataCompleteness": 7,
+        "factors": {
+          "shareholding": { "score": 92, "note": "92.83% promoter-held (FY2024), 4.10% public, 3.07% others. No known foreign VC investment", "source": "https://www.thecompanycheck.com/company/kiwismedia-technologies-private-limited/U72900TR2019PTC013632" },
+          "incorporation": { "score": 100, "note": "Incorporated in India (Tripura) as Kiwismedia Technologies Pvt Ltd, CIN U72900TR2019PTC013632, ROC Guwahati", "source": "https://www.zaubacorp.com/company/KIWISMEDIA-TECHNOLOGIES-PRIVATE-LIMITED/U72900TR2019PTC013632" },
+          "boardControl": { "score": 95, "note": "Both directors (Riten Debnath, Aquib Jawed) are Indian nationals. No foreign board representation", "source": "https://www.thecompanycheck.com/people/kiwismedia-technologies/U72900TR2019PTC013632" },
+          "founders": { "score": 100, "note": "Indian founders — Riten Debnath (Agartala, Tripura) and Aquib Jawed (West Bengal). Both actively leading", "source": "https://in.linkedin.com/in/ritendebnath" },
+          "hqAndTeam": { "score": 90, "note": "Registered in Agartala, Tripura. Team works remotely from Indian small towns. Founders based in Bangalore", "source": "https://fueler.io/about" },
+          "dataSovereignty": { "score": 45, "note": "No explicit Indian data hosting. Uses Cloudflare and Google Analytics. Terms governed by Indian law", "source": "https://fueler.io/privacy" },
+          "revenueOrigin": { "score": 65, "note": "Global freelancer platform with 92K+ users. Strong Indian user base but significant international audience", "source": "https://fueler.io/" }
+        }
+      }
+    },
+    "lufick-technology": {
+      "name": "Lufick Technology Pvt. Ltd.",
+      "slug": "lufick-technology",
+      "hq": "Gurugram, Haryana, India",
+      "incorporation": "India",
+      "founders": "Gulshan Kumar Singh",
+      "foundersActive": true,
+      "swadeshiMeter": {
+        "score": 94,
+        "lastVerified": "2026-03-11",
+        "dataCompleteness": 7,
+        "factors": {
+          "shareholding": { "score": 95, "note": "Promoters hold 92.83% (FY 2024). No foreign investment. Bootstrapped with authorized capital Rs. 10L", "source": "https://www.thecompanycheck.com/company/lufick-technology-private-limited/U72900HR2022PTC105857" },
+          "incorporation": { "score": 100, "note": "Incorporated in India on 18 Aug 2022. CIN U72900HR2022PTC105857, ROC Delhi", "source": "https://www.companydetails.in/company/lufick-technology-private-limited" },
+          "boardControl": { "score": 95, "note": "Two directors, both Indian: Gulshan Kumar Singh (MD) and Manju Devi (Director)", "source": "https://www.zaubacorp.com/company/LUFICK-TECHNOLOGY-PRIVATE-LIMITED/U72900HR2022PTC105857" },
+          "founders": { "score": 95, "note": "Indian founder Gulshan Kumar Singh actively leads as MD. Founded company in 2016", "source": "https://www.linkedin.com/in/gulshansingh9958/" },
+          "hqAndTeam": { "score": 95, "note": "HQ at 91springboard, Sector-18, Gurugram, Haryana. 30+ employees, entirely India-based", "source": "https://lufick.com/about-us/" },
+          "dataSovereignty": { "score": 70, "note": "Privacy policy governed by laws of New Delhi, India. Data stored on their servers", "source": "https://lufick-dev.github.io/doc-scanner/privacy-policy.html" },
+          "revenueOrigin": { "score": 85, "note": "Document Scanner has 40M+ downloads, primarily Indian user base. Also serves global users", "source": "https://play.google.com/store/apps/details?id=com.cv.docscanner&hl=en_IN" }
+        }
+      }
+    },
+    "qmamu": {
+      "name": "Qmamu Technologies Pvt. Ltd.",
+      "slug": "qmamu",
+      "hq": "Ahmedabad, Gujarat, India",
+      "incorporation": "India",
+      "founders": "Nishith Dhanani",
+      "foundersActive": true,
+      "swadeshiMeter": {
+        "score": 95,
+        "lastVerified": "2026-03-11",
+        "dataCompleteness": 7,
+        "factors": {
+          "shareholding": { "score": 95, "note": "Promoters hold 92.83% (FY 2024). Completely unfunded, no external or foreign investors", "source": "https://www.thecompanycheck.com/company/qmamu-technologies-private-limited/U72900GJ2021PTC119605" },
+          "incorporation": { "score": 100, "note": "Incorporated in India on 19 Jan 2021. CIN U72900GJ2021PTC119605, ROC Ahmedabad", "source": "https://www.companydetails.in/company/qmamu-technologies-private-limited" },
+          "boardControl": { "score": 95, "note": "Two directors, both Indian: Nishith Rajeshbhai Dhanani and Rajeshbhai Dhanani", "source": "https://www.zaubacorp.com/company/QMAMU-TECHNOLOGIES-PRIVATE-LIMITED/U72900GJ2021PTC119605" },
+          "founders": { "score": 95, "note": "Indian founder Nishith Dhanani (Gujarat) actively leads as CEO. Launched on Republic Day 2021", "source": "https://in.linkedin.com/in/nishithdhanani" },
+          "hqAndTeam": { "score": 95, "note": "HQ in Ahmedabad, Gujarat. ~7 employees, entirely India-based team", "source": "https://tracxn.com/d/companies/qmamu/__2ZnQ_vq0Z2_ez32LNP26i9P5_J_tMPGP577lbbLzCJw" },
+          "dataSovereignty": { "score": 85, "note": "Privacy-first search engine: does not collect, store, or share user data. No IP logging, no tracking", "source": "https://qmamu.com/company/privacy" },
+          "revenueOrigin": { "score": 90, "note": "India-focused search engine supporting 15+ Indian regional languages. Primarily Indian market", "source": "https://varindia.com/news/india-will-have-its-own-search-engine-qmamu" }
+        }
+      }
     }
   },
   "meta": {
