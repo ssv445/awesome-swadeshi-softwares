@@ -1055,6 +1055,72 @@
           "revenueOrigin": { "score": 95, "note": "Exclusively Indian furniture marketplace. FY25 revenue INR 186 Cr, virtually 100% domestic. 200+ studios across India", "source": "https://startuptalky.com/pepperfry/" }
         }
       }
+    },
+    "moving-tech": {
+      "name": "Moving Tech (Namma Yatri)",
+      "slug": "moving-tech",
+      "hq": "Bangalore, Karnataka, India",
+      "incorporation": "India (CIN: U62099KA2023PTC180900, 10-Nov-2023, ROC Bangalore)",
+      "founders": "Magizhan Selvan, Shan M S (Shanmugavel Mani Subbiah)",
+      "foundersActive": true,
+      "swadeshiMeter": {
+        "score": 89,
+        "lastVerified": "2026-03-11",
+        "dataCompleteness": 6,
+        "factors": {
+          "shareholding": { "score": 75, "note": "Juspay (Indian parent) holds ~32% majority stake. Founders hold ~7.2%. Blume Ventures (Indian VC) co-led pre-Series A. Antler (Singapore) and Google/Alphabet also invested. Foreign fund ownership ~25.6%. Estimated ~65-70% Indian-held", "source": "https://tracxn.com/d/companies/namma-yatri/__FGqTvygiQCBiIJ6oOk3fqliczyGekTK1oExNZ_Z6qFM" },
+          "incorporation": { "score": 100, "note": "Incorporated in India as Moving Tech Innovations Private Limited (CIN: U62099KA2023PTC180900), ROC Bangalore, 10-Nov-2023. Spun off from Juspay Technologies (also Indian-incorporated)", "source": "https://www.thecompanycheck.com/company/moving-tech-innovations-private-limited/U62099KA2023PTC180900" },
+          "boardControl": { "score": 95, "note": "All 5 directors are Indian nationals: Magizhan Selvan, Shan MS, Vivekananthamoorthy Vimalkumar (Juspay founder), Sheetal Kumar Lalwani Chainraj (Juspay co-founder), Karthik Reddy Bezawada (Blume Ventures nominee)", "source": "https://www.thecompanycheck.com/company/moving-tech-innovations-private-limited/U62099KA2023PTC180900" },
+          "founders": { "score": 95, "note": "Founded by Magizhan Selvan (CEO) and Shan M S (COO), both Indian. Parent Juspay founded by Vimal Kumar (Indian, IIT Madras). All founders actively leading the company", "source": "https://inc42.com/buzz/juspay-hives-off-namma-yatri-other-mobility-apps-into-new-entity-moving-tech/" },
+          "hqAndTeam": { "score": 95, "note": "HQ in Koramangala, Bangalore. ~184 person team, entirely India-based. Operations in 15+ Indian cities including Bangalore, Kolkata, Kochi, Mysuru, Chennai", "source": "https://getlatka.com/companies/nammayatri.in" },
+          "dataSovereignty": { "score": 85, "note": "Built on open-source Beckn/ONDC protocol (Indian Digital Public Goods). Entire codebase is open source on GitHub. Platform operates within India's digital infrastructure", "source": "https://nammayatri.in/open/" },
+          "revenueOrigin": { "score": 100, "note": "100% revenue from India. $41.6M revenue in 2025, primarily from Karnataka and West Bengal. 100M+ rides completed, all within India", "source": "https://www.business-standard.com/companies/news/namma-yatri-hits-100-million-rides-enables-1-600-cr-driver-earnings-125060600641_1.html" }
+        }
+      }
+    },
+    "easy-trip-planners": {
+      "name": "Easy Trip Planners Limited",
+      "slug": "easy-trip-planners",
+      "hq": "New Delhi, Delhi, India",
+      "incorporation": "India (CIN: L63090DL2008PLC179041, 04 June 2008, ROC Delhi)",
+      "founders": "Nishant Pitti, Rikant Pittie, Prashant Pitti",
+      "foundersActive": true,
+      "swadeshiMeter": {
+        "score": 92,
+        "lastVerified": "2026-03-11",
+        "dataCompleteness": 6,
+        "factors": {
+          "shareholding": { "score": 85, "note": "Promoters (Pitti brothers, all Indian) hold 47.72% as of Dec 2025. FII holding negligible at 0.45%, DII 2.48%, public 49.36%. No foreign promoters. Promoter stake declined from 74.9% (Mar 2023) due to stake sales", "source": "https://www.screener.in/company/EASEMYTRIP/consolidated/" },
+          "incorporation": { "score": 100, "note": "Incorporated in India on 04 June 2008 as Public Limited Company. CIN: L63090DL2008PLC179041. ROC Delhi. Registered office at 223 FIE Patparganj Industrial Area, East Delhi", "source": "https://www.tofler.in/easy-trip-planners-limited/company/U63090DL2008PLC179041" },
+          "boardControl": { "score": 100, "note": "All 6 board members Indian nationals: Nishant Pitti (CMD), Rikant Pittie (CEO & ED), Vikas Bansal (ED), and independent directors Neena Kumar, Ajay Kumar Chauhan, Ruchi Ghanashyam (former Indian diplomat)", "source": "https://www.easemytrip.com/investor-relations.html" },
+          "founders": { "score": 100, "note": "Founded by three Indian brothers — Nishant Pitti (CMD), Rikant Pittie (CEO), Prashant Pitti. All Indian nationals who previously ran Duke Travel Agency before launching EaseMyTrip in 2008", "source": "https://www.easemytrip.com/about-us.html" },
+          "hqAndTeam": { "score": 95, "note": "HQ in New Delhi with offices in Noida, Gurugram, Bangalore, Mumbai, Hyderabad. 700+ employees in India. International offices in Dubai, Singapore, London, USA, Thailand", "source": "https://www.easemytrip.com/about-us.html" },
+          "dataSovereignty": { "score": 65, "note": "Privacy policy states data is primarily processed in India but acknowledges third-party vendors may process data in other jurisdictions. No specific data center locations disclosed", "source": "https://www.easemytrip.com/privacy-policy.html" },
+          "revenueOrigin": { "score": 85, "note": "Predominantly India-focused travel platform (domestic flights, hotels, buses, trains). International offices and bookings exist but bulk of revenue from Indian domestic travel market. Quarterly revenue ~Rs 113-151 crore", "source": "https://www.screener.in/company/EASEMYTRIP/consolidated/" }
+        }
+      }
+    },
+    "roppen-transportation": {
+      "name": "Roppen Transportation Services Pvt Ltd",
+      "slug": "roppen-transportation",
+      "hq": "Bangalore, Karnataka, India",
+      "incorporation": "India (CIN: U52210TG2015PTC097115, 05-Jan-2015, ROC Hyderabad)",
+      "founders": "Aravind Sanka, Pavan Guntupalli, Rishikesh SR",
+      "foundersActive": true,
+      "swadeshiMeter": {
+        "score": 75,
+        "lastVerified": "2026-03-11",
+        "dataCompleteness": 6,
+        "factors": {
+          "shareholding": { "score": 45, "note": "Founders hold ~11.4%. Funds own ~59% — Prosus (Netherlands) ~15%, WestBridge (India-focused) ~25%, Nexus VP. Heavy foreign institutional capital despite Indian founding team", "source": "https://tracxn.com/d/companies/rapido/__u2bFpKhkCp_3jdzw9GH-jkMQR76G6diQhpvtZuTy_kE/latest-shareholding" },
+          "incorporation": { "score": 100, "note": "Incorporated in India on 05-Jan-2015. CIN: U52210TG2015PTC097115, registered at ROC Hyderabad, Telangana", "source": "https://www.zaubacorp.com/company/ROPPEN-TRANSPORTATION-SERVICES-PRIVATE-LIMITED/U60100TG2015PTC097115" },
+          "boardControl": { "score": 80, "note": "5 directors: Aravind Sanka (Indian founder), Pavan Guntupalli (Indian founder), Sumir Chadha (WestBridge, Indian-origin), Sanjay Mitra (Indian), Suchita Sharma (Indian). Board predominantly Indian with investor nominees", "source": "https://www.zaubacorp.com/ROPPEN-TRANSPORTATION-SERVICES-PRIVATE-LIMITED-U52210TG2015PTC097115" },
+          "founders": { "score": 100, "note": "All 3 founders Indian — Aravind Sanka (IIT Bhubaneswar), Pavan Guntupalli (IIT Kharagpur), Rishikesh SR (PES University). Aravind is CEO, all remain active", "source": "https://en.wikipedia.org/wiki/Rapido_(company)" },
+          "hqAndTeam": { "score": 95, "note": "HQ in Bellandur, Bangalore with 700+ seat office. ~755 core employees, operates in 100+ Indian cities. No international offices. Entire team is India-based", "source": "https://www.apnnews.com/rapido-inaugurates-new-bengaluru-office-celebrates-captains-customers-and-commitment-to-empowerment/" },
+          "dataSovereignty": { "score": 60, "note": "Privacy policy mentions standard encryption and security practices but does not explicitly state India-only data storage. India-only operations suggest data likely in India but no formal commitment found", "source": "https://www.rapido.bike/Privacy" },
+          "revenueOrigin": { "score": 95, "note": "100% domestic revenue. FY25 operating revenue Rs 934 crore, all from Indian operations (bike-taxi, auto, cabs in 100+ Indian cities). No international operations", "source": "https://inc42.com/startups/rapido-10-years-decade-1000-cr-revenue-club/" }
+        }
+      }
     }
   },
   "meta": {
