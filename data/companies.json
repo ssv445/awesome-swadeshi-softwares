@@ -1715,6 +1715,72 @@
           "revenueOrigin": { "score": 30, "note": "Targets global SMBs. 130K+ business users globally. Priced in USD, marketed primarily to US/global audience", "source": "https://getlatka.com/companies/helpwise" }
         }
       }
+    },
+    "notifyvisitors": {
+      "name": "Tagnpin Web Solutions LLP (NotifyVisitors/Nvecta)",
+      "slug": "notifyvisitors",
+      "hq": "New Delhi, India",
+      "incorporation": "India (LLPIN: AAA-7734, 24-Jan-2012, RoC Delhi)",
+      "founders": "Siddharth Gupta, Aman Gupta",
+      "foundersActive": true,
+      "swadeshiMeter": {
+        "score": 92,
+        "lastVerified": "2026-03-11",
+        "dataCompleteness": 7,
+        "factors": {
+          "shareholding": { "score": 95, "note": "Fully bootstrapped ($0 external funding). Legal entity Tagnpin Web Solutions LLP, both designated partners Indian nationals. $6.9M revenue, no foreign VC", "source": "https://tracxn.com/d/companies/notifyvisitors/__75v4IqcYGerL8Llkh5u6mrvYxkYGcoXOvMpJz4j6Fh8" },
+          "incorporation": { "score": 100, "note": "Tagnpin Web Solutions LLP incorporated in India (Delhi) on 24 Jan 2012. LLPIN AAA-7734, RoC Delhi", "source": "https://www.zaubacorp.com/company/TAGNPIN-WEB-SOLUTIONS-LLP/AAA-7734" },
+          "boardControl": { "score": 95, "note": "Both designated partners (Siddharth Gupta and Aman Gupta) are Indian nationals. No foreign board members or investor board seats", "source": "https://www.zaubacorp.com/company/TAGNPIN-WEB-SOLUTIONS-LLP/AAA-7734" },
+          "founders": { "score": 100, "note": "Both founders Indian nationals. Siddharth Gupta (NSIT Delhi, 2006-2010) actively leading as CEO since inception", "source": "https://www.linkedin.com/in/sidmarketing/" },
+          "hqAndTeam": { "score": 85, "note": "HQ in New Delhi. ~63 employees across 2 continents. US presence at 25 Broadway, NY. Majority team India-based", "source": "https://getlatka.com/companies/notifyvisitors.com" },
+          "dataSovereignty": { "score": 55, "note": "Privacy policy does not disclose specific data center locations. SaaS model. GDPR compliance mentioned. Lack of transparency on hosting location", "source": "https://www.nvecta.com/products/privacy-policy/" },
+          "revenueOrigin": { "score": 55, "note": "$6.9M revenue bootstrapped. Mixed India/global customer base across e-commerce, SaaS, media verticals", "source": "https://getlatka.com/companies/notifyvisitors.com" }
+        }
+      }
+    },
+    "onlyoffice-india": {
+      "name": "Ascensio System SIA (OnlyOffice)",
+      "slug": "onlyoffice-india",
+      "hq": "Riga, Latvia (holding in Singapore; CEO in Istanbul, Turkey)",
+      "incorporation": "Latvia (2009, Ascensio System SIA); Singapore holding (2023, OnlyOffice Capital Group Pte. Ltd.); UK intermediate entity",
+      "founders": "Lev Bannov",
+      "foundersActive": true,
+      "swadeshiMeter": {
+        "score": 6,
+        "lastVerified": "2026-03-11",
+        "dataCompleteness": 7,
+        "factors": {
+          "shareholding": { "score": 5, "note": "100% foreign-owned. Singapore holding (OnlyOffice Capital Group) owns UK entity, which owns Latvian entity. Ultimate beneficial owner is Lev Bannov, Russian citizen in Turkey", "source": "https://company.lursoft.lv/en/ascensio-system/40103265308" },
+          "incorporation": { "score": 5, "note": "Incorporated in Latvia (2009). Holding in Singapore (2023). UK intermediate. No Indian incorporation found. India Office label is sales/partner presence only", "source": "https://company.lursoft.lv/en/ascensio-system/40103265308" },
+          "boardControl": { "score": 5, "note": "CEO Lev Bannov (Russian), President Serge Seyfetdinov, Commercial Director Galina Goduhina. No Indian leadership identified", "source": "https://www.onlyoffice.com/about" },
+          "founders": { "score": 0, "note": "Founded by Lev Bannov, Russian citizen (Nizhni Novgorod State University 1979-1984). Not an Indian national", "source": "https://www.crunchbase.com/person/lev-bannov" },
+          "hqAndTeam": { "score": 10, "note": "HQ in Riga, Latvia. Offices in US, UK, Armenia, Uzbekistan, Serbia. India Office is partnership/sales presence, not significant development team", "source": "https://www.onlyoffice.com/contacts" },
+          "dataSovereignty": { "score": 10, "note": "Cloud servers in EU (Frankfurt), US West (Oregon), Asia Pacific (Singapore). No India data centers. Self-hosted option available", "source": "https://www.onlyoffice.com/hosting-providers" },
+          "revenueOrigin": { "score": 15, "note": "Global revenue ~$12.1M. India is a growth market but India-specific revenue is a small fraction. Majority from Europe, US", "source": "https://getlatka.com/companies/onlyoffice" }
+        }
+      }
+    },
+    "sitegpt": {
+      "name": "SiteGPT",
+      "slug": "sitegpt",
+      "hq": "Bengaluru, Karnataka, India",
+      "incorporation": "No confirmed Indian Pvt Ltd; privacy policy references US-based data processing; likely unincorporated indie business or US entity",
+      "founders": "Bhanu Teja Pachipulusu, Sai Dheeraj Pachipulusu",
+      "foundersActive": true,
+      "swadeshiMeter": {
+        "score": 77,
+        "lastVerified": "2026-03-11",
+        "dataCompleteness": 7,
+        "factors": {
+          "shareholding": { "score": 90, "note": "Bootstrapped, $0 external funding. 100% founder-owned by Indian nationals. No VC or foreign investors. Slightly dinged due to lack of verifiable corporate records", "source": "https://tracxn.com/d/companies/sitegpt/__TJO1AtQxz4hZ0maqEN1ukghao1NDtltjV551BL_0NxM" },
+          "incorporation": { "score": 45, "note": "No confirmed Indian Pvt Ltd incorporation on MCA. Privacy policy transfers data to US, suggesting possible US-registered entity or informal operations", "source": "https://sitegpt.ai/privacy" },
+          "boardControl": { "score": 95, "note": "Fully controlled by Indian founders. No investors or foreign board seats. Two-person founding team makes all decisions", "source": "https://in.linkedin.com/in/pbteja1998" },
+          "founders": { "score": 100, "note": "Both founders Indian nationals based in India. Bhanu Teja Pachipulusu from Andhra Pradesh/Telangana, based in Bengaluru", "source": "https://in.linkedin.com/in/pbteja1998" },
+          "hqAndTeam": { "score": 90, "note": "HQ in Bengaluru. Small indie team primarily India-based", "source": "https://tracxn.com/d/companies/sitegpt/__TJO1AtQxz4hZ0maqEN1ukghao1NDtltjV551BL_0NxM" },
+          "dataSovereignty": { "score": 25, "note": "Privacy policy explicitly states data may be transferred to and processed in US. Uses Cloudflare CDN. Likely US-based cloud infrastructure", "source": "https://sitegpt.ai/privacy" },
+          "revenueOrigin": { "score": 30, "note": "Primarily global/international customer base. $100K+ MRR predominantly from US/EU customers. No significant India-focused revenue", "source": "https://www.starterstory.com/stories/sitegpt" }
+        }
+      }
     }
   },
   "meta": {
