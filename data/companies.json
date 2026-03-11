@@ -1847,6 +1847,72 @@
           "revenueOrigin": { "score": 10, "note": "Global customer base. India not a primary market. Revenue primarily from US, Canada, and international", "source": "https://www.sec.gov/Archives/edgar/data/1378590/000143774922029477/blin20220930_10k.htm" }
         }
       }
+    },
+    "zyro-india": {
+      "name": "Hostinger International Limited (Zyro)",
+      "slug": "zyro-india",
+      "hq": "Vilnius, Lithuania (legal: Larnaca, Cyprus)",
+      "incorporation": "Cyprus (Hostinger International Limited, HE301365); Lithuania operations (Hostinger Operations UAB). No Indian entity",
+      "founders": "Arnas Stuopelis, Balys Kriksciunas",
+      "foundersActive": true,
+      "swadeshiMeter": {
+        "score": 9,
+        "lastVerified": "2026-03-11",
+        "dataCompleteness": 7,
+        "factors": {
+          "shareholding": { "score": 5, "note": "100% foreign-owned. Lithuanian founders + Tesonet + German investors (~31% acquired 2021). No Indian shareholding", "source": "https://tegos.legal/deals-and-cases/tgs-baltic-represented-hostinger-and-its-shareholders-in-attracting-an-international-investor-which-acquired-more-than-30-of-shares/" },
+          "incorporation": { "score": 5, "note": "Parent incorporated in Cyprus (HE301365). Operations in Lithuania. No registered Indian subsidiary. Mumbai presence is data center only", "source": "https://opencorporates.com/companies/cy/HE301365" },
+          "boardControl": { "score": 3, "note": "Entire board/leadership Lithuanian/European. Chairman Arnas Stuopelis, CEO Daugirdas Jankus. No Indian representation", "source": "https://www.hostinger.com/blog/management-changes" },
+          "founders": { "score": 0, "note": "Founded in Kaunas, Lithuania in 2004. Founders Arnas Stuopelis and Balys Kriksciunas are Lithuanian nationals", "source": "https://en.wikipedia.org/wiki/Hostinger" },
+          "hqAndTeam": { "score": 15, "note": "HQ Vilnius, Lithuania. India has Mumbai data center but no full office. India is largest customer market (~30%) but ops are not India-based", "source": "https://www.hostinger.com/in/about" },
+          "dataSovereignty": { "score": 40, "note": "Operates Tier-3 data center in Mumbai. Indian customers CAN choose India servers. But accounts managed from Lithuania/Cyprus", "source": "https://www.hostinger.com/blog/hostinger-newly-launched-data-center-location-in-india" },
+          "revenueOrigin": { "score": 55, "note": "India is #1 market with ~30% of customers (96K). But revenue per customer likely lower than US/EU. Est 15-25% of €275.4M total revenue", "source": "https://www.hostinger.com/blog/financial-results-2025" }
+        }
+      }
+    },
+    "creately": {
+      "name": "Cinergix Pty Ltd (Creately)",
+      "slug": "creately",
+      "hq": "Melbourne, Australia / Colombo, Sri Lanka (operations)",
+      "incorporation": "Australia (ACN 130459906, registered 2008-04-03, VIC). Sri Lankan subsidiary: Cinergix Research (Pvt) Ltd",
+      "founders": "Chandika Jayasundara, Hiraash Thawfeek, Nick Foster",
+      "foundersActive": true,
+      "swadeshiMeter": {
+        "score": 0,
+        "lastVerified": "2026-03-11",
+        "dataCompleteness": 7,
+        "factors": {
+          "shareholding": { "score": 0, "note": "Australian Pty Ltd company. No Indian shareholding. Founders are Sri Lankan/Australian. Bootstrapped with Australian angel seed", "source": "https://www.crunchbase.com/organization/cinergix" },
+          "incorporation": { "score": 0, "note": "Incorporated in Australia (ACN 130459906). Subsidiary in Sri Lanka. No Indian incorporation whatsoever", "source": "https://www.aubiz.net/company/cinergix-pty-ltd-130459906/" },
+          "boardControl": { "score": 0, "note": "CEO Chandika Jayasundara (Sri Lankan), COO Nick Foster (Australian). No Indian nationals in leadership", "source": "https://www.crunchbase.com/person/chandika-jayasundara" },
+          "founders": { "score": 0, "note": "Founders are Sri Lankan and Australian nationals. No Indian founders. Company started from Borella, Colombo", "source": "https://readme.lk/borella-versus-microsoft-the-story-of-cinergix/" },
+          "hqAndTeam": { "score": 0, "note": "HQ in Melbourne, Australia. Engineering team in Colombo, Sri Lanka. No Indian office or team", "source": "https://creately.com/about-us/" },
+          "dataSovereignty": { "score": 0, "note": "Data hosted on AWS in US, Australia, EU, Middle East. No India region option. SOC 2 Type 2 certified", "source": "https://creately.com/security/" },
+          "revenueOrigin": { "score": 5, "note": "10M+ global users including NASA, Amazon, Boeing. Revenue predominantly international. India is not a primary market", "source": "https://creately.com/about-us/" }
+        }
+      }
+    },
+    "simplified": {
+      "name": "TLDR Technologies Inc (Simplified)",
+      "slug": "simplified",
+      "hq": "San Francisco, California, USA",
+      "incorporation": "USA (Delaware C-Corp). Indian subsidiary TLDR Technologies Pvt Ltd (CIN: U72900BR2019PTC042074, Patna) — struck off/inactive",
+      "founders": "KD Deshpande, Ajay Yadav",
+      "foundersActive": true,
+      "swadeshiMeter": {
+        "score": 28,
+        "lastVerified": "2026-03-11",
+        "dataCompleteness": 7,
+        "factors": {
+          "shareholding": { "score": 15, "note": "Raised $10.7M from US VCs: Craft Ventures, Khosla Ventures, Wing VC. Majority ownership with US venture capital. Founders Indian-origin but shares through US entity", "source": "https://www.crunchbase.com/organization/simplified-6e58" },
+          "incorporation": { "score": 10, "note": "TLDR Technologies Inc in Delaware, USA. Indian subsidiary (Patna, Bihar) under strike-off process. Primary entity is fully US-incorporated", "source": "https://www.zaubacorp.com/company/TLDR-TECHNOLOGIES-PRIVATE-LIMITED/U72900BR2019PTC042074" },
+          "boardControl": { "score": 60, "note": "CEO KD Deshpande and COO Ajay Yadav (both Indian-origin) are key decision-makers. But Craft/Khosla likely hold board seats", "source": "https://theorg.com/org/simplified/org-chart/kd-deshpande" },
+          "founders": { "score": 85, "note": "Both founders Indian-origin. KD Deshpande (MIT Pune, ex-Facebook/Uber). Ajay Yadav came to US from India at 17, Forbes 30U30", "source": "https://cxotoday.com/interviews/from-immigrant-to-innovator-the-journey-of-simplifieds-co-founder/" },
+          "hqAndTeam": { "score": 20, "note": "HQ San Francisco. Indian subsidiary in Patna struck off. No confirmed India-based engineering team currently operational", "source": "https://www.zoominfo.com/c/tldr-technologies-inc/558706019" },
+          "dataSovereignty": { "score": 10, "note": "Data stored on US cloud infrastructure. No indication of India-based storage. Privacy policy does not specify India", "source": "https://simplified.com/privacy" },
+          "revenueOrigin": { "score": 20, "note": "Global SaaS platform. Primary revenue from US and global markets. India not a primary market focus", "source": "https://simplified.com" }
+        }
+      }
     }
   },
   "meta": {
