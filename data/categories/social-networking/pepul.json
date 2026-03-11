@@ -11,6 +11,7 @@
   ],
   "pricing": "Free",
   "company": "Pepul",
+  "companySlug": "pepul",
   "location": "Chennai",
   "opengraph": {
     "last_updated": "2025-10-05T10:37:36.391Z",

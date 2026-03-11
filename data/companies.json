@@ -1253,6 +1253,72 @@
           "revenueOrigin": { "score": 85, "note": "Free app targeting Indian users exclusively. Primarily Indian user base. Limited revenue data available as the app is free and unfunded", "source": "https://www.elyments.com/" }
         }
       }
+    },
+    "dubverse": {
+      "name": "Dubverse (Lensmatic Solutions)",
+      "slug": "dubverse",
+      "hq": "Gurugram, Haryana, India",
+      "incorporation": "India (CIN: U72200UP2021PTC153595, Oct 2021, ROC Kanpur, as Lensmatic Solutions Pvt Ltd)",
+      "founders": "Varshul Gupta, Anuja Dhawan",
+      "foundersActive": true,
+      "swadeshiMeter": {
+        "score": 84,
+        "lastVerified": "2026-03-11",
+        "dataCompleteness": 6,
+        "factors": {
+          "shareholding": { "score": 75, "note": "Indian founders likely retain 70-80% equity. Raised $800K seed from Kalaari Capital (Indian VC, Bengaluru) and Fundfolio (Indian, Kochi). All known investors are India-domiciled", "source": "https://tracxn.com/d/companies/dubverse/__eUA9EK4Be-VyXuQVZQ8KsOnXQsbrUGlzKrpfDDzOtt8/funding-and-investors" },
+          "incorporation": { "score": 95, "note": "Incorporated Oct 8, 2021 as Lensmatic Solutions Private Limited in UP. CIN U72200UP2021PTC153595. ROC Kanpur. No Delaware flip structure", "source": "https://www.zaubacorp.com/LENSMATIC-SOLUTIONS-PRIVATE-LIMITED-U72200UP2021PTC153595" },
+          "boardControl": { "score": 95, "note": "Board comprises 2 directors, both Indian co-founders: Varshul Gupta and Anuja Dhawan. No foreign nominee directors", "source": "https://www.tofler.in/lensmatic-solutions-private-limited/company/U72200UP2021PTC153595" },
+          "founders": { "score": 95, "note": "Both founders Indian. Varshul Gupta (Jaypee Institute, research at IIT Delhi). Anuja Dhawan (ex-Freshworks). Both actively leading the company with 2M+ users", "source": "https://dubverse.ai/team/" },
+          "hqAndTeam": { "score": 90, "note": "HQ Gurugram, Haryana. Registered office Greater Noida, UP. 12-person team entirely India-based. No overseas offices. Part of Google for Startups Accelerator India", "source": "https://yourstory.com/2022/07/dubverse-saas-startup-breaking-language-barriers-ai" },
+          "dataSovereignty": { "score": 55, "note": "Uses AWS for hosting. GDPR, SOC 2, ISO 27001 compliant. Dubverse does not explicitly confirm Indian data residency. Privacy policy mentions AWS as third-party data processor", "source": "https://dubverse.ai/privacy-policy/" },
+          "revenueOrigin": { "score": 70, "note": "FY2024 revenue Rs 1.32 Cr. Global revenue $1.4M (2024). Supports 10+ Indian and 20+ international languages. Estimated 50-60% India revenue given vernacular focus", "source": "https://getlatka.com/companies/dubverse" }
+        }
+      }
+    },
+    "gnani-ai": {
+      "name": "Gnani.ai (Gnani Innovations)",
+      "slug": "gnani-ai",
+      "hq": "Bengaluru, Karnataka, India",
+      "incorporation": "India (CIN: U72100KA2016PTC095111, Jul 2016, ROC Bangalore)",
+      "founders": "Ganesh Gopalan, Ananth Nagaraj",
+      "foundersActive": true,
+      "swadeshiMeter": {
+        "score": 87,
+        "lastVerified": "2026-03-11",
+        "dataCompleteness": 6,
+        "factors": {
+          "shareholding": { "score": 80, "note": "Founders hold 53.46%. Lead investor Info Edge Ventures (Indian). Some foreign fund investors like Pontaq (US). Angels 10.55% include Indian investors like BVR Mohan Reddy. Overall majority Indian-held", "source": "https://tracxn.com/d/companies/gnani.ai/__HbhTx0tzmN_Y8M3tPRjgMkbW8KU6xj26TL-3mQqK-7A/latest-shareholding" },
+          "incorporation": { "score": 95, "note": "Incorporated as Gnani Innovations Private Limited on Jul 19, 2016 in Karnataka, India. CIN: U72100KA2016PTC095111. Registered at Basavanagudi, Bangalore", "source": "https://www.zaubacorp.com/company/GNANI-INNOVATIONS-PRIVATE-LIMITED/U72100KA2016PTC095111" },
+          "boardControl": { "score": 95, "note": "Three directors: Snehal Deshpande, Ananth Nagaraj, and Ganesh Gopalan — all Indian nationals. No foreign board members", "source": "https://tracxn.com/d/companies/gnani.ai/__HbhTx0tzmN_Y8M3tPRjgMkbW8KU6xj26TL-3mQqK-7A/founders-and-board-of-directors" },
+          "founders": { "score": 95, "note": "Co-founded by Ganesh Gopalan (CEO, ex-IBM/TI, ISB MBA) and Ananth Nagaraj (CTO, ex-TI/Kyocera). Both Indian, both active. Vision to make India an AI powerhouse", "source": "https://www.gnani.ai/about-us/leadership/" },
+          "hqAndTeam": { "score": 90, "note": "HQ in Bengaluru, Karnataka. ~205 employees across 4 continents, but core engineering and operations are India-based", "source": "https://www.gnani.ai/about-us" },
+          "dataSovereignty": { "score": 80, "note": "Data and AI models (e.g., Vachana TTS) hosted entirely within India. Part of India's sovereign AI initiative. Enterprise deployments may vary by customer", "source": "https://organiser.org/2026/02/19/340755/bharat/bharat-unveils-indigenous-ai-powerhouse-sarvam-gnani-ai-and-bharatgen-lead-the-sovereign-ai-revolution/" },
+          "revenueOrigin": { "score": 65, "note": "Revenue of $15.3M (2025). Primarily India-focused BFSI, retail, auto, healthcare customers. Actively expanding internationally. Estimated 60-70% India revenue", "source": "https://getlatka.com/companies/gnani.ai" }
+        }
+      }
+    },
+    "pepul": {
+      "name": "Pepul Tech Private Limited",
+      "slug": "pepul",
+      "hq": "Chennai, Tamil Nadu, India",
+      "incorporation": "India (CIN: U72900TN2020PTC139160, 03-Dec-2020, ROC Chennai)",
+      "founders": "Suresh Kumar Gunasekaran",
+      "foundersActive": true,
+      "swadeshiMeter": {
+        "score": 92,
+        "lastVerified": "2026-03-11",
+        "dataCompleteness": 6,
+        "factors": {
+          "shareholding": { "score": 85, "note": "Founders hold ~65-67%. Angels (Indian: Girish Mathrubootham/Freshworks, Vijay Shekhar Sharma/Paytm) ~9%, Enterprises ~22%. Only notable foreign investor Hourglass Venture Partners (Palo Alto) ~3.5%. Overwhelming Indian ownership", "source": "https://tracxn.com/d/legal-entities/india/pepul-tech-private-limited/___0yILVcFZ6r0HPJvafFXlBucS7GrBqwb2h2N07jS05Q" },
+          "incorporation": { "score": 100, "note": "Pepul Tech Private Limited, incorporated 03 Dec 2020 in Tamil Nadu. CIN: U72900TN2020PTC139160. Indian Non-Government Company", "source": "https://www.zaubacorp.com/company/PEPUL-TECH-PRIVATE-LIMITED/U72900TN2020PTC139160" },
+          "boardControl": { "score": 100, "note": "Two Indian directors: Suresh Kumar Gunasekaran (Founder/CEO) and Karuppiah Muthukumar. No foreign board seats", "source": "https://www.tofler.in/pepul-tech-private-limited/company/U72900TN2020PTC139160" },
+          "founders": { "score": 95, "note": "Founded by Suresh Kumar Gunasekaran (Chennai). Previously co-founded MacAppStudio (bootstrapped to $1M). Intel-awarded developer. Actively leading as CEO", "source": "https://yourstory.com/2024/08/pay-it-forward-says-suresh-kumar-gunasekaran-of-peepul" },
+          "hqAndTeam": { "score": 95, "note": "HQ at Saravana Matrix Tower, OMR, Perungudi, Chennai. ~29 employees, primarily Indian team. No significant overseas offices", "source": "https://www.thecompanycheck.com/company/pepul-tech-private-limited/U72900TN2020PTC139160" },
+          "dataSovereignty": { "score": 65, "note": "Uses AWS and Google Firebase with servers in India and abroad. Sensitive data stored encrypted. Privacy-first positioning but no India-only data residency guarantee", "source": "https://www.pepul.com/privacy" },
+          "revenueOrigin": { "score": 90, "note": "3M+ downloads primarily from India. INR 10.1L revenue FY2025. Platform marketed as 'Social Media from India'. Near-entirely India-focused user base", "source": "https://newspatrolling.com/pepul-social-media-app-crosses-2-million-downloads-10000-paid-subscriptions-in-the-shortest-period/" }
+        }
+      }
     }
   },
   "meta": {
