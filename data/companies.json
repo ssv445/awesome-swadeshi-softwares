@@ -1649,6 +1649,72 @@
           "revenueOrigin": { "score": 90, "note": "Primary revenue from Indian customers: AICTE LITE program (100K+ faculty, 24M students target), Indian universities across 6 states and 13 universities", "source": "https://lite.pupilfirst.org/" }
         }
       }
+    },
+    "esign-genie": {
+      "name": "eSign Genie (Foxit subsidiary)",
+      "slug": "esign-genie",
+      "hq": "Fremont, California, USA",
+      "incorporation": "USA (Delaware); Indian subsidiary CIN: U72900UP2021FTC143876; parent is Fujian Foxit Software (Shanghai STAR Market)",
+      "founders": "Mahender Bist, Anita Sharma",
+      "foundersActive": true,
+      "swadeshiMeter": {
+        "score": 19,
+        "lastVerified": "2026-03-11",
+        "dataCompleteness": 7,
+        "factors": {
+          "shareholding": { "score": 10, "note": "Acquired by Foxit (Chinese, Shanghai-listed 688095) in Oct 2021 for ~$28M. Indian entity is foreign subsidiary. Zero Indian ownership", "source": "https://www.prnewswire.com/news-releases/foxit-acquires-esignature-software-leader-esign-genie-301392451.html" },
+          "incorporation": { "score": 15, "note": "Original company incorporated in USA. Parent Foxit is Fujian, China. Indian Pvt Ltd entity (U72900UP2021FTC143876) is explicitly a foreign subsidiary", "source": "https://www.zaubacorp.com/company/ESIGN-GENIE-SOFTWARE-PRIVATE-LIMITED/U72900UP2021FTC143876" },
+          "boardControl": { "score": 15, "note": "Indian subsidiary directors include Mahender Singh Bist (Indian-origin) and Philip Gregory Lee (foreign). Key decisions made by Foxit parent in China/US", "source": "https://www.zaubacorp.com/company/ESIGN-GENIE-SOFTWARE-PRIVATE-LIMITED/U72900UP2021FTC143876" },
+          "founders": { "score": 60, "note": "Founders Mahender Bist and Anita Sharma are Indian-origin but US-based NRIs who built the company in Silicon Valley. Now owned by Chinese parent", "source": "https://www.siliconindia.com/magazine_articles/eSign_Genie_Ecofriendly_Convenient_and_Easy_Electronic_Signatures-EQHN854219799.html" },
+          "hqAndTeam": { "score": 25, "note": "HQ in Fremont, CA, USA. India office in Noida (Sector 62). Some development team in India but primary operations are US-based", "source": "https://cutshort.io/company/foxit-esign-genie-00-NJtGxHwF" },
+          "dataSovereignty": { "score": 10, "note": "Data centers in US and Europe only. No India-based data storage option available", "source": "https://www.esigngenie.com/security-and-privacy/data-localization/" },
+          "revenueOrigin": { "score": 15, "note": "Serves global businesses primarily US/international. India revenue is minor. Priced in USD, marketed to US/global customers", "source": "https://www.esigngenie.com/" }
+        }
+      }
+    },
+    "ginger-software": {
+      "name": "Ginger Software Inc",
+      "slug": "ginger-software",
+      "hq": "Boston, Massachusetts, USA / Tel Aviv, Israel",
+      "incorporation": "USA (Ginger Software Inc); Israeli subsidiary (Ginger Software Israel Ltd, ID 514050756)",
+      "founders": "Yael Karov, Avner Zangvil",
+      "foundersActive": false,
+      "swadeshiMeter": {
+        "score": 1,
+        "lastVerified": "2026-03-11",
+        "dataCompleteness": 7,
+        "factors": {
+          "shareholding": { "score": 0, "note": "Fully owned by Israeli/US/HK investors (Horizons Ventures, Harbor Pacific Capital, Vaizra Ventures Israel, BIRD Foundation). Zero Indian shareholding. $21.8M funding all non-Indian", "source": "https://www.crunchbase.com/organization/ginger-software" },
+          "incorporation": { "score": 0, "note": "Incorporated in USA with Israeli subsidiary. No Indian incorporation found", "source": "https://en.wikipedia.org/wiki/Ginger_Software" },
+          "boardControl": { "score": 0, "note": "Board and leadership are Israeli/American. No Indian board members. Intel acquired key assets in 2014", "source": "https://tracxn.com/d/companies/ginger-software/__jj2ewpWUTEkI35vBCBLKl2aIUkT6hNI_0iOSNcgKvPc/founders-and-board-of-directors" },
+          "founders": { "score": 0, "note": "Founded by Yael Karov and Avner Zangvil, both Israeli nationals. No Indian connection", "source": "https://en.wikipedia.org/wiki/Ginger_Software" },
+          "hqAndTeam": { "score": 5, "note": "HQ in Boston, R&D in Tel Aviv. No verified India office. Bangalore claim in app JSON appears unfounded", "source": "https://www.gingersoftware.com/contactus" },
+          "dataSovereignty": { "score": 5, "note": "No evidence of data stored in India. Operates from US/Israel infrastructure", "source": "https://www.gingersoftware.com/" },
+          "revenueOrigin": { "score": 5, "note": "Global product with no India-specific focus. Revenue primarily from US/international markets", "source": "https://www.gingersoftware.com/" }
+        }
+      }
+    },
+    "helpwise": {
+      "name": "SaaS Labs Inc (Helpwise)",
+      "slug": "helpwise",
+      "hq": "Noida, UP, India (engineering) / San Francisco, CA, USA (legal HQ)",
+      "incorporation": "USA (Delaware, parent); India subsidiary (CIN: U72900UP2020FTC139075, classified as foreign subsidiary)",
+      "founders": "Gaurav Sharma",
+      "foundersActive": true,
+      "swadeshiMeter": {
+        "score": 44,
+        "lastVerified": "2026-03-11",
+        "dataCompleteness": 7,
+        "factors": {
+          "shareholding": { "score": 35, "note": "Delaware-incorporated parent. Raised $74M+ from Sequoia Capital India, Eight Roads Ventures, Base10 Partners. Significant VC dilution. Indian-origin founder but US entity cap table", "source": "https://www.crunchbase.com/organization/saas-labs" },
+          "incorporation": { "score": 30, "note": "Parent SaaS Labs Inc in Delaware, USA. India entity (U72900UP2020FTC139075) classified as subsidiary of company incorporated outside India", "source": "https://www.zaubacorp.com/company/SAAS-LABS-SOFTWARE-PRIVATE-LIMITED/U72900UP2020FTC139075" },
+          "boardControl": { "score": 50, "note": "Gaurav Sharma (Indian) is CEO. With $74M+ VC funding, investors likely have board seats on US parent. Mixed Indian-global board control", "source": "https://alejandrocremades.com/gaurav-sharma/" },
+          "founders": { "score": 90, "note": "Gaurav Sharma is Indian, NIT Warangal 2010 graduate. Previously founded HelloSociety (acquired by NYT). Currently based in Palo Alto", "source": "https://alejandrocremades.com/gaurav-sharma/" },
+          "hqAndTeam": { "score": 70, "note": "Engineering HQ and majority team (70+ members) in Noida, India. Also Bangalore office. Legal HQ San Francisco. India is primary operations hub", "source": "https://www.saaslabs.co/about" },
+          "dataSovereignty": { "score": 20, "note": "Data hosted in United States or Germany per privacy policy. No India data hosting mentioned", "source": "https://helpwise.io/privacy" },
+          "revenueOrigin": { "score": 30, "note": "Targets global SMBs. 130K+ business users globally. Priced in USD, marketed primarily to US/global audience", "source": "https://getlatka.com/companies/helpwise" }
+        }
+      }
     }
   },
   "meta": {
