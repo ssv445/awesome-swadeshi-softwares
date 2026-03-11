@@ -28,5 +28,6 @@
     "twitter_site": "@zoho"
   },
   "appStoreUrl": "https://apps.apple.com/app/apple-store/id804728901?pt=423641&ct=mobile_page&mt=8",
-  "playStoreUrl": "https://play.google.com/store/apps/details?id=com.zoho.campaigns&referrer=utm_source=campaigns_mobile_page&utm_medium=appbadge&utm_campaign=campaigns_mobile_page"
+  "playStoreUrl": "https://play.google.com/store/apps/details?id=com.zoho.campaigns&referrer=utm_source=campaigns_mobile_page&utm_medium=appbadge&utm_campaign=campaigns_mobile_page",
+  "companySlug": "zoho"
 }

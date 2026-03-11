@@ -26,5 +26,6 @@
     "twitter_image": "https://www.zohowebstatic.com/sites/zweb/images/creator/og/creator-home-og.jpg",
     "twitter_card": "summary",
     "twitter_site": "@zoho"
-  }
+  },
+  "companySlug": "zoho"
 }

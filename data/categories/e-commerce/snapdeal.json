@@ -11,6 +11,7 @@
   ],
   "pricing": "Free",
   "company": "Snapdeal Limited",
+  "companySlug": "snapdeal",
   "location": "New Delhi",
   "opengraph": {
     "last_updated": "2025-10-05T10:35:45.426Z",

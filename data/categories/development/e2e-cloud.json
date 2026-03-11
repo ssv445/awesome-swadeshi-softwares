@@ -11,6 +11,7 @@
   ],
   "pricing": "Paid",
   "company": "E2E Networks",
+  "companySlug": "e2e-networks",
   "location": "New Delhi",
   "opengraph": {
     "last_updated": "2025-09-29T06:54:45.503Z",

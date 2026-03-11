@@ -30,5 +30,6 @@
     "twitter_site": "@zoho"
   },
   "appStoreUrl": "https://apps.apple.com/us/app/zoho-assist-remote-desktop/id582922932",
-  "playStoreUrl": "https://play.google.com/store/apps/details?id=com.zoho.assist"
+  "playStoreUrl": "https://play.google.com/store/apps/details?id=com.zoho.assist",
+  "companySlug": "zoho"
 }

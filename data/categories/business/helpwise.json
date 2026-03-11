@@ -11,6 +11,7 @@
   ],
   "pricing": "Paid",
   "company": "Helpwise",
+  "companySlug": "helpwise",
   "location": "Delhi",
   "opengraph": {
     "last_updated": "2025-10-05T10:31:20.398Z",

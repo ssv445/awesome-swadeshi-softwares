@@ -5,12 +5,14 @@ import { ExternalLink, ArrowLeft, Calendar, MapPin, Building2, Tag, Globe, Users
 import { AshokaChakra } from "@/components/ashoka-chakra"
 import Link from "next/link"
 import { notFound, redirect } from "next/navigation"
-import { getAppBySlug, getAllAppPaths, getRelatedApps } from "@/lib/server-data"
+import { getAppBySlug, getAllAppPaths, getRelatedApps, getCompanyBySlug } from "@/lib/server-data"
 import { getCategoryDisplayName, getAppUrl, getAlternativeUrl, getCategoryUrl } from "@/lib/data"
 import { getBaseUrl } from "@/lib/links"
 import { Favicon } from "@/components/favicon"
 import { Breadcrumbs, generateBreadcrumbs, generateBreadcrumbSchema } from "@/components/ui/Breadcrumbs"
 import { getAffiliateUrl } from "@/lib/affiliates"
+import { SwadeshiMeterBadge } from '@/components/swadeshi-meter-badge'
+import { SwadeshiMeterBreakdown } from '@/components/swadeshi-meter-breakdown'
 
 interface AppPageProps {
   params: Promise<{
@@ -83,6 +85,9 @@ export default async function AppPage({ params }: AppPageProps) {
   if (app.slug && app.slug !== slug) {
     redirect(`/${category}/${app.slug}`)
   }
+
+  // Load company data for Swadeshi Meter
+  const company = app.companySlug ? getCompanyBySlug(app.companySlug) : null
 
   const categoryDisplayName = getCategoryDisplayName(category)
   const { sameCompany, sameCategory } = getRelatedApps(app, 6)
@@ -185,6 +190,9 @@ export default async function AppPage({ params }: AppPageProps) {
                 <Badge variant={app.pricing === 'Free' ? 'default' : app.pricing === 'Freemium' ? 'secondary' : 'outline'} className="text-sm py-1.5 px-3 min-h-[36px]">
                   {app.pricing}
                 </Badge>
+                {company?.swadeshiMeter && (
+                  <SwadeshiMeterBadge meter={company.swadeshiMeter} />
+                )}
                 <span className="text-sm md:text-base text-gray-500 flex items-center min-h-[36px]">
                   <Tag className="h-4 w-4 mr-1.5" />
                   {app.category}
@@ -299,6 +307,16 @@ export default async function AppPage({ params }: AppPageProps) {
             </CardContent>
           </Card>
         </div>
+
+        {/* Swadeshi Meter */}
+        {company?.swadeshiMeter && (
+          <div className="mb-8">
+            <SwadeshiMeterBreakdown
+              meter={company.swadeshiMeter}
+              companyName={company.name}
+            />
+          </div>
+        )}
 
         {/* Honest Review Section */}
         {(app.pros?.length || app.cons?.length || app.userComplaints?.length) && (

@@ -11,6 +11,7 @@
   ],
   "pricing": "Paid",
   "company": "Exotel Techcom",
+  "companySlug": "exotel",
   "location": "Bangalore",
   "faviconUrl": "https://exotel.com/favicon.ico",
   "opengraph": {

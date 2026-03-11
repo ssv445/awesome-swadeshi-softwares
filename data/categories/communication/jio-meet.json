@@ -11,5 +11,6 @@
   ],
   "pricing": "Free",
   "company": "Jio Platforms",
-  "location": "Mumbai"
+  "location": "Mumbai",
+  "companySlug": "jio"
 }

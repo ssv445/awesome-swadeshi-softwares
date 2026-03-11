@@ -30,5 +30,6 @@
     "twitter_site": "@zoho"
   },
   "appStoreUrl": "https://apps.apple.com/us/app/zoho-vault-password-manager/id634857858, https://itunes.apple.com/app/apple-store/id634857858?pt=423641&ct=vault_home_page&mt=8, https://apps.apple.com/us/app/id1512156331, https://apps.apple.com/app/id634857858",
-  "playStoreUrl": "https://play.google.com/store/apps/details?id=com.zoho.vault&hl=en_IN, https://play.google.com/store/apps/details?id=com.zoho.vault&referrer=utm_source%3Dvault_home_page&utm_medium=appbadge&utm_campaign=vault_home_page"
+  "playStoreUrl": "https://play.google.com/store/apps/details?id=com.zoho.vault&hl=en_IN, https://play.google.com/store/apps/details?id=com.zoho.vault&referrer=utm_source%3Dvault_home_page&utm_medium=appbadge&utm_campaign=vault_home_page",
+  "companySlug": "zoho"
 }

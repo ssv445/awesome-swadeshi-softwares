@@ -26,5 +26,6 @@
     "twitter_card": "summary",
     "twitter_site": "@zoho"
   },
-  "appStoreUrl": "https://apps.apple.com/app/id808719064"
+  "appStoreUrl": "https://apps.apple.com/app/id808719064",
+  "companySlug": "zoho"
 }

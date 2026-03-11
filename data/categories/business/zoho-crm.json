@@ -11,6 +11,7 @@
   ],
   "pricing": "Freemium",
   "company": "Zoho Corporation",
+  "companySlug": "zoho",
   "location": "Chennai",
   "faviconUrl": "https://www.zohowebstatic.com/sites/zweb/images/ogimage/crm-logo.png",
   "opengraph": {

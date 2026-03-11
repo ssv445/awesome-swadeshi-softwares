@@ -21,5 +21,6 @@
     "type": "website"
   },
   "appStoreUrl": "https://itunes.apple.com/app/id966094166?mt=8, https://apps.apple.com/app/id966094166",
-  "playStoreUrl": "https://play.google.com/store/apps/details?id=com.zoho.expense"
+  "playStoreUrl": "https://play.google.com/store/apps/details?id=com.zoho.expense",
+  "companySlug": "zoho"
 }

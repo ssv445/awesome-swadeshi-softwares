@@ -12,6 +12,7 @@
   ],
   "pricing": "Free",
   "company": "Frappe Technologies",
+  "companySlug": "frappe",
   "location": "Mumbai, India",
   "opengraph": {
     "last_updated": "2025-10-05T10:30:57.939Z",

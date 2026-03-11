@@ -11,6 +11,7 @@
   ],
   "pricing": "Freemium",
   "company": "Dukaan",
+  "companySlug": "dukaan",
   "location": "Bangalore",
   "opengraph": {
     "last_updated": "2025-10-05T10:35:25.009Z",

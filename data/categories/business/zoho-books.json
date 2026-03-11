@@ -24,5 +24,6 @@
     "twitter_site": "@ZohoBooks"
   },
   "appStoreUrl": "https://apps.apple.com/app/apple-store/id710446064?pt=423641&ct=website_top_bar_downloads&mt=8, https://apps.apple.com/app/apple-store/id710446064?pt=423641&ct=website_homePage&mt=8, https://apps.apple.com/app/apple-store/id710446064?pt=423641&ct=website_footerPage&mt=8, https://apps.apple.com/app/id710446064",
-  "playStoreUrl": "https://play.google.com/store/apps/details?id=com.zoho.books&referrer=utm_source%3Dwebsite%26utm_medium%3Dtop_bar_downloads, https://play.google.com/store/apps/details?id=com.zoho.books&referrer=utm_source%3Dwebsite%26utm_medium%3Dhomepage, https://play.google.com/store/apps/details?id=com.zoho.books&referrer=utm_source%3Dwebsite%26utm_medium%3Dfooter"
+  "playStoreUrl": "https://play.google.com/store/apps/details?id=com.zoho.books&referrer=utm_source%3Dwebsite%26utm_medium%3Dtop_bar_downloads, https://play.google.com/store/apps/details?id=com.zoho.books&referrer=utm_source%3Dwebsite%26utm_medium%3Dhomepage, https://play.google.com/store/apps/details?id=com.zoho.books&referrer=utm_source%3Dwebsite%26utm_medium%3Dfooter",
+  "companySlug": "zoho"
 }

@@ -30,5 +30,6 @@
     "twitter_site": "@zoho"
   },
   "appStoreUrl": "https://apps.apple.com/us/app/zoho-learn/id1590127933",
-  "playStoreUrl": "https://play.google.com/store/apps/details?id=com.zoho.learn"
+  "playStoreUrl": "https://play.google.com/store/apps/details?id=com.zoho.learn",
+  "companySlug": "zoho"
 }

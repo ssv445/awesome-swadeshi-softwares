@@ -58,12 +58,79 @@ export interface Software {
   playStoreUrl?: string // Optional Google Play Store URL
   opengraph?: OpenGraph // Optional OpenGraph metadata
   featured_reason?: string // Optional featured reason (for homepage display)
+  companySlug?: string // Links app to a company in data/companies.json for Swadeshi Meter
   pros?: string[]              // Genuine strengths from reviews
   cons?: string[]              // Known issues and limitations
   userComplaints?: string[]    // Real complaints from app stores, Reddit, Twitter
   rating?: number              // Aggregated rating from a public source
   ratingSource?: string        // Where the rating came from
   lastVerified?: string        // ISO date when data was last checked
+}
+
+// ===========================
+// Swadeshi Meter Types
+// ===========================
+
+export interface SwadeshiFactorScore {
+  score: number        // 0-100
+  note: string         // Human-readable explanation
+  source?: string      // Citation for auditability
+}
+
+export interface SwadeshiMeterData {
+  score: number                    // Weighted final score 0-100
+  lastVerified: string             // ISO date YYYY-MM-DD
+  dataCompleteness: number         // How many of 7 factors have data
+  factors: {
+    shareholding?: SwadeshiFactorScore
+    incorporation?: SwadeshiFactorScore
+    boardControl?: SwadeshiFactorScore
+    founders?: SwadeshiFactorScore
+    hqAndTeam?: SwadeshiFactorScore
+    dataSovereignty?: SwadeshiFactorScore
+    revenueOrigin?: SwadeshiFactorScore
+  }
+}
+
+export interface Company {
+  name: string
+  slug: string
+  hq: string
+  incorporation: string
+  founders: string
+  foundersActive: boolean
+  swadeshiMeter: SwadeshiMeterData
+}
+
+export interface CompaniesData {
+  companies: Record<string, Company>
+  meta: {
+    weights: Record<string, number>
+    version: string
+    lastUpdated: string
+  }
+}
+
+export const SWADESHI_WEIGHTS: Record<string, number> = {
+  shareholding: 0.35,
+  incorporation: 0.20,
+  boardControl: 0.15,
+  founders: 0.10,
+  hqAndTeam: 0.10,
+  dataSovereignty: 0.05,
+  revenueOrigin: 0.05,
+}
+
+export const SWADESHI_TIERS = [
+  { min: 80, label: 'Highly Swadeshi', color: '#138808', bgClass: 'bg-green-100 text-green-800 border-green-300' },
+  { min: 60, label: 'Mostly Swadeshi', color: '#FF9933', bgClass: 'bg-orange-100 text-orange-800 border-orange-300' },
+  { min: 40, label: 'Mixed Ownership', color: '#EAB308', bgClass: 'bg-yellow-100 text-yellow-800 border-yellow-300' },
+  { min: 20, label: 'Mostly Foreign', color: '#EA580C', bgClass: 'bg-amber-100 text-amber-800 border-amber-300' },
+  { min: 0,  label: 'Foreign Controlled', color: '#DC2626', bgClass: 'bg-red-100 text-red-800 border-red-300' },
+] as const
+
+export function getSwadeshiTier(score: number) {
+  return SWADESHI_TIERS.find(tier => score >= tier.min) || SWADESHI_TIERS[SWADESHI_TIERS.length - 1]
 }
 
 // ===========================

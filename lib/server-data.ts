@@ -1,17 +1,19 @@
 import fs from 'fs'
 import path from 'path'
-import type { Software, Category, CategoriesData } from './data'
+import type { Software, Category, CategoriesData, Company, CompaniesData, SwadeshiMeterData } from './data'
 
 // Extended Software type with metadata for sitemap/routing
 export interface SoftwareWithMeta extends Software {
   categorySlug: string
   slug: string
+  swadeshiMeter?: SwadeshiMeterData
 }
 
 // Get all software from nested folder structure (server-side only)
 export function getAllSoftware(): SoftwareWithMeta[] {
   const categoriesDir = path.join(process.cwd(), 'data', 'categories')
   const software: SoftwareWithMeta[] = []
+  const companiesData = getCompaniesData()
 
   try {
     // Get all category folders
@@ -34,10 +36,14 @@ export function getAllSoftware(): SoftwareWithMeta[] {
           // Use explicit slug from JSON (with filename as fallback for backward compatibility)
           const slug = softwareData.slug || file.replace('.json', '')
 
+          const companySlug = softwareData.companySlug
+          const company = companySlug && companiesData?.companies[companySlug]
+
           software.push({
             ...softwareData,
             categorySlug: category,
-            slug
+            slug,
+            ...(company ? { swadeshiMeter: company.swadeshiMeter } : {})
           })
         }
       } catch (error) {
@@ -55,6 +61,7 @@ export function getAllSoftware(): SoftwareWithMeta[] {
 export function getSoftwareByCategory(categorySlug: string): SoftwareWithMeta[] {
   const categoriesDir = path.join(process.cwd(), 'data', 'categories')
   const software: SoftwareWithMeta[] = []
+  const companiesData = getCompaniesData()
 
   try {
     const categoryPath = path.join(categoriesDir, categorySlug)
@@ -73,10 +80,14 @@ export function getSoftwareByCategory(categorySlug: string): SoftwareWithMeta[] 
       // Use explicit slug from JSON (with filename as fallback for backward compatibility)
       const slug = softwareData.slug || file.replace('.json', '')
 
+      const companySlug = softwareData.companySlug
+      const company = companySlug && companiesData?.companies[companySlug]
+
       software.push({
         ...softwareData,
         categorySlug,
-        slug
+        slug,
+        ...(company ? { swadeshiMeter: company.swadeshiMeter } : {})
       })
     }
   } catch (error) {
@@ -133,6 +144,26 @@ export function getCategoryBySlug(slug: string): Category | null {
   }
 }
 
+// Load companies data (server-side only)
+export function getCompaniesData(): CompaniesData | null {
+  const companiesPath = path.join(process.cwd(), 'data', 'companies.json')
+
+  try {
+    if (!fs.existsSync(companiesPath)) return null
+    const content = fs.readFileSync(companiesPath, 'utf8')
+    return JSON.parse(content) as CompaniesData
+  } catch (error) {
+    console.warn('Error reading companies.json:', error)
+    return null
+  }
+}
+
+// Get company by slug (server-side only)
+export function getCompanyBySlug(slug: string): Company | null {
+  const data = getCompaniesData()
+  return data?.companies[slug] ?? null
+}
+
 // Get featured categories (server-side only)
 export function getFeaturedCategories(): Category[] {
   try {
@@ -183,7 +214,12 @@ export function getAppBySlug(category: string, slug: string): Software | null {
     const fileContent = fs.readFileSync(filePath, 'utf8')
     const appData = JSON.parse(fileContent)
 
-    return appData
+    // Attach swadeshiMeter from company data if available
+    const companiesData = getCompaniesData()
+    const companySlug = appData.companySlug
+    const company = companySlug && companiesData?.companies[companySlug]
+
+    return { ...appData, ...(company ? { swadeshiMeter: company.swadeshiMeter } : {}) }
   } catch (error) {
     console.error(`Error reading app ${category}/${slug}:`, error)
     return null

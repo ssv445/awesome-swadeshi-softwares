@@ -11,5 +11,6 @@
   ],
   "pricing": "Freemium",
   "company": "Zoho Corporation",
-  "location": "Chennai"
+  "location": "Chennai",
+  "companySlug": "zoho"
 }

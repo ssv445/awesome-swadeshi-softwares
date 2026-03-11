@@ -11,6 +11,7 @@
   ],
   "pricing": "Paid",
   "company": "UrbanPiper",
+  "companySlug": "urbanpiper",
   "location": "Bangalore",
   "opengraph": {
     "last_updated": "2025-10-05T10:32:02.273Z",

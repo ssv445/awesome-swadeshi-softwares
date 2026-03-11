@@ -4,7 +4,9 @@
   "description": "AI-powered cloud storage service for files, photos, and documents with cross-device sync and smart photo editing",
   "website": "https://www.jiocloud.com/",
   "category": "business",
-  "purpose": ["cloud-storage"],
+  "purpose": [
+    "cloud-storage"
+  ],
   "alternatives": [
     "Google Drive",
     "Dropbox",
@@ -26,5 +28,6 @@
     "twitter_image": "https://static.jiocloud.com/web2.0/common/images/jiocloud-logo-1.png",
     "twitter_description": "Live intelligently with JioAICloud – free cloud storage, AI Photoplay for smart photo edits, and seamless sharing via Easy Share. Explore Now!",
     "twitter_creator": "google"
-  }
+  },
+  "companySlug": "jio"
 }

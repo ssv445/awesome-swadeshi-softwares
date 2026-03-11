@@ -11,6 +11,7 @@
   ],
   "pricing": "Paid",
   "company": "BrowserStack Inc",
+  "companySlug": "browserstack",
   "location": "Mumbai",
   "opengraph": {
     "last_updated": "2025-10-05T10:34:32.775Z",

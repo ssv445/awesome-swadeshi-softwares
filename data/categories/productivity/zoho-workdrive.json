@@ -4,7 +4,9 @@
   "description": "Team collaboration and file storage platform for businesses",
   "website": "https://www.zoho.com/workdrive/",
   "category": "productivity",
-  "purpose": ["cloud-storage"],
+  "purpose": [
+    "cloud-storage"
+  ],
   "alternatives": [
     "Google Drive",
     "Dropbox",
@@ -29,5 +31,6 @@
     "twitter_site": "@zoho"
   },
   "appStoreUrl": "https://itunes.apple.com/us/app/zoho-workdrive/id1408591221?ls=1&mt=8",
-  "playStoreUrl": "https://play.google.com/store/apps/details?id=com.zoho.work.drive"
+  "playStoreUrl": "https://play.google.com/store/apps/details?id=com.zoho.work.drive",
+  "companySlug": "zoho"
 }

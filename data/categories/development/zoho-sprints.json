@@ -13,6 +13,7 @@
   ],
   "pricing": "Freemium",
   "company": "Zoho Corporation",
+  "companySlug": "zoho",
   "location": "Chennai, Tamil Nadu",
   "faviconUrl": "https://www.zohowebstatic.com/sites/zweb/images/ogimage/sprints-logo.png",
   "opengraph": {

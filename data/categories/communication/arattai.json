@@ -4,7 +4,9 @@
   "description": "Made in India instant messaging alternative integrated with Zoho ecosystem",
   "website": "https://www.arattai.in",
   "category": "communication",
-  "purpose": ["messaging-app"],
+  "purpose": [
+    "messaging-app"
+  ],
   "alternatives": [
     "WhatsApp",
     "Telegram"
@@ -26,5 +28,6 @@
     "twitter_image": "https://www.arattai.in/sites/oweb/images/ogimage/arattai-logo.png",
     "twitter_card": "summary",
     "twitter_site": "@zoho"
-  }
+  },
+  "companySlug": "zoho"
 }
