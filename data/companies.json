@@ -989,6 +989,72 @@
           "revenueOrigin": { "score": 40, "note": "Total ~$870K (2024). Indian subsidiary reported INR 2.47 Cr (~$295K, ~34%). Majority of paying customers likely global/US-based (competing with Intercom/Zendesk)", "source": "https://tracxn.com/d/legal-entities/india/chatwoot-private-limited/__De5z3aNDVDByPu4w1HKuDMk0Bu044n8IBxM5u1bZR3Q" }
         }
       }
+    },
+    "msg91": {
+      "name": "Walkover Web Solutions (MSG91)",
+      "slug": "msg91",
+      "hq": "Indore, Madhya Pradesh, India",
+      "incorporation": "India (CIN: U72400MP2010PTC023806, June 2010, ROC Gwalior)",
+      "founders": "Pushpendra Agrawal, Shubhendra Agrawal",
+      "foundersActive": true,
+      "swadeshiMeter": {
+        "score": 93,
+        "lastVerified": "2026-03-10",
+        "dataCompleteness": 6,
+        "factors": {
+          "shareholding": { "score": 95, "note": "Promoter holding 100% as of 2023. No external VC funding found. Privately held by Indian founders Pushpendra and Shubhendra Agrawal. Bootstrapped", "source": "https://www.thecompanycheck.com/company/walkover-web-solutions-private-limited/U72400MP2010PTC023806" },
+          "incorporation": { "score": 100, "note": "Incorporated in India as Walkover Web Solutions Pvt Ltd, registered at ROC Gwalior, Madhya Pradesh", "source": "https://www.zaubacorp.com/company/WALKOVER-WEB-SOLUTIONS-PRIVATE-LIMITED/U72400MP2010PTC023806" },
+          "boardControl": { "score": 95, "note": "All 3 directors Indian: Pushpendra Agrawal (MD), Shubhendra Agrawal (Whole-Time Director), Ravindra Singh. Full founder control", "source": "https://tracxn.com/d/legal-entities/india/walkover-web-solutions-private-limited/__IqFEcf4le8anx2zSjm2kbSz0cyqNPgssYfHq3QTG4Nk" },
+          "founders": { "score": 100, "note": "Indian founders Pushpendra and Shubhendra Agrawal, both actively leading from Indore", "source": "https://in.linkedin.com/in/pushpendraa" },
+          "hqAndTeam": { "score": 95, "note": "HQ Indore, Madhya Pradesh. 63-193 employees primarily India-based. No overseas offices", "source": "https://walkover.in/" },
+          "dataSovereignty": { "score": 65, "note": "CPaaS provider in 100+ countries, likely uses global cloud for message delivery. No specific India-only data hosting commitment found", "source": "https://msg91.com/" },
+          "revenueOrigin": { "score": 60, "note": "Serves 30,000+ businesses in 100+ countries. Primary base in India but significant international presence. Revenue INR 57.2 Cr FY2024", "source": "https://enlyft.com/tech/products/msg91" }
+        }
+      }
+    },
+    "kommunicate": {
+      "name": "Kommunicate (Intentive Technologies)",
+      "slug": "kommunicate",
+      "hq": "Bengaluru, Karnataka, India",
+      "incorporation": "India (CIN: U72900KA2020PTC140110, Oct 2020, RoC Bangalore) + US entity (Intentive Inc, Delaware)",
+      "founders": "Devashish Mamgain, Adarsh Kumar",
+      "foundersActive": true,
+      "swadeshiMeter": {
+        "score": 79,
+        "lastVerified": "2026-03-10",
+        "dataCompleteness": 6,
+        "factors": {
+          "shareholding": { "score": 80, "note": "Promoters (Indian co-founders) hold 92.83% as of FY2024. Total funding ~$437K. US entity exists but Indian entity is primary per Terms of Service", "source": "https://www.thecompanycheck.com/company/intentive-technologies-private-limited/U72900KA2020PTC140110" },
+          "incorporation": { "score": 85, "note": "Intentive Technologies Pvt Ltd incorporated Oct 2020 in Bangalore. Terms of Service name Indian entity as operator with Bengaluru court jurisdiction. US entity Intentive Inc exists in Delaware", "source": "https://www.kommunicate.io/terms" },
+          "boardControl": { "score": 85, "note": "Board: 2 Indian directors (co-founders Devashish Mamgain & Adarsh Kumar). With only $437K raised, founders retain full board control", "source": "https://www.thecompanycheck.com/company/intentive-technologies-private-limited/U72900KA2020PTC140110" },
+          "founders": { "score": 95, "note": "Both founders Indian. Devashish Mamgain (CEO, GB Pant Engineering College) and Adarsh Kumar (CTO, WB University of Technology). Serial entrepreneurs (Applozic, MobiTexter)", "source": "https://www.crunchbase.com/person/devashish-mamgain" },
+          "hqAndTeam": { "score": 80, "note": "HQ IndiQube Octagon, Koramangala, Bangalore. 33-47 employees primarily India-based. US address in Delaware for market operations", "source": "https://www.kommunicate.io/aboutus" },
+          "dataSovereignty": { "score": 40, "note": "No data center location disclosure. GDPR compliance mentioned. Uses third-party processors (Dialogflow, Amazon Lex). Likely US-based cloud. No India data residency commitment", "source": "https://www.kommunicate.io/privacy-policy" },
+          "revenueOrigin": { "score": 30, "note": "Revenue $5.5M (2024). Product priced in USD targeting global/US enterprise market. Indian revenue likely minority share", "source": "https://getlatka.com/companies/kommunicate.io" }
+        }
+      }
+    },
+    "pepperfry": {
+      "name": "Pepperfry",
+      "slug": "pepperfry",
+      "hq": "Mumbai, Maharashtra, India",
+      "incorporation": "India (CIN: U74990MH2011PLC220126, July 2011, ROC Mumbai)",
+      "founders": "Ambareesh Murty (1971-2023), Ashish Shah",
+      "foundersActive": true,
+      "swadeshiMeter": {
+        "score": 84,
+        "lastVerified": "2026-03-10",
+        "dataCompleteness": 7,
+        "factors": {
+          "shareholding": { "score": 70, "note": "TCC Concept Ltd (BSE-listed Indian company, Pune) acquired 98.98% in Sep-Dec 2025 for INR 661.47 Cr via share swap. TCC promoters hold ~45.69%. Some former foreign VCs received TCC shares. Net Indian ownership high but dispersed", "source": "https://scanx.trade/stock-market-news/orders-deals/tcc-concept-increases-pepperfry-stake-by-9-66-with-652-10-million-investment/26927754" },
+          "incorporation": { "score": 95, "note": "Incorporated July 2011 in India as Public Limited Company, ROC Mumbai. Parent TCC Concept also Indian (Pune, 1984). Fully Indian incorporation", "source": "https://www.zaubacorp.com/company/PEPPERFRY-LIMITED/U74990MH2011PLC220126" },
+          "boardControl": { "score": 90, "note": "All 5 board members Indian: Ashish Shah (CEO), Sanjay Netrabile (CTO), Sanjay Baweja, Malini Parmar, Rajat Sood. Post-TCC acquisition, entirely Indian board", "source": "https://inc42.com/buzz/ipo-bound-pepperfry-appoints-two-independent-directors-to-its-board/" },
+          "founders": { "score": 100, "note": "Both co-founders Indian. Ambareesh Murty (1971-2023, IIM Calcutta, ex-eBay India). Ashish Shah (Univ of Pune, IMT Ghaziabad, CEO). Indian-born, Indian-educated", "source": "https://en.wikipedia.org/wiki/Ambareesh_Murty" },
+          "hqAndTeam": { "score": 95, "note": "HQ Ackruti Corporate Park, LBS Marg, Mumbai. 200+ physical studios in Tier 1-3 cities. 766-1000 employees all India-based. No international offices", "source": "https://craft.co/pepperfry/locations" },
+          "dataSovereignty": { "score": 55, "note": "Primary data processing in India. However, third-party providers may store data in other jurisdictions. No explicit India-only data residency commitment", "source": "https://www.pepperfry.com/tnc/data-security.html" },
+          "revenueOrigin": { "score": 95, "note": "Exclusively Indian furniture marketplace. FY25 revenue INR 186 Cr, virtually 100% domestic. 200+ studios across India", "source": "https://startuptalky.com/pepperfry/" }
+        }
+      }
     }
   },
   "meta": {
