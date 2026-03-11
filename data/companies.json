@@ -1979,6 +1979,72 @@
           "revenueOrigin": { "score": 95, "note": "Revenue ~8.93 Cr FY2025. Hit $1M ARR from Tamil Nadu alone. Primarily Indian market", "source": "https://kae-capital.com/blogs/edtechs-second-act-supernova-and-the-95-nobody-served/" }
         }
       }
+    },
+    "aasaan": {
+      "name": "Lightbooks Technologies Pvt Ltd (Aasaan)",
+      "slug": "aasaan",
+      "hq": "Hyderabad, Telangana, India",
+      "incorporation": "India (CIN: U72900TG2019PTC131012, 28-Feb-2019, RoC Hyderabad)",
+      "founders": "Sivaram Raju Gadiraju, Pramod Kalidindi, Murali Mohan Raju Gottumukkala",
+      "foundersActive": true,
+      "swadeshiMeter": {
+        "score": 92,
+        "lastVerified": "2026-03-11",
+        "dataCompleteness": 7,
+        "factors": {
+          "shareholding": { "score": 90, "note": "Bootstrapped, no external VC investment. Shares held entirely by Indian founders/directors. Paid-up capital INR 1 Lac", "source": "https://www.thecompanycheck.com/company/lightbooks-technologies-private-limited/U72900TG2019PTC131012" },
+          "incorporation": { "score": 100, "note": "Incorporated in India as Private Limited company, registered at RoC-Hyderabad, Telangana. CIN U72900TG2019PTC131012", "source": "https://www.registrationwala.com/company/lightbooks-technologies-private-limited/U72900TG2019PTC131012" },
+          "boardControl": { "score": 95, "note": "All directors Indian nationals. No foreign board members. Founders retain full control", "source": "https://www.thecompanycheck.com/company/lightbooks-technologies-private-limited/U72900TG2019PTC131012" },
+          "founders": { "score": 95, "note": "All three founders Indian, based in Hyderabad, actively leading as CEO, COO, and Product Owner", "source": "https://in.linkedin.com/company/aasaanapp" },
+          "hqAndTeam": { "score": 95, "note": "HQ in Hyderabad (Madhapur/Kavuri Hills). 11-50 employees, primarily Indian operations. No foreign offices", "source": "https://in.linkedin.com/company/aasaanapp" },
+          "dataSovereignty": { "score": 65, "note": "Cloud-based SaaS. No explicit Indian-only data hosting commitment found. Likely uses global cloud providers", "source": "https://www.aasaan.app/" },
+          "revenueOrigin": { "score": 80, "note": "Primarily Indian market serving Indian e-commerce businesses. Some international reach but core market is India", "source": "https://www.aasaan.app/" }
+        }
+      }
+    },
+    "qikink": {
+      "name": "Huepress Fashion Pvt Ltd (Qikink)",
+      "slug": "qikink",
+      "hq": "Coimbatore, Tamil Nadu, India",
+      "incorporation": "India (CIN: U14101TZ2024PTC030921, 11-Mar-2024, RoC Tamil Nadu; brand operating since 2016)",
+      "founders": "Sennimalaiappan Sivaraman",
+      "foundersActive": true,
+      "swadeshiMeter": {
+        "score": 95,
+        "lastVerified": "2026-03-11",
+        "dataCompleteness": 7,
+        "factors": {
+          "shareholding": { "score": 95, "note": "Bootstrapped, no external funding. Two directors (Sivaraman S and Poomathi Rangasamy) both Indian nationals. No foreign investors", "source": "https://tracxn.com/d/companies/qikink/__jlztbjjjmrh" },
+          "incorporation": { "score": 100, "note": "Huepress Fashion Pvt Ltd incorporated in India (Tamil Nadu). CIN U14101TZ2024PTC030921", "source": "https://company.vakilsearch.com/huepress-fashion-private-limited" },
+          "boardControl": { "score": 95, "note": "Two directors: Sennimalaiappan Sivaraman and Poomathi Rangasamy, both Indian nationals. Full Indian board control", "source": "https://mycorporateinfo.com/" },
+          "founders": { "score": 100, "note": "Indian founder Sivaraman S, actively leading as Founder/CEO. Background includes Anna University and Infosys", "source": "https://qikink.com/about-us/" },
+          "hqAndTeam": { "score": 95, "note": "HQ and 23,800 sq ft manufacturing facility in Coimbatore, Tamil Nadu. Entire operations in India", "source": "https://qikink.com/about-us/" },
+          "dataSovereignty": { "score": 70, "note": "Uses Cloudflare CDN. Privacy policy governed by Indian law. No explicit Indian-only data hosting commitment", "source": "https://qikink.com/privacy-policy" },
+          "revenueOrigin": { "score": 85, "note": "India's largest print-on-demand platform. Primarily Indian sellers. Some international shipping but core market is India", "source": "https://qikink.com/about-us/" }
+        }
+      }
+    },
+    "typof": {
+      "name": "Typof Technologies Pvt Ltd",
+      "slug": "typof",
+      "hq": "Bhubaneswar, Odisha, India",
+      "incorporation": "India (CIN: U72900OR2021PTC035593, Feb 2021, RoC Odisha)",
+      "founders": "Trilochan Parida, Divya Mallick",
+      "foundersActive": true,
+      "swadeshiMeter": {
+        "score": 93,
+        "lastVerified": "2026-03-11",
+        "dataCompleteness": 7,
+        "factors": {
+          "shareholding": { "score": 90, "note": "Bootstrapped with Rs 1 crore. No external institutional investors. Founders and Laxmi Kanta Parida are directors", "source": "https://www.zaubacorp.com/company/TYPOF-TECHNOLOGIES-PRIVATE-LIMITED/U72900OR2021PTC035593" },
+          "incorporation": { "score": 100, "note": "Incorporated in India as Typof Technologies Pvt Ltd in Odisha. CIN U72900OR2021PTC035593", "source": "https://www.zaubacorp.com/company/TYPOF-TECHNOLOGIES-PRIVATE-LIMITED/U72900OR2021PTC035593" },
+          "boardControl": { "score": 95, "note": "All 3 directors Indian nationals: Trilochan Parida, Dibhya Rekha Mallick, Laxmi Kanta Parida. No foreign board members", "source": "https://www.zaubacorp.com/company/TYPOF-TECHNOLOGIES-PRIVATE-LIMITED/U72900OR2021PTC035593" },
+          "founders": { "score": 100, "note": "Indian founders actively leading — Trilochan Parida (CTO) and Divya Mallick (CEO). DPIIT-recognized startup", "source": "https://yourstory.com/2025/06/bengaluru-bhubaneswar-typof" },
+          "hqAndTeam": { "score": 90, "note": "HQ Bhubaneswar, Odisha with operations in Bengaluru. ~13 employees, all India-based", "source": "https://yourstory.com/2025/06/bengaluru-bhubaneswar-typof" },
+          "dataSovereignty": { "score": 70, "note": "Uses Paytm for payments (PCI-DSS). Uses CloudFront CDN (AWS). No explicit Indian-only data hosting", "source": "https://typof.com/privacy" },
+          "revenueOrigin": { "score": 85, "note": "Primarily India-focused, serving 10,000+ brands across 100+ Indian cities. ARR Rs 3 crore. Some international customers", "source": "https://typof.com/" }
+        }
+      }
     }
   },
   "meta": {
