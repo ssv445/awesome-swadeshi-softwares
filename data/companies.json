@@ -1517,6 +1517,72 @@
           "revenueOrigin": { "score": 40, "note": "Serves clients in 125+ countries. Primarily targets ESL researchers globally (Japan, China, Korea, Turkey major markets). Estimated <30% India revenue. Total ~$47M globally", "source": "https://getlatka.com/companies/crimsoni.com" }
         }
       }
+    },
+    "inscripts": {
+      "name": "Inscripts (Say Namaste / CometChat)",
+      "slug": "inscripts",
+      "hq": "Mumbai, Maharashtra, India",
+      "incorporation": "India (CIN: U72900MH2009PTC192344, May 2009, ROC Mumbai)",
+      "founders": "Anant Garg, Anuj Garg, Nameet Potnis",
+      "foundersActive": true,
+      "swadeshiMeter": {
+        "score": 75,
+        "lastVerified": "2026-03-11",
+        "dataCompleteness": 6,
+        "factors": {
+          "shareholding": { "score": 65, "note": "Founders retain significant stake but CometChat raised $17.9M from foreign VCs: Signal Peak Ventures (US), Matchstick Ventures, Range Ventures. Exact split undisclosed", "source": "https://www.crunchbase.com/organization/cometchat/company_financials" },
+          "incorporation": { "score": 95, "note": "Inscripts (I) Private Limited incorporated May 13, 2009 in Mumbai. CIN U72900MH2009PTC192344. Active status", "source": "https://tracxn.com/d/legal-entities/india/inscripts-i-private-limited/__8LE-qoy1cc7qB1JwGt4IlrT3xDZDzF9GolC5D2q155M" },
+          "boardControl": { "score": 75, "note": "Indian founders control company. Anant Garg (CTO), Anuj Garg (CEO), Nameet Potnis all active. VC investor board seats likely from $10M Series A but founders retain operational control", "source": "https://tracxn.com/d/companies/cometchat/__OR6vhnaaXK3gFM8PG-JUqWwQyBMW2XmZ4tDgp6AC50g" },
+          "founders": { "score": 100, "note": "All 3 founders Indian. Anant Garg (B.E. Computer Science, University of Mumbai) founded Inscripts at age 16. Anuj Garg (CEO) and Nameet Potnis active", "source": "https://yourstory.com/people/anant-garg" },
+          "hqAndTeam": { "score": 70, "note": "Legal entity at Chembur, Mumbai. CometChat operational HQ in Denver/Boulder, Colorado for US market. Indian engineering team", "source": "https://www.inscripts.com/about/company" },
+          "dataSovereignty": { "score": 75, "note": "Say Namaste servers in India. CometChat offers AWS servers in India (Mumbai), US, and Ireland. India DC available but not default", "source": "https://help.cometchat.com/hc/en-us/articles/6803408748315-Where-is-my-app-data-stored" },
+          "revenueOrigin": { "score": 25, "note": "CometChat $6.2M revenue, 50K+ customers globally. India only ~9% of customers. Say Namaste appears dormant (domain for sale)", "source": "https://getlatka.com/companies/cometchat" }
+        }
+      }
+    },
+    "tvisha-systems": {
+      "name": "Tvisha Systems Pvt Ltd (Troop Messenger)",
+      "slug": "tvisha-systems",
+      "hq": "Hyderabad, Telangana, India",
+      "incorporation": "India (CIN: U72900TG2016PTC109340, 01-May-2016, ROC Hyderabad)",
+      "founders": "Sudhir Naidu (Polepalli Sudhir Babu)",
+      "foundersActive": true,
+      "swadeshiMeter": {
+        "score": 99,
+        "lastVerified": "2026-03-11",
+        "dataCompleteness": 7,
+        "factors": {
+          "shareholding": { "score": 100, "note": "100% promoter-held by Polepalli family. Zero external or foreign funding. Bootstrapped", "source": "https://www.zaubacorp.com/company/TVISHA-SYSTEMS-PRIVATE-LIMITED/U72900TG2016PTC109340" },
+          "incorporation": { "score": 100, "note": "Tvisha Systems Pvt Ltd incorporated in India (Telangana) on 01 May 2016. CIN U72900TG2016PTC109340", "source": "https://www.tofler.in/tvisha-systems-private-limited/company/U72900TG2016PTC109340" },
+          "boardControl": { "score": 100, "note": "Two directors, both Indian nationals from founding family: Yoganand Babu Polepalli and Polepalli Sudhir Babu. No foreign board seats", "source": "https://www.zaubacorp.com/company/TVISHA-SYSTEMS-PRIVATE-LIMITED/U72900TG2016PTC109340" },
+          "founders": { "score": 100, "note": "Indian founder Sudhir Naidu (MBA ICFAI, ex-Citibank/AT&T) actively leading as CEO since 2017", "source": "https://www.thehansindia.com/technology/tech-news/troop-messenger-is-a-one-stop-solution-for-all-business-communications-says-founder-ceo-sudhir-naidu-733335" },
+          "hqAndTeam": { "score": 95, "note": "HQ Kavuri Hills, Madhapur, Hyderabad. ~9 employees, all India-based. No foreign offices", "source": "https://www.apollo.io/companies/Troop-Messenger/5da6a525364e5500014274f3" },
+          "dataSovereignty": { "score": 90, "note": "Offers on-premise and self-hosted deployment; supports air-gapped networks; ToS governed by Indian law. Targets defense and government", "source": "https://www.troopmessenger.com/on-premise" },
+          "revenueOrigin": { "score": 95, "note": "~100% of customers from India. Targets Indian enterprise, government, and defense sectors", "source": "https://6sense.com/tech/team-collaboration/troop-messenger-market-share" }
+        }
+      }
+    },
+    "data-ingenious": {
+      "name": "Data Ingenious Global Ltd (VideoMeet)",
+      "slug": "data-ingenious",
+      "hq": "Jaipur, Rajasthan, India",
+      "incorporation": "India (CIN: U72200RJ1995PLC010248, 21-Jun-1995, ROC Jaipur)",
+      "founders": "Ajay Data",
+      "foundersActive": true,
+      "swadeshiMeter": {
+        "score": 97,
+        "lastVerified": "2026-03-11",
+        "dataCompleteness": 7,
+        "factors": {
+          "shareholding": { "score": 95, "note": "Privately held unlisted public company. Data family controls: Ajay Data (Founder/CEO), Babu Lal Data, Deepak Data on board. No foreign VC or institutional investment", "source": "https://www.zaubacorp.com/company/DATA-INGENIOUS-GLOBAL-LIMITED/U72200RJ1995PLC010248" },
+          "incorporation": { "score": 100, "note": "Incorporated in India on 21 June 1995. CIN U72200RJ1995PLC010248, ROC Jaipur, Rajasthan", "source": "https://www.tofler.in/data-ingenious-global-limited/company/U72200RJ1995PLC010248" },
+          "boardControl": { "score": 95, "note": "All directors Indian nationals: Lokesh Mathur, Babu Lal Data, Deepak Data, Nitin Walia, Mukesh Kumar Gupta, Ullas Nair. Founder controls company", "source": "https://www.zaubacorp.com/company/DATA-INGENIOUS-GLOBAL-LIMITED/U72200RJ1995PLC010248" },
+          "founders": { "score": 100, "note": "Indian founder Dr. Ajay Data actively leads as Founder & CEO. MBA and PhD holder, also created DataMail linguistic email app", "source": "https://www.smechannels.com/dr-ajay-data-founder-ceo-videomeet/" },
+          "hqAndTeam": { "score": 95, "note": "HQ in Jaipur, Rajasthan. ~1850 employees. Servers across Rajasthan, Maharashtra, West Bengal, Tamil Nadu, Gujarat. Entirely Indian operations", "source": "https://inc42.com/buzz/data-ingenious-unveils-conferencing-tool-videomeet-to-accommodate-2k-users/" },
+          "dataSovereignty": { "score": 95, "note": "All data hosted on Indian servers across 5 states. Fully encrypted meetings, no personal data shared with third parties. MeitY Innovation Challenge recipient", "source": "https://cxotoday.com/press-release/made-in-india-videomeet-brings-ai-in-video-conferencing/" },
+          "revenueOrigin": { "score": 95, "note": "Primarily Indian market: education, healthcare, corporate, government sectors. Pricing in INR. Self-funded, no foreign capital dependency", "source": "https://yourstory.com/2020/08/startup-jaipur-videomeet-aatmanirbhar-zoom-webinars-events" }
+        }
+      }
     }
   },
   "meta": {
