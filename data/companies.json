@@ -1781,6 +1781,72 @@
           "revenueOrigin": { "score": 30, "note": "Primarily global/international customer base. $100K+ MRR predominantly from US/EU customers. No significant India-focused revenue", "source": "https://www.starterstory.com/stories/sitegpt" }
         }
       }
+    },
+    "smartlook": {
+      "name": "Smartlook.com s.r.o. (now Cisco)",
+      "slug": "smartlook",
+      "hq": "Brno, Czech Republic (now owned by Cisco, USA)",
+      "incorporation": "Czech Republic (IČO 09508830, est. Oct 2020); acquired by Cisco Systems June 2023",
+      "founders": "Petr Janošík, Ondřej Machek, Dušan Kmeť, Vladimír Šandera",
+      "foundersActive": false,
+      "swadeshiMeter": {
+        "score": 1,
+        "lastVerified": "2026-03-11",
+        "dataCompleteness": 7,
+        "factors": {
+          "shareholding": { "score": 0, "note": "Czech company funded by Dutch/Czech VCs. Fully acquired by Cisco Systems (US, NASDAQ: CSCO) in June 2023. Zero Indian shareholding", "source": "https://www.cisco.com/site/us/en/about/corporate-development/acquisitions/smartlook/index.html" },
+          "incorporation": { "score": 0, "note": "Incorporated as Smartlook.com s.r.o. in Brno, Czech Republic. No Indian legal entity found", "source": "https://www.northdata.com/Smartlook.Com+s.r.o.,+Brno/ICO+09508830" },
+          "boardControl": { "score": 0, "note": "Czech founders, now fully under Cisco corporate structure. No Indian board members or decision-makers", "source": "https://craft.co/smartlook/executives" },
+          "founders": { "score": 0, "note": "All four founders are Czech/Slovak nationals. No Indian founders", "source": "https://www.crunchbase.com/person/petr-janosik" },
+          "hqAndTeam": { "score": 5, "note": "HQ in Brno, Czech Republic. May have some remote Indian workers. No dedicated India office found", "source": "https://www.smartlook.com/about/" },
+          "dataSovereignty": { "score": 0, "note": "No evidence of data stored in India. Now part of Cisco infrastructure, likely EU/US data centers", "source": "https://www.smartlook.com/" },
+          "revenueOrigin": { "score": 5, "note": "Global SaaS serving 2800+ organizations. India not a primary revenue market. US expansion was key focus", "source": "https://www.smartlook.com/blog/smartlook-gets-investment-to-grow-in-the-us/" }
+        }
+      }
+    },
+    "userback": {
+      "name": "Userback Pty Ltd",
+      "slug": "userback",
+      "hq": "Brisbane, Queensland, Australia",
+      "incorporation": "Australia (Pty Ltd, ~2016). No Indian entity found",
+      "founders": "Jonathan Tobin, Lee Le",
+      "foundersActive": true,
+      "swadeshiMeter": {
+        "score": 3,
+        "lastVerified": "2026-03-11",
+        "dataCompleteness": 7,
+        "factors": {
+          "shareholding": { "score": 5, "note": "Australian Pty Ltd backed by Craft Ventures (US VC). $2M funding from US investors. No Indian shareholders", "source": "https://www.crunchbase.com/organization/userback" },
+          "incorporation": { "score": 0, "note": "Incorporated in Australia as Userback Pty Ltd. No Indian entity found. Operates under Australian Privacy Act", "source": "https://userback.io/privacy/" },
+          "boardControl": { "score": 0, "note": "Australian-based leadership. CEO Jonathan Tobin, CTO Lee Le. No Indian board members", "source": "https://tracxn.com/d/companies/userback/__jqPA9JUGcgXZWNwZk15Y4W6l0hesRTU3HpND4anePfw/founders-and-board-of-directors" },
+          "founders": { "score": 0, "note": "Both founders Australian-based with Australian education backgrounds. Neither is Indian national", "source": "https://www.linkedin.com/in/jontobin/" },
+          "hqAndTeam": { "score": 5, "note": "HQ Brisbane, Australia. 7-50 employees. May have Indian remote workers but no India office confirmed", "source": "https://userback.io/about/" },
+          "dataSovereignty": { "score": 0, "note": "All data hosted on AWS in US. All 11 subprocessors are US-based. No India data residency option", "source": "https://userback.io/userback-subprocessors/" },
+          "revenueOrigin": { "score": 5, "note": "Global SaaS serving 20,000+ teams in 105 countries. India not a primary market", "source": "https://userback.io/about/" }
+        }
+      }
+    },
+    "woorank": {
+      "name": "WooRank SRL (owned by Bridgeline Digital)",
+      "slug": "woorank",
+      "hq": "Brussels, Belgium (parent: Woburn, MA, USA)",
+      "incorporation": "Belgium (WooRank SRL); parent Bridgeline Digital Inc (Delaware, NASDAQ: BLIN). Acquired March 2021",
+      "founders": "Boris Demaria, Nils De Moor, Vincent Battaglia",
+      "foundersActive": false,
+      "swadeshiMeter": {
+        "score": 1,
+        "lastVerified": "2026-03-11",
+        "dataCompleteness": 7,
+        "factors": {
+          "shareholding": { "score": 0, "note": "100% owned by Bridgeline Digital (NASDAQ: BLIN), US public company. Acquired for ~$2.4M in March 2021. Zero Indian shareholding", "source": "https://www.globenewswire.com/news-release/2021/03/05/2188172/0/en/Corum-Client-Woorank-Pioneer-in-SEO-and-Digital-Marketing-Acquired-by-Bridgeline.html" },
+          "incorporation": { "score": 0, "note": "WooRank SRL incorporated in Belgium (Brussels). Parent in Delaware, USA. No Indian incorporation", "source": "https://www.sec.gov/Archives/edgar/data/1378590/000143774921001812/ex_223749.htm" },
+          "boardControl": { "score": 0, "note": "Board controlled by Bridgeline Digital (US). No Indian board members or decision-making authority", "source": "https://stockanalysis.com/stocks/blin/company/" },
+          "founders": { "score": 0, "note": "All three founders (Boris Demaria, Nils De Moor, Vincent Battaglia) are Belgian nationals. No Indian founders", "source": "https://www.crunchbase.com/organization/woorank" },
+          "hqAndTeam": { "score": 5, "note": "HQ Brussels, Belgium. Parent HQ Woburn, MA. No verifiable Indian office. Dublin/Indian team claim appears unfounded", "source": "https://www.cbinsights.com/company/woorank" },
+          "dataSovereignty": { "score": 0, "note": "No evidence of Indian data centers. SaaS hosted on US/EU infrastructure under Bridgeline Digital", "source": "https://www.woorank.com/en" },
+          "revenueOrigin": { "score": 10, "note": "Global customer base. India not a primary market. Revenue primarily from US, Canada, and international", "source": "https://www.sec.gov/Archives/edgar/data/1378590/000143774922029477/blin20220930_10k.htm" }
+        }
+      }
     }
   },
   "meta": {
