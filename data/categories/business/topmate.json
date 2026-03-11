@@ -11,6 +11,7 @@
   ],
   "pricing": "Freemium",
   "company": "Topmate",
+  "companySlug": "topmate",
   "location": "Bangalore",
   "opengraph": {
     "last_updated": "2025-10-05T10:31:56.861Z",

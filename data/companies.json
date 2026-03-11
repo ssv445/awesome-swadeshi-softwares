@@ -1385,6 +1385,72 @@
           "revenueOrigin": { "score": 55, "note": "Processes 18% of India's online food orders. Revenue Rs 53.1Cr (FY2025). Active in 12+ countries including US, Middle East, UK. India still dominant but international growing", "source": "https://www.thecompanycheck.com/company/urbanpiper-technology-private-limited/U72900KA2016PTC085864" }
         }
       }
+    },
+    "topmate": {
+      "name": "Topmate (Kavalry Technologies Pvt Ltd)",
+      "slug": "topmate",
+      "hq": "Bengaluru, Karnataka, India",
+      "incorporation": "India (CIN: U72900RJ2021PTC073141, 25-Jan-2021, ROC Jaipur)",
+      "founders": "Ankit Agarwal, Dinesh Singh, Tribhuvan Bisen, Sainath Shivaji Mitalakar, Stuti Kathuria",
+      "foundersActive": true,
+      "swadeshiMeter": {
+        "score": 82,
+        "lastVerified": "2026-03-11",
+        "dataCompleteness": 6,
+        "factors": {
+          "shareholding": { "score": 85, "note": "Founders hold 58.08%. Indian funds (India Quotient, Titan Capital) hold 23.13%, angels 3.97%, ESOP 9.37%. Predominantly Indian-held", "source": "https://tracxn.com/d/companies/topmate/__0feQnNqxu633GVIOYt_LQu9YkfyWhOqrZyDJy8IiSew/latest-shareholding" },
+          "incorporation": { "score": 75, "note": "Indian entity Kavalry Technologies Pvt Ltd, CIN U72900RJ2021PTC073141, ROC Jaipur. Also has US presence at 548 Market St, San Francisco", "source": "https://www.indiafilings.com/search/kavalry-technologies-private-limited-cin-U72900RJ2021PTC073141" },
+          "boardControl": { "score": 95, "note": "Directors of Kavalry Technologies are Ankit Agarwal and Dinesh Singh, both Indian nationals", "source": "https://www.zaubacorp.com/company/KAVALRY-TECHNOLOGIES-PRIVATE-LIMITED/U72900RJ2021PTC073141" },
+          "founders": { "score": 95, "note": "All 5 co-founders are Indian. Ankit Agarwal and Dinesh Singh are IIT Bombay alumni. All actively involved", "source": "https://www.crunchbase.com/organization/topmate" },
+          "hqAndTeam": { "score": 70, "note": "Operational HQ at HSR Layout, Bengaluru. Registered office in Jaipur. US address at 548 Market St, San Francisco. Team largely in India", "source": "https://www.cbinsights.com/company/topmateio" },
+          "dataSovereignty": { "score": 55, "note": "Terms governed by Indian law with Bengaluru jurisdiction. Shares data with third-party AI providers (OpenAI). Specific server locations not disclosed", "source": "https://topmate.io/privacy" },
+          "revenueOrigin": { "score": 70, "note": "Primarily India-focused creator economy platform. Revenue Rs 57.4L (FY2024). Expanding internationally but India remains core market", "source": "https://tracxn.com/d/companies/topmate/__0feQnNqxu633GVIOYt_LQu9YkfyWhOqrZyDJy8IiSew" }
+        }
+      }
+    },
+    "townscript": {
+      "name": "Townscript (Dyulok Technologies Pvt Ltd)",
+      "slug": "townscript",
+      "hq": "Pune, Maharashtra, India",
+      "incorporation": "India (CIN: U74900PN2012PTC143321, May 2012, ROC Pune)",
+      "founders": "Sachin Sharma, Sanchit Malik",
+      "foundersActive": false,
+      "swadeshiMeter": {
+        "score": 84,
+        "lastVerified": "2026-03-11",
+        "dataCompleteness": 7,
+        "factors": {
+          "shareholding": { "score": 80, "note": "BookMyShow (Big Tree Entertainment) holds 75% majority stake. BookMyShow is Indian-owned with Reliance/Network18 as largest shareholder (~39%). Remaining 25% with founders/angels", "source": "https://yourstory.com/2017/02/acquiring-mastitickets-bookmyshow-now-majority-stake-pune-based-diy-event-platform-townscript" },
+          "incorporation": { "score": 100, "note": "Incorporated in India as Dyulok Technologies Private Limited, CIN U74900PN2012PTC143321, ROC Pune, Maharashtra since May 2012", "source": "https://www.zaubacorp.com/company/Dyulok-Technologies-Private-Limited/U74900PN2012PTC143321" },
+          "boardControl": { "score": 85, "note": "All Indian directors: Ashish Hemrajani, Ashish Saksena, Parikshit Dar (BookMyShow leadership), and Venkateswara Reddy Kasi Reddy", "source": "https://www.zaubacorp.com/company-directors/Dyulok-Technologies-Private-Limited/U74900PN2012PTC143321" },
+          "founders": { "score": 60, "note": "Indian founders Sachin Sharma (IIT Kanpur) and Sanchit Malik (MIT Pune). Both have left — Sachin now at Prexi, Sanchit co-founded Pazcare in 2020", "source": "https://www.crunchbase.com/person/sanchit-malik" },
+          "hqAndTeam": { "score": 95, "note": "HQ in Pune, Maharashtra. ~25 employees, primarily India-based team. Events across 100+ Indian cities", "source": "https://www.thecompanycheck.com/company/dyulok-technologies-private-limited/U74900PN2012PTC143321" },
+          "dataSovereignty": { "score": 75, "note": "Uses AWS ap-south-1 (Mumbai) for S3 storage. Cloud-based platform with Indian data center presence", "source": "https://www.townscript.com/privacy-policy" },
+          "revenueOrigin": { "score": 85, "note": "~59% of customers from India. Platform focuses on Indian events market across 100+ cities. Some international presence", "source": "https://6sense.com/tech/event-marketing-and-management/townscript-market-share" }
+        }
+      }
+    },
+    "vdocipher": {
+      "name": "VdoCipher Media Solutions Pvt Ltd",
+      "slug": "vdocipher",
+      "hq": "Gurgaon, Haryana, India",
+      "incorporation": "India (CIN: U72200DL2015PTC286534, Oct 2015, ROC Delhi)",
+      "founders": "Siddhant Jain, Vibhav Sinha",
+      "foundersActive": true,
+      "swadeshiMeter": {
+        "score": 85,
+        "lastVerified": "2026-03-11",
+        "dataCompleteness": 7,
+        "factors": {
+          "shareholding": { "score": 75, "note": "Founders ~36.84%, Indian angels (Malpani Ventures etc.) ~21.84%, foreign funds (Oracle, Seedstars) ~1.05%, enterprises ~3.43%. Majority Indian-held, bootstrapped with minimal $179K total funding", "source": "https://tracxn.com/d/legal-entities/india/vdocipher-media-solutions-private-limited/__sWWosbdE4Mx4e9ucp3p1DuLLqbHbvPHytszk9UCkXE0" },
+          "incorporation": { "score": 100, "note": "Incorporated in India as VdoCipher Media Solutions Private Limited. CIN: U72200DL2015PTC286534, Delhi, Oct 2015", "source": "https://www.zaubacorp.com/VDOCIPHER-MEDIA-SOLUTIONS-PRIVATE-LIMITED-U72200DL2015PTC286534" },
+          "boardControl": { "score": 100, "note": "Two directors: Siddhant Jain (CEO) and Vibhav Sinha (CTO) — both Indian co-founders. Full Indian board control", "source": "https://tracxn.com/d/companies/vdocipher/__UcOwCwYYcWxdHq1M0dixi7nRSmsBfW8L9FYxuOGn1O8/founders-and-board-of-directors" },
+          "founders": { "score": 100, "note": "IIT Delhi alumni Siddhant Jain (CEO) and Vibhav Sinha (CTO). Both actively leading the company", "source": "https://thebetterindia.com/329864/iit-delhi-grads-siddhant-jain-vibhav-sinha-founded-vdocipher-data-encryption-video-piracy-security/" },
+          "hqAndTeam": { "score": 85, "note": "HQ Gurgaon, offices in Bengaluru and Newark (US). ~40-person team, primarily India-based", "source": "https://www.vdocipher.com/page/about/" },
+          "dataSovereignty": { "score": 50, "note": "Uses AWS S3 storage and CloudFront CDN across 6 continents. US-owned cloud infrastructure, no dedicated Indian-only hosting option confirmed", "source": "https://www.vdocipher.com/page/partners/" },
+          "revenueOrigin": { "score": 45, "note": "3,000+ platforms across 120+ countries. ~60% growth from outside India. Revenue Rs 20.4 Cr FY24. Significant international customer base", "source": "https://www.prnewswire.com/in/news-releases/vdocipher-video-player-powers-3-000-platforms-across-120-countries-301782980.html" }
+        }
+      }
     }
   },
   "meta": {
