@@ -1121,6 +1121,72 @@
           "revenueOrigin": { "score": 95, "note": "100% domestic revenue. FY25 operating revenue Rs 934 crore, all from Indian operations (bike-taxi, auto, cabs in 100+ Indian cities). No international operations", "source": "https://inc42.com/startups/rapido-10-years-decade-1000-cr-revenue-club/" }
         }
       }
+    },
+    "tata-unistore": {
+      "name": "Tata CLiQ (Tata UniStore)",
+      "slug": "tata-unistore",
+      "hq": "Mumbai, Maharashtra, India",
+      "incorporation": "India (CIN: U74999MH2007PLC173035, 13-Aug-2007, ROC Mumbai)",
+      "founders": "Ashutosh Pandey (founding CEO), launched by Tata Group",
+      "foundersActive": false,
+      "swadeshiMeter": {
+        "score": 90,
+        "lastVerified": "2026-03-11",
+        "dataCompleteness": 7,
+        "factors": {
+          "shareholding": { "score": 82, "note": "100% subsidiary of Tata Digital, which is 100% owned by Tata Sons. Tata Sons ~66% owned by Indian charitable trusts (Sir Dorabji Tata Trust 27.98%, Sir Ratan Tata Trust 23.56%), ~18.4% Shapoorji Pallonji Group (Indian). Effectively ~84% Indian-owned", "source": "https://en.wikipedia.org/wiki/Tata_Sons" },
+          "incorporation": { "score": 100, "note": "Tata UniStore Limited incorporated in India on Aug 13, 2007. CIN: U74999MH2007PLC173035. Registered in Mumbai, Maharashtra", "source": "https://www.zaubacorp.com/company/TATA-UNISTORE-LIMITED/U74999MH2007PLC173035" },
+          "boardControl": { "score": 95, "note": "Board: Aarthi Subramanian, Ankur Verma, Naveen Tahilyani — all Indian. Reports to Tata Digital CEO Sajith Sivanandan (Indian). Entirely Indian board control", "source": "https://tracxn.com/d/legal-entities/india/tata-unistore-limited/__ZuQAWzvucgJhN-3vpAgQRnfK7PXPzd-33pOMsDoD-28" },
+          "founders": { "score": 90, "note": "Corporate venture of Tata Group, launched 2016 by Ashutosh Pandey (Indian, founding CEO). Current CEO Gopal Asthana is Indian", "source": "https://yourstory.com/2016/05/tata-cliq-launch" },
+          "hqAndTeam": { "score": 95, "note": "HQ at Empire Plaza 2, Vikhroli West, Mumbai. 509 employees as of Aug 2025, all operations in India", "source": "https://www.thecompanycheck.com/company/tata-unistore-limited/U74999MH2007PLC173035" },
+          "dataSovereignty": { "score": 70, "note": "Primary data hosted on servers in India. Uses AWS cloud infrastructure (Mumbai region) via Tata Communications. Some data may be transferred internationally to third parties", "source": "https://aws.amazon.com/solutions/case-studies/tatacliq/" },
+          "revenueOrigin": { "score": 100, "note": "100% India market — online fashion/lifestyle shopping platform operating exclusively in India. FY2025 revenue Rs 296 Cr", "source": "https://tracxn.com/d/legal-entities/india/tata-unistore-limited/__ZuQAWzvucgJhN-3vpAgQRnfK7PXPzd-33pOMsDoD-28" }
+        }
+      }
+    },
+    "clues-network": {
+      "name": "ShopClues (Clues Network)",
+      "slug": "clues-network",
+      "hq": "Gurugram, Haryana, India",
+      "incorporation": "India (CIN: U52590HR2011PTC055841, 05-Dec-2011, ROC Chandigarh) — subsidiary of Qoo10 (Singapore)",
+      "founders": "Sanjay Sethi, Sandeep Aggarwal, Radhika Aggarwal",
+      "foundersActive": false,
+      "swadeshiMeter": {
+        "score": 47,
+        "lastVerified": "2026-03-11",
+        "dataCompleteness": 6,
+        "factors": {
+          "shareholding": { "score": 5, "note": "100% owned by Qoo10 (Singapore) since 2019 all-stock acquisition. Previously backed by Tiger Global, Nexus, GIC. No Indian ownership remains", "source": "https://techcrunch.com/2019/10/31/qoo10-shopclues/" },
+          "incorporation": { "score": 90, "note": "Indian entity Clues Network Pvt Ltd (CIN: U52590HR2011PTC055841) incorporated 05 Dec 2011 in Haryana. However, it is a subsidiary of US-incorporated Clues Network Inc, now owned by Qoo10", "source": "https://www.zaubacorp.com/company/CLUES-NETWORK-PRIVATE-LIMITED/U52590HR2011PTC055841" },
+          "boardControl": { "score": 40, "note": "4 directors: Kil Hyoung Choi (Qoo10/Korean), Shijoon Lee (Qoo10/Korean), Tombo Chishi (Indian), Anuraag Gambhir (Indian MD). Foreign parent controls board appointments", "source": "https://www.tofler.in/clues-network-private-limited/company/U52590HR2011PTC055841" },
+          "founders": { "score": 70, "note": "All 3 founders Indian. Sanjay Sethi (CEO) still active. Sandeep Aggarwal arrested for insider trading, left. Radhika Aggarwal moved to co-found Kindlife. Founders no longer control company", "source": "https://en.wikipedia.org/wiki/ShopClues" },
+          "hqAndTeam": { "score": 80, "note": "HQ in Gurugram, Sector 44. Primary operations and team in India. Cross-border logistics via Qoo10's QXpress", "source": "https://www.indiaretailing.com/2024/07/23/shopclues-anuraag-gambhir-interview/" },
+          "dataSovereignty": { "score": 50, "note": "Privacy policy states data stored in India, US, and Asia Pacific. SSL encryption, IT Act 2000 compliance claimed, but multi-region storage under foreign parent", "source": "https://www.shopclues.com/privacy-policy.html" },
+          "revenueOrigin": { "score": 65, "note": "Primarily Indian marketplace but pivoting to cross-border e-commerce exports ($12M/year, targeting $100M). 2000 daily cross-border orders to Korea, Japan, Singapore", "source": "https://www.indiaretailing.com/2024/07/23/shopclues-anuraag-gambhir-interview/" }
+        }
+      }
+    },
+    "hostingraja": {
+      "name": "HostingRaja (Ovi Hosting Pvt Ltd)",
+      "slug": "hostingraja",
+      "hq": "Bengaluru, Karnataka, India",
+      "incorporation": "India (CIN: U74900KA2015PTC079774, ROC Bangalore) — owned by World Host Group (UK)",
+      "founders": "Dhanasekar Mani, Shweta Shetty",
+      "foundersActive": false,
+      "swadeshiMeter": {
+        "score": 50,
+        "lastVerified": "2026-03-11",
+        "dataCompleteness": 7,
+        "factors": {
+          "shareholding": { "score": 10, "note": "Acquired by World Host Group (Aug 2023), owned by Oakley Capital (UK private equity). Founders no longer shareholders/directors", "source": "https://hosting.com/about/mergers-and-acquisitions/" },
+          "incorporation": { "score": 90, "note": "Ovi Hosting Private Limited incorporated in Karnataka, India. CIN: U74900KA2015PTC079774. Registered in Bangalore", "source": "https://www.zaubacorp.com/company/OVI-HOSTING-PRIVATE-LIMITED/U74900KA2015PTC079774" },
+          "boardControl": { "score": 15, "note": "Current directors: Sebastian De Lemos (British, WHG CEO) and Surendra Ainala. Original founders Dhanasekar Mani and Shweta Shetty no longer directors post-acquisition", "source": "https://tracxn.com/d/companies/hostingraja/__l9gqgCOEJoZemE4L5vTmFQPjf8rXbKofMLNz5EsGtpY/founders-and-board-of-directors" },
+          "founders": { "score": 80, "note": "Indian founders: Dhanasekar Mani (MCA Madurai University, ex-Samsung) and Shweta Shetty (ex-ICICI Bank). Founded 2012. No longer active post-acquisition", "source": "https://www.hostingadvice.com/blog/hostingraja-delivers-affordability-without-sacrificing-quality/" },
+          "hqAndTeam": { "score": 90, "note": "HQ in Bangalore, India. ~150 employees, primarily Indian team. Multilingual support in Bengali, Kannada, Tamil, Telugu", "source": "https://www.hostingraja.in/overview/" },
+          "dataSovereignty": { "score": 95, "note": "All data centers in India: Bangalore, Mumbai, Chennai, Hyderabad, Noida, Delhi, Kolkata, Pune, Jaipur. 100% Indian hosting infrastructure", "source": "https://www.hostingraja.in/cloud/" },
+          "revenueOrigin": { "score": 95, "note": "150,000+ customers almost entirely in India. Revenue ~Rs 31.9 Cr. India-focused .in domain and regional language support", "source": "https://www.owler.com/company/hostingraja" }
+        }
+      }
     }
   },
   "meta": {
@@ -1134,6 +1200,6 @@
       "revenueOrigin": 0.05
     },
     "version": "1.0.0",
-    "lastUpdated": "2026-03-10"
+    "lastUpdated": "2026-03-11"
   }
 }
