@@ -2045,6 +2045,72 @@
           "revenueOrigin": { "score": 85, "note": "Primarily India-focused, serving 10,000+ brands across 100+ Indian cities. ARR Rs 3 crore. Some international customers", "source": "https://typof.com/" }
         }
       }
+    },
+    "zopping": {
+      "name": "ZopSmart Technology Pvt Ltd (Zopping)",
+      "slug": "zopping",
+      "hq": "Bengaluru, Karnataka, India",
+      "incorporation": "India (Zopping Technology Pvt Ltd CIN: U58201KA2025PTC200375; parent ZopSmart CIN: U74900KA2014PTC076961, RoC Bangalore)",
+      "founders": "Mukesh Singh, Vikash Kumar, Raj Pandey, Deepak Kalhan",
+      "foundersActive": true,
+      "swadeshiMeter": {
+        "score": 93,
+        "lastVerified": "2026-03-11",
+        "dataCompleteness": 7,
+        "factors": {
+          "shareholding": { "score": 90, "note": "Bootstrapped and profitable at ~Rs 800 Cr. Early VC rounds (Accel, Times Internet, Qualcomm) but founders retain control", "source": "https://inc42.com/company/zopsmart/" },
+          "incorporation": { "score": 100, "note": "Both ZopSmart and Zopping Technology Pvt Ltd incorporated in India, RoC Bangalore, Karnataka", "source": "https://www.filesure.in/company/zopping-technology-private-limited/U58201KA2025PTC200375" },
+          "boardControl": { "score": 90, "note": "Directors Mukesh Singh and Vikash Kumar (both Indian co-founders and promoters). Board fully Indian-founder controlled", "source": "https://tracxn.com/d/companies/zopsmart/__DmwJ96o_vw8IfDgHvu5nkPbE80xafkmJMjNY7SwyvEE/founders-and-board-of-directors" },
+          "founders": { "score": 100, "note": "All founders Indian (IIT alumni). Mukesh Singh (CEO), Vikash Kumar (CTO). Ranjeet Vimal leads Zopping product", "source": "https://tracxn.com/d/companies/zopsmart/__DmwJ96o_vw8IfDgHvu5nkPbE80xafkmJMjNY7SwyvEE/founders-and-board-of-directors" },
+          "hqAndTeam": { "score": 95, "note": "HQ in Bengaluru (HSR Layout). ~400+ employees across ZopSmart and Zopping. Primarily Indian team", "source": "https://zopping.com/" },
+          "dataSovereignty": { "score": 75, "note": "India-focused platform. No explicit data residency disclosure but serves Indian retailers primarily", "source": "https://zopping.com/" },
+          "revenueOrigin": { "score": 95, "note": "India-first hyperlocal e-commerce for Indian retailers. Revenue primarily from Indian market", "source": "https://zopping.com/" }
+        }
+      }
+    },
+    "proctorlink": {
+      "name": "Take2 Technologies (ProctorLink)",
+      "slug": "proctorlink",
+      "hq": "Bhilwara, Rajasthan, India",
+      "incorporation": "India (founded 2016, Bhilwara, Rajasthan)",
+      "founders": "Mahendra Soni, Sunil Chhipa, Ankita Kabra",
+      "foundersActive": true,
+      "swadeshiMeter": {
+        "score": 95,
+        "lastVerified": "2026-03-11",
+        "dataCompleteness": 7,
+        "factors": {
+          "shareholding": { "score": 95, "note": "Bootstrapped, privately held by Indian founders. No external VC funding or foreign investors", "source": "https://www.crunchbase.com/organization/take2-technologies" },
+          "incorporation": { "score": 100, "note": "Incorporated in India, founded 2016 in Bhilwara, Rajasthan", "source": "https://www.zoominfo.com/c/take2-technologies/458129707" },
+          "boardControl": { "score": 95, "note": "All-Indian founding team controls the company. No external board members found", "source": "https://www.crunchbase.com/organization/take2-technologies" },
+          "founders": { "score": 100, "note": "All three co-founders Indian nationals from Rajasthan. Mahendra Soni actively leads as Founder", "source": "https://in.linkedin.com/in/mahendrasoni" },
+          "hqAndTeam": { "score": 95, "note": "HQ in Bhilwara, Rajasthan. 11-50 employees, primarily Indian team", "source": "https://www.zoominfo.com/c/take2-technologies/458129707" },
+          "dataSovereignty": { "score": 90, "note": "ProctorLink stores data on institution's own servers. Moodle-based integration. Data stays with Indian institutions", "source": "https://proctorlink.com/" },
+          "revenueOrigin": { "score": 70, "note": "ProctorLink targets Indian educational institutions. Take2 also does global web/mobile dev services", "source": "https://take2.co/" }
+        }
+      }
+    },
+    "shelfpay": {
+      "name": "Shelfpay Private Limited",
+      "slug": "shelfpay",
+      "hq": "Bengaluru, Karnataka, India",
+      "incorporation": "India (CIN: U72900KA2022PTC164170, 22-Jul-2022, RoC Bangalore)",
+      "founders": "Vedant Kumar, Paras Rajput",
+      "foundersActive": true,
+      "swadeshiMeter": {
+        "score": 86,
+        "lastVerified": "2026-03-11",
+        "dataCompleteness": 7,
+        "factors": {
+          "shareholding": { "score": 70, "note": "Indian founders hold majority. Y Combinator holds ~7%. Additional seed from Super Capital and Goodwater Capital. Total raised ~$1.5M", "source": "https://www.zaubacorp.com/company/SHELFPAY-PRIVATE-LIMITED/U72900KA2022PTC164170" },
+          "incorporation": { "score": 100, "note": "Incorporated in India as Shelfpay Pvt Ltd, registered in Bangalore, Karnataka. CIN U72900KA2022PTC164170", "source": "https://www.tofler.in/shelfpay-private-limited/company/U72900KA2022PTC164170" },
+          "boardControl": { "score": 90, "note": "Board of 3 directors: Vedant Kumar, Paras Singh Rajput (co-founders), Mehul Shrimali. Indian founders hold 2 of 3 seats", "source": "https://www.zaubacorp.com/company/SHELFPAY-PRIVATE-LIMITED/U72900KA2022PTC164170" },
+          "founders": { "score": 100, "note": "Both founders Indian — Vedant Kumar and Paras Rajput, IIT Roorkee 2021 graduates. Both actively leading from Bengaluru", "source": "https://www.crunchbase.com/organization/shelfpay" },
+          "hqAndTeam": { "score": 95, "note": "HQ in Bengaluru (Sarjapur Main Rd). Primarily Indian operations serving Indian market. No overseas offices", "source": "https://www.zaubacorp.com/company/SHELFPAY-PRIVATE-LIMITED/U72900KA2022PTC164170" },
+          "dataSovereignty": { "score": 75, "note": "Fintech regulated by RBI — payment data must be stored in India per RBI mandate. Uses Indian banking partners", "source": "https://shelfpay.in/" },
+          "revenueOrigin": { "score": 95, "note": "100% India-focused — self-checkout for Indian kirana stores and retail. YC W23 batch. Revenue entirely from India", "source": "https://shelfpay.in/" }
+        }
+      }
     }
   },
   "meta": {
