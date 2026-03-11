@@ -2111,6 +2111,72 @@
           "revenueOrigin": { "score": 95, "note": "100% India-focused — self-checkout for Indian kirana stores and retail. YC W23 batch. Revenue entirely from India", "source": "https://shelfpay.in/" }
         }
       }
+    },
+    "domainindia": {
+      "name": "Domain Registration India Pvt Ltd",
+      "slug": "domainindia",
+      "hq": "Tiruppur, Tamil Nadu, India",
+      "incorporation": "India (CIN: U72900TZ2016PTC028001, 15-Sep-2016, RoC Coimbatore; originally est. 2007)",
+      "founders": "Sureshkumar Chinnasamy, Lakshmiprabha",
+      "foundersActive": true,
+      "swadeshiMeter": {
+        "score": 94,
+        "lastVerified": "2026-03-11",
+        "dataCompleteness": 7,
+        "factors": {
+          "shareholding": { "score": 95, "note": "Privately held Indian Pvt Ltd. No external funding, no foreign investors. Directors hold full ownership", "source": "https://www.zaubacorp.com/company/DOMAIN-REGISTRATION-INDIA-PRIVATE-LIMITED/U72900TZ2016PTC028001" },
+          "incorporation": { "score": 100, "note": "Incorporated in India as Private Limited Company under RoC Coimbatore, Tamil Nadu. CIN U72900TZ2016PTC028001", "source": "https://www.zaubacorp.com/company/DOMAIN-REGISTRATION-INDIA-PRIVATE-LIMITED/U72900TZ2016PTC028001" },
+          "boardControl": { "score": 95, "note": "Both directors Indian nationals. No external or foreign board members. Full founder control", "source": "https://www.zaubacorp.com/company/DOMAIN-REGISTRATION-INDIA-PRIVATE-LIMITED/U72900TZ2016PTC028001" },
+          "founders": { "score": 95, "note": "Indian founders. Sureshkumar Chinnasamy has 17+ years server administration experience. Actively leads company", "source": "https://www.linkedin.com/in/sureshkumarcsk/" },
+          "hqAndTeam": { "score": 90, "note": "HQ in Tiruppur/Palladam, Tamil Nadu. Operations India-focused. 35,000+ domains, 10,000+ Indian customers", "source": "https://domainindia.com/" },
+          "dataSovereignty": { "score": 75, "note": "Indian hosting company but no explicit India-only data center commitment disclosed", "source": "https://domainindia.com/" },
+          "revenueOrigin": { "score": 90, "note": "Primarily Indian market. Domain registration and hosting for Indian businesses", "source": "https://hostadvice.com/hosting-company/domain-registration-india-pvt-ltd-reviews/" }
+        }
+      }
+    },
+    "mitsu": {
+      "name": "Mitsu Inc",
+      "slug": "mitsu",
+      "hq": "Mumbai, Maharashtra, India",
+      "incorporation": "India (Proprietorship/Private firm, founded 1993, Mumbai. NIXI-accredited .IN registrar since 2014)",
+      "founders": "Sanjeev Goyal",
+      "foundersActive": true,
+      "swadeshiMeter": {
+        "score": 91,
+        "lastVerified": "2026-03-11",
+        "dataCompleteness": 7,
+        "factors": {
+          "shareholding": { "score": 95, "note": "Privately held since 1993 by founder Sanjeev Goyal. No known external investors or foreign shareholders", "source": "https://www.mitsu.in/" },
+          "incorporation": { "score": 90, "note": "Founded in 1993 in India. NIXI-accredited .IN registrar since 2014. Likely proprietorship (not found on MCA as Pvt Ltd)", "source": "https://www.mitsu.in/" },
+          "boardControl": { "score": 95, "note": "Sole proprietor/founder Sanjeev Goyal controls all decisions. No external or foreign board members", "source": "https://www.mitsu.in/" },
+          "founders": { "score": 100, "note": "Sanjeev Goyal, Indian national from Mumbai. India's first domain name registrant and ICANN member. Domain expert for law firms", "source": "https://www.mitsu.in/about" },
+          "hqAndTeam": { "score": 90, "note": "HQ in Kalbadevi, Mumbai. 2-19 employees, primarily Indian. Servers in India, USA, and UK", "source": "https://www.mitsu.in/contact" },
+          "dataSovereignty": { "score": 65, "note": "Has Indian datacenter but also servers in USA and UK. No explicit India-only data residency option", "source": "https://www.mitsu.in/" },
+          "revenueOrigin": { "score": 70, "note": "Customers in 142 countries but primarily Indian market. .IN and .Bharat domain specialization", "source": "https://www.mitsu.in/" }
+        }
+      }
+    },
+    "w3infotech": {
+      "name": "WWW Infotech LLP (W3Infotech)",
+      "slug": "w3infotech",
+      "hq": "Kochi, Kerala, India",
+      "incorporation": "India (LLPIN: AAK-4050, 25-Aug-2017, RoC Ernakulam; operating since 2007)",
+      "founders": "James Mathew",
+      "foundersActive": true,
+      "swadeshiMeter": {
+        "score": 95,
+        "lastVerified": "2026-03-11",
+        "dataCompleteness": 7,
+        "factors": {
+          "shareholding": { "score": 95, "note": "Privately held LLP. No external funding or foreign investors. Fully Indian-owned", "source": "https://in.linkedin.com/company/w3info" },
+          "incorporation": { "score": 100, "note": "Incorporated in India as WWW Infotech LLP (LLPIN AAK-4050), RoC Ernakulam, Kerala", "source": "https://www.zoominfo.com/c/w3infotech-llp/345621215" },
+          "boardControl": { "score": 95, "note": "Indian founder James Mathew controls company. No foreign board members or external directors", "source": "https://in.linkedin.com/company/w3info" },
+          "founders": { "score": 100, "note": "Indian founder James Mathew, based in Kerala. Actively leading company as Founder Partner", "source": "https://in.linkedin.com/in/jamesmathewk" },
+          "hqAndTeam": { "score": 95, "note": "HQ in Kochi (Kadavanthara), Kerala. Angels Arcade, Cheruparambath Road, Ernakulam. Indian team", "source": "https://w3infotech.in/" },
+          "dataSovereignty": { "score": 75, "note": "Indian hosting company. Servers likely in India for Indian customers. No explicit disclosure", "source": "https://w3infotech.in/" },
+          "revenueOrigin": { "score": 80, "note": "Primarily Indian market. Web hosting, domain registration for Indian businesses", "source": "https://w3infotech.in/" }
+        }
+      }
     }
   },
   "meta": {
