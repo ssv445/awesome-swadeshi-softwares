@@ -1,1 +1,36 @@
-{}
+{
+  "zoho-crm": {
+    "affiliateUrl": "https://www.zoho.com/affiliate/",
+    "program": "Zoho Affiliate Program",
+    "commission": "15% of revenue for first 12 months, capped at $25,000 per deal. 90-day cookie. Monthly PayPal payouts.",
+    "status": "active",
+    "addedDate": "2026-03-11"
+  },
+  "freshworks": {
+    "affiliateUrl": "https://www.freshworks.com/company/affiliate-partner/affiliate-signup/",
+    "program": "Freshworks Affiliate Program",
+    "commission": "20% recurring for first year (base), 25% for 100+ signups (Power), custom for 200+ (Champion). 90-day cookie. $1K MRR bonus eligible.",
+    "status": "active",
+    "addedDate": "2026-03-11"
+  },
+  "razorpay": {
+    "affiliateUrl": "https://razorpay.com/partners/",
+    "program": "Razorpay Partner Program",
+    "commission": "Up to Rs 500 per referral bonus + up to 0.1% of transaction value (recurring). Free onboarding.",
+    "status": "active",
+    "addedDate": "2026-03-11"
+  },
+  "instamojo": {
+    "affiliateUrl": "https://www.instamojo.com/partner/",
+    "program": "Instamojo Channel Partner Program",
+    "commission": "Recurring revenue based on client transactions. Dedicated relationship manager. Free signup.",
+    "status": "active",
+    "addedDate": "2026-03-11"
+  },
+  "_noAffiliate": {
+    "browserstack": {
+      "note": "No public affiliate program. Has partner/reseller program only (for businesses). Referral gives free months, no cash commission.",
+      "checkedDate": "2026-03-11"
+    }
+  }
+}
