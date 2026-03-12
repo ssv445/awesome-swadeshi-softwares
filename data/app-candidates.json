@@ -1,0 +1,10 @@
+{
+  "candidates": [],
+  "lastDiscoveryRun": null,
+  "stats": {
+    "totalFound": 0,
+    "pending": 0,
+    "picked": 0,
+    "skipped": 0
+  }
+}
