@@ -2265,6 +2265,28 @@
           "revenueOrigin": { "score": 90, "note": "India-focused search engine supporting 15+ Indian regional languages. Primarily Indian market", "source": "https://varindia.com/news/india-will-have-its-own-search-engine-qmamu" }
         }
       }
+    },
+    "physicswallah": {
+      "name": "PhysicsWallah Ltd",
+      "slug": "physicswallah",
+      "hq": "Noida, Uttar Pradesh, India",
+      "incorporation": "India",
+      "founders": "Alakh Pandey, Prateek Maheshwari",
+      "foundersActive": true,
+      "swadeshiMeter": {
+        "score": 82,
+        "lastVerified": "2026-03-13",
+        "dataCompleteness": 6,
+        "factors": {
+          "shareholding": { "score": 65, "note": "Post-IPO: Alakh Pandey holds ~37%, Prateek Maheshwari ~5.4%. Pre-IPO investors include Westbridge Capital, GSV Ventures, AC Ventures (mix of Indian and foreign). Public float ~25%", "source": "https://www.chittorgarh.com/ipo/physicswallah-ipo/2266/" },
+          "incorporation": { "score": 100, "note": "Incorporated in India. Listed on NSE and BSE (Nov 2025). CIN available on MCA. Indian public company" },
+          "boardControl": { "score": 85, "note": "Alakh Pandey is Chairman and CEO. Prateek Maheshwari is co-founder and board member. Board predominantly Indian" },
+          "founders": { "score": 95, "note": "Founded by Alakh Pandey (Prayagraj, UP) in 2016 as YouTube channel. Co-founder Prateek Maheshwari (IIT Bombay). Both actively leading the company" },
+          "hqAndTeam": { "score": 90, "note": "HQ in Noida, UP. 303 offline centers across 152 Indian cities. Bulk of ~5,000+ employees in India. Small Middle East presence" },
+          "dataSovereignty": { "score": 60, "note": "Uses cloud hosting. No explicit India-only data residency guarantee. Handles student data for millions of users" },
+          "revenueOrigin": { "score": 85, "note": "FY2025 revenue Rs 28.9 billion. Overwhelmingly India-focused. 4.5M paying subscribers, primarily Indian students. Small Middle East expansion" }
+        }
+      }
     }
   },
   "meta": {

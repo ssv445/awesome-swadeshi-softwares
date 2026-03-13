@@ -881,6 +881,14 @@
       "searchTerms": "byju think learn pvt ltd education khan academy coursera udemy personalized learning app for students with interactive video lessons"
     },
     {
+      "id": "education/physics-wallah",
+      "name": "Physics Wallah",
+      "company": "PhysicsWallah Ltd",
+      "category": "education",
+      "slug": "physics-wallah",
+      "searchTerms": "physics wallah physicswallah ltd education khan academy coursera chegg india s affordable edtech platform for jee neet upsc and school"
+    },
+    {
       "id": "education/proctorlink",
       "name": "ProctorLink",
       "company": "Take2 Technologies",
@@ -1322,7 +1330,7 @@
     }
   ],
   "meta": {
-    "totalEntries": 165,
+    "totalEntries": 166,
     "categories": [
       "business",
       "communication",
@@ -1338,7 +1346,7 @@
       "travel",
       "utilities"
     ],
-    "generatedAt": "2026-03-11T11:11:43.392Z",
+    "generatedAt": "2026-03-13T00:40:35.857Z",
     "version": "1.0.0"
   }
 }

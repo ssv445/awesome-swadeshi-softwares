@@ -10,9 +10,10 @@
       "priority": "high",
       "reason": "NASDAQ-listed Indian SaaS unicorn from Chennai. Freshdesk, Freshsales, Freshservice serve 50K+ companies globally. Already in companies.json but missing app entries. 3 sources.",
       "website": "https://www.freshworks.com/",
-      "status": "pending",
+      "status": "skipped",
       "addedDate": "2026-03-12",
-      "pickedDate": null
+      "pickedDate": null,
+      "skipReason": "Swadeshi Meter score 20 — Delaware incorporated, US HQ, founder stepped down. Not suitable as swadeshi app."
     },
     {
       "name": "Postman",
@@ -24,9 +25,10 @@
       "priority": "high",
       "reason": "Bangalore-founded API platform, $5.6B unicorn, used by 98% of Fortune 500. GSC demand + 3 discovery sources. We list Hoppscotch as its alternative but don't list Postman itself.",
       "website": "https://www.postman.com/",
-      "status": "pending",
+      "status": "skipped",
       "addedDate": "2026-03-12",
-      "pickedDate": null
+      "pickedDate": null,
+      "skipReason": "US incorporated (Delaware), HQ San Francisco. Similar to Freshworks — Indian-founded but not swadeshi enough."
     },
     {
       "name": "Physics Wallah",
@@ -38,9 +40,9 @@
       "priority": "high",
       "reason": "India's first affordable edtech unicorn ($2.8B), 10M+ downloads, IPO Nov 2025. Fills education category gap (currently only 4 apps). 2 sources.",
       "website": "https://www.pw.live/",
-      "status": "pending",
+      "status": "picked",
       "addedDate": "2026-03-12",
-      "pickedDate": null
+      "pickedDate": "2026-03-13"
     },
     {
       "name": "Unacademy",
@@ -284,8 +286,8 @@
   "lastDiscoveryRun": "2026-03-12",
   "stats": {
     "totalFound": 20,
-    "pending": 20,
-    "picked": 0,
-    "skipped": 0
+    "pending": 17,
+    "picked": 1,
+    "skipped": 2
   }
 }
