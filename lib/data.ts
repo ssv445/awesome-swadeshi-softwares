@@ -170,7 +170,6 @@ export {
   getCategoryUrl,
   getAppUrl,
   getAlternativeUrl,
-  getNotSwadeshiUrl,
   getPurposeUrl,
   getAbsoluteUrl,
   getAbsoluteCategoryUrl,

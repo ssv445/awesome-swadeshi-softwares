@@ -1,0 +1,34 @@
+{
+  "name": "PolicyBazaar",
+  "slug": "policybazaar",
+  "description": "India's largest online insurance aggregator and comparison platform for health, life, car, and travel insurance",
+  "website": "https://www.policybazaar.com/",
+  "category": "finance",
+  "alternatives": ["NerdWallet", "Policygenius", "Compare the Market"],
+  "pricing": "Free",
+  "company": "PB Fintech Limited",
+  "companySlug": "policybazaar",
+  "location": "Gurugram, Haryana",
+  "pros": [
+    "Comprehensive insurance comparison across all major Indian insurers",
+    "SoftBank nearly fully exited — increasingly Indian-owned",
+    "India-listed (NSE/BSE) with Indian founders actively leading",
+    "PaisaBazaar subsidiary for loan and credit card comparison"
+  ],
+  "cons": [
+    "Aggressive sales follow-up calls after browsing — hard to stop",
+    "Some plans pushed for higher commission rather than best fit",
+    "Premium comparison can be misleading without reading fine print",
+    "Claim assistance quality varies by insurance partner"
+  ],
+  "userComplaints": [
+    "Endless spam calls from agents after entering phone number",
+    "Recommended plans sometimes prioritize PolicyBazaar's commission over customer needs",
+    "Claim support is not as helpful as promised during purchase"
+  ],
+  "rating": 4.3,
+  "ratingSource": "Google Play Store",
+  "lastVerified": "2026-03-13",
+  "playStoreUrl": "https://play.google.com/store/apps/details?id=com.policybazaar",
+  "appStoreUrl": "https://apps.apple.com/in/app/policybazaar/id1034724408"
+}

@@ -25,6 +25,14 @@
       "searchTerms": "esign genie esign genie indian development business docusign adobe sign hellosign digital signature platform with document workflow and authentication"
     },
     {
+      "id": "business/freshworks",
+      "name": "Freshworks",
+      "company": "Freshworks Inc",
+      "category": "business",
+      "slug": "freshworks",
+      "searchTerms": "freshworks freshworks inc business zendesk salesforce hubspot customer engagement software suite including freshdesk freshsales freshservice and freshmarketer"
+    },
+    {
       "id": "business/ginger-software",
       "name": "Ginger Software",
       "company": "Ginger Software (Indian operations)",
@@ -665,6 +673,14 @@
       "searchTerms": "mappls mapmyindia development google maps api mapbox here maps india focused mapping and location intelligence platform with apis"
     },
     {
+      "id": "development/postman",
+      "name": "Postman",
+      "company": "Postman Inc",
+      "category": "development",
+      "slug": "postman",
+      "searchTerms": "postman postman inc development insomnia swagger curl api development platform for building testing documenting and managing apis"
+    },
+    {
       "id": "development/sarvam-speech-api",
       "name": "Sarvam Speech API",
       "company": "Sarvam AI",
@@ -769,6 +785,14 @@
       "searchTerms": "dukaan dukaan e commerce shopify woocommerce bigcommerce diy platform to create online stores and start selling online"
     },
     {
+      "id": "e-commerce/flipkart",
+      "name": "Flipkart",
+      "company": "Flipkart Internet Pvt Ltd",
+      "category": "e-commerce",
+      "slug": "flipkart",
+      "searchTerms": "flipkart flipkart internet pvt ltd e commerce amazon ebay walmart india s largest e commerce marketplace for electronics fashion groceries and lifestyle"
+    },
+    {
       "id": "e-commerce/indiamart",
       "name": "IndiaMART",
       "company": "IndiaMART InterMESH Limited",
@@ -849,6 +873,14 @@
       "searchTerms": "storehippo storehippo e commerce shopify woocommerce magento ai powered ecommerce platform with 300 features for b2b and b2c"
     },
     {
+      "id": "e-commerce/swiggy",
+      "name": "Swiggy",
+      "company": "Bundl Technologies Pvt Ltd",
+      "category": "e-commerce",
+      "slug": "swiggy",
+      "searchTerms": "swiggy bundl technologies pvt ltd e commerce uber eats doordash grubhub food delivery and quick commerce platform serving 500 indian cities"
+    },
+    {
       "id": "e-commerce/tata-cliq",
       "name": "Tata CLiQ",
       "company": "Tata Group",
@@ -863,6 +895,14 @@
       "category": "e-commerce",
       "slug": "typof",
       "searchTerms": "typof typof e commerce shopify woocommerce bigcommerce no code ecommerce website builder for creators and small businesses with"
+    },
+    {
+      "id": "e-commerce/zomato",
+      "name": "Zomato",
+      "company": "Zomato Limited",
+      "category": "e-commerce",
+      "slug": "zomato",
+      "searchTerms": "zomato zomato limited e commerce uber eats doordash grubhub food delivery restaurant discovery and quick commerce blinkit platform serving"
     },
     {
       "id": "e-commerce/zopping",
@@ -881,6 +921,14 @@
       "searchTerms": "byju think learn pvt ltd education khan academy coursera udemy personalized learning app for students with interactive video lessons"
     },
     {
+      "id": "education/physics-wallah",
+      "name": "Physics Wallah",
+      "company": "PhysicsWallah Ltd",
+      "category": "education",
+      "slug": "physics-wallah",
+      "searchTerms": "physics wallah physicswallah ltd education khan academy coursera chegg india s affordable edtech platform for jee neet upsc and school"
+    },
+    {
       "id": "education/proctorlink",
       "name": "ProctorLink",
       "company": "Take2 Technologies",
@@ -895,6 +943,14 @@
       "category": "education",
       "slug": "pupilfirst",
       "searchTerms": "pupilfirst pupilfirst pvt ltd education coursera canvas blackboard learning management system empowering digital transformation of indian classroom education"
+    },
+    {
+      "id": "education/unacademy",
+      "name": "Unacademy",
+      "company": "Sorting Hat Technologies Pvt Ltd",
+      "category": "education",
+      "slug": "unacademy",
+      "searchTerms": "unacademy sorting hat technologies pvt ltd education coursera udemy khan academy online learning platform for upsc jee neet and competitive exam"
     },
     {
       "id": "education/zoho-learn",
@@ -1017,6 +1073,14 @@
       "searchTerms": "bhim upi national payments corporation of india finance phonepe googlepay paytm government backed unified payment interface for instant digital payments across banks"
     },
     {
+      "id": "finance/chargebee",
+      "name": "Chargebee",
+      "company": "ChargeBee Inc",
+      "category": "finance",
+      "slug": "chargebee",
+      "searchTerms": "chargebee chargebee inc finance stripe billing recurly zuora subscription billing and revenue management platform for saas and recurring"
+    },
+    {
       "id": "finance/instamojo",
       "name": "Instamojo",
       "company": "Instamojo Technologies",
@@ -1025,12 +1089,44 @@
       "searchTerms": "instamojo instamojo technologies finance stripe paypal payment and commerce platform designed for indian smes and startups"
     },
     {
+      "id": "finance/paytm",
+      "name": "Paytm",
+      "company": "One97 Communications Ltd",
+      "category": "finance",
+      "slug": "paytm",
+      "searchTerms": "paytm one97 communications ltd finance paypal venmo cash app india s leading digital payments platform with upi wallet bill payments"
+    },
+    {
+      "id": "finance/phonepe",
+      "name": "PhonePe",
+      "company": "PhonePe Pvt Ltd",
+      "category": "finance",
+      "slug": "phonepe",
+      "searchTerms": "phonepe phonepe pvt ltd finance paypal venmo cash app india s most used upi payments app with 500m users for money"
+    },
+    {
+      "id": "finance/policybazaar",
+      "name": "PolicyBazaar",
+      "company": "PB Fintech Limited",
+      "category": "finance",
+      "slug": "policybazaar",
+      "searchTerms": "policybazaar pb fintech limited finance nerdwallet policygenius compare the market india s largest online insurance aggregator and comparison platform for health"
+    },
+    {
       "id": "finance/profitbooks",
       "name": "ProfitBooks",
       "company": "ProfitBooks",
       "category": "finance",
       "slug": "profitbooks",
       "searchTerms": "profitbooks profitbooks finance tally quickbooks xero free online accounting software for small businesses with invoicing inventory"
+    },
+    {
+      "id": "finance/razorpay",
+      "name": "Razorpay",
+      "company": "Razorpay Software Limited",
+      "category": "finance",
+      "slug": "razorpay",
+      "searchTerms": "razorpay razorpay software limited finance stripe paypal braintree india s leading payment gateway for businesses with upi cards netbanking"
     },
     {
       "id": "finance/setu-pine-labs",
@@ -1233,12 +1329,28 @@
       "searchTerms": "easemytrip easy trip planners limited travel makemytrip booking com expedia online travel booking platform for flights hotels buses trains and"
     },
     {
+      "id": "travel/makemytrip",
+      "name": "MakeMyTrip",
+      "company": "MakeMyTrip Limited",
+      "category": "travel",
+      "slug": "makemytrip",
+      "searchTerms": "makemytrip makemytrip limited travel booking com expedia tripadvisor india s largest online travel agency for flights hotels holiday packages"
+    },
+    {
       "id": "travel/namma-yatri",
       "name": "Namma Yatri",
       "company": "Moving Tech",
       "category": "travel",
       "slug": "namma-yatri",
       "searchTerms": "namma yatri moving tech travel uber ola zero commission open source ride hailing platform for auto rickshaws and cabs built on"
+    },
+    {
+      "id": "travel/ola-cabs",
+      "name": "Ola Cabs",
+      "company": "ANI Technologies Pvt Ltd",
+      "category": "travel",
+      "slug": "ola-cabs",
+      "searchTerms": "ola cabs ani technologies pvt ltd travel uber lyft grab india s largest ride hailing platform offering cabs auto rickshaws and bike taxis"
     },
     {
       "id": "travel/rapido",
@@ -1322,7 +1434,7 @@
     }
   ],
   "meta": {
-    "totalEntries": 165,
+    "totalEntries": 179,
     "categories": [
       "business",
       "communication",
@@ -1338,7 +1450,7 @@
       "travel",
       "utilities"
     ],
-    "generatedAt": "2026-03-11T11:11:43.392Z",
+    "generatedAt": "2026-03-13T03:56:07.499Z",
     "version": "1.0.0"
   }
 }

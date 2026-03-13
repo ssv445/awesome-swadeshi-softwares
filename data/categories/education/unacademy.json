@@ -1,0 +1,34 @@
+{
+  "name": "Unacademy",
+  "slug": "unacademy",
+  "description": "Online learning platform for UPSC, JEE, NEET, and competitive exam preparation with live classes and India's top educators",
+  "website": "https://unacademy.com/",
+  "category": "education",
+  "alternatives": ["Coursera", "Udemy", "Khan Academy"],
+  "pricing": "Freemium",
+  "company": "Sorting Hat Technologies Pvt Ltd",
+  "companySlug": "unacademy",
+  "location": "Bengaluru, Karnataka",
+  "pros": [
+    "Top educators for UPSC, JEE, NEET preparation",
+    "Live classes with doubt-clearing sessions",
+    "Free content available on YouTube and app",
+    "Subscription model (Plus) with structured learning paths"
+  ],
+  "cons": [
+    "Foreign investors (SoftBank, General Atlantic) hold 60-65% equity",
+    "Founders stepped down from operations in May 2025",
+    "Subscription pricing has increased significantly",
+    "Course quality varies widely depending on the educator"
+  ],
+  "userComplaints": [
+    "Refund policy is extremely strict — difficult to get money back",
+    "Some educators left for competing platforms, taking content with them",
+    "App pushes too many notifications and upsells to Plus subscription"
+  ],
+  "rating": 3.8,
+  "ratingSource": "Google Play Store",
+  "lastVerified": "2026-03-13",
+  "playStoreUrl": "https://play.google.com/store/apps/details?id=com.unacademyapp",
+  "appStoreUrl": "https://apps.apple.com/in/app/unacademy/id1342565299"
+}

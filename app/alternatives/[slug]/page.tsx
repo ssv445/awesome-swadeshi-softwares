@@ -8,7 +8,7 @@ import { notFound } from "next/navigation"
 import { getAlternativeBySlug, getAllAlternativeSlugs } from "@/lib/alternatives-server"
 import { getTotalAppsCount } from "@/lib/server-data"
 import { Favicon } from "@/components/favicon"
-import { getAlternativeUrl, getNotSwadeshiUrl, getAppUrl } from "@/lib/data"
+import { getAlternativeUrl, getAppUrl } from "@/lib/data"
 import { generateBreadcrumbSchema } from "@/components/ui/Breadcrumbs"
 import { getBaseUrl } from "@/lib/links"
 
@@ -148,12 +148,6 @@ export default async function AlternativePage({ params }: AlternativePageProps) 
                     </Button>
                   </div>
                 </div>
-                <p className="text-sm text-gray-600">
-                  Learn more about{' '}
-                  <Link href={getNotSwadeshiUrl(alternative.internationalTool.name)} className="text-blue-600 hover:underline font-medium">
-                    why {alternative.internationalTool.name} is not Swadeshi
-                  </Link>
-                </p>
               </CardContent>
             </Card>
           ) : (

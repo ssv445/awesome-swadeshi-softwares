@@ -1,0 +1,34 @@
+{
+  "name": "MakeMyTrip",
+  "slug": "makemytrip",
+  "description": "India's largest online travel agency for flights, hotels, holiday packages, and bus bookings with GoIbibo and Redbus subsidiaries",
+  "website": "https://www.makemytrip.com/",
+  "category": "travel",
+  "alternatives": ["Booking.com", "Expedia", "TripAdvisor", "Kayak"],
+  "pricing": "Free",
+  "company": "MakeMyTrip Limited",
+  "companySlug": "makemytrip",
+  "location": "Gurugram, Haryana",
+  "pros": [
+    "Largest selection of domestic flights, hotels, and holiday packages in India",
+    "Owns GoIbibo and Redbus — covers flights, hotels, and buses",
+    "Trip.com stake reduced from 45% to 17% in 2025 buyback",
+    "Good rewards program (myBiz for corporate, MyWallet credits)"
+  ],
+  "cons": [
+    "Incorporated in Cayman Islands, listed on NASDAQ — not Indian entity",
+    "Trip.com (China) still holds 17% stake",
+    "Customer support for cancellations and refunds is poor",
+    "Hidden charges appear during checkout (convenience fees, insurance)"
+  ],
+  "userComplaints": [
+    "Refund process for cancelled bookings takes weeks",
+    "Prices shown in search results change at checkout",
+    "Hotel ratings on the platform don't match reality"
+  ],
+  "rating": 4.3,
+  "ratingSource": "Google Play Store",
+  "lastVerified": "2026-03-13",
+  "playStoreUrl": "https://play.google.com/store/apps/details?id=com.makemytrip",
+  "appStoreUrl": "https://apps.apple.com/in/app/makemytrip/id530488359"
+}

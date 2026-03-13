@@ -79,7 +79,6 @@ export const NAV_LINKS = [
   { href: "/contribute", label: "Contribute" },
   { href: "/blog", label: "Blog" },
   { href: "/why-swadeshi", label: "Why Swadeshi?" },
-  { href: "/not-swadeshi-apps", label: "Not Swadeshi" }
 ] as const
 
 // Footer links
@@ -90,7 +89,6 @@ export const FOOTER_LINKS = {
     { href: "/contribute", label: "Contribute" },
     { href: "/blog", label: "Blog" },
     { href: "/why-swadeshi", label: "Why Swadeshi?" },
-    { href: "/not-swadeshi-apps", label: "Not Swadeshi" },
     { href: "/alternatives", label: "Alternatives" }
   ],
   categories: [

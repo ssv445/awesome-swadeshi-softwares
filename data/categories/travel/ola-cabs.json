@@ -1,0 +1,34 @@
+{
+  "name": "Ola Cabs",
+  "slug": "ola-cabs",
+  "description": "India's largest ride-hailing platform offering cabs, auto-rickshaws, and bike taxis across 200+ cities",
+  "website": "https://www.olacabs.com/",
+  "category": "travel",
+  "alternatives": ["Uber", "Lyft", "Grab"],
+  "pricing": "Free",
+  "company": "ANI Technologies Pvt Ltd",
+  "companySlug": "ola-cabs",
+  "location": "Bengaluru, Karnataka",
+  "pros": [
+    "Widest ride-hailing network across Indian cities including tier-2/3",
+    "Auto-rickshaw booking fills a uniquely Indian need",
+    "Indian founder Bhavish Aggarwal maintains operational control",
+    "Ola Money wallet for cashless payments"
+  ],
+  "cons": [
+    "SoftBank (Japan) holds ~25% stake — significant foreign ownership",
+    "Driver cancellation rates are high in many cities",
+    "Surge pricing during peak hours with limited transparency",
+    "App reliability issues — GPS tracking and ETA often inaccurate"
+  ],
+  "userComplaints": [
+    "Drivers cancel rides frequently, especially short-distance trips",
+    "Customer support is mostly automated with no real resolution",
+    "Surge pricing makes rides unaffordable during rain or peak hours"
+  ],
+  "rating": 3.9,
+  "ratingSource": "Google Play Store",
+  "lastVerified": "2026-03-13",
+  "playStoreUrl": "https://play.google.com/store/apps/details?id=com.olacabs.customer",
+  "appStoreUrl": "https://apps.apple.com/in/app/ola/id539179365"
+}

@@ -1,0 +1,34 @@
+{
+  "name": "Flipkart",
+  "slug": "flipkart",
+  "description": "India's largest e-commerce marketplace for electronics, fashion, groceries, and lifestyle products with 400M+ registered users",
+  "website": "https://www.flipkart.com/",
+  "category": "e-commerce",
+  "alternatives": ["Amazon", "eBay", "Walmart"],
+  "pricing": "Free",
+  "company": "Flipkart Internet Pvt Ltd",
+  "companySlug": "flipkart",
+  "location": "Bengaluru, Karnataka",
+  "pros": [
+    "Largest product selection among Indian e-commerce platforms",
+    "Flipkart Plus loyalty program with free shipping and early access",
+    "Strong electronics and smartphone deals (Big Billion Days)",
+    "SuperCoins reward system across Flipkart ecosystem"
+  ],
+  "cons": [
+    "Owned by Walmart (US) — 77% foreign ownership",
+    "Product quality inconsistent from third-party sellers",
+    "Return process can be slow for certain categories",
+    "Customer service quality varies significantly"
+  ],
+  "userComplaints": [
+    "Fake reviews and inflated MRP before discounts are common",
+    "Delivery delays in tier-2 and tier-3 cities",
+    "Refund processing takes longer than promised"
+  ],
+  "rating": 4.2,
+  "ratingSource": "Google Play Store",
+  "lastVerified": "2026-03-13",
+  "playStoreUrl": "https://play.google.com/store/apps/details?id=com.flipkart.android",
+  "appStoreUrl": "https://apps.apple.com/in/app/flipkart/id742044692"
+}

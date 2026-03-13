@@ -1,0 +1,34 @@
+{
+  "name": "Paytm",
+  "slug": "paytm",
+  "description": "India's leading digital payments platform with UPI, wallet, bill payments, investments, and merchant services for 330M+ users",
+  "website": "https://paytm.com/",
+  "category": "finance",
+  "alternatives": ["PayPal", "Venmo", "Cash App", "Google Pay"],
+  "pricing": "Free",
+  "company": "One97 Communications Ltd",
+  "companySlug": "paytm",
+  "location": "Noida, Uttar Pradesh",
+  "pros": [
+    "Now 100% Indian-owned — Ant Financial fully exited Aug 2025",
+    "Comprehensive financial services: payments, insurance, lending, investments",
+    "Largest offline merchant payment network in India (Paytm Soundbox)",
+    "Wide acceptance across small shops, restaurants, and auto-rickshaws"
+  ],
+  "cons": [
+    "RBI restrictions on Paytm Payments Bank (Feb 2024) caused service disruption",
+    "App has become bloated with too many features and ads",
+    "Investment/lending products can have hidden terms",
+    "Revenue still under pressure post-RBI action"
+  ],
+  "userComplaints": [
+    "Cashback offers have reduced significantly compared to early days",
+    "Too many notifications and promotional spam",
+    "KYC verification process can be frustrating and repetitive"
+  ],
+  "rating": 4.3,
+  "ratingSource": "Google Play Store",
+  "lastVerified": "2026-03-13",
+  "playStoreUrl": "https://play.google.com/store/apps/details?id=net.one97.paytm",
+  "appStoreUrl": "https://apps.apple.com/in/app/paytm/id473941634"
+}

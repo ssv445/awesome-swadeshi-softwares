@@ -1,0 +1,35 @@
+{
+  "name": "Physics Wallah",
+  "slug": "physics-wallah",
+  "description": "India's affordable edtech platform for JEE, NEET, UPSC, and school exam preparation with live classes, video lectures, and 300+ offline centers",
+  "website": "https://www.pw.live/",
+  "category": "education",
+  "alternatives": ["Khan Academy", "Coursera", "Chegg"],
+  "pricing": "Freemium",
+  "company": "PhysicsWallah Ltd",
+  "companySlug": "physicswallah",
+  "location": "Noida, Uttar Pradesh",
+  "pros": [
+    "Most affordable edtech in India — all course packages under Rs 5,000",
+    "4.5M+ paying subscribers with 10M+ app downloads",
+    "303 offline centers across 152 cities for hybrid learning",
+    "Strong YouTube presence with 13M+ subscribers for free content",
+    "AI-powered doubt solving and mentor support via Saarthi feature"
+  ],
+  "cons": [
+    "App crashes and performance issues frequently reported",
+    "Customer support relies heavily on chatbots with slow human response",
+    "Strict no-refund policy for online batches",
+    "Primarily focused on competitive exam prep — limited for general learning"
+  ],
+  "userComplaints": [
+    "App crashes during live classes and lectures don't load properly",
+    "Refund process is extremely difficult — support sends auto-generated emails",
+    "Account gets blocked without clear reason and poor moderation"
+  ],
+  "rating": 4.4,
+  "ratingSource": "Google Play Store",
+  "lastVerified": "2026-03-13",
+  "playStoreUrl": "https://play.google.com/store/apps/details?id=xyz.penpencil.physicswala",
+  "appStoreUrl": "https://apps.apple.com/in/app/physics-wallah/id1641443555"
+}

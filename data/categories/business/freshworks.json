@@ -1,0 +1,32 @@
+{
+  "name": "Freshworks",
+  "slug": "freshworks",
+  "description": "Customer engagement software suite including Freshdesk, Freshsales, Freshservice, and Freshmarketer for 50K+ businesses",
+  "website": "https://www.freshworks.com/",
+  "category": "business",
+  "alternatives": ["Zendesk", "Salesforce", "HubSpot", "Intercom"],
+  "pricing": "Freemium",
+  "company": "Freshworks Inc",
+  "companySlug": "freshworks",
+  "location": "San Mateo, USA (founded in Chennai)",
+  "pros": [
+    "Founded by Indian entrepreneur Girish Mathrubootham in Chennai",
+    "Easy-to-use interface compared to Salesforce and Zendesk",
+    "Free tier available for small teams (Freshdesk, Freshsales)",
+    "3,800 of 4,500 employees based in India (Chennai, Bangalore, Hyderabad)"
+  ],
+  "cons": [
+    "Delaware incorporated, NASDAQ listed — legally a US company",
+    "Founder Girish Mathrubootham stepped down Dec 2025, new American CEO",
+    "~57% owned by foreign institutional investors",
+    "60-day cancellation notice required — restrictive billing practices"
+  ],
+  "userComplaints": [
+    "Billing practices criticized — 60-day cancellation notice without renewal reminders",
+    "Customer support can be slow for non-enterprise plans",
+    "Email function has high bounce rates and image upload issues"
+  ],
+  "rating": 4.4,
+  "ratingSource": "G2",
+  "lastVerified": "2026-03-13"
+}
