@@ -1,0 +1,32 @@
+{
+  "name": "Razorpay",
+  "slug": "razorpay",
+  "description": "India's leading payment gateway for businesses with UPI, cards, netbanking, wallets, and payroll services for 8M+ merchants",
+  "website": "https://razorpay.com/",
+  "category": "finance",
+  "alternatives": ["Stripe", "PayPal", "Braintree", "Square"],
+  "pricing": "Paid",
+  "company": "Razorpay Software Limited",
+  "companySlug": "razorpay",
+  "location": "Bengaluru, Karnataka",
+  "pros": [
+    "Reverse-flipped to India in May 2025 — now an Indian company",
+    "Founders hold 65.4% with differential voting rights",
+    "Most popular payment gateway for Indian startups and businesses",
+    "Comprehensive suite: payments, payroll (RazorpayX), lending (Razorpay Capital)"
+  ],
+  "cons": [
+    "Tiger Global, GIC still hold significant minority stakes",
+    "Transaction fees can add up for high-volume merchants",
+    "Settlement times (T+2) slower than some competitors",
+    "Support quality drops for smaller merchants"
+  ],
+  "userComplaints": [
+    "Account activation process can be slow with extensive documentation required",
+    "Dispute resolution process favors customers over merchants",
+    "Dashboard can be slow and complex for non-technical users"
+  ],
+  "rating": 4.3,
+  "ratingSource": "G2",
+  "lastVerified": "2026-03-13"
+}

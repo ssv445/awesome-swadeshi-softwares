@@ -2287,6 +2287,248 @@
           "revenueOrigin": { "score": 85, "note": "FY2025 revenue Rs 28.9 billion. Overwhelmingly India-focused. 4.5M paying subscribers, primarily Indian students. Small Middle East expansion" }
         }
       }
+    },
+    "phonepe": {
+      "name": "PhonePe Pvt Ltd",
+      "slug": "phonepe",
+      "hq": "Bengaluru, Karnataka, India",
+      "incorporation": "India (re-domiciled from Singapore 2022)",
+      "founders": "Sameer Nigam, Rahul Chari, Burzin Engineer",
+      "foundersActive": true,
+      "swadeshiMeter": {
+        "score": 18,
+        "lastVerified": "2026-03-13",
+        "dataCompleteness": 7,
+        "factors": {
+          "shareholding": { "score": 10, "note": "Walmart (WM Digital Commerce) holds 71.77%. Founders Sameer Nigam and Rahul Chari hold 2.55% each. General Atlantic 8.98%. IPO planned at $10.5B valuation", "source": "https://inc42.com/buzz/phonepe-drhp-a-look-at-shareholding-pattern-key-executives/" },
+          "incorporation": { "score": 50, "note": "Re-domiciled from Singapore to India in Dec 2022. Now incorporated in India. Previously a Flipkart subsidiary" },
+          "boardControl": { "score": 10, "note": "Walmart controls majority of board seats as 72% shareholder. CEO Sameer Nigam reports to Walmart governance structure" },
+          "founders": { "score": 85, "note": "Indian founders Sameer Nigam, Rahul Chari, Burzin Engineer all active. Nigam is CEO. But founders hold only ~5% combined equity" },
+          "hqAndTeam": { "score": 90, "note": "HQ in Bengaluru. Engineering and operations entirely in India. 5,000+ employees predominantly Indian" },
+          "dataSovereignty": { "score": 30, "note": "UPI data stays in India per RBI mandate. But parent company Walmart has access to aggregated business data. Data sovereignty concerns raised by policy experts" },
+          "revenueOrigin": { "score": 95, "note": "99%+ revenue from India. Largest UPI platform with 48%+ market share. 500M+ registered users in India" }
+        }
+      }
+    },
+    "paytm": {
+      "name": "One97 Communications Ltd",
+      "slug": "paytm",
+      "hq": "Noida, Uttar Pradesh, India",
+      "incorporation": "India",
+      "founders": "Vijay Shekhar Sharma",
+      "foundersActive": true,
+      "swadeshiMeter": {
+        "score": 78,
+        "lastVerified": "2026-03-13",
+        "dataCompleteness": 7,
+        "factors": {
+          "shareholding": { "score": 75, "note": "Now 100% Indian-owned. Ant Financial (China) fully exited Aug 2025. Vijay Shekhar Sharma holds 19.42% (largest individual). Domestic institutional investors 20%. Zero Chinese ownership", "source": "https://www.business-standard.com/companies/news/paytm-now-as-indian-as-tata-with-zero-chinese-ownership-100-made-in-india-125080600578_1.html" },
+          "incorporation": { "score": 100, "note": "Incorporated in India. Listed on NSE and BSE. CIN available on MCA" },
+          "boardControl": { "score": 80, "note": "Vijay Shekhar Sharma is founder, Chairman and CEO. Board predominantly Indian after Ant Financial exit. Independent directors are Indian" },
+          "founders": { "score": 95, "note": "Indian founder Vijay Shekhar Sharma actively leads as Chairman and CEO. Majority shareholder at 19.42%" },
+          "hqAndTeam": { "score": 90, "note": "HQ in Noida, UP. Offices across India. Vast majority of 7,000+ employees in India" },
+          "dataSovereignty": { "score": 50, "note": "Financial data regulated by RBI. Uses mix of Indian and international cloud providers. Payment data stays in India per regulation" },
+          "revenueOrigin": { "score": 90, "note": "Revenue primarily from India. UPI payments, merchant services, financial products. Some Japan operations via PayPay partnership" }
+        }
+      }
+    },
+    "makemytrip": {
+      "name": "MakeMyTrip Limited",
+      "slug": "makemytrip",
+      "hq": "Gurugram, Haryana, India",
+      "incorporation": "Cayman Islands (listed on NASDAQ)",
+      "founders": "Deep Kalra",
+      "foundersActive": true,
+      "swadeshiMeter": {
+        "score": 38,
+        "lastVerified": "2026-03-13",
+        "dataCompleteness": 7,
+        "factors": {
+          "shareholding": { "score": 35, "note": "Trip.com Group (China) reduced from 45.34% to 16.9% after 2025 buyback. Voting power capped below 20%. Remaining shareholders mostly FIIs and public", "source": "https://deccanfounders.com/2025/20/news/makemytrip-funding-tripcom-stake/" },
+          "incorporation": { "score": 5, "note": "Incorporated in Cayman Islands. Listed on NASDAQ (MMYT). Not an Indian legal entity" },
+          "boardControl": { "score": 45, "note": "Deep Kalra is Chairman. Rajesh Magow is Group CEO. Board has mix of Indian and international directors. Trip.com voting capped below 20%" },
+          "founders": { "score": 70, "note": "Indian founder Deep Kalra active as Chairman. Rajesh Magow (Indian) as Group CEO. Founders retain significant influence" },
+          "hqAndTeam": { "score": 80, "note": "Operational HQ in Gurugram. Engineering and product teams in India. International offices exist but bulk of operations Indian" },
+          "dataSovereignty": { "score": 20, "note": "Cayman Islands incorporation. NASDAQ listed. User data subject to US SEC regulations. Data likely hosted on international cloud" },
+          "revenueOrigin": { "score": 85, "note": "Vast majority of revenue from Indian travel bookings. GoIbibo and Redbus subsidiaries are India-focused" }
+        }
+      }
+    },
+    "ola-cabs": {
+      "name": "ANI Technologies Pvt Ltd",
+      "slug": "ola-cabs",
+      "hq": "Bengaluru, Karnataka, India",
+      "incorporation": "India",
+      "founders": "Bhavish Aggarwal, Ankit Bhati",
+      "foundersActive": true,
+      "swadeshiMeter": {
+        "score": 52,
+        "lastVerified": "2026-03-13",
+        "dataCompleteness": 7,
+        "factors": {
+          "shareholding": { "score": 30, "note": "SoftBank (Japan) holds ~25%, Hyundai and Kia (South Korea) hold stakes. Foreign investors collectively hold majority. Founders retain operational control but minority equity" },
+          "incorporation": { "score": 100, "note": "Incorporated in India as ANI Technologies Pvt Ltd. Indian private company" },
+          "boardControl": { "score": 55, "note": "Bhavish Aggarwal is founder and CEO. Board includes SoftBank nominees. Founder has operational control but board has foreign representation" },
+          "founders": { "score": 80, "note": "Indian co-founders. Bhavish Aggarwal actively leads as CEO. Ankit Bhati less active. Aggarwal also founded Ola Electric and Krutrim AI" },
+          "hqAndTeam": { "score": 90, "note": "HQ in Bengaluru. Operations across 200+ Indian cities. Vast majority of employees in India" },
+          "dataSovereignty": { "score": 55, "note": "Ride data primarily stored in India. Uses AWS/cloud infrastructure. Data subject to Indian regulations" },
+          "revenueOrigin": { "score": 85, "note": "Revenue overwhelmingly from India. Exited most international markets. Focused on Indian ride-hailing and Ola Electric" }
+        }
+      }
+    },
+    "swiggy": {
+      "name": "Bundl Technologies Pvt Ltd",
+      "slug": "swiggy",
+      "hq": "Bengaluru, Karnataka, India",
+      "incorporation": "India",
+      "founders": "Sriharsha Majety, Nandan Reddy, Rahul Jaimini",
+      "foundersActive": true,
+      "swadeshiMeter": {
+        "score": 45,
+        "lastVerified": "2026-03-13",
+        "dataCompleteness": 7,
+        "factors": {
+          "shareholding": { "score": 25, "note": "Prosus/Naspers (Netherlands/SA) holds 30.95%, SoftBank 7.75%, Accel 6.08%. Foreign investors collectively hold majority. IPO'd on NSE/BSE in Nov 2024", "source": "https://choiceindia.com/stocks/swiggy-ltd-shareholding-pattern" },
+          "incorporation": { "score": 100, "note": "Incorporated in India as Bundl Technologies Pvt Ltd. Listed on NSE and BSE" },
+          "boardControl": { "score": 40, "note": "Founders active in leadership. Board includes Prosus and SoftBank nominees. Foreign investors have significant board representation" },
+          "founders": { "score": 80, "note": "Indian co-founders Sriharsha Majety (CEO) and Nandan Reddy active. Rahul Jaimini departed. Founders retain operational control" },
+          "hqAndTeam": { "score": 90, "note": "HQ in Bengaluru. 5,000+ employees primarily in India. Operations across 500+ Indian cities" },
+          "dataSovereignty": { "score": 50, "note": "India-listed company. Data primarily in India but uses international cloud providers" },
+          "revenueOrigin": { "score": 95, "note": "100% India revenue. Food delivery, quick commerce (Instamart), Dineout. No international operations" }
+        }
+      }
+    },
+    "zomato": {
+      "name": "Zomato Limited",
+      "slug": "zomato",
+      "hq": "Gurugram, Haryana, India",
+      "incorporation": "India",
+      "founders": "Deepinder Goyal, Pankaj Chaddah",
+      "foundersActive": true,
+      "swadeshiMeter": {
+        "score": 55,
+        "lastVerified": "2026-03-13",
+        "dataCompleteness": 7,
+        "factors": {
+          "shareholding": { "score": 35, "note": "Info Edge (Indian) holds 12.38%. FIIs hold 42.34%. Ant Group reduced to 1.95%. Domestic mutual funds 21.59%. Founder Deepinder Goyal holds 3.83%", "source": "https://tradebrains.in/who-owns-zomato-check-the-percentage-of-stake-held-by-deepinder-goyal-and-others/" },
+          "incorporation": { "score": 100, "note": "Incorporated in India. Listed on NSE and BSE. Indian public company" },
+          "boardControl": { "score": 60, "note": "Deepinder Goyal is founder and CEO. Board has mix of Indian and international directors. No single foreign entity dominates" },
+          "founders": { "score": 80, "note": "Indian founder Deepinder Goyal actively leads as CEO. Co-founder Pankaj Chaddah departed. Goyal is key decision maker" },
+          "hqAndTeam": { "score": 90, "note": "HQ in Gurugram. 3,800+ employees primarily in India. Acquired Blinkit for quick commerce" },
+          "dataSovereignty": { "score": 50, "note": "India-listed. Customer data primarily in India. Uses cloud infrastructure. Ant Group stake now minimal (1.95%)" },
+          "revenueOrigin": { "score": 90, "note": "Revenue almost entirely from India. Food delivery, Blinkit quick commerce, Hyperpure B2B. Exited most international markets" }
+        }
+      }
+    },
+    "policybazaar": {
+      "name": "PB Fintech Limited",
+      "slug": "policybazaar",
+      "hq": "Gurugram, Haryana, India",
+      "incorporation": "India",
+      "founders": "Yashish Dahiya, Alok Bansal",
+      "foundersActive": true,
+      "swadeshiMeter": {
+        "score": 68,
+        "lastVerified": "2026-03-13",
+        "dataCompleteness": 7,
+        "factors": {
+          "shareholding": { "score": 55, "note": "SoftBank nearly fully exited (down to <2%). Founder Yashish Dahiya holds significant stake. Domestic institutional investors growing. Public company with diversified shareholding", "source": "https://www.businesstoday.in/latest/corporate/story/softbank-completely-exits-pb-fintech-earns-650-mn-returns-report-413765-2024-01-17" },
+          "incorporation": { "score": 100, "note": "Incorporated in India as PB Fintech Limited. Listed on NSE and BSE since Nov 2021" },
+          "boardControl": { "score": 75, "note": "Yashish Dahiya is Chairman and CEO. Board predominantly Indian after SoftBank exit. Independent directors are Indian" },
+          "founders": { "score": 90, "note": "Indian co-founders Yashish Dahiya and Alok Bansal. Dahiya actively leads as Chairman and CEO" },
+          "hqAndTeam": { "score": 90, "note": "HQ in Gurugram. Offices across India. Team predominantly Indian" },
+          "dataSovereignty": { "score": 55, "note": "Insurance data regulated by IRDAI. Financial data subject to Indian regulations. Uses cloud infrastructure" },
+          "revenueOrigin": { "score": 90, "note": "Revenue entirely from India. PolicyBazaar (insurance), PaisaBazaar (lending), DocPrime (health). India-focused business" }
+        }
+      }
+    },
+    "postman": {
+      "name": "Postman Inc",
+      "slug": "postman",
+      "hq": "San Francisco, California, USA",
+      "incorporation": "Delaware, USA",
+      "founders": "Abhinav Asthana, Ankit Sobti, Abhijit Kane",
+      "foundersActive": true,
+      "swadeshiMeter": {
+        "score": 22,
+        "lastVerified": "2026-03-13",
+        "dataCompleteness": 7,
+        "factors": {
+          "shareholding": { "score": 10, "note": "Foreign VCs (Insight Partners, Coatue, Battery Ventures, BOND Capital) hold majority. $434M cumulative funding mostly from US investors. Founders retain minority stake" },
+          "incorporation": { "score": 5, "note": "Incorporated in Delaware, USA. Relocated legal HQ from India to San Francisco in 2017" },
+          "boardControl": { "score": 20, "note": "US VC firms have board seats. Abhinav Asthana is CEO but board includes Insight Partners and other US investor nominees" },
+          "founders": { "score": 80, "note": "Indian founders Abhinav Asthana (Bengaluru), Ankit Sobti, Abhijit Kane. Asthana actively leads as CEO" },
+          "hqAndTeam": { "score": 50, "note": "HQ in San Francisco. Major engineering office in Bengaluru (~500 employees). Split operations between US and India" },
+          "dataSovereignty": { "score": 15, "note": "US-incorporated, US-hosted. API data flows through US infrastructure. Subject to US jurisdiction" },
+          "revenueOrigin": { "score": 15, "note": "Global revenue. 98% of Fortune 500 use Postman. Revenue primarily from US and global enterprise customers, small India portion" }
+        }
+      }
+    },
+    "unacademy": {
+      "name": "Sorting Hat Technologies Pvt Ltd",
+      "slug": "unacademy",
+      "hq": "Bengaluru, Karnataka, India",
+      "incorporation": "India",
+      "founders": "Gaurav Munjal, Roman Saini, Hemesh Singh",
+      "foundersActive": false,
+      "swadeshiMeter": {
+        "score": 32,
+        "lastVerified": "2026-03-13",
+        "dataCompleteness": 7,
+        "factors": {
+          "shareholding": { "score": 15, "note": "Foreign investors (SoftBank, General Atlantic, Temasek, Tiger Global) hold ~60-65%. Founders hold only ~9%. $880M cumulative foreign funding" },
+          "incorporation": { "score": 100, "note": "Incorporated in India as Sorting Hat Technologies Pvt Ltd" },
+          "boardControl": { "score": 20, "note": "Board includes SoftBank and General Atlantic representatives. Foreign investors have significant board influence after founders stepped down" },
+          "founders": { "score": 25, "note": "Indian founders Gaurav Munjal, Roman Saini, Hemesh Singh. Founders stepped down from operations May 2025. No longer actively leading" },
+          "hqAndTeam": { "score": 85, "note": "HQ in Bengaluru. Operations primarily in India. Team predominantly Indian" },
+          "dataSovereignty": { "score": 50, "note": "India-incorporated. Student data in India. Uses cloud infrastructure" },
+          "revenueOrigin": { "score": 85, "note": "Revenue primarily from India. UPSC, JEE, NEET test prep. Some international expansion but India-dominant" }
+        }
+      }
+    },
+    "chargebee": {
+      "name": "ChargeBee Inc",
+      "slug": "chargebee",
+      "hq": "Bethesda, Maryland, USA",
+      "incorporation": "Delaware, USA",
+      "founders": "Krish Subramanian, Rajaraman Santhanam",
+      "foundersActive": true,
+      "swadeshiMeter": {
+        "score": 22,
+        "lastVerified": "2026-03-13",
+        "dataCompleteness": 7,
+        "factors": {
+          "shareholding": { "score": 10, "note": "Foreign VCs (Tiger Global, Sequoia, Insight Partners, Sapphire Ventures) hold majority. $475M cumulative funding from US investors. Founders retain minority" },
+          "incorporation": { "score": 5, "note": "Delaware C-Corp incorporated in USA. US legal entity" },
+          "boardControl": { "score": 20, "note": "US VC firms have board seats. CEO Krish Subramanian leads operations but board heavily influenced by US investors" },
+          "founders": { "score": 80, "note": "Indian founders from Chennai. Krish Subramanian (CEO) and Rajaraman Santhanam actively lead. Founded in Chennai, moved to US" },
+          "hqAndTeam": { "score": 40, "note": "HQ in Bethesda, MD. Engineering team split between India (Chennai) and US. Significant US presence" },
+          "dataSovereignty": { "score": 15, "note": "US-incorporated, US-hosted infrastructure. Subscription billing data of global clients on US servers" },
+          "revenueOrigin": { "score": 15, "note": "Global revenue from 4,500+ businesses worldwide. Primarily US and international enterprise customers. Small India revenue" }
+        }
+      }
+    },
+    "razorpay": {
+      "name": "Razorpay Software Limited",
+      "slug": "razorpay",
+      "hq": "Bengaluru, Karnataka, India",
+      "incorporation": "India (reverse-flipped from US May 2025)",
+      "founders": "Harshil Mathur, Shashank Kumar",
+      "foundersActive": true,
+      "swadeshiMeter": {
+        "score": 65,
+        "lastVerified": "2026-03-13",
+        "dataCompleteness": 7,
+        "factors": {
+          "shareholding": { "score": 55, "note": "Promoters/founders hold 65.4% with differential voting rights. Institutional investors 18.2%. Public 16.4%. Tiger Global, Peak XV (Sequoia), GIC hold minority stakes", "source": "https://yourstory.com/2025/05/razorpay-shifts-domicile-to-india-as-it-preps-for-ipo-reverse-flip" },
+          "incorporation": { "score": 90, "note": "Completed reverse flip from Delaware to India in May 2025. Paid Rs 1,245 Cr in taxes. Now Razorpay Software Limited, Indian company. IPO planned" },
+          "boardControl": { "score": 65, "note": "Founders Harshil Mathur and Shashank Kumar control board via differential voting rights. Some VC board seats remain" },
+          "founders": { "score": 95, "note": "Indian founders Harshil Mathur (CEO) and Shashank Kumar actively lead. Both from IIT Roorkee. Strong operational control" },
+          "hqAndTeam": { "score": 90, "note": "HQ in Bengaluru. 3,000+ employees primarily in India. Engineering team in India" },
+          "dataSovereignty": { "score": 55, "note": "Payment data regulated by RBI, stored in India. Now India-incorporated. Uses cloud infrastructure" },
+          "revenueOrigin": { "score": 85, "note": "Revenue primarily from India. Serves 8M+ businesses. Payment gateway, payroll, lending products. Some Southeast Asia expansion" }
+        }
+      }
     }
   },
   "meta": {

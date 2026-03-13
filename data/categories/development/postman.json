@@ -1,0 +1,32 @@
+{
+  "name": "Postman",
+  "slug": "postman",
+  "description": "API development platform for building, testing, documenting, and managing APIs used by 30M+ developers worldwide",
+  "website": "https://www.postman.com/",
+  "category": "development",
+  "alternatives": ["Insomnia", "Swagger", "cURL", "Paw"],
+  "pricing": "Freemium",
+  "company": "Postman Inc",
+  "companySlug": "postman",
+  "location": "San Francisco, USA (founded in Bengaluru)",
+  "pros": [
+    "Industry standard API testing tool used by 98% of Fortune 500",
+    "Generous free tier for individual developers",
+    "Collections, environments, and team workspaces for collaboration",
+    "Founded by Indian developers (Abhinav Asthana, Bengaluru)"
+  ],
+  "cons": [
+    "Delaware incorporated, HQ moved to San Francisco in 2017",
+    "US VC firms (Insight Partners, Coatue) hold majority stake",
+    "Free tier limitations pushing toward paid plans",
+    "Desktop app can be resource-heavy compared to alternatives like Hoppscotch"
+  ],
+  "userComplaints": [
+    "App gets slow with large collections and many environments",
+    "Forced to sign in even for local-only usage since v10",
+    "Free plan team size limits feel restrictive"
+  ],
+  "rating": 4.5,
+  "ratingSource": "G2",
+  "lastVerified": "2026-03-13"
+}

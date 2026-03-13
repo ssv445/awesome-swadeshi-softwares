@@ -1,0 +1,34 @@
+{
+  "name": "PhonePe",
+  "slug": "phonepe",
+  "description": "India's most-used UPI payments app with 500M+ users for money transfers, bill payments, investments, and insurance",
+  "website": "https://www.phonepe.com/",
+  "category": "finance",
+  "alternatives": ["PayPal", "Venmo", "Cash App", "Google Pay"],
+  "pricing": "Free",
+  "company": "PhonePe Pvt Ltd",
+  "companySlug": "phonepe",
+  "location": "Bengaluru, Karnataka",
+  "pros": [
+    "Most popular UPI app with 48%+ market share in India",
+    "Clean, fast UI for payments, recharges, and bill payments",
+    "PhonePe Pulse provides UPI transaction data insights",
+    "Expanding into insurance, mutual funds, and lending"
+  ],
+  "cons": [
+    "Walmart (US) owns 72% — India's largest UPI app is foreign-controlled",
+    "Data sovereignty concerns with Walmart as parent company",
+    "Investment products have limited selection compared to dedicated platforms",
+    "Cashback offers reduced significantly from early days"
+  ],
+  "userComplaints": [
+    "Transaction failures during peak UPI hours with money debited but not credited",
+    "Customer support response time is very slow for failed transactions",
+    "Keeps pushing insurance and loan products aggressively in the app"
+  ],
+  "rating": 4.3,
+  "ratingSource": "Google Play Store",
+  "lastVerified": "2026-03-13",
+  "playStoreUrl": "https://play.google.com/store/apps/details?id=com.phonepe.app",
+  "appStoreUrl": "https://apps.apple.com/in/app/phonepe/id1170055821"
+}

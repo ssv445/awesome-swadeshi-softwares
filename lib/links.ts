@@ -40,10 +40,6 @@ export function getAlternativesIndexUrl(): string {
   return '/alternatives'
 }
 
-export function getNotSwadeshiIndexUrl(): string {
-  return '/not-swadeshi-apps'
-}
-
 // ===========================
 // Dynamic Pages
 // ===========================
@@ -75,16 +71,6 @@ export function getAppUrl(categorySlug: string, appSlug: string): string {
 export function getAlternativeUrl(toolNameOrSlug: string): string {
   const slug = slugify(toolNameOrSlug)
   return `/alternatives/${slug}`
-}
-
-/**
- * Generate "not swadeshi apps" page URL from company/app name or slug
- * @param nameOrSlug - Company/app name or pre-slugified slug
- * @returns Not swadeshi page URL (e.g., "/not-swadeshi-apps/flipkart")
- */
-export function getNotSwadeshiUrl(nameOrSlug: string): string {
-  const slug = slugify(nameOrSlug)
-  return `/not-swadeshi-apps/${slug}`
 }
 
 /**
@@ -135,13 +121,6 @@ export function getAbsoluteAppUrl(categorySlug: string, appSlug: string): string
  */
 export function getAbsoluteAlternativeUrl(toolNameOrSlug: string): string {
   return getAbsoluteUrl(getAlternativeUrl(toolNameOrSlug))
-}
-
-/**
- * Get absolute not swadeshi URL
- */
-export function getAbsoluteNotSwadeshiUrl(nameOrSlug: string): string {
-  return getAbsoluteUrl(getNotSwadeshiUrl(nameOrSlug))
 }
 
 /**

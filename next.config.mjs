@@ -75,46 +75,41 @@ const nextConfig = {
         destination: '/hosting',
         permanent: true,
       },
-      // Moved apps: e-commerce → not-swadeshi-apps
-      {
-        source: '/e-commerce/flipkart',
-        destination: '/not-swadeshi-apps/flipkart',
-        permanent: true,
-      },
+      // Old e-commerce redirects → new category locations
       {
         source: '/e-commerce/paytm-mall',
-        destination: '/not-swadeshi-apps/paytm',
+        destination: '/finance/paytm',
         permanent: true,
       },
-      // Deleted Freshworks apps → not-swadeshi-apps/freshworks
+      // Old Freshworks sub-product pages → unified freshworks entry
       {
         source: '/business/freshsales',
-        destination: '/not-swadeshi-apps/freshworks',
+        destination: '/business/freshworks',
         permanent: true,
       },
       {
         source: '/business/freshchat',
-        destination: '/not-swadeshi-apps/freshworks',
+        destination: '/business/freshworks',
         permanent: true,
       },
       {
         source: '/business/freshcaller',
-        destination: '/not-swadeshi-apps/freshworks',
+        destination: '/business/freshworks',
         permanent: true,
       },
       {
         source: '/business/freshdesk',
-        destination: '/not-swadeshi-apps/freshworks',
+        destination: '/business/freshworks',
         permanent: true,
       },
       {
         source: '/business/freshservice',
-        destination: '/not-swadeshi-apps/freshworks',
+        destination: '/business/freshworks',
         permanent: true,
       },
       {
         source: '/business/freshmarketer',
-        destination: '/not-swadeshi-apps/freshworks',
+        destination: '/business/freshworks',
         permanent: true,
       },
       {
@@ -122,36 +117,101 @@ const nextConfig = {
         destination: '/business',
         permanent: true,
       },
-      // Deleted finance apps → not-swadeshi-apps equivalents
+      // Old finance app redirects → new locations
       {
         source: '/finance/razorpay-payment-gateway',
-        destination: '/not-swadeshi-apps/razorpay',
-        permanent: true,
-      },
-      {
-        source: '/finance/chargebee',
-        destination: '/not-swadeshi-apps/chargebee',
+        destination: '/finance/razorpay',
         permanent: true,
       },
       {
         source: '/finance/paytm-business',
-        destination: '/not-swadeshi-apps/paytm',
+        destination: '/finance/paytm',
         permanent: true,
       },
       {
         source: '/finance/paytm-wallet',
-        destination: '/not-swadeshi-apps/paytm',
+        destination: '/finance/paytm',
         permanent: true,
       },
-      // Deleted app pages → not-swadeshi-apps equivalents
+      // not-swadeshi-apps → new category locations (migration)
       {
-        source: '/development/postman',
-        destination: '/not-swadeshi-apps/postman',
+        source: '/not-swadeshi-apps/flipkart',
+        destination: '/e-commerce/flipkart',
         permanent: true,
       },
       {
-        source: '/education/unacademy',
-        destination: '/not-swadeshi-apps/unacademy',
+        source: '/not-swadeshi-apps/paytm',
+        destination: '/finance/paytm',
+        permanent: true,
+      },
+      {
+        source: '/not-swadeshi-apps/makemytrip',
+        destination: '/travel/makemytrip',
+        permanent: true,
+      },
+      {
+        source: '/not-swadeshi-apps/ola-cabs',
+        destination: '/travel/ola-cabs',
+        permanent: true,
+      },
+      {
+        source: '/not-swadeshi-apps/swiggy',
+        destination: '/e-commerce/swiggy',
+        permanent: true,
+      },
+      {
+        source: '/not-swadeshi-apps/zomato',
+        destination: '/e-commerce/zomato',
+        permanent: true,
+      },
+      {
+        source: '/not-swadeshi-apps/policybazaar',
+        destination: '/finance/policybazaar',
+        permanent: true,
+      },
+      {
+        source: '/not-swadeshi-apps/phonepe',
+        destination: '/finance/phonepe',
+        permanent: true,
+      },
+      {
+        source: '/not-swadeshi-apps/postman',
+        destination: '/development/postman',
+        permanent: true,
+      },
+      {
+        source: '/not-swadeshi-apps/unacademy',
+        destination: '/education/unacademy',
+        permanent: true,
+      },
+      {
+        source: '/not-swadeshi-apps/chargebee',
+        destination: '/finance/chargebee',
+        permanent: true,
+      },
+      {
+        source: '/not-swadeshi-apps/razorpay',
+        destination: '/finance/razorpay',
+        permanent: true,
+      },
+      {
+        source: '/not-swadeshi-apps/freshworks',
+        destination: '/business/freshworks',
+        permanent: true,
+      },
+      {
+        source: "/not-swadeshi-apps/byju's",
+        destination: '/education/byjus',
+        permanent: true,
+      },
+      {
+        source: '/not-swadeshi-apps/byju-s',
+        destination: '/education/byjus',
+        permanent: true,
+      },
+      {
+        source: '/not-swadeshi-apps',
+        destination: '/',
         permanent: true,
       },
       {

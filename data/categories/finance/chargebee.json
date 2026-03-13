@@ -1,0 +1,32 @@
+{
+  "name": "Chargebee",
+  "slug": "chargebee",
+  "description": "Subscription billing and revenue management platform for SaaS and recurring revenue businesses serving 4,500+ companies",
+  "website": "https://www.chargebee.com/",
+  "category": "finance",
+  "alternatives": ["Stripe Billing", "Recurly", "Zuora"],
+  "pricing": "Freemium",
+  "company": "ChargeBee Inc",
+  "companySlug": "chargebee",
+  "location": "Bethesda, USA (founded in Chennai)",
+  "pros": [
+    "Founded by Indian engineers from Chennai",
+    "Comprehensive subscription lifecycle management",
+    "Integrates with 30+ payment gateways including Razorpay",
+    "Revenue recognition and analytics built-in"
+  ],
+  "cons": [
+    "Delaware C-Corp with US HQ — not an Indian company legally",
+    "Foreign VCs (Tiger Global, Sequoia, Insight Partners) hold majority",
+    "Pricing can be expensive for startups beyond free tier",
+    "Complex setup for simple billing use cases"
+  ],
+  "userComplaints": [
+    "Billing discrepancies when switching between plans mid-cycle",
+    "Customer support response times have slowed as company scaled",
+    "Documentation can be outdated for newer features"
+  ],
+  "rating": 4.4,
+  "ratingSource": "G2",
+  "lastVerified": "2026-03-13"
+}

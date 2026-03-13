@@ -1,0 +1,34 @@
+{
+  "name": "Swiggy",
+  "slug": "swiggy",
+  "description": "Food delivery and quick commerce platform serving 500+ Indian cities with Instamart 10-minute grocery delivery",
+  "website": "https://www.swiggy.com/",
+  "category": "e-commerce",
+  "alternatives": ["Uber Eats", "DoorDash", "Grubhub", "Deliveroo"],
+  "pricing": "Free",
+  "company": "Bundl Technologies Pvt Ltd",
+  "companySlug": "swiggy",
+  "location": "Bengaluru, Karnataka",
+  "pros": [
+    "Instamart quick commerce delivers groceries in 10 minutes",
+    "Wide restaurant selection across 500+ cities",
+    "Swiggy One membership with free delivery and extra discounts",
+    "Indian founders retain operational control"
+  ],
+  "cons": [
+    "Prosus (Netherlands/SA) holds 31% stake — largest foreign shareholder",
+    "Platform commission impacts restaurant prices (food costs more on Swiggy)",
+    "Delivery partner working conditions criticized",
+    "Instamart prices higher than local grocery stores"
+  ],
+  "userComplaints": [
+    "Food prices on Swiggy are 20-30% higher than ordering directly",
+    "Delivery fees and surge charges make small orders expensive",
+    "Order accuracy issues — wrong items, missing items common"
+  ],
+  "rating": 4.3,
+  "ratingSource": "Google Play Store",
+  "lastVerified": "2026-03-13",
+  "playStoreUrl": "https://play.google.com/store/apps/details?id=in.swiggy.android",
+  "appStoreUrl": "https://apps.apple.com/in/app/swiggy/id989540920"
+}
