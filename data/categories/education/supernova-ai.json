@@ -1,18 +1,20 @@
 {
   "name": "Supernova AI",
   "slug": "supernova-ai",
-  "description": "AI-powered tool for automating design and development workflows",
+  "description": "India's AI-powered spoken English learning app with 9M+ downloads, featuring AI tutor Miss Nova for pronunciation, grammar, and fluency practice in Hindi and Indian languages",
   "website": "https://www.getsupernova.ai/",
-  "category": "development",
+  "category": "education",
   "alternatives": [
-    "Figma",
-    "Sketch",
-    "Adobe XD"
+    "Duolingo",
+    "ELSA Speak"
   ],
   "pricing": "Freemium",
   "company": "Supernova AI",
   "companySlug": "supernova-ai",
-  "location": "India",
+  "location": "Bangalore",
+  "lastVerified": "2026-03-15",
+  "appStoreUrl": "https://apps.apple.com/in/app/supernova-ai-spoken-english/id6447939054",
+  "playStoreUrl": "https://play.google.com/store/apps/details?id=live.gosupernova.app&hl=en_IN",
   "opengraph": {
     "last_updated": "2025-10-05T10:35:03.206Z",
     "type": "website",

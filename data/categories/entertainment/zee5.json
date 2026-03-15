@@ -1,12 +1,14 @@
 {
   "name": "Zee5",
   "slug": "zee5",
-  "description": "OTT platform with strong focus on regional and vernacular content across India",
+  "description": "Indian OTT streaming platform with 200K+ hours of TV shows, web series, movies, and live TV in 12 languages — a popular Netflix and Hotstar alternative",
+  "lastVerified": "2026-03-15",
   "website": "https://www.zee5.com/",
   "category": "entertainment",
   "alternatives": [
     "Netflix",
-    "Amazon Prime"
+    "Amazon Prime",
+    "Disney+ Hotstar"
   ],
   "pricing": "Freemium",
   "company": "Zee Entertainment Enterprises",

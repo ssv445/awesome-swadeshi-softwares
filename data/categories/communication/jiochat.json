@@ -1,7 +1,8 @@
 {
   "name": "JioChat",
   "slug": "jiochat",
-  "description": "Instant messaging app leveraging Jio's telecom user base with integrated services",
+  "description": "Free Indian messaging app by Jio with HD video calls, voice chat, group messaging, and stickers — a made-in-India WhatsApp alternative",
+  "lastVerified": "2026-03-15",
   "website": "https://www.jio.com/apps/jiochat",
   "category": "communication",
   "purpose": [

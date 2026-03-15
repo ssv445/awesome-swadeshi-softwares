@@ -462,7 +462,7 @@
       "company": "Jio Platforms",
       "category": "communication",
       "slug": "jiochat",
-      "searchTerms": "jiochat jio platforms communication whatsapp telegram instant messaging app leveraging jio s telecom user base with integrated"
+      "searchTerms": "jiochat jio platforms communication whatsapp telegram free indian messaging app by jio with hd video calls"
     },
     {
       "id": "communication/jiosafe",
@@ -502,7 +502,7 @@
       "company": "Sarvam AI",
       "category": "communication",
       "slug": "sarvam-samvaad",
-      "searchTerms": "sarvam samvaad sarvam ai communication dialogflow microsoft bot framework amazon lex conversational ai agents supporting 11 indian languages across voice and"
+      "searchTerms": "sarvam samvaad sarvam ai communication dialogflow microsoft bot framework amazon lex indian conversational ai platform by sarvam ai with voice and"
     },
     {
       "id": "communication/say-namaste",
@@ -703,14 +703,6 @@
       "category": "development",
       "slug": "site24x7",
       "searchTerms": "site24x7 zoho corporation development datadog new relic dynatrace application performance monitoring and infrastructure monitoring platform"
-    },
-    {
-      "id": "development/supernova-ai",
-      "name": "Supernova AI",
-      "company": "Supernova AI",
-      "category": "development",
-      "slug": "supernova-ai",
-      "searchTerms": "supernova ai supernova ai development figma sketch adobe xd ai powered tool for automating design and development workflows"
     },
     {
       "id": "development/zoho-bugtracker",
@@ -945,6 +937,14 @@
       "searchTerms": "pupilfirst pupilfirst pvt ltd education coursera canvas blackboard learning management system empowering digital transformation of indian classroom education"
     },
     {
+      "id": "education/supernova-ai",
+      "name": "Supernova AI",
+      "company": "Supernova AI",
+      "category": "education",
+      "slug": "supernova-ai",
+      "searchTerms": "supernova ai supernova ai education duolingo elsa speak india s ai powered spoken english learning app with 9m downloads featuring"
+    },
+    {
       "id": "education/unacademy",
       "name": "Unacademy",
       "company": "Sorting Hat Technologies Pvt Ltd",
@@ -1030,7 +1030,7 @@
       "company": "Mohalla Tech Pvt Ltd",
       "category": "entertainment",
       "slug": "moj",
-      "searchTerms": "moj mohalla tech pvt ltd entertainment tiktok instagram reels youtube shorts one of india s most popular short video apps by mohalla"
+      "searchTerms": "moj mohalla tech pvt ltd entertainment tiktok instagram reels youtube shorts india s leading short video app and tiktok alternative by mohalla"
     },
     {
       "id": "entertainment/mx-player",
@@ -1062,7 +1062,7 @@
       "company": "Zee Entertainment Enterprises",
       "category": "entertainment",
       "slug": "zee5",
-      "searchTerms": "zee5 zee entertainment enterprises entertainment netflix amazon prime ott platform with strong focus on regional and vernacular content"
+      "searchTerms": "zee5 zee entertainment enterprises entertainment netflix amazon prime disney hotstar indian ott streaming platform with 200k hours of tv shows"
     },
     {
       "id": "finance/bhim-upi",
@@ -1450,7 +1450,7 @@
       "travel",
       "utilities"
     ],
-    "generatedAt": "2026-03-13T03:56:07.499Z",
+    "generatedAt": "2026-03-15T03:45:48.382Z",
     "version": "1.0.0"
   }
 }
